@@ -5,11 +5,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "flowbite/dist/flowbite.css";
 import Navbar from "./sections/navigation/Navbar";
+import ContactUsPopup from "./sections/navigation/ContactUsPopup";
 import FooterHome from "./sections/navigation/Footer";
 import Home from "./pages/Home";
 import ServicesPage from "./pages/Services";
 import BlogPage from "./pages/Blogs";
-import ContactPage from "./pages/Contact";
 import TeamPage from "./pages/Team";
 import LawPage from "./pages/Law";
 import ToolsPage from "./pages/Tools";
@@ -22,12 +22,12 @@ const App = () => {
   return (
     <Router>
       <Navbar />
+      <ContactUsPopup />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/blog" element={<BlogPage />} />
-        <Route path="/contact" element={<ContactPage />} />
         <Route path="/tools" element={<ToolsPage />} />
         <Route path="/real-estate-law" element={<LawPage />} />
         <Route path="/family-law" element={<LawPage />} />

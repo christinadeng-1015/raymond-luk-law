@@ -33,10 +33,10 @@ const FooterHome = () => {
   return (
     <Footer
       container
-      className="pt-16 pb-8 bg-gray-100 text-gray-300"
+      className="pt-16 pb-8 bg-[#10284e] text-white"
       id="footer"
     >
-      <div className="w-full">
+      <div className="w-full max-w-screen-2xl mx-auto">
         <div className="flex flex-wrap md:flex-nowrap justify-between gap-8">
           <div className="flex flex-col md:w-1/3 w-full space-y-6">
             <div className="flex-shrink-0">
@@ -63,20 +63,30 @@ const FooterHome = () => {
             }}
           >
             <div className="flex-grow sm:w-3/5">
-              <Footer.Title title="Contact Us" className="underline" />
+              <Footer.Title
+                title="Contact Us"
+                className="underline text-white"
+              />
               <Footer.LinkGroup col>
                 {footer.contacts.map((item) => (
-                  <Footer.Link href="#" key={item.title}>
+                  <Footer.Link href="#" key={item.title} className="text-white">
                     {item.title}
                   </Footer.Link>
                 ))}
               </Footer.LinkGroup>
             </div>
             <div className="flex-grow sm:w-2/5">
-              <Footer.Title title="Areas of Practice" className="underline" />
+              <Footer.Title
+                title="Areas of Practice"
+                className="underline text-white"
+              />
               <Footer.LinkGroup col>
                 {footer.services.map((item) => (
-                  <Footer.Link href="#" key={item.service}>
+                  <Footer.Link
+                    href="#"
+                    key={item.service}
+                    className="text-white"
+                  >
                     {item.service}
                   </Footer.Link>
                 ))}
@@ -93,13 +103,13 @@ const FooterHome = () => {
                 icon={Icon}
                 key={index}
                 style={{
-                  color: "#3C5B6F",
+                  color: "white",
                 }}
               />
             )
           )}
         </div>
-        <div className="w-full text-gray-500 mt-4">
+        <div className="w-full text-white mt-4">
           <p>{footer.corporation}</p>
           <p className="text-sm">{footer.disclaimer}</p>
         </div>

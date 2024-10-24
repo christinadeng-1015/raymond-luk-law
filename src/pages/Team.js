@@ -8,7 +8,6 @@ export default function TeamPage() {
   return (
     <main ref={mainRef}>
       <TeamAbout />
-      <Testimonials />
     </main>
   );
 }

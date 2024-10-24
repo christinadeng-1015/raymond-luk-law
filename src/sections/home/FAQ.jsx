@@ -10,14 +10,14 @@ const FAQ = ({ faq, isOpen }) => {
       className={showAnswer ? "h-full" : ""}
       onClick={() => setShowAnswer((prev) => !prev)}
     >
-      <div className="flex justify-between items-start gap-8 text-gray-200">
+      <div className="flex justify-between items-start text-gray-900">
         <p className="font-medium text-base">{faq.question}</p>
         <button className="text-2xl">
           {showAnswer ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </button>
       </div>
       {showAnswer && (
-        <p className="mt-4 italic font-light text-gray-200">{faq.answer}</p>
+        <p className="mt-4 italic font-light text-gray-900">{faq.answer}</p>
       )}
     </Card>
   );

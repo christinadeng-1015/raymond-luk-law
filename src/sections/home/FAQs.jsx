@@ -7,17 +7,14 @@ const FAQs = () => {
 
   return (
     <div
-      className="flex flex-col items-center bg-white py-16 shadow-lg md:py-32"
+      className="flex flex-col items-center bg-white py-16 max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8"
       id="faqs"
     >
-      <h3 className="text-2xl font-semibold text-center text-gray-800">
+      <h3 className="text-3xl text-center text-gray-900 mb-2 font-semibold pb-16">
         {t("title")}
       </h3>
-      <p className="italic mt-4 text-center text-gray-800 pb-16">
-        {t("subtitle")}
-      </p>
       <div
-        className="container grid grid-cols-1 gap-y-6 gap-x-16 items-start md:grid-cols-2 md:gap-y-6 md:gap-x-8 sm:gap-4"
+        className="w-full grid grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-y-6 md:gap-x-8 sm:gap-4 pb-20"
         data-aos="fade-up"
       >
         {faqs.map((faq, index) => (

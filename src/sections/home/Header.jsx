@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import homepage from "../../assets/homepage.png";
+import homepage from "../../assets/homepage.jpg";
 
 const Header = () => {
   const [offsetY, setOffsetY] = useState(0);
@@ -31,7 +31,7 @@ const Header = () => {
       ></div>
 
       <div
-        className="absolute top-1/2 left-1/2 w-5/6 h-2/3 flex flex-col justify-center items-center opacity-90 bg-[#3C5B6F] transform -translate-x-1/2 -translate-y-1/3
+        className="absolute top-1/2 left-1/2 w-5/6 h-2/3 flex flex-col justify-center items-center transform -translate-x-1/2 -translate-y-1/3
       md:w-1/2 md:h-full md:translate-x-0 md:translate-y-0 md:top-0 md:left-0"
       >
         <div className="text-center">

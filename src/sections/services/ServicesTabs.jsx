@@ -50,7 +50,7 @@ const images = {
 
 export function ServicesTabs({ tabs }) {
   return (
-    <div className="p-8 max-w-screen-2xl mx-auto">
+    <div className="p-8 max-w-screen-2xl mx-auto pt-32">
       <Tabs aria-label="Tabs with icons" variant="underline">
         {tabs.map((item) => (
           <Tabs.Item
@@ -60,31 +60,36 @@ export function ServicesTabs({ tabs }) {
             key={item.key}
             className="py-4"
           >
-            <div className="p-6 md:p-10 bg-white shadow-lg rounded-lg">
-              <h2 className="font-semibold text-gray-900 pb-8">{item.label}</h2>
-              <div className="flex flex-col md:flex-row gap-8">
+            <div className="p-6 md:p-16 shadow-lg rounded-lg">
+              <h2 className="text-gray-900 pb-8 font-sans font-bold text-2xl">
+                {item.label}
+              </h2>
+              <div className="flex flex-col md:flex-row gap-x-12 pb-16">
                 {images[item.imageSrc] && (
-                  <div className="flex-shrink-0 w-full md:w-1/3 mx-auto pb-8">
+                  <div className="flex-shrink-0 w-full md:w-1/3 mx-auto">
                     <img
                       src={images[item.imageSrc]}
                       alt={item.title}
-                      className="rounded-lg w-full h-auto object-cover mx-auto"
+                      className="rounded-lg h-auto object-cover mx-auto"
                     />
                   </div>
                 )}
                 <div className="w-full">
                   {item.desc && (
-                    <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                      {item.desc}
-                    </p>
+                    <div
+                      className="service__subtitle text-gray-800 text-base font-light antialiased leading-relaxed"
+                      dangerouslySetInnerHTML={{
+                        __html: item.desc,
+                      }}
+                    />
                   )}
                   {item.details && (
                     <div>
-                      <h4 className="border-b-2 border-gray-800 py-4 uppercase text-gray-800">
+                      <h4 className="text-gray-800 font-semibold">
                         {item.detailsTitle}
                       </h4>
                       <div
-                        className="service__details text-white text-base tracking-wide font-light bg-[#3C5B6F] bg-opacity-70 shadow-2xl px-8 py-10 rounded-xl h-auto"
+                        className="service__subtitle text-gray-800 text-base tracking-wide font-light py-4"
                         dangerouslySetInnerHTML={{
                           __html: item.details,
                         }}
@@ -93,21 +98,23 @@ export function ServicesTabs({ tabs }) {
                   )}
                 </div>
               </div>
-              <div className="grid grid-cols-1 gap-8">
+              <div
+                className={`grid grid-cols-1 ${
+                  item.isIndividualSection === true
+                    ? "lg:grid-cols-1"
+                    : "lg:grid-cols-2"
+                } gap-10`}
+              >
                 {item.content?.map((content, index) => (
                   <div key={index} className="mb-6">
-                    <h3 className="font-semibold text-gray-800 italic pb-4">
-                      {content.title}
-                    </h3>
-                    <div
-                      className={`flex flex-col md:flex-row gap-8 ${
-                        index % 2 === 1 && images[content.imageSrc]
-                          ? "md:flex-row-reverse"
-                          : ""
-                      }`}
-                    >
+                    {content.title && (
+                      <h3 className="text-white font-sans font-bold text-lg bg-gray-500 opacity-80 text-center py-6 px-4 rounded-lg shadow-md mb-4">
+                        {content.title}
+                      </h3>
+                    )}
+                    <div className="flex flex-col md:flex-row gap-6">
                       {images[content.imageSrc] && (
-                        <div className="flex-shrink-0 w-full md:w-1/3 mx-auto">
+                        <div className="flex-shrink-0 w-full md:w-2/5 mx-auto">
                           <img
                             src={images[content.imageSrc]}
                             alt={content.title}
@@ -118,43 +125,34 @@ export function ServicesTabs({ tabs }) {
                       <div className="flex flex-col w-full">
                         {content.desc && (
                           <div
-                            className="service__content text-base text-gray-700 pt-4"
+                            className="service__content text-base text-gray-700 font-light leading-relaxed"
                             dangerouslySetInnerHTML={{
                               __html: content.desc,
                             }}
                           />
                         )}
-                        {content.subtitle?.length > 0 && (
-                          <div
-                            className={`grid grid-cols-1 ${
-                              content.subtitle?.length > 1
-                                ? "lg:grid-cols-2"
-                                : ""
-                            } gap-6`}
-                          >
-                            {content.subtitle?.map(
-                              (subtitle, subtitleIndex) => (
-                                <div
-                                  key={subtitleIndex}
-                                  className="flex flex-col h-full"
-                                >
-                                  <h4 className="border-b-2 border-gray-800 py-4 uppercase text-gray-800">
-                                    {subtitle.title}
-                                  </h4>
-                                  <div
-                                    className="service__subtitle text-white text-base tracking-wide font-light bg-[#3C5B6F] bg-opacity-70 shadow-2xl px-8 py-10 rounded-xl h-full"
-                                    dangerouslySetInnerHTML={{
-                                      __html: subtitle.desc,
-                                    }}
-                                  />
-                                </div>
-                              )
-                            )}
-                          </div>
-                        )}
                       </div>
                     </div>
-                    <hr className="h-px mt-8 bg-gray-300 border-0" />
+                    {content.subtitle?.length > 0 && (
+                      <div className="grid grid-cols-1 gap-4 mt-4">
+                        {content.subtitle?.map((subtitle, subtitleIndex) => (
+                          <div
+                            key={subtitleIndex}
+                            className="flex flex-col h-full py-10"
+                          >
+                            <h4 className="text-gray-800 font-semibold text-base bg-gray-200 text-center px-10 py-4 rounded-lg shadow-md ">
+                              {subtitle.title}
+                            </h4>
+                            <div
+                              className="service__subtitle text-gray-800 text-sm tracking-wide font-light leading-relaxed py-4"
+                              dangerouslySetInnerHTML={{
+                                __html: subtitle.desc,
+                              }}
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>

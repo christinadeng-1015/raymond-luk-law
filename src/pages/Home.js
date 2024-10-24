@@ -1,9 +1,11 @@
 import { useRef, useState, useEffect } from "react";
 import Header from "../sections/home/Header";
-import Rates from "../sections/home/Rates";
+import Contact from "../sections/home/Contact";
+import Process from "../sections/home/Process";
 import Services from "../sections/home/Services";
 import Team from "../sections/home/Team";
 import ParallaxSection from "../sections/home/ParallaxSection";
+import Testimonials from "../sections/about/Testimonials";
 import FAQs from "../sections/home/FAQs";
 import FloatingNav from "../sections/navigation/FloatingNav";
 
@@ -43,10 +45,12 @@ export default function Home() {
     <main ref={mainRef} style={{ overflow: "hidden" }}>
       <Header />
       <Team />
+      <Process />
       <Services />
       <ParallaxSection />
       <FAQs />
-      <Rates />
+      <Contact />
+      <Testimonials />
       {showFloatingNav && <FloatingNav />}
     </main>
   );

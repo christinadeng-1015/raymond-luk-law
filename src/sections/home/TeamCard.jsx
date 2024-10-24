@@ -43,7 +43,7 @@ const TeamCard = ({ member }) => {
         onClick={() => setOpenModal(!openModal)}
         rel="noopener noreferrer"
       >
-        <div className="relative text-center w-52 h-52 sm:w-40 sm:h-40 mx-auto">
+        <div className="relative text-center w-52 h-52 mx-auto">
           <img
             src={images[member.image]}
             alt={member.name}

@@ -33,7 +33,6 @@
         },
         { "key": "blog", "label": "Blogs", "url": "/blog", "icon": "AiOutlineRead"},
         { "key": "tools", "label": "Tools", "url": "/tools", "icon": "AiOutlineTool"},
-        { "key": "contact", "label": "Contact", "url": "/contact", "icon": "AiOutlineComment"},
         {
           "key": "language",
           "label": "Language",

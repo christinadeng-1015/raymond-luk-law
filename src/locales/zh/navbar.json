@@ -33,7 +33,6 @@
       },
       { "key": "blog", "label": "博客", "url": "/blog", "icon": "AiOutlineRead"},
       { "key": "tools", "label": "工具", "url": "/tools", "icon": "AiOutlineTool"},
-      { "key": "contact", "label": "联系我们", "url": "/contact", "icon": "AiOutlineComment"},
       {
         "key": "language",
         "label": "语言",
