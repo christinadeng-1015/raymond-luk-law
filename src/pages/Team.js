@@ -1,4 +1,3 @@
-import Testimonials from "../sections/about/Testimonials";
 import TeamAbout from "../sections/about/TeamAbout";
 import { useRef } from "react";
 

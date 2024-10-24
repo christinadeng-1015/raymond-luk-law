@@ -10,7 +10,6 @@ import jessicaChenImg from "../../assets/team/jessica-chen.jpg";
 import angelaTsuiImg from "../../assets/team/angela-tsui.jpg";
 import rachelChanImg from "../../assets/team/rachel-chan.jpg";
 import camilaSuImg from "../../assets/team/camila-su.jpg";
-import Team from "../../sections/home/Team";
 
 const TeamAbout = () => {
   const { t } = useTranslation("team");
