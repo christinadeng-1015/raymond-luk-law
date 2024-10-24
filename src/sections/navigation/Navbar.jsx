@@ -48,7 +48,6 @@ const Nav = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
-      const isScrolledDown = currentScrollPos > prevScrollPos;
 
       // Set background to white if scrolled down past 50px, else keep transparent
       setScrolled(currentScrollPos > 50);
