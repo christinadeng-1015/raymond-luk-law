@@ -15,7 +15,7 @@ const Tools = () => {
   });
 
   return (
-    <div className="flex flex-col items-center py-32 bg-white shadow-lg relative z-10">
+    <div className="flex flex-col items-center py-48 lg:py-72 bg-white shadow-lg relative z-10">
       <h3 className="text-2xl text-center text-gray-800 pb-10 font-semibold px-12">
         {t("toolsTitle")}
       </h3>
@@ -68,8 +68,7 @@ const Tools = () => {
               <Button
                 style={{
                   boxShadow: "0 10px 20px rgba(0, 0, 0, 0.3)",
-                  background:
-                    "linear-gradient(to top left, rgb(14, 116, 144), rgb(10, 85, 105))",
+                  background: "#10284e",
                 }}
               >
                 Read more

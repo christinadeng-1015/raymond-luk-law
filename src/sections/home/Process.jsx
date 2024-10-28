@@ -14,7 +14,7 @@ const Process = () => {
           Our Process
         </h3>
         <div className="flex justify-center">
-          <Timeline horizontal className="w-full md:w-10/12">
+          <Timeline horizontal>
             <Timeline.Item
               className="mx-20 my-8 md:mx-8"
               style={{ flexBasis: "20%" }}

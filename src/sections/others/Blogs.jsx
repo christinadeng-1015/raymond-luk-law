@@ -8,7 +8,7 @@ const Blogs = () => {
   return (
     <section
       id="blogs"
-      className="flex justify-center items-center shadow-lg relative z-10 flex-col"
+      className="flex justify-center items-center shadow-lg relative z-10 flex-col py-48"
     >
       <h3 className="text-2xl text-center text-gray-800 py-8 font-semibold">
         {t("blogTitle")}
@@ -31,7 +31,7 @@ const Blogs = () => {
               </p>
               <a
                 href={blog.url || "#"}
-                className="inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-gradient-to-tl from-[rgb(14,116,144)] to-[rgb(10,85,105)] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+                className="inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-[#10284e] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
               >
                 Read more
                 <svg

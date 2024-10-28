@@ -25,7 +25,7 @@ export function Service() {
   const service = services.find((service) => service.path === path);
 
   return (
-    <div>
+    <div className="py-48">
       {/* <div className="bg-gray-200 p-16 pt-32 flex flex-col lg:flex-row text-center">
         <div className="flex flex-col justify-center lg:w-3/5">
           <h2 className="text-2xl font-semibold mb-2">{service.title}</h2>

@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 import { HiOutlineAcademicCap } from "react-icons/hi";
 import raymondLukImg from "../../assets/team/raymond-luk.jpg";
 import eimanSharifpourImg from "../../assets/team/eiman-sharifpour.jpg";
@@ -14,7 +15,6 @@ import camilaSuImg from "../../assets/team/camila-su.jpg";
 const TeamAbout = () => {
   const { t } = useTranslation("team");
   const title = t("title", { returnObjects: false });
-  const subtitle = t("subtitle", { returnObjects: false });
   const team = t("team", { returnObjects: true });
   const heading = t("heading", { returnObjects: true });
 
@@ -31,58 +31,79 @@ const TeamAbout = () => {
     "camila-su": camilaSuImg,
   };
 
+  // Set the first member as the default selected member
+  const [selectedMember, setSelectedMember] = useState(team[0]);
+
+  const handleMemberClick = (member) => {
+    // If the same member is clicked, hide the detail section by setting it to null
+    if (selectedMember && selectedMember.name === member.name) {
+      setSelectedMember(null);
+    } else {
+      setSelectedMember(member);
+    }
+  };
+
   return (
-    <div className="flex flex-col items-stretch pt-40 shadow-lg">
-      <h3 className="text-2xl text-center text-gray-800 mb-2 font-semibold">
+    <div className="flex flex-col items-center py-48 lg:py-72 w-full">
+      <h3 className="text-2xl sm:text-3xl text-center text-gray-900 mb-4 sm:mb-6 font-semibold pb-8 sm:pb-16">
         {title}
       </h3>
-      <p className="italic mt-4 text-center text-gray-800 mb-4 pb-16 px-10">
-        {subtitle}
-      </p>
-      {team.map((member, index) => (
+
+      {selectedMember && (
         <div
-          className={`flex flex-col ${
-            index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-          } items-center md:items-start border border-gray-200 overflow-hidden shadow-lg w-full md:m-2`}
-          style={{
-            background: "#3C5B6F",
-          }}
-          key={member.name}
+          className={`flex flex-col md:flex-row items-center md:items-start border border-gray-200 overflow-hidden shadow-lg w-full max-w-screen-2xl mb-8 bg-[#10284e]`}
         >
           <img
-            src={images[member.image]}
-            alt={member.name}
+            src={images[selectedMember.image]}
+            alt={selectedMember.name}
             className="w-full md:w-1/2 lg:w-1/3 object-contain"
             loading="lazy"
           />
 
           <div className="w-full md:w-1/2 lg:w-2/3 p-6 md:p-12 text-gray-200">
             <h4 className="text-xl md:text-2xl font-bold mb-4 text-gray-200">
-              {member.name}
+              {selectedMember.name}
             </h4>
             <h5 className="font-semibold mb-4 underline text-gray-200">
-              {member.position}
+              {selectedMember.position}
             </h5>
             <div
               className="text-sm md:text-base"
-              dangerouslySetInnerHTML={{ __html: member.description }}
+              dangerouslySetInnerHTML={{ __html: selectedMember.description }}
             />
-            {member.education && member.education.length > 0 && (
-              <div className="w-full mt-4">
-                <h5 className="font-semibold flex items-center text-white">
-                  <HiOutlineAcademicCap className="inline mr-2" />{" "}
-                  {heading.education}
-                </h5>
-                <ul className="text-sm md:text-base mt-2">
-                  {member.education.map((edu, index) => (
-                    <li key={index}>{edu}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
+            {selectedMember.education &&
+              selectedMember.education.length > 0 && (
+                <div className="w-full mt-4">
+                  <h5 className="font-semibold flex items-center text-white">
+                    <HiOutlineAcademicCap className="inline mr-2" />{" "}
+                    {heading.education}
+                  </h5>
+                  <ul className="text-sm md:text-base mt-2">
+                    {selectedMember.education.map((edu, index) => (
+                      <li key={index}>{edu}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
           </div>
         </div>
-      ))}
+      )}
+
+      <div className="flex overflow-x-auto space-x-6 w-full max-w-screen-2xl">
+        {team.map((member) => (
+          <div
+            key={member.name}
+            className="flex-shrink-0 w-72 h-72 cursor-pointer"
+            onClick={() => handleMemberClick(member)}
+          >
+            <img
+              src={images[member.image]}
+              alt={member.name}
+              className="w-full h-full object-cover rounded-lg shadow-lg"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

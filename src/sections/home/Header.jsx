@@ -1,27 +1,52 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import homepage from "../../assets/homepage.jpg";
 
 const Header = () => {
   const [offsetY, setOffsetY] = useState(0);
-
-  const handleScroll = () => {
-    setOffsetY(window.scrollY);
-  };
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   useEffect(() => {
+    const handleScroll = () => {
+      setOffsetY(window.scrollY);
+      if (isDrawerOpen) {
+        setIsDrawerOpen(false);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isDrawerOpen]);
 
   const { t } = useTranslation("navbar");
   const navbar = t("navbar", { returnObjects: true });
 
+  const slides = [
+    { title: navbar.title, subtitle: navbar.subtitle },
+    { title: "Slide 2 Title", subtitle: "Slide 2 Subtitle" },
+    { title: "Slide 3 Title", subtitle: "Slide 3 Subtitle" },
+  ];
+
+  const handleNext = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
+  const handleDrawerToggle = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
+
   return (
-    <header id="header" className="relative w-full h-screen overflow-hidden">
+    <header id="header" className="relative w-full h-screen overflow-hidden ">
+      {/* Background Image */}
       <div
         className="absolute top-1/2 left-1/2 w-full h-full bg-cover bg-no-repeat bg-center"
         style={{
@@ -30,39 +55,73 @@ const Header = () => {
         }}
       ></div>
 
-      <div
-        className="absolute top-1/2 left-1/2 w-5/6 h-2/3 flex flex-col justify-center items-center transform -translate-x-1/2 -translate-y-1/3
-      md:w-1/2 md:h-full md:translate-x-0 md:translate-y-0 md:top-0 md:left-0"
-      >
-        <div className="text-center">
+      {/* Slide Content */}
+      <div className="absolute top-0 left-0 w-full h-full flex justify-between items-center px-4 md:px-20 max-w-screen-2xl">
+        {/* Previous Slide Button */}
+        <button
+          onClick={handlePrev}
+          className="text-white hover:text-gray-300 transition duration-300 text-3xl md:text-4xl"
+        >
+          <IoIosArrowBack />
+        </button>
+        <div className="relative text-center w-full lg:w-1/2">
           <h1
             data-aos="zoom-out"
-            className="text-white p-4 tracking-wide font-medium uppercase"
+            className="text-white tracking-wide font-medium uppercase text-2xl md:text-3xl"
           >
-            {navbar.title}
+            {slides[currentSlide].title}
           </h1>
+          <hr className="my-6 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-200 to-transparent opacity-100" />
           <h2
             data-aos="zoom-out"
-            className="text-white pb-8 tracking-wide text-sm md:text-lg"
+            className="text-white tracking-wide text-sm md:text-lg w-full py-10"
           >
-            {navbar.subtitle}
+            {slides[currentSlide].subtitle}
           </h2>
-          <p data-aos="fade-up" className="text-white italic font-base ">
-            {navbar.desc}
-          </p>
-          <div className="pt-10" data-aos="fade-up">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={navbar.googleDoc.url}
-              className="text-md border-2 bg-white rounded-lg p-4 text-white font-medium shadow-md transition-transform transform hover:scale-110 hover:shadow-lg"
-              style={{ color: "#3C5B6F" }}
+          <div className="pt-4">
+            <button
+              href="#"
+              onClick={handleDrawerToggle}
+              className="text-md border-2 bg-white rounded-lg p-4 font-medium shadow-md transition-transform transform hover:scale-105 hover:shadow-lg"
+              style={{ color: "#10284e" }}
             >
               {navbar.googleDoc.title}
-            </a>
+            </button>
           </div>
         </div>
+
+        {/* Next Slide Button */}
+        <button
+          onClick={handleNext}
+          className="text-white hover:text-gray-300 transition duration-300 text-3xl md:text-4xl"
+        >
+          <IoIosArrowForward />
+        </button>
       </div>
+
+      {/* Drawer */}
+      {/* <div
+        className={`fixed bottom-0 md:bottom-auto md:right-0 w-full md:w-1/4 h-1/2 md:h-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${
+          isDrawerOpen
+            ? "translate-y-0 md:translate-x-0"
+            : "translate-y-full md:translate-x-full"
+        }`}
+      >
+        <div className="relative p-4 flex flex-col justify-center items-center h-full">
+          <button
+            onClick={handleDrawerToggle}
+            className="absolute right-4 top-4 text-gray-500 hover:text-gray-700"
+          >
+            <AiOutlineClose size={24} />
+          </button>
+          <h5 className="text-xl font-medium text-gray-900 mb-4">
+            Get in Touch
+          </h5>
+          <div className="w-full max-w-xs md:max-w-lg">
+            <Form />
+          </div>
+        </div>
+      </div> */}
     </header>
   );
 };

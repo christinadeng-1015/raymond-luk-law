@@ -13,7 +13,7 @@ const Testimonials = () => {
   return (
     <div
       id="testimonials"
-      className="text-center pt-32 relative z-10 pb-0 max-w-screen-2xl mx-auto"
+      className="text-center pt-32 relative z-10 pb-0 max-w-screen-2xl mx-auto px-8"
     >
       <h3 className="text-3xl text-center text-gray-900 mb-2 font-semibold pb-16">
         What People Say

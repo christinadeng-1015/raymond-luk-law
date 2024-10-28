@@ -1,7 +1,7 @@
 {
     "navbar": {
-      "title": "Raymond Luk Law",
-      "subtitle": "Professional Corporation",
+      "title": "YOUR CONCERN IS OUR PRIORITY",
+      "subtitle": "Our team of legal professionals offers a wide range of legal services, including real estate law, family law, wills and estates, corporate law, notary services, and more. We are dedicated to providing personalized service and legal excellence to our clients.",
       "desc": "Legal Excellence, Personalized Service",
       "aboutTitle": "Why Choose Us",
       "about": [
@@ -10,7 +10,7 @@
         { "icon": "AiOutlineTeam", "title": "Clients", "desc": "100+ happy clients"}
       ],
       "googleDoc": {
-        "title": "New Client Register",
+        "title": "Free consultation",
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSc3wQK4mW8BakKnu6rbzLc1uc2u0j5bAn60iAi8M2_x4R6bQA/viewform?usp=sf_link"
       },
       "links": [
