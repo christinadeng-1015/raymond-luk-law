@@ -46,7 +46,6 @@ const Header = () => {
 
   return (
     <header id="header" className="relative w-full h-screen overflow-hidden ">
-      {/* Background Image */}
       <div
         className="absolute top-1/2 left-1/2 w-full h-full bg-cover bg-no-repeat bg-center"
         style={{
@@ -55,26 +54,24 @@ const Header = () => {
         }}
       ></div>
 
-      {/* Slide Content */}
-      <div className="absolute top-0 left-0 w-full h-full flex justify-between items-center px-4 md:px-20 max-w-screen-2xl">
-        {/* Previous Slide Button */}
+      <div className="absolute top-0 left-0 w-full md:w-2/3 h-full flex justify-between items-center px-4 md:px-20 mt-10">
         <button
           onClick={handlePrev}
           className="text-white hover:text-gray-300 transition duration-300 text-3xl md:text-4xl"
         >
           <IoIosArrowBack />
         </button>
-        <div className="relative text-center w-full lg:w-1/2">
+        <div className="relative w-full lg:w-1/2 text-center">
           <h1
             data-aos="zoom-out"
             className="text-white tracking-wide font-medium uppercase text-2xl md:text-3xl"
           >
             {slides[currentSlide].title}
           </h1>
-          <hr className="my-6 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-200 to-transparent opacity-100" />
+          <hr className="h-px my-6 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-200 to-transparent opacity-100" />
           <h2
             data-aos="zoom-out"
-            className="text-white tracking-wide text-sm md:text-lg w-full py-10"
+            className="text-white tracking-wide text-base w-full px-6"
           >
             {slides[currentSlide].subtitle}
           </h2>
@@ -82,7 +79,7 @@ const Header = () => {
             <button
               href="#"
               onClick={handleDrawerToggle}
-              className="text-md border-2 bg-white rounded-lg p-4 font-medium shadow-md transition-transform transform hover:scale-105 hover:shadow-lg"
+              className="text-md border-2 bg-white rounded-lg p-4 font-medium shadow-md transition-transform transform hover:scale-105 hover:shadow-lg mt-6"
               style={{ color: "#10284e" }}
             >
               {navbar.googleDoc.title}
@@ -90,7 +87,6 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Next Slide Button */}
         <button
           onClick={handleNext}
           className="text-white hover:text-gray-300 transition duration-300 text-3xl md:text-4xl"

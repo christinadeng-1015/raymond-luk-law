@@ -22,7 +22,7 @@ const Process = () => {
               <Timeline.Point
                 icon={() => (
                   <div
-                    className="p-4 rounded-full"
+                    className="p-4 rounded-full flex flex-row"
                     style={{
                       background: "#10284e",
                     }}
@@ -31,6 +31,7 @@ const Process = () => {
                   </div>
                 )}
               />
+              <hr className="h-px my-6 border-t-0 bg-gradient-to-r from-transparent via-neutral-200 to-transparent opacity-100" />
               <Timeline.Content className="ml-12 ">
                 <Timeline.Title className="text-white">
                   Free Initial Consultation
@@ -58,6 +59,7 @@ const Process = () => {
                   </div>
                 )}
               />
+              <hr className="h-px my-6 border-t-0 bg-gradient-to-r from-transparent via-neutral-200 to-transparent opacity-100" />
               <Timeline.Content className="ml-12">
                 <Timeline.Title className="text-white">
                   Appointments
@@ -86,6 +88,7 @@ const Process = () => {
                   </div>
                 )}
               />
+              <hr className="h-px my-6 border-t-0 bg-gradient-to-r from-transparent via-neutral-200 to-transparent opacity-100" />
               <Timeline.Content className="ml-12">
                 <Timeline.Title className="text-white">
                   Work & Communication
@@ -114,6 +117,7 @@ const Process = () => {
                 )}
               />
               <Timeline.Content className="ml-12">
+                <hr className="h-px my-6 border-t-0 bg-gradient-to-r from-transparent via-neutral-200 to-transparent opacity-100" />
                 <Timeline.Title className="text-white">Result</Timeline.Title>
                 <Timeline.Time className="text-white">
                   Delivery the best result for our customers

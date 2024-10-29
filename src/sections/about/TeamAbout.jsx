@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { HiOutlineAcademicCap } from "react-icons/hi";
 import raymondLukImg from "../../assets/team/raymond-luk.jpg";
-import eimanSharifpourImg from "../../assets/team/eiman-sharifpour.jpg";
+import eimanSharifpourImg from "../../assets/team/eiman-sharifpour.jpeg";
 import christineGuanImg from "../../assets/team/christine-guan.jpg";
 import rebeccaTsuiImg from "../../assets/team/rebecca-tsui.jpg";
 import mandyZhaoImg from "../../assets/team/mandy-zhao.jpg";

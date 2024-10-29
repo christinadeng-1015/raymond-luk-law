@@ -5,7 +5,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "flowbite/dist/flowbite.css";
 import Navbar from "./sections/navigation/Navbar";
-import ContactUsPopup from "./sections/navigation/ContactUsPopup";
 import FooterHome from "./sections/navigation/Footer";
 import Home from "./pages/Home";
 import ServicesPage from "./pages/Services";
@@ -22,7 +21,6 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <ContactUsPopup />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<ServicesPage />} />

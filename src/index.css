@@ -51,9 +51,8 @@ body {
 
 /* GENERAL CONTAINER CLASS */
 .container {
-    width: var(--container-width-lg);
     margin-inline: auto;
-    max-width: 1920px;
+    max-width: 100%;
 }
 
 /* GENERAL SECTION STYLES */
