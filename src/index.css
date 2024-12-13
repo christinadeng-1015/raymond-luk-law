@@ -57,11 +57,6 @@ body {
 
 /* GENERAL SECTION STYLES */
 
-section {
-    padding: 10rem 0;
-    transition: var(--transition);
-}
-
 section > h2 {
     text-align: center;
 }
@@ -85,29 +80,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-black);
 }
 
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.6rem;
-}
-
-h4 {
-    font-size: 1.1rem;
-}
-
-h5 {
-    font-size: 0.95rem;
-}
-
-h6 {
-    font-size: 0.8rem;
-}
 
 /* GENERAL IMAGES STYLES */
 img {
@@ -125,7 +97,7 @@ img {
     gap: 1rem;
     background: var(--color-light);
     color: var(--color-black);
-    padding: 0.6rem 2.5rem;
+
     border: 2px solid transparent;
     border-radius: var(--border-radius-2);
     cursor: pointer;
@@ -158,10 +130,6 @@ img {
     color: var(--color-primary);
 }
 
-.btn.sm {
-    padding: 0.5rem 1.2rem;
-}
-
 
 
 
@@ -173,10 +141,6 @@ img {
     
     .container {
         width: var(--container-width-md);
-    }
-
-    section {
-        padding: 8rem 0;
     }
 
     section > p {
@@ -211,9 +175,6 @@ img {
         font-size: 1rem;
     }
 
-    .btn {
-        padding: 0.6rem 1.5rem;
-    }
 
     section > p {
         width: var(--container-width-md);
@@ -248,7 +209,6 @@ img {
         display: flex;
         gap: 1rem;
         background: rgba(0, 0, 0, 0.4);
-        padding: 0.8rem 1.5rem;
         border-radius: 3rem;
         backdrop-filter: blur(20px);
     }
@@ -259,7 +219,6 @@ img {
 }
 
 footer {
-    padding-top: 4rem;
     box-shadow: 1.5rem 1rem 1.5rem pink;
     transition: var(--transition);
 }
@@ -282,7 +241,6 @@ footer .nav__menu a {
 .footer__socials a {
     background: var(--color-black);
     color: var(--color-white);
-    padding: 0.6rem;
     border-radius: var(--border-radius-3);
 }
 
@@ -294,7 +252,6 @@ footer .nav__menu a {
 .footer__copyright {
     color: black;
     border-top: 2px solid rgba(0, 0, 0, 0.2);
-    padding: 1.5rem 0;
 }
 
 
@@ -310,3 +267,5 @@ footer .nav__menu a {
 .service__content li {
     list-style: square;
 }
+
+

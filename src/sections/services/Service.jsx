@@ -26,23 +26,6 @@ export function Service() {
 
   return (
     <div className="py-48">
-      {/* <div className="bg-gray-200 p-16 pt-32 flex flex-col lg:flex-row text-center">
-        <div className="flex flex-col justify-center lg:w-3/5">
-          <h2 className="text-2xl font-semibold mb-2">{service.title}</h2>
-          <div className="lg:flex-row gap-4">
-            <p className="mb-4 lg:mb-0 text-gray-700 dark:text-gray-300">
-              {service.desc}
-            </p>
-          </div>
-        </div>
-        <div className="lg:w-2/5 flex justify-center">
-          <img
-            src={images[service.imageSrc]}
-            alt={service.title}
-            className="w-64 h-64 md:w-72 md:h-72 object-cover rounded-full shadow-lg mx-auto"
-          />
-        </div>
-      </div> */}
       {service.tabs && service.tabs.length > 0 && (
         <ServicesTabs tabs={service.tabs} />
       )}

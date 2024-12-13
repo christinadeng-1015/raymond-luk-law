@@ -34,7 +34,7 @@ const Nav = () => {
       AiOutlineTool: <AiOutlineTool size={24} className="text-white" />,
       AiOutlineComment: <AiOutlineComment size={24} className="text-white" />,
       AiOutlineTranslation: (
-        <AiOutlineTranslation size={24} className="text-white" />
+        <AiOutlineTranslation size={24} className="text-gray-900" />
       ),
       AiOutlineRead: <AiOutlineRead size={24} className="text-white" />,
       AiOutlineAudit: <AiOutlineAudit size={24} className="text-white" />,
@@ -101,16 +101,18 @@ const Nav = () => {
               <Navbar.Link
                 href={item.url}
                 key={item.key}
-                className={
-                  "text-xl cursor-pointer transition-colors duration-500 py-2 text-white"
-                }
+                className={`text-xl cursor-pointer transition-colors duration-500 py-2 ${
+                  item.key === "language"
+                    ? "bg-white text-gray-900"
+                    : "text-white"
+                }`}
                 style={{ fontFamily: "'Raleway', sans-serif" }}
               >
                 {item.dropdown ? (
                   <Dropdown
                     inline
                     label={
-                      <div className="flex items-center text-white text-base p-2">
+                      <div className={"flex items-center text-base p-2"}>
                         {iconMap[item.icon]}
                         <span className="ml-2">{item.label}</span>
                       </div>

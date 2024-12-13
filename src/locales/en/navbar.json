@@ -31,8 +31,8 @@
             { "key": "other-services", "label": "Other Services", "url": "/other-services"}
           ]
         },
-        { "key": "blog", "label": "Blogs", "url": "/blog", "icon": "AiOutlineRead"},
-        { "key": "tools", "label": "Tools", "url": "/tools", "icon": "AiOutlineTool"},
+        { "key": "resources", "label": "Resources", "url": "/resources", "icon": "AiOutlineRead"},
+        { "key": "contact", "label": "Contact", "url": "/contact", "icon": "AiOutlineRead"},
         {
           "key": "language",
           "label": "Language",

@@ -45,12 +45,11 @@ export default function Home() {
     <main ref={mainRef} style={{ overflow: "hidden" }}>
       <Header />
       <Team />
-      <Process />
-      <Services />
-      <ParallaxSection />
-      <FAQs />
-      <Contact />
       <Testimonials />
+      <ParallaxSection />
+      <Services />
+      <Process />
+      <FAQs />
       {showFloatingNav && <FloatingNav />}
     </main>
   );

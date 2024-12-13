@@ -53,7 +53,7 @@
     {
       "path": "/family-law",
       "title": "Family Law",
-      "imageSrc": "family-law.jpg",
+      "imageSrc": "family-law.png",
       "desc": "Family law encompasses a wide range of legal matters related to family relationships, marriage and children. It includes the resolution of disputes and the establishment of legal frameworks to ensure the well-being and fair treatment of family members. Our legal team can assist you in a range of family law areas, including divorce and separation, parenting time and child support, domestic violence, prenuptial agreements, and other related matters. We provide comprehensive legal services, from initial consultations to courtroom representation.",
       "tabs": [
         { "key": "divorce", "label": "Divorce", "imageSrc": "divorce.jpg", "desc": "Divorce is the legal process that a married couple must go through to end a marriage. Only married couples can get a divorce, and only a court can grant a divorce. Once the process is finished, a court will issue a divorce certificate proving that you are no longer married.", 
@@ -138,7 +138,7 @@
     {
       "path": "/immigration-law",
       "title": "Immigration Law",
-      "imageSrc": "immigration.jpg",
+      "imageSrc": "immigration.png",
       "desc": "Navigating the intricate pathways of immigration law requires expertise and finesse. At Luk Law, we provide comprehensive immigration law services tailored to meet the diverse needs of our clients. Whether you're seeking temporary residency, permanent citizenship, or assistance with complex immigration matters, our team of experienced lawyers is dedicated to guiding you through every step of the process. With a deep understanding of Canadian immigration regulations and a commitment to personalized service, we strive to achieve the best possible outcome for each client.",
       "tabs": [
         {"key": "work", "label": "Work", "desc": "More information to come"},

@@ -8,10 +8,10 @@ import Navbar from "./sections/navigation/Navbar";
 import FooterHome from "./sections/navigation/Footer";
 import Home from "./pages/Home";
 import ServicesPage from "./pages/Services";
-import BlogPage from "./pages/Blogs";
+import ResourcesPage from "./pages/Resources";
 import TeamPage from "./pages/Team";
 import LawPage from "./pages/Law";
-import ToolsPage from "./pages/Tools";
+import ContactPage from "./pages/Contact";
 
 const App = () => {
   useEffect(() => {
@@ -25,8 +25,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/team" element={<TeamPage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/tools" element={<ToolsPage />} />
+        <Route path="/resources" element={<ResourcesPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/real-estate-law" element={<LawPage />} />
         <Route path="/family-law" element={<LawPage />} />
         <Route path="/personal-injury-law" element={<LawPage />} />

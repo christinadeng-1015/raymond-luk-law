@@ -138,77 +138,29 @@ const FooterHome = () => {
               </div>
             </div>
 
-            {/* Full Width Office Hours Button with Tooltip */}
-            <div className="flex justify-center pt-10 relative group w-full">
-              <button className="w-full px-6 py-2 bg-white text-[#10284e] font-semibold rounded hover:bg-gray-200">
-                Our Business Hours
-              </button>
-              <div className="absolute bottom-full mb-2 hidden group-hover:block bg-white text-gray-900 text-sm p-4 rounded-lg shadow-lg w-full z-20">
-                <table className="w-full text-left text-gray-900">
-                  <thead>
-                    <tr className="border-b border-gray-600">
-                      <th className="py-1">Day</th>
-                      <th className="py-1">Hours</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td className="py-1">Monday</td>
-                      <td className="py-1">10:00 AM - 6:00 PM</td>
-                    </tr>
-                    <tr>
-                      <td className="py-1">Tuesday</td>
-                      <td className="py-1">10:00 AM - 6:00 PM</td>
-                    </tr>
-                    <tr>
-                      <td className="py-1">Wednesday</td>
-                      <td className="py-1">10:00 AM - 6:00 PM</td>
-                    </tr>
-                    <tr>
-                      <td className="py-1">Thursday</td>
-                      <td className="py-1">10:00 AM - 6:00 PM</td>
-                    </tr>
-                    <tr>
-                      <td className="py-1">Friday</td>
-                      <td className="py-1">10:00 AM - 6:00 PM</td>
-                    </tr>
-                    <tr>
-                      <td className="py-1">Saturday</td>
-                      <td className="py-1">Closed</td>
-                    </tr>
-                    <tr>
-                      <td className="py-1">Sunday</td>
-                      <td className="py-1">Closed</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+            <div className="flex space-x-16 pt-10 justify-center">
+              {footer.socialLinks.map((social, index) => (
+                <a
+                  href={social.link}
+                  key={index}
+                  className="text-white text-xl hover:text-gray-300"
+                >
+                  <social.icon />
+                </a>
+              ))}
             </div>
           </div>
         </div>
 
-        <hr className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-200 to-transparent opacity-100" />
+        <hr className="my-6 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-200 to-transparent opacity-100" />
 
         {/* Social Links and Disclaimer */}
-        <div className="w-full flex flex-col md:flex-col items-center md:justify-center text-center md:space-y-4">
-          {/* Social Links */}
-          <div className="flex space-x-6 mb-4 md:mb-0">
-            {footer.socialLinks.map((social, index) => (
-              <a
-                href={social.link}
-                key={index}
-                className="text-white text-xl hover:text-gray-300"
-              >
-                <social.icon />
-              </a>
-            ))}
-          </div>
-
+        <div className="w-full flex flex-col md:flex-col items-center md:justify-center text-center">
           {/* Corporation and Disclaimer */}
           <div className="flex flex-col items-center md:flex-row text-white text-sm">
             <p className="font-light">{footer.corporation}</p>
             <span className="px-2 hidden md:inline">|</span>
-            <span className="relative group cursor-pointer mt-2 md:mt-0">
+            <span className="relative group cursor-pointer">
               <button className="underline hover:no-underline">
                 Disclaimer
               </button>

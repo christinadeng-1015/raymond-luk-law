@@ -47,22 +47,22 @@ const Team = () => {
 
       <div className="w-full p-8 mt-32 flex flex-col justify-center items-center">
         <h5 className="text-xl text-center text-gray-900 mb-8 font-semibold italic">
-          We provide legal services in:
+          We speak your language
         </h5>
-        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-7 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8">
           {languages.map((language) => (
             <div
               key={language.name}
               className="flex flex-col items-center w-40 px-4 py-4 text-gray-800 font-medium"
             >
-              <span className="mb-4 text-center whitespace-nowrap">
-                {language.name}
-              </span>
               <img
                 src={language.flag}
                 alt={`${language.name} flag`}
-                className="w-20 h-20"
+                className="w-12 h-12"
               />
+              <span className="mb-4 text-center whitespace-nowrap text-sm">
+                {language.name}
+              </span>
             </div>
           ))}
         </div>

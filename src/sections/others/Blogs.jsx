@@ -1,14 +1,26 @@
-import image from "../../assets/about.jpg";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Modal } from "flowbite-react";
+import { HiOutlinePlay, HiX } from "react-icons/hi";
+import image from "../../assets/about.jpg";
 
 const Blogs = () => {
   const { t } = useTranslation("main");
   const blogs = t("blogs", { returnObjects: true });
 
+  const [openModal, setOpenModal] = useState(false);
+  const [currentVideo, setCurrentVideo] = useState("");
+
+  const handleVideoOpen = (videoUrl) => {
+    const embedUrl = videoUrl.replace("watch?v=", "embed/");
+    setCurrentVideo(embedUrl);
+    setOpenModal(true);
+  };
+
   return (
     <section
       id="blogs"
-      className="flex justify-center items-center shadow-lg relative z-10 flex-col py-48"
+      className="flex justify-center items-center shadow-lg relative z-10 flex-col pt-48"
     >
       <h3 className="text-2xl text-center text-gray-800 py-8 font-semibold">
         {t("blogTitle")}
@@ -19,8 +31,19 @@ const Blogs = () => {
             key={blog.title}
             className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
           >
-            <div>
-              <img className="rounded-t-lg" src={image} alt={blog.title} />
+            {/* Video Thumbnail */}
+            <div
+              onClick={() => handleVideoOpen(blog.videoUrl)}
+              className="relative cursor-pointer"
+            >
+              <img
+                className="rounded-t-lg object-cover w-full h-48"
+                src={image}
+                alt={blog.title}
+              />
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-t-lg">
+                <HiOutlinePlay className="text-white text-6xl" />
+              </div>
             </div>
             <div className="p-5">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -54,6 +77,34 @@ const Blogs = () => {
           </div>
         ))}
       </div>
+
+      {/* Full-Screen Video Modal */}
+      <Modal
+        show={openModal}
+        onClose={() => setOpenModal(false)}
+        size="6xl"
+        className="fixed inset-0 flex items-center justify-center w-full h-full z-50"
+      >
+        <Modal.Body className="relative w-full h-full">
+          {/* Close Button */}
+          <button
+            onClick={() => setOpenModal(false)}
+            className="absolute top-4 right-4 z-50 text-white bg-black bg-opacity-50 hover:bg-opacity-75 rounded-full p-2"
+          >
+            <HiX className="w-6 h-6" />
+          </button>
+          <div className="absolute inset-0 w-full h-[98vh]">
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src={currentVideo}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </Modal.Body>
+      </Modal>
     </section>
   );
 };
