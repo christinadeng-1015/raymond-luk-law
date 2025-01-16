@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import homepage from "../../assets/homepage.jpg";
 
 const Header = () => {
   const [offsetY, setOffsetY] = useState(0);
@@ -50,7 +49,7 @@ const Header = () => {
       <div
         className="absolute top-1/2 left-1/2 w-full h-full bg-cover bg-no-repeat bg-center"
         style={{
-          backgroundImage: `url(${homepage})`,
+          backgroundImage: 'url(https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993194/homepage_uvcqdg.jpg)',
           transform: `translate(-50%, -50%) translateY(${offsetY * 0.5}px)`,
         }}
       ></div>

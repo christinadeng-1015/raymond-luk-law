@@ -9,7 +9,6 @@ import personalInjury from "../../assets/service/personal-injury.png";
 import immigration from "../../assets/service/immigration.png";
 import corporateLaw from "../../assets/service/corporate-law.jpg";
 import otherServices from "../../assets/service/other-services.jpg";
-import lawBackgroundImg from '../../assets/banner/law-background.jpg'
 
 const images = {
   "real-estate.jpg": realEstate,
@@ -29,7 +28,7 @@ const Services = () => {
     <section className="bg-gray-50" id="services">
       <div className="relative w-full h-64 md:h-1/2">
         <img
-          src={lawBackgroundImg}
+          src='https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993741/law-background_wuqi3p.jpg'
           alt='banner'
           className="absolute inset-0 w-full h-full object-cover"
         />

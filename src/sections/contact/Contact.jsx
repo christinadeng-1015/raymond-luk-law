@@ -7,7 +7,6 @@ import officeHourImage from '../../assets/office/office-hour.jpg';
 import office1Image from '../../assets/office/office-1.jpg';
 import office2Image from '../../assets/office/office-2.jpg';
 import office3Image from '../../assets/office/office-3.jpeg';
-import contactBackgroundImg from '../../assets/banner/contact.jpg';
 
 const Contact = () => {
 
@@ -40,7 +39,7 @@ const Contact = () => {
     <div id="contact" className="mx-auto">
       <div className="relative w-full h-64 md:h-1/2">
         <img
-          src={contactBackgroundImg}
+          src='https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993741/contact_kbh0ed.jpg'
           alt='banner'
           className="absolute inset-0 w-full h-full object-cover"
         />

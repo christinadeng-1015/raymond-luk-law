@@ -7,7 +7,6 @@ import korean from "../../assets/language/south-korea.png";
 import farsi from "../../assets/language/iran.png";
 import ukrainian from "../../assets/language/ukraine.png";
 import russian from "../../assets/language/russia.png";
-import teamBackgroundImg from '../../assets/banner/team-background.jpg';
 
 const Team = () => {
   const { t } = useTranslation("team");
@@ -28,7 +27,7 @@ const Team = () => {
     <div>
       <div className="relative w-full h-64 md:h-1/2">
         <img
-          src={teamBackgroundImg}
+          src='https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993741/team-background_fnyd0m.jpg'
           alt='banner'
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -42,13 +41,6 @@ const Team = () => {
       className="flex pt-16 relative flex-col max-w-screen-2xl mx-auto"
       id="team"
     >
-      {/* Team Section */}
-      {/* <div className="w-full p-8 flex flex-col justify-center">
-        <h3 className="text-3xl text-center text-gray-900 mb-2 font-semibold pb-16">
-          {title}
-        </h3>
-      </div> */}
-
       <div
         className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-auto"
         data-aos="fade-right"

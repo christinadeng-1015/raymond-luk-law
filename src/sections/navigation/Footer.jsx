@@ -1,7 +1,5 @@
 import { Footer, Tooltip } from "flowbite-react";
 import { BsDribbble, BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
-import RLLogo from "../../assets/RL_logo.png";
-import LawLogo from "../../assets/law.png";
 import Form from "./Form";
 
 const FooterHome = () => {
@@ -52,7 +50,7 @@ const FooterHome = () => {
       <div className="w-full max-w-screen-2xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between mb-8 items-center gap-8">
           <img
-            src={RLLogo}
+            src='https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993348/RL_logo_edvn9k.png'
             alt="logo"
             className="w-40 object-contain mb-4 md:mb-0"
           />
@@ -78,7 +76,7 @@ const FooterHome = () => {
             </Tooltip>
           </a>
           <img
-            src={LawLogo}
+            src='https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993359/law_zu7rqc.png'
             alt="Law Logo"
             className="w-48 object-contain mt-4 md:mt-0"
           />

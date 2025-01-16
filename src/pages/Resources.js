@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import Tools from "../sections/others/Tools";
 import Videos from "../sections/others/Videos";
-import resourceBackgroundImg from '../assets/banner/resources.jpg'
 
 export default function ResourcesPage() {
   const mainRef = useRef();
@@ -13,7 +12,7 @@ export default function ResourcesPage() {
     >
       <div className="relative w-full h-64 md:h-1/2">
         <img
-          src={resourceBackgroundImg}
+          src='https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993741/resources_bdi4sb.jpg'
           alt='banner'
           className="absolute inset-0 w-full h-full object-cover"
         />

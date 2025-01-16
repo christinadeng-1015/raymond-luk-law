@@ -13,7 +13,6 @@ import {
   AiOutlineMenu,
   AiOutlineMail
 } from "react-icons/ai";
-import RLLogo from "../../assets/RL_logo.png";
 
 const Nav = () => {
   const { t, i18n } = useTranslation("navbar");
@@ -69,7 +68,7 @@ const Nav = () => {
         } ${visible ? "translate-y-0" : "-translate-y-full"} ease-in-out overflow-visible`}
       >
         <Navbar.Brand href="/" className="flex-shrink-0 flex flex-start">
-          <img src={RLLogo} alt={"logo"} className="w-24 object-contain" />
+          <img src='https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993348/RL_logo_edvn9k.png' alt={"logo"} className="w-24 object-contain" />
         </Navbar.Brand>
 
         <button

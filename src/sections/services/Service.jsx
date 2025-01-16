@@ -1,24 +1,6 @@
 import { useTranslation } from "react-i18next";
 import ServicesTabs from "./ServicesTabs";
 import { Link } from "react-router-dom";
-// import realEstateLawImg from "../../assets/service/real-estate.jpg";
-// import familyLawImg from "../../assets/service/family-law.jpg";
-// import willImg from "../../assets/service/will.jpg";
-// import personalInjuryImg from "../../assets/service/personal-injury.png";
-// import immigrationImg from "../../assets/service/immigration.jpg";
-// import corporateLawImg from "../../assets/service/corporate-law.jpg";
-// import otherServicesImg from "../../assets/service/other-services.jpg";
-import lawBackgroundImg from '../../assets/banner/law-background.jpg'
-
-// const images = {
-//   "real-estate.jpg": realEstateLawImg,
-//   "family-law.jpg": familyLawImg,
-//   "will.jpg": willImg,
-//   "personal-injury.png": personalInjuryImg,
-//   "immigration.jpg": immigrationImg,
-//   "corporate-law.jpg": corporateLawImg,
-//   "other-services.jpg": otherServicesImg,
-// };
 
 const categoryLinks = [
   { path: "/real-estate-law", name: "Real Estate Law" },
@@ -45,7 +27,7 @@ export function Service() {
       {/* Banner */}
       <div className="relative w-full h-64 md:h-1/2">
         <img
-          src={lawBackgroundImg}
+          src='https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993741/law-background_wuqi3p.jpg'
           alt={service ? service.title : "Service Banner"}
           className="absolute inset-0 w-full h-full object-cover"
         />
