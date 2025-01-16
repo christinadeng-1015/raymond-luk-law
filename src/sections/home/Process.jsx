@@ -1,4 +1,4 @@
-import { Timeline } from "flowbite-react";
+import React, { useState, useEffect } from "react";
 import {
   HiOutlineCalendar,
   HiOutlineLightBulb,
@@ -7,124 +7,104 @@ import {
 } from "react-icons/hi";
 
 const Process = () => {
+  const steps = [
+    {
+      title: "Free Initial Consultation",
+      description: "Schedule a call with our staff to understand your needs.",
+      icon: <HiOutlineCalendar />,
+    },
+    {
+      title: "Appointments",
+      description:
+        "In-person or virtual appointments with a lawyer. *First 15 minutes free.",
+      icon: <HiOutlineLightBulb />,
+    },
+    {
+      title: "Work & Communication",
+      description: "Start paperwork and provide a detailed timeline.",
+      icon: <HiOutlineClipboardList />,
+    },
+    {
+      title: "Result",
+      description: "Deliver the best possible result for our customers.",
+      icon: <HiOutlineCheckCircle />,
+    },
+  ];
+
+  const [activeStep, setActiveStep] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveStep((prevStep) => (prevStep + 1) % steps.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [steps.length]);
+
+  const handleStepClick = (index) => {
+    setActiveStep(index);
+  };
+
   return (
-    <div className="w-full py-40 shadow-lg relative z-10 overflow-x-scroll bg-[#10284e]">
-      <div className="max-w-screen-2xl mx-auto">
-        <h3 className="text-3xl text-center text-gray-900 mb-2 font-semibold pb-16 text-white">
+    <div className="w-full py-20 bg-[#10284e] text-white">
+      <div className="max-w-screen-xl mx-auto px-6 sm:px-12">
+        <h3 className="text-4xl text-center font-bold mb-16 tracking-wide text-white">
           Our Process
         </h3>
-        <div className="flex justify-center">
-          <Timeline horizontal>
-            <Timeline.Item
-              className="mx-20 my-8 md:mx-8"
-              style={{ flexBasis: "20%" }}
+        <div className="hidden lg:flex relative items-center justify-between">
+          <div className="absolute top-1/2 transform -translate-y-1/2 left-0 right-0 h-1 bg-[#1b375f] z-0"></div>
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              className={`relative flex flex-col items-center w-1/4 group transition-transform duration-300 ${
+                activeStep === index ? "" : "opacity-50"
+              }`}
+              onClick={() => handleStepClick(index)}
+              style={{ cursor: "pointer" }}
             >
-              <Timeline.Point
-                icon={() => (
-                  <div
-                    className="p-4 rounded-full flex flex-row"
-                    style={{
-                      background: "#10284e",
-                    }}
-                  >
-                    <HiOutlineCalendar className="text-white text-4xl" />
-                  </div>
-                )}
-              />
-              <hr className="h-px my-6 border-t-0 bg-gradient-to-r from-transparent via-neutral-200 to-transparent opacity-100" />
-              <Timeline.Content className="ml-12 ">
-                <Timeline.Title className="text-white">
-                  Free Initial Consultation
-                </Timeline.Title>
-                <Timeline.Time className="text-white">
-                  Schedule a call with staffs
-                </Timeline.Time>
-              </Timeline.Content>
-            </Timeline.Item>
-
-            {/* Step 2 */}
-            <Timeline.Item
-              className="mx-20 my-8 md:mx-8"
-              style={{ flexBasis: "20%" }}
+              <div className="relative z-10 p-6 rounded-full mb-6 shadow-lg flex items-center justify-center bg-[#1b375f] transition-colors duration-300 bg-blue-400">
+                <div className="text-4xl">{step.icon}</div>
+              </div>
+              <h4 className="text-xl font-bold mb-4 text-white text-center">
+                {step.title}
+              </h4>
+              <p
+                className={`text-sm leading-relaxed text-center text-white transition-opacity duration-300 ${
+                  activeStep === index ? "opacity-100" : "opacity-0"
+                }`}
+              >
+                {step.description}
+              </p>
+            </div>
+          ))}
+        </div>
+        <div className="flex lg:hidden flex-col items-center relative">
+          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#1b375f] z-0"></div>
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              className={`relative flex flex-col items-center w-full mb-12 group transition-transform duration-300 ${
+                activeStep === index ? "" : "opacity-50"
+              }`}
+              onClick={() => handleStepClick(index)}
+              style={{ cursor: "pointer" }}
             >
-              <Timeline.Point
-                icon={() => (
-                  <div
-                    className="p-4 rounded-full"
-                    style={{
-                      background: "#10284e",
-                    }}
-                  >
-                    <HiOutlineLightBulb className="text-white text-4xl" />
-                  </div>
-                )}
-              />
-              <hr className="h-px my-6 border-t-0 bg-gradient-to-r from-transparent via-neutral-200 to-transparent opacity-100" />
-              <Timeline.Content className="ml-12">
-                <Timeline.Title className="text-white">
-                  Appointments
-                </Timeline.Title>
-                <Timeline.Time className="text-white">
-                  In person or virtual appointment with lawyer * First 15 min
-                  for free
-                </Timeline.Time>
-              </Timeline.Content>
-            </Timeline.Item>
-
-            {/* Step 3 */}
-            <Timeline.Item
-              className="mx-20 my-8 md:mx-8"
-              style={{ flexBasis: "20%" }}
-            >
-              <Timeline.Point
-                icon={() => (
-                  <div
-                    className="p-4 rounded-full"
-                    style={{
-                      background: "#10284e",
-                    }}
-                  >
-                    <HiOutlineClipboardList className="text-white text-4xl" />
-                  </div>
-                )}
-              />
-              <hr className="h-px my-6 border-t-0 bg-gradient-to-r from-transparent via-neutral-200 to-transparent opacity-100" />
-              <Timeline.Content className="ml-12">
-                <Timeline.Title className="text-white">
-                  Work & Communication
-                </Timeline.Title>
-                <Timeline.Time className="text-white">
-                  Start on the paper work and provide timeline
-                </Timeline.Time>
-              </Timeline.Content>
-            </Timeline.Item>
-
-            {/* Step 4 */}
-            <Timeline.Item
-              className="mx-20 my-8 md:mx-8"
-              style={{ flexBasis: "20%" }}
-            >
-              <Timeline.Point
-                icon={() => (
-                  <div
-                    className="p-4 rounded-full"
-                    style={{
-                      background: "#10284e",
-                    }}
-                  >
-                    <HiOutlineCheckCircle className="text-white text-4xl" />
-                  </div>
-                )}
-              />
-              <Timeline.Content className="ml-12">
-                <hr className="h-px my-6 border-t-0 bg-gradient-to-r from-transparent via-neutral-200 to-transparent opacity-100" />
-                <Timeline.Title className="text-white">Result</Timeline.Title>
-                <Timeline.Time className="text-white">
-                  Delivery the best result for our customers
-                </Timeline.Time>
-              </Timeline.Content>
-            </Timeline.Item>
-          </Timeline>
+              <div className="absolute w-8 h-8 bg-[#1b375f] border-4 border-[#256199] rounded-full z-10"></div>
+              <div className="relative z-10 p-6 rounded-full mb-4 shadow-lg flex items-center justify-center bg-[#1b375f] transition-colors duration-300 bg-blue-400">
+                <div className="text-4xl">{step.icon}</div>
+              </div>
+              <h4 className="text-xl font-bold mb-4 text-center text-white">
+                {step.title}
+              </h4>
+              <p
+                className={`text-sm leading-relaxed text-center text-white transition-opacity duration-300 ${
+                  activeStep === index ? "opacity-100" : "opacity-0"
+                }`}
+              >
+                {step.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

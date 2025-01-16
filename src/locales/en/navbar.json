@@ -32,7 +32,7 @@
           ]
         },
         { "key": "resources", "label": "Resources", "url": "/resources", "icon": "AiOutlineRead"},
-        { "key": "contact", "label": "Contact", "url": "/contact", "icon": "AiOutlineRead"},
+        { "key": "contact", "label": "Contact", "url": "/contact", "icon": "AiOutlineMail"},
         {
           "key": "language",
           "label": "Language",

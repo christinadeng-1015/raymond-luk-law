@@ -1,5 +1,5 @@
 import React from "react";
-import officeImg from "../../assets/office.jpeg";
+import officeImg from "../../assets/office/office.jpeg";
 
 const ParallaxSection = () => {
   return (

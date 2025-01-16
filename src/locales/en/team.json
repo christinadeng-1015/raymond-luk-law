@@ -92,6 +92,14 @@
             "image": "camila-su",
             "education": ["B.Sc., University of Waterloo"],
             "phone": ["905-667-6499", "905-849-3583"]
+        },
+        {
+            "name": "Kathy Liang",
+            "position": "Legal Intern",
+            "description": "Kathy holds an undergraduate degree from Queen’s University and is currently enrolled in the Accelerated Paralegal Program at Seneca Polytechnic. As a legal intern, she is actively gaining valuable hands-on experience working alongside our skilled team. Kathy is passionate about law and dedicated to enhancing the client experience. Kathy can speak English and Cantonese.",
+            "image": "kathy-liang",
+            "education": ["B.Sc., Queen's University"],
+            "phone": ["905-667-6499", "905-849-3583"]
         }
     ]
 }

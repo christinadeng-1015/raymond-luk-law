@@ -7,10 +7,10 @@ import korean from "../../assets/language/south-korea.png";
 import farsi from "../../assets/language/iran.png";
 import ukrainian from "../../assets/language/ukraine.png";
 import russian from "../../assets/language/russia.png";
+import teamBackgroundImg from '../../assets/banner/team-background.jpg';
 
 const Team = () => {
   const { t } = useTranslation("team");
-  const title = t("title", { returnObjects: false });
   const team = t("team", { returnObjects: true });
 
   // Array of language names and corresponding flag images
@@ -25,16 +25,29 @@ const Team = () => {
   ];
 
   return (
+    <div>
+      <div className="relative w-full h-64 md:h-1/2">
+        <img
+          src={teamBackgroundImg}
+          alt='banner'
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="relative z-10 h-full flex items-center bg-black bg-opacity-30 pt-24 pl-10 md:pl-24 lg:pl-48">
+            <h1 className="text-4xl md:text-5xl font-bold text-white">
+              Meet Our Team
+            </h1>
+        </div>
+      </div>
     <div
-      className="flex py-24 relative flex-col max-w-screen-2xl mx-auto"
+      className="flex pt-16 relative flex-col max-w-screen-2xl mx-auto"
       id="team"
     >
       {/* Team Section */}
-      <div className="w-full p-8 flex flex-col justify-center">
+      {/* <div className="w-full p-8 flex flex-col justify-center">
         <h3 className="text-3xl text-center text-gray-900 mb-2 font-semibold pb-16">
           {title}
         </h3>
-      </div>
+      </div> */}
 
       <div
         className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-auto"
@@ -45,7 +58,7 @@ const Team = () => {
         ))}
       </div>
 
-      <div className="w-full p-8 mt-32 flex flex-col justify-center items-center">
+      <div className="w-full p-8 mt-32 flex flex-col justify-center items-center ">
         <h5 className="text-xl text-center text-gray-900 mb-8 font-semibold italic">
           We speak your language
         </h5>
@@ -58,7 +71,7 @@ const Team = () => {
               <img
                 src={language.flag}
                 alt={`${language.name} flag`}
-                className="w-12 h-12"
+                className="w-10 h-10"
               />
               <span className="mb-4 text-center whitespace-nowrap text-sm">
                 {language.name}
@@ -67,6 +80,7 @@ const Team = () => {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 };

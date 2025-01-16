@@ -45,7 +45,8 @@ const Header = () => {
   };
 
   return (
-    <header id="header" className="relative w-full h-screen overflow-hidden ">
+    <header id="header" className="relative w-full h-screen overflow-hidden">
+      {/* Background Image */}
       <div
         className="absolute top-1/2 left-1/2 w-full h-full bg-cover bg-no-repeat bg-center"
         style={{
@@ -54,13 +55,17 @@ const Header = () => {
         }}
       ></div>
 
-      <div className="absolute top-0 left-0 w-full md:w-2/3 h-full flex justify-between items-center px-4 md:px-20 mt-10">
+      {/* Main Content */}
+      <div className="absolute top-0 left-0 w-full lg:w-2/3 h-full flex justify-between items-center px-4 md:px-20 mt-10">
+        {/* Previous Slide Button */}
         <button
           onClick={handlePrev}
           className="text-white hover:text-gray-300 transition duration-300 text-3xl md:text-4xl"
         >
           <IoIosArrowBack />
         </button>
+
+        {/* Slide Content */}
         <div className="relative w-full lg:w-1/2 text-center">
           <h1
             data-aos="zoom-out"
@@ -87,6 +92,7 @@ const Header = () => {
           </div>
         </div>
 
+        {/* Next Slide Button */}
         <button
           onClick={handleNext}
           className="text-white hover:text-gray-300 transition duration-300 text-3xl md:text-4xl"
@@ -96,7 +102,7 @@ const Header = () => {
       </div>
 
       {/* Drawer */}
-      {/* <div
+      <div
         className={`fixed bottom-0 md:bottom-auto md:right-0 w-full md:w-1/4 h-1/2 md:h-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${
           isDrawerOpen
             ? "translate-y-0 md:translate-x-0"
@@ -108,16 +114,14 @@ const Header = () => {
             onClick={handleDrawerToggle}
             className="absolute right-4 top-4 text-gray-500 hover:text-gray-700"
           >
-            <AiOutlineClose size={24} />
+            Close
           </button>
           <h5 className="text-xl font-medium text-gray-900 mb-4">
             Get in Touch
           </h5>
-          <div className="w-full max-w-xs md:max-w-lg">
-            <Form />
-          </div>
+          {/* Add your form or additional content here */}
         </div>
-      </div> */}
+      </div>
     </header>
   );
 };

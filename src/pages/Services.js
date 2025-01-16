@@ -6,9 +6,7 @@ export default function ServicesPage() {
 
   return (
     <main ref={mainRef} style={{ overflow: "hidden" }}>
-      <div className="py-48">
         <Services />
-      </div>
     </main>
   );
 }

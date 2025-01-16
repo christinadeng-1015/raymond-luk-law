@@ -15,7 +15,7 @@ const Tools = () => {
   });
 
   return (
-    <div className="flex flex-col items-center py-48 lg:py-72 bg-white shadow-lg relative z-10">
+    <div className="flex flex-col items-center py-24 lg:py-32  bg-white shadow-lg relative z-10">
       <h3 className="text-2xl text-center text-gray-800 pb-10 font-semibold px-12">
         {t("toolsTitle")}
       </h3>

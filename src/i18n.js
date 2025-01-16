@@ -27,8 +27,7 @@ const resources = {
     services: servicesZH,
     team: teamZH,
     faqs: faqZH,
-  },
-  // Add other languages here
+  }
 };
 
 i18n.use(initReactI18next).init({

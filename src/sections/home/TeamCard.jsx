@@ -17,6 +17,7 @@ import jessicaChenImg from "../../assets/team/jessica-chen.jpg";
 import angelaTsuiImg from "../../assets/team/angela-tsui.jpg";
 import rachelChanImg from "../../assets/team/rachel-chan.jpg";
 import camilaSuImg from "../../assets/team/camila-su.jpg";
+import kathyLiangImg from '../../assets/team/kathy-liang.jpeg'
 
 const TeamCard = ({ member }) => {
   const { t } = useTranslation("team");
@@ -35,6 +36,7 @@ const TeamCard = ({ member }) => {
     "angela-tsui": angelaTsuiImg,
     "rachel-chan": rachelChanImg,
     "camila-su": camilaSuImg,
+    "kathy-liang": kathyLiangImg
   };
 
   return (
@@ -56,7 +58,7 @@ const TeamCard = ({ member }) => {
           </div>
         </div>
         <h4 className="mt-4 mb-2 font-semibold tracking-wide">{member.name}</h4>
-        <p className="text-sm text-gray-500 tracking-tight italic font-light underline">
+        <p className="text-sm text-gray-500 tracking-tight font-light underline">
           {member.position}
         </p>
       </button>

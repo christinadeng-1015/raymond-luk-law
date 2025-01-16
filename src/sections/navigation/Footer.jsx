@@ -1,4 +1,4 @@
-import { Footer } from "flowbite-react";
+import { Footer, Tooltip } from "flowbite-react";
 import { BsDribbble, BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 import RLLogo from "../../assets/RL_logo.png";
 import LawLogo from "../../assets/law.png";
@@ -62,13 +62,20 @@ const FooterHome = () => {
             style={{ display: "inline-block", border: 0 }}
             rel="noreferrer"
           >
-            <img
-              src="https://legaldirectorate.ca/awards/2024/2/31/3e407a83b4ab1ea59f324a758d86d312/BestOf-Markham-i250-2024.svg"
-              style={{ width: 250, display: "block" }}
-              width="250"
-              height="100"
-              alt="Best Family Law Attorneys in Markham"
-            />
+            <Tooltip
+              content="Best in Markham for Family Law"
+              placement="bottom"
+              // eslint-disable-next-line react/style-prop-object
+              style="light"
+            >
+              <img
+                src="https://legaldirectorate.ca/awards/2024/2/31/3e407a83b4ab1ea59f324a758d86d312/BestOf-Markham-i250-2024.svg"
+                style={{ width: 250, display: "block" }}
+                width="250"
+                height="100"
+                alt="Best Family Law Attorneys in Markham"
+              />
+            </Tooltip>
           </a>
           <img
             src={LawLogo}
@@ -138,12 +145,12 @@ const FooterHome = () => {
               </div>
             </div>
 
-            <div className="flex space-x-16 pt-10 justify-center">
+            <div className="flex lg:space-x-8 pt-10 justify-center">
               {footer.socialLinks.map((social, index) => (
                 <a
                   href={social.link}
                   key={index}
-                  className="text-white text-xl hover:text-gray-300"
+                  className="px-10 text-white text-3xl hover:text-gray-300 transition-transform transform hover:scale-110"
                 >
                   <social.icon />
                 </a>

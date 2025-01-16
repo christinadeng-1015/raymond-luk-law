@@ -29,6 +29,18 @@ const Form = () => {
       </div>
 
       <div>
+        <Label htmlFor="phone" value="Your Phone Number" />
+        <TextInput
+          id="phone"
+          type="phone"
+          placeholder=""
+          required
+          className="mt-2 w-full"
+          rightIcon={HiMail}
+        />
+      </div>
+
+      <div>
         <Label htmlFor="inquiry" value="Reason for Inquiry" />
         <select
           id="inquiry"
@@ -56,11 +68,7 @@ const Form = () => {
 
       <Button
         type="submit"
-        className="mt-4 w-full shadow-lg"
-        style={{
-          background:
-            "linear-gradient(to top left, rgb(14, 116, 144), rgb(10, 85, 105))",
-        }}
+        className="mt-4 w-full shadow-lg bg-[#10284e]"
       >
         Submit
       </Button>
