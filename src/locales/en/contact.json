@@ -1,5 +1,21 @@
 {
-    "title": "Get In Touch Today",
+    "table": {
+        "title": "Business Hours",
+        "header": {"day": "Day", "hours": "Hours"},
+        "daysAndHours": 
+        [{ "day": "Monday", "hours": "10:00 AM - 6:00 PM" },
+        { "day": "Tuesday", "hours": "10:00 AM - 6:00 PM" },
+        { "day": "Wednesday", "hours": "10:00 AM - 6:00 PM" },
+        { "day": "Thursday", "hours": "10:00 AM - 6:00 PM" },
+        { "day": "Friday", "hours": "10:00 AM - 6:00 PM" },
+        { "day": "Saturday", "hours": "By appointment only" },
+        { "day": "Sunday", "hours": "By appointment only" }],
+        "note": "If you would like to visit us in person for legal consultation, please call us to book an appointment.",
+        "holidayNote": "Holiday hours may vary.",
+        "holidayUpdate": "Closed Wednesday, January 29, for Lunar New Year."
+
+    },
+    "officeImages": [],
     "subtitle": "Experienced, reliable, and professional legal experts in a wide variety of practice areas",
     "processTitle": "Our Process",
     "process": [

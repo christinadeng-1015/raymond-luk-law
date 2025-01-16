@@ -1,0 +1,29 @@
+{
+    "table": {
+        "title": "办公时间",
+        "header": {
+        "day": "星期",
+        "hours": "时间"
+        },
+        "daysAndHours": [
+        { "day": "星期一", "hours": "上午10:00 - 下午6:00" },
+        { "day": "星期二", "hours": "上午10:00 - 下午6:00" },
+        { "day": "星期三", "hours": "上午10:00 - 下午6:00" },
+        { "day": "星期四", "hours": "上午10:00 - 下午6:00" },
+        { "day": "星期五", "hours": "上午10:00 - 下午6:00" },
+        { "day": "星期六", "hours": "仅限预约" },
+        { "day": "星期日", "hours": "仅限预约" }
+        ],
+        "note": "如果您希望亲自到访进行法律咨询，请致电与我们预约。",
+        "holidayNote": "节假日时间可能会有所不同。",
+        "holidayUpdate": "因农历新年，办公室因春节于1月29日（星期三）关闭。"
+    },
+    "subtitle": "Experienced, reliable, and professional legal experts in a wide variety of practice areas",
+    "processTitle": "Our Process",
+    "process": [
+        {"title": "Free Initial Consultation", "subtitle": "Schedule a call with staffs"},
+        {"title": "Appointments", "subtitle": "In person or virtual appointment with lawyer * First 15 min for free"},
+        {"title": "Work & Ongoing Communication", "subtitle": "Start on the paper work and provide timeline"},
+        {"title": "Result", "subtitle": "Delivery the best result for our customers"}
+    ]
+}

@@ -6,12 +6,14 @@ import navbarEN from "./locales/en/navbar.json";
 import servicesEN from "./locales/en/services.json";
 import teamEN from "./locales/en/team.json";
 import faqEN from "./locales/en/faqs.json";
+import contactEN from "./locales/en/contact.json";
 
 import mainZH from "./locales/zh/zh.json";
 import navbarZH from "./locales/zh/navbar.json";
 import servicesZH from "./locales/zh/services.json";
 import teamZH from "./locales/zh/team.json";
 import faqZH from "./locales/zh/faqs.json";
+import contactZH from "./locales/zh/contact.json";
 
 const resources = {
   en: {
@@ -20,6 +22,7 @@ const resources = {
     services: servicesEN,
     team: teamEN,
     faqs: faqEN,
+    contact: contactEN
   },
   zh: {
     main: mainZH,
@@ -27,6 +30,7 @@ const resources = {
     services: servicesZH,
     team: teamZH,
     faqs: faqZH,
+    contact: contactZH
   }
 };
 
