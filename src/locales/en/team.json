@@ -1,105 +1,194 @@
 {
-    "title": "Meet Our Team",
-    "subtitle": "Experienced, reliable, and professional legal experts in a wide variety of practice areas",
-    "heading": {
-        "meet": "Meet",
-        "contact": "Contact",
-        "education": "Education and Licenses"
+  "title": "Meet Our Team",
+  "heading": {
+    "meet": "Meet",
+    "contact": "Contact",
+    "education": "Education and Licenses",
+    "language": "We speak your language"
+  },
+  "team": [
+    {
+      "name": "Raymond Luk",
+      "position": "Lawyer",
+      "description": "Raymond practices in the areas of Personal Injury, Real Estate, Family Law and Wills and Estates. He has represented clients in various proceedings before the Ontario Superior Court of Justice, the Licensed Appeal Tribunal, and the Human Rights Tribunal of Ontario. <br/><br/> Raymond is a fierce advocate that is keenly aware of the uniqueness of each of his clients. As such, he believes in creating tailored solutions for each of them.",
+      "image": "/assets/team/raymond-luk.jpg",
+      "education": [
+        "B.A. (Hons.) University of Toronto",
+        "J.D. Queen's University",
+        "Barrister and Solicitor",
+        "Notary Public"
+      ],
+      "phone": [
+        { "number": "905-333-1740", "description": "Ext.168 (Office)" },
+        { "number": "905-849-3583", "description": "(Fax)" }
+      ],
+      "email": "rluk@luklawpc.com",
+      "desc": "* Currently practicing through Shan Luk Professional Corporation"
     },
-    "team": [
-        {
-            "name": "Raymond Luk",
-            "position": "Lawyer",
-            "description": "Raymond practices in the areas of Personal Injury, Real Estate, Family Law and Wills and Estates. He has represented clients in various proceedings before the Ontario Superior Court of Justice, the Licensed Appeal Tribunal, and the Human Rights Tribunal of Ontario. <br/><br/> Raymond is a fierce advocate that is keenly aware of the uniqueness of each of his clients. As such, he believes in creating tailored solutions for each of them.",
-            "image": "raymond-luk",
-            "education": ["B.A. (Hons.) University of Toronto", "J.D. Queen's University", "Barrister and Solicitor", "Notary Public"],
-            "phone": ["905-333-1740", "905-849-3583"],
-            "email": "rluk@luklawpc.com"
-        },
-        {
-            "name": "Eiman Sharifpour",
-            "position": "Family Law Consultant",
-            "description": "Eiman Sharifpour (Iman) is a licensed lawyer with expertise in the field of Family Law. Iman is passionate about getting a fair resolution for his clients and will fight tirelessly for their rights. Iman has advocated for clients in a variety of family matters at the Ontario Court of Justice and Superior Court of Justice.",
-            "image": "eiman-sharifpour",
-            "education": ["B.Sc York University", "J.D. University of Windsor", "Barrister and Solicitor", "Notary Public"],
-            "phone": ["905-291-1802", "905-849-3583"],
-            "email": "esharifpour@luklawpc.com"
-        },
-        {
-            "name": "Christine Guan",
-            "position": "Senior Licensed Paralegal & Real Estate Law Clerk",
-            "description": "Christine has over 10 years of experience in the legal industry, working primarily in the area of accident benefits and tort before transitioning to her work in real estate now. <br/><br/> Christine possesses a deep understanding of real estate law and transactional processes, facilitating seamless transactions and ensuring our clients' interests are protected at every step. With a meticulous attention to detail and exceptional organizational skills, she handles all aspects of real estate transactions. <br/><br/> Christine is fluent in Mandarin, Cantonese and English.",
-            "image": "christine-guan",
-            "phone": ["905-538 -5176 ", "905-849-3583"],
-            "email": "cguan@luklawpc.com"
-        },
-        {
-            "name": "Rebecca Tsui",
-            "position": "Receptionist",
-            "description": "Rebecca is dedicated to providing exceptional service, creating a positive first impression, and facilitating seamless interactions with our legal team. Trust Rebecca to be the friendly face and efficient hub of our firm, ensuring your experience with us begins on a positive note. <br/><br/> She is fluent in English, Cantonese, and Mandarin.",
-            "image": "rebecca-tsui",
-            "education": ["B.Soc.Sc. Hong Kong Shue Yan University"],
-            "phone": ["905-667-6499", "905-849-3583"],
-            "email": "rtsui@luklawpc.com"
-        },
-        {
-            "name": "Mandy Zhao",
-            "position": "Legal Assistant",
-            "description": "As a legal assistant, Mandy is an integral part of our team. Whether it's conducting research, scheduling appointments, or assisting with case management, Mandy is committed to delivering high-quality assistance and maintaining the highest standards of professionalism. <br/><br/> Mandy is fluent in Cantonese and English.",
-            "image": "mandy-zhao",
-            "education": ["B.Sc. (Hons.) York University"],
-            "phone": ["905-667-6496", "905-849-3583"],
-            "email": "mzhao@luklawpc.com"
-        },
-        {
-            "name": "Emma-Jane Ni",
-            "position": "Legal Assistant",
-            "description": "As a key member of the team, Emma-Jane brings exceptional organizational skills, attention to detail, and a strong commitment to client service. With extensive experience in managing case files, drafting legal documents, and coordinating communications, she ensures that our lawyers have the support needed to provide top-notch legal services. <br/><br/> Emma-Jane speaks English, French, Mandarin, and conversational Russian. ",
-            "image": "emma-jane",
-            "education": ["B.A. (Hons.) Toronto Metropolitan University"],
-            "phone": ["905-667-6496", "905-849-3583"],
-            "email": "eni@luklawpc.com"
-        },
-        {
-            "name": "Jessica Chen",
-            "position": "Social Media Manager",
-            "description": "Meet our proficient social media manager, Jessica, the creative force behind our online presence. With a keen understanding of digital trends and a strategic approach to engagement, Jessica crafts compelling content that captivates our audience and strengthens our brand identity. Jessica has many years of experience managing and content creating for different professions and she is now dedicated to helping build Luk Law's social media presence.",
-            "image": "jessica-chen",
-            "education": ["B.Sc. (Hons.) University of Toronto"],
-            "phone": ["905-667-6496", "905-849-3583"],
-            "email": "jchen@luklawpc.com"
-        },
-        {
-            "name": "Angela Tsui",
-            "position": "Bookkeeper",
-            "description": "Angela is the firm's trusted bookkeeper. With a keen eye for detail and extensive experience in the banking sector, Angela manages day-to-day financial transactions, including recording payments, processing invoices, and detailing our accounts.",
-            "image": "angela-tsui",
-            "education": ["B.A. (Hons.) University of Greenwich"],
-            "phone": ["905-667-6499", "905-849-3583"]
-        },
-        {
-            "name": "Rachel Chan",
-            "position": "Legal Intern",
-            "description": "Rachel is a bright and driven student currently pursuing her Bachelor of Arts in Business Economics at the University of Waterloo. As an aspiring law student, Rachel brings a blend of academic prowess and practical enthusiasm to our firm, eager to delve into the intricacies of legal practice. With a sharp eye for detail and a passion for learning, she assists our lawyers with research, drafting documents, and case preparation. <br/><br/> Rachel can speak English and Mandarin.",
-            "image": "rachel-chan",
-            "education": ["B.A. University of Waterloo (In progress)"],
-            "phone": ["905-667-6499", "905-849-3583"]
-        },
-        {
-            "name": "Camila Su",
-            "position": "Legal Intern",
-            "description": "Camila is a graduate of the University of Waterloo and is currently enrolled in the Accelerated Paralegal Program at Centennial College. She assists the legal team with research, drafting legal documents and preparing for client meetings. Camila brings a meticulous attention to detail and a strong work ethic to every task, contributing to the firm’s success in providing high-quality legal services. <br/><br/> Camila can speak English, Cantonese, and Mandarin.",
-            "image": "camila-su",
-            "education": ["B.Sc., University of Waterloo"],
-            "phone": ["905-667-6499", "905-849-3583"]
-        },
-        {
-            "name": "Kathy Liang",
-            "position": "Legal Intern",
-            "description": "Kathy holds an undergraduate degree from Queen’s University and is currently enrolled in the Accelerated Paralegal Program at Seneca Polytechnic. As a legal intern, she is actively gaining valuable hands-on experience working alongside our skilled team. Kathy is passionate about law and dedicated to enhancing the client experience. Kathy can speak English and Cantonese.",
-            "image": "kathy-liang",
-            "education": ["B.Sc., Queen's University"],
-            "phone": ["905-667-6499", "905-849-3583"]
-        }
-    ]
+    {
+      "name": "Eiman Sharifpour",
+      "position": "Lawyer",
+      "description": "Eiman Sharifpour (Iman) is a licensed lawyer with expertise in the field of Family Law. Iman is passionate about getting a fair resolution for his clients and will fight tirelessly for their rights. Iman has advocated for clients in a variety of family matters at the Ontario Court of Justice and Superior Court of Justice.",
+      "image": "/assets/team/eiman-sharifpour.jpg",
+      "education": [
+        "B.Sc York University",
+        "J.D. University of Windsor",
+        "Barrister and Solicitor",
+        "Notary Public"
+      ],
+      "phone": [
+        { "number": "905-291-1802", "description": "(Office)" },
+        { "number": "905-849-3583", "description": "(Fax)" }
+      ],
+      "email": "esharifpour@luklawpc.com",
+      "desc": "* Currently practicing through Iman Law Professional Corporation"
+    },
+    {
+      "name": "Christine Guan",
+      "position": "Senior Licensed Paralegal & Real Estate Law Clerk",
+      "description": "Christine has over 10 years of experience in the legal industry, working primarily in the area of accident benefits and tort before transitioning to her work in real estate now. <br/><br/> Christine possesses a deep understanding of real estate law and transactional processes, facilitating seamless transactions and ensuring our clients' interests are protected at every step. With a meticulous attention to detail and exceptional organizational skills, she handles all aspects of real estate transactions. <br/><br/> Christine is fluent in Mandarin, Cantonese and English.",
+      "image": "/assets/team/christine-guan.jpg",
+      "education": ["Senior Licensed Paralegal"],
+      "phone": [
+        { "number": "905-538-5176", "description": "(Office)" },
+        { "number": "905-849-3583", "description": "(Fax)" }
+      ],
+      "email": "cguan@luklawpc.com"
+    },
+    {
+      "name": "Rebecca Tsui",
+      "position": "Receptionist",
+      "description": "Rebecca is dedicated to providing exceptional service, creating a positive first impression, and facilitating seamless interactions with our legal team. Trust Rebecca to be the friendly face and efficient hub of our firm, ensuring your experience with us begins on a positive note. <br/><br/> She is fluent in English, Cantonese, and Mandarin.",
+      "image": "/assets/team/rebecca-tsui.jpg",
+      "education": ["B.Soc.Sc. Hong Kong Shue Yan University"],
+      "phone": [
+        { "number": "905-667-6499", "description": "(Office)" },
+        { "number": "905-849-3583", "description": "(Fax)" }
+      ],
+      "email": "rtsui@luklawpc.com"
+    },
+    {
+      "name": "Mandy Zhao",
+      "position": "Legal Assistant",
+      "description": "As a legal assistant, Mandy is an integral part of our team. Whether it's conducting research, scheduling appointments, or assisting with case management, Mandy is committed to delivering high-quality assistance and maintaining the highest standards of professionalism. <br/><br/> Mandy is fluent in Cantonese and English.",
+      "image": "/assets/team/mandy-zhao.jpg",
+      "education": ["B.Sc. (Hons.) York University"],
+      "phone": [
+        { "number": "905-667-6496", "description": "(Office)" },
+        { "number": "905-849-3583", "description": "(Fax)" }
+      ],
+      "email": "mzhao@luklawpc.com"
+    },
+    {
+      "name": "Emma-Jane Ni",
+      "position": "Legal Assistant",
+      "description": "As a key member of the team, Emma-Jane brings exceptional organizational skills, attention to detail, and a strong commitment to client service. With extensive experience in managing case files, drafting legal documents, and coordinating communications, she ensures that our lawyers have the support needed to provide top-notch legal services. <br/><br/> Emma-Jane speaks English, French, Mandarin, and conversational Russian. ",
+      "image": "/assets/team/emma-jane.jpg",
+      "education": ["B.A. (Hons.) Toronto Metropolitan University"],
+      "phone": [
+        { "number": "905-667-6496", "description": "(Office)" },
+        { "number": "905-849-3583", "description": "(Fax)" }
+      ],
+      "email": "eni@luklawpc.com"
+    },
+    {
+      "name": "Camila Su",
+      "position": "Legal Assistant",
+      "description": "Camila is a graduate of the University of Waterloo and is currently enrolled in the Accelerated Paralegal Program at Centennial College. She assists the legal team with research, drafting legal documents and preparing for client meetings. Camila brings a meticulous attention to detail and a strong work ethic to every task, contributing to the firm’s success in providing high-quality legal services. <br/><br/> Camila can speak English, Cantonese, and Mandarin.",
+      "image": "/assets/team/camila-su.jpg",
+      "education": ["B.Sc., University of Waterloo"],
+      "phone": [
+        { "number": "905-667-6499", "description": "(Office)" },
+        { "number": "905-849-3583", "description": "(Fax)" }
+      ]
+    },
+    {
+      "name": "Jessica Chen",
+      "position": "Social Media Manager",
+      "description": "Meet our proficient social media manager, Jessica, the creative force behind our online presence. With a keen understanding of digital trends and a strategic approach to engagement, Jessica crafts compelling content that captivates our audience and strengthens our brand identity. Jessica has many years of experience managing and content creating for different professions and she is now dedicated to helping build Luk Law's social media presence.",
+      "image": "/assets/team/jessica-chen.jpg",
+      "education": ["B.Sc. (Hons.) University of Toronto"],
+      "phone": [
+        { "number": "905-667-6496", "description": "(Office)" },
+        { "number": "905-849-3583", "description": "(Fax)" }
+      ],
+      "email": "jchen@luklawpc.com"
+    },
+    {
+      "name": "Angela Tsui",
+      "position": "Accounts Manager",
+      "description": "Angela is the firm's trusted Accounts Manager. With a keen eye for detail and extensive experience in the banking sector, Angela manages day-to-day financial transactions, including recording payments, processing invoices, and detailing our accounts.",
+      "image": "/assets/team/angela-tsui.jpg",
+      "education": ["B.A. (Hons.) University of Greenwich"],
+      "phone": [
+        { "number": "905-667-6499", "description": "(Office)" },
+        { "number": "905-849-3583", "description": "(Fax)" }
+      ]
+    },
+    {
+      "name": "Venus Ng",
+      "position": "Administrative Assistant",
+      "description": "As an Administrative Assistant, Venus plays a pivotal role in managing day-to-day operations of the firm. She maintains a productive work environment by using strategic planning skills. With expertise in finance, operations and client relations, she ensures to provide excellent services. <br/><br/> Venus is fluent in English, Cantonese and Mandarin.",
+      "image": "/assets/team/venus-ng.jpg",
+      "education": ["B.Ed. University of Hong Kong"],
+      "phone": [
+        { "number": "905-667-6496", "description": "(Office)" },
+        { "number": "905-849-3583", "description": "(Fax)" }
+      ],
+      "email": "vng@luklawpc.com"
+    },
+    {
+      "name": "Rachel Chan",
+      "position": "Legal Intern",
+      "description": "Rachel is a bright and driven student currently pursuing her Bachelor of Arts in Business Economics at the University of Waterloo. As an aspiring law student, Rachel brings a blend of academic prowess and practical enthusiasm to our firm, eager to delve into the intricacies of legal practice. With a sharp eye for detail and a passion for learning, she assists our lawyers with research, drafting documents, and case preparation. <br/><br/> Rachel can speak English and Mandarin.",
+      "image": "/assets/team/rachel-chan.jpg",
+      "education": ["B.A. University of Waterloo (In progress)"],
+      "phone": [
+        { "number": "905-667-6499", "description": "(Office)" },
+        { "number": "905-849-3583", "description": "(Fax)" }
+      ]
+    },
+    {
+      "name": "Kathy Liang",
+      "position": "Legal Intern",
+      "description": "Kathy holds an undergraduate degree from Queen’s University and is currently enrolled in the Accelerated Paralegal Program at Seneca Polytechnic. As a legal intern, she is actively gaining valuable hands-on experience working alongside our skilled team. Kathy is passionate about law and dedicated to enhancing the client experience. <br/><br/>Kathy can speak English and Cantonese.",
+      "image": "/assets/team/kathy-liang.jpg",
+      "education": ["B.Sc., Queen's University"],
+      "phone": [
+        { "number": "905-667-6496", "description": "(Office)" },
+        { "number": "905-849-3583", "description": "(Fax)" }
+      ],
+      "email": "kliang@luklawpc.com"
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "flag": "/assets/language/canada.png"
+    },
+    {
+      "name": "Cantonese & Mandarin",
+      "flag": "/assets/language/china.png"
+    },
+    {
+      "name": "Vietnamese",
+      "flag": "/assets/language/vietnam.png"
+    },
+    {
+      "name": "Korean",
+      "flag": "/assets/language/south-korea.png"
+    },
+    {
+      "name": "Farsi",
+      "flag": "/assets/language/iran.png"
+    },
+    {
+      "name": "Ukrainian",
+      "flag": "/assets/language/ukraine.png"
+    },
+    {
+      "name": "Russian",
+      "flag": "/assets/language/russia.png"
+    }
+  ]
 }

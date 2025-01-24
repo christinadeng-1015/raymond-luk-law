@@ -1,27 +1,89 @@
 {
-    "table": {
-        "title": "Business Hours",
-        "header": {"day": "Day", "hours": "Hours"},
-        "daysAndHours": 
-        [{ "day": "Monday", "hours": "10:00 AM - 6:00 PM" },
-        { "day": "Tuesday", "hours": "10:00 AM - 6:00 PM" },
-        { "day": "Wednesday", "hours": "10:00 AM - 6:00 PM" },
-        { "day": "Thursday", "hours": "10:00 AM - 6:00 PM" },
-        { "day": "Friday", "hours": "10:00 AM - 6:00 PM" },
-        { "day": "Saturday", "hours": "By appointment only" },
-        { "day": "Sunday", "hours": "By appointment only" }],
-        "note": "If you would like to visit us in person for legal consultation, please call us to book an appointment.",
-        "holidayNote": "Holiday hours may vary.",
-        "holidayUpdate": "Closed Wednesday, January 29, for Lunar New Year."
-
+  "title": "Contact Us",
+  "table": {
+    "title": "Business Hours",
+    "header": { "day": "Day", "hours": "Hours" },
+    "daysAndHours": [
+      { "day": "Monday", "hours": "10:00 AM - 6:00 PM" },
+      { "day": "Tuesday", "hours": "10:00 AM - 6:00 PM" },
+      { "day": "Wednesday", "hours": "10:00 AM - 6:00 PM" },
+      { "day": "Thursday", "hours": "10:00 AM - 6:00 PM" },
+      { "day": "Friday", "hours": "10:00 AM - 6:00 PM" },
+      { "day": "Saturday", "hours": "By appointment only" },
+      { "day": "Sunday", "hours": "By appointment only" }
+    ],
+    "note": "If you would like to visit us in person for legal consultation, please call us to book an appointment.",
+    "holidayNote": "Holiday hours may vary.",
+    "holidayUpdate": "Closed Wednesday, January 29, for Lunar New Year."
+  },
+  "form": {
+    "title": "Submit Your Inquiry",
+    "fields": [
+      {
+        "id": "name",
+        "label": "Your Name",
+        "placeholder": "Raymond Luk",
+        "icon": "HiUser",
+        "type": "text"
+      },
+      {
+        "id": "email",
+        "label": "Your Email",
+        "placeholder": "name@example.com",
+        "icon": "HiMail",
+        "type": "email"
+      },
+      {
+        "id": "phone",
+        "label": "Your Phone Number",
+        "placeholder": "(123) 456-7890",
+        "icon": "HiPhone",
+        "type": "text"
+      }
+    ],
+    "message": {
+      "id": "message",
+      "label": "Your Message",
+      "placeholder": "Enter your message here..."
     },
-    "officeImages": [],
-    "subtitle": "Experienced, reliable, and professional legal experts in a wide variety of practice areas",
-    "processTitle": "Our Process",
-    "process": [
-        {"title": "Free Initial Consultation", "subtitle": "Schedule a call with staffs"},
-        {"title": "Appointments", "subtitle": "In person or virtual appointment with lawyer * First 15 min for free"},
-        {"title": "Work & Ongoing Communication", "subtitle": "Start on the paper work and provide timeline"},
-        {"title": "Result", "subtitle": "Delivery the best result for our customers"}
+    "button": "Submit"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "If you have questions or are searching for expert legal assistance, please do not hesitate to contact us.",
+    "contacts": [
+      "English: 905 - 667 - 6496",
+      "中文: 905 - 667 - 6499",
+      "Email: info@luklawpc.com",
+      "Fax: 905 - 849 - 3583"
+    ],
+    "note": "Feel free to contact us through WhatsApp, WeChat, or text message.",
+    "socialLinks": [
+      { "icon": "BsFacebook", "link": "https://facebook.com" },
+      { "icon": "BsInstagram", "link": "https://instagram.com" },
+      { "icon": "BsTwitter", "link": "https://twitter.com" },
+      { "icon": "BsDribbble", "link": "https://dribbble.com" }
     ]
+  },
+  "officeImages": [],
+  "subtitle": "Experienced, reliable, and professional legal experts in a wide variety of practice areas",
+  "processTitle": "Our Process",
+  "process": [
+    {
+      "title": "Free Initial Consultation",
+      "subtitle": "Schedule a call with staffs"
+    },
+    {
+      "title": "Appointments",
+      "subtitle": "In person or virtual appointment with lawyer * First 15 min for free"
+    },
+    {
+      "title": "Work & Ongoing Communication",
+      "subtitle": "Start on the paper work and provide timeline"
+    },
+    {
+      "title": "Result",
+      "subtitle": "Delivery the best result for our customers"
+    }
+  ]
 }

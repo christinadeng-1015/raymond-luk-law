@@ -1,43 +1,43 @@
-import { Footer, Tooltip } from "flowbite-react";
-import { BsDribbble, BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
-import Form from "./Form";
+import { Footer, Tooltip } from 'flowbite-react';
+import { BsDribbble, BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs';
+import Form from './Form';
 
 const FooterHome = () => {
   const footer = {
-    corporation: "© 2024 by Raymond Luk Law Professional Corporation",
+    corporation: '© 2024 by Raymond Luk Law Professional Corporation',
     disclaimer:
-      "DISCLAIMER: The information obtained on this site is not intended to be legal advice. Please consult a legal professional for advice regarding your individual situation. Please be advised that contacting the firm does not create a solicitor-client nor a legal relationship of any kind. Please do not send any confidential information until such relationship has been established and a retainer has been signed.",
+      'DISCLAIMER: The information obtained on this site is not intended to be legal advice. Please consult a legal professional for advice regarding your individual situation. Please be advised that contacting the firm does not create a solicitor-client nor a legal relationship of any kind. Please do not send any confidential information until such relationship has been established and a retainer has been signed.',
     services: [
-      { service: "Real Estate Law", link: "#" },
-      { service: "Family Law", link: "#" },
-      { service: "Will & Estates", link: "#" },
-      { service: "Personal Injury Law", link: "#" },
-      { service: "Immigration Law", link: "#" },
-      { service: "Notary Services", link: "#" },
+      { service: 'Real Estate Law', link: '#' },
+      { service: 'Family Law', link: '#' },
+      { service: 'Will & Estates', link: '#' },
+      { service: 'Personal Injury Law', link: '#' },
+      { service: 'Immigration Law', link: '#' },
+      { service: 'Notary Services', link: '#' },
     ],
     contacts: [
-      { id: 1, link: "#", title: "English: 905-667-6496" },
-      { id: 2, link: "#about", title: "中文: 905-667-6499" },
-      { id: 3, link: "#services", title: "Email: info@luklawpc.com" },
-      { id: 4, link: "#portfolio", title: "Fax: 905-849-3583" },
+      { id: 1, link: '#', title: 'English: 905-667-6496' },
+      { id: 2, link: '#about', title: '中文: 905-667-6499' },
+      { id: 3, link: '#services', title: 'Email: info@luklawpc.com' },
+      { id: 4, link: '#portfolio', title: 'Fax: 905-849-3583' },
       {
         id: 5,
-        link: "#contact",
+        link: '#contact',
         title:
-          "HSBC Tower, Liberty Square, 3601 Highway 7, Unit 803, Markham, ON, L3R 0M3",
+          'HSBC Tower, Liberty Square, 3601 Highway 7, Unit 803, Markham, ON, L3R 0M3',
       },
     ],
     quickLinks: [
-      { title: "Home", link: "#" },
-      { title: "About Us", link: "#" },
-      { title: "Our Services", link: "#" },
-      { title: "Contact", link: "#" },
+      { title: 'Home', link: '#' },
+      { title: 'About Us', link: '#' },
+      { title: 'Our Services', link: '#' },
+      { title: 'Contact', link: '#' },
     ],
     socialLinks: [
-      { icon: BsFacebook, link: "https://facebook.com" },
-      { icon: BsInstagram, link: "https://instagram.com" },
-      { icon: BsTwitter, link: "https://twitter.com" },
-      { icon: BsDribbble, link: "https://dribbble.com" },
+      { icon: BsFacebook, link: 'https://facebook.com' },
+      { icon: BsInstagram, link: 'https://instagram.com' },
+      { icon: BsTwitter, link: 'https://twitter.com' },
+      { icon: BsDribbble, link: 'https://dribbble.com' },
     ],
   };
 
@@ -50,14 +50,14 @@ const FooterHome = () => {
       <div className="w-full max-w-screen-2xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between mb-8 items-center gap-8">
           <img
-            src='https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993348/RL_logo_edvn9k.png'
+            src="https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993348/RL_logo_edvn9k.png"
             alt="logo"
             className="w-40 object-contain mb-4 md:mb-0"
           />
           <a
             href="https://legaldirectorate.ca/family-law-attorneys/markham-on/"
             target="_blank"
-            style={{ display: "inline-block", border: 0 }}
+            style={{ display: 'inline-block', border: 0 }}
             rel="noreferrer"
           >
             <Tooltip
@@ -68,7 +68,7 @@ const FooterHome = () => {
             >
               <img
                 src="https://legaldirectorate.ca/awards/2024/2/31/3e407a83b4ab1ea59f324a758d86d312/BestOf-Markham-i250-2024.svg"
-                style={{ width: 250, display: "block" }}
+                style={{ width: 250, display: 'block' }}
                 width="250"
                 height="100"
                 alt="Best Family Law Attorneys in Markham"
@@ -76,7 +76,7 @@ const FooterHome = () => {
             </Tooltip>
           </a>
           <img
-            src='https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993359/law_zu7rqc.png'
+            src="https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993359/law_zu7rqc.png"
             alt="Law Logo"
             className="w-48 object-contain mt-4 md:mt-0"
           />

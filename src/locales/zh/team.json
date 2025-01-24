@@ -1,97 +1,164 @@
 {
-    "title": "认识我们的团队",
-    "subtitle": "各个业务领域经验丰富、可靠且专业的法律专家",
-    "heading": {
-        "meet": "认识",
-        "contact": "联系方式",
-        "education": "教育和执照"
+  "title": "认识我们的团队",
+  "heading": {
+    "meet": "认识",
+    "contact": "联系方式",
+    "education": "教育和执照",
+    "language": "我们提供多种语言法律服务"
+  },
+  "team": [
+    {
+      "name": "Raymond Luk",
+      "position": "律师",
+      "description": "Raymond专注于人身伤害、房地产、家庭法以及遗嘱和遗产等领域。他曾在安大略省高等法院、许可上诉法庭以及安大略省人权法庭代表客户参与各类诉讼。<br/><br/> Raymond是一位坚定的律师，非常了解每位客户的独特性。因此，他相信为每位客户量身定制解决方案。",
+      "image": "/assets/team/raymond-luk.jpg",
+      "education": [
+        "学士学位（荣誉）多伦多大学",
+        "女王大学法学博士",
+        "大律师及事务律师",
+        "公证人"
+      ],
+      "phone": [
+        { "number": "905-333-1740", "description": "分机。103 (办公室)" },
+        { "number": "905-849-3583", "description": "(传真)" }
+      ],
+      "email": "rluk@luklawpc.com",
+      "desc": "* 目前通过 Shan Luk Professional Corporation 执业"
     },
-    "team": [
-        {
-            "name": "Raymond Luk",
-            "position": "律师",
-            "description": "Raymond专注于人身伤害、房地产、家庭法以及遗嘱和遗产等领域。他曾在安大略省高等法院、许可上诉法庭以及安大略省人权法庭代表客户参与各类诉讼。<br/><br/> Raymond是一位坚定的律师，非常了解每位客户的独特性。因此，他相信为每位客户量身定制解决方案。",
-            "image": "raymond-luk",
-            "education": ["学士学位（荣誉）多伦多大学", "女王大学法学博士", "大律师及事务律师", "公证人"],
-            "phone": ["905-333-1740", "905-849-3583"],
-            "email": "rluk@luklawpc.com"
-        },
-        {
-            "name": "Eiman Sharifpour",
-            "position": "家庭法顾问",
-            "description": "Eiman Sharifpour (Iman) 是一位拥有家庭法领域专业知识的执业律师。伊曼热衷于为他的客户获得公平的解决方案，并将不懈地争取他们的权利。伊曼曾在安大略法院和高等法院为客户处理各种家庭事务。",
-            "image": "eiman-sharifpour",
-            "education": ["约克大学理学学士", "温莎大学法学博士", "大律师及事务律师", "公证人"],
-            "phone": ["905-291-1802", "905-849-3583"],
-            "email": "esharifpour@luklawpc.com"
-        },
-        {
-            "name": "Christine Guan",
-            "position": "高级执业律师助理 & 房地产法律文员",
-            "description": "Christine 在法律行业拥有超过 10 年的经验，主要从事事故福利和侵权领域的工作，现在转向房地产工作。<br/><br/> Christine 对房地产法和交易流程有着深入的了解，促进无缝交易并确保客户的利益在每一步都受到保护。凭借对细节的一丝不苟和出色的组织能力，她处理房地产交易的各个方面。 <br/><br/> Christine 精通普通话、粤语和英语。",
-            "image": "christine-guan",
-            "phone": ["905-538 -5176 ", "905-849-3583"],
-            "email": "cguan@luklawpc.com"
-        },
-        {
-            "name": "Rebecca Tsui",
-            "position": "接待员",
-            "description": "丽贝卡致力于提供卓越的服务，创造积极的第一印象，并促进与我们的法律团队的无缝互动。相信丽贝卡是我们公司友好的面孔和高效的中心，确保您在我们这里的体验以积极的方式开始。<br/><br/> 她能说流利的英语、粤语和普通话。",
-            "image": "rebecca-tsui",
-            "education": ["社会科学学士香港树仁大学"],
-            "phone": ["905-667-6499", "905-849-3583"],
-            "email": "rtsui@luklawpc.com"
-        },
-        {
-            "name": "Mandy Zhao",
-            "position": "法律助理",
-            "description": "曼迪是我们团队不可或缺的一部分。无论是进行研究、安排预约还是协助案件管理，Mandy 都致力于提供高质量的帮助并保持最高的专业水平。 <br/><br/> Mandy 精通粤语和英语。",
-            "image": "mandy-zhao",
-            "education": ["约克大学（荣誉）理学士"],
-            "phone": ["905-667-6496", "905-849-3583"],
-            "email": "mzhao@luklawpc.com"
-        },
-        {
-            "name": "Emma-Jane Ni",
-            "position": "法律助理",
-            "description": "作为团队的核心成员，Emma-Jane 拥有出色的组织能力、细致的关注和强烈的客户服务承诺。凭借在管理案件档案、起草法律文件和协调沟通方面的丰富经验，她确保我们的律师得到所需的支持，以提供一流的法律服务。 <br/><br/> Emma-Jane 能够讲英语、法语、普通话以及基础俄语。",
-            "image": "emma-jane",
-            "education": ["多伦多城市大学（荣誉）文学士"],
-            "phone": ["905-667-6496", "905-849-3583"],
-            "email": "eni@luklawpc.com"
-        },
-        {
-            "name": "Jessica Chen",
-            "position": "社交媒体经理",
-            "description": "认识一下我们熟练的社交媒体经理杰西卡，她是我们在线形象背后的创造力。凭借对数字趋势的敏锐理解和参与的战略方法，杰西卡制作了引人入胜的内容，吸引了我们的受众并增强了我们的品牌形象。 Jessica 拥有多年为不同职业管理和内容创作的经验，她现在致力于帮助 Luk Law 建立社交媒体形象。",
-            "image": "jessica-chen",
-            "education": ["多伦多大学（荣誉）理学士"],
-            "phone": ["905-667-6496", "905-849-3583"],
-            "email": "jchen@luklawpc.com"
-        },
-        {
-            "name": "Angela Tsui",
-            "position": "簿记员",
-            "description": "Angela 是公司值得信赖的簿记员。Angela 注重细节，在银行业拥有丰富的经验，负责管理日常财务交易，包括记录付款、处理发票和详细记录我们的账户。",
-            "image": "angela-tsui",
-            "education": ["格林威治大学文学士（荣誉）"],
-            "phone": ["905-667-6499", "905-849-3583"]
-        },
-        {
-            "name": "Rachel Chan",
-            "position": "法律实习生",
-            "description": "Rachel 是一名聪明且积极进取的学生，目前在滑铁卢大学攻读商业经济学学士学位。作为一名有志成为法律专业人士的学生，Rachel 将学术才能和实践热情相结合，渴望深入了解法律实践的复杂性。她具备敏锐的细节观察力和强烈的学习热情，协助我们的律师进行研究、起草文件和案件准备。 <br/><br/> Rachel 能够讲英语和普通话。",
-            "image": "rachel-chan",
-            "education": ["学士学位 滑铁卢大学"],
-            "phone": ["905-667-6499", "905-849-3583"]
-        },
-        {
-            "name": "Camila Su",
-            "position": "法律实习生",
-            "description": "Camila 毕业于滑铁卢大学，目前正在百年学院的加速法律助理课程中学习。她协助法律团队进行研究、起草法律文件和准备客户会议。Camila 对每项任务都充满了细致的关注和强烈的工作伦理，这为公司提供高质量的法律服务做出了贡献。<br/><br/> Camila 能够讲英语、粤语和普通话。",
-            "image": "camila-su",
-            "education": ["理学学士 (荣誉) 滑铁卢大学"],
-            "phone": ["905-667-6499", "905-849-3583"]
-        }
-    ]
+    {
+      "name": "Eiman Sharifpour",
+      "position": "律师",
+      "description": "Eiman Sharifpour (Iman) 是一位拥有家庭法领域专业知识的执业律师。伊曼热衷于为他的客户获得公平的解决方案，并将不懈地争取他们的权利。伊曼曾在安大略法院和高等法院为客户处理各种家庭事务。",
+      "image": "/assets/team/eiman-sharifpour.jpg",
+      "education": [
+        "约克大学理学学士",
+        "温莎大学法学博士",
+        "大律师及事务律师",
+        "公证人"
+      ],
+      "phone": [
+        { "number": "905-291-1802", "description": "(办公室)" },
+        { "number": "905-849-3583", "description": "(传真)" }
+      ],
+      "email": "esharifpour@luklawpc.com",
+      "desc": "* 目前通过 Iman Law Professional Corporation 执业"
+    },
+    {
+      "name": "Christine Guan",
+      "position": "高级执业律师助理 & 房地产法律文员",
+      "description": "Christine 在法律行业拥有超过 10 年的经验，主要从事事故福利和侵权领域的工作，现在转向房地产工作。<br/><br/> Christine 对房地产法和交易流程有着深入的了解，促进无缝交易并确保客户的利益在每一步都受到保护。凭借对细节的一丝不苟和出色的组织能力，她处理房地产交易的各个方面。 <br/><br/> Christine 精通普通话、粤语和英语。",
+      "image": "assets/team/christine-guan.jpg",
+      "education": ["高级执业律师助理"],
+      "phone": [
+        { "number": "905-291-1802 （", "description": "(办公室)" },
+        { "number": "905-849-3583", "description": "(传真)" }
+      ],
+      "email": "cguan@luklawpc.com"
+    },
+    {
+      "name": "Rebecca Tsui",
+      "position": "接待员",
+      "description": "丽贝卡致力于提供卓越的服务，创造积极的第一印象，并促进与我们的法律团队的无缝互动。相信丽贝卡是我们公司友好的面孔和高效的中心，确保您在我们这里的体验以积极的方式开始。<br/><br/> 她能说流利的英语、粤语和普通话。",
+      "image": "/assets/team/rebecca-tsui.jpg",
+      "education": ["社会科学学士香港树仁大学"],
+      "phone": [
+        { "number": "905-291-1802", "description": "(办公室)" },
+        { "number": "905-849-3583", "description": "(传真)" }
+      ],
+      "email": "rtsui@luklawpc.com"
+    },
+    {
+      "name": "Mandy Zhao",
+      "position": "法律助理",
+      "description": "曼迪是我们团队不可或缺的一部分。无论是进行研究、安排预约还是协助案件管理，Mandy 都致力于提供高质量的帮助并保持最高的专业水平。 <br/><br/> Mandy 精通粤语和英语。",
+      "image": "/assets/team/mandy-zhao.jpg",
+      "education": ["约克大学（荣誉）理学士"],
+      "phone": [
+        { "number": "905-291-1802", "description": "(办公室)" },
+        { "number": "905-849-3583", "description": "(传真)" }
+      ],
+      "email": "mzhao@luklawpc.com"
+    },
+    {
+      "name": "Emma-Jane Ni",
+      "position": "法律助理",
+      "description": "作为团队的核心成员，Emma-Jane 拥有出色的组织能力、细致的关注和强烈的客户服务承诺。凭借在管理案件档案、起草法律文件和协调沟通方面的丰富经验，她确保我们的律师得到所需的支持，以提供一流的法律服务。 <br/><br/> Emma-Jane 能够讲英语、法语、普通话以及基础俄语。",
+      "image": "/assets/team/emma-jane.jpg",
+      "education": ["多伦多城市大学（荣誉）文学士"],
+      "phone": [
+        { "number": "905-291-1802", "description": "(办公室)" },
+        { "number": "905-849-3583", "description": "(传真)" }
+      ],
+      "email": "eni@luklawpc.com"
+    },
+    {
+      "name": "Camila Su",
+      "position": "法律实习生",
+      "description": "Camila 毕业于滑铁卢大学，目前正在百年学院的加速法律助理课程中学习。她协助法律团队进行研究、起草法律文件和准备客户会议。Camila 对每项任务都充满了细致的关注和强烈的工作伦理，这为公司提供高质量的法律服务做出了贡献。<br/><br/> Camila 能够讲英语、粤语和普通话。",
+      "image": "/assets/team/camila-su.jpg",
+      "education": ["理学学士 (荣誉) 滑铁卢大学"],
+      "phone": [
+        { "number": "905-291-1802", "description": "(办公室)" },
+        { "number": "905-849-3583", "description": "(传真)" }
+      ]
+    },
+    {
+      "name": "Jessica Chen",
+      "position": "社交媒体经理",
+      "description": "认识一下我们熟练的社交媒体经理杰西卡，她是我们在线形象背后的创造力。凭借对数字趋势的敏锐理解和参与的战略方法，杰西卡制作了引人入胜的内容，吸引了我们的受众并增强了我们的品牌形象。 Jessica 拥有多年为不同职业管理和内容创作的经验，她现在致力于帮助 Luk Law 建立社交媒体形象。",
+      "image": "/assets/team/jessica-chen.jpg",
+      "education": ["多伦多大学（荣誉）理学士"],
+      "phone": [
+        { "number": "905-291-1802", "description": "(办公室)" },
+        { "number": "905-849-3583", "description": "(传真)" }
+      ],
+      "email": "jchen@luklawpc.com"
+    },
+    {
+      "name": "Venus Ng",
+      "position": "行政助理",
+      "description": "作为一名行政助理，Venus 在管理公司日常运营中发挥着关键作用。她运用战略规划技能，维持高效的工作环境。凭借在财务、运营和客户关系方面的专业知识，她确保为客户提供卓越的服务。<br/><br/> Venus 精通英语、粤语和普通话。",
+      "image": "/assets/team/venus-ng.jpg",
+      "education": ["香港大学教育学学士"],
+      "phone": [
+        { "number": "905-291-1802", "description": "(办公室)" },
+        { "number": "905-849-3583", "description": "(传真)" }
+      ],
+      "email": "vng@luklawpc.com"
+    },
+    {
+      "name": "Angela Tsui",
+      "position": "账户经理",
+      "description": "Angela 是公司值得信赖的账户经理。凭借对细节的敏锐洞察力和丰富的银行业经验，Angela 管理日常财务交易，包括记录付款、处理发票和详细记录我们的账户。",
+      "image": "/assets/team/angela-tsui.jpg",
+      "education": ["格林威治大学文学士（荣誉）"],
+      "phone": [
+        { "number": "905-291-1802", "description": "(办公室)" },
+        { "number": "905-849-3583", "description": "(传真)" }
+      ]
+    },
+    {
+      "name": "Rachel Chan",
+      "position": "法律实习生",
+      "description": "Rachel 是一名聪明且积极进取的学生，目前在滑铁卢大学攻读商业经济学学士学位。作为一名有志成为法律专业人士的学生，Rachel 将学术才能和实践热情相结合，渴望深入了解法律实践的复杂性。她具备敏锐的细节观察力和强烈的学习热情，协助我们的律师进行研究、起草文件和案件准备。 <br/><br/> Rachel 能够讲英语和普通话。",
+      "image": "/assets/team/rachel-chan.jpg",
+      "education": ["学士学位 滑铁卢大学"],
+      "phone": [
+        { "number": "905-291-1802", "description": "(办公室)" },
+        { "number": "905-849-3583", "description": "(传真)" }
+      ]
+    },
+    {
+      "name": "Kathy Liang",
+      "position": "法律实习生",
+      "description": "Kathy 拥有皇后大学的本科学位，目前就读于 Seneca Polytechnic 的加速法律助理项目。作为一名法律实习生，她正在与我们经验丰富的团队合作，积极积累宝贵的实践经验。Kathy 对法律充满热情，致力于提升客户体验。<br/><br/> Kathy 会说英语和粤语。",
+      "image": "/assets/team/kathy-liang.jpg",
+      "education": ["皇后大学（荣誉）文学士"],
+      "phone": [
+        { "number": "905-291-1802", "description": "(办公室)" },
+        { "number": "905-849-3583", "description": "(传真)" }
+      ],
+      "email": "kliang@luklawpc.com"
+    }
+  ]
 }

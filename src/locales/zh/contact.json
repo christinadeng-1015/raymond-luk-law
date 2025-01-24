@@ -1,29 +1,91 @@
 {
-    "table": {
-        "title": "办公时间",
-        "header": {
-        "day": "星期",
-        "hours": "时间"
-        },
-        "daysAndHours": [
-        { "day": "星期一", "hours": "上午10:00 - 下午6:00" },
-        { "day": "星期二", "hours": "上午10:00 - 下午6:00" },
-        { "day": "星期三", "hours": "上午10:00 - 下午6:00" },
-        { "day": "星期四", "hours": "上午10:00 - 下午6:00" },
-        { "day": "星期五", "hours": "上午10:00 - 下午6:00" },
-        { "day": "星期六", "hours": "仅限预约" },
-        { "day": "星期日", "hours": "仅限预约" }
-        ],
-        "note": "如果您希望亲自到访进行法律咨询，请致电与我们预约。",
-        "holidayNote": "节假日时间可能会有所不同。",
-        "holidayUpdate": "因农历新年，办公室因春节于1月29日（星期三）关闭。"
+  "title": "联系我们",
+  "table": {
+    "title": "办公时间",
+    "header": {
+      "day": "星期",
+      "hours": "时间"
     },
-    "subtitle": "Experienced, reliable, and professional legal experts in a wide variety of practice areas",
-    "processTitle": "Our Process",
-    "process": [
-        {"title": "Free Initial Consultation", "subtitle": "Schedule a call with staffs"},
-        {"title": "Appointments", "subtitle": "In person or virtual appointment with lawyer * First 15 min for free"},
-        {"title": "Work & Ongoing Communication", "subtitle": "Start on the paper work and provide timeline"},
-        {"title": "Result", "subtitle": "Delivery the best result for our customers"}
+    "daysAndHours": [
+      { "day": "星期一", "hours": "上午10:00 - 下午6:00" },
+      { "day": "星期二", "hours": "上午10:00 - 下午6:00" },
+      { "day": "星期三", "hours": "上午10:00 - 下午6:00" },
+      { "day": "星期四", "hours": "上午10:00 - 下午6:00" },
+      { "day": "星期五", "hours": "上午10:00 - 下午6:00" },
+      { "day": "星期六", "hours": "仅限预约" },
+      { "day": "星期日", "hours": "仅限预约" }
+    ],
+    "note": "如果您希望亲自到访进行法律咨询，请致电与我们预约。",
+    "holidayNote": "节假日时间可能会有所不同。",
+    "holidayUpdate": "因农历新年，办公室因春节于1月29日（星期三）关闭。"
+  },
+  "form": {
+    "title": "请向我们提供您的信息",
+    "fields": [
+      {
+        "id": "name",
+        "label": "您的姓名",
+        "placeholder": "雷蒙德·卢克",
+        "icon": "HiUser",
+        "type": "text"
+      },
+      {
+        "id": "email",
+        "label": "您的电子邮箱",
+        "placeholder": "name@example.com",
+        "icon": "HiMail",
+        "type": "email"
+      },
+      {
+        "id": "phone",
+        "label": "您的电话号码",
+        "placeholder": "(123) 456-7890",
+        "icon": "HiPhone",
+        "type": "text"
+      }
+    ],
+    "message": {
+      "id": "message",
+      "label": "您的信息",
+      "placeholder": "在此处输入您的信息..."
+    },
+    "button": "提交"
+  },
+  "contact": {
+    "title": "联系我们",
+    "description": "如果您有任何问题或需要专业的法律帮助，请随时与我们联系。",
+    "contacts": [
+      "English: 905 - 667 - 6496",
+      "中文: 905 - 667 - 6499",
+      "电子邮箱: info@luklawpc.com",
+      "传真: 905 - 849 - 3583"
+    ],
+    "note": "您可以通过 WhatsApp、微信或短信与我们联系。",
+    "socialLinks": [
+      { "icon": "BsFacebook", "link": "https://facebook.com" },
+      { "icon": "BsInstagram", "link": "https://instagram.com" },
+      { "icon": "BsTwitter", "link": "https://twitter.com" },
+      { "icon": "BsDribbble", "link": "https://dribbble.com" }
     ]
+  },
+  "subtitle": "Experienced, reliable, and professional legal experts in a wide variety of practice areas",
+  "processTitle": "Our Process",
+  "process": [
+    {
+      "title": "Free Initial Consultation",
+      "subtitle": "Schedule a call with staffs"
+    },
+    {
+      "title": "Appointments",
+      "subtitle": "In person or virtual appointment with lawyer * First 15 min for free"
+    },
+    {
+      "title": "Work & Ongoing Communication",
+      "subtitle": "Start on the paper work and provide timeline"
+    },
+    {
+      "title": "Result",
+      "subtitle": "Delivery the best result for our customers"
+    }
+  ]
 }

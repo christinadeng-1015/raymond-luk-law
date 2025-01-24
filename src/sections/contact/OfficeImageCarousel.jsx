@@ -1,53 +1,57 @@
-import React, { useRef } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import officeImage from "../../assets/office/office.jpeg";
-import officeHourImage from "../../assets/office/office-hour.jpg";
-import office1Image from "../../assets/office/office-1.jpg";
-import office2Image from "../../assets/office/office-2.jpg";
-import office3Image from "../../assets/office/office-3.jpeg";
+import React, { useRef, useEffect } from 'react';
+import officeImage from '../../assets/office/office.jpeg';
+import officeHourImage from '../../assets/office/office-hour.jpg';
+import office1Image from '../../assets/office/office-1.jpg';
+import office2Image from '../../assets/office/office-2.jpg';
+import office3Image from '../../assets/office/office-3.jpeg';
 
 const OfficeImageCarousel = () => {
-  const lists = ["office-hour", "office-1", "office-2", "office", "office-3"];
+  const lists = ['office-hour', 'office-1', 'office-2', 'office', 'office-3'];
   const images = {
     office: officeImage,
-    "office-hour": officeHourImage,
-    "office-1": office1Image,
-    "office-2": office2Image,
-    "office-3": office3Image,
+    'office-hour': officeHourImage,
+    'office-1': office1Image,
+    'office-2': office2Image,
+    'office-3': office3Image,
   };
 
   const carouselRef = useRef(null);
 
-  const scrollLeft = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: -300, behavior: "smooth" });
-    }
-  };
+  useEffect(() => {
+    const carousel = carouselRef.current;
+    let scrollAmount = 0;
 
-  const scrollRight = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: 300, behavior: "smooth" });
-    }
-  };
+    const startAutoScroll = () => {
+      if (carousel) {
+        const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+
+        const autoScroll = () => {
+          scrollAmount += 0.8;
+          if (scrollAmount >= maxScrollLeft) {
+            carousel.scrollLeft = 0;
+            scrollAmount = 0;
+          } else {
+            carousel.scrollLeft = scrollAmount;
+          }
+        };
+
+        const interval = setInterval(autoScroll, 20);
+        return () => clearInterval(interval);
+      }
+    };
+
+    const stopAutoScroll = startAutoScroll();
+    return stopAutoScroll;
+  }, []);
 
   return (
-    <div className="relative w-full md:w-3/5 lg:w-2/3 flex items-center justify-center">
-      <button
-        onClick={scrollLeft}
-        className="absolute left-0 z-10 p-2 bg-white text-gray-700 rounded-full shadow-md focus:outline-none hover:bg-gray-100"
-      >
-        <FaArrowLeft size={20} />
-      </button>
-
+    <div className="relative w-full md:w-3/5 lg:w-2/3 flex items-center justify-center overflow-hidden">
       <div
         ref={carouselRef}
-        className="flex overflow-x-auto space-x-4 w-full max-w-screen-2xl scrollbar-hide ml-4"
+        className="flex overflow-x-hidden space-x-4 w-full max-w-screen-2xl scrollbar-hide"
       >
-        {lists.map((image, index) => (
-          <div
-            key={index}
-            className="flex-shrink-0 w-96 h-96 cursor-pointer"
-          >
+        {lists.concat(lists).map((image, index) => (
+          <div key={index} className="flex-shrink-0 w-96 h-96 cursor-pointer">
             <img
               src={images[image]}
               alt={index}
@@ -56,13 +60,6 @@ const OfficeImageCarousel = () => {
           </div>
         ))}
       </div>
-
-      <button
-        onClick={scrollRight}
-        className="absolute right-0 z-10 p-2 bg-white text-gray-700 rounded-full shadow-md focus:outline-none hover:bg-gray-100"
-      >
-        <FaArrowRight size={20} />
-      </button>
     </div>
   );
 };
