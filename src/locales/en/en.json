@@ -2,168 +2,77 @@
   "navbar": {
     "title": "Raymond Luk Law",
     "subtitle": "Legal Excellence, Personalized Service",
-    "about": [
-      {"icon": "<FaAward />"}
-    ],
+    "about": [{ "icon": "<FaAward />" }],
     "links": [
       { "key": "home", "label": "Home", "url": "/" },
       { "key": "team", "label": "Our Team", "url": "/team" },
-      { "key": "services", "label": "Services",
+      {
+        "key": "services",
+        "label": "Services",
         "dropdown": [
-          { "key": "overview", "label": "Overview", "url": "/services"},
-          { "key": "real-estate-law", "label": "Real Estate Law", "url": "/real-estate-law"},
-          { "key": "family-law", "label": "Family Law", "url": "/family-law"},
-          { "key": "will-estates", "label": "Will & Estates", "url": "/wills-and-estates"},
-          { "key": "personal-injury-law", "label": "Personal Injury Law", "url": "/personal-injury-law"},
-          { "key": "immigration-law", "label": "Immigration Law", "url": "/immigration-law"},
-          { "key": "corporate-law", "label": "Corporate Law", "url": "/corporate-law"},
-          { "key": "other-services", "label": "Other Services", "url": "/other-services"}
+          { "key": "overview", "label": "Overview", "url": "/services" },
+          {
+            "key": "real-estate-law",
+            "label": "Real Estate Law",
+            "url": "/real-estate-law"
+          },
+          { "key": "family-law", "label": "Family Law", "url": "/family-law" },
+          {
+            "key": "will-estates",
+            "label": "Will & Estates",
+            "url": "/wills-and-estates"
+          },
+          {
+            "key": "personal-injury-law",
+            "label": "Personal Injury Law",
+            "url": "/personal-injury-law"
+          },
+          {
+            "key": "immigration-law",
+            "label": "Immigration Law",
+            "url": "/immigration-law"
+          },
+          {
+            "key": "corporate-law",
+            "label": "Corporate Law",
+            "url": "/corporate-law"
+          },
+          {
+            "key": "other-services",
+            "label": "Other Services",
+            "url": "/other-services"
+          }
         ]
       },
       { "key": "blog", "label": "Blogs", "url": "/blog" },
       { "key": "tools", "label": "Tools", "url": "/tools" },
       { "key": "contact", "label": "Contact", "url": "/contact" },
-      {"key": "language", "label": "Language", "dropdown": [
-        { "key": "en", "label": "English", "icon": "<RiEnglishInput />" },
-        { "key": "zh", "label": "中文", "icon": "<HiOutlineLanguage /> "}
-      ]}
+      {
+        "key": "language",
+        "label": "Language",
+        "dropdown": [
+          { "key": "en", "label": "English", "icon": "<RiEnglishInput />" },
+          { "key": "zh", "label": "中文", "icon": "<HiOutlineLanguage /> " }
+        ]
+      }
     ],
     "language": {
       "label": "Language",
       "options": [
         { "key": "en", "label": "English", "icon": "<RiEnglishInput />" },
-        { "key": "zh", "label": "中文", "icon": "<HiOutlineLanguage /> "}
+        { "key": "zh", "label": "中文", "icon": "<HiOutlineLanguage /> " }
       ]
     }
   },
   "header": {
     "intro": [
-      {"key": "experience", "text": "Experience", "desc": "3+ Years Working" },
-      {"key": "rate", "text": "Rate", "desc": "Starts from $xxx per hour"},
-      {"key": "clients", "text": "Clients", "desc": "100+ happy clients"}
+      { "key": "experience", "text": "Experience", "desc": "3+ Years Working" },
+      { "key": "rate", "text": "Rate", "desc": "Starts from $xxx per hour" },
+      { "key": "clients", "text": "Clients", "desc": "100+ happy clients" }
     ]
   },
   "services": {
     "title": "Areas of Practice",
     "subtitle": "I give you the best in all the services below"
-  },
-  "tools": [
-    {
-      "key": "mortgage-calculator",
-      "label": "Mortgage Calculator",
-      "url": "https://www.ratehub.ca/mortgage-payment-calculator",
-      "desc": "Calculate your monthly mortgage payments based on your loan amount, interest rate, and loan term.",
-      "category": "Real Estate Law"
-    },
-    {
-      "key": "land-transfer-tax",
-      "label": "Land Transfer Tax Calculator",
-      "url": "https://www.ratehub.ca/land-transfer-tax",
-      "desc": "Estimate the land transfer tax you need to pay when purchasing property in Ontario and other provinces.",
-      "category": "Real Estate Law"
-    },
-    {
-      "key": "title-search",
-      "label": "Title Search",
-      "url": "https://www.ontario.ca/page/search-land-property-records",
-      "desc": "Search land and property records in Ontario to verify legal ownership and other title-related details.",
-      "category": "Real Estate Law"
-    },
-    {
-      "key": "child-support",
-      "label": "Child Support Calculator",
-      "url": "https://www.justice.gc.ca/eng/fl-df/child-enfant/2017/look-rech.aspx",
-      "desc": "Use the Federal Child Support Guidelines to estimate child support payments based on income and custody.",
-      "category": "Family Law"
-    },
-    {
-      "key": "spousal-support",
-      "label": "Spousal Support Calculator",
-      "url": "https://www.divorcepath.com/canada/spousal-support-calculator",
-      "desc": "Estimate spousal support payments based on the income of both parties and duration of the relationship.",
-      "category": "Family Law"
-    },
-    {
-      "key": "divorce",
-      "label": "Divorce Application",
-      "url": "https://www.justice.gc.ca/eng/fl-df/divorce/app.html",
-      "desc": "Find resources and forms to apply for a divorce in Canada, including eligibility and filing steps.",
-      "category": "Family Law"
-    },
-    {
-      "key": "ltb-forms",
-      "label": "Landlord and Tenant Board Forms",
-      "url": "https://tribunalsontario.ca/ltb/forms/",
-      "desc": "Access forms and guidelines related to rental disputes, lease agreements, and tenancy issues in Ontario.",
-      "category": "Landlord and Tenant"
-    },
-    {
-      "key": "study-permit",
-      "label": "Study Permit Application",
-      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/apply.html",
-      "desc": "Learn how to apply for a Canadian study permit to attend schools and universities in Canada.",
-      "category": "Immigration Law"
-    },
-    {
-      "key": "work-permit",
-      "label": "Work Permit Application",
-      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/permit/temporary/apply.html",
-      "desc": "Find information on applying for a temporary work permit in Canada, including required documents and timelines.",
-      "category": "Immigration Law"
-    },
-    {
-      "key": "citizenship",
-      "label": "Canadian Citizenship Application",
-      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/become-canadian-citizen/apply.html",
-      "desc": "Apply for Canadian citizenship by completing the online or paper application form and meeting residency requirements.",
-      "category": "Immigration Law"
-    }
-  ],
-  "categories": [
-    "All",
-    "Real Estate Law",
-    "Family Law",
-    "Landlord and Tenant",
-    "Immigration Law"
-  ],
-  "blogs": [
-    {
-      "title": "How to Choose the Right Real Estate Lawyer",
-      "date": "2022-01-15",
-      "videoUrl": "https://www.youtube.com/watch?v=K4TOrB7at0Y",
-      "image": "https://source.unsplash.com/1600x900/?real-estate",
-      "url": "/blog/real-estate-lawyer",
-      "excerpt": "Learn what to look for when hiring a real estate lawyer, including experience, fees, and client reviews."
-    },
-    {
-      "title": "Child Custody and Support in Ontario",
-      "date": "2022-02-10",
-      "image": "https://source.unsplash.com/1600x900/?child-custody",
-      "url": "/blog/child-custody-support",
-      "excerpt": "Understand the laws and guidelines for child custody and support in Ontario, including parental rights and obligations."
-    },
-    {
-      "title": "How to Evict a Tenant in Ontario",
-      "date": "2022-03-05",
-      "image": "https://source.unsplash.com/1600x900/?eviction",
-      "url": "/blog/evict-tenant",
-      "excerpt": "Follow the legal process to evict a tenant in Ontario, including serving notices, filing applications, and attending hearings."
-    },
-    {
-      "title": "Applying for a Work Permit in Canada",
-      "date": "2022-04-01",
-      "image": "https://source.unsplash.com/1600x900/?work-permit",
-      "url": "/blog/work-permit-canada",
-      "excerpt": "Find out how to apply for a work permit in Canada, including eligibility requirements, application forms, and processing times."
-    },
-    {
-      "title": "How to Sponsor a Family Member to Canada",
-      "date": "2022-04-25",
-      "image": "https://source.unsplash.com/1600x900/?family-sponsorship",  
-      "url": "/blog/family-sponsorship",
-      "excerpt": "Learn about the process of sponsoring a family member to Canada, including eligibility criteria, application forms, and timelines."
-    }
-  ],
-  "toolsTitle": "Essential Legal Tools",
-  "blogTitle": "Insights from Our Latest Blogs"
+  }
 }

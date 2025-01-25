@@ -1,20 +1,9 @@
 import React, { useRef, useEffect } from 'react';
-import officeImage from '../../assets/office/office.jpeg';
-import officeHourImage from '../../assets/office/office-hour.jpg';
-import office1Image from '../../assets/office/office-1.jpg';
-import office2Image from '../../assets/office/office-2.jpg';
-import office3Image from '../../assets/office/office-3.jpeg';
+import { useTranslation } from 'react-i18next';
 
 const OfficeImageCarousel = () => {
-  const lists = ['office-hour', 'office-1', 'office-2', 'office', 'office-3'];
-  const images = {
-    office: officeImage,
-    'office-hour': officeHourImage,
-    'office-1': office1Image,
-    'office-2': office2Image,
-    'office-3': office3Image,
-  };
-
+  const { t } = useTranslation('contact');
+  const officeImages = t('officeImages', { returnObjects: true });
   const carouselRef = useRef(null);
 
   useEffect(() => {
@@ -50,10 +39,10 @@ const OfficeImageCarousel = () => {
         ref={carouselRef}
         className="flex overflow-x-hidden space-x-4 w-full max-w-screen-2xl scrollbar-hide"
       >
-        {lists.concat(lists).map((image, index) => (
+        {officeImages.concat(officeImages).map((image, index) => (
           <div key={index} className="flex-shrink-0 w-96 h-96 cursor-pointer">
             <img
-              src={images[image]}
+              src={image}
               alt={index}
               className="w-full h-full object-cover rounded-lg shadow-lg"
             />

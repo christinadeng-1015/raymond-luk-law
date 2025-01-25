@@ -1,0 +1,100 @@
+{
+  "title": "法律资源",
+  "videoTitle": "法律视频",
+  "instagramTitle": "在我们的 Instagram 页面上探索更多法律相关视频！",
+  "instagramLink": "访问我们的Instagram",
+  "videos": [
+    {
+      "mediaUrls": "https://www.instagram.com/reel/DEyZv_juoCt/?utm_source=ig_embed&amp;utm_campaign=loading",
+      "title": "同居多久会被视为普通法伴侣？"
+    },
+    {
+      "mediaUrls": "https://www.instagram.com/reel/DDs_kL0yOxA/?utm_source=ig_embed&amp;utm_campaign=loading",
+      "title": "离婚客户经常撒谎的事情！"
+    },
+    {
+      "mediaUrls": "https://www.instagram.com/reel/C_yOAvjOjy9/?utm_source=ig_embed&amp;utm_campaign=loading",
+      "title": "离婚的费用是多少？"
+    },
+    {
+      "mediaUrls": "https://www.instagram.com/reel/C_eSLFJOSYV/?utm_source=ig_embed&amp;utm_campaign=loading",
+      "title": "买房前先做这些事情"
+    },
+    {
+      "mediaUrls": "https://www.instagram.com/reel/DAKcqX7OJfp/?utm_source=ig_embed&amp;utm_campaign=loading",
+      "title": "在立遗嘱之前需要知道的事情！"
+    },
+    {
+      "mediaUrls": "https://www.instagram.com/reel/DCVhkvcOM3c/?utm_source=ig_embed&amp;utm_campaign=loading",
+      "title": "问答：律师回复您的评论"
+    }
+  ],
+  "tools": [
+    {
+      "key": "mortgage-calculator",
+      "label": "贷款计算器",
+      "url": "https://www.ratehub.ca/mortgage-payment-calculator",
+      "desc": "根据贷款金额、利率和贷款期限计算每月按揭还款额。",
+      "category": "房地产法"
+    },
+    {
+      "key": "land-transfer-tax",
+      "label": "土地转让税计算器",
+      "url": "https://www.ratehub.ca/land-transfer-tax",
+      "desc": "估算在安大略省及其他省份购买房产时需要支付的土地转让税。",
+      "category": "房地产法"
+    },
+    {
+      "key": "title-search",
+      "label": "产权查询",
+      "url": "https://www.ontario.ca/page/search-land-property-records",
+      "desc": "在安大略省查询土地和房产记录，以核实法律所有权及其他产权相关细节。",
+      "category": "房地产法"
+    },
+    {
+      "key": "child-support",
+      "label": "子女抚养费计算器",
+      "url": "https://www.justice.gc.ca/eng/fl-df/child-enfant/2017/look-rech.aspx",
+      "desc": "根据收入和监护权，使用联邦子女抚养费指南估算抚养费。",
+      "category": "家庭法"
+    },
+    {
+      "key": "spousal-support",
+      "label": "配偶赡养费计算器",
+      "url": "https://www.divorcepath.com/canada/spousal-support-calculator",
+      "desc": "根据双方收入和关系持续时间估算配偶赡养费。",
+      "category": "家庭法"
+    },
+    {
+      "key": "divorce",
+      "label": "离婚申请",
+      "url": "https://www.justice.gc.ca/eng/fl-df/divorce/app.html",
+      "desc": "查找资源和表格以在加拿大申请离婚，包括资格和提交步骤。",
+      "category": "家庭法"
+    },
+    {
+      "key": "study-permit",
+      "label": "学习许可申请",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/apply.html",
+      "desc": "了解如何申请加拿大学习许可以就读学校和大学。",
+      "category": "移民法"
+    },
+    {
+      "key": "work-permit",
+      "label": "工作许可申请",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/permit/temporary/apply.html",
+      "desc": "查找有关在加拿大申请临时工作许可的信息，包括所需文件和时间表。",
+      "category": "移民法"
+    },
+    {
+      "key": "citizenship",
+      "label": "加拿大公民申请",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/become-canadian-citizen/apply.html",
+      "desc": "通过完成在线或纸质申请表并满足居住要求申请加拿大公民身份。",
+      "category": "移民法"
+    }
+  ],
+  "categories": ["所有", "房地产法", "家庭法", "移民法"],
+  "toolsTitle": "法律工具",
+  "button": "了解更多"
+}

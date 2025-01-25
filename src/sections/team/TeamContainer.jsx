@@ -13,7 +13,7 @@ const TeamContainer = () => {
     <div>
       <div className="relative w-full h-64 md:h-1/2">
         <img
-          src="https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993741/team-background_fnyd0m.jpg"
+          src="assets/banner/team.jpg"
           alt="banner"
           className="absolute inset-0 w-full h-full object-cover"
         />

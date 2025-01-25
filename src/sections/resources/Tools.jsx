@@ -1,31 +1,31 @@
-import { useState } from "react";
-import { Button, Card } from "flowbite-react";
-import { useTranslation } from "react-i18next";
+import { useState } from 'react';
+import { Button, Card } from 'flowbite-react';
+import { useTranslation } from 'react-i18next';
 
 const Tools = () => {
-  const { t } = useTranslation("main");
-  const tools = t("tools", { returnObjects: true });
-  const categories = t("categories", { returnObjects: true });
+  const { t } = useTranslation('resources');
+  const tools = t('tools', { returnObjects: true });
+  const categories = t('categories', { returnObjects: true });
 
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState('All');
 
   const filteredTools = tools.filter((tool) => {
-    if (selectedCategory === "All") return true;
+    if (selectedCategory === 'All' || selectedCategory === '所有') return true;
     return tool.category === selectedCategory;
   });
 
   return (
-    <div className="flex flex-col items-center py-24 lg:py-32  bg-white shadow-lg relative z-10">
-      <h3 className="text-2xl text-center text-gray-800 pb-10 font-semibold px-12">
-        {t("toolsTitle")}
+    <div className="flex flex-col items-center pt-20 md:pt-24 bg-white max-w-screen-2xl mx-auto">
+      <h3 className="text-2xl text-center text-gray-800 pb-8 md:pb-16 font-semibold px-12">
+        {t('toolsTitle')}
       </h3>
       <div className="hidden md:flex justify-center mb-8">
         {categories.map((category) => (
           <Button
             key={category}
             onClick={() => setSelectedCategory(category)}
-            className={`mx-2 border border-gray-300 text-black bg-transparent shadow-xl hover:shadow-xl transition-shadow ${
-              selectedCategory === category ? "font-bold shadow-xl" : ""
+            className={`mx-2 border text-white bg-[#10284e] hover:bg-blue-800 ${
+              selectedCategory === category ? 'font-bold shadow-xl' : ''
             }`}
           >
             {category}
@@ -33,11 +33,11 @@ const Tools = () => {
         ))}
       </div>
 
-      <div className="md:hidden mb-8 w-2/3 px-4">
+      <div className="md:hidden mb-4 w-full px-8">
         <select
           value={selectedCategory}
           onChange={(e) => setSelectedCategory(e.target.value)}
-          className="w-full border border-gray-300 bg-white text-black rounded-lg shadow-md"
+          className="w-full bg-[#10284e] text-white rounded-lg shadow-md"
         >
           {categories.map((category) => (
             <option key={category} value={category}>
@@ -47,14 +47,14 @@ const Tools = () => {
         </select>
       </div>
 
-      <div className="grid grid-cols-1 px-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-8xl">
+      <div className="grid grid-cols-1 md:px-10 md:pb-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-8xl overflow-hidden">
         {filteredTools.map((tool) => (
           <Card
             href={tool.url}
             key={tool.key}
             target="_blank"
             rel="noopener noreferrer"
-            className="max-w-sm m-auto text-left shadow-xl flex flex-col h-full m-4"
+            className="max-w-sm m-auto text-left shadow-xl flex flex-col m-4"
           >
             <div className="flex-grow">
               <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -65,13 +65,8 @@ const Tools = () => {
               </p>
             </div>
             <div className="mt-auto">
-              <Button
-                style={{
-                  boxShadow: "0 10px 20px rgba(0, 0, 0, 0.3)",
-                  background: "#10284e",
-                }}
-              >
-                Read more
+              <Button className="bg-[#10284e] hover:bg-blue-800">
+                {t('button')}
                 <svg
                   className="-mr-1 ml-2 h-4 w-4"
                   fill="currentColor"

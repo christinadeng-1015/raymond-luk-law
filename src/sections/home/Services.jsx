@@ -1,41 +1,41 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
-import { AiOutlineRight } from "react-icons/ai";
-import { FiMoreHorizontal } from "react-icons/fi";
-import realEstate from "../../assets/service/real-estate.jpg";
-import familyLaw from "../../assets/service/family-law.png";
-import will from "../../assets/service/will.jpg";
-import personalInjury from "../../assets/service/personal-injury.png";
-import immigration from "../../assets/service/immigration.png";
-import corporateLaw from "../../assets/service/corporate-law.jpg";
-import otherServices from "../../assets/service/other-services.jpg";
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { AiOutlineRight } from 'react-icons/ai';
+import { FiMoreHorizontal } from 'react-icons/fi';
+import realEstate from '../../assets/service/real-estate.jpg';
+import familyLaw from '../../assets/service/family-law.png';
+import will from '../../assets/service/will.jpg';
+import personalInjury from '../../assets/service/personal-injury.png';
+import immigration from '../../assets/service/immigration.png';
+import corporateLaw from '../../assets/service/corporate-law.jpg';
+import otherServices from '../../assets/service/other-services.jpg';
 
 const images = {
-  "real-estate.jpg": realEstate,
-  "family-law.png": familyLaw,
-  "will.jpg": will,
-  "personal-injury.png": personalInjury,
-  "immigration.png": immigration,
-  "corporate-law.jpg": corporateLaw,
-  "other-services.jpg": otherServices,
+  'real-estate.jpg': realEstate,
+  'family-law.png': familyLaw,
+  'will.jpg': will,
+  'personal-injury.png': personalInjury,
+  'immigration.png': immigration,
+  'corporate-law.jpg': corporateLaw,
+  'other-services.jpg': otherServices,
 };
 
 const Services = () => {
-  const { t } = useTranslation("services");
-  const services = t("services", { returnObjects: true });
+  const { t } = useTranslation('services');
+  const services = t('services', { returnObjects: true });
 
   return (
     <section className="bg-gray-50" id="services">
       <div className="relative w-full h-64 md:h-1/2">
         <img
-          src='https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993741/law-background_wuqi3p.jpg'
-          alt='banner'
+          src="assets/banner/law.jpg"
+          alt="banner"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="relative z-10 h-full flex items-center bg-black bg-opacity-30 pt-24 pl-10 md:pl-24 lg:pl-48">
-            <h1 className="text-4xl md:text-5xl font-bold text-white">
-              Areas of Practice
-            </h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white">
+            Areas of Practice
+          </h1>
         </div>
       </div>
 

@@ -20,7 +20,7 @@ const TeamCard = ({ member }) => {
         onClick={() => setOpenModal(!openModal)}
         rel="noopener noreferrer"
       >
-        <div className="relative text-center w-52 h-52 mx-auto">
+        <div className="relative text-center w-64 h-64 md:w-52 md:h-52 lg:w-64 lg:h-64 mx-auto">
           <img
             src={member.image}
             alt={member.name}
@@ -42,7 +42,7 @@ const TeamCard = ({ member }) => {
         show={openModal}
         onClose={() => setOpenModal(!openModal)}
         size="7xl"
-        className="flex items-center justify-center"
+        className="flex items-center justify-center pt-0 md:pt-20"
       >
         <Modal.Header className="shadow-lg bg-[#10284e]">
           <h1 className="text-white text-xl font-bold uppercase tracking-wide">
@@ -50,7 +50,7 @@ const TeamCard = ({ member }) => {
           </h1>
         </Modal.Header>
         <Modal.Body className="p-6 bg-gray-50 shadow-xl rounded-lg max-h-[90vh] overflow-y-auto w-full">
-          <div className="flex flex-col md:flex-row items-start md:items-center shadow-md bg-white p-6 rounded-lg">
+          <div className="flex flex-col md:flex-row items-start md:items-center md:shadow-md md:bg-white md:p-6 md:rounded-lg">
             <div className="w-full md:w-1/3 flex justify-center items-center mb-6 md:mb-0">
               <img
                 className="w-64 h-64 rounded-full shadow-lg border-4 border-blue-500 object-cover"
@@ -60,18 +60,20 @@ const TeamCard = ({ member }) => {
             </div>
 
             <div className="w-full md:w-2/3 pl-0 md:pl-8">
-              <h5 className="text-3xl font-bold text-gray-900">
+              <h5 className="text-3xl font-bold text-gray-900 text-center md:text-left">
                 {member.name}
               </h5>
-              <p className="text-xl text-gray-900">{member.position}</p>
+              <p className="text-xl text-gray-900 text-center md:text-left">
+                {member.position}
+              </p>
               <div
-                className="text-md text-gray-900 my-12"
+                className="text-md text-gray-900 my-6 md:my-12"
                 dangerouslySetInnerHTML={{ __html: member.description }}
               />
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row items-start shadow-lg bg-white p-10 rounded-lg mt-4">
+          <div className="flex flex-col md:flex-row items-start md:shadow-lg md:bg-white md:p-10 md:rounded-lg mt-4">
             <div className="w-full md:w-1/3 mx-auto pb-4 md:pl-0">
               <h5 className="font-semibold flex items-center text-[#10284e] mb-2">
                 <HiOutlineAcademicCap className="inline mr-2" />

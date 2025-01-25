@@ -12,7 +12,7 @@ const ContactContainer = () => {
     <div id="contact" className="mx-auto">
       <div className="relative w-full h-64 md:h-1/2">
         <img
-          src="https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993741/contact_kbh0ed.jpg"
+          src="assets/banner/contact.jpg"
           alt="banner"
           className="absolute inset-0 w-full h-full object-cover"
         />

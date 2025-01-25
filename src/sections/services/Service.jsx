@@ -1,21 +1,21 @@
-import { useTranslation } from "react-i18next";
-import ServicesTabs from "./ServicesTabs";
-import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+import ServicesTabs from './ServicesTabs';
+import { Link } from 'react-router-dom';
 
 const categoryLinks = [
-  { path: "/real-estate-law", name: "Real Estate Law" },
-  { path: "/family-law", name: "Family Law" },
-  { path: "/wills-and-estates", name: "Wills and Estates" },
-  { path: "/personal-injury-law", name: "Personal Injury Law" },
-  { path: "/immigration-law", name: "Immigration Law" },
-  { path: "/corporate-law", name: "Corporate Law" },
-  { path: "/other-services", name: "Other Services" },
+  { path: '/real-estate-law', name: 'Real Estate Law' },
+  { path: '/family-law', name: 'Family Law' },
+  { path: '/wills-and-estates', name: 'Wills and Estates' },
+  { path: '/personal-injury-law', name: 'Personal Injury Law' },
+  { path: '/immigration-law', name: 'Immigration Law' },
+  { path: '/corporate-law', name: 'Corporate Law' },
+  { path: '/other-services', name: 'Other Services' },
 ];
 
 export function Service() {
   const path = window.location.pathname;
-  const { t } = useTranslation("services");
-  const services = t("services", { returnObjects: true });
+  const { t } = useTranslation('services');
+  const services = t('services', { returnObjects: true });
   const service = services.find((service) => service.path === path);
 
   if (!service) {
@@ -27,8 +27,8 @@ export function Service() {
       {/* Banner */}
       <div className="relative w-full h-64 md:h-1/2">
         <img
-          src='https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993741/law-background_wuqi3p.jpg'
-          alt={service ? service.title : "Service Banner"}
+          src="assets/banner/law.jpg"
+          alt={service ? service.title : 'Service Banner'}
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="relative z-10 h-full flex items-center bg-black bg-opacity-30 pt-24 pl-10 md:pl-24 lg:pl-48">
@@ -48,8 +48,8 @@ export function Service() {
               to={link.path}
               className={`px-4 py-2 rounded-lg font-medium ${
                 path.startsWith(link.path)
-                  ? "text-purple-600 bg-purple-100"
-                  : "text-gray-700 hover:text-purple-600"
+                  ? 'text-purple-600 bg-purple-100'
+                  : 'text-gray-700 hover:text-purple-600'
               }`}
             >
               {link.name}
@@ -57,7 +57,6 @@ export function Service() {
           ))}
         </div>
       </nav>
-
 
       {/* Tabs Section */}
       <div>

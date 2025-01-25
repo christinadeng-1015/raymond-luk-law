@@ -1,0 +1,100 @@
+{
+  "title": "Legal Resources",
+  "videoTitle": "Legal Insight Videos",
+  "instagramTitle": "Explore more legal insights and videos on our Instagram page!",
+  "instagramLink": "Visit Our Instagram",
+  "videos": [
+    {
+      "mediaUrls": "https://www.instagram.com/reel/DEyZv_juoCt/?utm_source=ig_embed&amp;utm_campaign=loading",
+      "title": "How long do you need to live together to be considered a common law partner?"
+    },
+    {
+      "mediaUrls": "https://www.instagram.com/reel/DDs_kL0yOxA/?utm_source=ig_embed&amp;utm_campaign=loading",
+      "title": "Divorce clients lie about this all the time!"
+    },
+    {
+      "mediaUrls": "https://www.instagram.com/reel/C_yOAvjOjy9/?utm_source=ig_embed&amp;utm_campaign=loading",
+      "title": "How much does a divorce cost?"
+    },
+    {
+      "mediaUrls": "https://www.instagram.com/reel/C_eSLFJOSYV/?utm_source=ig_embed&amp;utm_campaign=loading",
+      "title": "Do these things first before buying a home"
+    },
+    {
+      "mediaUrls": "https://www.instagram.com/reel/DAKcqX7OJfp/?utm_source=ig_embed&amp;utm_campaign=loading",
+      "title": "Know these things first before doing your will!"
+    },
+    {
+      "mediaUrls": "https://www.instagram.com/reel/DCVhkvcOM3c/?utm_source=ig_embed&amp;utm_campaign=loading",
+      "title": "Q&A: Laywer responds to your comments"
+    }
+  ],
+  "tools": [
+    {
+      "key": "mortgage-calculator",
+      "label": "Mortgage Calculator",
+      "url": "https://www.ratehub.ca/mortgage-payment-calculator",
+      "desc": "Calculate your monthly mortgage payments based on your loan amount, interest rate, and loan term.",
+      "category": "Real Estate Law"
+    },
+    {
+      "key": "land-transfer-tax",
+      "label": "Land Transfer Tax Calculator",
+      "url": "https://www.ratehub.ca/land-transfer-tax",
+      "desc": "Estimate the land transfer tax you need to pay when purchasing property in Ontario and other provinces.",
+      "category": "Real Estate Law"
+    },
+    {
+      "key": "title-search",
+      "label": "Title Search",
+      "url": "https://www.ontario.ca/page/search-land-property-records",
+      "desc": "Search land and property records in Ontario to verify legal ownership and other title-related details.",
+      "category": "Real Estate Law"
+    },
+    {
+      "key": "child-support",
+      "label": "Child Support Calculator",
+      "url": "https://www.justice.gc.ca/eng/fl-df/child-enfant/2017/look-rech.aspx",
+      "desc": "Use the Federal Child Support Guidelines to estimate child support payments based on income and custody.",
+      "category": "Family Law"
+    },
+    {
+      "key": "spousal-support",
+      "label": "Spousal Support Calculator",
+      "url": "https://www.divorcepath.com/canada/spousal-support-calculator",
+      "desc": "Estimate spousal support payments based on the income of both parties and duration of the relationship.",
+      "category": "Family Law"
+    },
+    {
+      "key": "divorce",
+      "label": "Divorce Application",
+      "url": "https://www.justice.gc.ca/eng/fl-df/divorce/app.html",
+      "desc": "Find resources and forms to apply for a divorce in Canada, including eligibility and filing steps.",
+      "category": "Family Law"
+    },
+    {
+      "key": "study-permit",
+      "label": "Study Permit Application",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/apply.html",
+      "desc": "Learn how to apply for a Canadian study permit to attend schools and universities in Canada.",
+      "category": "Immigration Law"
+    },
+    {
+      "key": "work-permit",
+      "label": "Work Permit Application",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/permit/temporary/apply.html",
+      "desc": "Find information on applying for a temporary work permit in Canada, including required documents and timelines.",
+      "category": "Immigration Law"
+    },
+    {
+      "key": "citizenship",
+      "label": "Canadian Citizenship Application",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/become-canadian-citizen/apply.html",
+      "desc": "Apply for Canadian citizenship by completing the online or paper application form and meeting residency requirements.",
+      "category": "Immigration Law"
+    }
+  ],
+  "categories": ["All", "Real Estate Law", "Family Law", "Immigration Law"],
+  "toolsTitle": "Essential Legal Tools",
+  "button": "Read more"
+}

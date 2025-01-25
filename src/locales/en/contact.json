@@ -65,7 +65,12 @@
       { "icon": "BsDribbble", "link": "https://dribbble.com" }
     ]
   },
-  "officeImages": [],
+  "officeImages": [
+    "/assets/office/office-hour.jpg",
+    "/assets/office/office-1.jpg",
+    "/assets/office/office-2.jpg",
+    "/assets/office/office-3.jpeg"
+  ],
   "subtitle": "Experienced, reliable, and professional legal experts in a wide variety of practice areas",
   "processTitle": "Our Process",
   "process": [
