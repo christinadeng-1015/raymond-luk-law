@@ -74,5 +74,42 @@
   "services": {
     "title": "Areas of Practice",
     "subtitle": "I give you the best in all the services below"
-  }
+  },
+  "process": {
+    "title": "Our Process",
+    "steps": [
+      {
+        "title": "Free Initial Consultation",
+        "description": "Schedule a call with our staff to understand your needs.",
+        "icon": "HiOutlineCalendar"
+      },
+      {
+        "title": "Appointments",
+        "description": "In-person or virtual appointments with a lawyer. *First 15 minutes free.",
+        "icon": "HiOutlineLightBulb"
+      },
+      {
+        "title": "Work & Communication",
+        "description": "Start paperwork and provide a detailed timeline.",
+        "icon": "HiOutlineClipboardList"
+      },
+      {
+        "title": "Result",
+        "description": "Deliver the best possible result for our customers.",
+        "icon": "HiOutlineCheckCircle"
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "review": "Raymond helped us with our first home purchase and we're really glad we went with him! As it was our first time going through the whole process, we had a lot of questions but he was very patient and helpful with us all the way through.",
+      "author": "Matt W.",
+      "position": "Client of Raymond Luk Firm"
+    },
+    {
+      "review": "Review 2",
+      "author": "Author 2",
+      "position": "Position 2"
+    }
+  ]
 }

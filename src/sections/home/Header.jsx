@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 const Header = () => {
   const [offsetY, setOffsetY] = useState(0);
@@ -10,25 +10,22 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       setOffsetY(window.scrollY);
-      if (isDrawerOpen) {
-        setIsDrawerOpen(false);
-      }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
-  }, [isDrawerOpen]);
+  });
 
-  const { t } = useTranslation("navbar");
-  const navbar = t("navbar", { returnObjects: true });
+  const { t } = useTranslation('navbar');
+  const navbar = t('navbar', { returnObjects: true });
 
   const slides = [
     { title: navbar.title, subtitle: navbar.subtitle },
-    { title: "Slide 2 Title", subtitle: "Slide 2 Subtitle" },
-    { title: "Slide 3 Title", subtitle: "Slide 3 Subtitle" },
+    { title: 'Slide 2 Title', subtitle: 'Slide 2 Subtitle' },
+    { title: 'Slide 3 Title', subtitle: 'Slide 3 Subtitle' },
   ];
 
   const handleNext = () => {
@@ -45,26 +42,22 @@ const Header = () => {
 
   return (
     <header id="header" className="relative w-full h-screen overflow-hidden">
-      {/* Background Image */}
       <div
         className="absolute top-1/2 left-1/2 w-full h-full bg-cover bg-no-repeat bg-center"
         style={{
-          backgroundImage: 'url(https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993194/homepage_uvcqdg.jpg)',
+          backgroundImage:
+            'url(https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993194/homepage_uvcqdg.jpg)',
           transform: `translate(-50%, -50%) translateY(${offsetY * 0.5}px)`,
         }}
       ></div>
 
-      {/* Main Content */}
       <div className="absolute top-0 left-0 w-full lg:w-2/3 h-full flex justify-between items-center px-4 md:px-20 mt-10">
-        {/* Previous Slide Button */}
         <button
           onClick={handlePrev}
           className="text-white hover:text-gray-300 transition duration-300 text-3xl md:text-4xl"
         >
           <IoIosArrowBack />
         </button>
-
-        {/* Slide Content */}
         <div className="relative w-full lg:w-1/2 text-center">
           <h1
             data-aos="zoom-out"
@@ -84,14 +77,13 @@ const Header = () => {
               href="#"
               onClick={handleDrawerToggle}
               className="text-md border-2 bg-white rounded-lg p-4 font-medium shadow-md transition-transform transform hover:scale-105 hover:shadow-lg mt-6"
-              style={{ color: "#10284e" }}
+              style={{ color: '#10284e' }}
             >
               {navbar.googleDoc.title}
             </button>
           </div>
         </div>
 
-        {/* Next Slide Button */}
         <button
           onClick={handleNext}
           className="text-white hover:text-gray-300 transition duration-300 text-3xl md:text-4xl"
@@ -100,12 +92,11 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Drawer */}
       <div
         className={`fixed bottom-0 md:bottom-auto md:right-0 w-full md:w-1/4 h-1/2 md:h-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${
           isDrawerOpen
-            ? "translate-y-0 md:translate-x-0"
-            : "translate-y-full md:translate-x-full"
+            ? 'translate-y-0 md:translate-x-0'
+            : 'translate-y-full md:translate-x-full'
         }`}
       >
         <div className="relative p-4 flex flex-col justify-center items-center h-full">
@@ -118,7 +109,6 @@ const Header = () => {
           <h5 className="text-xl font-medium text-gray-900 mb-4">
             Get in Touch
           </h5>
-          {/* Add your form or additional content here */}
         </div>
       </div>
     </header>

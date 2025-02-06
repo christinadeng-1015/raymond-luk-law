@@ -2,16 +2,6 @@ import { useTranslation } from 'react-i18next';
 import ServicesTabs from './ServicesTabs';
 import { Link } from 'react-router-dom';
 
-const categoryLinks = [
-  { path: '/real-estate-law', name: 'Real Estate Law' },
-  { path: '/family-law', name: 'Family Law' },
-  { path: '/wills-and-estates', name: 'Wills and Estates' },
-  { path: '/personal-injury-law', name: 'Personal Injury Law' },
-  { path: '/immigration-law', name: 'Immigration Law' },
-  { path: '/corporate-law', name: 'Corporate Law' },
-  { path: '/other-services', name: 'Other Services' },
-];
-
 export function Service() {
   const path = window.location.pathname;
   const { t } = useTranslation('services');
@@ -24,7 +14,6 @@ export function Service() {
 
   return (
     <div>
-      {/* Banner */}
       <div className="relative w-full h-64 md:h-1/2">
         <img
           src="assets/banner/law.jpg"
@@ -40,30 +29,50 @@ export function Service() {
         </div>
       </div>
 
-      <nav className="bg-gray-100 p-4 shadow-md">
-        <div className="max-w-screen-xl mx-auto flex flex-col items-center gap-2 sm:gap-4 md:flex-row md:justify-center md:gap-4">
-          {categoryLinks.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
-              className={`px-4 py-2 rounded-lg font-medium ${
-                path.startsWith(link.path)
-                  ? 'text-purple-600 bg-purple-100'
-                  : 'text-gray-700 hover:text-purple-600'
-              }`}
-            >
-              {link.name}
-            </Link>
+      <nav
+        className="p-4 shadow-md"
+        data-aos="flip-down"
+        data-aos-duration="1200"
+        data-aos-easing="ease-in-out"
+      >
+        <div className="max-w-screen-xl mx-auto flex flex-col items-center gap-8 md:flex-row justify-center p-6">
+          {services.map((service) => (
+            <div key={service.path} className="relative">
+              <Link
+                to={service.path}
+                className={`px-4 py-2 rounded-lg text-base font-semibold ${
+                  path.startsWith(service.path)
+                    ? 'text-blue-500'
+                    : 'text-gray-700 hover:text-blue-500'
+                }`}
+              >
+                {service.title}
+              </Link>
+            </div>
           ))}
         </div>
       </nav>
 
-      {/* Tabs Section */}
-      <div>
-        {service && service.tabs && service.tabs.length > 0 && (
-          <ServicesTabs tabs={service.tabs} />
-        )}
-      </div>
+      {service.desc && (
+        <div className="p-16 shadow-lg hidden md:flex items-center bg-[#10284e]">
+          <div className="w-1/4 h-full rounded-l-lg flex justify-end items-center">
+            {service.icon && (
+              <img
+                src={`assets/icons/${service.icon}`}
+                alt="service-icon"
+                className="w-24 h-24"
+              />
+            )}
+          </div>
+          <p className="w-1/2 hidden md:flex mx-24 pt-6 text-base text-white">
+            {service.desc}
+          </p>
+        </div>
+      )}
+
+      {service && service.tabs && service.tabs.length > 0 && (
+        <ServicesTabs tabs={service.tabs} />
+      )}
     </div>
   );
 }

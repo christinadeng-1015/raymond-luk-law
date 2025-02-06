@@ -10,25 +10,24 @@ function ContactFloatIcon() {
 
   return (
     <div className="fixed bottom-4 right-4 flex flex-col items-end z-50">
-      {/* Phone Numbers */}
       {isOpen && (
         <div className="bg-white shadow-lg p-4 rounded-md mb-2 w-48">
           <div className="text-gray-800 mb-2">
             <strong>English:</strong>
             <a
-              href="tel:+1234567890"
-              className="block text-blue-600 hover:underline"
+              href="tel:+9056676496"
+              className="block text-blue-700 hover:underline font-bold"
             >
-              +1 234-567-890
+              905-667-6496
             </a>
           </div>
           <div className="text-gray-800">
             <strong>中文:</strong>
             <a
-              href="tel:+0123456789"
-              className="block text-blue-600 hover:underline"
+              href="tel:+9056676499"
+              className="block text-blue-700 hover:underline font-bold"
             >
-              +0 123-456-789
+              905-667-6499
             </a>
           </div>
         </div>

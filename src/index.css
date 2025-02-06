@@ -9,7 +9,6 @@
   outline: 0;
   text-decoration: none;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 :root {
@@ -39,12 +38,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   line-height: 1.6;
   font-size: 0.9rem;
+  overflow-x: hidden;
 }
 
 /* GENERAL CONTAINER CLASS */
@@ -247,13 +248,16 @@ footer .nav__menu a {
 }
 
 .service__subtitle li {
-  list-style: square;
+  list-style: inside square;
+  padding-left: 4px;
 }
 
 .service__details li {
-  list-style: square;
+  list-style: inside square;
+  padding-left: 4px;
 }
 
 .service__content li {
-  list-style: square;
+  list-style: inside square;
+  padding-left: 4px;
 }

@@ -1,2 +1,39 @@
 {
+  "process": {
+    "title": "我们的流程",
+    "steps": [
+      {
+        "title": "免费初步咨询",
+        "description": "与我们的工作人员预约电话，了解您的需求。",
+        "icon": "HiOutlineCalendar"
+      },
+      {
+        "title": "预约会面",
+        "description": "与律师进行面对面或线上会议。*前15分钟免费。",
+        "icon": "HiOutlineLightBulb"
+      },
+      {
+        "title": "工作与沟通",
+        "description": "开始准备文件，并提供详细的时间表。",
+        "icon": "HiOutlineClipboardList"
+      },
+      {
+        "title": "结果",
+        "description": "为客户提供最佳的解决方案。",
+        "icon": "HiOutlineCheckCircle"
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "review": "客户评论 1",
+      "author": "客户 1",
+      "position": "职位 1"
+    },
+    {
+      "review": "客户评论 2",
+      "author": "客户 2",
+      "position": "职位 2"
+    }
+  ]
 }

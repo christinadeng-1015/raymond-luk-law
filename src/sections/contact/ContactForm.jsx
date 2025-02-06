@@ -13,7 +13,12 @@ const ContactForm = () => {
   const form = t('form', { returnObjects: true });
 
   return (
-    <div className="w-full max-w-2xl mx-auto p-6 rounded-xl shadow-sm bg-white/50 backdrop-blur-lg">
+    <div
+      className="w-full max-w-2xl mx-auto p-6 rounded-xl shadow-sm bg-white/50 backdrop-blur-lg"
+      data-aos="slide-left"
+      data-aos-duration="1200"
+      data-aos-easing="ease-in-out"
+    >
       <h3 className="text-center text-2xl font-bold text-[#10284e] mb-6">
         {form.title}
       </h3>

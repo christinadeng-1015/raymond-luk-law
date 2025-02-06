@@ -6,7 +6,12 @@ export default function Video() {
   const videos = t('videos', { returnObjects: true });
 
   return (
-    <div className="container mx-auto py-16 md:py-24 min-h-screen max-w-screen-2xl mx-auto">
+    <div
+      className="container mx-auto py-16 md:py-24 min-h-screen max-w-screen-2xl mx-auto"
+      data-aos="zoom-out-up"
+      data-aos-duration="1200"
+      data-aos-easing="ease-in-out"
+    >
       <h1 className="text-2xl text-center text-gray-800 pb-8 md:pb-16 font-semibold">
         {t('videoTitle')}
       </h1>

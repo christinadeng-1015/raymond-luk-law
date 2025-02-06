@@ -29,7 +29,10 @@ const ContactInformation = () => {
   ];
 
   return (
-    <div className="text-center w-full max-w-md px-6 py-8">
+    <div
+      className="text-center w-full max-w-md px-6 py-8"
+      data-aos="fade-right"
+    >
       <h2 className="text-2xl font-bold text-[#10284e] mb-6">
         {contact.title}
       </h2>

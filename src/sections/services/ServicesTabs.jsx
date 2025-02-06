@@ -1,18 +1,16 @@
-import { useState, useEffect } from "react";
-import { images, iconMap } from "./constants";
+import { useState, useEffect } from 'react';
+import { images, iconMap } from './constants';
 
 export function ServicesTabs({ tabs }) {
-  const [activeTab, setActiveTab] = useState(tabs?.[0]?.key || "");
+  const [activeTab, setActiveTab] = useState(tabs?.[0]?.key || '');
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
-    setActiveTab(tabs?.[0]?.key || "");
+    setActiveTab(tabs?.[0]?.key || '');
   }, [tabs]);
 
-  
   return (
-    <div className="md:p-8 max-w-screen-2xl mx-auto pt-8 md:pt-32">
-      {/* Dropdown for Mobile */}
+    <div className="md:p-8 max-w-screen-2xl mx-auto pt-8 md:pt-12">
       <div className="md:hidden relative overflow-visible px-4">
         <button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -22,12 +20,14 @@ export function ServicesTabs({ tabs }) {
             <div className="mr-2 text-base">
               {iconMap[tabs.find((tab) => tab.key === activeTab)?.icon]}
             </div>
-            <span>{tabs.find((tab) => tab.key === activeTab)?.label || "Select Tab"}</span>
+            <span>
+              {tabs.find((tab) => tab.key === activeTab)?.label || 'Select Tab'}
+            </span>
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className={`h-5 w-5 transform transition-transform ${
-              isDropdownOpen ? "rotate-180" : ""
+              isDropdownOpen ? 'rotate-180' : ''
             }`}
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -39,36 +39,36 @@ export function ServicesTabs({ tabs }) {
             />
           </svg>
         </button>
+
         {isDropdownOpen && (
           <ul className="absolute z-10 bg-white border border-gray-300 rounded-lg shadow-lg mt-2 w-full">
-          {tabs.map((item) => (
-            <li
-              key={item.key}
-              onClick={() => {
-                setActiveTab(item.key);
-                setIsDropdownOpen(false);
-              }}
-              className={`flex items-center px-4 py-2 cursor-pointer hover:bg-[#e6f0ff] ${
-                activeTab === item.key ? "bg-[#e6f0ff] text-[#10284e]" : ""
-              }`}
-            >
-              <div className="mr-4">{item.icon && iconMap[item.icon]}</div>
-              <span>{item.label}</span>
-            </li>
-          ))}
-        </ul>
+            {tabs.map((item) => (
+              <li
+                key={item.key}
+                onClick={() => {
+                  setActiveTab(item.key);
+                  setIsDropdownOpen(false);
+                }}
+                className={`flex items-center px-4 py-2 cursor-pointer hover:bg-[#e6f0ff] ${
+                  activeTab === item.key ? 'bg-[#e6f0ff] text-[#10284e]' : ''
+                }`}
+              >
+                <div className="mr-4">{item.icon && iconMap[item.icon]}</div>
+                <span>{item.label}</span>
+              </li>
+            ))}
+          </ul>
         )}
       </div>
 
-      {/* Tabs for Desktop */}
-      <div className="hidden md:flex justify-center gap-4 pb-8 border-b">
+      <div className="hidden md:flex justify-center gap-8" data-aos="zoom-in">
         {tabs.map((item) => (
           <div
             key={item.key}
-            className={`flex flex-col items-center text-center cursor-pointer w-40 p-4 rounded-lg transition-all duration-300 ${
+            className={`flex flex-col items-center text-center w-36 h-36 rounded-lg py-8 justify-start ${
               activeTab === item.key
-                ? "bg-[#e6f0ff] text-[#10284e]"
-                : "bg-white text-gray-500"
+                ? 'bg-blue-100 text-[#10284e]'
+                : 'bg-white text-gray-700'
             }`}
             onClick={() => setActiveTab(item.key)}
           >
@@ -78,48 +78,53 @@ export function ServicesTabs({ tabs }) {
         ))}
       </div>
 
-      {/* Tab Content */}
       {tabs.map(
         (item) =>
           activeTab === item.key && (
-            <div
-              key={item.key}
-              className="px-6 py-10 md:p-16 shadow-lg rounded-lg bg-white mb-8"
-            >
-              <h2 className="text-gray-900 pb-8 font-sans font-bold text-3xl">
+            <div key={item.key}>
+              <h2 className="text-white pb-8 font-bold text-3xl bg-[#10284e] p-10 shadow-lg rounded-t-lg mt-10">
                 {item.label}
               </h2>
-              <div className="grid grid-cols-1 gap-y-16">
+              <div className="grid grid-cols-1 gap-y-16 px-4 md:px-12 shadow-lg rounded-lg bg-white py-10">
+                {item.desc && (
+                  <div
+                    className="service__subtitle text-base text-gray-700"
+                    dangerouslySetInnerHTML={{
+                      __html: item.desc,
+                    }}
+                  />
+                )}
                 {item.content?.map((content, index) => (
                   <div
                     key={index}
                     className={`flex flex-col ${
-                      content.imageSrc ? "md:flex-row gap-6" : "gap-4"
+                      content.imageSrc ? 'md:flex-row gap-6' : 'gap-4'
                     } items-start ${
                       content.imageSrc && index % 2 !== 0
-                        ? "md:flex-row-reverse"
-                        : ""
+                        ? 'md:flex-row-reverse'
+                        : ''
                     }`}
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-easing="ease-in-out"
                   >
-                    {/* Image Section */}
                     {content.imageSrc && images[content.imageSrc] && (
                       <div className="flex-shrink-0 w-full md:w-2/5">
                         <img
                           src={images[content.imageSrc]}
                           alt={content.title}
-                          className="rounded-lg h-auto object-cover"
+                          className="rounded-lg h-auto object-cover max-h-96 md:px-8"
                         />
                       </div>
                     )}
 
-                    {/* Text Content Section */}
                     <div
                       className={`flex flex-col ${
-                        content.imageSrc ? "w-full md:w-3/5" : "w-full"
+                        content.imageSrc ? 'w-full md:w-3/5' : 'w-full'
                       }`}
                     >
                       {content.title && (
-                        <h3 className="text-black font-sans font-bold text-2xl mb-4">
+                        <h3 className="font-black text-2xl pb-2">
                           {content.title}
                         </h3>
                       )}
@@ -134,15 +139,12 @@ export function ServicesTabs({ tabs }) {
                       {content.subtitle?.length > 0 && (
                         <div className="mt-4 space-y-4">
                           {content.subtitle.map((subtitle, subtitleIndex) => (
-                            <div
-                              key={subtitleIndex}
-                              className="p-4 mb-4 border-l-4 border-purple-600"
-                            >
-                              <h4 className="font-semibold text-lg mb-2">
+                            <div key={subtitleIndex} className="py-4">
+                              <h4 className="font-extrabold text-lg mb-2 uppercase">
                                 {subtitle.title}
                               </h4>
                               <div
-                                className="service__subtitle text-gray-700 text-base leading-relaxed"
+                                className="service__subtitle text-base text-gray-700"
                                 dangerouslySetInnerHTML={{
                                   __html: subtitle.desc,
                                 }}
@@ -150,6 +152,11 @@ export function ServicesTabs({ tabs }) {
                             </div>
                           ))}
                         </div>
+                      )}
+                      {content.disclaimer && (
+                        <p className="italic font-light pt-6">
+                          {content.disclaimer}
+                        </p>
                       )}
                     </div>
                   </div>

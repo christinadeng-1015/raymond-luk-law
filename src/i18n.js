@@ -17,6 +17,8 @@ import faqZH from './locales/zh/faqs.json';
 import contactZH from './locales/zh/contact.json';
 import resourcesZH from './locales/zh/resources.json';
 
+const savedLanguage = localStorage.getItem('i18nextLng') || 'en';
+
 const resources = {
   en: {
     main: mainEN,
@@ -40,12 +42,15 @@ const resources = {
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: 'en', // default language
+  lng: savedLanguage,
   fallbackLng: 'en',
-  ns: ['services'], // Namespaces used in the app
-  defaultNS: 'services', // Default namespace if not specified
+  ns: ['services'],
+  defaultNS: 'services',
   interpolation: {
     escapeValue: false,
+  },
+  detection: {
+    order: ['localStorage', 'navigator'],
   },
 });
 

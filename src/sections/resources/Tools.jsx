@@ -15,7 +15,12 @@ const Tools = () => {
   });
 
   return (
-    <div className="flex flex-col items-center pt-20 md:pt-24 bg-white max-w-screen-2xl mx-auto">
+    <div
+      className="flex flex-col items-center pt-20 md:pt-24 bg-white max-w-screen-2xl mx-auto"
+      data-aos="zoom-in-up"
+      data-aos-duration="1200"
+      data-aos-easing="ease-in-out"
+    >
       <h3 className="text-2xl text-center text-gray-800 pb-8 md:pb-16 font-semibold px-12">
         {t('toolsTitle')}
       </h3>

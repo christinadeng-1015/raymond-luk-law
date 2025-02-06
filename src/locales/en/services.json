@@ -1,193 +1,690 @@
 {
   "title": "Areas of Practice",
+  "bannerText": "Our services",
   "subtitle": "We provide various professional legal services across multiple fields to meet your needs.",
+  "more": "And more",
   "services": [
     {
       "path": "/real-estate-law",
       "title": "Real Estate Law",
       "imageSrc": "real-estate.jpg",
+      "icon": "real-estate.png",
       "desc": "Our experienced Real Estate team has a deep understanding of the legal issues involved in real estate transactions, including purchase agreements, title searches, transfers, mortgages, leases, and more. We work closely with each client to understand their specific needs and goals, and we develop a personalized legal strategy that helps them achieve those goals.",
       "tabs": [
-        { "key": "real-estate", "label": "Purchase and Sale", "icon": "GiHouseKeys",
-        "content": [
-          { "title": "Residential Real Estate", "imageSrc": "residential-real-estate.jpg", "desc": "Our team can assist you with the purchase or sale of your residential property anywhere in Ontario. Whether you are a first-time home buyer or a seasoned real estate investor, we will give you the help you need every step of the way.", 
-          "subtitle": [
-            {"title": "Purchase", "desc": "Our purchase services include but are not limited to: <ul><li>Review of the Agreement of Purchase and Sale</li><li>Title, Writ and other due diligence searches</li><li>Review of the documents prepared by the seller’s lawyer</li><li>Assistance with financing and mortgage documentation</li><li>Arranging for title insurance</li><li>Status Certificate Review (if applicable)</li><li>Preparation of the legal documents for closing</li></ul>"}, 
-            {"title": "Sale", "desc": "Our sale services include but are not limited to: <ul><li>Review of the Agreement of Purchase and Sale</li><li>Title Search review</li><li>Assistance with the discharge of existing mortgages</li><li>Preparation of the legal documents for closing</li><li>Responding to the requisitions of the buyer’s lawyer</li></ul>"}]},
-          {"title": "Commercial Real Estate", "imageSrc": "commercial-real-estate.jpg", "desc": "Whether you are entering or exiting the commercial real estate property market as an investor or owner, you can expect our team to assist you with navigating your transaction.",  
-          "subtitle": [
-            {"title": "Our team will help you:","desc": "<ul><li>Conduct due diligence searches to identify liens</li><li>Identify and examine potential zoning issues</li><li>Deal with financing and mortgage documentation</li><li>Contract drafting and negotiation</li></ul>"} 
-           ]}
-        ]},
-        { "key": "pre-construction", "label": "Assignment & Pre-construction",  "icon": "MdOutlineAssignment",
-        "content": [
-          { "title": "Assignment Purchases and Sale", "imageSrc": "assignment.jpeg","desc": "Just as how pre-construction purchases from a builder can be more complex than a purchase or sale of a resale property, the purchase or sale of your pre-construction property on assignment can be similarly confusing to navigate.", 
-          "subtitle": [
-            {"title": "We here at Luk Law can assist you with:", "desc": "<ul><li>Negotiating and reviewing amendments </li><li>Facilitating the Interim Occupancy and Final Closing of the purchase</li><li>⁠Dealing with financing and mortgage documentation</li><li>Determining HST rebate eligibility*</li></ul> *We also assist with HST Rebate Applications as a separate service."}]},
-          { "title": "Pre-construction Purchases", "imageSrc": "pre-con.jpg", "desc": "Contracts for pre-construction purchases are significantly different that Agreements of Purchase and Sale for resale properties. To avoid unanticipated fees and delays, have us review and assist with your pre-construction purchase as soon as possible.", "subtitle": [
-            {"title": "Some of our services include:", "desc": "<ul><li>Reviewing the pre-construction contracts during conditional or “cooling off” period</li><li>Facilitating the Interim Occupancy and Final Closing of the purchase</li><li>Dealing with financing and mortgage documentation</li><li>Determining HST rebate eligibility*</li></ul> *We also assist with HST Rebate Applications as a separate service."}]}
-        ]},
-        { "key": "commercial-leasing", "label": "Commercial Leasing", "icon": "BiBuildingHouse", "content": [
-          {"title": "Our services include:", "imageSrc": "commercial-leasing.jpg", "desc": "We will assist you with your commercial leasing needs whether you are a landlord or a tenant.",
-          "subtitle": [{"desc": "<ul><li>Lease negotiation</li><li>Lease and offer to lease drafting and review</li><li>Due diligence searches and zoning review</li><li>Lease renewal drafting and review</li><li>Sublease drafting and review</li></ul>"}]}
-        ]},
-        { "key": "title-transfers", "label": "Title Transfers", "icon": "TbTransferIn", "content": [
-          {"title": "Our team at Luk Law can assist you with:", "imageSrc": "title-transfer.jpg", "desc": "Title transfer is the process by which the ownership of a property is changed, absent a full blown purchase and sale. Some common reasons for transferring partial or full ownership of a property could be due to gifts between family members or mortgage or refinancing obligations.",
-          "subtitle": [{"desc": "<ul><li>Advising you on the implications of title transfer</li><li>Structuring your title transfer</li><li>Conducting due diligence searches</li><li>Deal with financing and mortgage documentation</li><li>⁠Executing title transfer documentation and registration</li></ul>"}]}
-        ]},
-        { "key": "mortgage", "label": "Mortgage", "icon": "BiMoneyWithdraw", "content": [
-          { "title": "Mortgage Refinance", "imageSrc": "mortgage-refinance.jpg", "desc": "With the ever-changing mortgage rates, we understand that homeowners are frequently shopping for a more favourable offer to lower their monthly payments, procure funds for a new renovation project or to simply have access to a line of credit. Our firm has experience working with a wide variety of lenders to ensure you secure refinancing in a timely manner.", 
-          "subtitle": [
-            {"title": "Our services include:", "desc": "<ul><li>Dealing with financing and mortgage documentation</li><li>Arranging for title insurance (if applicable)</li><li>Adjusting ownership (if applicable)</li><li>Conducting due diligence searches</li><li>Completing mortgage discharges and payouts (if applicable)</li></ul>"}]},
-          { "title": "Private Lending", "imageSrc": "private-lending.jpg", "desc": "We assist private lenders looking to secure their capital against real estate property. Whether you are a first-time lender looking to help a friend while having some security or an experienced lender looking for legal guidance, we are here to help.",
-        "subtitle": [
-            {"title": "Some of the services that we provide include:", "desc": "<ul><li>Drafting, negotiating and reviewing mortgage commitments</li><li>Arranging for title insurance</li><li>Conducting due diligence searches</li><li>Determining existing mortgages on the property</li><li>Dealing with financing and mortgage documentation</li></ul>"}]}
-        ]},
-        { "key": "real-estate-law-faq", "label": "Real Estate Law FAQ", "icon": "BiHelpCircle", "content": [
-          { "title": "1. Is it mandatory by law to hire a lawyer for selling and buying homes?", "desc": "Yes. Only lawyers can access the provincial electronic land registration system and register the transfer of property."},
-          { "title": "2. What is title insurance?", "desc": "Title insurance protects the buyer against financial loss from fraud related to ownership of the property. Most banks require homebuyers to have title insurance as it also protects them in the case that the buyers default on their mortgage due to title fraud."},
-          { "title": "3. What is a title search?", "desc": "A title search in Ontario is a process of retrieving and examining Land Title records to determine and confirm legal ownership, description, as well as any claims, liens, charges, encumbrances registered on the real property. A title search is required for any real estate transaction to be completed."},
-          { "title": "4. Can both the vendor and purchaser have the same lawyer?", "desc": "No. They cannot, but there are a few circumstances where it is possible. Representing both the vendor and purchaser is a conflict of interest and would jeopardize their fundamental obligations to their clients, such as maintaining confidentiality, providing proficient service and remaining loyal to their client."},
-          { "title": "5. What happens if I don’t close on the agreed upon date?", "desc": "The seller can terminate the contract and the buyer’s deposit will be forfeited and kept by the seller. In addition, depending on the case, the seller may sue for damages."},
-          { "title": "6. When do I legally own my new home and when can I get the keys?", "desc": "Once the balance of the purchase price has been settled and the deed and mortgage has been registered, the buyer officially owns the home and can get the keys from their lawyer."},
-          { "title": "7. What are the different taxes I need to pay when buying a home?", "desc": "Land Transfer Tax (LTT) and Municipal Land Transfer Tax (if the home is in Toronto). If you’re a first-time homeowner you may be entitled to a LTT rebate. In addition, HST may be applied if the home is a “new-build”."}
-        ]}
+        {
+          "key": "real-estate",
+          "label": "Purchase and Sale",
+          "icon": "GiHouseKeys",
+          "content": [
+            {
+              "title": "Residential Real Estate",
+              "imageSrc": "residential-real-estate.jpg",
+              "desc": "Our team can assist you with the purchase or sale of your residential property anywhere in Ontario. Whether you are a first-time home buyer or a seasoned real estate investor, we will give you the help you need every step of the way.",
+              "subtitle": [
+                {
+                  "title": "Purchase",
+                  "desc": "Our purchase services include but are not limited to: <ul><li>Review of the Agreement of Purchase and Sale</li><li>Title, Writ and other due diligence searches</li><li>Review of the documents prepared by the seller’s lawyer</li><li>Assistance with financing and mortgage documentation</li><li>Arranging for title insurance</li><li>Status Certificate Review (if applicable)</li><li>Preparation of the legal documents for closing</li></ul>"
+                },
+                {
+                  "title": "Sale",
+                  "desc": "Our sale services include but are not limited to: <ul><li>Review of the Agreement of Purchase and Sale</li><li>Title Search review</li><li>Assistance with the discharge of existing mortgages</li><li>Preparation of the legal documents for closing</li><li>Responding to the requisitions of the buyer’s lawyer</li></ul>"
+                }
+              ]
+            },
+            {
+              "title": "Commercial Real Estate",
+              "imageSrc": "commercial-real-estate.jpg",
+              "desc": "Whether you are entering or exiting the commercial real estate property market as an investor or owner, you can expect our team to assist you with navigating your transaction.",
+              "subtitle": [
+                {
+                  "title": "Our team will help you:",
+                  "desc": "<ul><li>Conduct due diligence searches to identify liens</li><li>Identify and examine potential zoning issues</li><li>Deal with financing and mortgage documentation</li><li>Contract drafting and negotiation</li></ul>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "pre-construction",
+          "label": "Assignment & Pre-construction",
+          "icon": "MdOutlineAssignment",
+          "content": [
+            {
+              "title": "Assignment Purchases and Sale",
+              "imageSrc": "assignment.jpeg",
+              "desc": "Just as how pre-construction purchases from a builder can be more complex than a purchase or sale of a resale property, the purchase or sale of your pre-construction property on assignment can be similarly confusing to navigate.",
+              "subtitle": [
+                {
+                  "title": "We here at Luk Law can assist you with:",
+                  "desc": "<ul><li>Negotiating and reviewing amendments </li><li>Facilitating the Interim Occupancy and Final Closing of the purchase</li><li>⁠Dealing with financing and mortgage documentation</li><li>Determining HST rebate eligibility*</li></ul> *We also assist with HST Rebate Applications as a separate service."
+                }
+              ]
+            },
+            {
+              "title": "Pre-construction Purchases",
+              "imageSrc": "pre-con.jpg",
+              "desc": "Contracts for pre-construction purchases are significantly different that Agreements of Purchase and Sale for resale properties. To avoid unanticipated fees and delays, have us review and assist with your pre-construction purchase as soon as possible.",
+              "subtitle": [
+                {
+                  "title": "Some of our services include:",
+                  "desc": "<ul><li>Reviewing the pre-construction contracts during conditional or “cooling off” period</li><li>Facilitating the Interim Occupancy and Final Closing of the purchase</li><li>Dealing with financing and mortgage documentation</li><li>Determining HST rebate eligibility*</li></ul> *We also assist with HST Rebate Applications as a separate service."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "commercial-leasing",
+          "label": "Commercial Leasing",
+          "icon": "BiBuildingHouse",
+          "content": [
+            {
+              "imageSrc": "commercial-leasing.jpg",
+              "desc": "We will assist you with your commercial leasing needs whether you are a landlord or a tenant.",
+              "subtitle": [
+                {
+                  "title": "Our services include:",
+                  "desc": "<ul><li>Lease negotiation</li><li>Lease and offer to lease drafting and review</li><li>Due diligence searches and zoning review</li><li>Lease renewal drafting and review</li><li>Sublease drafting and review</li></ul>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "title-transfers",
+          "label": "Title Transfers",
+          "icon": "TbTransferIn",
+          "content": [
+            {
+              "imageSrc": "title-transfer.jpg",
+              "desc": "Title transfer is the process by which the ownership of a property is changed, absent a full blown purchase and sale. Some common reasons for transferring partial or full ownership of a property could be due to gifts between family members or mortgage or refinancing obligations.",
+              "subtitle": [
+                {
+                  "title": "Our team at Luk Law can assist you with:",
+                  "desc": "<ul><li>Advising you on the implications of title transfer</li><li>Structuring your title transfer</li><li>Conducting due diligence searches</li><li>Deal with financing and mortgage documentation</li><li>⁠Executing title transfer documentation and registration</li></ul>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "mortgage",
+          "label": "Mortgage",
+          "icon": "BiMoneyWithdraw",
+          "content": [
+            {
+              "title": "Mortgage Refinance",
+              "imageSrc": "mortgage-refinance.jpg",
+              "desc": "With the ever-changing mortgage rates, we understand that homeowners are frequently shopping for a more favourable offer to lower their monthly payments, procure funds for a new renovation project or to simply have access to a line of credit. Our firm has experience working with a wide variety of lenders to ensure you secure refinancing in a timely manner.",
+              "subtitle": [
+                {
+                  "title": "Our services include:",
+                  "desc": "<ul><li>Dealing with financing and mortgage documentation</li><li>Arranging for title insurance (if applicable)</li><li>Adjusting ownership (if applicable)</li><li>Conducting due diligence searches</li><li>Completing mortgage discharges and payouts (if applicable)</li></ul>"
+                }
+              ]
+            },
+            {
+              "title": "Private Lending",
+              "imageSrc": "private-lending.jpg",
+              "desc": "We assist private lenders looking to secure their capital against real estate property. Whether you are a first-time lender looking to help a friend while having some security or an experienced lender looking for legal guidance, we are here to help.",
+              "subtitle": [
+                {
+                  "title": "Some of the services that we provide include:",
+                  "desc": "<ul><li>Drafting, negotiating and reviewing mortgage commitments</li><li>Arranging for title insurance</li><li>Conducting due diligence searches</li><li>Determining existing mortgages on the property</li><li>Dealing with financing and mortgage documentation</li></ul>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "real-estate-law-faq",
+          "label": "Real Estate Law FAQ",
+          "icon": "BiHelpCircle",
+          "content": [
+            {
+              "title": "1. Is it mandatory by law to hire a lawyer for selling and buying homes?",
+              "desc": "Yes. Only lawyers can access the provincial electronic land registration system and register the transfer of property."
+            },
+            {
+              "title": "2. What is title insurance?",
+              "desc": "Title insurance protects the buyer against financial loss from fraud related to ownership of the property. Most banks require homebuyers to have title insurance as it also protects them in the case that the buyers default on their mortgage due to title fraud."
+            },
+            {
+              "title": "3. What is a title search?",
+              "desc": "A title search in Ontario is a process of retrieving and examining Land Title records to determine and confirm legal ownership, description, as well as any claims, liens, charges, encumbrances registered on the real property. A title search is required for any real estate transaction to be completed."
+            },
+            {
+              "title": "4. Can both the vendor and purchaser have the same lawyer?",
+              "desc": "No. They cannot, but there are a few circumstances where it is possible. Representing both the vendor and purchaser is a conflict of interest and would jeopardize their fundamental obligations to their clients, such as maintaining confidentiality, providing proficient service and remaining loyal to their client."
+            },
+            {
+              "title": "5. What happens if I don’t close on the agreed upon date?",
+              "desc": "The seller can terminate the contract and the buyer’s deposit will be forfeited and kept by the seller. In addition, depending on the case, the seller may sue for damages."
+            },
+            {
+              "title": "6. When do I legally own my new home and when can I get the keys?",
+              "desc": "Once the balance of the purchase price has been settled and the deed and mortgage has been registered, the buyer officially owns the home and can get the keys from their lawyer."
+            },
+            {
+              "title": "7. What are the different taxes I need to pay when buying a home?",
+              "desc": "Land Transfer Tax (LTT) and Municipal Land Transfer Tax (if the home is in Toronto). If you’re a first-time homeowner you may be entitled to a LTT rebate. In addition, HST may be applied if the home is a “new-build”."
+            }
+          ]
+        }
       ]
     },
     {
       "path": "/family-law",
       "title": "Family Law",
       "imageSrc": "family-law.png",
+      "icon": "family-law.png",
       "desc": "Family law encompasses a wide range of legal matters related to family relationships, marriage and children. It includes the resolution of disputes and the establishment of legal frameworks to ensure the well-being and fair treatment of family members. Our legal team can assist you in a range of family law areas, including divorce and separation, parenting time and child support, domestic violence, prenuptial agreements, and other related matters. We provide comprehensive legal services, from initial consultations to courtroom representation.",
       "tabs": [
-        { "key": "divorce", "label": "Divorce", "icon": "BsHeartbreak", "desc": "Divorce is the legal process that a married couple must go through to end a marriage. Only married couples can get a divorce, and only a court can grant a divorce. Once the process is finished, a court will issue a divorce certificate proving that you are no longer married.", 
+        {
+          "key": "divorce",
+          "label": "Divorce",
+          "icon": "BsHeartbreak",
           "content": [
-          { "title": "Do I need a reason to get a divorce?", "imageSrc": "divorce.jpg", "desc": "To get a divorce, you have to show that your marriage has broken down in one of three ways: <ul><li>you and your spouse have separated and have lived apart for at least one year; or</li><li>your spouse has been physically or mentally cruel to you, making it intolerable to continue living together; or</li><li>your spouse has committed adultery.</li></ul>"},
-          { "title": "What is a simple divorce/uncontested divorce?", "desc": "If the divorcing spouses can agree to all the issues on their divorce, including child support, parenting arrangements, the division of marital property and spousal support, an uncontested divorce may be possible. <br/><br/> What the spouses have agreed upon are often formalized in a Separation Agreement."},
-          { "title": "What is a contested divorce?", "desc": "If spouses cannot agree to divorce related issues related to their children, spousal support and property division, the divorce is contested and needs to go through formal court proceedings. The spouses have the option of hiring a lawyer to represent them during the court proceedings or going to court on their own. <br/><br/> A contested divorce does not necessarily mean the spouses are destined for a trial. It is still possible for a contested divorce to become an uncontested divorce through negotiation, arbitration, and mediation."},
-          { "title": "Do I have to wait before I apply?", "imageSrc": "wait-time.jpeg", "desc": "If you are claiming your marriage has broken down because you and your spouse are separated, you do not have to wait to apply, as long as you and your spouse are living apart when you apply. However, you and your spouse must have been living apart for at least one year before your divorce can be granted. <br/><br/>You can apply at any time if you are claiming your marriage has broken down because of physical and/or mental cruelty or because of adultery."},
-          { "title": "What do I need to finalize my divorce?", "desc": "Spouses need to agree on specific issues related to the division of marital property and spousal support. If they have children, they will also need to come to an agreement on child support and parenting arrangements. Learn more about property division, spousal support, child support, and parenting arrangements."},
-          { "title": "Why choose us", "desc": "<ul><li><strong>Expertise:</strong> Our team has extensive experience handling divorce cases in Ontario. We stay updated on the latest legal developments and strategies to ensure the best possible outcomes for our clients.</li><li><strong>Compassionate Approach:</strong> We understand the emotional toll that divorce can take on individuals and families. Our team takes a compassionate and empathetic approach, providing personalized guidance and support tailored to your unique needs and circumstances.</li><li><strong>Client-Centered Service:</strong> Your priorities and goals are our top priority. We take the time to listen to your concerns, understand your objectives, and develop a customized legal strategy designed to achieve the best possible results for you and your family.</li></ul>"}
-        ]},
-        { "key": "seperation-agreements", "label": "Separation Agreements", "icon": "HiOutlineDocumentText", "desc": "A Separation Agreement is a legally binding contract that outlines the rights and obligations of separating spouses or partners. It covers various aspects of the separation, including: <ul><li><strong>Division of Assets and Debts:</strong> Detailing how property, assets, and debts will be divided between the parties</li><li><strong>Parenting Time and Decision Making (Custody):</strong> Establishing arrangements for the care and access of any children from the relationship, including decision-making responsibilities.</li><li><strong>Child Support:</strong> Outlining the financial support that will be provided for the children, including the amount and frequency of payments.</li><li><strong>Spousal Support:</strong> Addressing the financial support that may be payable from one spouse to the other, if applicable.</li><li><strong>Other Practical Considerations:</strong> Addressing any other important matters such as insurance, pensions, tax implications, and more.</li></ul>",
-          "content": [
-            {"title": "Why choose a Separation Agreement?", "imageSrc": "separation-agreements.jpg", "desc": "<ul><li><strong>Control and Flexibility:</strong> By negotiating a Separation Agreement, couples retain control over the terms of their separation rather than having a judge impose decisions upon them in court. This allows for greater flexibility in finding solutions that work best for everyone involved.</li><li><strong>Privacy:</strong> Unlike court proceedings, which are a matter of public record, the details of a Separation Agreement remain private between the parties involved.</li><li><strong>Cost-Effectiveness:</strong> Resolving matters through a Separation Agreement can often be more cost-effective than litigating in court, as it typically involves fewer legal fees and avoids lengthy court proceedings.</li></ul>"},
-            {"title": "Why choose us", "desc": "<ul><li><strong>Legal Expertise:</strong> Our lawyers have extensive experience in family law and are well-versed in Ontario's laws and regulations governing separation and divorce.</li><li><strong>Personalized Approach:</strong> We understand that every separation is unique, and we take the time to listen to your concerns and priorities. Our team works closely with you to tailor a Separation Agreement that addresses your specific needs and objectives.</li><li><strong>Negotiation and Advocacy:</strong> We advocate for our clients' interests throughout the negotiation process, striving to achieve fair and equitable outcomes that lay the groundwork for a positive future.</li></ul>"}
-        ]},
-        { "key": "marriage-agreements", "label": "Marriage/prenuptial Agreements", "icon": "GiDiamondRing", "desc": "A Marriage Contract is a legal agreement between spouses that outlines their rights and obligations during the marriage and in the event of separation, divorce, annulment, or death. Marriage Contracts can be customized to meet the needs of both parties to ensure that the rights, responsibilities, and obligations of each person are protected as much as possible. They are usually negotiated before marriage (known colloquially as a Pre-Nuptial Agreement), but they can be created or updated after the marriage has taken place. <br/><br/> For couples who are not considering marriage and wish to live together or already living together, a Cohabitation Agreement is the equivalent.",
-          "content": [
-            {"title": "Do I need one?", "imageSrc": "marriage-contracts.jpg", "desc": "A Marriage Contract can be a valuable tool for couples seeking to protect their interests and plan in case of separation. By entering a Marriage Contract, couples can customize their rights and responsibilities according to their unique circumstances and preferences. Without a formal agreement in place, disputes over property and financial matters can arise if the relationship ends. By outlining each partner's rights and obligations upfront, Marriage Contracts can help prevent costly and emotionally draining legal battles in the future."},
-              {"title": "What can be included?", "imageSrc":"marriage-property.jpg", "desc": "Marriage Contracts in Ontario can cover a wide range of issues, including: <ul><li><strong>Property Division:</strong> A Marriage Contract can specify how property and assets acquired during the marriage will be divided in the event of separation or divorce. This can include real estate, investments, businesses, and personal belongings.</li><li><strong>Spousal Support:</strong> Couples can agree on the terms of spousal support or waive their rights to claim spousal support altogether in the Marriage Contract. However, it's important to note that courts may not enforce provisions that are deemed unfair or unconscionable at the time of separation.</li><li><strong>Debts and Liabilities:</strong> Marriage Contracts can address the division of debts and liabilities accumulated during the marriage, including mortgages, loans, and credit card debts.</li></ul> <br/> Marriage Contracts are put into place to protect financial considerations, therefore can’t include: <ul><li>Any terms relating to parenting arrangements (i.e. parenting time, decision-making responsibility, child support). These issues are only resolved after the separation has taken place.</li><li>Any terms dictating personal behaviours or actions unrelated to the marriage itself. For example, clauses dictating how a spouse should dress or behave socially would not be enforceable.</li></ul>"},
-              {"title": "Requirements of a Marriage Contract", "imageSrc": "marriage-contracts-include.jpeg", "desc": "<ul><li><strong>Voluntary:</strong> Both parties must enter into the agreement voluntarily, without coercion or undue influence.</li><li><strong>Full Disclosure:</strong> Each spouse must provide full and honest disclosure of their financial situation, including assets, debts, income, and liabilities.</li><li><strong>Independent Legal Advice:</strong> It is advisable for each party to seek independent legal advice before signing the contract to ensure they understand its implications and consequences.</li><li><strong>In Writing:</strong> The contract must be in writing and signed by both parties in the presence of a witness.</li></ul>"},
-              {"title": "Why choose us", "desc": "<ul><li><strong>Expertise:</strong> Our team has extensive experience negotiating and drafting Marriage Contracts. We stay updated on the latest legal developments and strategies to ensure the best possible outcomes for our clients.</li><li><strong>Compassionate Approach:</strong> Our team takes a compassionate and empathetic approach, providing personalized guidance and support tailored to your unique needs and circumstances.</li><li><strong>Client-Centered Service:</strong> We take the time to listen to your concerns, understand your objectives, and develop a customized legal strategy designed to achieve the best possible results for you and your family.</li></ul>"}
-        ]},
-        { "key": "co-Habitation-agreements", "label": "Co-Habitation Agreement", "icon": "IoHomeOutline", "desc": "Cohabitation Agreements are domestic contracts designed to protect the rights and interests of couples who live together without being married. These legally binding and enforceable agreements outline the rights, responsibilities, and obligations of each partner in the event of separation, including issues such as property division, support payments, and other financial matters. <br/><br/> Cohabitation Agreements are often put into place before cohabitation begins, but it can also be finalized after cohabitation has happened. If your circumstances change at any time during your relationship, it may be a good idea to review any existing Cohabitation Agreement to consider if more reasonable, up-dated terms are needed. Cohabitation Agreements can be converted into a Marriage Contract, if the parties decide at a future date to marry.",
-          "content": [
-            {"title": "Do I need one?", "imageSrc": "co-habitation-agreements.jpg", "desc": "Cohabitation Agreements provide clarity and certainty for couples who choose to live together outside of marriage. They also allow couples to maintain a degree of independence and autonomy in their financial affairs while living together. Without a formal Agreement in place, disputes over property and financial matters can arise if the relationship ends. By outlining each partner's rights and obligations upfront, Cohabitation Agreements can help prevent costly and emotionally draining legal battles in the future. <br/><br/> Unlike married spouses, there is no legislated process for how common-law spouses divide property and assets, which means there is no statutory protection for a cohabiting spouse’s interest in property to which the other spouse holds title. Upon separation, common-law spouses must rely on common law and equity claims to divide property and assets. <br/><br/> Get in touch with us to understand why this difference is important."},
-          {"title": "What can be included?", "imageSrc": "co-habitation.jpg", "desc": "Cohabitation Agreements in Ontario can cover a wide range of issues, including: <ul><li><strong>Property Division:</strong> Specify how property acquired during the relationship will be divided in the event of separation.</li><li><strong>Support Payments:</strong> Outline whether one partner will be required to provide financial support to the other following separation.</li><li><strong>Debt Responsibility:</strong> Determine how any debts incurred during the relationship will be divided.</li><li><strong>Pensions:</strong> Decide on how to divide pensions among the individuals</li><li><strong>Pets:</strong> Decide who will retain custody of any pets acquired during the relationship.</li></ul> <br/><br/> Cohabitation Agreements are put into place to protect financial considerations, therefore can’t include: <ul><li>Any terms relating to parenting arrangements (i.e. parenting time or decision-making responsibility). These issues are only resolved after the separation has taken place.</li></ul>"},
-          {"title": "Requirements of a Cohabitation Agreement", "desc": "In Ontario, Cohabitation Agreements are recognized and enforced under the Family Law Act. For a Cohabitation Agreement to be legally valid and enforceable, certain requirements must be met: <ul><li><strong>Voluntary:</strong> Both parties must enter into the Agreement voluntarily, without coercion or duress.</li><li><strong>Full Disclosure:</strong> Each party must provide full and honest disclosure of their assets, liabilities, and financial circumstances.</li><li><strong>Independent Legal Advice:</strong> It is advisable for each party to seek independent legal advice before signing the Agreement to ensure they understand its implications and consequences.</li><li><strong>Fairness:</strong> The Agreement must be fair and reasonable at the time it is made and at the time it is enforced.</li></ul>"},
-          {"title": "Why choose us", "desc": "<ul><li><strong>Expertise:</strong> Our team has extensive experience negotiating and drafting Cohabitation Agreements. We stay updated on the latest legal developments and strategies to ensure the best possible outcomes for our clients.</li><li><strong>Compassionate Approach:</strong> Our team takes a compassionate and empathetic approach, providing personalized guidance and support tailored to your unique needs and circumstances.</li><li><strong>Client-Centered Service:</strong> We take the time to listen to your concerns, understand your objectives, and develop a customized legal strategy designed to achieve the best possible results for you and your family.</li></ul>"}
-        ]},
-        { "key": "support", "label": "Child & Spousal Support", "icon": "LiaHandHoldingUsdSolid", "content": [
-          { "title": "Child Support", "imageSrc": "child-support.jpg", "desc": "Child support is the amount of money that one parent pays to the other to help pay for the costs of caring for a child. It is a vital aspect of ensuring the well-being of children whose parents are separated or divorced. The child’s best interests are the priority, aiming to provide them with the necessary resources for a stable and nurturing environment.", 
-          "subtitle": [
-            {"title": "How is it calculated?", "desc": "Child support is governed by the Ontario Child Support Guideline. This system determines the amount based on the child’s residency schedule and income of parent(s). <br/> The Child Support Guidelines calculate the amount based on: <ul><li>1. A basic monthly amount (“Table Amount”): calculated based on the payor parent’s gross annual income and number of children entitled to support</li><li>2. An amount for other expenses called Special or Extraordinary Expenses</li></ul>"}, 
-            {"title": "What counts as Special & Extraordinary Expenses?", "desc": "An expense is extraordinary or special if it is within the reasonable means of the parent’s expense and it is necessary for the child’s best interests. The amount of extra expenses is calculated by the net income of both parents, the amount of Table Amount being paid, and what each can afford. <br/> Some examples of special & extraordinary expenses: <ul><li>Child fees such as after-school programs, daycare.</li><li>Sports and other interest classes like music and arts class.</li><li>Medical fees for dental and medical visits and prescriptions.</li><li>Educational fees such as learning programs or tutoring.</li><li>University or college tuition payments.</li></ul>"},
-            {"title": "Who pays for child support?", "desc": "Usually, the parent that pays child support is the parent that the child is with less. If the parents spend an equal amount of time with the child, then it is typically the parent that has the higher income."},
-            {"title": "When does child support end?", "desc": "Child support must be paid if the child is still under 18 years old. In some cases, child support may be extended. For example: <ul><li>If the child is still dependent on the parent for financial support and they’re pursuing full-time education, child support may continue until they complete their first undergraduate degree or turn 22, whichever comes first.</li><li>If the child has a disability, illness, or other causes and cannot be financially independent.</li></ul>"}
-            ]},
-          {"title": "Spousal Support", "imageSrc": "spousal-support.jpg", "desc": "Spousal support, also known as alimony, is financial assistance paid by one spouse to the other after separation or divorce. At Luk Law, our team experienced legal team will help you navigate the complexities of spousal support, ensuring fair and equitable arrangements.",  
-          "subtitle": [
-            {"title": "What is spousal support?", "desc": "Spousal support is intended to address the economic consequences of the breakdown of a relationship, particularly when one spouse has been financially dependent on the other during the marriage or common-law partnership. It is designed to assist the recipient spouse in becoming self-sufficient over time."},
-            {"title": "How do I get spousal support?", "desc": "Spousal support is not an automatic part of separation or divorce. In most cases, it is requested by the spouse with the lower income.​ You and your spouse can either:​ <ul><li>Negotiate spousal support payments as part of a Separation Agreement</li><li>Ask a judge to decide, if you cannot agree, and they will determine the amount of support and how long it should be paid</li></ul>"},
-            {"title": "Who is entitled to spousal support and how is it calculated?", "desc": "Spousal support entitlement, the amount, and duration is affected by various factors, including: <ul><li><strong>Length of the Relationship:</strong> The duration of the relationship is a significant factor in determining the amount and duration of spousal support. Generally, longer relationships may result in higher and longer-lasting support obligations.</li><li><strong>Income Disparity:</strong> The difference in income between the spouses is a key consideration. The spouse with a higher income may be required to pay support to the lower-earning spouse to help maintain their standard of living post-separation.</li><li><strong>Needs and Circumstances:</strong> The financial needs and circumstances of each spouse, including their earning capacity, age, health, and childcare responsibilities, are taken into account when determining spousal support.</li><li><strong>Contributions to the Relationship:</strong> The contributions made by each spouse to the relationship, both financial and non-financial, are considered. This includes factors such as homemaking, childcare, and career sacrifices made to support the family unit.</li><li><strong>Spousal Support Advisory Guidelines (SSAG):</strong> These guidelines provide a framework for courts and individuals in calculating spousal support obligations and acts as a starting point for courts and in negotiation. Unlike the Child Support Guidelines, the amounts proposed by the SSAG are not mandatory.</li></ul>"},
-            {"title": "Why choose us", "desc": "<ul><li><strong>Legal Expertise:</strong> Our lawyers have extensive experience in spousal support matters and stay up-to-date on the latest developments in Ontario's family law legislation.</li><li><strong>Negotiation and Advocacy:</strong> We advocate for our clients' interests during spousal support negotiations, striving to achieve fair and equitable outcomes that address their financial needs and circumstances.</li><li><strong>Representation in Court:</strong> If litigation becomes necessary, our team provides skilled representation in court to protect our clients' rights and interests.</li></ul>"}
-            ]}
-        ] },
-        { "key": "parenting-time", "label": "Parenting Time & Decision Making", "icon": "TbFriends", "desc": "Parenting arrangements (formerly known as custody) are a crucial aspect of family law that ensures the well-being and upbringing of children in separated or divorced families. If you have children, you will need a parenting arrangement in place to finalize your divorce or separation.",
-            "content": [
-              {"title": "Parenting Arrangement", "imageSrc": "parenting-time.jpg", "subtitle": [{"title": "What is in a parenting arrangement?", "desc": "A parenting arrangement will deal with: <ul><li><strong>1. Parenting Time:</strong> schedule and arrangements made for each parent to spend time with their children. This includes both regular living schedules as well as holidays and vacation time.</li><li><strong>2. Decision-Making:</strong> refers to the right to make significant decisions about a child’s life and well-being. These decisions may relate to health, education, religion, and other important matters in respect of the child’s welfare</li></ul>"}, 
-              {"title": "How is a parenting arrangement made?", "desc": "You and your spouse can either: <ul><li>Negotiate and agree to a parenting arrangement informally between yourselves or formalize it and make it a part of your Separation Agreement or court order.</li><li>If you cannot agree, you can ask a judge to decide and they will issue a parenting order.</li></ul>"}]},
-              {"title": "Parenting Time", "imageSrc": "parenting-time.jpeg", "subtitle": [{"title": "Types of parenting time", "desc": "<ul><li><strong>Shared Parenting Time:</strong> parents who have shared parenting time share the amount of time spent with the child. Under the Child Support Guidelines, shared parenting time is where a child lives at least 40% of the time with each parent.</li><li><strong>Split Parenting Time:</strong> split parenting time is when parents have more than one child and each parent has one or more children living with them for most of the time.</li><li><strong>Supervised Parenting Time:</strong> supervised parenting time can be arranged if there are safety concerns during visits, or when children are exchanged between parents. When a supervised parenting time arrangement is in place, someone else must be present when you visit with your children or when exchanges occur.</li></ul>"}, 
-              {"title": "Can a spouse be given no parenting time?", "desc": "Orders from the court stipulating no parenting time only happens in the most extreme cases. Parenting time could be denied if the court believes that the parent is at risk of: <ul><li>Harming the child</li><li>Harming the other parent with the decision-making responsibility</li><li>Not returning the child to the other parent</li></ul>"}]},
-              {"title": "Decision-making", "imageSrc":"decision-making.jpg", "subtitle": [{"title": "Types of decision-making", "desc": "<ul><li><strong>Sole Decision-Making Responsibility:</strong> one parent has the right to make important decisions about the child's care, education, religious instruction and welfare, and doesn't need to involve the other parent when making decisions.</li><li><strong>Joint Decision-Making Responsibility:</strong> parents who have joint decision-making responsibility for their children share the right to make important decisions about their care and remain involved in making decisions about the children.</li><li><strong>De-Facto Decision-Making Responsibility:</strong> when your children live with you, but you don’t have a legal decision-making responsibility arrangement.</li></ul>"}]},
-              {"title": "Why choose us", "desc": "<ul><li><strong>Expertise:</strong> Our team has extensive experience handling parenting time and decision-making cases in Ontario. We stay updated on the latest legal developments and strategies to ensure the best possible outcomes for our clients.</li><li><strong>Compassionate Approach: </strong>We understand the emotional toll that separations and divorces can be on parents and their children. Our team takes a compassionate and empathetic approach, providing personalized guidance and support tailored to your family’s unique needs and circumstances.</li><li><strong>Client-Centered Service:</strong> We take the time to listen to your concerns, understand your needs, and develop a customized legal strategy designed to achieve the best possible results for you and your family.</li></ul>"}
-
-            ]
+            {
+              "title": "Divorce Process",
+              "imageSrc": "divorce.jpg",
+              "desc": "Divorce is the legal process that a married couple must go through to end a marriage. Only married couples can get a divorce, and only a court can grant a divorce. Once the process is finished, a court will issue a divorce certificate proving that you are no longer married.",
+              "subtitle": [
+                {
+                  "title": "Do I need a reason to get a divorce?",
+                  "desc": "To get a divorce, you have to show that your marriage has broken down in one of three ways: <ul><li>you and your spouse have separated and have lived apart for at least one year; or</li><li>your spouse has been physically or mentally cruel to you, making it intolerable to continue living together; or</li><li>your spouse has committed adultery.</li></ul>"
+                },
+                {
+                  "title": "Do I have to wait before I apply?",
+                  "desc": "If you are claiming your marriage has broken down because you and your spouse are separated, you do not have to wait to apply, as long as you and your spouse are living apart when you apply. However, you and your spouse must have been living apart for at least one year before your divorce can be granted. <br/><br/>You can apply at any time if you are claiming your marriage has broken down because of physical and/or mental cruelty or because of adultery."
+                },
+                {
+                  "title": "What do I need to finalize my divorce?",
+                  "desc": "Spouses need to agree on specific issues related to the division of marital property and spousal support. If they have children, they will also need to come to an agreement on child support and parenting arrangements. Learn more about property division, spousal support, child support, and parenting arrangements."
+                }
+              ]
+            },
+            {
+              "title": "Types of Divorce",
+              "imageSrc": "wait-time.jpeg",
+              "subtitle": [
+                {
+                  "title": "What is a simple divorce/uncontested divorce?",
+                  "desc": "If the divorcing spouses can agree to all the issues on their divorce, including child support, parenting arrangements, the division of marital property and spousal support, an uncontested divorce may be possible. <br/><br/> What the spouses have agreed upon are often formalized in a Separation Agreement."
+                },
+                {
+                  "title": "What is a contested divorce?",
+                  "desc": "If spouses cannot agree to divorce related issues related to their children, spousal support and property division, the divorce is contested and needs to go through formal court proceedings. The spouses have the option of hiring a lawyer to represent them during the court proceedings or going to court on their own. <br/><br/> A contested divorce does not necessarily mean the spouses are destined for a trial. It is still possible for a contested divorce to become an uncontested divorce through negotiation, arbitration, and mediation."
+                },
+                {
+                  "title": "Why choose us",
+                  "desc": "<ul><li><strong>Expertise:</strong> Our team has extensive experience handling divorce cases in Ontario. We stay updated on the latest legal developments and strategies to ensure the best possible outcomes for our clients.</li><li><strong>Compassionate Approach:</strong> We understand the emotional toll that divorce can take on individuals and families. Our team takes a compassionate and empathetic approach, providing personalized guidance and support tailored to your unique needs and circumstances.</li><li><strong>Client-Centered Service:</strong> Your priorities and goals are our top priority. We take the time to listen to your concerns, understand your objectives, and develop a customized legal strategy designed to achieve the best possible results for you and your family.</li></ul>",
+                  "disclaimer": "You don't have to face divorce alone. Contact Luk Law to schedule a consultation with one of our experienced family law lawyers. We'll provide you with the compassionate legal support and guidance you need to navigate the divorce process with confidence and peace of mind."
+                }
+              ]
+            }
+          ]
         },
-        { "key": "family-law-faq", "label": "Family Law FAQ", "icon": "BiHelpCircle", "content": [
-          {"title": "1. Do I have to go to court to get a divorce?", "desc": "No. You never have to step foot inside a court to get a divorce as long as both parties are willing to communicate amicably and agree to the terms of their separation."},
-          {"title": "2. Who gets custody of the kids?", "desc": "This will be up to the courts to decide based on the “best interests of the child”. In most cases where the child(ren) lived with both of their parents, both parents will get an equal right to their child(ren) and share responsibilities."},
-          {"title": "3. Who pays child support and how is it calculated?", "desc": "There is a set calculation method for child support. Factors that determine child support include gross income and the number of children."},
-          {"title": "4. What is the difference between a separation and divorce?", "desc": "A separation is when a couple decides to live apart from each other because the relationship has broken down. The couple may be married, or they may be unmarried but living together like a married couple in a common-law relationship. A divorce is when a court officially ends a marriage. Separation is one of the necessary conditions for divorce."},
-          {"title": "5. I want a divorce, but my spouse does not. What can I do?", "desc": "Getting a divorce does not have to be a unanimous decision, however before you can begin filing for a divorce you must have been separated for a year - this is one of the possible grounds for divorce and is the most common route people take. The other two grounds for divorce are adultery and cruelty, however the burden of proof is much higher for these cases and proving in court will be lengthy, costly, and draining. The first step to getting a divorce is separating from your spouse, which can be as simple as sending a text message expressing your wish to separate. Within the year, you should take steps to physically distance yourself from your partner, such as moving to another place, sleeping in a different room, having separate bank accounts, not engaging in any social events with your spouse, etc. After a year, you may file for a divorce and have your spouse served with divorce papers. If he/she refuses to show up to court, your lawyer will have to default them for failing to appear. After exhausting all possible methods of contact, the judge will grant you a divorce by default and likely all the terms you asked for."},
-          {"title": "6. Am I entitled to spousal support?", "desc": "You may be entitled to spousal support if you were either: married, lived together as a couple for at least three years, were in a relationship of some permanence for any length of time and had a child together. However, spousal support is not an automatic right associated with the breakdown of a marriage. <br/><br/> In Ontario, you are only eligible for spousal support: <ul><li>To compensate a spouse for hardship or opportunities lost due to the marriage or its breakdown;</li><li>To fulfill a contractual agreement, expressed or implied, that the parties were responsible for each other’s support; or</li><li>On a non-compensatory basis, to assist a spouse in need where there is the capacity to pay, even in the absence of a contractual or compensatory foundation for the obligation.</li></ul>"},
-          {"title": "7. What happens to our home in separation or divorce? ", "desc": "Both parties have an equal right to the matrimonial home regardless of who owns it. This means both parties can live in it during separation and the proceeds of the sale of the house is split according to equalization. If one spouse wants to keep the matrimonial home, they can negotiate a purchase of the other’s share, or one spouse may voluntarily transfer their interest in the matrimonial home to the other spouse as part of the divorce settlement. If an agreement cannot be made regarding the matrimonial home, the Partition Act provides the court with the power to force the sale."},
-          {"title": "8. Can we use the same lawyer to get a divorce? ", "desc": "No. A lawyer’s fiduciary duty is to offer legal advice and options that would work in one party’s best interest. Thus it would be impossible for one lawyer to represent two people in a divorce where there are competing interests. If conflict were to arise, such as if one party refuses to adhere to what was originally agreed on, a lawyer could not adequately protect the interests of both parties. In fact, for a separation agreement to be considered valid and legally binding, there must not have been any conflict of interest. This conflict of interest immediately arises when one lawyer represents both spouses."}
-        ] }
-      ]
-    },
-    {
-      "path": "/corporate-law",
-      "title": "Corporate Law",
-      "imageSrc": "corporate-law.jpg",
-      "desc": "At Luk Law, we understand the intricacies of business law and the challenges that corporations face in the legal landscape. Our dedicated team of experienced lawyers specializes in providing comprehensive corporate law services to businesses of all sizes, from start-ups to established corporations.",
-      "tabs": [
-        {"key": "incorporating", "label": "Incorporating", "icon": "HiOutlineOfficeBuilding", "content" : [{"desc": "More information to come"}]},
-        {"key": "shareholder-agreement", "label": "Shareholder Agreement", "icon": "HiOutlineClipboardList", "content" : [{ "desc": "More information to come"}]},
-        {"key": "partnership-agreement", "label": "Partnership/Partnership Agreement", "icon": "AiOutlineTeam", "content" : [{"desc": "More information to come"}]},
-        {"key": "joint-venture", "label": "Joint Venture Agreements", "icon": "FiUsers",  "content" : [{"desc": "More information to come"}]}
-      ]
-    },
-    {
-      "path": "/immigration-law",
-      "title": "Immigration Law",
-      "imageSrc": "immigration.png",
-      "desc": "Navigating the intricate pathways of immigration law requires expertise and finesse. At Luk Law, we provide comprehensive immigration law services tailored to meet the diverse needs of our clients. Whether you're seeking temporary residency, permanent citizenship, or assistance with complex immigration matters, our team of experienced lawyers is dedicated to guiding you through every step of the process. With a deep understanding of Canadian immigration regulations and a commitment to personalized service, we strive to achieve the best possible outcome for each client.",
-      "tabs": [
-        {"key": "work", "label": "Work", "icon": "MdOutlineWorkOutline", "content" : [{"imageSrc": "work.jpg", "desc": "More information to come"}]},
-        {"key": "study", "label": "Study", "icon": "PiGraduationCap", "content" : [{"imageSrc": "study.jpg", "desc": "More information to come"}]},
-        {"key": "visit", "label": "Visit", "icon": "PiAirplaneInFlight", "content" : [{"imageSrc": "visit.jpg", "desc": "More information to come"}]},
-        {"key": "sponsorship", "label": "Sponsorship", "icon": "LiaHandsHelpingSolid", "content" : [{"imageSrc": "sponsor.jpg", "desc": "More information to come"}]},
-        {"key": "immigration-pathways", "label": "Immigration Pathways", "icon": "GiPathDistance", "content" : [{"imageSrc": "pathway.jpg", "desc": "More information to come"}]}
-
+        {
+          "key": "seperation-agreements",
+          "label": "Separation Agreements",
+          "icon": "HiOutlineDocumentText",
+          "desc": "A Separation Agreement is a legally binding contract that outlines the rights and obligations of separating spouses or partners. It covers various aspects of the separation, including: <ul><li><strong>Division of Assets and Debts:</strong> Detailing how property, assets, and debts will be divided between the parties</li><li><strong>Parenting Time and Decision Making (Custody):</strong> Establishing arrangements for the care and access of any children from the relationship, including decision-making responsibilities.</li><li><strong>Child Support:</strong> Outlining the financial support that will be provided for the children, including the amount and frequency of payments.</li><li><strong>Spousal Support:</strong> Addressing the financial support that may be payable from one spouse to the other, if applicable.</li><li><strong>Other Practical Considerations:</strong> Addressing any other important matters such as insurance, pensions, tax implications, and more.</li></ul>",
+          "content": [
+            {
+              "title": "Why choose a Separation Agreement?",
+              "imageSrc": "separation-agreements.jpg",
+              "desc": "<ul><li><strong>Control and Flexibility:</strong> By negotiating a Separation Agreement, couples retain control over the terms of their separation rather than having a judge impose decisions upon them in court. This allows for greater flexibility in finding solutions that work best for everyone involved.</li><li><strong>Privacy:</strong> Unlike court proceedings, which are a matter of public record, the details of a Separation Agreement remain private between the parties involved.</li><li><strong>Cost-Effectiveness:</strong> Resolving matters through a Separation Agreement can often be more cost-effective than litigating in court, as it typically involves fewer legal fees and avoids lengthy court proceedings.</li></ul>"
+            },
+            {
+              "title": "Why choose us",
+              "desc": "<ul><li><strong>Legal Expertise:</strong> Our lawyers have extensive experience in family law and are well-versed in Ontario's laws and regulations governing separation and divorce.</li><li><strong>Personalized Approach:</strong> We understand that every separation is unique, and we take the time to listen to your concerns and priorities. Our team works closely with you to tailor a Separation Agreement that addresses your specific needs and objectives.</li><li><strong>Negotiation and Advocacy:</strong> We advocate for our clients' interests throughout the negotiation process, striving to achieve fair and equitable outcomes that lay the groundwork for a positive future.</li></ul>",
+              "disclaimer": "At Luk Law, our dedicated legal team is here to guide you through the process of negotiating and drafting a Separation Agreement that protects your rights and interests."
+            }
+          ]
+        },
+        {
+          "key": "marriage-agreements",
+          "label": "Marriage/prenuptial Agreements",
+          "icon": "GiDiamondRing",
+          "desc": "A Marriage Contract is a legal agreement between spouses that outlines their rights and obligations during the marriage and in the event of separation, divorce, annulment, or death. Marriage Contracts can be customized to meet the needs of both parties to ensure that the rights, responsibilities, and obligations of each person are protected as much as possible. They are usually negotiated before marriage (known colloquially as a Pre-Nuptial Agreement), but they can be created or updated after the marriage has taken place. <br/><br/> For couples who are not considering marriage and wish to live together or already living together, a Cohabitation Agreement is the equivalent.",
+          "content": [
+            {
+              "title": "Do I need one?",
+              "imageSrc": "marriage-contracts.jpg",
+              "desc": "A Marriage Contract can be a valuable tool for couples seeking to protect their interests and plan in case of separation. By entering a Marriage Contract, couples can customize their rights and responsibilities according to their unique circumstances and preferences. Without a formal agreement in place, disputes over property and financial matters can arise if the relationship ends. By outlining each partner's rights and obligations upfront, Marriage Contracts can help prevent costly and emotionally draining legal battles in the future."
+            },
+            {
+              "title": "What can be included?",
+              "imageSrc": "marriage-property.jpg",
+              "desc": "Marriage Contracts in Ontario can cover a wide range of issues, including: <ul><li><strong>Property Division:</strong> A Marriage Contract can specify how property and assets acquired during the marriage will be divided in the event of separation or divorce. This can include real estate, investments, businesses, and personal belongings.</li><li><strong>Spousal Support:</strong> Couples can agree on the terms of spousal support or waive their rights to claim spousal support altogether in the Marriage Contract. However, it's important to note that courts may not enforce provisions that are deemed unfair or unconscionable at the time of separation.</li><li><strong>Debts and Liabilities:</strong> Marriage Contracts can address the division of debts and liabilities accumulated during the marriage, including mortgages, loans, and credit card debts.</li></ul> <br/> Marriage Contracts are put into place to protect financial considerations, therefore can’t include: <ul><li>Any terms relating to parenting arrangements (i.e. parenting time, decision-making responsibility, child support). These issues are only resolved after the separation has taken place.</li><li>Any terms dictating personal behaviours or actions unrelated to the marriage itself. For example, clauses dictating how a spouse should dress or behave socially would not be enforceable.</li></ul>"
+            },
+            {
+              "title": "Requirements of a Marriage Contract",
+              "imageSrc": "marriage-contracts-include.jpeg",
+              "desc": "<ul><li><strong>Voluntary:</strong> Both parties must enter into the agreement voluntarily, without coercion or undue influence.</li><li><strong>Full Disclosure:</strong> Each spouse must provide full and honest disclosure of their financial situation, including assets, debts, income, and liabilities.</li><li><strong>Independent Legal Advice:</strong> It is advisable for each party to seek independent legal advice before signing the contract to ensure they understand its implications and consequences.</li><li><strong>In Writing:</strong> The contract must be in writing and signed by both parties in the presence of a witness.</li></ul>"
+            },
+            {
+              "title": "Why choose us",
+              "desc": "<ul><li><strong>Expertise:</strong> Our team has extensive experience negotiating and drafting Marriage Contracts. We stay updated on the latest legal developments and strategies to ensure the best possible outcomes for our clients.</li><li><strong>Compassionate Approach:</strong> Our team takes a compassionate and empathetic approach, providing personalized guidance and support tailored to your unique needs and circumstances.</li><li><strong>Client-Centered Service:</strong> We take the time to listen to your concerns, understand your objectives, and develop a customized legal strategy designed to achieve the best possible results for you and your family.</li></ul>",
+              "disclaimer": "At Luk Law, we work with you to draft, negotiate, and execute the terms of the Marriage Contract to protect your financial matters and interests. Call us today to find out how we can help."
+            }
+          ]
+        },
+        {
+          "key": "co-Habitation-agreements",
+          "label": "Co-Habitation Agreement",
+          "icon": "IoHomeOutline",
+          "desc": "Cohabitation Agreements are domestic contracts designed to protect the rights and interests of couples who live together without being married. These legally binding and enforceable agreements outline the rights, responsibilities, and obligations of each partner in the event of separation, including issues such as property division, support payments, and other financial matters. <br/><br/> Cohabitation Agreements are often put into place before cohabitation begins, but it can also be finalized after cohabitation has happened. If your circumstances change at any time during your relationship, it may be a good idea to review any existing Cohabitation Agreement to consider if more reasonable, up-dated terms are needed. Cohabitation Agreements can be converted into a Marriage Contract, if the parties decide at a future date to marry.",
+          "content": [
+            {
+              "title": "Do I need one?",
+              "imageSrc": "co-habitation-agreements.jpg",
+              "desc": "Cohabitation Agreements provide clarity and certainty for couples who choose to live together outside of marriage. They also allow couples to maintain a degree of independence and autonomy in their financial affairs while living together. Without a formal Agreement in place, disputes over property and financial matters can arise if the relationship ends. By outlining each partner's rights and obligations upfront, Cohabitation Agreements can help prevent costly and emotionally draining legal battles in the future. <br/><br/> Unlike married spouses, there is no legislated process for how common-law spouses divide property and assets, which means there is no statutory protection for a cohabiting spouse’s interest in property to which the other spouse holds title. Upon separation, common-law spouses must rely on common law and equity claims to divide property and assets. <br/><br/> Get in touch with us to understand why this difference is important."
+            },
+            {
+              "title": "What can be included?",
+              "imageSrc": "co-habitation.jpg",
+              "desc": "Cohabitation Agreements in Ontario can cover a wide range of issues, including: <ul><li><strong>Property Division:</strong> Specify how property acquired during the relationship will be divided in the event of separation.</li><li><strong>Support Payments:</strong> Outline whether one partner will be required to provide financial support to the other following separation.</li><li><strong>Debt Responsibility:</strong> Determine how any debts incurred during the relationship will be divided.</li><li><strong>Pensions:</strong> Decide on how to divide pensions among the individuals</li><li><strong>Pets:</strong> Decide who will retain custody of any pets acquired during the relationship.</li></ul> <br/><br/> Cohabitation Agreements are put into place to protect financial considerations, therefore can’t include: <ul><li>Any terms relating to parenting arrangements (i.e. parenting time or decision-making responsibility). These issues are only resolved after the separation has taken place.</li></ul>"
+            },
+            {
+              "title": "Requirements of a Cohabitation Agreement",
+              "desc": "In Ontario, Cohabitation Agreements are recognized and enforced under the Family Law Act. For a Cohabitation Agreement to be legally valid and enforceable, certain requirements must be met: <ul><li><strong>Voluntary:</strong> Both parties must enter into the Agreement voluntarily, without coercion or duress.</li><li><strong>Full Disclosure:</strong> Each party must provide full and honest disclosure of their assets, liabilities, and financial circumstances.</li><li><strong>Independent Legal Advice:</strong> It is advisable for each party to seek independent legal advice before signing the Agreement to ensure they understand its implications and consequences.</li><li><strong>Fairness:</strong> The Agreement must be fair and reasonable at the time it is made and at the time it is enforced.</li></ul>"
+            },
+            {
+              "title": "Why choose us",
+              "desc": "<ul><li><strong>Expertise:</strong> Our team has extensive experience negotiating and drafting Cohabitation Agreements. We stay updated on the latest legal developments and strategies to ensure the best possible outcomes for our clients.</li><li><strong>Compassionate Approach:</strong> Our team takes a compassionate and empathetic approach, providing personalized guidance and support tailored to your unique needs and circumstances.</li><li><strong>Client-Centered Service:</strong> We take the time to listen to your concerns, understand your objectives, and develop a customized legal strategy designed to achieve the best possible results for you and your family.</li></ul>",
+              "disclaimer": "It is essential for couples considering a Cohabitation Agreement to seek independent legal advice to ensure their rights and interests are protected. At Luk Law we have extensive experience negotiating and drafting Cohabitation Agreements that are tailored to your unique circumstances and needs."
+            }
+          ]
+        },
+        {
+          "key": "support",
+          "label": "Child & Spousal Support",
+          "icon": "LiaHandHoldingUsdSolid",
+          "content": [
+            {
+              "title": "Child Support",
+              "imageSrc": "child-support.jpg",
+              "desc": "Child support is the amount of money that one parent pays to the other to help pay for the costs of caring for a child. It is a vital aspect of ensuring the well-being of children whose parents are separated or divorced. The child’s best interests are the priority, aiming to provide them with the necessary resources for a stable and nurturing environment.",
+              "subtitle": [
+                {
+                  "title": "How is it calculated?",
+                  "desc": "Child support is governed by the Ontario Child Support Guideline. This system determines the amount based on the child’s residency schedule and income of parent(s). <br/> The Child Support Guidelines calculate the amount based on: <ul><li>A basic monthly amount (“Table Amount”): calculated based on the payor parent’s gross annual income and number of children entitled to support</li><li>An amount for other expenses called Special or Extraordinary Expenses</li></ul>"
+                },
+                {
+                  "title": "What counts as Special & Extraordinary Expenses?",
+                  "desc": "An expense is extraordinary or special if it is within the reasonable means of the parent’s expense and it is necessary for the child’s best interests. The amount of extra expenses is calculated by the net income of both parents, the amount of Table Amount being paid, and what each can afford. <br/> Some examples of special & extraordinary expenses: <ul><li>Child fees such as after-school programs, daycare.</li><li>Sports and other interest classes like music and arts class.</li><li>Medical fees for dental and medical visits and prescriptions.</li><li>Educational fees such as learning programs or tutoring.</li><li>University or college tuition payments.</li></ul>"
+                },
+                {
+                  "title": "Who pays for child support?",
+                  "desc": "Usually, the parent that pays child support is the parent that the child is with less. If the parents spend an equal amount of time with the child, then it is typically the parent that has the higher income."
+                },
+                {
+                  "title": "When does child support end?",
+                  "desc": "Child support must be paid if the child is still under 18 years old. In some cases, child support may be extended. For example: <ul><li>If the child is still dependent on the parent for financial support and they’re pursuing full-time education, child support may continue until they complete their first undergraduate degree or turn 22, whichever comes first.</li><li>If the child has a disability, illness, or other causes and cannot be financially independent.</li></ul>"
+                }
+              ],
+              "disclaimer": "To find out about more about the rights of your child, call us today to schedule a consultation."
+            },
+            {
+              "title": "Spousal Support",
+              "imageSrc": "spousal-support.jpg",
+              "desc": "Spousal support, also known as alimony, is financial assistance paid by one spouse to the other after separation or divorce. At Luk Law, our team experienced legal team will help you navigate the complexities of spousal support, ensuring fair and equitable arrangements.",
+              "subtitle": [
+                {
+                  "title": "What is spousal support?",
+                  "desc": "Spousal support is intended to address the economic consequences of the breakdown of a relationship, particularly when one spouse has been financially dependent on the other during the marriage or common-law partnership. It is designed to assist the recipient spouse in becoming self-sufficient over time."
+                },
+                {
+                  "title": "How do I get spousal support?",
+                  "desc": "Spousal support is not an automatic part of separation or divorce. In most cases, it is requested by the spouse with the lower income.​ You and your spouse can either:​ <ul><li>Negotiate spousal support payments as part of a Separation Agreement</li><li>Ask a judge to decide, if you cannot agree, and they will determine the amount of support and how long it should be paid</li></ul>"
+                },
+                {
+                  "title": "Who is entitled to spousal support and how is it calculated?",
+                  "desc": "Spousal support entitlement, the amount, and duration is affected by various factors, including: <ul><li><strong>Length of the Relationship:</strong> The duration of the relationship is a significant factor in determining the amount and duration of spousal support. Generally, longer relationships may result in higher and longer-lasting support obligations.</li><li><strong>Income Disparity:</strong> The difference in income between the spouses is a key consideration. The spouse with a higher income may be required to pay support to the lower-earning spouse to help maintain their standard of living post-separation.</li><li><strong>Needs and Circumstances:</strong> The financial needs and circumstances of each spouse, including their earning capacity, age, health, and childcare responsibilities, are taken into account when determining spousal support.</li><li><strong>Contributions to the Relationship:</strong> The contributions made by each spouse to the relationship, both financial and non-financial, are considered. This includes factors such as homemaking, childcare, and career sacrifices made to support the family unit.</li><li><strong>Spousal Support Advisory Guidelines (SSAG):</strong> These guidelines provide a framework for courts and individuals in calculating spousal support obligations and acts as a starting point for courts and in negotiation. Unlike the Child Support Guidelines, the amounts proposed by the SSAG are not mandatory.</li></ul>"
+                },
+                {
+                  "title": "Why choose us",
+                  "desc": "<ul><li><strong>Legal Expertise:</strong> Our lawyers have extensive experience in spousal support matters and stay up-to-date on the latest developments in Ontario's family law legislation.</li><li><strong>Negotiation and Advocacy:</strong> We advocate for our clients' interests during spousal support negotiations, striving to achieve fair and equitable outcomes that address their financial needs and circumstances.</li><li><strong>Representation in Court:</strong> If litigation becomes necessary, our team provides skilled representation in court to protect our clients' rights and interests.</li></ul>"
+                }
+              ],
+              "disclaimer": "If you have questions about spousal support or need assistance with negotiating or enforcing a spousal support agreement, contact Luk Law to schedule a consultation with one of our experienced family law lawyers. We'll provide you with the legal guidance and support you need to navigate the complexities of spousal support."
+            }
+          ]
+        },
+        {
+          "key": "parenting-time",
+          "label": "Parenting Time & Decision Making",
+          "icon": "TbFriends",
+          "desc": "Parenting arrangements (formerly known as custody) are a crucial aspect of family law that ensures the well-being and upbringing of children in separated or divorced families. If you have children, you will need a parenting arrangement in place to finalize your divorce or separation.",
+          "content": [
+            {
+              "title": "Parenting Arrangement",
+              "imageSrc": "parenting-time.jpg",
+              "subtitle": [
+                {
+                  "title": "What is in a parenting arrangement?",
+                  "desc": "A parenting arrangement will deal with: <ul><li><strong>1. Parenting Time:</strong> schedule and arrangements made for each parent to spend time with their children. This includes both regular living schedules as well as holidays and vacation time.</li><li><strong>2. Decision-Making:</strong> refers to the right to make significant decisions about a child’s life and well-being. These decisions may relate to health, education, religion, and other important matters in respect of the child’s welfare</li></ul>"
+                },
+                {
+                  "title": "How is a parenting arrangement made?",
+                  "desc": "You and your spouse can either: <ul><li>Negotiate and agree to a parenting arrangement informally between yourselves or formalize it and make it a part of your Separation Agreement or court order.</li><li>If you cannot agree, you can ask a judge to decide and they will issue a parenting order.</li></ul>"
+                }
+              ]
+            },
+            {
+              "title": "Parenting Time",
+              "imageSrc": "parenting-time.jpeg",
+              "subtitle": [
+                {
+                  "title": "Types of parenting time",
+                  "desc": "<ul><li><strong>Shared Parenting Time:</strong> parents who have shared parenting time share the amount of time spent with the child. Under the Child Support Guidelines, shared parenting time is where a child lives at least 40% of the time with each parent.</li><li><strong>Split Parenting Time:</strong> split parenting time is when parents have more than one child and each parent has one or more children living with them for most of the time.</li><li><strong>Supervised Parenting Time:</strong> supervised parenting time can be arranged if there are safety concerns during visits, or when children are exchanged between parents. When a supervised parenting time arrangement is in place, someone else must be present when you visit with your children or when exchanges occur.</li></ul>"
+                },
+                {
+                  "title": "Can a spouse be given no parenting time?",
+                  "desc": "Orders from the court stipulating no parenting time only happens in the most extreme cases. Parenting time could be denied if the court believes that the parent is at risk of: <ul><li>Harming the child</li><li>Harming the other parent with the decision-making responsibility</li><li>Not returning the child to the other parent</li></ul>"
+                }
+              ]
+            },
+            {
+              "title": "Decision-making",
+              "imageSrc": "decision-making.jpg",
+              "subtitle": [
+                {
+                  "title": "Types of decision-making",
+                  "desc": "<ul><li><strong>Sole Decision-Making Responsibility:</strong> one parent has the right to make important decisions about the child's care, education, religious instruction and welfare, and doesn't need to involve the other parent when making decisions.</li><li><strong>Joint Decision-Making Responsibility:</strong> parents who have joint decision-making responsibility for their children share the right to make important decisions about their care and remain involved in making decisions about the children.</li><li><strong>De-Facto Decision-Making Responsibility:</strong> when your children live with you, but you don’t have a legal decision-making responsibility arrangement.</li></ul>"
+                }
+              ]
+            },
+            {
+              "title": "Why choose us",
+              "desc": "<ul><li><strong>Expertise:</strong> Our team has extensive experience handling parenting time and decision-making cases in Ontario. We stay updated on the latest legal developments and strategies to ensure the best possible outcomes for our clients.</li><li><strong>Compassionate Approach: </strong>We understand the emotional toll that separations and divorces can be on parents and their children. Our team takes a compassionate and empathetic approach, providing personalized guidance and support tailored to your family’s unique needs and circumstances.</li><li><strong>Client-Centered Service:</strong> We take the time to listen to your concerns, understand your needs, and develop a customized legal strategy designed to achieve the best possible results for you and your family.</li></ul>",
+              "disclaimer": "Finalizing a parenting arrangement can be complicated. Call us today to make sure you understand your options and the legal process."
+            }
+          ]
+        },
+        {
+          "key": "family-law-faq",
+          "label": "Family Law FAQ",
+          "icon": "BiHelpCircle",
+          "content": [
+            {
+              "title": "1. Do I have to go to court to get a divorce?",
+              "desc": "No. You never have to step foot inside a court to get a divorce as long as both parties are willing to communicate amicably and agree to the terms of their separation."
+            },
+            {
+              "title": "2. Who gets custody of the kids?",
+              "desc": "This will be up to the courts to decide based on the “best interests of the child”. In most cases where the child(ren) lived with both of their parents, both parents will get an equal right to their child(ren) and share responsibilities."
+            },
+            {
+              "title": "3. Who pays child support and how is it calculated?",
+              "desc": "There is a set calculation method for child support. Factors that determine child support include gross income and the number of children."
+            },
+            {
+              "title": "4. What is the difference between a separation and divorce?",
+              "desc": "A separation is when a couple decides to live apart from each other because the relationship has broken down. The couple may be married, or they may be unmarried but living together like a married couple in a common-law relationship. A divorce is when a court officially ends a marriage. Separation is one of the necessary conditions for divorce."
+            },
+            {
+              "title": "5. I want a divorce, but my spouse does not. What can I do?",
+              "desc": "Getting a divorce does not have to be a unanimous decision, however before you can begin filing for a divorce you must have been separated for a year - this is one of the possible grounds for divorce and is the most common route people take. The other two grounds for divorce are adultery and cruelty, however the burden of proof is much higher for these cases and proving in court will be lengthy, costly, and draining. The first step to getting a divorce is separating from your spouse, which can be as simple as sending a text message expressing your wish to separate. Within the year, you should take steps to physically distance yourself from your partner, such as moving to another place, sleeping in a different room, having separate bank accounts, not engaging in any social events with your spouse, etc. After a year, you may file for a divorce and have your spouse served with divorce papers. If he/she refuses to show up to court, your lawyer will have to default them for failing to appear. After exhausting all possible methods of contact, the judge will grant you a divorce by default and likely all the terms you asked for."
+            },
+            {
+              "title": "6. Am I entitled to spousal support?",
+              "desc": "You may be entitled to spousal support if you were either: married, lived together as a couple for at least three years, were in a relationship of some permanence for any length of time and had a child together. However, spousal support is not an automatic right associated with the breakdown of a marriage. <br/><br/> In Ontario, you are only eligible for spousal support: <ul><li>To compensate a spouse for hardship or opportunities lost due to the marriage or its breakdown;</li><li>To fulfill a contractual agreement, expressed or implied, that the parties were responsible for each other’s support; or</li><li>On a non-compensatory basis, to assist a spouse in need where there is the capacity to pay, even in the absence of a contractual or compensatory foundation for the obligation.</li></ul>"
+            },
+            {
+              "title": "7. What happens to our home in separation or divorce? ",
+              "desc": "Both parties have an equal right to the matrimonial home regardless of who owns it. This means both parties can live in it during separation and the proceeds of the sale of the house is split according to equalization. If one spouse wants to keep the matrimonial home, they can negotiate a purchase of the other’s share, or one spouse may voluntarily transfer their interest in the matrimonial home to the other spouse as part of the divorce settlement. If an agreement cannot be made regarding the matrimonial home, the Partition Act provides the court with the power to force the sale."
+            },
+            {
+              "title": "8. Can we use the same lawyer to get a divorce? ",
+              "desc": "No. A lawyer’s fiduciary duty is to offer legal advice and options that would work in one party’s best interest. Thus it would be impossible for one lawyer to represent two people in a divorce where there are competing interests. If conflict were to arise, such as if one party refuses to adhere to what was originally agreed on, a lawyer could not adequately protect the interests of both parties. In fact, for a separation agreement to be considered valid and legally binding, there must not have been any conflict of interest. This conflict of interest immediately arises when one lawyer represents both spouses."
+            }
+          ]
+        }
       ]
     },
     {
       "path": "/wills-and-estates",
       "title": "Wills & Estates",
       "imageSrc": "will.jpg",
+      "icon": "will.png",
       "desc": "At Luk Law, we understand the importance of planning for the future and take pride in providing clients with peace of mind. Our experienced team is ready to guide you in making informed decisions about your legacy and ensure that your final wishes are carried out. We will work closely with you to create a comprehensive estate plan that is tailored to your unique needs.",
       "tabs": [
-        {"key": "wills", "label": "Wills", "icon": "HiOutlineClipboardList", "desc": "At Luk Law, we understand the importance of securing your assets and ensuring your loved ones are taken care of in the future. Whether it be a simple will or a complex one, our estate planning team will provide comprehensive will drafting services tailored to your unique needs and circumstances.", "content": [
-          {"title": "What is a Will?", "imageSrc": "wills.jpg", "desc": "A Will is a legal instrument that provides instructions for the administration and distribution of your assets following your passing. It explains your wishes about how your property and possessions should be taken care of, for example, how much money should be given to a specific person. As a part of your Will, you can designate whom you prefer to manage your estate after your death (your estate trustee or executor). A Will can also appoint one or more persons to have decision-making responsibility or guardianship for your children who are not yet adults."},
-          {"title": "What is in a Will?", "desc": "Your Will should include the following: <ul><li><strong>Details for how you want to distribute your assets.</strong> It allows you to select your heirs (beneficiaries) and what they will inherit from you.</li><li><strong>A designation for an Executor (or Trustee).</strong> It designates a person or persons that will administer your assets and carry out the wishes of your will after your death</li><li><strong>An outline of the powers of your Executor.</strong> It will authorize your Executor to make decisions and actions that will help them carry out your instructions.</li></ul> A Will can also include funeral instructions, trust designations and guardianship preferences for your underaged children."},
-          {"title": "What if I don't have one?", "desc": "If you die without a Will, the distribution of your assets will be determined by the default provisions in the Success Law Reform Act. The law will determine: <ul><li>Who is entitled to your estate</li><li>How much they can receive</li><li>Who can apply to the court to manage your estate</li></ul> If you want control over the distribution of your estate, you will need to create a Will and update it from time to time."},
-          {"title": "Our Wills services include:", "imageSrc": "will.jpg", "desc": "<ul><li><strong>Initial Consultation:</strong> We begin by meeting with you to discuss your estate planning goals and gather relevant information about your assets, beneficiaries, and preferences.</li><li><strong>Will Drafting:</strong> Our team will draft a comprehensive will document that outlines how you wish your assets to be distributed upon your passing. We ensure that your will is legally sound and accurately reflects your wishes.</li><li><strong>Updates and Amendments:</strong> Life circumstances and priorities may change over time. We offer ongoing support to update and amend your will as needed, ensuring it remains up-to-date and reflects your current wishes.</li></ul>"},
-          {"title": "Why choose us", "desc": "<ul><li><strong>Expertise:</strong> Our team has extensive experience estate planning and drafting wills for clients across Ontario. We stay updated on the latest legal developments and ensure your will complies with all relevant laws and regulations.</li><li><strong>Personalized Approach:</strong> We recognize that every individual has different priorities and concerns when it comes to estate planning. Our team takes the time to understand your specific wishes and objectives, crafting a will that reflects your intentions and protects your assets.</li><li><strong>Peace of Mind:</strong> With our professional guidance, you can have confidence that your estate will be handled according to your wishes. We provide clear explanations and advice throughout the drafting process, giving you peace of mind knowing that your affairs are in order.</li></ul>"}
-        ]},
-        {"key": "power-of-attorney", "label": "Power of Attorney", "icon": "RiGovernmentLine", "content": [
-          {"title": "Power of Attorney for Personal Care", "imageSrc": "power-of-attorney-personal-care.jpg", "desc": "At Luk Law, we understand the importance of planning for your future healthcare needs and ensuring that your wishes are respected. Our team of legal professionals can assist in drafting your Power of Attorney for Personal Care to provide you with peace of mind and ensure your healthcare decisions are made according to your preferences.", "subtitle": [{"title": "Our Power of Attorney for Personal Care services include:", "desc": "<ul><li><strong>Initial Consultation:</strong> We'll meet with you to discuss your healthcare preferences, values, and any specific instructions you have regarding your medical treatment and personal care. Our goal is to ensure that your Power of Attorney for Personal Care reflects your wishes accurately.</li><li><strong>Document Drafting:</strong> Our experienced lawyers will draft a Power of Attorney for Personal Care document appointing a trusted individual (your 'attorney') to make healthcare decisions on your behalf if you become incapable of making them yourself. We will ensure that the document complies with all legal requirements in Ontario.</li><li><strong>Customized Instructions:</strong> We'll work with you to include detailed instructions and preferences regarding your medical treatment, end-of-life care, and other personal care matters. Your attorney will be legally bound to follow these instructions when making healthcare decisions on your behalf.</li><li><strong>Legal Compliance:</strong> Our team ensures that your Power of Attorney for Personal Care complies with all relevant laws and regulations in Ontario, providing you with peace of mind knowing that your healthcare wishes will be respected.</li></ul>"}, 
-          {"title": "Why choose us", "desc": "<ul><li><strong>Experience:</strong> Our lawyers have extensive experience in estate planning and healthcare law. We are well-versed in the legal requirements and considerations surrounding Powers of Attorney for Personal Care in Ontario, allowing us to provide you with expert guidance and support.</li><li><strong>Personalized Approach:</strong> We recognize that healthcare decisions are deeply personal and can be sensitive topics. Our team takes a compassionate and individualized approach, working closely with you to understand your values, preferences, and healthcare wishes.</li><li><strong>Comprehensive Service:</strong> From the initial consultation to the drafting and execution of your Power of Attorney for Personal Care document, we provide comprehensive support every step of the way. We are committed to ensuring that your wishes are accurately reflected and legally binding.</li></ul>"}]},
-          {"title": "Continuing Power of Attorney for Property", "imageSrc": "power-of-attorney.jpg", "desc": "At Luk Law, we recognize the importance of planning for the unexpected when it comes to managing your financial affairs. Our team of experienced lawyers specializes in drafting Continuing Powers of Attorney for Property to ensure your interests are protected and your wishes are honoured in the event of incapacity.", "subtitle": [
-            {"title": "Our Continuing Power of Attorney for Property services include:", "desc": "<ul><li><strong>Initial Consultation:</strong> We'll meet with you to discuss your financial circumstances, concerns, and objectives. Our goal is to gain a comprehensive understanding of your needs to tailor our services accordingly.</li><li><strong>Document Drafting:</strong> Our experienced lawyers will draft a Continuing Power of Attorney for Property document that appoints a trusted individual or individuals to manage your financial affairs on your behalf in the event of incapacity.</li><li><strong>Customized Provisions:</strong> We'll work with you to include provisions that reflect your preferences regarding the management of your assets, investments, real estate, and other financial matters./li><li><strong>Legal Compliance:</strong> Our team ensures that your Continuing Power of Attorney for Property complies with all relevant laws and regulations in Ontario, providing you with peace of mind knowing that your interests are protected.</li></ul>"},
-            {"title": "Why choose us", "desc": "<ul><li><strong>Expertise:</strong> Our legal professionals have extensive experience in estate planning and understand the intricacies of drafting effective Continuing Powers of Attorney for Property in Ontario. We stay up-to-date with the latest legal developments to provide you with the highest quality service.</li><li><strong>Personalized Solutions:</strong> We take the time to understand your unique financial situation and goals. Whether you have complex assets or specific instructions for their management, we tailor our services to meet your individual needs.</li><li><strong>Comprehensive Guidance:</strong> Our team provides thorough explanations and guidance throughout the drafting process, ensuring you understand the implications of your decisions. We're here to answer your questions and address any concerns you may have.</li></ul>"}
-          ]}
-        ]},
-        {"key": "probate-estate-administration", "label": "Probate and Estate Administration", "icon": "GiArchiveRegister", "desc": "At Luk Law, we understand that the loss of a loved one is a difficult time, and dealing with the legalities of estate administration can add additional stress. Our team is here to provide compassionate guidance and comprehensive support throughout the estate settlement process in Ontario.", "content": [{"title": "Our Probate and Estate Administration services", "imageSrc": "probate-and-estate-administration.jpg", "desc": "<ul><li><strong>Probate Application:</strong> We assist executors in applying for probate, obtaining the necessary court approvals to validate the deceased's will and administer the estate according to its terms.</li><li><strong>Estate Inventory and Valuation:</strong> Our team helps gather information about the deceased's assets, debts, and liabilities, and accurately assesses their value to facilitate proper estate distribution.</li><li><strong>Creditor Notification:</strong> We handle the process of notifying creditors of the deceased's passing and settling outstanding debts and liabilities from the estate.</li><li><strong>Estate Distribution:</strong> We work diligently to distribute assets to beneficiaries in accordance with the terms of the will or applicable laws of intestacy if there is no will.</li><li><strong>Dispute Resolution:</strong> In the event of disputes among beneficiaries or challenges to the validity of the will, we provide skilled representation to protect your interests and resolve conflicts effectively.</li></ul>"}, 
-          {"title": "Why choose us", "desc": "<ul><li><strong>Expertise:</strong> Our legal team has extensive experience handling estates of all sizes and complexities. We stay updated on the latest laws and regulations governing estate administration in Ontario to ensure a smooth and efficient process for our clients.</li><li><strong>Personalized Service:</strong> We recognize that every estate is unique, and we tailor our services to meet the specific needs and objectives of each client. Whether you require assistance with probate, estate distribution, or resolving disputes, we provide personalized solutions to help you navigate the process with confidence.</li><li><strong>Transparent Communication:</strong> We believe in open and transparent communication with our clients. Our team keeps you informed at every step of the estate administration process, providing clear explanations and answering any questions you may have along the way.</li></ul>"}]},
-        {"key": "wills-estates-faq", "icon": "BiHelpCircle", "label": "Wills & Estates FAQ", "content": [
-          {"title": "1. What happens to my assets if I don’t have a Will?", "desc": "This is also known as intestacy. In intestacy, one of your family members will need to apply for probate and be appointed an estate administrator. Your assets will be split according to the Ontario Succession Law Reform Act."}, {"title": "2. Can I write my own Will?", "desc":"It is legal to write your own Will in Ontario as long as you’ve met all the criteria for it to be legally binding."}, {"title": "3. I am separated from my spouse. Do I need to change my Will?", "desc": "Yes. If not formally divorced, your ex-spouse is still entitled to inherit your assets."}, {"title": "4. Who is an executor of a Will?", "desc": "The executor carries out the wishes of the testator written in the Will, mainly sorting out all debts, funeral arrangements, and ensuring beneficiaries receive their portion of the estate."}, {"title": "5. Can I change my Will at a later time?", "desc": "Yes. However you must follow the criteria for will amendments, such as having the same witnesses sign the amended Will."}, {"title": "6. What is the difference between a Will and a Power of Attorney (POA)?", "desc": "A POA is a legal document that names another individual to act on your behalf in the case that you become incapacitated. There are two kinds of POA: POA for personal care and POA for property. These are only valid if the person who created the POA is alive. A Will comes into effect when the person passes and it basically addresses how they would like their assets to be handled and split."}, {"title": "7. What is probate?", "desc": "Probate is a legal process where the courts formally accept the Will or appoint someone to act on the deceased’s behalf if they don’t have a Will. Once the executor receives the certificate of appointment of estate trustee, they then have the legal authority to manage the deceased’s assets, such as bank accounts, property, investments."}]}
+        {
+          "key": "wills",
+          "label": "Wills",
+          "icon": "HiOutlineClipboardList",
+          "desc": "At Luk Law, we understand the importance of securing your assets and ensuring your loved ones are taken care of in the future. Whether it be a simple will or a complex one, our estate planning team will provide comprehensive will drafting services tailored to your unique needs and circumstances.",
+          "content": [
+            {
+              "title": "What is a Will?",
+              "imageSrc": "wills.jpg",
+              "desc": "A Will is a legal instrument that provides instructions for the administration and distribution of your assets following your passing. It explains your wishes about how your property and possessions should be taken care of, for example, how much money should be given to a specific person. As a part of your Will, you can designate whom you prefer to manage your estate after your death (your estate trustee or executor). A Will can also appoint one or more persons to have decision-making responsibility or guardianship for your children who are not yet adults."
+            },
+            {
+              "title": "What is in a Will?",
+              "imageSrc": "will.jpg",
+              "desc": "Your Will should include the following: <ul><li><strong>Details for how you want to distribute your assets.</strong> It allows you to select your heirs (beneficiaries) and what they will inherit from you.</li><li><strong>A designation for an Executor (or Trustee).</strong> It designates a person or persons that will administer your assets and carry out the wishes of your will after your death</li><li><strong>An outline of the powers of your Executor.</strong> It will authorize your Executor to make decisions and actions that will help them carry out your instructions.</li></ul> A Will can also include funeral instructions, trust designations and guardianship preferences for your underaged children."
+            },
+            {
+              "title": "What if I don't have one?",
+              "desc": "If you die without a Will, the distribution of your assets will be determined by the default provisions in the Success Law Reform Act. The law will determine: <ul><li>Who is entitled to your estate</li><li>How much they can receive</li><li>Who can apply to the court to manage your estate</li></ul> If you want control over the distribution of your estate, you will need to create a Will and update it from time to time."
+            },
+            {
+              "title": "Our Wills services include:",
+              "desc": "<ul><li><strong>Initial Consultation:</strong> We begin by meeting with you to discuss your estate planning goals and gather relevant information about your assets, beneficiaries, and preferences.</li><li><strong>Will Drafting:</strong> Our team will draft a comprehensive will document that outlines how you wish your assets to be distributed upon your passing. We ensure that your will is legally sound and accurately reflects your wishes.</li><li><strong>Updates and Amendments:</strong> Life circumstances and priorities may change over time. We offer ongoing support to update and amend your will as needed, ensuring it remains up-to-date and reflects your current wishes.</li></ul>"
+            },
+            {
+              "title": "Why choose us",
+              "desc": "<ul><li><strong>Expertise:</strong> Our team has extensive experience estate planning and drafting wills for clients across Ontario. We stay updated on the latest legal developments and ensure your will complies with all relevant laws and regulations.</li><li><strong>Personalized Approach:</strong> We recognize that every individual has different priorities and concerns when it comes to estate planning. Our team takes the time to understand your specific wishes and objectives, crafting a will that reflects your intentions and protects your assets.</li><li><strong>Peace of Mind:</strong> With our professional guidance, you can have confidence that your estate will be handled according to your wishes. We provide clear explanations and advice throughout the drafting process, giving you peace of mind knowing that your affairs are in order.</li></ul>"
+            }
+          ]
+        },
+        {
+          "key": "power-of-attorney",
+          "label": "Power of Attorney",
+          "icon": "RiGovernmentLine",
+          "content": [
+            {
+              "title": "Power of Attorney for Personal Care",
+              "imageSrc": "power-of-attorney-personal-care.jpg",
+              "desc": "At Luk Law, we understand the importance of planning for your future healthcare needs and ensuring that your wishes are respected. Our team of legal professionals can assist in drafting your Power of Attorney for Personal Care to provide you with peace of mind and ensure your healthcare decisions are made according to your preferences.",
+              "subtitle": [
+                {
+                  "title": "Our Power of Attorney for Personal Care services include:",
+                  "desc": "<ul><li><strong>Initial Consultation:</strong> We'll meet with you to discuss your healthcare preferences, values, and any specific instructions you have regarding your medical treatment and personal care. Our goal is to ensure that your Power of Attorney for Personal Care reflects your wishes accurately.</li><li><strong>Document Drafting:</strong> Our experienced lawyers will draft a Power of Attorney for Personal Care document appointing a trusted individual (your 'attorney') to make healthcare decisions on your behalf if you become incapable of making them yourself. We will ensure that the document complies with all legal requirements in Ontario.</li><li><strong>Customized Instructions:</strong> We'll work with you to include detailed instructions and preferences regarding your medical treatment, end-of-life care, and other personal care matters. Your attorney will be legally bound to follow these instructions when making healthcare decisions on your behalf.</li><li><strong>Legal Compliance:</strong> Our team ensures that your Power of Attorney for Personal Care complies with all relevant laws and regulations in Ontario, providing you with peace of mind knowing that your healthcare wishes will be respected.</li></ul>"
+                },
+                {
+                  "title": "Why choose us",
+                  "desc": "<ul><li><strong>Experience:</strong> Our lawyers have extensive experience in estate planning and healthcare law. We are well-versed in the legal requirements and considerations surrounding Powers of Attorney for Personal Care in Ontario, allowing us to provide you with expert guidance and support.</li><li><strong>Personalized Approach:</strong> We recognize that healthcare decisions are deeply personal and can be sensitive topics. Our team takes a compassionate and individualized approach, working closely with you to understand your values, preferences, and healthcare wishes.</li><li><strong>Comprehensive Service:</strong> From the initial consultation to the drafting and execution of your Power of Attorney for Personal Care document, we provide comprehensive support every step of the way. We are committed to ensuring that your wishes are accurately reflected and legally binding.</li></ul>"
+                }
+              ]
+            },
+            {
+              "title": "Continuing Power of Attorney for Property",
+              "imageSrc": "power-of-attorney.jpg",
+              "desc": "At Luk Law, we recognize the importance of planning for the unexpected when it comes to managing your financial affairs. Our team of experienced lawyers specializes in drafting Continuing Powers of Attorney for Property to ensure your interests are protected and your wishes are honoured in the event of incapacity.",
+              "subtitle": [
+                {
+                  "title": "Our Continuing Power of Attorney for Property services include:",
+                  "desc": "<ul><li><strong>Initial Consultation:</strong> We'll meet with you to discuss your financial circumstances, concerns, and objectives. Our goal is to gain a comprehensive understanding of your needs to tailor our services accordingly.</li><li><strong>Document Drafting:</strong> Our experienced lawyers will draft a Continuing Power of Attorney for Property document that appoints a trusted individual or individuals to manage your financial affairs on your behalf in the event of incapacity.</li><li><strong>Customized Provisions:</strong> We'll work with you to include provisions that reflect your preferences regarding the management of your assets, investments, real estate, and other financial matters.</li><li><strong>Legal Compliance:</strong> Our team ensures that your Continuing Power of Attorney for Property complies with all relevant laws and regulations in Ontario, providing you with peace of mind knowing that your interests are protected.</li></ul>"
+                },
+                {
+                  "title": "Why choose us",
+                  "desc": "<ul><li><strong>Expertise:</strong> Our legal professionals have extensive experience in estate planning and understand the intricacies of drafting effective Continuing Powers of Attorney for Property in Ontario. We stay up-to-date with the latest legal developments to provide you with the highest quality service.</li><li><strong>Personalized Solutions:</strong> We take the time to understand your unique financial situation and goals. Whether you have complex assets or specific instructions for their management, we tailor our services to meet your individual needs.</li><li><strong>Comprehensive Guidance:</strong> Our team provides thorough explanations and guidance throughout the drafting process, ensuring you understand the implications of your decisions. We're here to answer your questions and address any concerns you may have.</li></ul>"
+                }
+              ],
+              "disclaimer": "Protect your financial future today. Don't wait until it's too late to plan for the unexpected. Contact us to schedule a consultation with one of our experienced estate planning lawyers. We'll help you create a robust Continuing Power of Attorney for Property that safeguards your financial interests and provides peace of mind for you and your loved ones."
+            }
+          ]
+        },
+        {
+          "key": "probate-estate-administration",
+          "label": "Probate and Estate Administration",
+          "icon": "GiArchiveRegister",
+          "desc": "At Luk Law, we understand that the loss of a loved one is a difficult time, and dealing with the legalities of estate administration can add additional stress. Our team is here to provide compassionate guidance and comprehensive support throughout the estate settlement process in Ontario.",
+          "content": [
+            {
+              "title": "Our Probate and Estate Administration services",
+              "imageSrc": "probate-and-estate-administration.jpg",
+              "desc": "<ul><li><strong>Probate Application:</strong> We assist executors in applying for probate, obtaining the necessary court approvals to validate the deceased's will and administer the estate according to its terms.</li><li><strong>Estate Inventory and Valuation:</strong> Our team helps gather information about the deceased's assets, debts, and liabilities, and accurately assesses their value to facilitate proper estate distribution.</li><li><strong>Creditor Notification:</strong> We handle the process of notifying creditors of the deceased's passing and settling outstanding debts and liabilities from the estate.</li><li><strong>Estate Distribution:</strong> We work diligently to distribute assets to beneficiaries in accordance with the terms of the will or applicable laws of intestacy if there is no will.</li><li><strong>Dispute Resolution:</strong> In the event of disputes among beneficiaries or challenges to the validity of the will, we provide skilled representation to protect your interests and resolve conflicts effectively.</li></ul>"
+            },
+            {
+              "title": "Why choose us",
+              "desc": "<ul><li><strong>Expertise:</strong> Our legal team has extensive experience handling estates of all sizes and complexities. We stay updated on the latest laws and regulations governing estate administration in Ontario to ensure a smooth and efficient process for our clients.</li><li><strong>Personalized Service:</strong> We recognize that every estate is unique, and we tailor our services to meet the specific needs and objectives of each client. Whether you require assistance with probate, estate distribution, or resolving disputes, we provide personalized solutions to help you navigate the process with confidence.</li><li><strong>Transparent Communication:</strong> We believe in open and transparent communication with our clients. Our team keeps you informed at every step of the estate administration process, providing clear explanations and answering any questions you may have along the way.</li></ul>"
+            }
+          ]
+        },
+        {
+          "key": "wills-estates-faq",
+          "icon": "BiHelpCircle",
+          "label": "Wills & Estates FAQ",
+          "content": [
+            {
+              "title": "1. What happens to my assets if I don’t have a Will?",
+              "desc": "This is also known as intestacy. In intestacy, one of your family members will need to apply for probate and be appointed an estate administrator. Your assets will be split according to the Ontario Succession Law Reform Act."
+            },
+            {
+              "title": "2. Can I write my own Will?",
+              "desc": "It is legal to write your own Will in Ontario as long as you’ve met all the criteria for it to be legally binding."
+            },
+            {
+              "title": "3. I am separated from my spouse. Do I need to change my Will?",
+              "desc": "Yes. If not formally divorced, your ex-spouse is still entitled to inherit your assets."
+            },
+            {
+              "title": "4. Who is an executor of a Will?",
+              "desc": "The executor carries out the wishes of the testator written in the Will, mainly sorting out all debts, funeral arrangements, and ensuring beneficiaries receive their portion of the estate."
+            },
+            {
+              "title": "5. Can I change my Will at a later time?",
+              "desc": "Yes. However you must follow the criteria for will amendments, such as having the same witnesses sign the amended Will."
+            },
+            {
+              "title": "6. What is the difference between a Will and a Power of Attorney (POA)?",
+              "desc": "A POA is a legal document that names another individual to act on your behalf in the case that you become incapacitated. There are two kinds of POA: POA for personal care and POA for property. These are only valid if the person who created the POA is alive. A Will comes into effect when the person passes and it basically addresses how they would like their assets to be handled and split."
+            },
+            {
+              "title": "7. What is probate?",
+              "desc": "Probate is a legal process where the courts formally accept the Will or appoint someone to act on the deceased’s behalf if they don’t have a Will. Once the executor receives the certificate of appointment of estate trustee, they then have the legal authority to manage the deceased’s assets, such as bank accounts, property, investments."
+            }
+          ]
+        }
       ]
     },
     {
       "path": "/personal-injury-law",
       "title": "Personal Injury Law",
       "imageSrc": "personal-injury.png",
+      "icon": "personal-injury.png",
       "desc": "At Luk Law, our mission is to provide the best possible legal representation for our clients in personal injury cases. We understand the physical, emotional and financial toll that a personal injury can take on a person, and we are committed to helping our clients through their difficult times.",
       "tabs": [
-        {"key": "Motor-vehicle", "label": "Motor Vehicle Accidents", "icon": "TbCarCrash", "content": [{ "imageSrc": "motor-vehicle.jpeg", "desc": "Tailored to assist individuals who have been injured in car accidents, providing comprehensive legal support to navigate the complexities of insurance claims and personal injury lawsuits. Our team handles all aspects of motor vehicle accident cases, from investigating the cause of the accident to negotiating with insurance companies and representing clients in court when necessary. We strive to maximize compensation for medical expenses, property damage, lost wages, and pain and suffering, ensuring our clients receive the justice and support they deserve."}]},
-        {"key": "slip-and-falls", "label": "Slip and Falls", "icon": "TbFall", "content": [{"imageSrc": "slip.jpg", "desc": "Designed to provide comprehensive support to individuals who have been injured in such incidents. From conducting thorough investigations to gathering evidence and negotiating with responsible parties, our experienced team works tirelessly to secure the compensation our clients deserve for medical expenses, lost wages, pain and suffering, and other damages."}]}
+        {
+          "key": "Motor-vehicle",
+          "label": "Motor Vehicle Accidents",
+          "icon": "TbCarCrash",
+          "content": [
+            {
+              "imageSrc": "motor-vehicle.jpeg",
+              "desc": "Tailored to assist individuals who have been injured in car accidents, providing comprehensive legal support to navigate the complexities of insurance claims and personal injury lawsuits. Our team handles all aspects of motor vehicle accident cases, from investigating the cause of the accident to negotiating with insurance companies and representing clients in court when necessary. We strive to maximize compensation for medical expenses, property damage, lost wages, and pain and suffering, ensuring our clients receive the justice and support they deserve."
+            }
+          ]
+        },
+        {
+          "key": "slip-and-falls",
+          "label": "Slip and Falls",
+          "icon": "TbFall",
+          "content": [
+            {
+              "imageSrc": "slip.jpg",
+              "desc": "Designed to provide comprehensive support to individuals who have been injured in such incidents. From conducting thorough investigations to gathering evidence and negotiating with responsible parties, our experienced team works tirelessly to secure the compensation our clients deserve for medical expenses, lost wages, pain and suffering, and other damages."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/immigration-law",
+      "title": "Immigration Law",
+      "imageSrc": "immigration.png",
+      "icon": "immigration.png",
+      "desc": "Navigating the intricate pathways of immigration law requires expertise and finesse. At Luk Law, we provide comprehensive immigration law services tailored to meet the diverse needs of our clients. Whether you're seeking temporary residency, permanent citizenship, or assistance with complex immigration matters, our team of experienced lawyers is dedicated to guiding you through every step of the process. With a deep understanding of Canadian immigration regulations and a commitment to personalized service, we strive to achieve the best possible outcome for each client.",
+      "tabs": [
+        {
+          "key": "work",
+          "label": "Work",
+          "icon": "MdOutlineWorkOutline",
+          "content": [
+            { "imageSrc": "work.jpg", "desc": "More information to come" }
+          ]
+        },
+        {
+          "key": "study",
+          "label": "Study",
+          "icon": "PiGraduationCap",
+          "content": [
+            { "imageSrc": "study.jpg", "desc": "More information to come" }
+          ]
+        },
+        {
+          "key": "visit",
+          "label": "Visit",
+          "icon": "PiAirplaneInFlight",
+          "content": [
+            { "imageSrc": "visit.jpg", "desc": "More information to come" }
+          ]
+        },
+        {
+          "key": "sponsorship",
+          "label": "Sponsorship",
+          "icon": "LiaHandsHelpingSolid",
+          "content": [
+            { "imageSrc": "sponsor.jpg", "desc": "More information to come" }
+          ]
+        },
+        {
+          "key": "immigration-pathways",
+          "label": "Immigration Pathways",
+          "icon": "GiPathDistance",
+          "content": [
+            { "imageSrc": "pathway.jpg", "desc": "More information to come" }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/corporate-law",
+      "title": "Corporate Law",
+      "imageSrc": "corporate-law.jpg",
+      "icon": "corporate-law.png",
+      "desc": "At Luk Law, we understand the intricacies of business law and the challenges that corporations face in the legal landscape. Our dedicated team of experienced lawyers specializes in providing comprehensive corporate law services to businesses of all sizes, from start-ups to established corporations.",
+      "tabs": [
+        {
+          "key": "incorporating",
+          "label": "Incorporating",
+          "icon": "HiOutlineOfficeBuilding",
+          "content": [{ "desc": "More information to come" }]
+        },
+        {
+          "key": "shareholder-agreement",
+          "label": "Shareholder Agreement",
+          "icon": "HiOutlineClipboardList",
+          "content": [{ "desc": "More information to come" }]
+        },
+        {
+          "key": "partnership-agreement",
+          "label": "Partnership/Partnership Agreement",
+          "icon": "AiOutlineTeam",
+          "content": [{ "desc": "More information to come" }]
+        },
+        {
+          "key": "joint-venture",
+          "label": "Joint Venture Agreements",
+          "icon": "FiUsers",
+          "content": [{ "desc": "More information to come" }]
+        }
       ]
     },
     {
@@ -195,17 +692,61 @@
       "title": "Other Services",
       "imageSrc": "other-services.jpg",
       "tabs": [
-        {"key": "notary-services", "label": "Notary Services", "icon": "HiOutlineDocumentText", "content" : [{"desc": "Our notary department provides clients with efficient and reliable notary services for a variety of legal documents, including affidavits, powers of attorney, and statutory declarations. Our licensed and experienced notaries are dedicated to ensuring that all legal documents are notarized properly, with attention to detail and accuracy."}]},
-        {"key": "landlord-tenant-board", "label": "Landlord Tenant Board", "icon": "FaRegBuilding", "desc": "At Luk Law, our mission is to provide our clients with the best possible legal representation. We understand the importance of ensuring fair and lawful practices for both landlords and tenants. Our dedicated team is here to provide comprehensive Landlord Tenant Board (LTB) services to help resolve disputes and ensure compliance with Ontario's residential tenancy laws.", "content": [
-          {"title": "Landlord Advocacy", "imageSrc": "landlord.jpg", "desc": "As a landlord, ensuring smooth operations and legal compliance is crucial. We offer proactive legal advice and representation for landlords facing challenges and our goal is to help you navigate the LTB procedures effectively and achieve a favorable outcome. <br/><br/> Our Landlord services include but are not limited to: <ul><li>Non-Payment of rent</li><li>Eviction</li><li>Illegal Activities</li><li>Vacancy</li><li>Security Deposits</li><li>Termination of a lease agreement</li></ul>"},
-          {"title": "Tenant Representation", "imageSrc": "tenant.jpg", "desc": "Any tenancy-related matter, our experienced team is here to advocate for your rights. We provide thorough representation throughout the LTB process, ensuring your voice is heard and your interests are protected. <br/><br/> Our Tenant services include but are not limited to: <ul><li>Rebate</li><li>Harassment</li><li>Tenant Rights</li><li>Notice of Termination</li><li>Maintenance or repair</li><li>Suite Meters</li></ul>"},
-          {"title": "Why choose us", "desc": "Our team has expertise in landlord-tenant law and experience with LTB procedures. We prioritize your needs and provide tailored solutions that will help achieve your goals. We are dedicated to achieving the best possible outcomes for you. Besides our legal expertise, we will provide support every step of the way and ensure you will have clear communication and excellent client service."}
-        ]},
-        {"key": "small-claims-court", "label": "Small Claims Court", "icon": "GoLaw", "desc": "At Luk Law, our mission is to deliver exceptional legal representation tailored to your needs. We understand that navigating Small Claims Court can be complex and stressful. Small Claims Court is where you can sue for a monetary amount or the return of property, provided the value of your claim does not exceed $35,000. Our dedicated team is here to offer comprehensive services to help resolve disputes and ensure a fair resolution under Ontario’s Small Claims Court procedures.", "content": [
-          {"title":"Plaintiffs Advocacy", "imageSrc": "small-claim.jpg", "desc": "If you’re pursuing a claim, it's crucial to have expert legal guidance to ensure your case is presented effectively. We provide proactive legal advice and representation to help you achieve a favourable outcome. Our goal is to assist you in navigating the Small Claims Court procedures smoothly and efficiently. <br/><br/> Our Claimant services include but are not limited to: <ul><li>Filing and Pursuing a Claim</li><li>Preparation and Presentation of Evidence</li><li>Settlement Negotiations</li><li>Court Representation</li><li>Legal Advice on Claim Strategies</li></ul>"},
-          {"title":"Defendants Representation", "imageSrc": "court.jpg","desc": "If you are being sued, having a knowledgeable advocate on your side is essential. We offer robust representation to protect your interests and defend against claims. Our experienced team will work diligently to ensure that your side of the story is heard and that you receive a fair outcome.<br/><br/> Our Defendant services include but are not limited to: <ul><li>Responding to Claims</li><li>Defense Preparation and Strategy</li><li>Evidence Collection and Presentation</li><li>Settlement Discussions</li><li>Court Representation</li></ul>"},
-          {"title":"Why choose us", "desc": "Our team possesses deep expertise in Small Claims Court procedures and a strong track record of successful outcomes. We prioritize your needs and provide customized legal solutions to help you achieve your objectives. From initial consultation to resolution, we offer clear communication, exceptional client service, and unwavering support every step of the way."}
-        ]}
+        {
+          "key": "notary-services",
+          "label": "Notary Services",
+          "icon": "HiOutlineDocumentText",
+          "content": [
+            {
+              "desc": "Our notary department provides clients with efficient and reliable notary services for a variety of legal documents, including affidavits, powers of attorney, and statutory declarations. Our licensed and experienced notaries are dedicated to ensuring that all legal documents are notarized properly, with attention to detail and accuracy."
+            }
+          ]
+        },
+        {
+          "key": "landlord-tenant-board",
+          "label": "Landlord Tenant Board",
+          "icon": "FaRegBuilding",
+          "desc": "At Luk Law, our mission is to provide our clients with the best possible legal representation. We understand the importance of ensuring fair and lawful practices for both landlords and tenants. Our dedicated team is here to provide comprehensive Landlord Tenant Board (LTB) services to help resolve disputes and ensure compliance with Ontario's residential tenancy laws.",
+          "content": [
+            {
+              "title": "Landlord Advocacy",
+              "imageSrc": "landlord.jpg",
+              "desc": "As a landlord, ensuring smooth operations and legal compliance is crucial. We offer proactive legal advice and representation for landlords facing challenges and our goal is to help you navigate the LTB procedures effectively and achieve a favorable outcome. <br/><br/> Our Landlord services include but are not limited to: <ul><li>Non-Payment of rent</li><li>Eviction</li><li>Illegal Activities</li><li>Vacancy</li><li>Security Deposits</li><li>Termination of a lease agreement</li></ul>"
+            },
+            {
+              "title": "Tenant Representation",
+              "imageSrc": "tenant.jpg",
+              "desc": "Any tenancy-related matter, our experienced team is here to advocate for your rights. We provide thorough representation throughout the LTB process, ensuring your voice is heard and your interests are protected. <br/><br/> Our Tenant services include but are not limited to: <ul><li>Rebate</li><li>Harassment</li><li>Tenant Rights</li><li>Notice of Termination</li><li>Maintenance or repair</li><li>Suite Meters</li></ul>"
+            },
+            {
+              "title": "Why choose us",
+              "desc": "Our team has expertise in landlord-tenant law and experience with LTB procedures. We prioritize your needs and provide tailored solutions that will help achieve your goals. We are dedicated to achieving the best possible outcomes for you. Besides our legal expertise, we will provide support every step of the way and ensure you will have clear communication and excellent client service."
+            }
+          ]
+        },
+        {
+          "key": "small-claims-court",
+          "label": "Small Claims Court",
+          "icon": "GoLaw",
+          "desc": "At Luk Law, our mission is to deliver exceptional legal representation tailored to your needs. We understand that navigating Small Claims Court can be complex and stressful. Small Claims Court is where you can sue for a monetary amount or the return of property, provided the value of your claim does not exceed $35,000. Our dedicated team is here to offer comprehensive services to help resolve disputes and ensure a fair resolution under Ontario’s Small Claims Court procedures.",
+          "content": [
+            {
+              "title": "Plaintiffs Advocacy",
+              "imageSrc": "small-claim.jpg",
+              "desc": "If you’re pursuing a claim, it's crucial to have expert legal guidance to ensure your case is presented effectively. We provide proactive legal advice and representation to help you achieve a favourable outcome. Our goal is to assist you in navigating the Small Claims Court procedures smoothly and efficiently. <br/><br/> Our Claimant services include but are not limited to: <ul><li>Filing and Pursuing a Claim</li><li>Preparation and Presentation of Evidence</li><li>Settlement Negotiations</li><li>Court Representation</li><li>Legal Advice on Claim Strategies</li></ul>"
+            },
+            {
+              "title": "Defendants Representation",
+              "imageSrc": "court.jpg",
+              "desc": "If you are being sued, having a knowledgeable advocate on your side is essential. We offer robust representation to protect your interests and defend against claims. Our experienced team will work diligently to ensure that your side of the story is heard and that you receive a fair outcome.<br/><br/> Our Defendant services include but are not limited to: <ul><li>Responding to Claims</li><li>Defense Preparation and Strategy</li><li>Evidence Collection and Presentation</li><li>Settlement Discussions</li><li>Court Representation</li></ul>"
+            },
+            {
+              "title": "Why choose us",
+              "desc": "Our team possesses deep expertise in Small Claims Court procedures and a strong track record of successful outcomes. We prioritize your needs and provide customized legal solutions to help you achieve your objectives. From initial consultation to resolution, we offer clear communication, exceptional client service, and unwavering support every step of the way."
+            }
+          ]
+        }
       ]
     }
-  ]}
+  ]
+}

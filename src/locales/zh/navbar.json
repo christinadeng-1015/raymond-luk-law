@@ -1,49 +1,81 @@
 {
   "navbar": {
-    "title": "雷蒙德·陆律师",
-    "subtitle": "事务所",
-    "desc": "卓越的法律服务，个性化的服务",
+    "title": "您的关切是我们的首要任务",
+    "subtitle": "我们的法律专业团队提供广泛的法律服务，包括房地产法、家庭法、遗嘱与遗产、公司法、公证服务等。我们致力于为客户提供个性化服务和卓越的法律支持。",
+    "desc": "卓越法律服务，贴心个性化体验",
     "aboutTitle": "为什么选择我们",
-    "about": [
-      { "icon": "AiOutlineLike", "title": "经验", "desc": "5年以上工作经验" },
-      { "icon": "AiOutlineDollarCircle", "title": "价格", "desc": "大多伦多地区最低价格" },
-      { "icon": "AiOutlineTeam", "title": "客户", "desc": "100+满意客户" }
-    ],
     "googleDoc": {
-        "title": "新客户注册",
-        "url": "https://docs.google.com/forms/d/e/1FAIpQLSc3wQK4mW8BakKnu6rbzLc1uc2u0j5bAn60iAi8M2_x4R6bQA/viewform?usp=sf_link"
-      },
+      "title": "免费咨询",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSc3wQK4mW8BakKnu6rbzLc1uc2u0j5bAn60iAi8M2_x4R6bQA/viewform?usp=sf_link"
+    },
     "links": [
-      { "key": "home", "label": "首页", "url": "/", "icon": "AiOutlineHome"},
-      { "key": "team", "label": "关于我们", "url": "/team", "icon": "AiOutlineTeam"},
+      { "key": "home", "label": "主页", "url": "/", "icon": "AiOutlineHome" },
+      {
+        "key": "team",
+        "label": "团队",
+        "url": "/team",
+        "icon": "AiOutlineTeam"
+      },
       {
         "key": "services",
-        "label": "服务",
+        "label": "法律服务",
         "icon": "AiOutlineAudit",
         "dropdown": [
-          { "key": "overview", "label": "概述", "url": "/services" },
-          { "key": "real-estate-law", "label": "房地产法", "url": "/real-estate-law" },
+          { "key": "overview", "label": "概览", "url": "/services" },
+          {
+            "key": "real-estate-law",
+            "label": "房地产法",
+            "url": "/real-estate-law"
+          },
           { "key": "family-law", "label": "家庭法", "url": "/family-law" },
-          { "key": "will-estates", "label": "遗嘱和遗产", "url": "/wills-and-estates" },
-          { "key": "personal-injury-law", "label": "人身伤害法", "url": "/personal-injury-law" },
-          { "key": "immigration-law", "label": "移民法", "url": "/immigration-law" },
-          { "key": "corporate-law", "label": "公司法", "url": "/corporate-law" },
-          { "key": "other-services", "label": "其他服务", "url": "/other-services" }
+          {
+            "key": "will-estates",
+            "label": "遗嘱和遗产",
+            "url": "/wills-and-estates"
+          },
+          {
+            "key": "personal-injury-law",
+            "label": "人身伤害法",
+            "url": "/personal-injury-law"
+          },
+          {
+            "key": "immigration-law",
+            "label": "移民法",
+            "url": "/immigration-law"
+          },
+          {
+            "key": "corporate-law",
+            "label": "公司法",
+            "url": "/corporate-law"
+          },
+          {
+            "key": "other-services",
+            "label": "其他服务",
+            "url": "/other-services"
+          }
         ]
       },
-      { "key": "blog", "label": "博客", "url": "/blog", "icon": "AiOutlineRead"},
-      { "key": "tools", "label": "工具", "url": "/tools", "icon": "AiOutlineTool"},
+      {
+        "key": "resources",
+        "label": "法律资源",
+        "url": "/resources",
+        "icon": "AiOutlineRead"
+      },
+      {
+        "key": "contact",
+        "label": "联系我们",
+        "url": "/contact",
+        "icon": "AiOutlineMail"
+      },
       {
         "key": "language",
         "label": "语言",
         "icon": "AiOutlineTranslation",
         "dropdown": [
-          { "key": "en", "label": "English"},
-          { "key": "zh", "label": "中文"}
+          { "key": "en", "label": "English" },
+          { "key": "zh", "label": "中文" }
         ]
       }
     ]
   }
 }
-  
-  

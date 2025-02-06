@@ -7,7 +7,10 @@ const OfficeHourTable = () => {
   const table = t('table', { returnObjects: true });
 
   return (
-    <div className="w-full md:w-2/5 lg:w-1/3 flex items-center justify-center py-10 px-8 bg-gray-100 shadow-lg rounded-lg">
+    <div
+      className="w-full md:w-2/5 lg:w-1/3 flex items-center justify-center py-10 px-8 bg-gray-100 shadow-lg rounded-lg"
+      data-aos="fade-up"
+    >
       <div className="w-full max-w-md">
         <div className="text-center mb-6">
           <h3 className="text-center pb-4 text-2xl font-semibold">

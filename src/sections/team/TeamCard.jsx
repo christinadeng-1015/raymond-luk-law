@@ -42,7 +42,7 @@ const TeamCard = ({ member }) => {
         show={openModal}
         onClose={() => setOpenModal(!openModal)}
         size="7xl"
-        className="flex items-center justify-center pt-0 md:pt-20"
+        className="flex items-center justify-center pt-0 md:pt-24"
       >
         <Modal.Header className="shadow-lg bg-[#10284e]">
           <h1 className="text-white text-xl font-bold uppercase tracking-wide">

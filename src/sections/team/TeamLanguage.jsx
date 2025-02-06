@@ -2,7 +2,12 @@ import React from 'react';
 
 const TeamLanguage = ({ languages, language }) => {
   return (
-    <div className="w-full p-8 mt-32 flex flex-col items-center">
+    <div
+      className="w-full p-8 mt-32 flex flex-col items-center"
+      data-aos="fade-up"
+      data-aos-duration="1200"
+      data-aos-easing="ease-in-out"
+    >
       <h5 className="text-2xl text-center text-gray-800 mb-12 font-semibold">
         {language}
       </h5>

@@ -1,48 +1,81 @@
 {
-    "navbar": {
-      "title": "YOUR CONCERN IS OUR PRIORITY",
-      "subtitle": "Our team of legal professionals offers a wide range of legal services, including real estate law, family law, wills and estates, corporate law, notary services, and more. We are dedicated to providing personalized service and legal excellence to our clients.",
-      "desc": "Legal Excellence, Personalized Service",
-      "aboutTitle": "Why Choose Us",
-      "about": [
-        { "icon": "AiOutlineLike", "title": "Experience", "desc": "5+ Years Working"},
-        { "icon": "AiOutlineDollarCircle", "title": "Rate", "desc": "Lowest Rate in GTA"},
-        { "icon": "AiOutlineTeam", "title": "Clients", "desc": "100+ happy clients"}
-      ],
-      "googleDoc": {
-        "title": "Free consultation",
-        "url": "https://docs.google.com/forms/d/e/1FAIpQLSc3wQK4mW8BakKnu6rbzLc1uc2u0j5bAn60iAi8M2_x4R6bQA/viewform?usp=sf_link"
+  "navbar": {
+    "title": "YOUR CONCERN IS OUR PRIORITY",
+    "subtitle": "Our team of legal professionals offers a wide range of legal services, including real estate law, family law, wills and estates, corporate law, notary services, and more. We are dedicated to providing personalized service and legal excellence to our clients.",
+    "desc": "Legal Excellence, Personalized Service",
+    "aboutTitle": "Why Choose Us",
+    "googleDoc": {
+      "title": "Free consultation",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSc3wQK4mW8BakKnu6rbzLc1uc2u0j5bAn60iAi8M2_x4R6bQA/viewform?usp=sf_link"
+    },
+    "links": [
+      { "key": "home", "label": "Home", "url": "/", "icon": "AiOutlineHome" },
+      {
+        "key": "team",
+        "label": "Our Team",
+        "url": "/team",
+        "icon": "AiOutlineTeam"
       },
-      "links": [
-        { "key": "home", "label": "Home", "url": "/", "icon": "AiOutlineHome"},
-        { "key": "team", "label": "Our Team", "url": "/team", "icon": "AiOutlineTeam"},
-        {
-          "key": "services",
-          "label": "Services",
-          "icon": "AiOutlineAudit",
-          "dropdown": [
-            { "key": "overview", "label": "Overview", "url": "/services" },
-            { "key": "real-estate-law", "label": "Real Estate Law", "url": "/real-estate-law"},
-            { "key": "family-law", "label": "Family Law", "url": "/family-law" },
-            { "key": "will-estates", "label": "Will & Estates", "url": "/wills-and-estates"},
-            { "key": "personal-injury-law", "label": "Personal Injury Law", "url": "/personal-injury-law" },
-            { "key": "immigration-law", "label": "Immigration Law", "url": "/immigration-law"},
-            { "key": "corporate-law", "label": "Corporate Law", "url": "/corporate-law"},
-            { "key": "other-services", "label": "Other Services", "url": "/other-services"}
-          ]
-        },
-        { "key": "resources", "label": "Resources", "url": "/resources", "icon": "AiOutlineRead"},
-        { "key": "contact", "label": "Contact", "url": "/contact", "icon": "AiOutlineMail"},
-        {
-          "key": "language",
-          "label": "Language",
-          "icon": "AiOutlineTranslation",
-          "dropdown": [
-            { "key": "en", "label": "English"},
-            { "key": "zh", "label": "中文"}
-          ]
-        }
-      ]
-    }
+      {
+        "key": "services",
+        "label": "Services",
+        "icon": "AiOutlineAudit",
+        "dropdown": [
+          { "key": "overview", "label": "Overview", "url": "/services" },
+          {
+            "key": "real-estate-law",
+            "label": "Real Estate Law",
+            "url": "/real-estate-law"
+          },
+          { "key": "family-law", "label": "Family Law", "url": "/family-law" },
+          {
+            "key": "will-estates",
+            "label": "Will & Estates",
+            "url": "/wills-and-estates"
+          },
+          {
+            "key": "personal-injury-law",
+            "label": "Personal Injury Law",
+            "url": "/personal-injury-law"
+          },
+          {
+            "key": "immigration-law",
+            "label": "Immigration Law",
+            "url": "/immigration-law"
+          },
+          {
+            "key": "corporate-law",
+            "label": "Corporate Law",
+            "url": "/corporate-law"
+          },
+          {
+            "key": "other-services",
+            "label": "Other Services",
+            "url": "/other-services"
+          }
+        ]
+      },
+      {
+        "key": "resources",
+        "label": "Resources",
+        "url": "/resources",
+        "icon": "AiOutlineRead"
+      },
+      {
+        "key": "contact",
+        "label": "Contact",
+        "url": "/contact",
+        "icon": "AiOutlineMail"
+      },
+      {
+        "key": "language",
+        "label": "Language",
+        "icon": "AiOutlineTranslation",
+        "dropdown": [
+          { "key": "en", "label": "English" },
+          { "key": "zh", "label": "中文" }
+        ]
+      }
+    ]
   }
-  
+}

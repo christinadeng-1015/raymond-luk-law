@@ -21,21 +21,21 @@
     "fields": [
       {
         "id": "name",
-        "label": "Your Name",
+        "label": "Name",
         "placeholder": "Raymond Luk",
         "icon": "HiUser",
         "type": "text"
       },
       {
         "id": "email",
-        "label": "Your Email",
+        "label": "Email",
         "placeholder": "name@example.com",
         "icon": "HiMail",
         "type": "email"
       },
       {
         "id": "phone",
-        "label": "Your Phone Number",
+        "label": "Phone Number",
         "placeholder": "(123) 456-7890",
         "icon": "HiPhone",
         "type": "text"
@@ -43,7 +43,7 @@
     ],
     "message": {
       "id": "message",
-      "label": "Your Message",
+      "label": "Message",
       "placeholder": "Enter your message here..."
     },
     "button": "Submit"

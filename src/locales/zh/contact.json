@@ -24,21 +24,21 @@
     "fields": [
       {
         "id": "name",
-        "label": "您的姓名",
+        "label": "姓名",
         "placeholder": "雷蒙德·卢克",
         "icon": "HiUser",
         "type": "text"
       },
       {
         "id": "email",
-        "label": "您的电子邮箱",
+        "label": "电子邮箱",
         "placeholder": "name@example.com",
         "icon": "HiMail",
         "type": "email"
       },
       {
         "id": "phone",
-        "label": "您的电话号码",
+        "label": "电话号码",
         "placeholder": "(123) 456-7890",
         "icon": "HiPhone",
         "type": "text"
@@ -46,7 +46,7 @@
     ],
     "message": {
       "id": "message",
-      "label": "您的信息",
+      "label": "信息",
       "placeholder": "在此处输入您的信息..."
     },
     "button": "提交"
