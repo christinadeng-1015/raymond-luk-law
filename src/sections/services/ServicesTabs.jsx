@@ -11,7 +11,7 @@ export function ServicesTabs({ tabs }) {
 
   return (
     <div className="md:p-8 max-w-screen-2xl mx-auto pt-8 md:pt-12">
-      <div className="md:hidden relative overflow-visible px-4">
+      <div className="md:hidden relative px-4">
         <button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
           className="w-full text-left bg-[#e6f0ff] text-[#10284e] font-medium py-2 px-4 rounded-lg flex justify-between items-center"
@@ -41,7 +41,7 @@ export function ServicesTabs({ tabs }) {
         </button>
 
         {isDropdownOpen && (
-          <ul className="absolute z-10 bg-white border border-gray-300 rounded-lg shadow-lg mt-2 w-full">
+          <ul className="bg-white border border-gray-300 rounded-lg shadow-lg mt-2 w-full">
             {tabs.map((item) => (
               <li
                 key={item.key}
@@ -82,7 +82,7 @@ export function ServicesTabs({ tabs }) {
         (item) =>
           activeTab === item.key && (
             <div key={item.key}>
-              <h2 className="text-white pb-8 font-bold text-3xl bg-[#10284e] p-10 shadow-lg rounded-t-lg mt-10">
+              <h2 className="text-white pb-8 font-bold text-3xl bg-[#10284e] p-10 shadow-lg md:rounded-t-lg mt-10">
                 {item.label}
               </h2>
               <div className="grid grid-cols-1 gap-y-16 px-4 md:px-12 shadow-lg rounded-lg bg-white py-10">

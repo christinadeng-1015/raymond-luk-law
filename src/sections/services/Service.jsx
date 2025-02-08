@@ -13,7 +13,7 @@ export function Service() {
   }
 
   return (
-    <div>
+    <div className="mb-8">
       <div className="relative w-full h-64 md:h-1/2">
         <img
           src="assets/banner/law.jpg"
@@ -35,12 +35,12 @@ export function Service() {
         data-aos-duration="1200"
         data-aos-easing="ease-in-out"
       >
-        <div className="max-w-screen-xl mx-auto flex flex-col items-center gap-8 md:flex-row justify-center p-6">
+        <div className="max-w-screen-xl mx-auto grid grid-cols-2 gap-1 md:flex md:flex-row md:justify-center md:items-center p-2 md:p-6">
           {services.map((service) => (
-            <div key={service.path} className="relative">
+            <div key={service.path} className="relative flex justify-center">
               <Link
                 to={service.path}
-                className={`px-4 py-2 rounded-lg text-base font-semibold ${
+                className={`px-4 py-2 rounded-lg text-sm md:text-base font-semibold text-center ${
                   path.startsWith(service.path)
                     ? 'text-blue-500'
                     : 'text-gray-700 hover:text-blue-500'

@@ -14,7 +14,10 @@ const Testimonials = () => {
       data-aos-duration="1200"
       data-aos-easing="ease-in-out"
     >
-      <Carousel className="bg-gradient-to-r from-[#10284e] to-[#0a1e3a] p-8 text-center">
+      <Carousel
+        className="bg-gradient-to-r from-[#10284e] to-[#0a1e3a] p-8 text-center"
+        slideInterval={4000}
+      >
         {reviews.map((review, index) => (
           <div
             key={index}
@@ -39,10 +42,7 @@ const Testimonials = () => {
                 <figcaption className="mt-10 flex items-center justify-center space-x-3">
                   <div className="flex items-center flex-col divide-x-2 divide-white">
                     <cite className="font-medium text-white">
-                      {review.author}
-                    </cite>
-                    <cite className="text-sm text-white pl-2">
-                      {review.position}
+                      - {review.author}
                     </cite>
                   </div>
                 </figcaption>

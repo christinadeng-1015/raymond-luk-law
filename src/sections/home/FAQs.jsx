@@ -1,13 +1,15 @@
 import { useTranslation } from 'react-i18next';
+import { useMediaQuery } from 'react-responsive';
 import FAQ from './FAQ';
 
 const FAQs = () => {
   const { t } = useTranslation('faqs');
   const faqs = t('faqs', { returnObjects: true });
+  const isMobile = useMediaQuery({ maxWidth: 768 });
 
   return (
     <div
-      className="flex flex-col items-center bg-white py-16 max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8"
+      className="flex flex-col items-center bg-white pt-16 lg:pb-8 max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8"
       id="faqs"
     >
       <h3 className="text-3xl text-center text-gray-900 mb-2 font-semibold pb-16">
@@ -20,7 +22,11 @@ const FAQs = () => {
         data-aos-easing="ease-in-out"
       >
         {faqs.map((faq, index) => (
-          <FAQ key={index} faq={faq} isOpen={index < 2} />
+          <FAQ
+            key={index}
+            faq={faq}
+            isOpen={isMobile ? index < 1 : index < 2}
+          />
         ))}
       </div>
     </div>

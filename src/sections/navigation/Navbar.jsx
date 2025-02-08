@@ -140,14 +140,14 @@ const Nav = () => {
                     item.key === 'language'
                       ? 'bg-white text-gray-900'
                       : 'text-white'
-                  }`}
+                  } hover:bg-transparent`}
                   style={{ fontFamily: "'Raleway', sans-serif" }}
                 >
                   {item.dropdown ? (
                     <Dropdown
                       inline
                       label={
-                        <div className={'flex items-center'}>
+                        <div className="flex items-center">
                           {iconMap[item.icon]}
                           <span className="ml-2">{item.label}</span>
                         </div>

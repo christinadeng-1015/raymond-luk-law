@@ -6,6 +6,7 @@ import ParallaxSection from '../sections/home/ParallaxSection';
 import Testimonials from '../sections/home/Testimonials';
 import FAQs from '../sections/home/FAQs';
 import ContactFloatIcon from '../sections/home/ContactFloatIcon';
+import ScrollToTop from '../sections/home/ScrollToTop';
 
 export default function Home() {
   const mainRef = useRef();
@@ -18,6 +19,7 @@ export default function Home() {
       <ParallaxSection />
       <Testimonials />
       <FAQs />
+      <ScrollToTop />
       <ContactFloatIcon />
     </main>
   );

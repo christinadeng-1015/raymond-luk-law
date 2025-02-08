@@ -211,42 +211,6 @@ img {
   }
 }
 
-footer {
-  box-shadow: 1.5rem 1rem 1.5rem pink;
-  transition: var(--transition);
-}
-
-footer .nav__menu {
-  justify-content: center;
-}
-
-footer .nav__menu a {
-  color: black;
-}
-
-.footer__socials {
-  width: fit-content;
-  display: flex;
-  gap: 1.5rem;
-  margin: 3rem auto 4rem;
-}
-
-.footer__socials a {
-  background: var(--color-black);
-  color: var(--color-white);
-  border-radius: var(--border-radius-3);
-}
-
-.footer__socials a:hover {
-  opacity: 0.7;
-  transform: translateY(-0.5rem);
-}
-
-.footer__copyright {
-  color: black;
-  border-top: 2px solid rgba(0, 0, 0, 0.2);
-}
-
 .service__subtitle li {
   list-style: inside square;
   padding-left: 4px;

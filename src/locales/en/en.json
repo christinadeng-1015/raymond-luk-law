@@ -102,14 +102,51 @@
   },
   "reviews": [
     {
-      "review": "Raymond helped us with our first home purchase and we're really glad we went with him! As it was our first time going through the whole process, we had a lot of questions but he was very patient and helpful with us all the way through.",
-      "author": "Matt W.",
-      "position": "Client of Raymond Luk Firm"
+      "review": "Raymond Luk is a remarkable lawyer who stands out for his professionalism, honesty, and in-depth expertise. He made every complex legal concept easy to understand and never hesitated to walk us through the details with patience. We truly appreciated how transparent and straightforward he was throughout the entire process. Raymond’s dedication and hard work left a lasting impression on us, and we couldn’t be happier with the outcome. If you’re looking for a knowledgeable and reliable lawyer, Raymond is the one to go to.",
+      "author": "Anthony Cheng"
     },
     {
-      "review": "Review 2",
-      "author": "Author 2",
-      "position": "Position 2"
+      "review": "I was helping my parents look for a lawyer who could also speak Cantonese and Raymond was recommended by a friend. I’m personally not familiar with legal terms or processes especially in Cantonese, but thankfully Raymond and his team were incredibly helpful throughout the whole process. Raymond patiently explained everything in English and Cantonese and that helped ease a lot of stress from my parents and I. Another plus is that all of the office staff can speak Cantonese/Mandarin/English, so whenever my parents needed anything they contacted the office directly.",
+      "author": "Jenny Wong"
+    },
+    {
+      "review": "Raymond provided us with excellent legal advice when we were involved in a car accident. His meticulous attention to detail ensures that no angle is overlooked. He makes himself readily available, which is reassuring for clients. I would recommend his services to anyone without hesitation.",
+      "author": "Warren Sun"
+    },
+    {
+      "review": "Raymond assisted us with the house purchase transaction and closing our pre construction. We are a young family dealing with a big move to the suburbs and Ray made the process very easy for us, by thoroughly explaining the transaction process with developer, financial implications within agreements, and timelines with banks and lawyers to close the purchase. Highly recommend his service for real estate purchases!",
+      "author": "Gladys Cheung"
+    },
+    {
+      "review": "Raymond assisted me with a marriage matter and he was very efficient and effective. His prices were reasonable and he was always trying his best to help me save on costs. His staff was also very knowledgeable and patient. I would definitely recommend him and his team for your marriage matters!",
+      "author": "Raymond Mok"
     }
-  ]
+  ],
+  "footer": {
+    "contactsTitle": "Contact Us",
+    "quickLinksTitle": "Quick Links",
+    "disclaimerBtn": "Disclaimer",
+    "awardTooltip": "Best in Markham for Family Law",
+    "corporation": "© 2025 by Raymond Luk Law Professional Corporation",
+    "disclaimer": "The information obtained on this site is not intended to be legal advice. Please consult a legal professional for advice regarding your individual situation.",
+    "contacts": [
+      { "link": "#", "title": "English: 905-667-6496" },
+      { "link": "#about", "title": "中文: 905-667-6499" },
+      { "link": "#services", "title": "Email: info@luklawpc.com" },
+      { "link": "#portfolio", "title": "Fax: 905-849-3583" }
+    ],
+    "quickLinks": [
+      { "link": "/team", "title": "Our Team" },
+      { "link": "/services", "title": "Services" },
+      { "link": "/resources", "title": "Resources" },
+      { "link": "/contact", "title": "Contact" }
+    ],
+    "socialLinks": [
+      { "icon": "facebook", "link": "https://facebook.com" },
+      { "icon": "instagram", "link": "https://instagram.com" },
+      { "icon": "twitter", "link": "https://twitter.com" },
+      { "icon": "dribbble", "link": "https://dribbble.com" }
+    ],
+    "followUs": "Follow Us"
+  }
 }

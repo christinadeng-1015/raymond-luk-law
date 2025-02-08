@@ -1,179 +1,131 @@
 import { Footer, Tooltip } from 'flowbite-react';
 import { BsDribbble, BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs';
-import Form from './Form';
+import { useTranslation } from 'react-i18next';
 
 const FooterHome = () => {
-  const footer = {
-    corporation: '© 2024 by Raymond Luk Law Professional Corporation',
-    disclaimer:
-      'DISCLAIMER: The information obtained on this site is not intended to be legal advice. Please consult a legal professional for advice regarding your individual situation. Please be advised that contacting the firm does not create a solicitor-client nor a legal relationship of any kind. Please do not send any confidential information until such relationship has been established and a retainer has been signed.',
-    services: [
-      { service: 'Real Estate Law', link: '#' },
-      { service: 'Family Law', link: '#' },
-      { service: 'Will & Estates', link: '#' },
-      { service: 'Personal Injury Law', link: '#' },
-      { service: 'Immigration Law', link: '#' },
-      { service: 'Notary Services', link: '#' },
-    ],
-    contacts: [
-      { id: 1, link: '#', title: 'English: 905-667-6496' },
-      { id: 2, link: '#about', title: '中文: 905-667-6499' },
-      { id: 3, link: '#services', title: 'Email: info@luklawpc.com' },
-      { id: 4, link: '#portfolio', title: 'Fax: 905-849-3583' },
-      {
-        id: 5,
-        link: '#contact',
-        title:
-          'HSBC Tower, Liberty Square, 3601 Highway 7, Unit 803, Markham, ON, L3R 0M3',
-      },
-    ],
-    quickLinks: [
-      { title: 'Home', link: '#' },
-      { title: 'About Us', link: '#' },
-      { title: 'Our Services', link: '#' },
-      { title: 'Contact', link: '#' },
-    ],
-    socialLinks: [
-      { icon: BsFacebook, link: 'https://facebook.com' },
-      { icon: BsInstagram, link: 'https://instagram.com' },
-      { icon: BsTwitter, link: 'https://twitter.com' },
-      { icon: BsDribbble, link: 'https://dribbble.com' },
-    ],
+  const { t } = useTranslation('main');
+  const footer = t('footer', { returnObjects: true });
+  const socialIcons = {
+    facebook: BsFacebook,
+    instagram: BsInstagram,
+    twitter: BsTwitter,
+    dribbble: BsDribbble,
   };
 
   return (
-    <Footer
-      container
-      className="pt-16 pb-8 bg-[#10284e] text-white"
-      id="footer"
-    >
-      <div className="w-full max-w-screen-2xl mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between mb-8 items-center gap-8">
+    <Footer container className="pt-12 bg-[#10284e] text-white rounded-none">
+      <div className="w-full max-w-screen-2xl mx-auto md:px-10">
+        <div className="flex justify-between items-center gap-2 md:gap-8">
           <img
             src="https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993348/RL_logo_edvn9k.png"
-            alt="logo"
-            className="w-40 object-contain mb-4 md:mb-0"
+            alt={footer.logoAlt || 'Company Logo'}
+            className="w-20 md:w-32"
           />
           <a
             href="https://legaldirectorate.ca/family-law-attorneys/markham-on/"
             target="_blank"
-            style={{ display: 'inline-block', border: 0 }}
+            className="border-0"
             rel="noreferrer"
           >
             <Tooltip
-              content="Best in Markham for Family Law"
+              content={footer.awardTooltip}
               placement="bottom"
-              // eslint-disable-next-line react/style-prop-object
               style="light"
             >
               <img
                 src="https://legaldirectorate.ca/awards/2024/2/31/3e407a83b4ab1ea59f324a758d86d312/BestOf-Markham-i250-2024.svg"
-                style={{ width: 250, display: 'block' }}
-                width="250"
-                height="100"
-                alt="Best Family Law Attorneys in Markham"
+                className="w-24 md:w-40"
+                alt={footer.awardAlt || 'Award Badge'}
               />
             </Tooltip>
           </a>
           <img
             src="https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993359/law_zu7rqc.png"
-            alt="Law Logo"
-            className="w-48 object-contain mt-4 md:mt-0"
+            alt={footer.lawLogoAlt || 'Law Firm Logo'}
+            className="w-24 md:w-40"
           />
         </div>
 
-        {/* Form and Link Groups */}
-        <div className="flex flex-col lg:flex-row justify-between gap-8 py-10 items-center text-center lg:text-left">
-          {/* Form on the left */}
-          <Form />
-
-          {/* Link Groups on the right */}
-          <div className="flex flex-col w-full lg:w-1/2 space-y-6">
-            <div className="flex flex-wrap justify-center lg:justify-between w-full">
-              <div className="w-full md:w-1/3 mb-4">
-                <Footer.Title
-                  title="Quick Links"
-                  className="underline text-lg text-white mb-4 font-semibold"
-                />
-                <Footer.LinkGroup col>
-                  {footer.quickLinks.map((item) => (
-                    <a
-                      href={item.link}
-                      key={item.title}
-                      className="text-white text-sm mb-2 hover:underline"
-                    >
-                      {item.title}
-                    </a>
-                  ))}
-                </Footer.LinkGroup>
-              </div>
-              <div className="w-full md:w-1/3 mb-4">
-                <Footer.Title
-                  title="Areas of Practice"
-                  className="underline text-lg text-white mb-4 font-semibold"
-                />
-                <Footer.LinkGroup col>
-                  {footer.services.map((item) => (
-                    <a
-                      href={item.link}
-                      key={item.service}
-                      className="text-white text-sm mb-2 hover:underline"
-                    >
-                      {item.service}
-                    </a>
-                  ))}
-                </Footer.LinkGroup>
-              </div>
-              <div className="w-full md:w-1/3 mb-4">
-                <Footer.Title
-                  title="Contact Us"
-                  className="underline text-lg text-white mb-4 font-semibold"
-                />
-                <Footer.LinkGroup col>
-                  {footer.contacts.map((item) => (
-                    <a
-                      href={item.link}
-                      key={item.title}
-                      className="text-white text-sm mb-2 hover:underline"
-                    >
-                      {item.title}
-                    </a>
-                  ))}
-                </Footer.LinkGroup>
-              </div>
+        <div className="flex flex-col-reverse md:flex-row pt-10 md:py-12 justify-around">
+          <div className="w-full md:w-2/5 flex md:flex-row py-4 md:py-0 text-center md:text-left items-center md:items-start">
+            <div className="w-2/5 md:w-1/3">
+              <Footer.Title
+                title={footer.quickLinksTitle}
+                className="underline text-lg text-white mb-4 font-semibold"
+              />
+              <Footer.LinkGroup col>
+                {footer.quickLinks.map((item, index) => (
+                  <a
+                    href={item.link}
+                    key={index}
+                    className="text-white text-base hover:underline block"
+                  >
+                    {item.title}
+                  </a>
+                ))}
+              </Footer.LinkGroup>
             </div>
+            <div className="w-3/5 md:w-1/3">
+              <Footer.Title
+                title={footer.contactsTitle}
+                className="underline text-lg text-white mb-4 font-semibold"
+              />
+              <Footer.LinkGroup col>
+                {footer.contacts.map((item, index) => (
+                  <a
+                    href={item.link}
+                    key={index}
+                    className="text-white text-base hover:underline block"
+                  >
+                    {item.title}
+                  </a>
+                ))}
+              </Footer.LinkGroup>
+            </div>
+          </div>
 
-            <div className="flex lg:space-x-8 pt-10 justify-center">
-              {footer.socialLinks.map((social, index) => (
-                <a
-                  href={social.link}
-                  key={index}
-                  className="px-10 text-white text-3xl hover:text-gray-300 transition-transform transform hover:scale-110"
-                >
-                  <social.icon />
-                </a>
-              ))}
+          <div className="w-full md:w-2/5 flex justify-start opacity-80 py-6 md:py-0">
+            <iframe
+              title="raymond-luk"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.0923667192606!2d-79.34076942381263!3d43.85391417109322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d5fbcc8d262d%3A0xafb130d5c8fcdacb!2sRaymond%20Luk%20Law%20Professional%20Corporation!5e0!3m2!1sen!2sca!4v1734198035841!5m2!1sen!2sca"
+              className="w-full h-48 md:h-64 rounded-md shadow-lg"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div className="w-full md:w-1/6 flex flex-col items-center md:py-0">
+            <Footer.Title
+              title={footer.followUs}
+              className="text-base text-white font-semibold"
+            />
+            <div className="flex flex-row md:flex-col items-center space-x-8 md:space-x-0 md:space-y-6">
+              {footer.socialLinks.map((social, index) => {
+                const IconComponent = socialIcons[social.icon];
+                return (
+                  <a
+                    href={social.link}
+                    key={index}
+                    className="text-white text-3xl hover:text-gray-500 hover:scale-110"
+                  >
+                    {IconComponent && <IconComponent />}
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>
 
-        <hr className="my-6 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-200 to-transparent opacity-100" />
-
-        {/* Social Links and Disclaimer */}
-        <div className="w-full flex flex-col md:flex-col items-center md:justify-center text-center">
-          {/* Corporation and Disclaimer */}
-          <div className="flex flex-col items-center md:flex-row text-white text-sm">
-            <p className="font-light">{footer.corporation}</p>
-            <span className="px-2 hidden md:inline">|</span>
-            <span className="relative group cursor-pointer">
-              <button className="underline hover:no-underline">
-                Disclaimer
-              </button>
-              <span className="absolute bottom-full right-0 w-64 text-xs text-white bg-gray-700 p-2 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                The information obtained on this site is not intended to be
-                legal advice. Please consult a legal professional for advice
-                regarding your individual situation.
-              </span>
+        <hr className="my-4 h-px bg-gray-500 opacity-50" />
+        <div className="text-center text-sm font-light">
+          <p>{footer.corporation}</p>
+          <div className="relative group cursor-pointer">
+            <button className="underline hover:no-underline">
+              {footer.disclaimerBtn}
+            </button>
+            <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 w-72 text-xs text-white bg-gray-700 p-2 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+              {footer.disclaimer}
             </span>
           </div>
         </div>

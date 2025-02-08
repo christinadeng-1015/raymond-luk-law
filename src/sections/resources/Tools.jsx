@@ -52,7 +52,7 @@ const Tools = () => {
         </select>
       </div>
 
-      <div className="grid grid-cols-1 md:px-10 md:pb-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-8xl overflow-hidden">
+      <div className="grid grid-cols-1 md:px-10 pb-8 md:pb-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-8xl overflow-hidden">
         {filteredTools.map((tool) => (
           <Card
             href={tool.url}

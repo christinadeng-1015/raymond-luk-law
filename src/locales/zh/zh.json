@@ -26,14 +26,51 @@
   },
   "reviews": [
     {
-      "review": "客户评论 1",
-      "author": "客户 1",
-      "position": "职位 1"
+      "review": "Raymond Luk 是一位出色的律师，以其专业素养、诚实和深厚的法律知识脱颖而出。他让复杂的法律概念变得简单易懂，并且总是不厌其烦地耐心讲解细节。我们非常欣赏他的透明和直接，在整个过程中都保持了高度的诚信。Raymond 的敬业精神和努力给我们留下了深刻的印象，我们对最终的结果非常满意。如果你正在寻找一位知识渊博、值得信赖的律师，Raymond 绝对是最佳选择。",
+      "author": "Anthony Cheng"
     },
     {
-      "review": "客户评论 2",
-      "author": "客户 2",
-      "position": "职位 2"
+      "review": "我在帮父母寻找一位能讲粤语的律师时，朋友推荐了 Raymond。我个人对法律术语和流程不太熟悉，尤其是粤语方面，但幸运的是，Raymond 和他的团队在整个过程中都提供了极大的帮助。Raymond 耐心地用英语和粤语解释所有内容，这大大减轻了我和父母的压力。另外，办公室的所有工作人员都能讲粤语、普通话和英语，所以每当我父母需要帮助时，他们都能直接联系办公室，非常方便。",
+      "author": "Jenny Wong"
+    },
+    {
+      "review": "Raymond 在我们遭遇车祸时提供了非常专业的法律建议。他对细节的关注极为细致，确保每一个方面都不会被忽略。他总是随时待命，这给客户带来了极大的安心感。我毫不犹豫地推荐他的服务。",
+      "author": "Warren Sun"
+    },
+    {
+      "review": "Raymond 帮助我们完成了房屋购买交易以及预售房的交接手续。作为一个准备搬到郊区的年轻家庭，我们对整个流程并不熟悉，但 Raymond 让一切变得简单。他详细解释了与开发商的交易流程、协议中的财务影响，以及与银行和律师之间的时间安排，帮助我们顺利完成购房交易。强烈推荐他的房地产法律服务！",
+      "author": "Gladys Cheung"
+    },
+    {
+      "review": "Raymond 帮助我处理了一项婚姻事务，他的工作效率非常高，并且非常专业。他的收费合理，并且总是尽力帮我节省费用。他的团队也非常专业和耐心。我强烈推荐 Raymond 和他的团队来处理您的婚姻相关事务！",
+      "author": "Raymond Mok"
     }
-  ]
+  ],
+  "footer": {
+    "contactsTitle": "联系我们",
+    "quickLinksTitle": "快速链接",
+    "disclaimerBtn": "免责声明",
+    "awardTooltip": "万锦最佳家庭律师",
+    "corporation": "© 2025 Raymond Luk 法律专业公司",
+    "disclaimer": "本网站提供的信息并非法律建议。如需针对您的具体情况提供建议，请咨询法律专业人士。",
+    "contacts": [
+      { "link": "#", "title": "英语: 905-667-6496" },
+      { "link": "#about", "title": "中文: 905-667-6499" },
+      { "link": "#services", "title": "邮箱: info@luklawpc.com" },
+      { "link": "#portfolio", "title": "传真: 905-849-3583" }
+    ],
+    "quickLinks": [
+      { "link": "/team", "title": "我们的团队" },
+      { "link": "/services", "title": "法律服务" },
+      { "link": "/resources", "title": "法律资源" },
+      { "link": "/contact", "title": "联系我们" }
+    ],
+    "socialLinks": [
+      { "icon": "facebook", "link": "https://facebook.com" },
+      { "icon": "instagram", "link": "https://instagram.com" },
+      { "icon": "twitter", "link": "https://twitter.com" },
+      { "icon": "dribbble", "link": "https://dribbble.com" }
+    ],
+    "followUs": "关注我们"
+  }
 }
