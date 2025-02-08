@@ -27,11 +27,7 @@ const FooterHome = () => {
             className="border-0"
             rel="noreferrer"
           >
-            <Tooltip
-              content={footer.awardTooltip}
-              placement="bottom"
-              style="light"
-            >
+            <Tooltip content={footer.awardTooltip} placement="bottom">
               <img
                 src="https://legaldirectorate.ca/awards/2024/2/31/3e407a83b4ab1ea59f324a758d86d312/BestOf-Markham-i250-2024.svg"
                 className="w-24 md:w-40"
