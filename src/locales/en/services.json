@@ -7,7 +7,7 @@
     {
       "path": "/real-estate-law",
       "title": "Real Estate Law",
-      "imageSrc": "real-estate.jpg",
+      "imageSrc": "/assets/services/real-estate.jpg",
       "icon": "real-estate.png",
       "desc": "Our experienced Real Estate team has a deep understanding of the legal issues involved in real estate transactions, including purchase agreements, title searches, transfers, mortgages, leases, and more. We work closely with each client to understand their specific needs and goals, and we develop a personalized legal strategy that helps them achieve those goals.",
       "tabs": [
@@ -18,7 +18,7 @@
           "content": [
             {
               "title": "Residential Real Estate",
-              "imageSrc": "residential-real-estate.jpg",
+              "imageSrc": "/assets/services/real-estate/residential-real-estate.jpg",
               "desc": "Our team can assist you with the purchase or sale of your residential property anywhere in Ontario. Whether you are a first-time home buyer or a seasoned real estate investor, we will give you the help you need every step of the way.",
               "subtitle": [
                 {
@@ -33,7 +33,7 @@
             },
             {
               "title": "Commercial Real Estate",
-              "imageSrc": "commercial-real-estate.jpg",
+              "imageSrc": "/assets/services/real-estate/commercial-real-estate.jpg",
               "desc": "Whether you are entering or exiting the commercial real estate property market as an investor or owner, you can expect our team to assist you with navigating your transaction.",
               "subtitle": [
                 {
@@ -51,7 +51,7 @@
           "content": [
             {
               "title": "Assignment Purchases and Sale",
-              "imageSrc": "assignment.jpeg",
+              "imageSrc": "/assets/services/real-estate/assignment.jpeg",
               "desc": "Just as how pre-construction purchases from a builder can be more complex than a purchase or sale of a resale property, the purchase or sale of your pre-construction property on assignment can be similarly confusing to navigate.",
               "subtitle": [
                 {
@@ -62,7 +62,7 @@
             },
             {
               "title": "Pre-construction Purchases",
-              "imageSrc": "pre-con.jpg",
+              "imageSrc": "/assets/services/real-estate/pre-con.jpg",
               "desc": "Contracts for pre-construction purchases are significantly different that Agreements of Purchase and Sale for resale properties. To avoid unanticipated fees and delays, have us review and assist with your pre-construction purchase as soon as possible.",
               "subtitle": [
                 {
@@ -79,7 +79,7 @@
           "icon": "BiBuildingHouse",
           "content": [
             {
-              "imageSrc": "commercial-leasing.jpg",
+              "imageSrc": "/assets/services/real-estate/commercial-leasing.jpg",
               "desc": "We will assist you with your commercial leasing needs whether you are a landlord or a tenant.",
               "subtitle": [
                 {
@@ -96,7 +96,7 @@
           "icon": "TbTransferIn",
           "content": [
             {
-              "imageSrc": "title-transfer.jpg",
+              "imageSrc": "/assets/services/real-estate/title-transfer.jpg",
               "desc": "Title transfer is the process by which the ownership of a property is changed, absent a full blown purchase and sale. Some common reasons for transferring partial or full ownership of a property could be due to gifts between family members or mortgage or refinancing obligations.",
               "subtitle": [
                 {
@@ -114,7 +114,7 @@
           "content": [
             {
               "title": "Mortgage Refinance",
-              "imageSrc": "mortgage-refinance.jpg",
+              "imageSrc": "/assets/services/real-estate/mortgage-refinance.jpg",
               "desc": "With the ever-changing mortgage rates, we understand that homeowners are frequently shopping for a more favourable offer to lower their monthly payments, procure funds for a new renovation project or to simply have access to a line of credit. Our firm has experience working with a wide variety of lenders to ensure you secure refinancing in a timely manner.",
               "subtitle": [
                 {
@@ -125,7 +125,7 @@
             },
             {
               "title": "Private Lending",
-              "imageSrc": "private-lending.jpg",
+              "imageSrc": "/assets/services/real-estate/private-lending.jpg",
               "desc": "We assist private lenders looking to secure their capital against real estate property. Whether you are a first-time lender looking to help a friend while having some security or an experienced lender looking for legal guidance, we are here to help.",
               "subtitle": [
                 {
@@ -176,7 +176,7 @@
     {
       "path": "/family-law",
       "title": "Family Law",
-      "imageSrc": "family-law.png",
+      "imageSrc": "/assets/services/family-law.png",
       "icon": "family-law.png",
       "desc": "Family law encompasses a wide range of legal matters related to family relationships, marriage and children. It includes the resolution of disputes and the establishment of legal frameworks to ensure the well-being and fair treatment of family members. Our legal team can assist you in a range of family law areas, including divorce and separation, parenting time and child support, domestic violence, prenuptial agreements, and other related matters. We provide comprehensive legal services, from initial consultations to courtroom representation.",
       "tabs": [
@@ -187,7 +187,7 @@
           "content": [
             {
               "title": "Divorce Process",
-              "imageSrc": "divorce.jpg",
+              "imageSrc": "/assets/services/family-law/divorce.jpg",
               "desc": "Divorce is the legal process that a married couple must go through to end a marriage. Only married couples can get a divorce, and only a court can grant a divorce. Once the process is finished, a court will issue a divorce certificate proving that you are no longer married.",
               "subtitle": [
                 {
@@ -206,7 +206,7 @@
             },
             {
               "title": "Types of Divorce",
-              "imageSrc": "wait-time.jpeg",
+              "imageSrc": "/assets/services/family-law/wait-time.jpeg",
               "subtitle": [
                 {
                   "title": "What is a simple divorce/uncontested divorce?",
@@ -233,7 +233,7 @@
           "content": [
             {
               "title": "Why choose a Separation Agreement?",
-              "imageSrc": "separation-agreements.jpg",
+              "imageSrc": "/assets/services/family-law/separation-agreements.jpg",
               "desc": "<ul><li><strong>Control and Flexibility:</strong> By negotiating a Separation Agreement, couples retain control over the terms of their separation rather than having a judge impose decisions upon them in court. This allows for greater flexibility in finding solutions that work best for everyone involved.</li><li><strong>Privacy:</strong> Unlike court proceedings, which are a matter of public record, the details of a Separation Agreement remain private between the parties involved.</li><li><strong>Cost-Effectiveness:</strong> Resolving matters through a Separation Agreement can often be more cost-effective than litigating in court, as it typically involves fewer legal fees and avoids lengthy court proceedings.</li></ul>"
             },
             {
@@ -251,17 +251,17 @@
           "content": [
             {
               "title": "Do I need one?",
-              "imageSrc": "marriage-contracts.jpg",
+              "imageSrc": "/assets/services/family-law/marriage-contracts.jpg",
               "desc": "A Marriage Contract can be a valuable tool for couples seeking to protect their interests and plan in case of separation. By entering a Marriage Contract, couples can customize their rights and responsibilities according to their unique circumstances and preferences. Without a formal agreement in place, disputes over property and financial matters can arise if the relationship ends. By outlining each partner's rights and obligations upfront, Marriage Contracts can help prevent costly and emotionally draining legal battles in the future."
             },
             {
               "title": "What can be included?",
-              "imageSrc": "marriage-property.jpg",
+              "imageSrc": "/assets/services/family-law/marriage-property.jpg",
               "desc": "Marriage Contracts in Ontario can cover a wide range of issues, including: <ul><li><strong>Property Division:</strong> A Marriage Contract can specify how property and assets acquired during the marriage will be divided in the event of separation or divorce. This can include real estate, investments, businesses, and personal belongings.</li><li><strong>Spousal Support:</strong> Couples can agree on the terms of spousal support or waive their rights to claim spousal support altogether in the Marriage Contract. However, it's important to note that courts may not enforce provisions that are deemed unfair or unconscionable at the time of separation.</li><li><strong>Debts and Liabilities:</strong> Marriage Contracts can address the division of debts and liabilities accumulated during the marriage, including mortgages, loans, and credit card debts.</li></ul> <br/> Marriage Contracts are put into place to protect financial considerations, therefore can’t include: <ul><li>Any terms relating to parenting arrangements (i.e. parenting time, decision-making responsibility, child support). These issues are only resolved after the separation has taken place.</li><li>Any terms dictating personal behaviours or actions unrelated to the marriage itself. For example, clauses dictating how a spouse should dress or behave socially would not be enforceable.</li></ul>"
             },
             {
               "title": "Requirements of a Marriage Contract",
-              "imageSrc": "marriage-contracts-include.jpeg",
+              "imageSrc": "/assets/services/family-law/marriage-contracts-include.jpeg",
               "desc": "<ul><li><strong>Voluntary:</strong> Both parties must enter into the agreement voluntarily, without coercion or undue influence.</li><li><strong>Full Disclosure:</strong> Each spouse must provide full and honest disclosure of their financial situation, including assets, debts, income, and liabilities.</li><li><strong>Independent Legal Advice:</strong> It is advisable for each party to seek independent legal advice before signing the contract to ensure they understand its implications and consequences.</li><li><strong>In Writing:</strong> The contract must be in writing and signed by both parties in the presence of a witness.</li></ul>"
             },
             {
@@ -279,12 +279,12 @@
           "content": [
             {
               "title": "Do I need one?",
-              "imageSrc": "co-habitation-agreements.jpg",
+              "imageSrc": "/assets/services/family-law/co-habitation-agreements.jpg",
               "desc": "Cohabitation Agreements provide clarity and certainty for couples who choose to live together outside of marriage. They also allow couples to maintain a degree of independence and autonomy in their financial affairs while living together. Without a formal Agreement in place, disputes over property and financial matters can arise if the relationship ends. By outlining each partner's rights and obligations upfront, Cohabitation Agreements can help prevent costly and emotionally draining legal battles in the future. <br/><br/> Unlike married spouses, there is no legislated process for how common-law spouses divide property and assets, which means there is no statutory protection for a cohabiting spouse’s interest in property to which the other spouse holds title. Upon separation, common-law spouses must rely on common law and equity claims to divide property and assets. <br/><br/> Get in touch with us to understand why this difference is important."
             },
             {
               "title": "What can be included?",
-              "imageSrc": "co-habitation.jpg",
+              "imageSrc": "/assets/services/family-law/co-habitation.jpg",
               "desc": "Cohabitation Agreements in Ontario can cover a wide range of issues, including: <ul><li><strong>Property Division:</strong> Specify how property acquired during the relationship will be divided in the event of separation.</li><li><strong>Support Payments:</strong> Outline whether one partner will be required to provide financial support to the other following separation.</li><li><strong>Debt Responsibility:</strong> Determine how any debts incurred during the relationship will be divided.</li><li><strong>Pensions:</strong> Decide on how to divide pensions among the individuals</li><li><strong>Pets:</strong> Decide who will retain custody of any pets acquired during the relationship.</li></ul> <br/><br/> Cohabitation Agreements are put into place to protect financial considerations, therefore can’t include: <ul><li>Any terms relating to parenting arrangements (i.e. parenting time or decision-making responsibility). These issues are only resolved after the separation has taken place.</li></ul>"
             },
             {
@@ -305,7 +305,7 @@
           "content": [
             {
               "title": "Child Support",
-              "imageSrc": "child-support.jpg",
+              "imageSrc": "/assets/services/family-law/child-support.jpg",
               "desc": "Child support is the amount of money that one parent pays to the other to help pay for the costs of caring for a child. It is a vital aspect of ensuring the well-being of children whose parents are separated or divorced. The child’s best interests are the priority, aiming to provide them with the necessary resources for a stable and nurturing environment.",
               "subtitle": [
                 {
@@ -329,7 +329,7 @@
             },
             {
               "title": "Spousal Support",
-              "imageSrc": "spousal-support.jpg",
+              "imageSrc": "/assets/services/family-law/spousal-support.jpg",
               "desc": "Spousal support, also known as alimony, is financial assistance paid by one spouse to the other after separation or divorce. At Luk Law, our team experienced legal team will help you navigate the complexities of spousal support, ensuring fair and equitable arrangements.",
               "subtitle": [
                 {
@@ -361,7 +361,7 @@
           "content": [
             {
               "title": "Parenting Arrangement",
-              "imageSrc": "parenting-time.jpg",
+              "imageSrc": "/assets/services/family-law/parenting-time.jpg",
               "subtitle": [
                 {
                   "title": "What is in a parenting arrangement?",
@@ -375,7 +375,7 @@
             },
             {
               "title": "Parenting Time",
-              "imageSrc": "parenting-time.jpeg",
+              "imageSrc": "/assets/services/family-law/parenting-time.jpeg",
               "subtitle": [
                 {
                   "title": "Types of parenting time",
@@ -389,7 +389,7 @@
             },
             {
               "title": "Decision-making",
-              "imageSrc": "decision-making.jpg",
+              "imageSrc": "/assets/services/family-law/decision-making.jpg",
               "subtitle": [
                 {
                   "title": "Types of decision-making",
@@ -448,7 +448,7 @@
     {
       "path": "/wills-and-estates",
       "title": "Wills & Estates",
-      "imageSrc": "will.jpg",
+      "imageSrc": "/assets/services/will.jpg",
       "icon": "will.png",
       "desc": "At Luk Law, we understand the importance of planning for the future and take pride in providing clients with peace of mind. Our experienced team is ready to guide you in making informed decisions about your legacy and ensure that your final wishes are carried out. We will work closely with you to create a comprehensive estate plan that is tailored to your unique needs.",
       "tabs": [
@@ -460,12 +460,12 @@
           "content": [
             {
               "title": "What is a Will?",
-              "imageSrc": "wills.jpg",
+              "imageSrc": "/assets/services/wills/wills.jpg",
               "desc": "A Will is a legal instrument that provides instructions for the administration and distribution of your assets following your passing. It explains your wishes about how your property and possessions should be taken care of, for example, how much money should be given to a specific person. As a part of your Will, you can designate whom you prefer to manage your estate after your death (your estate trustee or executor). A Will can also appoint one or more persons to have decision-making responsibility or guardianship for your children who are not yet adults."
             },
             {
               "title": "What is in a Will?",
-              "imageSrc": "will.jpg",
+              "imageSrc": "/assets/services/wills/will.jpg",
               "desc": "Your Will should include the following: <ul><li><strong>Details for how you want to distribute your assets.</strong> It allows you to select your heirs (beneficiaries) and what they will inherit from you.</li><li><strong>A designation for an Executor (or Trustee).</strong> It designates a person or persons that will administer your assets and carry out the wishes of your will after your death</li><li><strong>An outline of the powers of your Executor.</strong> It will authorize your Executor to make decisions and actions that will help them carry out your instructions.</li></ul> A Will can also include funeral instructions, trust designations and guardianship preferences for your underaged children."
             },
             {
@@ -489,7 +489,7 @@
           "content": [
             {
               "title": "Power of Attorney for Personal Care",
-              "imageSrc": "power-of-attorney-personal-care.jpg",
+              "imageSrc": "/assets/services/wills/power-of-attorney-personal-care.jpg",
               "desc": "At Luk Law, we understand the importance of planning for your future healthcare needs and ensuring that your wishes are respected. Our team of legal professionals can assist in drafting your Power of Attorney for Personal Care to provide you with peace of mind and ensure your healthcare decisions are made according to your preferences.",
               "subtitle": [
                 {
@@ -504,7 +504,7 @@
             },
             {
               "title": "Continuing Power of Attorney for Property",
-              "imageSrc": "power-of-attorney.jpg",
+              "imageSrc": "/assets/services/wills/power-of-attorney.jpg",
               "desc": "At Luk Law, we recognize the importance of planning for the unexpected when it comes to managing your financial affairs. Our team of experienced lawyers specializes in drafting Continuing Powers of Attorney for Property to ensure your interests are protected and your wishes are honoured in the event of incapacity.",
               "subtitle": [
                 {
@@ -528,7 +528,7 @@
           "content": [
             {
               "title": "Our Probate and Estate Administration services",
-              "imageSrc": "probate-and-estate-administration.jpg",
+              "imageSrc": "/assets/services/wills/probate-and-estate-administration.jpg",
               "desc": "<ul><li><strong>Probate Application:</strong> We assist executors in applying for probate, obtaining the necessary court approvals to validate the deceased's will and administer the estate according to its terms.</li><li><strong>Estate Inventory and Valuation:</strong> Our team helps gather information about the deceased's assets, debts, and liabilities, and accurately assesses their value to facilitate proper estate distribution.</li><li><strong>Creditor Notification:</strong> We handle the process of notifying creditors of the deceased's passing and settling outstanding debts and liabilities from the estate.</li><li><strong>Estate Distribution:</strong> We work diligently to distribute assets to beneficiaries in accordance with the terms of the will or applicable laws of intestacy if there is no will.</li><li><strong>Dispute Resolution:</strong> In the event of disputes among beneficiaries or challenges to the validity of the will, we provide skilled representation to protect your interests and resolve conflicts effectively.</li></ul>"
             },
             {
@@ -577,7 +577,7 @@
     {
       "path": "/personal-injury-law",
       "title": "Personal Injury Law",
-      "imageSrc": "personal-injury.png",
+      "imageSrc": "/assets/services/personal-injury.png",
       "icon": "personal-injury.png",
       "desc": "At Luk Law, our mission is to provide the best possible legal representation for our clients in personal injury cases. We understand the physical, emotional and financial toll that a personal injury can take on a person, and we are committed to helping our clients through their difficult times.",
       "tabs": [
@@ -587,7 +587,7 @@
           "icon": "TbCarCrash",
           "content": [
             {
-              "imageSrc": "motor-vehicle.jpeg",
+              "imageSrc": "/assets/services/personal-injury/motor-vehicle.jpeg",
               "desc": "Tailored to assist individuals who have been injured in car accidents, providing comprehensive legal support to navigate the complexities of insurance claims and personal injury lawsuits. Our team handles all aspects of motor vehicle accident cases, from investigating the cause of the accident to negotiating with insurance companies and representing clients in court when necessary. We strive to maximize compensation for medical expenses, property damage, lost wages, and pain and suffering, ensuring our clients receive the justice and support they deserve."
             }
           ]
@@ -598,7 +598,7 @@
           "icon": "TbFall",
           "content": [
             {
-              "imageSrc": "slip.jpg",
+              "imageSrc": "/assets/services/personal-injury/slip.jpg",
               "desc": "Designed to provide comprehensive support to individuals who have been injured in such incidents. From conducting thorough investigations to gathering evidence and negotiating with responsible parties, our experienced team works tirelessly to secure the compensation our clients deserve for medical expenses, lost wages, pain and suffering, and other damages."
             }
           ]

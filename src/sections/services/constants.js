@@ -32,68 +32,6 @@ import { FiUsers } from 'react-icons/fi';
 import { FaRegBuilding } from 'react-icons/fa';
 import { GoLaw } from 'react-icons/go';
 
-// Images
-import residentialRealEstate from '../../assets/service/real-estate/residential-real-estate.jpg';
-import commercialRealEstate from '../../assets/service/real-estate/commercial-real-estate.jpg';
-import assignment from '../../assets/service/real-estate/assignment.jpeg';
-import preCon from '../../assets/service/real-estate/pre-con.jpg';
-import commercialLease from '../../assets/service/real-estate/commercial-leasing.jpg';
-import mortgageRefinance from '../../assets/service/real-estate/mortgage-refinance.jpg';
-import privateLending from '../../assets/service/real-estate/private-lending.jpg';
-import titleTransfer from '../../assets/service/real-estate/title-transfer.jpg';
-import divorce from '../../assets/service/family-law/divorce.jpg';
-import waitTime from '../../assets/service/family-law/wait-time.jpeg';
-import marriageContractInclude from '../../assets/service/family-law/marriage-contracts-include.jpeg';
-import marriageProperty from '../../assets/service/family-law/marriage-property.jpg';
-import childSupport from '../../assets/service/family-law/child-support.jpg';
-import coHabitationAgreements from '../../assets/service/family-law/co-habitation-agreements.jpg';
-import coHabitation from '../../assets/service/family-law/co-habitation.jpg';
-import marriageContract from '../../assets/service/family-law/marriage-contracts.jpg';
-import parentingTime from '../../assets/service/family-law/parenting-time.jpg';
-import parentingTime1 from '../../assets/service/family-law/parenting-time.jpeg';
-import decisionMaking from '../../assets/service/family-law/decision-making.jpg';
-import separationAgreement from '../../assets/service/family-law/separation-agreements.jpg';
-import spousalSupport from '../../assets/service/family-law/spousal-support.jpg';
-import wills from '../../assets/service/wills/wills.jpg';
-import will from '../../assets/service/wills/will.jpg';
-import powerOfAttorney from '../../assets/service/wills/power-of-attorney.jpg';
-import powerOfAttorneyForPersonalCare from '../../assets/service/wills/power-of-attorney-personal-care.jpg';
-import probateEstateAdministration from '../../assets/service/wills/probate-and-estate-administration.jpg';
-import slip from '../../assets/service/personal-injury/slip.jpg';
-import motorVehicle from '../../assets/service/personal-injury/motor-vehicle.jpeg';
-
-// Image Map
-export const images = {
-  'residential-real-estate.jpg': residentialRealEstate,
-  'commercial-real-estate.jpg': commercialRealEstate,
-  'assignment.jpeg': assignment,
-  'pre-con.jpg': preCon,
-  'commercial-leasing.jpg': commercialLease,
-  'mortgage-refinance.jpg': mortgageRefinance,
-  'private-lending.jpg': privateLending,
-  'title-transfer.jpg': titleTransfer,
-  'divorce.jpg': divorce,
-  'wait-time.jpeg': waitTime,
-  'child-support.jpg': childSupport,
-  'co-habitation-agreements.jpg': coHabitationAgreements,
-  'co-habitation.jpg': coHabitation,
-  'marriage-contracts.jpg': marriageContract,
-  'marriage-contracts-include.jpeg': marriageContractInclude,
-  'marriage-property.jpg': marriageProperty,
-  'parenting-time.jpg': parentingTime,
-  'parenting-time.jpeg': parentingTime1,
-  'decision-making.jpg': decisionMaking,
-  'separation-agreements.jpg': separationAgreement,
-  'spousal-support.jpg': spousalSupport,
-  'wills.jpg': wills,
-  'will.jpg': will,
-  'power-of-attorney.jpg': powerOfAttorney,
-  'power-of-attorney-personal-care.jpg': powerOfAttorneyForPersonalCare,
-  'probate-and-estate-administration.jpg': probateEstateAdministration,
-  'slip.jpg': slip,
-  'motor-vehicle.jpeg': motorVehicle,
-};
-
 // Icon Map
 export const iconMap = {
   FaShoppingCart: <FaShoppingCart size={40} className="text-[#10284e]" />,
