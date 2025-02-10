@@ -64,7 +64,7 @@ const Nav = () => {
   return (
     <>
       <Navbar
-        className={`fixed w-full h-32 z-50 px-4 md:px-16 transition-all duration-700 flex items-center ${
+        className={`fixed w-full h-32 z-30 px-4 md:px-16 transition-all duration-700 flex items-center ${
           scrolled ? 'bg-[#10284e] shadow-lg' : 'bg-transparent'
         } ${visible ? 'translate-y-0' : '-translate-y-full'} ease-in-out overflow-visible`}
       >

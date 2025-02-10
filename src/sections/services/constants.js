@@ -62,12 +62,6 @@ import probateEstateAdministration from '../../assets/service/wills/probate-and-
 import slip from '../../assets/service/personal-injury/slip.jpg';
 import motorVehicle from '../../assets/service/personal-injury/motor-vehicle.jpeg';
 
-import study from '../../assets/service/immigration/study.jpg';
-import work from '../../assets/service/immigration/work.jpg';
-import visit from '../../assets/service/immigration/visit.jpg';
-import sponsor from '../../assets/service/immigration/sponsor.jpg';
-import pathway from '../../assets/service/immigration/pathway.jpg';
-
 // Image Map
 export const images = {
   'residential-real-estate.jpg': residentialRealEstate,
@@ -98,12 +92,6 @@ export const images = {
   'probate-and-estate-administration.jpg': probateEstateAdministration,
   'slip.jpg': slip,
   'motor-vehicle.jpeg': motorVehicle,
-
-  'study.jpg': study,
-  'work.jpg': work,
-  'visit.jpg': visit,
-  'sponsor.jpg': sponsor,
-  'pathway.jpg': pathway,
 };
 
 // Icon Map

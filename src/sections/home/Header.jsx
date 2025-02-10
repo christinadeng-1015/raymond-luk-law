@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { IoIosArrowBack, IoIosArrowForward, IoMdClose } from 'react-icons/io';
+import ContactForm from '../contact/ContactForm';
 
 const Header = () => {
   const [offsetY, setOffsetY] = useState(0);
@@ -17,7 +18,7 @@ const Header = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  });
+  }, []);
 
   const { t } = useTranslation('navbar');
   const navbar = t('navbar', { returnObjects: true });
@@ -74,7 +75,6 @@ const Header = () => {
           </h2>
           <div className="pt-4">
             <button
-              href="#"
               onClick={handleDrawerToggle}
               className="text-md border-2 bg-white rounded-lg p-4 font-medium shadow-md transition-transform transform hover:scale-105 hover:shadow-lg mt-6"
               style={{ color: '#10284e' }}
@@ -83,7 +83,6 @@ const Header = () => {
             </button>
           </div>
         </div>
-
         <button
           onClick={handleNext}
           className="text-white hover:text-gray-300 transition duration-300 text-3xl md:text-4xl"
@@ -91,25 +90,21 @@ const Header = () => {
           <IoIosArrowForward />
         </button>
       </div>
-
       <div
-        className={`fixed bottom-0 md:bottom-auto md:right-0 w-full md:w-1/4 h-1/2 md:h-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${
-          isDrawerOpen
-            ? 'translate-y-0 md:translate-x-0'
-            : 'translate-y-full md:translate-x-full'
-        }`}
+        className={`z-40 fixed top-0 md:top-auto left-0 md:left-auto w-full md:w-1/4 h-full md:h-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out overflow-y-auto ${isDrawerOpen ? 'translate-y-0 md:translate-x-0' : 'translate-y-full md:translate-x-full'}
+        md:right-0`}
       >
-        <div className="relative p-4 flex flex-col justify-center items-center h-full">
-          <button
-            onClick={handleDrawerToggle}
-            className="absolute right-4 top-4 text-gray-500 hover:text-gray-700"
-          >
-            Close
-          </button>
-          <h5 className="text-xl font-medium text-gray-900 mb-4">
-            Get in Touch
-          </h5>
-        </div>
+        {isDrawerOpen && (
+          <div className="relative p-6 flex flex-col justify-center items-center h-full">
+            <button
+              onClick={handleDrawerToggle}
+              className="z-50 absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-3xl"
+            >
+              <IoMdClose />
+            </button>
+            <ContactForm />
+          </div>
+        )}
       </div>
     </header>
   );

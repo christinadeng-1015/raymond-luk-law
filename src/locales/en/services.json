@@ -608,7 +608,7 @@
     {
       "path": "/immigration-law",
       "title": "Immigration Law",
-      "imageSrc": "immigration.png",
+      "imageSrc": "/assets/services/immigration.png",
       "icon": "immigration.png",
       "desc": "Navigating the intricate pathways of immigration law requires expertise and finesse. At Luk Law, we provide comprehensive immigration law services tailored to meet the diverse needs of our clients. Whether you're seeking temporary residency, permanent citizenship, or assistance with complex immigration matters, our team of experienced lawyers is dedicated to guiding you through every step of the process. With a deep understanding of Canadian immigration regulations and a commitment to personalized service, we strive to achieve the best possible outcome for each client.",
       "tabs": [
@@ -617,7 +617,10 @@
           "label": "Work",
           "icon": "MdOutlineWorkOutline",
           "content": [
-            { "imageSrc": "work.jpg", "desc": "More information to come" }
+            {
+              "imageSrc": "/assets/services/immigration/work.jpg",
+              "desc": "More information to come"
+            }
           ]
         },
         {
@@ -625,7 +628,10 @@
           "label": "Study",
           "icon": "PiGraduationCap",
           "content": [
-            { "imageSrc": "study.jpg", "desc": "More information to come" }
+            {
+              "imageSrc": "/assets/services/immigration/study.jpg",
+              "desc": "More information to come"
+            }
           ]
         },
         {
@@ -633,7 +639,10 @@
           "label": "Visit",
           "icon": "PiAirplaneInFlight",
           "content": [
-            { "imageSrc": "visit.jpg", "desc": "More information to come" }
+            {
+              "imageSrc": "/assets/services/immigration/visit.jpg",
+              "desc": "More information to come"
+            }
           ]
         },
         {
@@ -641,7 +650,10 @@
           "label": "Sponsorship",
           "icon": "LiaHandsHelpingSolid",
           "content": [
-            { "imageSrc": "sponsor.jpg", "desc": "More information to come" }
+            {
+              "imageSrc": "/assets/services/immigration/sponsor.jpg",
+              "desc": "More information to come"
+            }
           ]
         },
         {
@@ -649,7 +661,10 @@
           "label": "Immigration Pathways",
           "icon": "GiPathDistance",
           "content": [
-            { "imageSrc": "pathway.jpg", "desc": "More information to come" }
+            {
+              "imageSrc": "/assets/services/immigration/pathway.jpg",
+              "desc": "More information to come"
+            }
           ]
         }
       ]
@@ -657,7 +672,7 @@
     {
       "path": "/corporate-law",
       "title": "Corporate Law",
-      "imageSrc": "corporate-law.jpg",
+      "imageSrc": "/assets/services/corporate-law.jpg",
       "icon": "corporate-law.png",
       "desc": "At Luk Law, we understand the intricacies of business law and the challenges that corporations face in the legal landscape. Our dedicated team of experienced lawyers specializes in providing comprehensive corporate law services to businesses of all sizes, from start-ups to established corporations.",
       "tabs": [
@@ -690,7 +705,7 @@
     {
       "path": "/other-services",
       "title": "Other Services",
-      "imageSrc": "other-services.jpg",
+      "imageSrc": "/assets/services/other-services.jpg",
       "tabs": [
         {
           "key": "notary-services",
@@ -710,12 +725,12 @@
           "content": [
             {
               "title": "Landlord Advocacy",
-              "imageSrc": "landlord.jpg",
+              "imageSrc": "/assets/services/landlord.jpg",
               "desc": "As a landlord, ensuring smooth operations and legal compliance is crucial. We offer proactive legal advice and representation for landlords facing challenges and our goal is to help you navigate the LTB procedures effectively and achieve a favorable outcome. <br/><br/> Our Landlord services include but are not limited to: <ul><li>Non-Payment of rent</li><li>Eviction</li><li>Illegal Activities</li><li>Vacancy</li><li>Security Deposits</li><li>Termination of a lease agreement</li></ul>"
             },
             {
               "title": "Tenant Representation",
-              "imageSrc": "tenant.jpg",
+              "imageSrc": "/assets/services/tenant.jpg",
               "desc": "Any tenancy-related matter, our experienced team is here to advocate for your rights. We provide thorough representation throughout the LTB process, ensuring your voice is heard and your interests are protected. <br/><br/> Our Tenant services include but are not limited to: <ul><li>Rebate</li><li>Harassment</li><li>Tenant Rights</li><li>Notice of Termination</li><li>Maintenance or repair</li><li>Suite Meters</li></ul>"
             },
             {
@@ -732,12 +747,12 @@
           "content": [
             {
               "title": "Plaintiffs Advocacy",
-              "imageSrc": "small-claim.jpg",
+              "imageSrc": "/assets/services/small-claim.jpg",
               "desc": "If you’re pursuing a claim, it's crucial to have expert legal guidance to ensure your case is presented effectively. We provide proactive legal advice and representation to help you achieve a favourable outcome. Our goal is to assist you in navigating the Small Claims Court procedures smoothly and efficiently. <br/><br/> Our Claimant services include but are not limited to: <ul><li>Filing and Pursuing a Claim</li><li>Preparation and Presentation of Evidence</li><li>Settlement Negotiations</li><li>Court Representation</li><li>Legal Advice on Claim Strategies</li></ul>"
             },
             {
               "title": "Defendants Representation",
-              "imageSrc": "court.jpg",
+              "imageSrc": "/assets/services/court.jpg",
               "desc": "If you are being sued, having a knowledgeable advocate on your side is essential. We offer robust representation to protect your interests and defend against claims. Our experienced team will work diligently to ensure that your side of the story is heard and that you receive a fair outcome.<br/><br/> Our Defendant services include but are not limited to: <ul><li>Responding to Claims</li><li>Defense Preparation and Strategy</li><li>Evidence Collection and Presentation</li><li>Settlement Discussions</li><li>Court Representation</li></ul>"
             },
             {

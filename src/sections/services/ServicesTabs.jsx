@@ -108,10 +108,11 @@ export function ServicesTabs({ tabs }) {
                     data-aos-duration="1200"
                     data-aos-easing="ease-in-out"
                   >
-                    {content.imageSrc && images[content.imageSrc] && (
+                    {content.imageSrc && (
                       <div className="flex-shrink-0 w-full md:w-2/5">
                         <img
-                          src={images[content.imageSrc]}
+                          // src={images[content.imageSrc]}
+                          src={content.imageSrc}
                           alt={content.title}
                           className="rounded-lg h-auto object-cover max-h-96 md:px-8"
                         />

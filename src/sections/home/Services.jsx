@@ -22,7 +22,7 @@ const Services = () => {
             >
               <div className="relative w-full lg:w-4/6 p-3 h-56 lg:h-60">
                 <img
-                  src={`/assets/services/${service.imageSrc}`}
+                  src={service.imageSrc}
                   alt={service.title}
                   className="w-full h-full object-cover rounded-lg"
                 />
