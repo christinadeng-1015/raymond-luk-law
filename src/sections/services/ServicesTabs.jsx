@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { images, iconMap } from './constants';
+import { iconMap } from './constants';
 
 export function ServicesTabs({ tabs }) {
   const [activeTab, setActiveTab] = useState(tabs?.[0]?.key || '');
