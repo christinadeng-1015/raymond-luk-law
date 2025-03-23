@@ -25,8 +25,7 @@ const Header = () => {
 
   const slides = [
     { title: navbar.title, subtitle: navbar.subtitle },
-    { title: 'Slide 2 Title', subtitle: 'Slide 2 Subtitle' },
-    { title: 'Slide 3 Title', subtitle: 'Slide 3 Subtitle' },
+    { title: navbar.title2, subtitle: navbar.subtitle2 },
   ];
 
   const handleNext = () => {
