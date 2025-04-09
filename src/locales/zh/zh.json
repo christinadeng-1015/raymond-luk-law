@@ -51,8 +51,8 @@
     "quickLinksTitle": "快速链接",
     "disclaimerBtn": "免责声明",
     "awardTooltip": "万锦最佳家庭律师",
-    "corporation": "© 2025 Raymond Luk 法律专业公司",
-    "disclaimer": "本网站提供的信息并非法律建议。如需针对您的具体情况提供建议，请咨询法律专业人士。",
+    "corporation": "© 2025 Raymond Luk Law Professional Corporation 版权所有",
+    "disclaimer": "本网站上获得的信息并非法律建议。请咨询法律专业人士，获取有关您个人情况的建议。请注意，联系该公司并不构成律师与客户之间的关系，也不会建立任何类型的法律关系。在建立这种关系并签署聘用书之前，请勿发送任何机密信息",
     "contacts": [
       { "link": "#", "title": "英语: 905-667-6496" },
       { "link": "#about", "title": "中文: 905-667-6499" },
@@ -66,10 +66,19 @@
       { "link": "/contact", "title": "联系我们" }
     ],
     "socialLinks": [
-      { "icon": "facebook", "link": "https://facebook.com" },
-      { "icon": "instagram", "link": "https://instagram.com" },
-      { "icon": "twitter", "link": "https://twitter.com" },
-      { "icon": "dribbble", "link": "https://dribbble.com" }
+      { "icon": "instagram", "link": "https://www.instagram.com/luklaw_to/" },
+      {
+        "icon": "whatsapp",
+        "link": "https://api.whatsapp.com/send?phone=19053331740"
+      },
+      {
+        "icon": "tiktok",
+        "link": "https://www.tiktok.com/@luklaw_to?_t=ZM-8uE9bZioMH0&_r=1"
+      },
+      {
+        "icon": "linkedin",
+        "link": "https://www.linkedin.com/company/raymond-luk-professional-corporation/?viewAsMember=true"
+      }
     ],
     "followUs": "关注我们"
   }

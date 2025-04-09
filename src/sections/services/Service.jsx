@@ -40,11 +40,11 @@ export function Service() {
             <div key={service.path} className="relative flex justify-center">
               <Link
                 to={service.path}
-                className={`px-4 py-2 rounded-lg text-sm md:text-base font-semibold text-center ${
+                className={`relative px-4 py-2 rounded-lg text-sm md:text-base font-semibold text-center transition-all duration-300 ${
                   path.startsWith(service.path)
-                    ? 'text-blue-500'
-                    : 'text-gray-700 hover:text-blue-500'
-                }`}
+                    ? 'text-blue-600 after:scale-x-100'
+                    : 'text-gray-700 hover:text-blue-600 hover:after:scale-x-100'
+                } after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 after:transition-transform after:origin-left`}
               >
                 {service.title}
               </Link>

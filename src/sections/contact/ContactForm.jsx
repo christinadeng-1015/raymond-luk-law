@@ -1,4 +1,5 @@
-import { Label, TextInput, Textarea, Button } from 'flowbite-react';
+import React from 'react';
+import { Label, TextInput, Textarea, Button, Modal } from 'flowbite-react';
 import { HiMail, HiUser, HiPhone } from 'react-icons/hi';
 import { useTranslation } from 'react-i18next';
 
@@ -12,59 +13,114 @@ const ContactForm = () => {
   const { t } = useTranslation('contact');
   const form = t('form', { returnObjects: true });
 
+  const [result, setResult] = React.useState("");
+  const [showModal, setShowModal] = React.useState(false);
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "53403ed3-d089-4103-b336-6573c7f77eec");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      setShowModal(true);
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
-    <div
-      className="w-full max-w-2xl mx-auto p-6 rounded-xl shadow-sm bg-white/50 backdrop-blur-lg"
-      data-aos="slide-left"
-      data-aos-duration="1200"
-      data-aos-easing="ease-in-out"
-    >
-      <h3 className="text-center text-2xl font-bold text-[#10284e] mb-6">
-        {form.title}
-      </h3>
-      <form className="flex flex-col gap-6 w-full">
-        {form.fields.map((field) => {
-          const IconComponent = iconMapping[field.icon];
-          return (
-            <div key={field.id} className="relative">
-              <Label
-                htmlFor={field.id}
-                value={field.label}
-                className="text-lg font-medium"
-              />
-              <TextInput
-                id={field.id}
-                type={field.type}
-                placeholder={field.placeholder}
-                required
-                className="mt-2 w-full rounded-lg bg-gray-100 shadow-sm"
-                rightIcon={IconComponent}
-              />
-            </div>
-          );
-        })}
-        <div className="relative">
-          <Label
-            htmlFor={form.message.id}
-            value={form.message.label}
-            className="text-lg font-medium"
+    <>
+      <div
+        className="w-full max-w-2xl mx-auto p-6 rounded-xl shadow-sm bg-white/50 backdrop-blur-lg"
+        data-aos="slide-left"
+        data-aos-duration="1200"
+        data-aos-easing="ease-in-out"
+      >
+        <h3 className="text-center text-2xl font-bold text-[#10284e] mb-6">
+          {form.title}
+        </h3>
+        <form onSubmit={onSubmit} className="flex flex-col gap-6 w-full">
+          {form.fields.map((field) => {
+            const IconComponent = iconMapping[field.icon];
+            return (
+              <div key={field.id} className="relative">
+                <Label
+                  htmlFor={field.id}
+                  value={field.label}
+                  className="text-lg font-medium"
+                />
+                <TextInput
+                  id={field.id}
+                  name={field.id}
+                  type={field.type}
+                  placeholder={field.placeholder}
+                  required
+                  className="mt-2 w-full rounded-lg bg-gray-100 shadow-sm"
+                  rightIcon={IconComponent}
+                />
+              </div>
+            );
+          })}
+
+          <input
+            type="hidden"
+            name="subject"
+            value="New Client Inquiry Form"
           />
-          <Textarea
-            id={form.message.id}
-            placeholder={form.message.placeholder}
-            required
-            rows={6}
-            className="mt-2 w-full rounded-lg bg-gray-100 shadow-sm"
-          />
-        </div>
-        <Button
-          type="submit"
-          className="mt-4 w-full bg-gradient-to-r from-[#10284e] to-[#0c1d3b] text-white font-semibold py-3 rounded-lg shadow-md hover:opacity-90 transition duration-300"
-        >
-          {form.button}
-        </Button>
-      </form>
-    </div>
+
+          <div className="relative">
+            <Label
+              htmlFor={form.message.id}
+              value={form.message.label}
+              className="text-lg font-medium"
+            />
+            <Textarea
+              id={form.message.id}
+              name={form.message.id}
+              placeholder={form.message.placeholder}
+              required
+              rows={6}
+              className="mt-2 w-full rounded-lg bg-gray-100 shadow-sm"
+            />
+          </div>
+          <Button
+            type="submit"
+            className="mt-4 w-full bg-gradient-to-r from-[#10284e] to-[#0c1d3b] text-white font-semibold py-3 rounded-lg shadow-md hover:opacity-90 transition duration-300"
+          >
+            {form.button}
+          </Button>
+        </form>
+        {result && (
+          <p className="mt-4 text-center text-sm text-gray-700 font-medium">
+            {result}
+          </p>
+        )}
+      </div>
+
+      <Modal show={showModal} onClose={() => setShowModal(false)}>
+        <Modal.Header>{form.successTitle}</Modal.Header>
+        <Modal.Body>
+          <div className="space-y-2">
+            <p>{form.successMessage}</p>
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={() => setShowModal(false)}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    </>
   );
 };
 

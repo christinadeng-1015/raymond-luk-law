@@ -1,15 +1,15 @@
 import { Footer, Tooltip } from 'flowbite-react';
-import { BsDribbble, BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs';
+import { BsWhatsapp, BsInstagram, BsLinkedin, BsTiktok } from 'react-icons/bs';
 import { useTranslation } from 'react-i18next';
 
 const FooterHome = () => {
   const { t } = useTranslation('main');
   const footer = t('footer', { returnObjects: true });
   const socialIcons = {
-    facebook: BsFacebook,
+    linkedin: BsLinkedin,
     instagram: BsInstagram,
-    twitter: BsTwitter,
-    dribbble: BsDribbble,
+    tiktok: BsTiktok,
+    whatsapp: BsWhatsapp,
   };
 
   return (
@@ -17,7 +17,7 @@ const FooterHome = () => {
       <div className="w-full max-w-screen-2xl mx-auto md:px-10">
         <div className="flex justify-between items-center gap-2 md:gap-8">
           <img
-            src="https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993348/RL_logo_edvn9k.png"
+            src="assets/home/logo.png"
             alt={footer.logoAlt || 'Company Logo'}
             className="w-20 md:w-32"
           />
@@ -36,7 +36,7 @@ const FooterHome = () => {
             </Tooltip>
           </a>
           <img
-            src="https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993359/law_zu7rqc.png"
+            src="assets/home/law.png"
             alt={footer.lawLogoAlt || 'Law Firm Logo'}
             className="w-24 md:w-40"
           />
@@ -103,7 +103,9 @@ const FooterHome = () => {
                   <a
                     href={social.link}
                     key={index}
-                    className="text-white text-3xl hover:text-gray-500 hover:scale-110"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white text-3xl hover:text-gray-500 hover:scale-110 transition-transform"
                   >
                     {IconComponent && <IconComponent />}
                   </a>

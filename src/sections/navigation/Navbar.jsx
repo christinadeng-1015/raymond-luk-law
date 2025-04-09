@@ -70,7 +70,7 @@ const Nav = () => {
       >
         <Navbar.Brand href="/" className="flex-shrink-0 flex flex-start">
           <img
-            src="https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993348/RL_logo_edvn9k.png"
+            src="assets/home/logo.png"
             alt={'logo'}
             className="w-24 object-contain"
           />
@@ -153,7 +153,7 @@ const Nav = () => {
                         </div>
                       }
                       dismissOnClick={true}
-                      className="w-1/2 md:w-1/4 lg:w-1/6"
+                      className="w-1/2 md:w-1/4 lg:w-1/6 lg:opacity-90"
                     >
                       {item.dropdown.map((subItem) => (
                         <Dropdown.Item

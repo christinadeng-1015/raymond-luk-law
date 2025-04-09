@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import Header from '../sections/home/Header';
+import TeamContainer from '../sections/team/TeamContainer';
 import Process from '../sections/home/Process';
 import Services from '../sections/home/Services';
 import ParallaxSection from '../sections/home/ParallaxSection';
@@ -14,10 +15,11 @@ export default function Home() {
   return (
     <main ref={mainRef}>
       <Header />
-      <Services />
+      <TeamContainer />
       <Process />
-      <ParallaxSection />
+      <Services />
       <Testimonials />
+      <ParallaxSection />
       <FAQs />
       <ScrollToTop />
       <ContactFloatIcon />

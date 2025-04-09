@@ -10,22 +10,12 @@ const TeamContainer = () => {
   const languages = t('languages', { returnObjects: true });
 
   return (
-    <div>
-      <div className="relative w-full h-64 md:h-1/2">
-        <img
-          src="assets/banner/team.jpg"
-          alt="banner"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="relative z-10 h-full flex items-center bg-black bg-opacity-30 pt-24 pl-10 md:pl-24 lg:pl-48">
-          <h1 className="text-4xl md:text-5xl font-bold text-white">
-            {t('title')}
-          </h1>
-        </div>
-      </div>
-
+    <div className="max-w-screen-2xl mx-auto px-4 py-16">
+      <h3 className="text-3xl text-center text-gray-900 mb-2 font-semibold pb-16 text-black">
+          {t('title')}
+        </h3>
       <div
-        className="flex pt-16 relative flex-col max-w-screen-2xl mx-auto"
+        className="flex relative flex-col max-w-screen-2xl mx-auto"
         id="team"
       >
         <div
@@ -36,7 +26,6 @@ const TeamContainer = () => {
             <TeamCard key={member.name} member={member} />
           ))}
         </div>
-
         <TeamLanguage languages={languages} language={heading.language} />
       </div>
     </div>

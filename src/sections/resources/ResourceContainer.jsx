@@ -24,9 +24,6 @@ const ResourceContainer = () => {
       <div className="shadow-lg relative z-10">
         <Videos />
       </div>
-      <div>
-        <Tools />
-      </div>
     </div>
   );
 };

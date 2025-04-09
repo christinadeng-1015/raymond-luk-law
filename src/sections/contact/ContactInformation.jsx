@@ -1,9 +1,9 @@
 import React from 'react';
 import {
-  BsDribbble,
-  BsFacebook,
   BsInstagram,
-  BsTwitter,
+  BsLinkedin,
+  BsTiktok,
+  BsWhatsapp,
   BsTelephone,
   BsEnvelope,
 } from 'react-icons/bs';
@@ -11,10 +11,10 @@ import { AiOutlinePrinter } from 'react-icons/ai';
 import { useTranslation } from 'react-i18next';
 
 const iconMapping = {
-  BsFacebook,
+  BsLinkedin,
   BsInstagram,
-  BsTwitter,
-  BsDribbble,
+  BsTiktok,
+  BsWhatsapp,
 };
 
 const ContactInformation = () => {

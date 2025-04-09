@@ -703,25 +703,16 @@
       ]
     },
     {
-      "path": "/other-services",
-      "title": "Other Services",
-      "imageSrc": "/assets/services/other-services.jpg",
+      "path": "/landlord-tenant-board",
+      "title": "Landlord Tenant Board",
+      "imageSrc": "/assets/services/landlord.jpg",
+      "icon": "ltb.png",
+      "desc": "At Luk Law, our mission is to provide our clients with the best possible legal representation. We understand the importance of ensuring fair and lawful practices for both landlords and tenants. Our dedicated team is here to provide comprehensive Landlord Tenant Board (LTB) services to help resolve disputes and ensure compliance with Ontario's residential tenancy laws.",
       "tabs": [
-        {
-          "key": "notary-services",
-          "label": "Notary Services",
-          "icon": "HiOutlineDocumentText",
-          "content": [
-            {
-              "desc": "Our notary department provides clients with efficient and reliable notary services for a variety of legal documents, including affidavits, powers of attorney, and statutory declarations. Our licensed and experienced notaries are dedicated to ensuring that all legal documents are notarized properly, with attention to detail and accuracy."
-            }
-          ]
-        },
         {
           "key": "landlord-tenant-board",
           "label": "Landlord Tenant Board",
           "icon": "FaRegBuilding",
-          "desc": "At Luk Law, our mission is to provide our clients with the best possible legal representation. We understand the importance of ensuring fair and lawful practices for both landlords and tenants. Our dedicated team is here to provide comprehensive Landlord Tenant Board (LTB) services to help resolve disputes and ensure compliance with Ontario's residential tenancy laws.",
           "content": [
             {
               "title": "Landlord Advocacy",
@@ -736,6 +727,37 @@
             {
               "title": "Why choose us",
               "desc": "Our team has expertise in landlord-tenant law and experience with LTB procedures. We prioritize your needs and provide tailored solutions that will help achieve your goals. We are dedicated to achieving the best possible outcomes for you. Besides our legal expertise, we will provide support every step of the way and ensure you will have clear communication and excellent client service."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/other-services",
+      "title": "Other Services",
+      "imageSrc": "/assets/services/other-services.jpg",
+      "tabs": [
+        {
+          "key": "traffic-ticket",
+          "label": "Traffic Ticket",
+          "icon": "TbCarCrash",
+          "desc": "At Luk Law, we specialize in helping clients fight traffic tickets, speeding tickets, and other moving violations. Our team will work to protect your driving record and save you money. Whether you’re facing a speeding ticket, a red light violation, or a parking ticket, we’re here to provide the legal support you need. Don’t let a ticket lead to higher insurance rates or points on your license – let us fight for you!",
+          "content": [
+            {
+              "title": "Ticket fighting services",
+              "desc": "We handle a wide range of traffic-related cases, including: <br/><ul><li>Speeding Tickets</li><li>Red Light Camera Tickets</li><li>Parking Violations</li><li>Careless Driving Charges</li><li>Driving Without Insurance</li><li>Cell Phone Tickets (Distracted Driving)</li><li>Commercial Vehicle Violations</li><li>Other Moving Violations</li></ul>No matter the type of ticket, we’ll review your case, identify the best defence strategy, and represent you in court if necessary."
+            },
+            {
+              "title": "Why fight a traffic ticket?",
+              "desc": "Fighting a traffic ticket can save you from: <br/><ul><li><strong>Higher Insurance Rates:</strong> A ticket can lead to increased premiums.</li><li><strong>Points on Your License:</strong> Accumulating points can result in license suspension.</li><li><strong>Fines and Penalties:</strong> Avoid paying hefty fines by contesting your ticket.</li><li><strong>Criminal Record:</strong> Some traffic violations can lead to a criminal record.</li></ul>Our goal is to help you avoid these consequences and keep your driving record clean."
+            },
+            {
+              "title": "Our Process",
+              "desc": "<ol><li><strong>1. Free Consultation:</strong> Contact us for a free consultation to discuss your case.</li><li><strong>2. Case Review:</strong>We’ll review the details of your ticket and identify potential defenses.</li><li><strong>3. Representation:</strong>Our Markham traffic ticket lawyers will represent you in court and fight to have your ticket dismissed or reduced.</li><li><strong>4. Peace of Mind:</strong>With us on your side, you can focus on your life while we handle the legal details.</li></ol>"
+            },
+            {
+              "title": "Traffic Ticket FAQ",
+              "desc": "<ol><li><strong>1. Can I fight a traffic ticket on my own?</strong> <br/>While it’s possible to represent yourself, having an experienced traffic ticket lawyer significantly increases your chances of success.</li><li><strong>2. How much does it cost to fight a traffic ticket?</strong><br/>Our fees vary depending on the complexity of your case. Contact us for a free consultation to discuss your options.</li><li><strong>3. What happens if I lose my case?</strong><br/>If we’re unable to get your ticket dismissed, you may still have to pay the fine. However, we’ll explore all options to minimize the impact on your record.</li><li><strong>4. Do I need to appear in court?</strong><br/>In many cases, our lawyers can appear in court on your behalf, so you don’t have to.</li></ol>"
             }
           ]
         },
@@ -758,6 +780,16 @@
             {
               "title": "Why choose us",
               "desc": "Our team possesses deep expertise in Small Claims Court procedures and a strong track record of successful outcomes. We prioritize your needs and provide customized legal solutions to help you achieve your objectives. From initial consultation to resolution, we offer clear communication, exceptional client service, and unwavering support every step of the way."
+            }
+          ]
+        },
+        {
+          "key": "notary-services",
+          "label": "Notary Services",
+          "icon": "HiOutlineDocumentText",
+          "content": [
+            {
+              "desc": "Our notary department provides clients with efficient and reliable notary services for a variety of legal documents, including affidavits, powers of attorney, and statutory declarations. Our licensed and experienced notaries are dedicated to ensuring that all legal documents are notarized properly, with attention to detail and accuracy."
             }
           ]
         }

@@ -14,7 +14,7 @@
     ],
     "note": "If you would like to visit us in person for legal consultation, please call us to book an appointment.",
     "holidayNote": "Holiday hours may vary.",
-    "holidayUpdate": "Closed Wednesday, January 29, for Lunar New Year."
+    "holidayUpdate": "Closed Friday, April 18 and Monday, April 21 for Easter."
   },
   "form": {
     "title": "Submit Your Inquiry",
@@ -22,31 +22,34 @@
       {
         "id": "name",
         "label": "Name",
-        "placeholder": "Raymond Luk",
+        "placeholder": "Enter your name",
         "icon": "HiUser",
         "type": "text"
       },
       {
         "id": "email",
         "label": "Email",
-        "placeholder": "name@example.com",
+        "placeholder": "Enter your email",
         "icon": "HiMail",
         "type": "email"
       },
       {
         "id": "phone",
         "label": "Phone Number",
-        "placeholder": "(123) 456-7890",
+        "placeholder": "Enter your phone number",
         "icon": "HiPhone",
-        "type": "text"
+        "type": "tel"
       }
     ],
     "message": {
       "id": "message",
       "label": "Message",
-      "placeholder": "Enter your message here..."
+      "placeholder": "Enter your message here...",
+      "type": "text"
     },
-    "button": "Submit"
+    "button": "Send Inquiry",
+    "successTitle": "Success",
+    "successMessage": "Your inquity has been sent successfully!"
   },
   "contact": {
     "title": "Contact Us",
@@ -59,10 +62,19 @@
     ],
     "note": "Feel free to contact us through WhatsApp, WeChat, or text message.",
     "socialLinks": [
-      { "icon": "BsFacebook", "link": "https://facebook.com" },
-      { "icon": "BsInstagram", "link": "https://instagram.com" },
-      { "icon": "BsTwitter", "link": "https://twitter.com" },
-      { "icon": "BsDribbble", "link": "https://dribbble.com" }
+      { "icon": "BsInstagram", "link": "https://www.instagram.com/luklaw_to/" },
+      {
+        "icon": "BsWhatsapp",
+        "link": "https://api.whatsapp.com/send?phone=19053331740"
+      },
+      {
+        "icon": "BsTiktok",
+        "link": "https://www.tiktok.com/@luklaw_to?_t=ZM-8uE9bZioMH0&_r=1"
+      },
+      {
+        "icon": "BsLinkedin",
+        "link": "https://www.linkedin.com/company/raymond-luk-professional-corporation/?viewAsMember=true"
+      }
     ]
   },
   "officeImages": [

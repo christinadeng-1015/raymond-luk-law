@@ -23,10 +23,7 @@ const Header = () => {
   const { t } = useTranslation('navbar');
   const navbar = t('navbar', { returnObjects: true });
 
-  const slides = [
-    { title: navbar.title, subtitle: navbar.subtitle },
-    { title: navbar.title2, subtitle: navbar.subtitle2 },
-  ];
+  const slides = navbar.slides;
 
   const handleNext = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -45,8 +42,7 @@ const Header = () => {
       <div
         className="absolute top-1/2 left-1/2 w-full h-full bg-cover bg-no-repeat bg-center"
         style={{
-          backgroundImage:
-            'url(https://res.cloudinary.com/dyozsy6wx/image/upload/v1736993194/homepage_uvcqdg.jpg)',
+          backgroundImage: `url(/assets/home/home.jpg)`,
           transform: `translate(-50%, -50%) translateY(${offsetY * 0.5}px)`,
         }}
       ></div>

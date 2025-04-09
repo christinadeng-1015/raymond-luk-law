@@ -17,7 +17,7 @@
     ],
     "note": "如果您希望亲自到访进行法律咨询，请致电与我们预约。",
     "holidayNote": "节假日时间可能会有所不同。",
-    "holidayUpdate": "因农历新年，办公室因春节于1月29日（星期三）关闭。"
+    "holidayUpdate": "4月18日（周五）和4月21日（周一）因复活节放假。"
   },
   "form": {
     "title": "请向我们提供您的信息",
@@ -25,21 +25,21 @@
       {
         "id": "name",
         "label": "姓名",
-        "placeholder": "雷蒙德·卢克",
+        "placeholder": "请输入你的名字",
         "icon": "HiUser",
         "type": "text"
       },
       {
         "id": "email",
         "label": "电子邮箱",
-        "placeholder": "name@example.com",
+        "placeholder": "请输入你的邮箱",
         "icon": "HiMail",
         "type": "email"
       },
       {
         "id": "phone",
         "label": "电话号码",
-        "placeholder": "(123) 456-7890",
+        "placeholder": "请输入你的电话",
         "icon": "HiPhone",
         "type": "text"
       }
@@ -49,7 +49,9 @@
       "label": "信息",
       "placeholder": "在此处输入您的信息..."
     },
-    "button": "提交"
+    "button": "提交信息",
+    "successTitle": "成功",
+    "successMessage": "您的信息已成功送出！"
   },
   "contact": {
     "title": "联系我们",
@@ -62,10 +64,19 @@
     ],
     "note": "您可以通过 WhatsApp、微信或短信与我们联系。",
     "socialLinks": [
-      { "icon": "BsFacebook", "link": "https://facebook.com" },
-      { "icon": "BsInstagram", "link": "https://instagram.com" },
-      { "icon": "BsTwitter", "link": "https://twitter.com" },
-      { "icon": "BsDribbble", "link": "https://dribbble.com" }
+      { "icon": "BsInstagram", "link": "https://www.instagram.com/luklaw_to/" },
+      {
+        "icon": "BsWhatsapp",
+        "link": "https://api.whatsapp.com/send?phone=19053331740"
+      },
+      {
+        "icon": "BsTiktok",
+        "link": "https://www.tiktok.com/@luklaw_to?_t=ZM-8uE9bZioMH0&_r=1"
+      },
+      {
+        "icon": "BsLinkedin",
+        "link": "https://www.linkedin.com/company/raymond-luk-professional-corporation/?viewAsMember=true"
+      }
     ]
   },
   "officeImages": [

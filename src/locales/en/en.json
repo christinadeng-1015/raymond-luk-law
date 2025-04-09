@@ -128,7 +128,7 @@
     "disclaimerBtn": "Disclaimer",
     "awardTooltip": "Best in Markham for Family Law",
     "corporation": "© 2025 by Raymond Luk Law Professional Corporation",
-    "disclaimer": "The information obtained on this site is not intended to be legal advice. Please consult a legal professional for advice regarding your individual situation.",
+    "disclaimer": "The information obtained on this site is not intended to be legal advice. Please consult a legal professional for advice regarding your individual situation. Please be advised that contacting the firm does not create a solicitor-client nor a legal relationship of any kind. Please do not send any confidential information until such relationship has been established and a retainer has been signed",
     "contacts": [
       { "link": "#", "title": "English: 905-667-6496" },
       { "link": "#about", "title": "中文: 905-667-6499" },
@@ -142,10 +142,19 @@
       { "link": "/contact", "title": "Contact" }
     ],
     "socialLinks": [
-      { "icon": "facebook", "link": "https://facebook.com" },
-      { "icon": "instagram", "link": "https://instagram.com" },
-      { "icon": "twitter", "link": "https://twitter.com" },
-      { "icon": "dribbble", "link": "https://dribbble.com" }
+      { "icon": "instagram", "link": "https://www.instagram.com/luklaw_to/" },
+      {
+        "icon": "whatsapp",
+        "link": "https://api.whatsapp.com/send?phone=19053331740"
+      },
+      {
+        "icon": "tiktok",
+        "link": "https://www.tiktok.com/@luklaw_to?_t=ZM-8uE9bZioMH0&_r=1"
+      },
+      {
+        "icon": "linkedin",
+        "link": "https://www.linkedin.com/company/raymond-luk-professional-corporation/?viewAsMember=true"
+      }
     ],
     "followUs": "Follow Us"
   }

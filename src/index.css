@@ -211,17 +211,17 @@ img {
   }
 }
 
-.service__subtitle li {
+.service__subtitle ul li {
   list-style: inside square;
   padding-left: 4px;
 }
 
-.service__details li {
+.service__details ul li {
   list-style: inside square;
   padding-left: 4px;
 }
 
-.service__content li {
+.service__content ul li {
   list-style: inside square;
   padding-left: 4px;
 }
