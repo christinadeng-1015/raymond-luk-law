@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import Tools from './Tools';
 import Videos from './Videos';
 
 const ResourceContainer = () => {
