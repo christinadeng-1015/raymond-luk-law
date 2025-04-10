@@ -5,7 +5,7 @@ import i18n from 'i18next';
 
 function ContactFloatIcon() {
   const [isOpen, setIsOpen] = useState(false);
-  const [language, setLanguage] = useState(null);
+  const [, setLanguage] = useState(null);
   const [showLangMenu, setShowLangMenu] = useState(false);
   const containerRef = useRef(null);
 
@@ -31,7 +31,6 @@ function ContactFloatIcon() {
     setIsOpen(false);
   };
 
-  // 📌 Close menus on outside click
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -54,7 +53,6 @@ function ContactFloatIcon() {
       ref={containerRef}
       className="fixed bottom-4 right-4 z-50 flex flex-col items-end space-y-2"
     >
-      {/* Language Selector Menu */}
       {showLangMenu && (
         <div className="bg-white shadow-lg p-3 rounded-md w-40 mb-2">
           <button
@@ -71,8 +69,6 @@ function ContactFloatIcon() {
           </button>
         </div>
       )}
-
-      {/* Phone Number Info */}
       {isOpen && (
         <div className="bg-white shadow-lg p-4 rounded-md w-52 mb-2">
           <div className="text-gray-800 mb-2">
@@ -96,9 +92,7 @@ function ContactFloatIcon() {
         </div>
       )}
 
-      {/* Button Row: Language + Phone */}
       <div className="flex space-x-2">
-        {/* Language Globe */}
         <button
           onClick={toggleLangMenu}
           className="w-12 h-12 flex items-center justify-center bg-white text-[#10284e] rounded-full shadow-lg border border-gray-200 hover:bg-gray-100 opacity-90"
