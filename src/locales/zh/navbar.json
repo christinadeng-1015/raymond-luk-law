@@ -24,7 +24,7 @@
       { "key": "home", "label": "主页", "url": "/", "icon": "AiOutlineHome" },
       {
         "key": "team",
-        "label": "团队",
+        "label": "律师团队",
         "url": "/team",
         "icon": "AiOutlineTeam"
       },

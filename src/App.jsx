@@ -1,5 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
+import { useTranslation } from 'react-i18next';
+import { useParams } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,17 +14,30 @@ import ResourcesPage from "./pages/Resources";
 import TeamPage from "./pages/Team";
 import LawPage from "./pages/Law";
 import ContactPage from "./pages/Contact";
+import LanguageRedirect from './components/LanguageRedirect';
 
 const App = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
+  const { i18n } = useTranslation();
+  const { lang } = useParams();
+
+  useEffect(() => {
+    if (lang && i18n.language !== lang) {
+      i18n.changeLanguage(lang);
+    }
+  }, [lang, i18n]);
+
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/en" element={<LanguageRedirect lang="en" />} />
+        <Route path="/zh" element={<LanguageRedirect lang="zh" />} />
+
+        <Route path="" element={<Home />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/resources" element={<ResourcesPage />} />

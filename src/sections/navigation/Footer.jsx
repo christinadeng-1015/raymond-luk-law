@@ -29,8 +29,8 @@ const FooterHome = () => {
           >
             <Tooltip content={footer.awardTooltip} placement="bottom">
               <img
-                src="https://legaldirectorate.ca/awards/2024/2/31/3e407a83b4ab1ea59f324a758d86d312/BestOf-Markham-i250-2024.svg"
-                className="w-24 md:w-40"
+                src="/assets/home/best-of-markham.png"
+                className="w-32 md:w-48"
                 alt={footer.awardAlt || 'Award Badge'}
               />
             </Tooltip>

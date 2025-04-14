@@ -5,7 +5,9 @@ import {
   BsTiktok,
   BsWhatsapp,
   BsTelephone,
-  BsEnvelope,
+  BsWechat,
+  BsEnvelope
+  
 } from 'react-icons/bs';
 import { AiOutlinePrinter } from 'react-icons/ai';
 import { useTranslation } from 'react-i18next';
@@ -26,6 +28,7 @@ const ContactInformation = () => {
     { icon: BsTelephone, label: contact.contacts[1] },
     { icon: BsEnvelope, label: contact.contacts[2] },
     { icon: AiOutlinePrinter, label: contact.contacts[3] },
+    { icon: BsWechat, label: contact.contacts[4] }
   ];
 
   return (
