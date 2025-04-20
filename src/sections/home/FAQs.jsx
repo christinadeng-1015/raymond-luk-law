@@ -1,11 +1,9 @@
 import { useTranslation } from 'react-i18next';
-import { useMediaQuery } from 'react-responsive';
 import FAQ from './FAQ';
 
 const FAQs = () => {
   const { t } = useTranslation('faqs');
   const faqs = t('faqs', { returnObjects: true });
-  const isMobile = useMediaQuery({ maxWidth: 768 });
 
   return (
     <div
@@ -25,7 +23,7 @@ const FAQs = () => {
           <FAQ
             key={index}
             faq={faq}
-            isOpen={isMobile ? index < 1 : index < 2}
+            isOpen={false}
           />
         ))}
       </div>

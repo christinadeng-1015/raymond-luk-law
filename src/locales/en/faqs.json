@@ -4,7 +4,7 @@
   "faqs": [
     {
       "question": "What type of cases does your law firm handle?",
-      "answer": "Our law firm specializes in various practice areas, including personal injury, family law, wills & estates, real estate, and notary services. Whether you're facing legal challenges related to accidents, divorce, property transactions, or related disputes, we have the expertise to provide effective representation and guidance."
+      "answer": "Our law firm specializes in various practice areas, including Personal Injury, Family Law, Wills & Estates, Real Estate, and Notary Services. Whether you're facing legal challenges related to accidents, divorce, property transactions, or related disputes, we have the expertise to provide effective representation and guidance."
     },
     {
       "question": "How much does it cost to hire your law firm?",
@@ -15,8 +15,8 @@
       "answer": "The legal process can vary depending on the nature of your case, but we'll guide you through each step and keep you informed at every stage. From gathering evidence and filing paperwork to negotiating settlements or representing you in court, our experienced lawyers will work diligently to achieve the best possible outcome for your case."
     },
     {
-      "question": "When is it a good time to make a will?",
-      "answer": "It's always a good time to make a will, regardless of your age or current life circumstances. However, certain life events may prompt the need to create or update your will, such as getting married, having children, buying a home, or experiencing changes in your health or financial situation. Additionally, if you already have a will, it's crucial to review and update it after significant life changes like divorce or the death of a loved one."
+      "question": "When is it a good time to make a Will?",
+      "answer": "It's always a good time to make a Will, regardless of your age or current life circumstances. However, certain life events may prompt the need to create or update your Will, such as getting married, having children, buying a home, or experiencing changes in your health or financial situation. Additionally, if you already have a Will, it's crucial to review and update it after significant life changes like divorce or the death of a loved one."
     },
     {
       "question": "What should I bring to my initial consultation?",
@@ -28,4 +28,3 @@
     }
   ]
 }
-  

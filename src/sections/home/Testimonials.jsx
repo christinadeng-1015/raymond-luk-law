@@ -9,14 +9,14 @@ const Testimonials = () => {
 
   return (
     <div
-      className="w-full h-3/4 md:h-1/2"
+      className="w-full h-4/6 md:h-1/2"
       data-aos="zoom-out"
       data-aos-duration="1200"
       data-aos-easing="ease-in-out"
     >
       <Carousel
         className="bg-gradient-to-r from-[#10284e] to-[#0a1e3a] p-8 text-center"
-        slideInterval={4000}
+        slideInterval={10000}
       >
         {reviews.map((review, index) => (
           <div

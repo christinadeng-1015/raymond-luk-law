@@ -54,10 +54,13 @@
     "corporation": "© 2025 Raymond Luk Law Professional Corporation 版权所有",
     "disclaimer": "本网站上获得的信息并非法律建议。请咨询法律专业人士，获取有关您个人情况的建议。请注意，联系该公司并不构成律师与客户之间的关系，也不会建立任何类型的法律关系。在建立这种关系并签署聘用书之前，请勿发送任何机密信息",
     "contacts": [
-      { "link": "#", "title": "英语: 905-667-6496" },
-      { "link": "#about", "title": "中文: 905-667-6499" },
-      { "link": "#services", "title": "邮箱: info@luklawpc.com" },
-      { "link": "#portfolio", "title": "传真: 905-849-3583" }
+      { "link": "tel:9056676496", "title": "English: 905-667-6496" },
+      { "link": "tel:9056676499", "title": "中文: 905-667-6499" },
+      {
+        "link": "mailto:info@luklawpc.com",
+        "title": "邮箱: info@luklawpc.com"
+      },
+      { "link": "tel:9058493583", "title": "传真: 905-849-3583" }
     ],
     "quickLinks": [
       { "link": "/team", "title": "我们的团队" },

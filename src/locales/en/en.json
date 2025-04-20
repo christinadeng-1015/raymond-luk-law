@@ -95,7 +95,7 @@
       },
       {
         "title": "Result",
-        "description": "Deliver the best possible result for our customers.",
+        "description": "Deliver the best possible result for our clients.",
         "icon": "HiOutlineCheckCircle"
       }
     ]
@@ -130,10 +130,13 @@
     "corporation": "© 2025 by Raymond Luk Law Professional Corporation",
     "disclaimer": "The information obtained on this site is not intended to be legal advice. Please consult a legal professional for advice regarding your individual situation. Please be advised that contacting the firm does not create a solicitor-client nor a legal relationship of any kind. Please do not send any confidential information until such relationship has been established and a retainer has been signed",
     "contacts": [
-      { "link": "#", "title": "English: 905-667-6496" },
-      { "link": "#about", "title": "中文: 905-667-6499" },
-      { "link": "#services", "title": "Email: info@luklawpc.com" },
-      { "link": "#portfolio", "title": "Fax: 905-849-3583" }
+      { "link": "tel:9056676496", "title": "English: 905-667-6496" },
+      { "link": "tel:9056676499", "title": "中文: 905-667-6499" },
+      {
+        "link": "mailto:info@luklawpc.com",
+        "title": "Email: info@luklawpc.com"
+      },
+      { "link": "tel:9058493583", "title": "Fax: 905-849-3583" }
     ],
     "quickLinks": [
       { "link": "/team", "title": "Our Team" },

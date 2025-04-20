@@ -69,18 +69,19 @@
     },
     {
       "name": "Camila Su",
-      "position": "法律助理 | 律师助理资格候选人",
+      "position": "法律助理 & 律师助理资格候选人",
       "description": "Camila Su 是一位敬业且富有创造力的法律专业人士，目前担任法律助理，同时正在准备参加律师助理资格考试。她毕业于滑铁卢大学（University of Waterloo），并最近完成了百年理工学院（Centennial College）的加速律师助理课程，为她的角色带来了坚实的学术基础和对法律领域的热爱。<br/><br/>在当前职位上，Camila 在法律研究、管理案件档案以及协调客户、法院及其他相关方之间的沟通方面发挥着关键作用。她还负责安排日程、记录重要截止日期，并确保所有与案件相关的任务都能精确高效地完成。她适应变化的能力和积极主动解决问题的态度使她成为团队中不可或缺的一员。<br/><br/>Camila 目前协助团队和客户处理与省级违法行为、房东与租户委员会（Landlord and Tenant Board）索赔以及小额索赔法庭（Small Claims Court）问题相关的事务。她以细致和专业的方式处理这些领域的工作，确保客户获得解决法律问题所需的支持和指导。<br/><br/>Camila 母语为英语和粤语，并能熟练使用普通话。她利用出色的沟通能力支持事务所的诉讼工作。无论是起草文件、与客户协调，还是在听证会上提供协助，她的语言能力和文化理解力都有助于弥合差距，确保清晰有效的沟通。<br/><br/>在工作之外，Camila 热爱旅行，喜欢探索新的文化和目的地。她还正在学习泰拳（Muay Thai），将她的精力和专注力投入到这项充满活力的武术中。她的冒险精神和对个人成长的投入反映了她对卓越的追求，无论是在职业还是个人生活中。<br/><br/>Camila 的专业精神、可靠性和对法律职业的热情使她成为我们团队中不可或缺的一部分。我们期待支持她迈向下一个阶段，成为一名持牌律师助理，并继续为客户提供卓越的服务。",
       "image": "/assets/team/camila-su.jpg",
       "education": ["理学学士 (荣誉) 滑铁卢大学"],
       "phone": [
         { "number": "905-291-1802", "description": "(办公室)" },
         { "number": "905-849-3583", "description": "(传真)" }
-      ]
+      ],
+      "email": "csu@luklawpc.com"
     },
     {
       "name": "Kathy Liang",
-      "position": "法律助理 | 律师助理资格候选人",
+      "position": "法律助理 & 律师助理资格候选人",
       "description": "Kathy Liang 是一位敬业且充满动力的法律专业人士，她在我们律师事务所从法律实习生成长为一名备受重视的法律助理。Kathy 毕业于皇后大学（Queen’s University），获得荣誉文学学士学位，目前正在完成** Seneca Polytechnic 的加速律师助理课程**，并准备参加律师助理资格考试。她为她的角色带来了新鲜的视角、强烈的职业道德和对法律领域的热爱。<br/><br/>Kathy 目前主要协助团队和客户处理**事故赔偿（accident benefits）和交通罚单（ticketing matters）**相关事务。她以细致和专业的方式处理这些领域的工作，确保客户获得解决法律问题所需的支持和指导。<br/><br/>在担任法律实习生期间，Kathy 展现了出色的研究能力、精确性和对支持律师和客户的承诺。现在，作为法律助理，她在组织案件档案、管理客户沟通和确保事务所顺利运作方面发挥着关键作用。她对学习的热情和积极主动的态度使她成为团队中不可或缺的一员。<br/><br/>Kathy 母语为英语和粤语，并能理解普通话。她利用自己的语言能力与来自不同文化背景的客户和同事进行有效沟通。她的跨文化理解力增强了事务所提供个性化和高效法律服务的能力。<br/><br/>在工作之外，Kathy 是冬季运动的忠实爱好者，喜欢滑雪和单板滑雪等活动。她还擅长抢到音乐会门票，经常能在她最喜欢的活动中坐在前排。她的冒险精神和对生活的热爱为团队带来了独特的活力。<br/><br/>Kathy 的专业精神、可靠性和对法律职业的热情使她成为我们团队中不可或缺的一部分。我们期待看到她继续成长，并在她法律职业生涯的下一篇章中取得更大的成就。",
       "image": "/assets/team/kathy-liang.jpg",
       "education": ["皇后大学（荣誉）文学士"],
@@ -123,7 +124,8 @@
       "phone": [
         { "number": "905-291-1802", "description": "(办公室)" },
         { "number": "905-849-3583", "description": "(传真)" }
-      ]
+      ],
+      "email": "rchan@luklawpc.com"
     },
     {
       "name": "Venus Ng",
@@ -159,6 +161,36 @@
         { "number": "905-291-1802", "description": "(办公室)" },
         { "number": "905-849-3583", "description": "(传真)" }
       ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "英语",
+      "flag": "/assets/language/canada.png"
+    },
+    {
+      "name": "普通话 & 粤语",
+      "flag": "/assets/language/china.png"
+    },
+    {
+      "name": "越南语",
+      "flag": "/assets/language/vietnam.png"
+    },
+    {
+      "name": "韩语",
+      "flag": "/assets/language/south-korea.png"
+    },
+    {
+      "name": "波斯语",
+      "flag": "/assets/language/iran.png"
+    },
+    {
+      "name": "乌克兰语",
+      "flag": "/assets/language/ukraine.png"
+    },
+    {
+      "name": "俄语",
+      "flag": "/assets/language/russia.png"
     }
   ]
 }
