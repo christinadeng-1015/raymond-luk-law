@@ -1,4 +1,4 @@
-import { Footer, Tooltip } from 'flowbite-react';
+import { Footer } from 'flowbite-react';
 import { BsWhatsapp, BsInstagram, BsLinkedin, BsTiktok } from 'react-icons/bs';
 import { useTranslation } from 'react-i18next';
 
@@ -21,20 +21,6 @@ const FooterHome = () => {
             alt={footer.logoAlt || 'Company Logo'}
             className="w-20 md:w-32"
           />
-          <a
-            href="https://legaldirectorate.ca/family-law-attorneys/markham-on/"
-            target="_blank"
-            className="border-0"
-            rel="noreferrer"
-          >
-            <Tooltip content={footer.awardTooltip} placement="bottom">
-              <img
-                src="/assets/home/best-of-markham.png"
-                className="w-32 md:w-48"
-                alt={footer.awardAlt || 'Award Badge'}
-              />
-            </Tooltip>
-          </a>
           <img
             src="assets/home/law.png"
             alt={footer.lawLogoAlt || 'Law Firm Logo'}
