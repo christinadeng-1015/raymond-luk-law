@@ -42,7 +42,7 @@ html {
 }
 
 body {
-  font-family: 'Playfair Display', 'Open Sans', serif;
+  font-family: 'Open Sans', serif;
   line-height: 1.6;
   font-size: 0.9rem;
   overflow-x: hidden;
@@ -79,6 +79,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: 'Playfair Display', serif;
   line-height: 1.1;
   color: var(--color-black);
 }

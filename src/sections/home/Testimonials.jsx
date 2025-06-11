@@ -9,7 +9,7 @@ const Testimonials = () => {
 
   return (
     <div
-      className="w-full h-4/6 md:h-1/2"
+      className="w-full h-5/6 md:h-2/3"
       data-aos="zoom-out"
       data-aos-duration="1200"
       data-aos-easing="ease-in-out"
