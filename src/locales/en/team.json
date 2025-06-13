@@ -44,6 +44,18 @@
       "desc": "* Currently practicing through Iman Law Professional Corporation"
     },
     {
+      "name": "Christine Guan",
+      "position": "Real Estate Law Clerk & Senior Licensed Paralegal",
+      "description": "Christine Guan is a highly skilled and detail-oriented Real Estate Law Clerk and Licensed Paralegal with over 10 years of experience in the legal field. Originally specializing in tort and accident benefits law as a paralegal, Christine has since transitioned into real estate law, where she brings her exceptional organizational skills, legal knowledge, and client-focused approach to every transaction.<br/><br/>Christine’s expertise covers a wide range of real estate services, including residential and commercial transactions, title searches, drafting legal documents, and coordinating closings. Her meticulous attention to detail, proactive mindset, and ability to manage complex processes make her an invaluable asset to clients and the legal team alike.<br/><br/>Fluent in English, Cantonese, and Mandarin, Christine is adept at working with clients from diverse backgrounds, ensuring clear communication and a seamless experience. Her dedication to providing high-quality legal support and her commitment to client satisfaction have earned her a reputation for reliability and professionalism.<br/><br/>Outside of her professional life, Christine is a devoted mother who spends much of her free time managing and juggling her teenage children’s schooling and thriving volleyball careers. Her ability to balance a demanding work schedule with her family’s busy life reflects her exceptional time-management skills and unwavering dedication to those she cares about.",
+      "image": "/assets/team/christine-guan.jpg",
+      "education": ["Senior Licensed Paralegal"],
+      "phone": [
+        { "number": "905-538-5176", "description": "(Office)" },
+        { "number": "905-849-3583", "description": "(Fax)" }
+      ],
+      "email": "cguan@luklawpc.com"
+    },
+    {
       "name": "Raymond Lee",
       "position": "Senior Licensed Paralegal",
       "description": "Raymond Lee is a skilled and dedicated paralegal who brings precision and professionalism to his practice. Licensed by the Law Society of Ontario, Raymond acts primarily in Landlord and Tenant Board disputes, Small Claims Court matters, and provincial offence/ticketing files, providing clients with clear guidance and assertive representation.<br/><br/>Raymond holds a Bachelor of Commerce from the University of Toronto, an Advanced Diploma in Legal Studies (Common Law) from the University of Hong Kong, and is a Fellow of the Institute of Paralegals in the United Kingdom. This diverse academic background equips him with both legal and business insight, enhancing his ability to address complex legal matters with analytical depth and practical judgment.<br/><br/>With a thorough understanding of procedural law and a client-focused approach, Raymond assists tenants, landlords, and individuals navigating legal challenges—from lease disputes and eviction proceedings to debt recovery and traffic violations. His ability to simplify complex processes empowers clients to make informed decisions about their cases.<br/><br/>Fluent in English, Cantonese, and Mandarin, Raymond ensures effective communication with clients from diverse backgrounds, fostering trust and clarity throughout the legal process. His cultural competency and attention to detail enable him to deliver tailored solutions for each client’s unique needs.<br/><br/>Committed to accessibility and efficiency, Raymond combines rigorous legal analysis with practical strategies to achieve resolutions. Whether negotiating settlements or advocating in courts and tribunals, he prioritizes his clients’ best interests with integrity and professionalism.<br/><br/>Outside the office, Raymond enjoys swimming, cycling, and cheering on Liverpool FC. He also loves traveling with his family, exploring new destinations whenever possible.",
@@ -59,18 +71,6 @@
         { "number": "905-849-3583", "description": "(Fax)" }
       ],
       "email": "rlee@luklawpc.com"
-    },
-    {
-      "name": "Christine Guan",
-      "position": "Real Estate Law Clerk & Licensed Paralegal",
-      "description": "Christine Guan is a highly skilled and detail-oriented Real Estate Law Clerk and Licensed Paralegal with over 10 years of experience in the legal field. Originally specializing in tort and accident benefits law as a paralegal, Christine has since transitioned into real estate law, where she brings her exceptional organizational skills, legal knowledge, and client-focused approach to every transaction.<br/><br/>Christine’s expertise covers a wide range of real estate services, including residential and commercial transactions, title searches, drafting legal documents, and coordinating closings. Her meticulous attention to detail, proactive mindset, and ability to manage complex processes make her an invaluable asset to clients and the legal team alike.<br/><br/>Fluent in English, Cantonese, and Mandarin, Christine is adept at working with clients from diverse backgrounds, ensuring clear communication and a seamless experience. Her dedication to providing high-quality legal support and her commitment to client satisfaction have earned her a reputation for reliability and professionalism.<br/><br/>Outside of her professional life, Christine is a devoted mother who spends much of her free time managing and juggling her teenage children’s schooling and thriving volleyball careers. Her ability to balance a demanding work schedule with her family’s busy life reflects her exceptional time-management skills and unwavering dedication to those she cares about.",
-      "image": "/assets/team/christine-guan.jpg",
-      "education": ["Senior Licensed Paralegal"],
-      "phone": [
-        { "number": "905-538-5176", "description": "(Office)" },
-        { "number": "905-849-3583", "description": "(Fax)" }
-      ],
-      "email": "cguan@luklawpc.com"
     },
     {
       "name": "Rebecca Tsui",
