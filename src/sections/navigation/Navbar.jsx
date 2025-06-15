@@ -155,6 +155,7 @@ const Nav = () => {
                       dismissOnClick={true}
                       className="w-1/2 md:w-1/4 lg:w-1/6 lg:opacity-90"
                     >
+                      <div className="max-h-72 overflow-y-auto lg:max-h-none lg:overflow-visible text-center">
                       {item.dropdown.map((subItem) => (
                         <Dropdown.Item
                           href={subItem.url}
@@ -166,9 +167,10 @@ const Nav = () => {
                             }
                           }}
                         >
-                          <span className="ml-2">{subItem.label}</span>
+                          <span className="ml-4">{subItem.label}</span>
                         </Dropdown.Item>
                       ))}
+                      </div>
                     </Dropdown>
                   ) : (
                     <div className="flex items-center">

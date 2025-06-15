@@ -733,6 +733,36 @@
       ]
     },
     {
+      "path": "/small-claims-court",
+      "title": "Small Claims Court",
+      "imageSrc": "/assets/services/landlord.jpg",
+      "icon": "ltb.png",
+      "desc": "At Luk Law, our mission is to deliver exceptional legal representation tailored to your needs. We understand that navigating Small Claims Court can be complex and stressful. Small Claims Court is where you can sue for a monetary amount or the return of property, provided the value of your claim does not exceed $35,000. Our dedicated team is here to offer comprehensive services to help resolve disputes and ensure a fair resolution under Ontario’s Small Claims Court procedures.",
+      "tabs": [
+        {
+          "key": "small-claims-court",
+          "label": "Small Claims Court",
+          "icon": "GoLaw",
+          "content": [
+            {
+              "title": "Plaintiffs Advocacy",
+              "imageSrc": "/assets/services/small-claim.jpg",
+              "desc": "If you’re pursuing a claim, it's crucial to have expert legal guidance to ensure your case is presented effectively. We provide proactive legal advice and representation to help you achieve a favourable outcome. Our goal is to assist you in navigating the Small Claims Court procedures smoothly and efficiently. <br/><br/> Our Claimant services include but are not limited to: <ul><li>Filing and Pursuing a Claim</li><li>Preparation and Presentation of Evidence</li><li>Settlement Negotiations</li><li>Court Representation</li><li>Legal Advice on Claim Strategies</li></ul>"
+            },
+            {
+              "title": "Defendants Representation",
+              "imageSrc": "/assets/services/court.jpg",
+              "desc": "If you are being sued, having a knowledgeable advocate on your side is essential. We offer robust representation to protect your interests and defend against claims. Our experienced team will work diligently to ensure that your side of the story is heard and that you receive a fair outcome.<br/><br/> Our Defendant services include but are not limited to: <ul><li>Responding to Claims</li><li>Defense Preparation and Strategy</li><li>Evidence Collection and Presentation</li><li>Settlement Discussions</li><li>Court Representation</li></ul>"
+            },
+            {
+              "title": "WHY CHOOSE US",
+              "desc": "Our team possesses deep expertise in Small Claims Court procedures and a strong track record of successful outcomes. We prioritize your needs and provide customized legal solutions to help you achieve your objectives. From initial consultation to resolution, we offer clear communication, exceptional client service, and unwavering support every step of the way."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "path": "/other-services",
       "title": "Other Services",
       "imageSrc": "/assets/services/other-services.jpg",
@@ -758,28 +788,6 @@
             {
               "title": "Traffic Ticket FAQ",
               "desc": "<ol><li><strong>1. Can I fight a traffic ticket on my own?</strong> <br/>While it’s possible to represent yourself, having an experienced traffic ticket lawyer significantly increases your chances of success.</li><li><strong>2. How much does it cost to fight a traffic ticket?</strong><br/>Our fees vary depending on the complexity of your case. Contact us for a free consultation to discuss your options.</li><li><strong>3. What happens if I lose my case?</strong><br/>If we’re unable to get your ticket dismissed, you may still have to pay the fine. However, we’ll explore all options to minimize the impact on your record.</li><li><strong>4. Do I need to appear in court?</strong><br/>In many cases, our lawyers can appear in court on your behalf, so you don’t have to.</li></ol>"
-            }
-          ]
-        },
-        {
-          "key": "small-claims-court",
-          "label": "Small Claims Court",
-          "icon": "GoLaw",
-          "desc": "At Luk Law, our mission is to deliver exceptional legal representation tailored to your needs. We understand that navigating Small Claims Court can be complex and stressful. Small Claims Court is where you can sue for a monetary amount or the return of property, provided the value of your claim does not exceed $35,000. Our dedicated team is here to offer comprehensive services to help resolve disputes and ensure a fair resolution under Ontario’s Small Claims Court procedures.",
-          "content": [
-            {
-              "title": "Plaintiffs Advocacy",
-              "imageSrc": "/assets/services/small-claim.jpg",
-              "desc": "If you’re pursuing a claim, it's crucial to have expert legal guidance to ensure your case is presented effectively. We provide proactive legal advice and representation to help you achieve a favourable outcome. Our goal is to assist you in navigating the Small Claims Court procedures smoothly and efficiently. <br/><br/> Our Claimant services include but are not limited to: <ul><li>Filing and Pursuing a Claim</li><li>Preparation and Presentation of Evidence</li><li>Settlement Negotiations</li><li>Court Representation</li><li>Legal Advice on Claim Strategies</li></ul>"
-            },
-            {
-              "title": "Defendants Representation",
-              "imageSrc": "/assets/services/court.jpg",
-              "desc": "If you are being sued, having a knowledgeable advocate on your side is essential. We offer robust representation to protect your interests and defend against claims. Our experienced team will work diligently to ensure that your side of the story is heard and that you receive a fair outcome.<br/><br/> Our Defendant services include but are not limited to: <ul><li>Responding to Claims</li><li>Defense Preparation and Strategy</li><li>Evidence Collection and Presentation</li><li>Settlement Discussions</li><li>Court Representation</li></ul>"
-            },
-            {
-              "title": "WHY CHOOSE US",
-              "desc": "Our team possesses deep expertise in Small Claims Court procedures and a strong track record of successful outcomes. We prioritize your needs and provide customized legal solutions to help you achieve your objectives. From initial consultation to resolution, we offer clear communication, exceptional client service, and unwavering support every step of the way."
             }
           ]
         },

@@ -50,6 +50,7 @@ const App = () => {
         <Route path="/immigration-law" element={<LawPage />} />
         <Route path="/other-services" element={<LawPage />} />
         <Route path="/landlord-tenant-board" element={<LawPage />} />
+        <Route path="/small-claims-court" element={<LawPage />} />
       </Routes>
       <FooterHome />
     </Router>

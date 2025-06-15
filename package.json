@@ -24,6 +24,7 @@
     "react-scripts": "5.0.1",
     "react-scrollspy": "^3.4.3",
     "swiper": "^8.4.4",
+    "tailwind-scrollbar": "^4.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

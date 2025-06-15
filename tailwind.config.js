@@ -7,6 +7,6 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require("flowbite/plugin"), // Ensure Flowbite plugin is included
+    require("flowbite/plugin")
   ],
 };

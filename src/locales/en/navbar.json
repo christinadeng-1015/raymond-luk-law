@@ -66,6 +66,11 @@
             "url": "/landlord-tenant-board"
           },
           {
+            "key": "small-claims-court",
+            "label": "Small Claims Court",
+            "url": "/small-claims-court"
+          },
+          {
             "key": "other-services",
             "label": "Other Services",
             "url": "/other-services"

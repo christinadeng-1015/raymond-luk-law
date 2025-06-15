@@ -18,27 +18,46 @@ const ContactForm = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
-    const formData = new FormData(event.target);
-
-    formData.append("access_key", "53403ed3-d089-4103-b336-6573c7f77eec");
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData
-    });
-
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("Form Submitted Successfully");
-      setShowModal(true);
-      event.target.reset();
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
+    setResult("Sending...");
+  
+    const accessKeys = [
+      "53403ed3-d089-4103-b336-6573c7f77eec",
+      "b54e4df1-f23c-456f-af96-9825f8af8cb2"
+    ];
+  
+    const originalFormData = new FormData(event.target);
+  
+    try {
+      const sendForm = async (key) => {
+        const formData = new FormData();
+        originalFormData.forEach((value, k) => formData.append(k, value));
+        formData.append("access_key", key);
+  
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
+        });
+  
+        return response.json();
+      };
+  
+      const results = await Promise.all(accessKeys.map(sendForm));
+  
+      const allSuccessful = results.every(res => res.success);
+  
+      if (allSuccessful) {
+        setResult("Form Submitted Successfully");
+        setShowModal(true);
+        event.target.reset();
+      } else {
+        console.log("Errors:", results);
+        setResult("Some submissions failed.");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      setResult("An error occurred while submitting the form.");
     }
-  };
+  };  
 
   return (
     <>
