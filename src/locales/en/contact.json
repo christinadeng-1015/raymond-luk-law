@@ -39,6 +39,18 @@
         "placeholder": "Enter your phone number",
         "icon": "HiPhone",
         "type": "tel"
+      },
+      {
+        "id": "language",
+        "label": "Preferred Language",
+        "placeholder": "Tell us your preferred language",
+        "type": "text"
+      },
+      {
+        "id": "contact-method",
+        "label": "Contact Method",
+        "placeholder": "How would you like us to contact you?",
+        "type": "text"
       }
     ],
     "message": {

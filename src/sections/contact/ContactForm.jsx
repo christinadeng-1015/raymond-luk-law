@@ -74,11 +74,11 @@ const ContactForm = () => {
           {form.fields.map((field) => {
             const IconComponent = iconMapping[field.icon];
             return (
-              <div key={field.id} className="relative">
+              <div key={field.id} className="relative flex flex-row items-center gap-2">
                 <Label
                   htmlFor={field.id}
                   value={field.label}
-                  className="text-lg font-medium"
+                  className="text-lg font-medium w-1/5"
                 />
                 <TextInput
                   id={field.id}
@@ -86,7 +86,7 @@ const ContactForm = () => {
                   type={field.type}
                   placeholder={field.placeholder}
                   required
-                  className="mt-2 w-full rounded-lg bg-gray-100 shadow-sm"
+                  className="rounded-lg w-4/5 bg-gray-100 shadow-sm"
                   rightIcon={IconComponent}
                 />
               </div>
