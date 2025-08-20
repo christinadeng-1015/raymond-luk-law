@@ -11,7 +11,7 @@
     {
       "name": "Raymond Luk",
       "position": "Lawyer",
-      "description": "Raymond Luk is the founding lawyer of the law firm, bringing a wealth of knowledge, dedication, and a client-focused approach to the practice of law. A proud graduate of the University of Toronto, where he earned an Honours Bachelor of Arts with High Distinction, Raymond went on to attend Queen’s University, obtaining his Juris Doctor.<br/><br/>With extensive experience representing clients at the Superior Court of Ontario, the Licensed Appeal Tribunal, and the Human Rights Tribunal of Ontario, Raymond is a skilled advocate who is committed to achieving the best possible outcomes for his clients. He practices in the areas of Family Law, Wills and Estates, Personal Injury, Real Estate, and Corporate Law, providing comprehensive legal solutions tailored to each client’s unique needs.<br/><br/>In addition to his legal practice, Raymond is a frequent contributor to Ming Pao Daily News, the leading Chinese-language newspaper in Canada. He has also made multiple appearances on OMNI News, a local and national newscast available in various languages on the Omni Television system in Canada. Through these platforms, Raymond shares valuable legal insights and helps educate the community on important legal issues.<br/><br/>Raymond is dedicated to building a practice rooted in integrity, professionalism, and a deep understanding of the law. He takes pride in offering personalized attention and clear, practical advice to help clients navigate complex legal matters with confidence.<br/><br/>Raymond is fluent in Cantonese and English, and he understands Mandarin.",
+      "description": "Raymond Luk is the founding lawyer of the firm, known for his dedication, depth of knowledge, and client-centered approach to legal practice. A proud graduate of the University of Toronto, where he earned an Honours Bachelor of Arts with High Distinction, Raymond went on to complete his Juris Doctor at Queen’s University.<br/><br/>With extensive experience representing clients before the Superior Court of Ontario, the Licensed Appeal Tribunal, and the Human Rights Tribunal of Ontario, Raymond is a skilled advocate committed to achieving the best possible results for his clients. His practice spans Family Law, Wills and Estates, Personal Injury, Real Estate, and Corporate Law, allowing him to provide well-rounded legal solutions tailored to each client’s unique needs.<br/><br/>Beyond his legal practice, Raymond regularly contributes his expertise to the media. He is a frequent contributor to Ming Pao Daily News, Canada’s leading Chinese-language newspaper, and has also contributed to Sing Tao Media Group (Canada), the largest Chinese media group in Canada. In addition to his work in print, Raymond has made multiple appearances on OMNI News, a multilingual local and national newscast on Omni Television, where he shares insights on legal issues affecting the community. Through these platforms, he strives to make the law more accessible and to help the public understand their rights.<br/><br/>Raymond is dedicated to building a practice rooted in integrity, professionalism, and a deep understanding of the law. He takes pride in offering personalized attention and clear, practical advice to help clients navigate complex legal matters with confidence.<br/><br/>Fluent in Cantonese and English, and with knowledge of Mandarin, Raymond is able to serve a diverse client base with care and understanding.",
       "image": "/assets/team/raymond-luk.jpg",
       "education": [
         "B.A. (Hons.) University of Toronto",
@@ -89,7 +89,10 @@
       "position": "Legal Assistant & Paralegal Licensing Candidate",
       "description": "Camila Su is a dedicated and resourceful legal professional who currently serves as a Legal Assistant while preparing to write her Paralegal Licensing Exam. A graduate of the University of Waterloo and a recent completer of the Accelerated Paralegal Program at Centennial College, Camila brings a strong academic foundation and a passion for the legal field to her role.<br/><br/>In her current position, Camila plays a crucial role in conducting legal research, managing case files, and coordinating communications between clients, courts, and other parties. She also assists with scheduling, calendaring important deadlines, and ensuring that all case-related tasks are completed with precision and efficiency. Her ability to adapt to changing priorities and solve problems proactively makes her an invaluable asset to our team.<br/><br/>Camila is currently assisting the team and clients with matters related to Provincial Offences, Landlord and Tenant Board claims, and Small Claims Court issues. Her ability to navigate these areas with care and professionalism ensures that clients receive the support and guidance they need to resolve their legal matters effectively.<br/><br/>Natively fluent in English and Cantonese, and professionally fluent in Mandarin, Camila leverages her exceptional communication abilities to support the firm’s litigation efforts. Whether she’s drafting documents, coordinating with clients, or assisting during hearings, her language skills and cultural understanding help bridge gaps and ensure clear, effective communication.<br/><br/>Outside of work, Camila is passionate about traveling and enjoys exploring new cultures and destinations whenever she can. She is also enjoying learning Muay Thai, where she channels her energy and discipline into mastering the basics of this dynamic martial art. Her adventurous spirit and dedication to personal growth reflect her commitment to excellence in both her professional and personal life.<br/><br/>Camila’s professionalism, reliability, and enthusiasm for the legal profession make her an indispensable part of our team. We look forward to supporting her as she takes the next step toward becoming a licensed paralegal and continues to provide exceptional service to our clients.",
       "image": "/assets/team/camila-su.jpg",
-      "education": ["B.Sc., University of Waterloo"],
+      "education": [
+        "B.Sc. (Hons.) University of Waterloo",
+        "Paralegal Program - Ontario College Graduate Certificate - Centennial College"
+      ],
       "phone": [
         { "number": "905-667-6499", "description": "(Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
@@ -101,12 +104,24 @@
       "position": "Legal Assistant & Paralegal Licensing Candidate",
       "description": "Kathy Liang is a dedicated and driven legal professional who has grown with our law firm, starting as a Legal Intern and now contributing as a valued Legal Assistant. A graduate of Queen’s University with a Bachelor of Arts (Honours), Kathy is currently completing her Accelerated Paralegal Program at Seneca Polytechnic and preparing to write her Paralegal Licensing Exam. She brings a fresh perspective, a strong work ethic, and a passion for the legal field to her role.<br/><br/>Kathy currently assists the team and clients primarily in accident benefits claims and ticketing matters. Her ability to navigate these areas with care and professionalism ensures that clients receive the support and guidance they need to resolve their legal matters effectively.<br/><br/>During her time as a Legal Intern, Kathy demonstrated exceptional research skills, precision, and a commitment to supporting our lawyers and clients. Now, as a Legal Assistant, she plays a key role in organizing case files, managing client communications, and ensuring the smooth operation of our firm. Her enthusiasm for learning and her proactive approach make her an invaluable asset to our team.<br/><br/>Natively fluent in English and Cantonese, and with a solid understanding of Mandarin, Kathy leverages her language skills to communicate effectively with clients and colleagues from diverse backgrounds. Her ability to bridge cultural and linguistic gaps enhances the firm’s ability to provide personalized and effective legal services.<br/><br/>Outside of work, Kathy is a big fan of winter sports, enjoying activities like skiing and snowboarding whenever she can. She also has a knack for scoring concert tickets, often finding herself in the front row at her favorite events. Her adventurous spirit and love for life bring a unique energy to the team.<br/><br/>Kathy’s professionalism, reliability, and enthusiasm for the legal profession make her an indispensable part of our team. We are excited to see her continue to grow and thrive as she embarks on the next chapter of her legal career.",
       "image": "/assets/team/kathy-liang.jpg",
-      "education": ["B.Sc., Queen's University"],
+      "education": ["B.Sc. (Hons.) Queen's University"],
       "phone": [
         { "number": "905-667-6496", "description": "(Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
       ],
       "email": "kliang@luklawpc.com"
+    },
+    {
+      "name": "Noora Lai",
+      "position": "Legal Assistant & Paralegal Licensing Candidate",
+      "description": "Noora Lai is a dedicated and detail-oriented Legal Assistant at our firm. Currently completing the Paralegal Program at Seneca Polytechnic, she brings strong academic training, organizational skills, and a client-focused mindset to her role.<br/><br/>In her position, Noora supports our lawyers across a wide range of matters, assisting with legal research, document drafting, case preparation, and day-to-day client communication. Her ability to quickly absorb complex information and apply it in practice ensures that she provides reliable and efficient support in fast-paced legal environments.<br/><br/>Fluent in Cantonese, Mandarin, and English, Noora is able to serve a diverse clientele and help bridge cultural and language barriers with ease. Her multilingual skills enhance client service and foster trust and understanding in every interaction.<br/><br/>Outside of her professional responsibilities, Noora values mindfulness and activities that promote balance and well-being. She enjoys exploring new cuisines, spending time with friends and family, and finding creative outlets that keep her energized. Her calm and approachable nature not only makes her a supportive teammate, but also helps clients feel comfortable and cared for throughout their legal journey.",
+      "image": "/assets/team/noora-lai.jpg",
+      "education": ["B.A. Hong Kong Shue Yan University"],
+      "phone": [
+        { "number": "905-333-1740", "description": "(Office)" },
+        { "number": "905-849-3583", "description": "(Fax)" }
+      ],
+      "email": "student@luklawpc.com"
     },
     {
       "name": "Mandy Zhao",
@@ -149,12 +164,23 @@
       "position": "Legal Assistant",
       "description": "Venus brings a unique blend of professional experience and a passion for the legal field to her role as a Legal Assistant at our law firm. With a Bachelor of Education from the University of Hong Kong and a background in the banking industry, Venus has honed her skills in organization, client service, and administrative efficiency—qualities that have seamlessly translated into her work supporting our lawyers and clients.<br/><br/>Her educational background has equipped her with exceptional patience and the ability to explain complex concepts in a clear and accessible manner. These skills are invaluable when dealing with clients, as she takes the time to ensure they feel informed and supported throughout their legal journey.<br/><br/>Since joining the firm, Venus has become an integral part of our team, excelling in administrative tasks such as case management, document preparation, and coordinating schedules. She ensures that our operations run smoothly by maintaining organized systems, tracking deadlines, and managing client communications with precision. Her ability to adapt quickly, coupled with her exceptional communication and problem-solving skills, makes her a reliable and resourceful legal assistant.<br/><br/>Fluent in Mandarin, Cantonese, and English, Venus effortlessly communicates with clients and colleagues from diverse cultural and linguistic backgrounds. Her multilingual abilities and cultural sensitivity enhance the firm’s ability to provide personalized and effective legal services.<br/><br/>Outside of work, Venus is an avid fan of winter sports, enjoying activities like skiing and snowboarding whenever she can. Her vibrant personality and passion for life add a unique energy to the team.<br/><br/>Venus’s professionalism, organizational expertise, and dedication to excellence make her an indispensable part of our team.",
       "image": "/assets/team/venus-ng.jpg",
-      "education": ["B.Ed. University of Hong Kong"],
+      "education": ["B.Education University of Hong Kong"],
       "phone": [
         { "number": "905-667-6496", "description": "(Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
       ],
       "email": "vng@luklawpc.com"
+    },
+    {
+      "name": "Yan Wong",
+      "position": "Receptionist",
+      "description": "Yan is the first point of contact at the law firm, ensuring that every client who calls or visits our office is welcomed with professionalism and care. She holds a Bachelor of Arts in Hospitality and Attractions Management from the Open University of Hong Kong (now Hong Kong Metropolitan University), where she developed a strong foundation in client service, organizational management, and cultural communication.<br/><br/>Her background in international hospitality allows her to bring a unique perspective to client interactions, combining warmth and attentiveness with the ability to manage multiple priorities in a fast-paced environment. She plays a vital role in coordinating client communications, maintaining office efficiency, and supporting the legal team so that clients receive the highest level of service from start to finish.<br/><br/>Outside of the office, Yan has always been drawn to active pursuits. A former school basketball player, she continues to channel that same team spirit and discipline into her work and personal life. These days, she balances her love for sports with exploring new restaurants around the city and nurturing a growing interest in badminton. Her energy, passion, and ability to connect with others make her not only a valued colleague but also someone clients feel immediately at ease with.",
+      "image": "/assets/team/yan-wong.jpg",
+      "education": ["B.A., The Open University of Hong Kong"],
+      "phone": [
+        { "number": "905-667-6496", "description": "(Office)" },
+        { "number": "905-849-3583", "description": "(Fax)" }
+      ]
     },
     {
       "name": "Jessica Chen",
@@ -178,18 +204,6 @@
         { "number": "905-667-6499", "description": "(Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
       ]
-    },
-    {
-      "name": "Noora Lai",
-      "position": "Legal Intern",
-      "description": "Noora Lai is a motivated and detail-oriented Legal Intern currently enrolled in the Paralegal Program at Seneca Polytechnic. With a passion for justice and a growing foundation in legal knowledge, Noora brings enthusiasm, diligence, and a client-focused mindset to her role at our firm.<br/><br/>As part of the legal team, Noora supports lawyers and clients in various areas, contributing to legal research, document preparation, and case organization. Her ability to absorb complex information and apply it practically ensures that she consistently delivers reliable support in fast-paced legal settings.<br/><br/>Noora’s multilingual skills—fluent in Cantonese, Mandarin, and English—enable her to communicate effectively with a diverse clientele and bridge cultural gaps with ease. Her language proficiency enhances client service and helps foster trust and clarity in every interaction.<br/><br/>Dedicated to developing her legal expertise, Noora approaches each task with professionalism and a willingness to learn. Her strong organizational skills, proactive attitude, and genuine interest in helping clients navigate their legal matters make her a valuable member of the team.<br/><br/>Outside of her legal pursuits, Noora enjoys mindfulness activities that promote balance and well-being. Her thoughtful approach to both personal growth and professional development brings a calm and grounded energy to the team.<br/><br/>Noora’s professionalism, reliability, and enthusiasm for the legal profession make her an indispensable part of our team.",
-      "image": "/assets/team/noora-lai.jpg",
-      "education": ["B.A. Hong Kong Shue Yan University"],
-      "phone": [
-        { "number": "905-333-1740", "description": "(Office)" },
-        { "number": "905-849-3583", "description": "(Fax)" }
-      ],
-      "email": "student@luklawpc.com"
     }
   ],
   "languages": [
