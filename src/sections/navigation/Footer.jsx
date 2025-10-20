@@ -14,17 +14,12 @@ const FooterHome = () => {
 
   return (
     <Footer container className="pt-12 bg-[#10284e] text-white rounded-none">
-      <div className="w-full max-w-screen-2xl mx-auto md:px-10">
-        <div className="flex justify-between items-center gap-2 md:gap-8">
+      <div className="w-full max-w-screen-2xl mx-auto lg:px-10">
+        <div className="flex items-center justify-center gap-2 md:gap-8">
           <img
             src="assets/home/logo.png"
             alt={footer.logoAlt || 'Company Logo'}
-            className="w-20 md:w-32"
-          />
-          <img
-            src="assets/home/law.png"
-            alt={footer.lawLogoAlt || 'Law Firm Logo'}
-            className="w-24 md:w-40"
+            className="w-32"
           />
         </div>
 
