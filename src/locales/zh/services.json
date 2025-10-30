@@ -614,56 +614,145 @@
       "tabs": [
         {
           "key": "work",
-          "label": "工作签证",
+          "label": "工作（工作签证与 LMIA）",
           "icon": "MdOutlineWorkOutline",
           "content": [
             {
+              "title": "实用且符合雇主需求的工作签证协助",
               "imageSrc": "/assets/services/immigration/work.jpg",
-              "desc": "更多信息即将发布"
+              "desc": "来加拿大工作，或聘用外国员工，都需要正确的签证类别、证据与时机。我们会规划明确的路线（以及备用方案 Plan B），并准备完整、让签证官容易审阅的文件。"
+            },
+            {
+              "title": "我们处理的项目",
+              "desc": "<ul><li>雇主限定的 <strong>封闭式工作签证</strong>（包含 <strong>LMIA</strong> 申请策略与雇主合规）</li><li><strong>开放式工作签证</strong>（配偶 OWP、毕业后 PGWP、过渡期 OWP）</li><li><strong>免 LMIA</strong> 类别（如 CUSMA 专业人士、公司内部调职、重大利益类）</li><li><strong>延签</strong>／身份恢复、<strong>入境口岸</strong> 规划</li></ul>"
+            },
+            {
+              "title": "我们的流程",
+              "desc": "<ol><li>1. 策略与资格检查</li><li>2. 文件规划与时间表</li><li>3. 表格与法律递交</li><li>4. 送件与追踪</li><li>5. 下一步（永久居民选项）</li></ol>"
+            },
+            {
+              "title": "给雇主的服务",
+              "desc": "<ul><li>LMIA 招聘模板、聘用信与合规准备</li><li>稽核与检查的持续支持</li></ul>"
+            },
+            {
+              "title": "常见问题",
+              "desc": "<ul><li>我一定需要 LMIA 吗？不一定。许多类别是免 LMIA 的——我们会确认最佳方案。</li><li>多久可以送件？依角色、薪资、地点与证明而定。我们会在初步评估时给出实际时间。</li></ul>"
+            },
+            {
+              "title": "下一步：预约专属策略咨询",
+              "desc": "<i>我们将确认您的资格、规划时间，并提供明确的文件清单。<br/>以上仅供一般信息参考，非法律建议。移民计划与审理流程会不断变动——请依个案咨询专业意见。</i>"
             }
           ]
         },
         {
           "key": "study",
-          "label": "学生签证",
+          "label": "留学（学生签证与重新申请）",
           "icon": "PiGraduationCap",
           "content": [
             {
+              "title": "以完整计划留学，而非仅凭录取信",
               "imageSrc": "/assets/services/immigration/study.jpg",
-              "desc": "更多信息即将发布"
+              "desc": "强而有力的留学申请，必须让学历背景、课程选择与未来规划紧密相扣。我们帮您建立有说服力的叙事与完善文件——特别适用于曾被拒签的案例。"
+            },
+            {
+              "title": "我们处理的项目",
+              "desc": "<ul><li>首次与<strong>被拒后</strong>重新申请的学生签证（SDS 与非 SDS）</li><li><strong>未成年学生签证</strong>、<strong>实习工作许可（co-op）</strong></li><li><strong>配偶开放工签 + 子女学签／旅签</strong></li><li><strong>延签</strong>与更换学校（DLI）或课程</li></ul>"
+            },
+            {
+              "title": "我们如何协助",
+              "desc": "<ul><li>课程匹配说明与 <strong>留学目的信</strong>（为何选这所学校、为何此时申请）</li><li>资金证明策略（银行流水、资助人、GIC）</li><li>与母国联系 vs. 加拿大长期规划（CEC／省提名后续）</li></ul>"
+            },
+            {
+              "title": "常见问题",
+              "desc": "<ul><li>我被拒签，可以重新申请吗？可以——需先调阅 GCMS 记录，针对问题（目的、资金、旅史、联系）逐一修正。</li><li>我有录取信还需要 IELTS 吗？依国家与申请途径不同；我们会建议是否增加分数有助通过。</li></ul>"
+            },
+            {
+              "title": "下一步：预约专属策略咨询",
+              "desc": "<i>我们将确认您的资格、规划时间，并提供明确的文件清单。<br/>以上仅供一般信息参考，非法律建议。移民计划与审理流程会不断变动——请依个案咨询专业意见。</i>"
             }
           ]
         },
         {
           "key": "visit",
-          "label": "旅游签证",
+          "label": "访问（旅签、eTA、延签与 TRP）",
           "icon": "PiAirplaneInFlight",
           "content": [
             {
+              "title": "让您的访加行程简单又合规",
               "imageSrc": "/assets/services/immigration/visit.jpg",
-              "desc": "更多信息即将发布"
+              "desc": "无论是探亲、商务会议或陪同学生，我们重点放在清晰表格、充足资金证明，以及明确回国计划。"
+            },
+            {
+              "title": "我们处理的项目",
+              "desc": "<ul><li><strong>访客签证（TRV）、eTA、延签、超级签证</strong></li><li><strong>商务访客</strong> 与会议旅游</li><li><strong>TRP</strong>（临时居民许可）— 针对被拒签或不准入境情况</li></ul>"
+            },
+            {
+              "title": "签证官关注的重点（我们会协助处理）",
+              "desc": "<ul><li>旅行目的、资金与母国联系</li><li>旅行记录与以往签证遵守情况</li><li>表格资料准确一致</li></ul>"
+            },
+            {
+              "title": "常见问题",
+              "desc": "<ul><li>超级签证与一般旅签差别？超级签证可让父母／祖父母停留更久——需医疗保险。</li><li>有拒签记录？我们可重新评估、补强证据并重新申请（或考虑 TRP）。</li></ul>"
+            },
+            {
+              "title": "下一步：预约专属策略咨询",
+              "desc": "<i>我们将确认您的资格、规划时间，并提供明确的文件清单。<br/>以上仅供一般信息参考，非法律建议。移民计划与审理流程会不断变动——请依个案咨询专业意见。</i>"
             }
           ]
         },
         {
           "key": "sponsorship",
-          "label": "担保移民",
+          "label": "家庭团聚（Family Class）",
           "icon": "LiaHandsHelpingSolid",
           "content": [
             {
+              "title": "与最重要的人团聚",
               "imageSrc": "/assets/services/immigration/sponsor.jpg",
-              "desc": "更多信息即将发布"
+              "desc": "我们以同理心与明确证据，准备出能清楚呈现真实关系与持续支持的家庭团聚申请。"
+            },
+            {
+              "title": "我们处理的项目",
+              "desc": "<ul><li><strong>配偶／同居伴侣</strong>（境内与境外）+ <strong>开放工签</strong></li><li><strong>受抚养子女</strong>（境内／境外）</li><li><strong>父母与祖父母</strong> 团聚策略与 <strong>超级签证</strong></li><li>关系历程撰写、同居证明、文化背景说明</li></ul>"
+            },
+            {
+              "title": "为何客户选择我们",
+              "desc": "<ul><li>清晰的证据规划（照片、联名账户、宣誓书）</li><li>对签证官友善的文件，事先排除疑虑</li><li>重新申请、复查与 <strong>IAD 上诉／ADR</strong> 协调</li></ul>"
+            },
+            {
+              "title": "常见问题",
+              "desc": "<ul><li>访客身份的配偶可以申请开放工签吗？通常可以，在境内类别下——视个案而定。</li><li>若我们没有联名财务资料？我们会协助准备替代证据与宣誓声明，展现真实关系。</li></ul>"
+            },
+            {
+              "title": "下一步：预约专属策略咨询",
+              "desc": "<i>我们将确认您的资格、规划时间，并提供明确的文件清单。<br/>以上仅供一般信息参考，非法律建议。移民计划与审理流程会不断变动——请依个案咨询专业意见。</i>"
             }
           ]
         },
         {
           "key": "immigration-pathways",
-          "label": "移民途径",
+          "label": "移民途径（永久居民选项）",
           "icon": "GiPathDistance",
           "content": [
             {
+              "title": "选择通往永久居民的正确道路",
               "imageSrc": "/assets/services/immigration/pathway.jpg",
-              "desc": "更多信息即将发布"
+              "desc": "我们会比较各项计划的时间、资格与风险——避免您浪费时间在无法通过的路上。"
+            },
+            {
+              "title": "主要规划的移民途径",
+              "desc": "<ul><li><strong>快速通道（Express Entry）</strong>（CEC、FSW、FST）→ 建立档案、提升分数、e-APR</li><li><strong>安省省提名计划（OINP）</strong> → EOI、NOI 回复、提名</li><li><strong>家庭团聚类</strong> → 请见家庭团聚页面</li><li><strong>商业／企业家工作转移民</strong> 策略（例如 ICT、C11 重大利益）</li><li><strong>PR 卡续卡与居住义务</strong> 规划</li><li><strong>公民申请</strong>（居住天数、知识测验、语言要求）</li></ul>"
+            },
+            {
+              "title": "您将获得",
+              "desc": "<ul><li>书面路线报告，包含 <strong>Plan A/B/C</strong>、文件清单与逐月时间表</li><li>分数提升策略（学历、工作、语言、工作邀请、省提名）</li><li>风险分析与应对（体检／犯罪记录、资料缺口、虚假陈述）</li></ul>"
+            },
+            {
+              "title": "常见问题",
+              "desc": "<ul><li>我的 CRS 分数太低怎么办？可考虑省提名、工作邀请或工作转移民方案。</li><li>我可以从留学／工作身份转为永久居民吗？可以——许多客户都是这样规划的，我们会协助安排身份衔接。</li></ul>"
+            },
+            {
+              "title": "下一步：预约专属策略咨询",
+              "desc": "<i>我们将确认您的资格、规划时间，并提供明确的文件清单。<br/>以上仅供一般信息参考，非法律建议。移民计划与审理流程会不断变动——请依个案咨询专业意见。</i>"
             }
           ]
         }

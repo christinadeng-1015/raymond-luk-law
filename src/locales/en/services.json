@@ -614,56 +614,145 @@
       "tabs": [
         {
           "key": "work",
-          "label": "Work",
+          "label": "Work (Work Permits & LMIA)",
           "icon": "MdOutlineWorkOutline",
           "content": [
             {
+              "title": "Practical, employer-ready work permit support",
               "imageSrc": "/assets/services/immigration/work.jpg",
-              "desc": "More information to come"
+              "desc": "Coming to Canada to work—or hiring a foreign worker—requires the right category, evidence, and timing. We map a clear path (and a Plan B), then prepare a solid, officer-friendly package."
+            },
+            {
+              "title": "What we handle",
+              "desc": "<ul><li>Employer-specific <strong>Closed Work Permits</strong> (including <strong>LMIA</strong> strategies & employer compliance)</li><li><strong>Open Work Permits</strong> (spousal OWP, PGWP, bridging OWP)</li><li><strong>LMIA-exempt</strong> categories (CUSMA professionals, intra-company transfers, significant benefit)</li><li><strong>Extensions</strong> / restoration of status, <strong>port of entry</strong> planning</li></ul>"
+            },
+            {
+              "title": "Our process",
+              "desc": "<ol><li>1. Strategy & eligibility check</li><li>2. Document plan & timelines</li><li>3. Forms + legal submission</li><li>4. Filing & tracking</li><li>5. Next steps (PR options)</li></ol>"
+            },
+            {
+              "title": "For employers",
+              "desc": "<ul><li>LMIA recruitment templates, offer letters, and compliance prep</li><li>Ongoing support for audits & inspections</li></ul>"
+            },
+            {
+              "title": "FAQs",
+              "desc": "<ul><li>Do I always need an LMIA? No. Many categories are LMIA-exempt—we’ll confirm the best route.</li><li>How fast can we file? Depends on role, wage, location, and proof. We’ll give a realistic timeline at intake.</li></ul>"
+            },
+            {
+              "title": "Next step: Book a focused strategy call",
+              "desc": "<i>We’ll confirm eligibility, map timelines, and give you a precise document plan.<br/>General information only; not legal advice. Programs and processing change frequently—get advice for your specific case.</i>"
             }
           ]
         },
         {
           "key": "study",
-          "label": "Study",
+          "label": "Study (Study Permits & Re-applications)",
           "icon": "PiGraduationCap",
           "content": [
             {
+              "title": "Study with a plan, not just an admission letter",
               "imageSrc": "/assets/services/immigration/study.jpg",
-              "desc": "More information to come"
+              "desc": "Strong study plans connect your background, program choice, and future plans in Canada. We build a persuasive narrative and airtight documents—especially after a refusal."
+            },
+            {
+              "title": "What we handle",
+              "desc": "<ul><li>First-time and <strong>refused</strong> study permits (SDS & non-SDS)</li><li><strong>Minor</strong> study permits, <strong>co-op work</strong> authorization</li><li><strong>Spousal OWP + kids’ study/visitor</strong> documents</li><li><strong>Extensions</strong> and changes of DLI/program</li></ul>"
+            },
+            {
+              "title": "How we help",
+              "desc": "<ul><li>Program fit memo & <strong>purpose of study</strong> letter (why this school, why now)</li><li>Funding proof strategy (banking, sponsors, GIC)</li><li>Ties to home country vs. Canadian pathway planning (CEC/PNP later)</li></ul>"
+            },
+            {
+              "title": "FAQs",
+              "desc": "<ul><li>I was refused. Can I re-apply? Yes—after GCMS review and fixing the real issues (purpose, funds, travel, ties).</li><li>Do I need IELTS if I have an LOA? Depends on the stream/country; we’ll advise what strengthens your file.</li></ul>"
+            },
+            {
+              "title": "Next step: Book a focused strategy call",
+              "desc": "<i>We’ll confirm eligibility, map timelines, and give you a precise document plan.<br/>General information only; not legal advice. Programs and processing change frequently—get advice for your specific case.</i>"
             }
           ]
         },
         {
           "key": "visit",
-          "label": "Visit",
+          "label": "Visit (TRV, eTA, Extensions & TRP)",
           "icon": "PiAirplaneInFlight",
           "content": [
             {
+              "title": "Make your visit simple—and admissible",
               "imageSrc": "/assets/services/immigration/visit.jpg",
-              "desc": "More information to come"
+              "desc": "Whether you’re visiting family, attending business meetings, or accompanying a student, we focus on clean forms, credible funds, and a clear plan to leave Canada on time."
+            },
+            {
+              "title": "What we handle",
+              "desc": "<ul><li><strong>Visitor visas (TRV), eTA, extensions, super visas</strong></li><li><strong>Business visitors</strong> and conference travel</li><li><strong>TRP</strong> (Temporary Resident Permit) for prior refusals or inadmissibility</li></ul>"
+            },
+            {
+              "title": "What officers look for (and we address)",
+              "desc": "<ul><li>Purpose of trip, funds & ties to home country</li><li>Travel history and compliance with past visas</li><li>Accurate, consistent answers across forms</li></ul>"
+            },
+            {
+              "title": "FAQs",
+              "desc": "<ul><li>Super Visa vs. regular TRV? Super Visa can allow longer stays for parents/grandparents—medical insurance required.</li><li>Prior refusal? We can reassess, rebuild evidence, and re-apply (or consider TRP).</li></ul>"
+            },
+            {
+              "title": "Next step: Book a focused strategy call",
+              "desc": "<i>We’ll confirm eligibility, map timelines, and give you a precise document plan.<br/>General information only; not legal advice. Programs and processing change frequently—get advice for your specific case.</i>"
             }
           ]
         },
         {
           "key": "sponsorship",
-          "label": "Sponsorship",
+          "label": "Sponsorship (Family Class)",
           "icon": "LiaHandsHelpingSolid",
           "content": [
             {
+              "title": "Reunite with the people who matter most",
               "imageSrc": "/assets/services/immigration/sponsor.jpg",
-              "desc": "More information to come"
+              "desc": "We prepare compassionate, evidence-driven sponsorship files that clearly show genuineness and ongoing support."
+            },
+            {
+              "title": "What we handle",
+              "desc": "<ul><li><strong>Spousal/Common-law</strong> (inland & outland) + <strong>Open Work Permit</strong></li> <li><strong>Dependent children</strong> (inside/outside Canada)</li><li><strong>Parents & Grandparents</strong> sponsorship strategy and <strong>Super Visa</strong></li><li>Relationship history write-ups, cohabitation proof, cultural context</li></ul>"
+            },
+            {
+              "title": "Why clients choose us",
+              "desc": "<ul><li>Clear evidence plan (photos, joint finances, declarations)</li><li>Officer-friendly submissions that pre-empt red flags</li><li>Re-applications, reconsiderations, and <strong>IAD appeals/ADR</strong> coordination when needed</li></ul>"
+            },
+            {
+              "title": "FAQs",
+              "desc": "<ul><li>Is a visitor spouse eligible for an OWP? Often yes, under inland class—case-specific.</li><li>What if we lack joint finances? We build alternate proofs and sworn statements to show genuine commitment.</li></ul>"
+            },
+            {
+              "title": "Next step: Book a focused strategy call",
+              "desc": "<i>We’ll confirm eligibility, map timelines, and give you a precise document plan.<br/>General information only; not legal advice. Programs and processing change frequently—get advice for your specific case.</i>"
             }
           ]
         },
         {
           "key": "immigration-pathways",
-          "label": "Immigration Pathways",
+          "label": "Immigration Pathways (PR Options)",
           "icon": "GiPathDistance",
           "content": [
             {
+              "title": "Choose the right road to Permanent Residence",
               "imageSrc": "/assets/services/immigration/pathway.jpg",
-              "desc": "More information to come"
+              "desc": "We compare timelines, eligibility, and risks across programs—so you don’t waste time on a dead-end route."
+            },
+            {
+              "title": "Core pathways we map",
+              "desc": "<ul><li><strong>Express Entry<strong> (CEC, FSW, FST) → profile, score improvement, e-APR</li><li><strong>Ontario Immigrant Nominee Program (OINP)</strong> → EOI, NOI response, nomination</li><li><strong>Spousal/Family class</strong> → see Sponsorship</li><li><strong>Business/Entrepreneur work-to-PR</strong> strategies (e.g., ICT, C11 significant benefit)</li><li><strong>PR card renewals & Residency Obligation</strong> planning</li><li><strong>Citizenship</strong> applications (residence days, knowledge, language)</li></ul>"
+            },
+            {
+              "title": "What you get",
+              "desc": "<ul><li>Written pathway memo with <strong>Plan A/B/C</strong>, document checklist, and month-by-month timeline</li><li>Points strategy (education, work, language, job offers, provincial streams)</li><li>Risk flags & mitigation (medical/criminality, gaps, misrep issues)</li></ul>"
+            },
+            {
+              "title": "FAQs",
+              "desc": "<ul><li>My CRS is low—now what? Provincial streams, arranged employment, or work-to-PR bridges may be viable.</li><li>Can I switch from study/work to PR? Yes—many clients do. We sequence permits to keep status.</li></ul>"
+            },
+            {
+              "title": "Next step: Book a focused strategy call",
+              "desc": "<i>We’ll confirm eligibility, map timelines, and give you a precise document plan.<br/>General information only; not legal advice. Programs and processing change frequently—get advice for your specific case.</i>"
             }
           ]
         }
