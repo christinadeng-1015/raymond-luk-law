@@ -70,11 +70,11 @@ const Header = () => {
           </h2>
           <div className="pt-4">
             <button
-              onClick={handleDrawerToggle}
+              onClick={() => window.open(slides[currentSlide].url, "_blank")}
               className="text-md border-2 bg-white rounded-lg p-4 font-medium shadow-md transition-transform transform hover:scale-105 hover:shadow-lg mt-6"
               style={{ color: '#10284e' }}
             >
-              {navbar.googleDoc.title}
+              {slides[currentSlide].linkTitle}
             </button>
           </div>
         </div>

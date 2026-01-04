@@ -3,15 +3,21 @@
     "slides": [
       {
         "title": "MODERN ADVOCACY, TIMELESS INTEGRITY",
-        "subtitle": "When life gets complicated, you need clarity and a firm plan. We handle the legal work behind life’s biggest transitions and toughest disputes with speed, precision, and integrity. Book a free consultation—we’ll tell you what matters, what doesn’t, and what to do next."
+        "subtitle": "When life gets complicated, you need clarity and a firm plan. We handle the legal work behind life’s biggest transitions and toughest disputes with speed, precision, and integrity. Book a free consultation—we’ll tell you what matters, what doesn’t, and what to do next.",
+        "linkTitle": "Book consultation",
+        "url": "/contact"
       },
       {
         "title": "PREPARED. RESPONSIVE. RELIABLE",
-        "subtitle": "Great results aren’t luck. They come from careful planning, tight execution, and a team that stays on top of the file. That’s how we work."
+        "subtitle": "Great results aren’t luck. They come from careful planning, tight execution, and a team that stays on top of the file. That’s how we work.",
+        "linkTitle": "Meet the Team",
+        "url": "/team"
       },
       {
         "title": "5-STAR GOOGLE REVIEWS",
-        "subtitle": "Our clients say it best. People choose us for straight answers, strong work, and consistent follow-through. Read what they shared about their experience with our team."
+        "subtitle": "Our clients say it best. People choose us for straight answers, strong work, and consistent follow-through. Read what they shared about their experience with our team.",
+        "linkTitle": "Read Google Reviews",
+        "url": "https://maps.app.goo.gl/7VNSd8i3zfBL1hWz9"
       }
     ],
     "desc": "Legal Excellence, Personalized Service",
