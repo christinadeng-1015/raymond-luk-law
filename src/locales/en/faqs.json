@@ -3,28 +3,28 @@
   "subtitle": "Here are some questions I usually get. Click to toggle the answer!",
   "faqs": [
     {
-      "question": "What type of cases does your law firm handle?",
-      "answer": "Our law firm specializes in various practice areas, including Personal Injury, Family Law, Wills & Estates, Real Estate, and Notary Services. Whether you're facing legal challenges related to accidents, divorce, property transactions, or related disputes, we have the expertise to provide effective representation and guidance."
+      "question": "What areas of law do you handle?",
+      "answer": "We handle a range of everyday legal matters for individuals and families, including <strong>family law, real estate, wills and estates, Landlord and Tenant Board matters,</strong> and <strong>small claims</strong>. We also assist with <strong>select immigration services</strong>.If your issue falls outside our scope, we’ll tell you early and help point you in the right direction when possible."
     },
     {
-      "question": "How much does it cost to hire your law firm?",
-      "answer": "At our law firm, we understand that every case is unique, and we offer flexible fee structures tailored to our clients' needs. During your initial consultation, we'll discuss your case in detail and provide transparent information about our fees and payment options. We strive to ensure that our legal services are accessible and affordable for our clients."
+      "question": "Do you provide services in English and Chinese?",
+      "answer": "Yes. Our team can assist in <strong>English and Chinese</strong> (including <strong>Cantonese and Mandarin</strong>, depending on the staff involved). If language is important for your file, let us know when you contact us so we can match you with the right team member and keep communication clear from day one."
     },
     {
-      "question": "What should I expect during the legal process?",
-      "answer": "The legal process can vary depending on the nature of your case, but we'll guide you through each step and keep you informed at every stage. From gathering evidence and filing paperwork to negotiating settlements or representing you in court, our experienced lawyers will work diligently to achieve the best possible outcome for your case."
+      "question": "How quickly can I get started, and can you help with urgent deadlines?",
+      "answer": "If you have a deadline (a <strong>court date, hearing, closing date</strong>, or <strong>notice with a response deadline</strong>), contact us as soon as possible and tell us the date upfront. We’ll review timing and capacity quickly and let you know what’s realistic.Even if we can’t take it on, we’ll still aim to help you understand your next best step so you’re not stuck."
     },
     {
-      "question": "When is it a good time to make a Will?",
-      "answer": "It's always a good time to make a Will, regardless of your age or current life circumstances. However, certain life events may prompt the need to create or update your Will, such as getting married, having children, buying a home, or experiencing changes in your health or financial situation. Additionally, if you already have a Will, it's crucial to review and update it after significant life changes like divorce or the death of a loved one."
+      "question": "How much does it cost to hire your firm?",
+      "answer": "Fees depend on the type of matter and how complex it is. In general: <ul><li>Some services are often suitable for <strong>flat fees</strong> (commonly in real estate, and certain wills and family law contracts)</li><li>Other matters are typically <strong>hourly</strong> (commonly in family law disputes and litigation)</li></ul><br/>Before you commit, we’ll explain the billing structure clearly, what work is likely required, and how you can control costs."
     },
     {
-      "question": "What should I bring to my initial consultation?",
-      "answer": "For your initial consultation, it's helpful to bring any relevant documents or information related to your case, such as contracts, correspondence, medical records, or financial statements. This allows our lawyer to assess your situation thoroughly and provide informed guidance on the next steps. MOST IMPORTANTLY, please bring two pieces of government identification (Health card is NOT a valid government ID)."
+      "question": "What is a retainer, and how does billing work?",
+      "answer": "A <strong>retainer</strong> is a deposit paid in advance and held in trust. As we work on your file, fees and any applicable expenses are billed against that retainer. We’ll tell you:<ul><li>what the retainer is intended to cover,</li><li>how billing is calculated, and</li><li>when you might need to replenish it (if required).</li></ul>No surprises. If something changes, we communicate early."
     },
     {
-      "question": "What steps should I take if I've been involved in an accident?",
-      "answer": "If you've been involved in an accident, it's essential to prioritize your health and safety first. Seek medical attention for any injuries and report the accident to the appropriate authorities. Additionally, gather as much information as you can about the accident, including the name and contact information of parties involved, and the address where the accident had occurred. Finally, contact our law firm as soon as possible to discuss your legal rights and options for pursuing compensation for your injuries and damages."
+      "question": "Who will work on my file, and how will I receive updates?",
+      "answer": "You’ll have a clear point of contact and a team supporting the file. We prioritize <strong>responsiveness and clarity</strong> —you shouldn’t have to wonder what’s happening.We’ll explain the next steps, what we need from you, and when you can expect updates. If you email or call with a reasonable question, you can expect a timely response, even if the answer is “we’re working on it and here’s where things stand.”"
     }
   ]
 }
