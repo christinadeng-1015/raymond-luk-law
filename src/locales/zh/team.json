@@ -23,7 +23,7 @@
         { "number": "905-333-1740", "description": "分机。103 (办公室)" },
         { "number": "905-849-3583", "description": "(传真)" }
       ],
-      "email": "rluk@luklawpc.com"
+      "email": "rluk@luklaw.ca"
     },
     {
       "name": "Eiman Sharifpour",
@@ -37,10 +37,10 @@
         "安大略省 公证人"
       ],
       "phone": [
-        { "number": "905-291-1802", "description": "(办公室)" },
+        { "number": "905-667-6496", "description": "(办公室)" },
         { "number": "905-849-3583", "description": "(传真)" }
       ],
-      "email": "esharifpour@luklawpc.com",
+      "email": "esharifpour@luklaw.ca",
       "desc": "* 目前通过 Iman Law Professional Corporation 执业"
     },
         {
@@ -53,7 +53,7 @@
         { "number": "905-291-1802", "description": "(办公室)" },
         { "number": "905-849-3583", "description": "(传真)" }
       ],
-      "email": "rtsui@luklawpc.com"
+      "email": "rtsui@luklaw.ca"
     },
     {
       "name": "Raymond Lee",
@@ -67,10 +67,10 @@
         "英国法律助理协会 资深会员"
       ],
       "phone": [
-        { "number": "905-333-1740", "description": "（办公室）" },
+        { "number": "905-667-6496", "description": "（办公室）" },
         { "number": "905-849-3583", "description": "（传真）" }
       ],
-      "email": "rlee@luklawpc.com"
+      "email": "rlee@luklaw.ca"
     },
     {
       "name": "Camila Su",
@@ -86,7 +86,7 @@
         { "number": "905-291-1802", "description": "(办公室)" },
         { "number": "905-849-3583", "description": "(传真)" }
       ],
-      "email": "csu@luklawpc.com"
+      "email": "csu@luklaw.ca"
     },
     {
       "name": "Vivian Chau",
@@ -101,7 +101,7 @@
         { "number": "905-667-6499", "description": "（办公室）" },
         { "number": "905-849-3583", "description": "（传真）" }
       ],
-      "email": "vchau@luklawpc.com"
+      "email": "vchau@luklaw.ca"
     },
     {
       "name": "Christine Guan",
@@ -110,10 +110,10 @@
       "image": "assets/team/christine-guan.jpg",
       "education": ["Seneca Polytechnic 工商管理学士","Algonquin Career Academy 法律助理课程","安大略省律师协会 持牌法律助理（非执业）"],
       "phone": [
-        { "number": "905-291-1802 （", "description": "(办公室)" },
+        { "number": "905-667-6496", "description": "(办公室)" },
         { "number": "905-849-3583", "description": "(传真)" }
       ],
-      "email": "cguan@luklawpc.com"
+      "email": "cguan@luklaw.ca"
     },
     {
       "name": "Venus Ng",
@@ -125,7 +125,7 @@
         { "number": "905-291-1802", "description": "(办公室)" },
         { "number": "905-849-3583", "description": "(传真)" }
       ],
-      "email": "vng@luklawpc.com"
+      "email": "vng@luklaw.ca"
     },
     {
       "name": "Kathy Liang",
@@ -137,7 +137,7 @@
         { "number": "905-291-1802", "description": "(办公室)" },
         { "number": "905-849-3583", "description": "(传真)" }
       ],
-      "email": "kliang@luklawpc.com"
+      "email": "kliang@luklaw.ca"
     },
     {
       "name": "Noora Lai",
@@ -149,7 +149,7 @@
         { "number": "905-333-1740", "description": "（办公室）" },
         { "number": "905-849-3583", "description": "（传真）" }
       ],
-      "email": "nlai@luklawpc.com"
+      "email": "nlai@luklaw.ca"
     },
     {
       "name": "Rachel Chan",
@@ -161,7 +161,7 @@
         { "number": "905-291-1802", "description": "(办公室)" },
         { "number": "905-849-3583", "description": "(传真)" }
       ],
-      "email": "rchan@luklawpc.com"
+      "email": "rchan@luklaw.ca"
     },
     {
       "name": "Yan Wong",
@@ -177,25 +177,14 @@
     {
       "name": "Jessica Chen",
       "position": "社交媒体经理",
-      "description": "Jessica 是我们在线形象背后的创意力量，她以丰富的经验和战略思维担任社交媒体经理一职。Jessica 毕业于加拿大顶尖大学多伦多大学（University of Toronto），并获得荣誉理学士学位，这使她具备了分析思维和细致入微的注意力——这些技能被她应用于创作引人入胜的内容和塑造我们的品牌形象。<br/><br/>凭借多年为不同行业管理和创作内容的经验，Jessica 致力于提升 Luk Law 的社交媒体影响力。她深刻理解数字趋势，并擅长与受众互动，确保我们的在线平台反映出事务所的专业精神和对卓越的追求。<br/><br/>在业余时间，Jessica 是一位才华横溢的艺术家，她创作手绘宠物肖像，这些作品在 Instagram 上广受欢迎。她还为她心爱的宠物兔子 Timbit 运营了一个非常受欢迎的 Instagram 页面，展示了她的创造力和对动物的热爱。她的艺术天赋和讲故事的激情在她的个人项目和事务所的工作中都得到了充分体现。<br/><br/>Jessica 的创新方法，加上她在建立有意义的在线联系方面的专注，使她成为我们团队中不可或缺的一员。",
+      "description": "Jessica 是我们在线形象背后的创意力量，她以丰富的经验和战略思维担任社交媒体经理一职。Jessica 毕业于加拿大顶尖大学多伦多大学（University of Toronto），并获得荣誉理学士学位，这使她具备了分析思维和细致入微的注意力——这些技能被她应用于创作引人入胜的内容和塑造我们的品牌形象。<br/><br/>凭借多年为不同行业管理和创作内容的经验，Jessica 致力于提升 Luk & Associates 的社交媒体影响力。她深刻理解数字趋势，并擅长与受众互动，确保我们的在线平台反映出事务所的专业精神和对卓越的追求。<br/><br/>在业余时间，Jessica 是一位才华横溢的艺术家，她创作手绘宠物肖像，这些作品在 Instagram 上广受欢迎。她还为她心爱的宠物兔子 Timbit 运营了一个非常受欢迎的 Instagram 页面，展示了她的创造力和对动物的热爱。她的艺术天赋和讲故事的激情在她的个人项目和事务所的工作中都得到了充分体现。<br/><br/>Jessica 的创新方法，加上她在建立有意义的在线联系方面的专注，使她成为我们团队中不可或缺的一员。",
       "image": "/assets/team/jessica-chen.jpg",
       "education": ["多伦多大学（荣誉）理学士"],
       "phone": [
         { "number": "905-291-1802", "description": "(办公室)" },
         { "number": "905-849-3583", "description": "(传真)" }
       ],
-      "email": "jchen@luklawpc.com"
-    },
-    {
-      "name": "Angela Tsui",
-      "position": "财务经理",
-      "description": "Angela Tsui 是一位技术娴熟且注重细节的专业人士，作为财务经理，她在管理事务所的财务运营方面发挥着至关重要的作用。Angela 拥有超过 10 年的银行业经验，为她的角色带来了丰富的财务管理、预算编制和客户账户管理知识。她的专业知识确保事务所的财务系统顺利高效地运行。<br/><br/>Angela 的职责包括监督应付和应收账款、准备财务报告以及管理工资单和账单流程。她在所有财务事务中保持准确性和组织性的能力使她成为团队中不可或缺的一员。<br/><br/>Angela 精通英语、粤语和普通话，能够轻松地与来自不同背景的客户、同事和供应商沟通。她的多语言能力和文化理解力增强了事务所提供无缝财务服务的能力。<br/><br/>在工作之外，Angela 是一位自豪的幼儿母亲，在平衡职业责任的同时享受着为人父母的喜悦与挑战。她对家庭的投入以及管理多重优先事项的能力反映了她的强烈职业道德和组织能力。<br/><br/>Angela 的专业精神、可靠性和对卓越的追求使她成为我们团队中不可或缺的一员。",
-      "image": "/assets/team/angela-tsui.jpg",
-      "education": ["格林威治大学文学士（荣誉）"],
-      "phone": [
-        { "number": "905-291-1802", "description": "(办公室)" },
-        { "number": "905-849-3583", "description": "(传真)" }
-      ]
+      "email": "jchen@luklaw.ca"
     },
     {
       "name": "Ella Zhang",
@@ -206,7 +195,8 @@
       "phone": [
         { "number": "905-667-6499", "description": "（办公室）" },
         { "number": "905-849-3583", "description": "（传真）" }
-      ]
+      ],
+      "email": "ezhang@luklaw.ca"
     }
   ],
   "languages": [

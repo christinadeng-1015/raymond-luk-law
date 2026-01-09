@@ -23,7 +23,7 @@
         { "number": "905-333-1740", "description": "Ext.168 (Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
       ],
-      "email": "rluk@luklawpc.com"
+      "email": "rluk@luklaw.ca"
     },
     {
       "name": "Eiman Sharifpour",
@@ -37,10 +37,10 @@
         "Notary Public, Province of Ontario"
       ],
       "phone": [
-        { "number": "905-291-1802", "description": "(Office)" },
+        { "number": "905-667-6496", "description": "(Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
       ],
-      "email": "esharifpour@luklawpc.com",
+      "email": "esharifpour@luklaw.ca",
       "desc": "* Currently practicing through Iman Law Professional Corporation"
     },
     {
@@ -53,7 +53,7 @@
         { "number": "905-667-6499", "description": "(Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
       ],
-      "email": "rtsui@luklawpc.com"
+      "email": "rtsui@luklaw.ca"
     },
     {
       "name": "Raymond Lee",
@@ -67,10 +67,10 @@
         "Fellow, Institute of Paralegals (United Kingdom)"
       ],
       "phone": [
-        { "number": "905-333-1740", "description": "(Office)" },
+        { "number": "905-667-6496", "description": "(Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
       ],
-      "email": "rlee@luklawpc.com"
+      "email": "rlee@luklaw.ca"
     },
     {
       "name": "Camila Su",
@@ -86,7 +86,7 @@
         { "number": "905-667-6499", "description": "(Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
       ],
-      "email": "csu@luklawpc.com"
+      "email": "csu@luklaw.ca"
     },
     {
       "name": "Vivian Chau",
@@ -101,7 +101,7 @@
         { "number": "905-667-6499", "description": "(Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
       ],
-      "email": "vchau@luklawpc.com"
+      "email": "vchau@luklaw.ca"
     },
     {
       "name": "Christine Guan",
@@ -110,10 +110,10 @@
       "image": "/assets/team/christine-guan.jpg",
       "education": ["Bachelor of Business Administration, Seneca Polytechnic", "Paralegal Program, Algonquin Career Academy", "Licensed Paralegal, Law Society of Ontario (non-practising)"],
       "phone": [
-        { "number": "905-538-5176", "description": "(Office)" },
+        { "number": "905-667-6496", "description": "(Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
       ],
-      "email": "cguan@luklawpc.com"
+      "email": "cguan@luklaw.ca"
     },
     {
       "name": "Venus Ng",
@@ -125,7 +125,7 @@
         { "number": "905-667-6496", "description": "(Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
       ],
-      "email": "vng@luklawpc.com"
+      "email": "vng@luklaw.ca"
     },
     {
       "name": "Kathy Liang",
@@ -137,7 +137,7 @@
         { "number": "905-667-6496", "description": "(Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
       ],
-      "email": "kliang@luklawpc.com"
+      "email": "kliang@luklaw.ca"
     },
     {
       "name": "Noora Lai",
@@ -149,7 +149,7 @@
         { "number": "905-333-1740", "description": "(Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
       ],
-      "email": "nlai@luklawpc.com"
+      "email": "nlai@luklaw.ca"
     },
     {
       "name": "Rachel Chan",
@@ -161,7 +161,7 @@
         { "number": "905-667-6499", "description": "(Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
       ],
-      "email": "rchan@luklawpc.com"
+      "email": "rchan@luklaw.ca"
     },
     {
       "name": "Yan Wong",
@@ -177,25 +177,14 @@
     {
       "name": "Jessica Chen",
       "position": "Social Media Manager",
-      "description": "Jessica is the creative force behind our online presence, bringing a wealth of experience and a strategic approach to her role as Social Media Manager. A graduate of the University of Toronto, Canada’s top university, Jessica earned her Bachelor of Science (Honours), which has equipped her with analytical thinking and a meticulous attention to detail—skills that she applies to crafting compelling content and building our brand identity.<br/><br/>With many years of experience managing and creating content for various professions, Jessica is dedicated to enhancing Luk Law’s social media presence. She has a keen understanding of digital trends and a talent for engaging audiences, ensuring that our online platforms reflect the firm’s professionalism and commitment to excellence.<br/><br/>In her spare time, Jessica is a talented artist who creates hand-painted pet portraits, which have gained significant popularity on Instagram. She also runs an extremely popular Instagram page for her pet rabbit, Timbit, showcasing her creativity and love for animals. Her artistic flair and passion for storytelling shine through in both her personal projects and her work for the firm.<br/><br/>Jessica’s innovative approach, combined with her dedication to building meaningful connections online, makes her an invaluable part of our team.",
+      "description": "Jessica is the creative force behind our online presence, bringing a wealth of experience and a strategic approach to her role as Social Media Manager. A graduate of the University of Toronto, Canada’s top university, Jessica earned her Bachelor of Science (Honours), which has equipped her with analytical thinking and a meticulous attention to detail—skills that she applies to crafting compelling content and building our brand identity.<br/><br/>With many years of experience managing and creating content for various professions, Jessica is dedicated to enhancing Luk & Associates’s social media presence. She has a keen understanding of digital trends and a talent for engaging audiences, ensuring that our online platforms reflect the firm’s professionalism and commitment to excellence.<br/><br/>In her spare time, Jessica is a talented artist who creates hand-painted pet portraits, which have gained significant popularity on Instagram. She also runs an extremely popular Instagram page for her pet rabbit, Timbit, showcasing her creativity and love for animals. Her artistic flair and passion for storytelling shine through in both her personal projects and her work for the firm.<br/><br/>Jessica’s innovative approach, combined with her dedication to building meaningful connections online, makes her an invaluable part of our team.",
       "image": "/assets/team/jessica-chen.jpg",
       "education": ["Bachelor of Science (Honours), University of Toronto"],
       "phone": [
         { "number": "905-667-6496", "description": "(Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
       ],
-      "email": "jchen@luklawpc.com"
-    },
-    {
-      "name": "Angela Tsui",
-      "position": "Accounts Manager",
-      "description": "Angela Tsui is a highly skilled and detail-oriented professional who plays a vital role in managing the financial operations of our firm as the Accounts Manager. With over 10 years of experience in the banking industry, Angela brings a wealth of knowledge in financial management, budgeting, and client accounts to her role. Her expertise ensures that the firm’s financial systems run smoothly and efficiently.<br/><br/>Angela’s responsibilities include overseeing accounts payable and receivable, preparing financial reports, and managing payroll and billing processes. Her ability to maintain accuracy and organization in all financial matters makes her an indispensable part of our team.<br/><br/>Fluent in English, Cantonese, and Mandarin, Angela effortlessly communicates with clients, colleagues, and vendors from diverse backgrounds. Her multilingual abilities and cultural understanding enhance the firm’s ability to provide seamless financial services.<br/><br/>Outside of work, Angela is a proud mom to her toddler, balancing her professional responsibilities with the joys and challenges of parenthood. Her dedication to her family and her ability to manage multiple priorities reflect her strong work ethic and organizational skills.<br/><br/>Angela’s professionalism, reliability, and commitment to excellence make her an invaluable asset to our team.",
-      "image": "/assets/team/angela-tsui.jpg",
-      "education": ["B.A. (Hons.) University of Greenwich"],
-      "phone": [
-        { "number": "905-667-6499", "description": "(Office)" },
-        { "number": "905-849-3583", "description": "(Fax)" }
-      ]
+      "email": "jchen@luklaw.ca"
     },
     {
       "name": "Ella Zhang",
@@ -206,7 +195,8 @@
       "phone": [
         { "number": "905-667-6499", "description": "(Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
-      ]
+      ],
+      "email": "ezhang@luklaw.ca"
     }
   ],
   "languages": [
