@@ -96,9 +96,9 @@
         "icon": "AiOutlineMail"
       },
       {
-        "key": "career",
-        "label": "Career",
-        "url": "/career",
+        "key": "careers",
+        "label": "Careers",
+        "url": "/careers",
         "icon": "AiOutlineSolution"
       },
       {

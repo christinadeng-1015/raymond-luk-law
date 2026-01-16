@@ -1,6 +1,6 @@
 {
   "navbar": {
-    "title": "Raymond Luk & Associates",
+    "title": "Luk & Associates",
     "subtitle": "Legal Excellence, Personalized Service",
     "about": [{ "icon": "<FaAward />" }],
     "links": [
@@ -127,7 +127,7 @@
     "quickLinksTitle": "Quick Links",
     "disclaimerBtn": "Disclaimer",
     "awardTooltip": "Best in Markham for Family Law",
-    "corporation": "© 2026 by Raymond Luk & Associates Professional Corporation",
+    "corporation": "© 2026 by Luk & Associates Professional Corporation",
     "disclaimer": "The information obtained on this site is not intended to be legal advice. Please consult a legal professional for advice regarding your individual situation. Please be advised that contacting the firm does not create a solicitor-client nor a legal relationship of any kind. Please do not send any confidential information until such relationship has been established and a retainer has been signed. Luk & Associates is a trade name of Raymond Luk Professional Corporation and does not denote a partnership",
     "contacts": [
       { "link": "tel:9056676496", "title": "English: 905-667-6496" },
@@ -143,7 +143,7 @@
       { "link": "/services", "title": "Services" },
       { "link": "/resources", "title": "Resources" },
       { "link": "/contact", "title": "Contact" },
-      { "link": "/career", "title": "Careers" }
+      { "link": "/careers", "title": "Careers" }
     ],
     "socialLinks": [
       { "icon": "instagram", "link": "https://www.instagram.com/luklaw_to/" },

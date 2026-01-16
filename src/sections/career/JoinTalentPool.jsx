@@ -143,23 +143,19 @@ export default function JoinTalentPool() {
   };
 
   return (
-    <section className="mx-auto max-w-5xl px-6 py-20">
-      <div className="max-w-3xl">
-        <h2 className="text-3xl font-semibold text-gray-900">
-          {t('joinThePool.page.title')}
-        </h2>
-        <p className="mt-2 text-gray-700">
-          {t('joinThePool.page.description')}
-        </p>
-        <div className="mt-6">
-          <button
-            type="button"
-            onClick={() => setOpen(true)}
-            className="rounded-lg bg-[#10284e] px-6 py-3 font-semibold text-white"
-          >
-            {t('joinThePool.page.cta')}
-          </button>
-        </div>
+    <section className="mx-auto px-6 py-20">
+      <h2 className="text-3xl font-semibold text-gray-900">
+        {t('joinThePool.page.title')}
+      </h2>
+      <p className="mt-2 text-gray-700">{t('joinThePool.page.description')}</p>
+      <div className="mt-6">
+        <button
+          type="button"
+          onClick={() => setOpen(true)}
+          className="rounded-lg bg-[#10284e] px-6 py-3 font-semibold text-white"
+        >
+          {t('joinThePool.page.cta')}
+        </button>
       </div>
 
       <Modal

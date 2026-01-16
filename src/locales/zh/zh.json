@@ -51,7 +51,7 @@
     "quickLinksTitle": "快速链接",
     "disclaimerBtn": "免责声明",
     "awardTooltip": "万锦最佳家庭律师",
-    "corporation": "© 2026 Raymond Luk & Associates Professional Corporation 版权所有",
+    "corporation": "© 2026 Luk & Associates Professional Corporation 版权所有",
     "disclaimer": "本网站上获得的信息并非法律建议。请咨询法律专业人士，获取有关您个人情况的建议。请注意，联系该公司并不构成律师与客户之间的关系，也不会建立任何类型的法律关系。在建立这种关系并签署聘用书之前，请勿发送任何机密信息。Luk & Associates 为 Raymond Luk Professional Corporation 使用的商业名称，并不代表或构成任何合伙关系",
     "contacts": [
       { "link": "tel:9056676496", "title": "English: 905-667-6496" },
@@ -67,7 +67,7 @@
       { "link": "/services", "title": "法律服务" },
       { "link": "/resources", "title": "法律资源" },
       { "link": "/contact", "title": "联系我们" },
-      { "link": "/career", "title": "招聘信息" }
+      { "link": "/careers", "title": "招聘信息" }
     ],
     "socialLinks": [
       { "icon": "instagram", "link": "https://www.instagram.com/luklaw_to/" },

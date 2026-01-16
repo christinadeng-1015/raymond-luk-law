@@ -74,7 +74,7 @@ const CareerContainer = () => {
           dangerouslySetInnerHTML={{ __html: t('accessibilityStatement') }}
         />
 
-        <h2 className="text-2xl font-semibold text-center">
+        <h2 className="text-2xl font-semibold text-center pt-10">
           {t('privacyNoticeTitle')}
         </h2>
         <div
