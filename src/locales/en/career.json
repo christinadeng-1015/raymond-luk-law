@@ -1,0 +1,258 @@
+{
+  "title": "Career Opportunities",
+  "subtitle": "Careers at Luk & Associates",
+  "tagline": "<strong>Build your legal career with a team that moves fast—and teaches you well.</strong><br/>Luk & Associates is a growing, multi-practice law firm in <strong>Markham, Ontario</strong>. We serve clients across <strong>family law, real estate, wills and estates, small claims/LTB, and immigration.</strong><br/>If you’re sharp, reliable, and want meaningful responsibility, you’ll fit in here.",
+  "howToApplyTitle": "How to Apply",
+  "howToApplyDescription": "Email your application to <a href=\"mailto:info@luklaw.ca\" class=\"underline\">info@luklaw.ca</a> with the subject line: <strong>“Role – Your Name”</strong> Or apply through the form below.",
+  "whatToExpectTitle": "What you can expect here",
+  "whatToExpectSteps": "<ul><li><strong>High standards, strong support.</strong> We train you, but we expect ownership and accuracy.</li><li><strong>Real client exposure.</strong> You’ll learn practical legal workflows and professional judgment.</li><li><strong>Clear growth path.</strong> Intern → assistant/clerk → senior support → paralegal track (where applicable).</li><li><strong>A modern team.</strong> Systems, templates, checklists, and a culture of improving how we work.</li><li><strong>Bilingual environment.</strong> Many of our clients communicate in Chinese.</li></ul>",
+  "languagesRequiredTitle": "Language requirement (all roles)",
+  "languagesRequiredDescription": "Because a significant portion of our clients communicate in Chinese, <strong>fluency in English and either Mandarin or Cantonese is required for all roles.</strong>",
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "faqs": [
+      {
+        "question": "Do you require bilingual ability for every role?",
+        "answer": "Yes. <strong>Fluency in English and either Mandarin or Cantonese (spoken and written) is required for all roles</strong> due to client needs."
+      },
+      {
+        "question": "Is the work remote/hybrid?",
+        "answer": "Most roles are primarily <strong>in-office in Markham</strong> due to training, teamwork, and file handling."
+      },
+      {
+        "question": "Do you train?",
+        "answer": "Yes—especially for interns and junior roles. We provide guidance and systems, but we expect you to be coachable and precise."
+      },
+      {
+        "question": "What makes someone successful here?",
+        "answer": "Reliability, attention to detail, clean communication, and the ability to execute without constant supervision."
+      }
+    ]
+  },
+  "accessibilityStatementTitle": "Accessibility + Equal Opportunity",
+  "accessibilityStatement": "We are committed to a respectful and inclusive workplace. <strong>Accommodations are available upon request</strong> throughout the hiring process in accordance with applicable Ontario legislation.",
+  "privacyNoticeTitle": "Privacy",
+  "privacyNotice": "Information submitted through applications is used only for recruitment and hiring purposes.",
+  "openRoles": {
+    "title": "Open Roles",
+    "roles": [
+      {
+        "id": "legal-intern",
+        "title": "Legal Intern",
+        "employmentType": ["Summer", "Part-Time", "Co-op"],
+        "bestFor": "Undergraduate students or pre-law candidates exploring a legal career.",
+        "responsibilities": [
+          "File organization and client intake support",
+          "Drafting simple correspondence and organizing supporting documents",
+          "Guided legal research tasks",
+          "Assisting with admin workflows and internal checklists",
+          "Other duties assigned"
+        ],
+        "fitIf": [
+          "Detail-oriented and responsible with deadlines",
+          "Comfortable learning new systems quickly",
+          "Strong written communication and professionalism",
+          "Able to work in-office in Markham"
+        ],
+        "requirements": "<strong>Required:</strong> Fluent English and Fluent <strong>Mandarin or Cantonese</strong>",
+        "success90Days": [
+          "Can follow firm systems without reminders",
+          "Work needs minimal correction",
+          "Asks smart questions, then executes"
+        ]
+      },
+      {
+        "id": "legal-assistant",
+        "title": "Legal Assistant",
+        "employmentType": ["Full-Time"],
+        "bestFor": "Organized, client-friendly people who can handle volume without dropping details.",
+        "responsibilities": [
+          "Client communication, intake coordination, and scheduling",
+          "File maintenance and document management",
+          "Drafting routine correspondence and forms using templates",
+          "Supporting lawyers and paralegals with deadline tracking and follow-ups",
+          "Keeping files moving efficiently and accurately"
+        ],
+        "fitIf": [
+          "Calm under pressure and fast with details",
+          "Strong with Word and PDF tools and file organization",
+          "Confident on the phone and in professional email communication",
+          "Able to manage multiple files at once"
+        ],
+        "requirements": "<strong>Required:</strong> Fluent English and Fluent <strong>Mandarin or Cantonese</strong>",
+        "success90Days": [
+          "Runs intake and follow-ups smoothly",
+          "Catches issues before they become problems",
+          "Reliably moves files forward every day"
+        ]
+      },
+      {
+        "id": "law-clerk",
+        "title": "Law Clerk",
+        "employmentType": ["Full-Time"],
+        "bestFor": "Candidates who enjoy process, documents, and getting things clean and correct.",
+        "responsibilities": [
+          "Drafting and preparing documents using firm precedents",
+          "Managing correspondence, file materials, and client updates",
+          "Supporting workflows across practice areas as needed",
+          "Maintaining accurate file notes and timelines",
+          "Coordinating with clients and third parties"
+        ],
+        "fitIf": [
+          "Meticulous, consistent, and comfortable with process-heavy work",
+          "Strong at proofreading and spotting inconsistencies",
+          "Able to learn new practice areas quickly",
+          "Confident communicating with clients and third parties"
+        ],
+        "requirements": "<strong>Required:</strong> Fluent English and Fluent <strong>Mandarin or Cantonese</strong>",
+        "success90Days": [
+          "Drafting is accurate and formatted properly",
+          "Files are organized, trackable, and deadline-safe",
+          "The team can trust the work product"
+        ]
+      },
+      {
+        "id": "licensed-paralegal",
+        "title": "Licensed Paralegal",
+        "employmentType": ["Full-Time"],
+        "bestFor": "Independent operators who can manage files, clients, and timelines with minimal handholding.",
+        "responsibilities": [
+          "Managing Small Claims and LTB matters (and other areas as applicable)",
+          "Client intake, strategy support, and file progression",
+          "Drafting, filing, and attending hearings where applicable",
+          "Negotiation support and settlement-driven file management",
+          "Maintaining organized notes, deadlines, and case plans"
+        ],
+        "fitIf": [
+          "Licensed and in good standing",
+          "Professional and confident with client communication",
+          "Extremely detail-driven with deadlines and evidence organization",
+          "Able to move files proactively without waiting to be told"
+        ],
+        "requirements": "<strong>Required:</strong> Fluent English and Fluent <strong>Mandarin or Cantonese</strong>",
+        "success90Days": [
+          "Runs files with clear plans and consistent client updates",
+          "Matters are organized, deadline-safe, and moving forward",
+          "Improves systems, not just follows them"
+        ]
+      }
+    ]
+  },
+  "howToApply": {
+    "title": "How to Apply",
+    "intro": "Please include the following when submitting your application.",
+    "steps": [
+      {
+        "title": "Resume (PDF)",
+        "description": "Attach a clean, updated resume in PDF format."
+      },
+      {
+        "title": "Short cover note (5–10 sentences)",
+        "description": "Clearly answer the prompts below so we understand your fit and goals.",
+        "prompts": [
+          "Why this role?",
+          "Why Luk & Associates?",
+          "What are you working toward in the next 1–2 years?"
+        ]
+      },
+      {
+        "title": "Language confirmation",
+        "description": "Confirm whether you are fluent in Mandarin or Cantonese, and your comfort level with spoken and written communication."
+      },
+      {
+        "title": "Optional but helpful",
+        "description": "These items are not required, but can help us better understand your background.",
+        "items": [
+          "Writing sample",
+          "LinkedIn profile",
+          "Earliest start date and weekly availability"
+        ]
+      }
+    ]
+  },
+  "joinThePool": {
+    "page": {
+      "title": "Join Our Talent Pool",
+      "description": "If you do not see a current opening that matches your background, you may still submit your information for future consideration.",
+      "cta": "Submit Expression of Interest"
+    },
+    "modal": {
+      "title": "Talent Pool Application",
+      "subtitle": "Please complete the form below. Information submitted will be reviewed for future opportunities as they arise.",
+      "disclaimer": "Information submitted is collected solely for recruitment and hiring purposes and will be handled in accordance with applicable privacy obligations.",
+      "cancel": "Cancel",
+      "submit": "Submit Application"
+    },
+    "defaults": {
+      "language": "Mandarin",
+      "comfortSpoken": "Comfortable",
+      "comfortWritten": "Comfortable"
+    },
+    "roles": [
+      { "id": "intern", "label": "Intern" },
+      { "id": "assistant", "label": "Assistant" },
+      { "id": "clerk", "label": "Clerk" },
+      { "id": "paralegal", "label": "Paralegal" }
+    ],
+    "languages": ["Mandarin", "Cantonese"],
+    "comfortOptions": ["Comfortable", "Somewhat comfortable", "Basic"],
+    "sections": {
+      "contact": {
+        "title": "Contact Information"
+      },
+      "roles": {
+        "title": "Role Interests",
+        "subtitle": "Select all roles you would consider"
+      },
+      "language": {
+        "title": "Language Ability",
+        "subtitle": "Required for client-facing communication"
+      },
+      "availability": {
+        "title": "Availability (Optional)"
+      },
+      "materials": {
+        "title": "Application Materials"
+      }
+    },
+    "fields": {
+      "name": {
+        "label": "Full name"
+      },
+      "email": {
+        "label": "Email address"
+      },
+      "phone": {
+        "label": "Phone number"
+      },
+      "language": {
+        "label": "Primary language"
+      },
+      "comfortSpoken": {
+        "label": "Spoken proficiency"
+      },
+      "comfortWritten": {
+        "label": "Written proficiency"
+      },
+      "earliestStart": {
+        "label": "Earliest start date"
+      },
+      "availability": {
+        "label": "Weekly availability",
+        "placeholder": "e.g., 10–15 hours per week"
+      },
+      "resume": {
+        "label": "Resume (PDF)",
+        "accept": ".pdf"
+      },
+      "message": {
+        "label": "Short message",
+        "placeholder": "Briefly describe your interest and relevant experience."
+      },
+      "linkedIn": {
+        "label": "LinkedIn (optional)",
+        "placeholder": "https://linkedin.com/in/..."
+      }
+    }
+  }
+}

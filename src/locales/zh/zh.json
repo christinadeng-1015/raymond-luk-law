@@ -66,7 +66,8 @@
       { "link": "/team", "title": "我们的团队" },
       { "link": "/services", "title": "法律服务" },
       { "link": "/resources", "title": "法律资源" },
-      { "link": "/contact", "title": "联系我们" }
+      { "link": "/contact", "title": "联系我们" },
+      { "link": "/career", "title": "招聘信息" }
     ],
     "socialLinks": [
       { "icon": "instagram", "link": "https://www.instagram.com/luklaw_to/" },

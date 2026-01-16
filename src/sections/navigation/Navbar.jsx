@@ -12,6 +12,7 @@ import {
   AiOutlineTeam,
   AiOutlineMenu,
   AiOutlineMail,
+  AiOutlineSolution,
 } from 'react-icons/ai';
 
 const Nav = () => {
@@ -40,6 +41,7 @@ const Nav = () => {
       AiOutlineRead: <AiOutlineRead size={24} className="text-white" />,
       AiOutlineAudit: <AiOutlineAudit size={24} className="text-white" />,
       AiOutlineMail: <AiOutlineMail size={24} className="text-white" />,
+      AiOutlineSolution: <AiOutlineSolution size={24} className="text-white" />,
     }),
     []
   );

@@ -96,6 +96,12 @@
         "icon": "AiOutlineMail"
       },
       {
+        "key": "career",
+        "label": "招聘信息",
+        "url": "/career",
+        "icon": "AiOutlineSolution"
+      },
+      {
         "key": "language",
         "label": "语言",
         "icon": "AiOutlineTranslation",

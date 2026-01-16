@@ -14,6 +14,7 @@ import ResourcesPage from "./pages/Resources";
 import TeamPage from "./pages/Team";
 import LawPage from "./pages/Law";
 import ContactPage from "./pages/Contact";
+import CareerPage from "./pages/Career";
 import LanguageRedirect from './components/LanguageRedirect';
 
 const App = () => {
@@ -42,6 +43,7 @@ const App = () => {
         <Route path="/team" element={<TeamPage />} />
         <Route path="/resources" element={<ResourcesPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/career" element={<CareerPage />} />
         <Route path="/real-estate-law" element={<LawPage />} />
         <Route path="/family-law" element={<LawPage />} />
         <Route path="/personal-injury-law" element={<LawPage />} />

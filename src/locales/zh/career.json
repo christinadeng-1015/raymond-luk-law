@@ -1,0 +1,254 @@
+{
+  "title": "职业机会",
+  "subtitle": "Luk & Associates 招聘信息",
+  "tagline": "<strong>在一个高效、严谨、愿意真正培养你的团队中，开启你的法律职业生涯。</strong><br/>Luk & Associates 是一家位于 <strong>安省 Markham</strong> 的成长型综合性律师事务所，业务涵盖 <strong>家庭法、房地产、遗嘱与遗产、小额索赔 / LTB 事务及移民相关服务。</strong><br/>如果你做事认真、可靠，并希望承担有意义的责任，这里会非常适合你。",
+  "howToApplyTitle": "如何申请",
+  "howToApplyDescription": "请将申请材料发送至 <a href=\"mailto:info@luklaw.ca\" class=\"underline\">info@luklaw.ca</a>，邮件标题请注明：<strong>“职位 – 姓名”</strong>，或通过下方表格提交申请。",
+  "whatToExpectTitle": "你可以期待什么",
+  "whatToExpectSteps": "<ul><li><strong>高标准，强支持。</strong> 我们会提供培训，但也期望你对工作质量和准确性负责。</li><li><strong>真实的客户接触。</strong> 你将学习实际法律工作流程和专业判断能力。</li><li><strong>清晰的发展路径。</strong> 实习生 → 助理 / Clerk → 高级支持岗位 → Paralegal 发展方向（如适用）。</li><li><strong>现代化团队。</strong> 系统化流程、模板、清单，以及持续优化工作的文化。</li><li><strong>双语环境。</strong> 许多客户使用中文沟通。</li></ul>",
+  "languagesRequiredTitle": "语言要求（所有职位）",
+  "languagesRequiredDescription": "由于相当一部分客户使用中文沟通，<strong>所有职位均要求具备英语能力，并能流利使用普通话或粤语。</strong>",
+  "faq": {
+    "title": "常见问题",
+    "faqs": [
+      {
+        "question": "所有职位都要求双语能力吗？",
+        "answer": "是的。由于客户需求，<strong>所有职位均要求英语流利，并能使用普通话或粤语进行口头及书面沟通。</strong>"
+      },
+      {
+        "question": "是否支持远程或混合办公？",
+        "answer": "大多数岗位需要 <strong>在 Markham 办公室工作</strong>，以便培训、协作及文件处理。"
+      },
+      {
+        "question": "是否提供培训？",
+        "answer": "是的，尤其针对实习生及初级岗位。我们提供指导和系统支持，但希望你具备学习能力和执行力。"
+      },
+      {
+        "question": "什么样的人更容易在这里成功？",
+        "answer": "可靠、注重细节、沟通清晰，并且能够在较少监督下完成工作的候选人。"
+      }
+    ]
+  },
+  "accessibilityStatementTitle": "无障碍与平等机会",
+  "accessibilityStatement": "我们致力于营造一个尊重、多元和包容的工作环境。<strong>在招聘过程中，如有需要，可根据安省相关法律提供合理便利。</strong>",
+  "privacyNoticeTitle": "隐私声明",
+  "privacyNotice": "通过申请提交的信息仅用于招聘及录用目的。",
+  "openRoles": {
+    "title": "当前开放职位",
+    "roles": [
+      {
+        "id": "legal-intern",
+        "title": "法律实习生",
+        "employmentType": ["暑期", "兼职", "Co-op"],
+        "bestFor": "本科在读或计划从事法律职业的候选人。",
+        "responsibilities": [
+          "文件整理及客户信息录入支持",
+          "起草简单函件及整理辅助文件",
+          "在指导下完成法律研究任务",
+          "协助行政流程及内部清单",
+          "完成分配的其他工作"
+        ],
+        "fitIf": [
+          "注重细节，能按时完成任务",
+          "能快速学习新系统",
+          "具备良好的书面表达和职业素养",
+          "可在 Markham 办公室工作"
+        ],
+        "requirements": "<strong>必需：</strong> 英语流利，并能流利使用 <strong>普通话或粤语</strong>",
+        "success90Days": [
+          "能独立遵循事务所流程",
+          "工作成果基本无需修改",
+          "能提出有价值的问题并迅速执行"
+        ]
+      },
+      {
+        "id": "legal-assistant",
+        "title": "法律助理",
+        "employmentType": ["全职"],
+        "bestFor": "善于组织、擅长客户沟通、能够在高工作量下保持准确性的人。",
+        "responsibilities": [
+          "客户沟通、信息收集及日程安排",
+          "文件维护及档案管理",
+          "使用模板起草日常函件及表格",
+          "协助律师及 Paralegal 跟进截止日期",
+          "确保案件流程高效、准确推进"
+        ],
+        "fitIf": [
+          "在压力下保持冷静、细致",
+          "熟练使用 Word、PDF 及文件管理工具",
+          "电话及邮件沟通专业得体",
+          "可同时处理多个案件"
+        ],
+        "requirements": "<strong>必需：</strong> 英语流利，并能流利使用 <strong>普通话或粤语</strong>",
+        "success90Days": [
+          "客户接待及跟进流程顺畅",
+          "能提前发现潜在问题",
+          "每日稳定推进案件进展"
+        ]
+      },
+      {
+        "id": "law-clerk",
+        "title": "Law Clerk",
+        "employmentType": ["全职"],
+        "bestFor": "喜欢流程、文件及高准确度工作的候选人。",
+        "responsibilities": [
+          "使用事务所模板起草及准备法律文件",
+          "管理往来函件、档案材料及客户更新",
+          "根据需要支持不同业务领域",
+          "维护准确的文件记录和时间线",
+          "与客户及第三方协调沟通"
+        ],
+        "fitIf": [
+          "做事严谨、一致性强",
+          "擅长校对和发现细节问题",
+          "能快速学习新的业务领域",
+          "与客户及第三方沟通自信"
+        ],
+        "requirements": "<strong>必需：</strong> 英语流利，并能流利使用 <strong>普通话或粤语</strong>",
+        "success90Days": [
+          "文件起草准确、格式规范",
+          "案件文件清晰、有序、无遗漏",
+          "团队能够信任你的工作成果"
+        ]
+      },
+      {
+        "id": "licensed-paralegal",
+        "title": "持牌 Paralegal",
+        "employmentType": ["全职"],
+        "bestFor": "能够独立管理案件、客户及时间线的专业人士。",
+        "responsibilities": [
+          "管理小额索赔及 LTB 案件（及其他相关领域）",
+          "客户接待、策略支持及案件推进",
+          "文件起草、提交及必要时出庭",
+          "协助谈判及以和解为导向的案件管理",
+          "维护清晰的记录、截止日期及案件计划"
+        ],
+        "fitIf": [
+          "持有有效执照并保持良好状态",
+          "客户沟通专业、自信",
+          "对细节和截止日期极度重视",
+          "能主动推进案件，而非被动等待指示"
+        ],
+        "requirements": "<strong>必需：</strong> 英语流利，并能流利使用 <strong>普通话或粤语</strong>",
+        "success90Days": [
+          "案件计划清晰、客户沟通稳定",
+          "案件有序推进、无期限风险",
+          "能优化系统，而不仅是遵循系统"
+        ]
+      }
+    ]
+  },
+  "howToApply": {
+    "title": "申请步骤",
+    "intro": "提交申请时，请包含以下内容。",
+    "steps": [
+      {
+        "title": "简历（PDF）",
+        "description": "请附上一份清晰、最新的 PDF 格式简历。"
+      },
+      {
+        "title": "简短求职说明（5–10 句话）",
+        "description": "请清晰回答以下问题，以便我们了解你的匹配度和职业目标。",
+        "prompts": [
+          "为什么申请这个职位？",
+          "为什么选择 Luk & Associates？",
+          "你未来 1–2 年的职业目标是什么？"
+        ]
+      },
+      {
+        "title": "语言能力确认",
+        "description": "请说明你是否流利使用普通话或粤语，以及你的口语和书写熟练程度。"
+      },
+      {
+        "title": "非必需但有帮助的材料",
+        "description": "以下材料非强制要求，但有助于我们更全面地了解你。",
+        "items": ["写作样本", "LinkedIn 主页", "最早可入职时间及每周可工作时数"]
+      }
+    ]
+  },
+  "joinThePool": {
+    "page": {
+      "title": "加入人才库",
+      "description": "如果目前没有与你背景匹配的职位，欢迎提交信息以供未来岗位参考。",
+      "cta": "提交意向申请"
+    },
+    "modal": {
+      "title": "人才库申请",
+      "subtitle": "请填写以下表格。所提交的信息将在未来有合适机会时进行审核。",
+      "disclaimer": "所提交的信息仅用于招聘及录用目的，并将根据相关隐私法规妥善处理。",
+      "cancel": "取消",
+      "submit": "提交申请"
+    },
+    "defaults": {
+      "language": "普通话",
+      "comfortSpoken": "熟练",
+      "comfortWritten": "熟练"
+    },
+    "roles": [
+      { "id": "intern", "label": "实习生" },
+      { "id": "assistant", "label": "助理" },
+      { "id": "clerk", "label": "Clerk" },
+      { "id": "paralegal", "label": "Paralegal" }
+    ],
+    "languages": ["普通话", "粤语"],
+    "comfortOptions": ["熟练", "一般熟练", "基础"],
+    "sections": {
+      "contact": {
+        "title": "联系方式"
+      },
+      "roles": {
+        "title": "意向职位",
+        "subtitle": "请选择你愿意考虑的职位"
+      },
+      "language": {
+        "title": "语言能力",
+        "subtitle": "客户沟通所必需"
+      },
+      "availability": {
+        "title": "时间安排（可选）"
+      },
+      "materials": {
+        "title": "申请材料"
+      }
+    },
+    "fields": {
+      "name": {
+        "label": "姓名"
+      },
+      "email": {
+        "label": "电子邮箱"
+      },
+      "phone": {
+        "label": "电话号码"
+      },
+      "language": {
+        "label": "主要语言"
+      },
+      "comfortSpoken": {
+        "label": "口语熟练程度"
+      },
+      "comfortWritten": {
+        "label": "书写熟练程度"
+      },
+      "earliestStart": {
+        "label": "最早可入职日期"
+      },
+      "availability": {
+        "label": "每周可工作时间",
+        "placeholder": "例如：每周 10–15 小时"
+      },
+      "resume": {
+        "label": "简历（PDF）",
+        "accept": ".pdf"
+      },
+      "message": {
+        "label": "简短说明",
+        "placeholder": "请简要说明你的兴趣和相关经验。"
+      },
+      "linkedIn": {
+        "label": "LinkedIn（可选）",
+        "placeholder": "https://linkedin.com/in/..."
+      }
+    }
+  }
+}

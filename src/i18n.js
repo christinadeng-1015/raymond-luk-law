@@ -8,6 +8,7 @@ import teamEN from './locales/en/team.json';
 import faqEN from './locales/en/faqs.json';
 import contactEN from './locales/en/contact.json';
 import resourcesEN from './locales/en/resources.json';
+import careerEN from './locales/en/career.json';
 
 import mainZH from './locales/zh/zh.json';
 import navbarZH from './locales/zh/navbar.json';
@@ -16,6 +17,7 @@ import teamZH from './locales/zh/team.json';
 import faqZH from './locales/zh/faqs.json';
 import contactZH from './locales/zh/contact.json';
 import resourcesZH from './locales/zh/resources.json';
+import  careerZH from './locales/zh/career.json';
 
 const savedLanguage = localStorage.getItem('i18nextLng') || 'en';
 
@@ -28,6 +30,7 @@ const resources = {
     faqs: faqEN,
     contact: contactEN,
     resources: resourcesEN,
+    career: careerEN,
   },
   zh: {
     main: mainZH,
@@ -37,6 +40,7 @@ const resources = {
     faqs: faqZH,
     contact: contactZH,
     resources: resourcesZH,
+    career: careerZH,
   },
 };
 

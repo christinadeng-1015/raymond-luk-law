@@ -142,7 +142,8 @@
       { "link": "/team", "title": "Our Team" },
       { "link": "/services", "title": "Services" },
       { "link": "/resources", "title": "Resources" },
-      { "link": "/contact", "title": "Contact" }
+      { "link": "/contact", "title": "Contact" },
+      { "link": "/career", "title": "Careers" }
     ],
     "socialLinks": [
       { "icon": "instagram", "link": "https://www.instagram.com/luklaw_to/" },
