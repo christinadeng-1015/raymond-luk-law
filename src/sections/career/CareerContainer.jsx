@@ -61,6 +61,26 @@ const CareerContainer = () => {
 
       <HowToApply />
 
+      <section className="flex justify-center py-8">
+        <a
+          href="https://forms.gle/APksMKmFwDW3GcxP9"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            inline-flex items-center justify-center
+            px-8 py-3
+            text-sm font-medium
+            text-white
+            bg-[#10284e]
+            hover:bg-gray-800
+            transition
+            rounded-md
+          "
+        >
+          {t('joinUsButton')}
+        </a>
+      </section>
+
       <hr className="my-4 h-px bg-gray-500 opacity-50" />
 
       <FAQs />
