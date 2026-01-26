@@ -12,9 +12,9 @@ export default function Video() {
       data-aos-duration="1200"
       data-aos-easing="ease-in-out"
     >
-      <h1 className="text-2xl text-center text-gray-800 pb-8 md:pb-16 font-semibold">
+      <h2 className="text-2xl text-center text-gray-800 pb-8 md:pb-16 font-semibold">
         {t('videoTitle')}
-      </h1>
+      </h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {videos.map((video, index) => (
           <InstagramEmbed

@@ -10,7 +10,7 @@ const CareerContainer = () => {
   return (
     <div className="max-w-7xl mx-auto px-6 py-16 space-y-12 text-left">
       <header className="space-y-4">
-        <h1 className="text-3xl font-semibold text-center">{t('subtitle')}</h1>
+        <h2 className="text-3xl font-semibold text-center">{t('subtitle')}</h2>
         <div
           className="text-base leading-relaxed text-gray-700 text-left"
           dangerouslySetInnerHTML={{ __html: t('tagline') }}

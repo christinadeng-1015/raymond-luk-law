@@ -15,6 +15,7 @@ import TeamPage from './pages/Team';
 import LawPage from './pages/Law';
 import ContactPage from './pages/Contact';
 import CareerPage from './pages/Career';
+import NotFound from './pages/NotFound';
 import LanguageRedirect from './components/LanguageRedirect';
 
 const App = () => {
@@ -53,6 +54,7 @@ const App = () => {
         <Route path="/other-services" element={<LawPage />} />
         <Route path="/landlord-tenant-board" element={<LawPage />} />
         <Route path="/small-claims-court" element={<LawPage />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <FooterHome />
     </Router>

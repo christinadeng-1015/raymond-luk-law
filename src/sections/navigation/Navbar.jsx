@@ -73,7 +73,7 @@ const Nav = () => {
         <Navbar.Brand href="/" className="flex-shrink-0 flex flex-start">
           <img
             src="assets/home/logo.png"
-            alt={'logo'}
+            alt="Luk & Associates logo"
             className="w-24 object-contain"
           />
         </Navbar.Brand>
@@ -158,20 +158,23 @@ const Nav = () => {
                       className="w-1/2 md:w-1/4 lg:w-1/6 lg:opacity-90"
                     >
                       <div className="max-h-72 overflow-y-auto lg:max-h-none lg:overflow-visible text-center">
-                      {item.dropdown.map((subItem) => (
-                        <Dropdown.Item
-                          href={subItem.url}
-                          key={subItem.key}
-                          className="text-base tracking-tighter font-medium"
-                          onClick={() => {
-                            if (subItem.key === 'en' || subItem.key === 'zh') {
-                              changeLanguage(subItem.key);
-                            }
-                          }}
-                        >
-                          <span className="ml-4">{subItem.label}</span>
-                        </Dropdown.Item>
-                      ))}
+                        {item.dropdown.map((subItem) => (
+                          <Dropdown.Item
+                            href={subItem.url}
+                            key={subItem.key}
+                            className="text-base tracking-tighter font-medium"
+                            onClick={() => {
+                              if (
+                                subItem.key === 'en' ||
+                                subItem.key === 'zh'
+                              ) {
+                                changeLanguage(subItem.key);
+                              }
+                            }}
+                          >
+                            <span className="ml-4">{subItem.label}</span>
+                          </Dropdown.Item>
+                        ))}
                       </div>
                     </Dropdown>
                   ) : (

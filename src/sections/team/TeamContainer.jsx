@@ -12,8 +12,8 @@ const TeamContainer = () => {
   return (
     <div className="max-w-screen-2xl mx-auto px-4 py-16">
       <h3 className="text-3xl text-center text-gray-900 mb-2 font-semibold pb-16 text-black">
-          {t('title')}
-        </h3>
+        {t('title')}
+      </h3>
       <div
         className="flex relative flex-col max-w-screen-2xl mx-auto"
         id="team"

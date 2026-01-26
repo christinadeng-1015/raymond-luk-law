@@ -59,7 +59,7 @@ export function Service() {
             {service.icon && (
               <img
                 src={`assets/icons/${service.icon}`}
-                alt="service-icon"
+                alt={`${service.title} service icon`}
                 className="w-24 h-24"
               />
             )}

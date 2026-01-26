@@ -45,9 +45,9 @@ const TeamCard = ({ member }) => {
         className="flex items-center pt-0 md:pt-6"
       >
         <Modal.Header className="shadow-lg bg-[#10284e]">
-          <h1 className="text-white text-xl font-bold uppercase tracking-wide">
+          <p className="text-white text-xl font-bold uppercase tracking-wide">
             {heading.meet} {member.name.split(' ')[0]}
-          </h1>
+          </p>
         </Modal.Header>
         <Modal.Body className="p-6 bg-gray-50 shadow-xl rounded-lg max-h-[90vh] overflow-y-auto w-full">
           <div className="flex flex-col md:flex-row items-start md:items-center md:shadow-md md:bg-white md:p-6 md:rounded-lg">

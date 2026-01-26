@@ -50,7 +50,7 @@ export default function InstagramEmbed({ mediaUrl, thumbnailUrl, title }) {
         >
           <img
             src={thumbnailUrl}
-            alt="Video thumbnail"
+            alt={`Thumbnail for ${title}`}
             className="h-full w-full object-cover rounded-lg"
             style={{
               opacity: 0.5,
