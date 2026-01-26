@@ -19,6 +19,7 @@ const TeamCard = ({ member }) => {
       <button
         onClick={() => setOpenModal(!openModal)}
         rel="noopener noreferrer"
+        aria-label={`View details for ${member.name}`}
       >
         <div className="relative text-center w-64 h-64 md:w-52 md:h-52 lg:w-64 lg:h-64 mx-auto">
           <img

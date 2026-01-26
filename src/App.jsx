@@ -34,7 +34,9 @@ const App = () => {
 
   return (
     <Router>
-      <Navbar />
+      <header>
+        <Navbar />
+      </header>
       <Routes>
         <Route path="/en" element={<LanguageRedirect lang="en" />} />
         <Route path="/zh" element={<LanguageRedirect lang="zh" />} />
@@ -56,7 +58,9 @@ const App = () => {
         <Route path="/small-claims-court" element={<LawPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <FooterHome />
+      <footer>
+        <FooterHome />
+      </footer>
     </Router>
   );
 };

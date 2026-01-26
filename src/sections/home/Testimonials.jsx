@@ -8,7 +8,7 @@ const Testimonials = () => {
   const reviews = t('reviews', { returnObjects: true });
 
   return (
-    <div
+    <section
       className="w-full h-5/6 md:h-2/3"
       data-aos="zoom-out"
       data-aos-duration="1200"
@@ -51,7 +51,7 @@ const Testimonials = () => {
           </div>
         ))}
       </Carousel>
-    </div>
+    </section>
   );
 };
 

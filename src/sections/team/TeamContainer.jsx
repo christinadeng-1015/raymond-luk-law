@@ -10,7 +10,7 @@ const TeamContainer = () => {
   const languages = t('languages', { returnObjects: true });
 
   return (
-    <div className="max-w-screen-2xl mx-auto px-4 py-16">
+    <section className="max-w-screen-2xl mx-auto px-4 py-16">
       <h3 className="text-3xl text-center text-gray-900 mb-2 font-semibold pb-16 text-black">
         {t('title')}
       </h3>
@@ -28,7 +28,7 @@ const TeamContainer = () => {
         </div>
         <TeamLanguage languages={languages} language={heading.language} />
       </div>
-    </div>
+    </section>
   );
 };
 

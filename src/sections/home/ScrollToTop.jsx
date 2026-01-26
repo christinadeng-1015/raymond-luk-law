@@ -6,6 +6,7 @@ const ScrollToTop = () => {
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className="p-3 animate-bounce text-gray-500 hover:text-gray-900"
+        aria-label="Scroll to top"
       >
         <RxDoubleArrowUp size={24} />
       </button>

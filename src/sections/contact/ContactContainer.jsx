@@ -9,7 +9,7 @@ const ContactContainer = () => {
   const { t } = useTranslation('contact');
   const title = t('title', { returnObjects: true });
   return (
-    <div id="contact" className="mx-auto">
+    <section id="contact" className="mx-auto">
       <div className="relative w-full h-64 md:h-1/2">
         <img
           src="assets/banner/contact.jpg"
@@ -32,7 +32,7 @@ const ContactContainer = () => {
         <OfficeImageCarousel />
         <OfficeHourTable />
       </div>
-    </div>
+    </section>
   );
 };
 

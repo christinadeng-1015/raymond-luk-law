@@ -6,7 +6,7 @@ const FAQs = () => {
   const faqs = t('faqs', { returnObjects: true });
 
   return (
-    <div
+    <section
       className="flex flex-col items-center bg-white pt-16 lg:pb-8 max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8"
       id="faqs"
     >
@@ -20,14 +20,10 @@ const FAQs = () => {
         data-aos-easing="ease-in-out"
       >
         {faqs.map((faq, index) => (
-          <FAQ
-            key={index}
-            faq={faq}
-            isOpen={false}
-          />
+          <FAQ key={index} faq={faq} isOpen={false} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

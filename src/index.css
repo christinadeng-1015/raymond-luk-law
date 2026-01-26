@@ -48,7 +48,8 @@ body {
   overflow-x: hidden;
 }
 
-strong, b {
+strong,
+b {
   font-weight: 700;
 }
 
@@ -123,6 +124,13 @@ img {
 .btn.white:hover {
   background: transparent;
   border-color: var(--color-white);
+}
+
+/* FOCUS STYLES FOR ACCESSIBILITY */
+button:focus,
+a:focus {
+  outline: 2px solid #10284e;
+  outline-offset: 2px;
 }
 
 .btn.primary {
