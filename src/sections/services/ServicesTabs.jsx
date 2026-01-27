@@ -110,7 +110,7 @@ export function ServicesTabs({ tabs }) {
                   >
                     {content.imageSrc && (
                       <div className="flex-shrink-0 w-full md:w-2/5">
-                        <img
+                        <img loading="lazy"
                           src={content.imageSrc}
                           alt={content.title}
                           className="rounded-lg h-auto object-cover max-h-96 md:px-8"

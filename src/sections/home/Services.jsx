@@ -21,7 +21,7 @@ const Services = () => {
               className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-2 flex flex-col sm:flex-col lg:flex-row items-stretch"
             >
               <div className="relative w-full lg:w-4/6 p-3 h-56 lg:h-60">
-                <img
+                <img loading="lazy"
                   src={service.imageSrc}
                   alt={service.title}
                   className="w-full h-full object-cover rounded-lg"

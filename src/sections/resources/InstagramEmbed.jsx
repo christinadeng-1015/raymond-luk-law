@@ -48,7 +48,7 @@ export default function InstagramEmbed({ mediaUrl, thumbnailUrl, title }) {
             zIndex: 10,
           }}
         >
-          <img
+          <img loading="lazy"
             src={thumbnailUrl}
             alt={`Thumbnail for ${title}`}
             className="h-full w-full object-cover rounded-lg"

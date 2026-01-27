@@ -8,7 +8,7 @@ const ResourceContainer = () => {
   return (
     <div>
       <div className="relative w-full h-64 md:h-1/2">
-        <img
+        <img loading="lazy"
           src="assets/banner/resources.jpg"
           alt="Legal resources and information from Luk & Associates"
           className="absolute inset-0 w-full h-full object-cover"

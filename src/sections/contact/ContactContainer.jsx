@@ -11,7 +11,7 @@ const ContactContainer = () => {
   return (
     <section id="contact" className="mx-auto">
       <div className="relative w-full h-64 md:h-1/2">
-        <img
+        <img loading="lazy"
           src="assets/banner/contact.jpg"
           alt="Contact Luk & Associates for legal services"
           className="absolute inset-0 w-full h-full object-cover"

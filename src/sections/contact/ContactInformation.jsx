@@ -46,7 +46,7 @@ const ContactInformation = () => {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.0923667192606!2d-79.34076942381263!3d43.85391417109322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d5fbcc8d262d%3A0xafb130d5c8fcdacb!2sRaymond%20Luk%20Law%20Professional%20Corporation!5e0!3m2!1sen!2sca!4v1734198035841!5m2!1sen!2sca"
           className="w-full h-60 md:h-80 rounded-md"
           allowFullScreen
-          loading="lazy"
+         
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>

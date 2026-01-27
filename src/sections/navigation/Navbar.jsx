@@ -71,7 +71,7 @@ const Nav = () => {
         } ${visible ? 'translate-y-0' : '-translate-y-full'} ease-in-out overflow-visible`}
       >
         <Navbar.Brand href="/" className="flex-shrink-0 flex flex-start">
-          <img
+          <img loading="lazy"
             src="assets/home/logo.png"
             alt="Luk & Associates logo"
             className="w-24 object-contain"

@@ -15,7 +15,7 @@ export function Service() {
   return (
     <div className="mb-8">
       <div className="relative w-full h-64 md:h-1/2">
-        <img
+        <img loading="lazy"
           src="assets/banner/law.jpg"
           alt={service ? service.title : 'Service Banner'}
           className="absolute inset-0 w-full h-full object-cover"
@@ -57,7 +57,7 @@ export function Service() {
         <div className="p-16 shadow-lg hidden md:flex items-center bg-[#10284e]">
           <div className="w-1/4 h-full rounded-l-lg flex justify-end items-center">
             {service.icon && (
-              <img
+              <img loading="lazy"
                 src={`assets/icons/${service.icon}`}
                 alt={`${service.title} service icon`}
                 className="w-24 h-24"

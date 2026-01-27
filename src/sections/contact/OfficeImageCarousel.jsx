@@ -41,7 +41,7 @@ const OfficeImageCarousel = () => {
       >
         {officeImages.concat(officeImages).map((image, index) => (
           <div key={index} className="flex-shrink-0 w-96 h-96 cursor-pointer">
-            <img
+            <img loading="lazy"
               src={image}
               alt={`Office ${index + 1}`}
               className="w-full h-full object-cover rounded-lg shadow-lg"
