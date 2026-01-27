@@ -17,8 +17,6 @@ export function Service() {
       <div className="relative w-full h-64 md:h-1/2">
         <img
           loading="lazy"
-          width="1200"
-          height="400"
           src="assets/banner/law.jpg"
           alt={service ? service.title : 'Service Banner'}
           className="absolute inset-0 w-full h-full object-cover"
@@ -62,8 +60,6 @@ export function Service() {
             {service.icon && (
               <img
                 loading="lazy"
-                width="96"
-                height="96"
                 src={`assets/icons/${service.icon}`}
                 alt={`${service.title} service icon`}
                 className="w-24 h-24"

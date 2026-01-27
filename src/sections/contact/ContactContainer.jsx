@@ -13,8 +13,6 @@ const ContactContainer = () => {
       <div className="relative w-full h-64 md:h-1/2">
         <img
           loading="lazy"
-          width="1200"
-          height="400"
           src="assets/banner/contact.jpg"
           alt="Contact Luk & Associates for legal services"
           className="absolute inset-0 w-full h-full object-cover"

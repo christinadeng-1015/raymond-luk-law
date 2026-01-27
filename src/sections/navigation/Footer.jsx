@@ -18,8 +18,6 @@ const FooterHome = () => {
         <div className="flex items-center justify-center gap-2 md:gap-8">
           <img
             loading="lazy"
-            width="128"
-            height="54"
             src="assets/home/logo.png"
             alt={footer.logoAlt || 'Company Logo'}
             className="w-32"

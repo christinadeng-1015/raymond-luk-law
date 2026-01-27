@@ -43,8 +43,6 @@ const OfficeImageCarousel = () => {
           <div key={index} className="flex-shrink-0 w-96 h-96 cursor-pointer">
             <img
               loading="lazy"
-              width="384"
-              height="384"
               src={image}
               alt={`Office ${index + 1}`}
               className="w-full h-full object-cover rounded-lg shadow-lg"

@@ -50,8 +50,6 @@ export default function InstagramEmbed({ mediaUrl, thumbnailUrl, title }) {
         >
           <img
             loading="lazy"
-            width="600"
-            height="400"
             src={thumbnailUrl}
             alt={`Thumbnail for ${title}`}
             className="h-full w-full object-cover rounded-lg"
@@ -75,7 +73,6 @@ export default function InstagramEmbed({ mediaUrl, thumbnailUrl, title }) {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 100"
             width="80"
-            height="80"
             fill="white"
             style={{
               opacity: 0.9,

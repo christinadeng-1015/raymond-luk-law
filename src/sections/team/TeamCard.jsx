@@ -24,8 +24,6 @@ const TeamCard = ({ member }) => {
         <div className="relative text-center w-64 h-64 md:w-52 md:h-52 lg:w-64 lg:h-64 mx-auto">
           <img
             loading="lazy"
-            width="256"
-            height="256"
             src={member.image}
             alt={member.name}
             className="w-full h-full rounded-full object-cover"
@@ -58,8 +56,6 @@ const TeamCard = ({ member }) => {
             <div className="w-full md:w-1/3 flex justify-center items-center mb-6 md:mb-0">
               <img
                 loading="lazy"
-                width="256"
-                height="256"
                 className="w-64 h-64 rounded-full shadow-lg border-4 border-blue-500 object-cover"
                 src={member.image}
                 alt={member.name}
