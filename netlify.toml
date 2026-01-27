@@ -5,7 +5,51 @@
 [build.environment]
   NODE_VERSION = "18"
 
+[[plugins]]
+  package = "@netlify/plugin-prerender"
+
+[[plugins.inputs.routes]]
+  path = "/"
+[[plugins.inputs.routes]]
+  path = "/services"
+[[plugins.inputs.routes]]
+  path = "/team"
+[[plugins.inputs.routes]]
+  path = "/resources"
+[[plugins.inputs.routes]]
+  path = "/contact"
+[[plugins.inputs.routes]]
+  path = "/careers"
+[[plugins.inputs.routes]]
+  path = "/real-estate-law"
+[[plugins.inputs.routes]]
+  path = "/family-law"
+[[plugins.inputs.routes]]
+  path = "/personal-injury-law"
+[[plugins.inputs.routes]]
+  path = "/wills-and-estates"
+[[plugins.inputs.routes]]
+  path = "/corporate-law"
+[[plugins.inputs.routes]]
+  path = "/immigration-law"
+[[plugins.inputs.routes]]
+  path = "/other-services"
+[[plugins.inputs.routes]]
+  path = "/landlord-tenant-board"
+[[plugins.inputs.routes]]
+  path = "/small-claims-court"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+  
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
