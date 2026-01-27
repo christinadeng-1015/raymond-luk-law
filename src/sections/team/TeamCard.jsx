@@ -22,12 +22,13 @@ const TeamCard = ({ member }) => {
         aria-label={`View details for ${member.name}`}
       >
         <div className="relative text-center w-64 h-64 md:w-52 md:h-52 lg:w-64 lg:h-64 mx-auto">
-          <img loading="lazy"
-           
+          <img
+            loading="lazy"
+            width="256"
+            height="256"
             src={member.image}
             alt={member.name}
             className="w-full h-full rounded-full object-cover"
-           
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full">
             <span className="text-white text-lg font-semibold">
@@ -55,12 +56,13 @@ const TeamCard = ({ member }) => {
         <Modal.Body className="p-6 bg-gray-50 shadow-xl rounded-lg max-h-[90vh] overflow-y-auto w-full">
           <div className="flex flex-col md:flex-row items-start md:items-center md:shadow-md md:bg-white md:p-6 md:rounded-lg">
             <div className="w-full md:w-1/3 flex justify-center items-center mb-6 md:mb-0">
-              <img loading="lazy"
-               
+              <img
+                loading="lazy"
+                width="256"
+                height="256"
                 className="w-64 h-64 rounded-full shadow-lg border-4 border-blue-500 object-cover"
                 src={member.image}
                 alt={member.name}
-               
               />
             </div>
 

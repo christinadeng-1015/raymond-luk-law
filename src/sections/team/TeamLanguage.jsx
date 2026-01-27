@@ -19,12 +19,13 @@ const TeamLanguage = ({ languages, language }) => {
             className="flex flex-col items-center w-32 sm:w-36 text-center p-4"
           >
             <div className="flex justify-center items-center w-20 h-20 mb-4 rounded-full bg-gray-200 overflow-hidden">
-              <img loading="lazy"
-               
+              <img
+                loading="lazy"
+                width="40"
+                height="40"
                 src={lang.flag}
                 alt={`${lang.name} flag`}
                 className="w-10 h-10 object-cover text-white"
-               
               />
             </div>
             <span className="text-gray-800 font-medium text-sm">
