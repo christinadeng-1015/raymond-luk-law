@@ -70,6 +70,7 @@ const FooterHome = () => {
               className="w-full h-48 md:h-64 rounded-md shadow-lg"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
+              loading="lazy"
             ></iframe>
           </div>
 
