@@ -60,7 +60,7 @@ const Nav = () => {
       setScrolled(currentScrollPos > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos]);
 
@@ -72,12 +72,14 @@ const Nav = () => {
         } ${visible ? 'translate-y-0' : '-translate-y-full'} ease-in-out overflow-visible`}
       >
         <Navbar.Brand href="/" className="flex-shrink-0 flex flex-start">
-          <OptimizedImage
-            src="assets/home/logo.png"
-            alt="Luk & Associates logo"
-            originalFormat="png"
-            className="w-24 object-contain"
-          />
+          <div className="w-24 aspect-[4/1]">
+            <OptimizedImage
+              src="assets/home/logo.png"
+              alt="Luk & Associates logo"
+              originalFormat="png"
+              className="object-contain"
+            />
+          </div>
         </Navbar.Brand>
 
         <button
