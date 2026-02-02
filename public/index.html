@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luk & Associates ｜ Law firm in Markham, ON</title>
-    <!-- GOOGLE FONT (montserrat) -->
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -14,23 +14,60 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <div id="overlays"></div>
     <div id="root"></div>
-    <script defer src="//www.instagram.com/embed.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script
-      defer
-      src="https://www.googletagmanager.com/gtag/js?id=G-BXSE5Z9183"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
 
-      gtag('config', 'G-BXSE5Z9183');
+    <script>
+      (function () {
+        var GA_ID = 'G-BXSE5Z9183';
+
+        function loadGtag() {
+          if (window.__gtagLoaded) return;
+          window.__gtagLoaded = true;
+
+          var s = document.createElement('script');
+          s.async = true;
+          s.src =
+            'https://www.googletagmanager.com/gtag/js?id=' +
+            encodeURIComponent(GA_ID);
+          document.head.appendChild(s);
+
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            window.dataLayer.push(arguments);
+          }
+          window.gtag = gtag;
+
+          gtag('js', new Date());
+          gtag('config', GA_ID, { anonymize_ip: true, send_page_view: true });
+        }
+
+        function hasInstagramEmbed() {
+          return (
+            document.querySelector('blockquote.instagram-media') ||
+            document.querySelector('iframe[src*="instagram.com"]')
+          );
+        }
+
+        function loadInstagram() {
+          if (window.__igLoaded) return;
+          window.__igLoaded = true;
+
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.instagram.com/embed.js';
+          document.body.appendChild(s);
+        }
+
+        window.addEventListener('load', function () {
+          setTimeout(function () {
+            loadGtag();
+            if (hasInstagramEmbed()) loadInstagram();
+          }, 1500);
+        });
+      })();
     </script>
   </body>
 </html>

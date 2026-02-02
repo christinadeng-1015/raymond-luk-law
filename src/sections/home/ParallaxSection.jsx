@@ -1,19 +1,44 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const ParallaxSection = () => {
+  const ref = useRef(null);
+  const [loaded, setLoaded] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 768);
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setLoaded(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '200px' }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="relative overflow-hidden h-[40vh] sm:h-[60vh]">
+    <section
+      ref={ref}
+      className="relative overflow-hidden h-[40vh] sm:h-[60vh]"
+    >
       <div
-        className={`absolute inset-0 bg-cover bg-center transition-all duration-300 ${
-          window.innerWidth < 768 ? 'bg-no-repeat' : 'bg-fixed'
+        className={`absolute inset-0 bg-cover bg-center transition-opacity duration-500 ${
+          isMobile ? 'bg-no-repeat' : 'bg-fixed'
         }`}
         style={{
-          backgroundImage: `url(/assets/office/office.jpg)`,
-          height: '100%',
+          backgroundImage: loaded ? 'url(/assets/office/office.jpg)' : 'none',
           filter: 'brightness(0.7)',
+          opacity: loaded ? 1 : 0,
         }}
-      ></div>
-      <div className="relative z-10 flex flex-col items-center justify-center h-full"></div>
+      />
+      <div className="relative z-10 flex items-center justify-center h-full" />
     </section>
   );
 };
