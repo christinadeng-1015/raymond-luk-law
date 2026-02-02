@@ -1,0 +1,5 @@
+# Cache static assets
+/static/* 200!
+
+# Prerender for search engine crawlers
+/*  /index.html  200!  X-Prerender-Token: :PRERENDER_TOKEN
