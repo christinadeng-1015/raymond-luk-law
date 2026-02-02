@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Navbar, Dropdown } from 'flowbite-react';
+import OptimizedImage from '../../components/OptimizedImage';
 import {
   AiOutlineClose,
   AiOutlineHome,
@@ -71,10 +72,10 @@ const Nav = () => {
         } ${visible ? 'translate-y-0' : '-translate-y-full'} ease-in-out overflow-visible`}
       >
         <Navbar.Brand href="/" className="flex-shrink-0 flex flex-start">
-          <img
-            loading="lazy"
+          <OptimizedImage
             src="assets/home/logo.png"
             alt="Luk & Associates logo"
+            originalFormat="png"
             className="w-24 object-contain"
           />
         </Navbar.Brand>

@@ -1,4 +1,5 @@
 import React from 'react';
+import OptimizedImage from '../../components/OptimizedImage';
 
 const TeamLanguage = ({ languages, language }) => {
   return (
@@ -19,10 +20,10 @@ const TeamLanguage = ({ languages, language }) => {
             className="flex flex-col items-center w-32 sm:w-36 text-center p-4"
           >
             <div className="flex justify-center items-center w-20 h-20 mb-4 rounded-full bg-gray-200 overflow-hidden">
-              <img
-                loading="lazy"
+              <OptimizedImage
                 src={lang.flag}
                 alt={`${lang.name} flag`}
+                originalFormat="png"
                 className="w-10 h-10 object-cover text-white"
               />
             </div>

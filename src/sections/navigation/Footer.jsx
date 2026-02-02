@@ -1,6 +1,7 @@
 import { Footer } from 'flowbite-react';
 import { BsWhatsapp, BsInstagram, BsLinkedin, BsTiktok } from 'react-icons/bs';
 import { useTranslation } from 'react-i18next';
+import OptimizedImage from '../../components/OptimizedImage';
 
 const FooterHome = () => {
   const { t } = useTranslation('main');
@@ -16,10 +17,10 @@ const FooterHome = () => {
     <Footer container className="pt-12 bg-[#10284e] text-white rounded-none">
       <div className="w-full max-w-screen-2xl mx-auto lg:px-10">
         <div className="flex items-center justify-center gap-2 md:gap-8">
-          <img
-            loading="lazy"
+          <OptimizedImage
             src="assets/home/logo.png"
             alt={footer.logoAlt || 'Company Logo'}
+            originalFormat="png"
             className="w-32"
           />
         </div>

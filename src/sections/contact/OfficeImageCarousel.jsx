@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import OptimizedImage from '../../components/OptimizedImage';
 
 const OfficeImageCarousel = () => {
   const { t } = useTranslation('contact');
@@ -41,10 +42,10 @@ const OfficeImageCarousel = () => {
       >
         {officeImages.concat(officeImages).map((image, index) => (
           <div key={index} className="flex-shrink-0 w-96 h-96 cursor-pointer">
-            <img
-              loading="lazy"
+            <OptimizedImage
               src={image}
               alt={`Office ${index + 1}`}
+              originalFormat="jpg"
               className="w-full h-full object-cover rounded-lg shadow-lg"
             />
           </div>

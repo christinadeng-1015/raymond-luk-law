@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { AiOutlineRight } from 'react-icons/ai';
 import { FiMoreHorizontal } from 'react-icons/fi';
+import OptimizedImage from '../../components/OptimizedImage';
 
 const Services = () => {
   const { t } = useTranslation('services');
@@ -21,10 +22,10 @@ const Services = () => {
               className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-2 flex flex-col sm:flex-col lg:flex-row items-stretch"
             >
               <div className="relative w-full lg:w-4/6 p-3 h-56 lg:h-60">
-                <img
-                  loading="lazy"
+                <OptimizedImage
                   src={service.imageSrc}
                   alt={service.title}
+                  originalFormat="jpg"
                   className="w-full h-full object-cover rounded-lg"
                 />
               </div>

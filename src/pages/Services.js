@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import Services from '../sections/home/Services';
 import ContactFloatIcon from '../sections/home/ContactFloatIcon';
+import OptimizedImage from '../components/OptimizedImage';
 
 export default function ServicesPage() {
   const mainRef = useRef();
@@ -23,9 +24,10 @@ export default function ServicesPage() {
       </Helmet>
       <main ref={mainRef} style={{ overflow: 'hidden' }}>
         <div className="relative w-full h-64 md:h-1/2">
-          <img
+          <OptimizedImage
             src="assets/banner/law.jpg"
             alt="Legal services offered by Luk & Associates"
+            originalFormat="jpg"
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="relative z-10 h-full flex items-center bg-black bg-opacity-30 pt-24 pl-10 md:pl-24 lg:pl-48">

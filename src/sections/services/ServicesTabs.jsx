@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { iconMap } from './constants';
+import OptimizedImage from '../../components/OptimizedImage';
 
 export function ServicesTabs({ tabs }) {
   const [activeTab, setActiveTab] = useState(tabs?.[0]?.key || '');
@@ -110,10 +111,10 @@ export function ServicesTabs({ tabs }) {
                   >
                     {content.imageSrc && (
                       <div className="flex-shrink-0 w-full md:w-2/5">
-                        <img
-                          loading="lazy"
+                        <OptimizedImage
                           src={content.imageSrc}
                           alt={content.title}
+                          originalFormat="jpg"
                           className="rounded-lg h-auto object-cover max-h-96 md:px-8"
                         />
                       </div>

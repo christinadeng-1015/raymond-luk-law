@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import ContactFloatIcon from '../sections/home/ContactFloatIcon';
 import ScrollToTop from '../sections/home/ScrollToTop';
 import TeamContainer from '../sections/team/TeamContainer';
+import OptimizedImage from '../components/OptimizedImage';
 
 export default function TeamPage() {
   const mainRef = useRef();
@@ -27,9 +28,10 @@ export default function TeamPage() {
       </Helmet>
       <main ref={mainRef} style={{ overflow: 'hidden' }}>
         <div className="relative w-full h-64 md:h-1/2">
-          <img
+          <OptimizedImage
             src="assets/banner/team.jpg"
             alt="Our legal team at Luk & Associates"
+            originalFormat="jpg"
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="relative z-10 h-full flex items-center bg-black bg-opacity-30 pt-24 pl-10 md:pl-24 lg:pl-48">

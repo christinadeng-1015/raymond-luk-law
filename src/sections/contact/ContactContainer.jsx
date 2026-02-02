@@ -4,6 +4,7 @@ import OfficeImageCarousel from './OfficeImageCarousel';
 import OfficeHourTable from './OfficeHourTable';
 import ContactInformation from './ContactInformation';
 import { useTranslation } from 'react-i18next';
+import OptimizedImage from '../../components/OptimizedImage';
 
 const ContactContainer = () => {
   const { t } = useTranslation('contact');
@@ -11,10 +12,10 @@ const ContactContainer = () => {
   return (
     <section id="contact" className="mx-auto">
       <div className="relative w-full h-64 md:h-1/2">
-        <img
-          loading="lazy"
+        <OptimizedImage
           src="assets/banner/contact.jpg"
           alt="Contact Luk & Associates for legal services"
+          originalFormat="jpg"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="relative z-10 h-full flex items-center bg-black bg-opacity-30 pt-24 pl-10 md:pl-24 lg:pl-48">

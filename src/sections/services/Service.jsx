@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import ServicesTabs from './ServicesTabs';
 import { Link } from 'react-router-dom';
+import OptimizedImage from '../../components/OptimizedImage';
 
 export function Service() {
   const path = window.location.pathname;
@@ -15,10 +16,10 @@ export function Service() {
   return (
     <div className="mb-8">
       <div className="relative w-full h-64 md:h-1/2">
-        <img
-          loading="lazy"
+        <OptimizedImage
           src="assets/banner/law.jpg"
           alt={service ? service.title : 'Service Banner'}
+          originalFormat="jpg"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="relative z-10 h-full flex items-center bg-black bg-opacity-30 pt-24 pl-10 md:pl-24 lg:pl-48">
@@ -58,10 +59,10 @@ export function Service() {
         <div className="p-16 shadow-lg hidden md:flex items-center bg-[#10284e]">
           <div className="w-1/4 h-full rounded-l-lg flex justify-end items-center">
             {service.icon && (
-              <img
-                loading="lazy"
+              <OptimizedImage
                 src={`assets/icons/${service.icon}`}
                 alt={`${service.title} service icon`}
+                originalFormat="png"
                 className="w-24 h-24"
               />
             )}

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import OptimizedImage from '../../components/OptimizedImage';
 
 export default function InstagramEmbed({ mediaUrl, thumbnailUrl, title }) {
   const embedRef = useRef();
@@ -48,10 +49,10 @@ export default function InstagramEmbed({ mediaUrl, thumbnailUrl, title }) {
             zIndex: 10,
           }}
         >
-          <img
-            loading="lazy"
+          <OptimizedImage
             src={thumbnailUrl}
             alt={`Thumbnail for ${title}`}
+            originalFormat="jpg"
             className="h-full w-full object-cover rounded-lg"
             style={{
               opacity: 0.5,
