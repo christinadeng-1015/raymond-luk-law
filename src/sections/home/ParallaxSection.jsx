@@ -8,7 +8,7 @@ const ParallaxSection = () => {
           window.innerWidth < 768 ? 'bg-no-repeat' : 'bg-fixed'
         }`}
         style={{
-          backgroundImage: `url(/assets/office/office.jpeg)`,
+          backgroundImage: `url(/assets/office/office.jpg)`,
           height: '100%',
           filter: 'brightness(0.7)',
         }}
