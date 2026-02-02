@@ -31,7 +31,6 @@
     "build": "react-scripts build",
     "postbuild": "node scripts/generate-sitemap.js",
     "optimize-images": "node scripts/optimize-images.js",
-    "prebuild": "npm run optimize-images",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
