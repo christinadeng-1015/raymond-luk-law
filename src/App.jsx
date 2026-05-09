@@ -16,6 +16,8 @@ const TeamPage = React.lazy(() => import('./pages/Team'));
 const LawPage = React.lazy(() => import('./pages/Law'));
 const ContactPage = React.lazy(() => import('./pages/Contact'));
 const CareerPage = React.lazy(() => import('./pages/Career'));
+const BlogPage = React.lazy(() => import('./pages/Blog'));
+const BlogPostPage = React.lazy(() => import('./pages/BlogPost'));
 const NotFound = React.lazy(() => import('./pages/NotFound'));
 
 const App = () => {
@@ -53,6 +55,8 @@ const App = () => {
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/careers" element={<CareerPage />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
+          <Route path="/blog" element={<BlogPage />} />
           <Route path="/real-estate-law" element={<LawPage />} />
           <Route path="/family-law" element={<LawPage />} />
           <Route path="/personal-injury-law" element={<LawPage />} />

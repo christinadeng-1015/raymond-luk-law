@@ -122,6 +122,9 @@
       "author": "Raymond Mok"
     }
   ],
+  "blog": {
+    "title": "Legal blogs"
+  },
   "footer": {
     "contactsTitle": "Contact Us",
     "quickLinksTitle": "Quick Links",

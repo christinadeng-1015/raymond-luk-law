@@ -18,7 +18,7 @@ const FooterHome = () => {
       <div className="w-full max-w-screen-2xl mx-auto lg:px-10">
         <div className="flex items-center justify-center gap-2 md:gap-8">
           <OptimizedImage
-            src="assets/home/logo.png"
+            src="/assets/home/logo.png"
             alt={footer.logoAlt || 'Company Logo'}
             originalFormat="png"
             className="w-32"

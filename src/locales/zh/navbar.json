@@ -84,10 +84,16 @@
         ]
       },
       {
+        "key": "blog",
+        "label": "博客",
+        "url": "/blog",
+        "icon": "AiOutlineRead"
+      },
+      {
         "key": "resources",
         "label": "法律资源",
         "url": "/resources",
-        "icon": "AiOutlineRead"
+        "icon": "AiOutlinePlayCircle"
       },
       {
         "key": "contact",
