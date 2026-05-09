@@ -105,7 +105,7 @@ export default function BlogPostPage() {
               to="/blog"
               className="inline-flex items-center px-6 py-3 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-colors"
             >
-              ← Back to Blog
+              ← Back to Blogs
             </Link>
           </div>
         </main>
@@ -249,7 +249,7 @@ export default function BlogPostPage() {
             to="/blog"
             className="inline-flex items-center text-black rounded-lg transition-colors pt-12"
           >
-            ← Back to Blog
+            ← Back to Blogs
           </Link>
         </section>
 
