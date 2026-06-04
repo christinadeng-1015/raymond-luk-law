@@ -47,7 +47,31 @@
     }
   ],
   "blog": {
-    "title": "法律博客"
+    "title": "法律博客",
+    "subtitle": "获取专业法律见解、实用指南与最新资讯。",
+    "searchPlaceholder": "搜索文章...",
+    "browsePracticeArea": "按业务领域浏览",
+    "latestArticlesTitle": "各领域最新文章",
+    "latestArticlesSubtitle": "探索更多法律洞察和资源",
+    "viewResources": "查看资源",
+    "viewMoreArticles": "查看更多文章",
+    "loadingPosts": "正在加载文章...",
+    "unableToLoadPosts": "无法加载文章",
+    "noPostsFound": "未找到相关文章。",
+    "categories": {
+      "familyLaw": {
+        "title": "家庭法",
+        "description": "有关离婚、分居、子女抚养、赡养费及其他家庭法律事务的信息"
+      },
+      "realEstate": {
+        "title": "房地产",
+        "description": "关于买卖、按揭、产权保险和房地产交易的指南与资讯"
+      },
+      "willsEstates": {
+        "title": "遗嘱与遗产",
+        "description": "了解遗嘱、授权书、遗产、遗嘱认证及未来规划"
+      }
+    }
   },
   "footer": {
     "contactsTitle": "联系我们",

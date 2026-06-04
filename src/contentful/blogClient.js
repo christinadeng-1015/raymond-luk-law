@@ -41,6 +41,7 @@ const mapPost = (entry) => {
     author: fields?.author || 'Luk & Associates',
     body: fields?.content || null, // Keep raw RichText content
     url: fields?.url || null,
+    category: fields.category || 'Uncategorized',
   };
 
   return post;

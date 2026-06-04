@@ -8,7 +8,8 @@ import ContactFloatIcon from '../sections/home/ContactFloatIcon';
 import ScrollToTop from '../sections/home/ScrollToTop';
 
 export default function BlogPostPage() {
-  const { slug } = useParams();
+  const params = useParams();
+  const slug = params.slug ?? params.category;
   const { i18n } = useTranslation();
   const { t } = useTranslation('main');
   const blog = t('blog', { returnObjects: true });

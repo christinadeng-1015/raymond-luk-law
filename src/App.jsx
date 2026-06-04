@@ -17,8 +17,20 @@ const LawPage = React.lazy(() => import('./pages/Law'));
 const ContactPage = React.lazy(() => import('./pages/Contact'));
 const CareerPage = React.lazy(() => import('./pages/Career'));
 const BlogPage = React.lazy(() => import('./pages/Blog'));
+const BlogCategoryPage = React.lazy(() => import('./pages/BlogCategory'));
 const BlogPostPage = React.lazy(() => import('./pages/BlogPost'));
 const NotFound = React.lazy(() => import('./pages/NotFound'));
+
+function BlogRouter() {
+  const { category } = useParams();
+  const categorySlugs = ['family-law', 'real-estate', 'wills-estates'];
+
+  return categorySlugs.includes(category) ? (
+    <BlogCategoryPage />
+  ) : (
+    <BlogPostPage />
+  );
+}
 
 const App = () => {
   useEffect(() => {
@@ -55,7 +67,7 @@ const App = () => {
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/careers" element={<CareerPage />} />
-          <Route path="/blog/:slug" element={<BlogPostPage />} />
+          <Route path="/blog/:category" element={<BlogRouter />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/real-estate-law" element={<LawPage />} />
           <Route path="/family-law" element={<LawPage />} />
