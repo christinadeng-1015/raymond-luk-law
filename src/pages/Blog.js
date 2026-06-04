@@ -6,7 +6,7 @@ import { fetchBlogPosts } from '../contentful/blogClient';
 import BlogPostCard from '../components/BlogPostCard';
 import ContactFloatIcon from '../sections/home/ContactFloatIcon';
 import ScrollToTop from '../sections/home/ScrollToTop';
-import { Home, Users, Globe } from 'lucide-react';
+import { Home, Users } from 'lucide-react';
 
 export default function BlogPage() {
   const mainRef = useRef();

@@ -13,7 +13,6 @@ export default function BlogCategoryPage() {
   const { category } = useParams();
   const { i18n } = useTranslation();
   const { t } = useTranslation('main');
-  const blog = t('blog', { returnObjects: true });
 
   const [posts, setPosts] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
