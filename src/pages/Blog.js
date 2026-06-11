@@ -47,7 +47,7 @@ export default function BlogPage() {
   const canonicalUrl =
     typeof window !== 'undefined'
       ? `https://www.luklaw.ca${window.location.pathname}`
-      : 'https://www.luklaw.ca/blog';
+      : 'https://www.luklaw.ca/resources';
 
   const categories = [
     {
@@ -148,7 +148,7 @@ export default function BlogPage() {
                             {category.description}
                           </div>
                           <Link
-                            to={`/blog/${category.slug}`}
+                            to={`/resources/${category.slug}`}
                             className="w-full mt-2 px-4 py-2 rounded-lg bg-[#0C2D57] text-white font-semibold hover:bg-slate-700 transition-colors"
                           >
                             {t('blog.viewResources')}

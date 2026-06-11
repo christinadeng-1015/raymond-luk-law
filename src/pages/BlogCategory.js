@@ -69,7 +69,7 @@ export default function BlogCategoryPage() {
   const canonicalUrl =
     typeof window !== 'undefined'
       ? `https://www.luklaw.ca${window.location.pathname}`
-      : `https://www.luklaw.ca/blog/${category}`;
+      : `https://www.luklaw.ca/resources/${category}`;
 
   const filteredPosts = posts.filter((post) => {
     const matchesCategory = post.category === category;
@@ -95,10 +95,10 @@ export default function BlogCategoryPage() {
             <div className="rounded-3xl border border-slate-200 bg-white p-10 text-center text-slate-700">
               <p className="font-semibold">Category not found</p>
               <Link
-                to="/blog"
+                to="/resources"
                 className="mt-4 inline-block text-[#0C2D57] hover:underline"
               >
-                Back to Blog
+                Back to Resources
               </Link>
             </div>
           </section>
@@ -132,11 +132,11 @@ export default function BlogCategoryPage() {
             <div className="w-full max-w-3xl">
               <div className="flex items-center gap-4 mb-4">
                 <Link
-                  to="/blog"
+                  to="/resources"
                   className="flex items-center gap-2 text-white hover:text-slate-200 transition-colors"
                 >
                   <ChevronLeft size={20} />
-                  Back to Blog
+                  Back to Resources
                 </Link>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-white">

@@ -64,7 +64,7 @@ export default function BlogPostPage() {
   const canonicalUrl =
     typeof window !== 'undefined'
       ? `https://www.luklaw.ca${window.location.pathname}`
-      : `https://www.luklaw.ca/blog/${slug}`;
+      : `https://www.luklaw.ca/resources/${slug}`;
 
   if (loading) {
     return (
@@ -103,10 +103,10 @@ export default function BlogPostPage() {
               {error || "The blog post you're looking for doesn't exist."}
             </p>
             <Link
-              to="/blog"
+              to="/resources"
               className="inline-flex items-center px-6 py-3 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-colors"
             >
-              ← Back to Blogs
+              ← Back to Resources
             </Link>
           </div>
         </main>
@@ -247,10 +247,10 @@ export default function BlogPostPage() {
           </div>
 
           <Link
-            to="/blog"
+            to="/resources"
             className="inline-flex items-center text-black rounded-lg transition-colors pt-12"
           >
-            ← Back to Blogs
+            ← Back to Resources
           </Link>
         </section>
 

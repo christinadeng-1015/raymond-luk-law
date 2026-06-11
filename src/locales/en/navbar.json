@@ -84,16 +84,10 @@
         ]
       },
       {
-        "key": "blog",
-        "label": "Blog",
-        "url": "/blog",
-        "icon": "AiOutlineRead"
-      },
-      {
         "key": "resources",
         "label": "Resources",
         "url": "/resources",
-        "icon": "AiOutlinePlayCircle"
+        "icon": "AiOutlineRead"
       },
       {
         "key": "contact",

@@ -35,7 +35,7 @@ export default function BlogPostCard({ post }) {
 
   return (
     <Link
-      to={`/blog/${encodeURIComponent(post.slug)}`}
+      to={`/resources/${encodeURIComponent(post.slug)}`}
       className="block"
       aria-label={`Read full blog post: ${post.title}`}
     >

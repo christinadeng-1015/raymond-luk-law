@@ -44,7 +44,7 @@
           }
         ]
       },
-      { "key": "blog", "label": "Blogs", "url": "/blog" },
+      { "key": "blog", "label": "Blogs", "url": "/resources" },
       { "key": "tools", "label": "Tools", "url": "/tools" },
       { "key": "contact", "label": "Contact", "url": "/contact" },
       {
