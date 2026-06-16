@@ -48,28 +48,98 @@
   ],
   "blog": {
     "title": "法律博客",
-    "subtitle": "获取专业法律见解、实用指南与最新资讯。",
+    "subtitle": "获取由我们团队为您带来的专业法律洞察、实用指南以及最新动态，助您随时掌握重要资讯。",
     "searchPlaceholder": "搜索文章...",
     "browsePracticeArea": "按业务领域浏览",
-    "latestArticlesTitle": "各领域最新文章",
-    "latestArticlesSubtitle": "探索更多法律洞察和资源",
+    "latestArticlesTitle": "所有领域的最新文章",
+    "latestArticlesSubtitle": "探索更多法律见解与资源",
     "viewResources": "查看资源",
-    "viewMoreArticles": "查看更多文章",
-    "loadingPosts": "正在加载文章...",
-    "unableToLoadPosts": "无法加载文章",
+    "viewMoreArticles": "查看全部文章",
+    "loadingPosts": "正在加载博客文章...",
+    "unableToLoadPosts": "无法加载博客文章",
     "noPostsFound": "未找到相关文章。",
     "categories": {
       "familyLaw": {
         "title": "家庭法",
-        "description": "有关离婚、分居、子女抚养、赡养费及其他家庭法律事务的信息"
+        "description": "提供关于离婚、分居、子女抚养权、抚养费以及其他家庭法事务的相关信息",
+        "subCategories": {
+          "common-law-cohabitation": {
+            "title": "同居关系",
+            "description": "了解在未婚同居状态下的权益、法律地位及相关选择。"
+          },
+          "marriage-contracts-prenups": {
+            "title": "婚姻协议与婚前协议",
+            "description": "了解婚姻协议或婚前协议如何有效保护您的个人权益与财产。"
+          },
+          "separation-divorce": {
+            "title": "分居与离婚",
+            "description": "明白分居或办理离婚的具体流程、您应有的权利以及后续的法律步骤。"
+          },
+          "property-division-matrimonial-home": {
+            "title": "财产分割与婚房权益",
+            "description": "了解婚后财产与债务如何划分，以及您对婚姻居所（婚房）所拥有的法律权利。"
+          },
+          "parenting-custody": {
+            "title": "子女抚养与监护权",
+            "description": "为您提供有关子女决策权（监护权）、抚养时间安排以及儿童抚养费的详细资讯。"
+          }
+        }
       },
       "realEstate": {
-        "title": "房地产",
-        "description": "关于买卖、按揭、产权保险和房地产交易的指南与资讯"
+        "title": "房地产法",
+        "description": "为您提供买房、卖房、房屋贷款、产权保险及各类房地产交易的指南与信息",
+        "subCategories": {
+          "buying-a-home": {
+            "title": "购买房产",
+            "description": "了解购置房产涉及的法定步骤，切实保障您的房产投资安全。"
+          },
+          "title-insurance": {
+            "title": "产权保险",
+            "description": "深入了解产权保险如何保护业主免受突发产权争议或潜在未知问题的影响。"
+          },
+          "closing-day": {
+            "title": "交房日 (Closing Day)",
+            "description": "做好充分准备迎接交房日，清晰了解当天的具体流程和注意事项。"
+          },
+          "selling-a-home": {
+            "title": "出售房产",
+            "description": "协助您顺畅、高效地应对出售物业过程中的各项法律程序。"
+          },
+          "closing-costs": {
+            "title": "交房成本与额外费用",
+            "description": "清楚掌握在完成房地产交易时，所需支付的各项税费与行政支出。"
+          },
+          "mortgages-and-financing": {
+            "title": "房屋贷款与融资",
+            "description": "探索不同的贷款选择、金融机构的审批要求以及借款人的基本义务。"
+          }
+        }
       },
       "willsEstates": {
-        "title": "遗嘱与遗产",
-        "description": "了解遗嘱、授权书、遗产、遗嘱认证及未来规划"
+        "title": "遗嘱与遗产继承",
+        "description": "全面了解遗嘱撰写、财产委托书、遗产托管、法庭认证（遗嘱认证）以及面向未来的长远规划",
+        "subCategories": {
+          "wills": {
+            "title": "遗嘱定义与撰写",
+            "description": "了解为何一份合法有效的遗嘱至关重要，以及它如何保护您挚爱的家人。"
+          },
+          "dying-without-a-will": {
+            "title": "未留遗嘱的情况",
+            "description": "明白当事人在没有留下有效遗嘱的情况下离世，法律将如何处置和分配其遗产。"
+          },
+          "executors": {
+            "title": "遗嘱执行人",
+            "description": "详细了解作为遗产执行人所需承担的法定法律职责、义务与工作内容。"
+          },
+          "powers-of-attorney": {
+            "title": "财产与健康委托书 (POA)",
+            "description": "了解法律委托书如何确保您的财务管理、个人生活以及医疗事务在必要时获得妥善照顾。"
+          },
+          "probate": {
+            "title": "遗嘱认证 (Probate)",
+            "description": "了解法庭认证遗嘱的整套标准程序，以及遗产如何依法进行最终的管理与清算。"
+          }
+        }
       }
     }
   },

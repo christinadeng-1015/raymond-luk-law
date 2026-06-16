@@ -130,22 +130,92 @@
     "latestArticlesTitle": "Latest Articles Across All Areas",
     "latestArticlesSubtitle": "Explore more legal insights and resources",
     "viewResources": "View Resources",
-    "viewMoreArticles": "View More Articles",
+    "viewMoreArticles": "View All Articles",
     "loadingPosts": "Loading blog posts...",
     "unableToLoadPosts": "Unable to load blog posts",
     "noPostsFound": "No posts found.",
     "categories": {
       "familyLaw": {
         "title": "Family Law",
-        "description": "Information on divorce, separation, child custody, support, and other family law matters"
+        "description": "Information on divorce, separation, child custody, support, and other family law matters",
+        "subCategories": {
+          "common-law-cohabitation": {
+            "title": "Common Law Cohabitation",
+            "description": "Understand your rights and options when living together outside of marriage."
+          },
+          "marriage-contracts-prenups": {
+            "title": "Marriage Contracts & Prenups",
+            "description": "Learn how a marriage contract or prenup can protect your interests."
+          },
+          "separation-divorce": {
+            "title": "Separation & Divorce",
+            "description": "Understand the process of separating or getting a divorce, your rights, and the next steps."
+          },
+          "property-division-matrimonial-home": {
+            "title": "Property Division & Matrimonial Home",
+            "description": "Learn how property and debts are divided and what rights you have in the matrimonial home."
+          },
+          "parenting-custody": {
+            "title": "Parenting & Custody",
+            "description": "Find information on decision-making responsibility, parenting time, and child support."
+          }
+        }
       },
       "realEstate": {
         "title": "Real Estate",
-        "description": "Guides and information on buying, selling, mortgages, title insurance, and real estate transactions"
+        "description": "Guides and information on buying, selling, mortgages, title insurance, and real estate transactions",
+        "subCategories": {
+          "buying-a-home": {
+            "title": "Buying a Home",
+            "description": "Learn the legal steps involved in purchasing a home and protecting your investment."
+          },
+          "title-insurance": {
+            "title": "Title Insurance",
+            "description": "Understand how title insurance protects homeowners from unexpected issues."
+          },
+          "closing-day": {
+            "title": "Closing Day",
+            "description": "Prepare for closing day with confidence and understand what to expect."
+          },
+          "selling-a-home": {
+            "title": "Selling a Home",
+            "description": "Navigate the legal process of selling your property smoothly and efficiently."
+          },
+          "closing-costs": {
+            "title": "Closing Costs",
+            "description": "Understand the fees and expenses involved in completing a real estate transaction."
+          },
+          "mortgages-and-financing": {
+            "title": "Mortgages & Financing",
+            "description": "Explore mortgage options, financing requirements, and lender obligations."
+          }
+        }
       },
       "willsEstates": {
         "title": "Wills & Estates",
-        "description": "Learn about wills, powers of attorney, estate, probate, and planning for the future"
+        "description": "Learn about wills, powers of attorney, estate, probate, and planning for the future",
+        "subCategories": {
+          "wills": {
+            "title": "Wills",
+            "description": "Learn why having a valid will is essential and how it protects your loved ones."
+          },
+          "dying-without-a-will": {
+            "title": "Dying Without a Will",
+            "description": "Understand what happens when someone passes away without a valid will."
+          },
+          "executors": {
+            "title": "Executors",
+            "description": "Learn about the responsibilities and duties of an estate executor."
+          },
+          "powers-of-attorney": {
+            "title": "Powers of Attorney",
+            "description": "Understand how powers of attorney help protect your financial and personal affairs."
+          },
+          "probate": {
+            "title": "Probate",
+            "description": "Learn about the probate process and how estates are administered."
+          }
+        }
       }
     }
   },
