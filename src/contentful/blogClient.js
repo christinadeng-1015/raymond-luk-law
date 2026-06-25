@@ -40,6 +40,10 @@ const mapPost = (entry) => {
     publishDate: fields?.date || null,
     author: fields?.author || 'Luk & Associates',
     body: fields?.content || null, // Keep raw RichText content
+    mainQuestionAnswer: fields?.mainQuestionAnswer || null,
+    keyQuestions: fields?.keyQuestions || null,
+    commonQuestions: fields?.commonQuestions || null,
+    finalThoughts: fields?.finalThoughts || null,
     category: fields?.category || 'Uncategorized',
     subCategory: fields?.subCategory || 'General',
   };
