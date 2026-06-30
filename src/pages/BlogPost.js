@@ -23,14 +23,14 @@ const richTextOptions = {
       const { title, file } = node.data.target.fields;
       const imageUrl = file?.url ? `https:${file.url}` : null;
       return imageUrl ? (
-        <div className="my-6">
+        <div className="my-6 max-w-full">
           <img
             src={imageUrl}
             alt={title || 'Embedded image'}
-            className="w-full rounded-xl border border-slate-100"
+            className="w-full h-auto rounded-xl border border-slate-100 object-contain"
           />
           {title && (
-            <p className="text-xs text-slate-400 mt-2 text-center italic">
+            <p className="text-xs text-slate-400 mt-2 text-center italic break-words">
               {title}
             </p>
           )}
@@ -42,26 +42,26 @@ const richTextOptions = {
         href={node.data.uri}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-blue-700 hover:underline"
+        className="text-blue-700 hover:underline break-all"
       >
         {children}
       </a>
     ),
     'unordered-list': (node, children) => (
-      <ul className="list-disc pl-5 my-3 space-y-1 text-slate-600 text-sm md:text-base">
+      <ul className="list-disc pl-5 my-3 space-y-1 text-slate-600 text-sm md:text-base break-words">
         {children}
       </ul>
     ),
     'ordered-list': (node, children) => (
-      <ol className="list-decimal pl-5 my-3 space-y-1 text-slate-600 text-sm md:text-base">
+      <ol className="list-decimal pl-5 my-3 space-y-1 text-slate-600 text-sm md:text-base break-words">
         {children}
       </ol>
     ),
     'list-item': (node, children) => (
-      <li className="leading-relaxed">{children}</li>
+      <li className="leading-relaxed break-words">{children}</li>
     ),
     paragraph: (node, children) => (
-      <p className="mb-3 leading-relaxed text-slate-600 text-sm md:text-[15px]">
+      <p className="mb-3 leading-relaxed text-slate-600 text-sm md:text-[15px] break-words">
         {children}
       </p>
     ),
@@ -88,7 +88,7 @@ function ContentfulAccordion({ richTextDocument, sectionId, iconType }) {
 
   if (accordions.length === 0 && richTextDocument.content.length > 0) {
     return (
-      <div className="prose max-w-none bg-white p-4 border border-slate-100 rounded-xl">
+      <div className="prose max-w-none bg-white p-4 border border-slate-100 rounded-xl overflow-x-auto break-words">
         {documentToReactComponents(richTextDocument, richTextOptions)}
       </div>
     );
@@ -114,7 +114,7 @@ function ContentfulAccordion({ richTextDocument, sectionId, iconType }) {
           <div
             key={uniqueKey}
             id={slugify(headingText)}
-            className="border border-slate-200/80 rounded-xl overflow-hidden bg-white transition-all scroll-mt-24"
+            className="border border-slate-200/80 rounded-xl overflow-hidden bg-white transition-all scroll-mt-24 w-full"
           >
             <button
               onClick={() =>
@@ -125,7 +125,7 @@ function ContentfulAccordion({ richTextDocument, sectionId, iconType }) {
               }
               className="w-full flex items-start justify-between gap-3 p-4 text-left font-semibold text-[#0F294A] bg-white select-none"
             >
-              <div className="flex gap-2.5 items-start">
+              <div className="flex gap-2.5 items-start max-w-[90%]">
                 {iconType === 'insight' ? (
                   <svg
                     className="w-4 h-4 mt-0.5 shrink-0 text-amber-600"
@@ -155,12 +155,12 @@ function ContentfulAccordion({ richTextDocument, sectionId, iconType }) {
                     />
                   </svg>
                 )}
-                <span className="text-sm md:text-[15px] tracking-tight">
+                <span className="text-sm md:text-[15px] tracking-tight break-words">
                   {headingText}
                 </span>
               </div>
               <svg
-                className={`w-4 h-4 text-slate-400 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+                className={`w-4 h-4 text-slate-400 transition-transform shrink-0 ${isOpen ? 'rotate-180' : ''}`}
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -174,9 +174,13 @@ function ContentfulAccordion({ richTextDocument, sectionId, iconType }) {
               </svg>
             </button>
             <div
-              className={`transition-all duration-200 overflow-hidden ${isOpen ? 'max-h-[1000px] border-t border-slate-100 p-4 bg-slate-50/50' : 'max-h-0'}`}
+              className={`transition-all duration-300 ease-in-out overflow-y-auto ${
+                isOpen
+                  ? 'max-h-[4000px] border-t border-slate-100 p-4 bg-slate-50/50'
+                  : 'max-h-0'
+              }`}
             >
-              <div className="prose max-w-none text-slate-600 text-sm leading-relaxed">
+              <div className="prose max-w-none text-slate-600 text-sm leading-relaxed break-words">
                 {documentToReactComponents(subDocument, richTextOptions)}
               </div>
             </div>
@@ -197,7 +201,6 @@ export default function BlogPostPage() {
   const [allPosts, setAllPosts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // DYNAMIC COMPUTE FOR TOC ITEMS (Safely generated on every render pass)
   const tocItems = [];
   if (post) {
     if (post.mainQuestionAnswer)
@@ -212,7 +215,7 @@ export default function BlogPostPage() {
       });
     if (post.keyQuestions)
       tocItems.push({
-        label: t('keyInsights', 'Key Insights'),
+        label: t('keyInsights', 'Key questions '),
         targetId: 'key-insights-section',
       });
     if (post.commonQuestions)
@@ -222,7 +225,7 @@ export default function BlogPostPage() {
       });
     if (post.finalThoughts)
       tocItems.push({
-        label: t('closingPerspectives', 'Closing Perspectives'),
+        label: t('closingPerspectives', 'Final thoughts'),
         targetId: 'closing-thoughts',
       });
   }
@@ -285,14 +288,47 @@ export default function BlogPostPage() {
   const localizedDate = post.publishDate
     ? new Date(post.publishDate).toLocaleDateString(
         i18n.resolvedLanguage?.startsWith('zh') ? 'zh-CN' : 'en-US',
-        {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric',
-          timeZone: 'UTC',
-        }
+        { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }
       )
     : '';
+
+  const BreadcrumbsNav = () => (
+    <nav className="text-xs text-slate-300 space-x-2">
+      <Link to="/resources" className="hover:text-white transition-colors">
+        {t('resources', 'Resources')}
+      </Link>
+      <span>/</span>
+      <span className="text-amber-400 font-medium">
+        {t('insights', 'Insights')}
+      </span>
+    </nav>
+  );
+
+  // Common Table of Contents Component Block shared by both mobile and desktop views
+  const TableOfContentsCard = () => (
+    <div className="border border-slate-200 rounded-xl p-5 bg-white shadow-[0_1px_4px_rgba(0,0,0,0.02)] w-full">
+      <h4 className="font-bold text-[#0F294A] text-sm uppercase tracking-wider mb-4">
+        {t('inThisArticle', 'In this article')}
+      </h4>
+      <ul className="space-y-3 text-xs font-medium text-slate-500">
+        {tocItems.map((item, index) => (
+          <li key={item.targetId}>
+            <button
+              onClick={() => scrollToSection(item.targetId)}
+              className={`flex items-center text-left transition-colors duration-150 hover:text-slate-900 ${
+                index === 0 ? 'text-amber-600 gap-2 font-semibold' : 'pl-3.5'
+              }`}
+            >
+              {index === 0 && (
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0" />
+              )}
+              <span className="truncate">{item.label}</span>
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 
   return (
     <>
@@ -302,67 +338,73 @@ export default function BlogPostPage() {
 
       <main
         ref={mainRef}
-        className="min-h-screen bg-white pb-24 text-slate-800 antialiased"
+        className="min-h-screen bg-white pb-28 md:pb-24 text-slate-800 antialiased w-full overflow-x-hidden"
       >
         {/* Full-Width Editorial Header Banner */}
-        <section className="relative w-full h-64 md:h-[380px] bg-[#0F294A] overflow-hidden">
+        <section className="relative w-full h-72 md:h-[380px] bg-[#0F294A] overflow-hidden">
           <img
             src="/assets/banner/blog.png"
             alt="Blog banner"
             className="absolute inset-0 w-full h-full object-cover opacity-35 mix-blend-luminosity"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0F294A] via-[#0F294A]/50 to-transparent" />
-          <div className="relative z-10 h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-end pb-12">
-            <div className="max-w-4xl">
-              <nav className="text-xs text-slate-300 space-x-2 mb-4">
-                <Link to="/" className="hover:text-white transition-colors">
-                  {t('resources', 'Resources')}
-                </Link>
-                <span>/</span>
-                <span className="text-amber-400 font-medium">
-                  {t('insights', 'Insights')}
-                </span>
-              </nav>
-              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.15]">
+          <div className="relative z-10 h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-end pb-10">
+            <div className="max-w-4xl w-full">
+              {/* Desktop Only Breadcrumbs Header */}
+              <div className="hidden md:block mb-4">
+                <BreadcrumbsNav />
+              </div>
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.15] break-words">
                 {post.title}
               </h1>
               <div className="w-16 h-1 bg-amber-500 rounded mt-4" />
               {post.excerpt && (
-                <p className="text-slate-200 mt-4 text-sm md:text-base font-normal max-w-2xl leading-relaxed">
+                <p className="text-slate-200 mt-4 text-sm md:text-base font-normal max-w-2xl leading-relaxed break-words">
                   {post.excerpt}
                 </p>
               )}
-              <div className="flex flex-wrap items-center gap-4 text-xs text-slate-300 pt-4 border-t border-white/10 mt-4">
-                <span className="flex items-center gap-1">
-                  ⏱️ {t('readTime', '6 min read')}
-                </span>
-                <span>•</span>
-                <span className="flex items-center gap-1">
-                  📅 {t('updated', 'Updated')}: {localizedDate}
-                </span>
+              <div className="flex flex-col gap-2 pt-4 border-t border-white/10 mt-4">
+                <div className="flex items-center gap-1 text-xs text-slate-300">
+                  <span>
+                    📅 {t('updated', 'Updated')}: {localizedDate}
+                  </span>
+                </div>
+                {/* Mobile Only Breadcrumbs Header shifted beneath Updated details */}
+                <div className="block md:hidden mt-1">
+                  <BreadcrumbsNav />
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Core Content Container */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 space-y-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 lg:pt-12 space-y-12 w-full">
+          {/* Mobile Only: Renders on small layouts directly underneath editorial banner */}
+          {tocItems.length > 0 && (
+            <div className="block lg:hidden w-full">
+              <TableOfContentsCard />
+            </div>
+          )}
+
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
             {/* LEFT MAIN CONTENT STREAM */}
-            <div className="lg:col-span-8 space-y-10">
+            <div className="lg:col-span-8 space-y-10 min-w-0">
               {/* Dynamic Quick Answer Box Card */}
               {post.mainQuestionAnswer && (
                 <section
                   id="quick-answer"
-                  className="bg-[#F4F8FC] border border-blue-100 rounded-xl p-5 md:p-6 shadow-[0_1px_3px_rgba(0,0,0,0.01)] scroll-mt-24"
+                  className="bg-[#F4F8FC] border border-blue-100 rounded-xl p-5 md:p-6 shadow-[0_1px_3px_rgba(0,0,0,0.01)] scroll-mt-24 overflow-x-auto"
                 >
                   <div className="flex gap-3">
-                    <span className="text-blue-600 text-lg mt-0.5">⚖️</span>
-                    <div>
+                    <span className="text-blue-600 text-lg mt-0.5 shrink-0">
+                      ⚖️
+                    </span>
+                    <div className="min-w-0 flex-1">
                       <h2 className="text-sm font-bold uppercase tracking-wider text-blue-800 mb-1">
                         {t('quickAnswer', 'Answering the main question')}
                       </h2>
-                      <div className="prose max-w-none text-slate-700 font-medium text-[14px] leading-relaxed">
+                      <div className="prose max-w-none text-slate-700 font-medium text-[14px] leading-relaxed break-words">
                         {documentToReactComponents(
                           post.mainQuestionAnswer,
                           richTextOptions
@@ -377,7 +419,7 @@ export default function BlogPostPage() {
               {post.body && (
                 <section
                   id="article-overview"
-                  className="prose max-w-none text-slate-700 leading-relaxed text-[15px] scroll-mt-24"
+                  className="prose max-w-none text-slate-700 leading-relaxed text-[15px] scroll-mt-24 break-words overflow-x-auto"
                 >
                   {documentToReactComponents(post.body, richTextOptions)}
                 </section>
@@ -385,9 +427,12 @@ export default function BlogPostPage() {
 
               {/* Side-by-Side Collapsible Columns */}
               {(post.keyQuestions || post.commonQuestions) && (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2 w-full">
                   {post.keyQuestions && (
-                    <div id="key-insights-section" className="scroll-mt-24">
+                    <div
+                      id="key-insights-section"
+                      className="scroll-mt-24 min-w-0"
+                    >
                       <h3 className="text-sm font-bold uppercase tracking-wider text-[#0F294A] pb-2 border-b border-slate-200 flex items-center gap-2">
                         📋{' '}
                         {t(
@@ -403,7 +448,7 @@ export default function BlogPostPage() {
                     </div>
                   )}
                   {post.commonQuestions && (
-                    <div id="qa-section" className="scroll-mt-24">
+                    <div id="qa-section" className="scroll-mt-24 min-w-0">
                       <h3 className="text-sm font-bold uppercase tracking-wider text-[#0F294A] pb-2 border-b border-slate-200 flex items-center gap-2">
                         💬 {t('qaBreakdown', 'Q&A Breakdown')}
                       </h3>
@@ -416,39 +461,36 @@ export default function BlogPostPage() {
                   )}
                 </div>
               )}
+
+              {/* Final Thoughts: Renders directly below the Q&A segment block */}
+              {post.finalThoughts && (
+                <section
+                  id="closing-thoughts"
+                  className="pt-6 border-t border-slate-100 w-full scroll-mt-24"
+                >
+                  <h3 className="text-sm font-bold uppercase tracking-wider text-[#0F294A] mb-3">
+                    {t('closingPerspectives', 'Final thoughts')}
+                  </h3>
+                  <div className="p-6 bg-amber-50/40 border border-amber-100/60 rounded-xl italic text-slate-700 font-medium text-[15px] leading-relaxed break-words overflow-x-auto">
+                    {documentToReactComponents(
+                      post.finalThoughts,
+                      richTextOptions
+                    )}
+                  </div>
+                </section>
+              )}
             </div>
 
             {/* RIGHT SIDEBAR */}
-            <aside className="lg:col-span-4 space-y-8 lg:sticky lg:top-6">
-              {/* Table of Contents / Section Navigation */}
+            <aside className="lg:col-span-4 space-y-8 lg:sticky lg:top-6 min-w-0">
+              {/* Desktop Only: Keeps "In this article" component in its original sidebar slot */}
               {tocItems.length > 0 && (
-                <div className="border border-slate-200 rounded-xl p-5 bg-white shadow-[0_1px_4px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#0F294A] text-sm uppercase tracking-wider mb-4">
-                    {t('inThisArticle', 'In this article')}
-                  </h4>
-                  <ul className="space-y-3 text-xs font-medium text-slate-500">
-                    {tocItems.map((item, index) => (
-                      <li key={item.targetId}>
-                        <button
-                          onClick={() => scrollToSection(item.targetId)}
-                          className={`flex items-center text-left transition-colors duration-150 hover:text-slate-900 ${
-                            index === 0
-                              ? 'text-amber-600 gap-2 font-semibold'
-                              : 'pl-3.5'
-                          }`}
-                        >
-                          {index === 0 && (
-                            <span className="w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0" />
-                          )}
-                          {item.label}
-                        </button>
-                      </li>
-                    ))}
-                  </ul>
+                <div className="hidden lg:block w-full">
+                  <TableOfContentsCard />
                 </div>
               )}
 
-              {/* DYNAMIC MORE ARTICLES FEED */}
+              {/* Related Articles */}
               {relatedArticles.length > 0 && (
                 <div className="border border-slate-200 rounded-xl p-5 bg-white shadow-[0_1px_4px_rgba(0,0,0,0.02)]">
                   <h4 className="font-bold text-[#0F294A] text-sm uppercase tracking-wider mb-4">
@@ -476,8 +518,8 @@ export default function BlogPostPage() {
                             />
                           </svg>
                         </div>
-                        <div className="space-y-0.5 flex-1">
-                          <p className="text-xs font-bold text-slate-800 group-hover:text-[#C59B27] transition-colors line-clamp-2 leading-snug">
+                        <div className="space-y-0.5 flex-1 min-w-0">
+                          <p className="text-xs font-bold text-slate-800 group-hover:text-[#C59B27] transition-colors line-clamp-2 leading-snug break-words">
                             {article.title}
                           </p>
                         </div>
@@ -487,7 +529,7 @@ export default function BlogPostPage() {
                 </div>
               )}
 
-              {/* Exact Replicated Corporate CTA Box Card */}
+              {/* Corporate CTA Box Card */}
               <div className="bg-[#0F294A] text-white rounded-2xl p-6 shadow-md space-y-6 text-left">
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 pt-1">
@@ -548,23 +590,8 @@ export default function BlogPostPage() {
             </aside>
           </div>
 
-          {/* BOTTOM FULL-WIDTH WRAPPER: Final Thoughts */}
-          {post.finalThoughts && (
-            <section
-              id="closing-thoughts"
-              className="pt-8 border-t border-slate-100 w-full scroll-mt-24"
-            >
-              <h3 className="text-sm font-bold uppercase tracking-wider text-[#0F294A] mb-3">
-                {t('closingPerspectives', 'Final thoughts')}
-              </h3>
-              <div className="p-6 bg-amber-50/40 border border-amber-100/60 rounded-xl italic text-slate-700 font-medium text-[15px] leading-relaxed">
-                {documentToReactComponents(post.finalThoughts, richTextOptions)}
-              </div>
-            </section>
-          )}
-
-          {/* Back Navigation */}
-          <div className="border-t border-slate-100 pt-8">
+          {/* Back Navigation Links */}
+          <div className="border-t border-slate-100 py-8">
             <Link
               to="/resources"
               className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-slate-900 hover:text-slate-500 transition-colors"
