@@ -123,10 +123,10 @@
     }
   ],
   "blog": {
-    "title": "Legal blogs",
+    "title": "Legal Insights",
     "subtitle": "Stay informed with expert legal insights, practical guides, and news from our team.",
     "searchPlaceholder": "Search articles...",
-    "browsePracticeArea": "Browse by Practice Area",
+    "browsePracticeArea": "Browse by Topic",
     "latestArticlesTitle": "Latest Articles Across All Areas",
     "latestArticlesSubtitle": "Explore more legal insights and resources",
     "viewResources": "View Resources",

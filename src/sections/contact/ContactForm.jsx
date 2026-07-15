@@ -13,51 +13,51 @@ const ContactForm = () => {
   const { t } = useTranslation('contact');
   const form = t('form', { returnObjects: true });
 
-  const [result, setResult] = React.useState("");
+  const [result, setResult] = React.useState('');
   const [showModal, setShowModal] = React.useState(false);
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending...");
-  
+    setResult('Sending...');
+
     const accessKeys = [
-      "53403ed3-d089-4103-b336-6573c7f77eec",
-      "b54e4df1-f23c-456f-af96-9825f8af8cb2"
+      '53403ed3-d089-4103-b336-6573c7f77eec',
+      'b54e4df1-f23c-456f-af96-9825f8af8cb2',
     ];
-  
+
     const originalFormData = new FormData(event.target);
-  
+
     try {
       const sendForm = async (key) => {
         const formData = new FormData();
         originalFormData.forEach((value, k) => formData.append(k, value));
-        formData.append("access_key", key);
-  
-        const response = await fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          body: formData
+        formData.append('access_key', key);
+
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData,
         });
-  
+
         return response.json();
       };
-  
+
       const results = await Promise.all(accessKeys.map(sendForm));
-  
-      const allSuccessful = results.every(res => res.success);
-  
+
+      const allSuccessful = results.every((res) => res.success);
+
       if (allSuccessful) {
-        setResult("Form Submitted Successfully");
+        setResult('Form Submitted Successfully');
         setShowModal(true);
         event.target.reset();
       } else {
-        console.log("Errors:", results);
-        setResult("Some submissions failed.");
+        console.log('Errors:', results);
+        setResult('Some submissions failed.');
       }
     } catch (error) {
-      console.error("Submission error:", error);
-      setResult("An error occurred while submitting the form.");
+      console.error('Submission error:', error);
+      setResult('An error occurred while submitting the form.');
     }
-  };  
+  };
 
   return (
     <>
@@ -67,18 +67,21 @@ const ContactForm = () => {
         data-aos-duration="1200"
         data-aos-easing="ease-in-out"
       >
-        <h3 className="text-center text-2xl font-bold text-[#10284e] mb-6">
+        <h3 className="text-center pb-8 text-2xl font-serif font-bold text-[#10284e]">
           {form.title}
         </h3>
         <form onSubmit={onSubmit} className="flex flex-col gap-6 w-full">
           {form.fields.map((field) => {
             const IconComponent = iconMapping[field.icon];
             return (
-              <div key={field.id} className="relative flex flex-row items-center gap-2">
+              <div
+                key={field.id}
+                className="relative flex flex-row items-center gap-2"
+              >
                 <Label
                   htmlFor={field.id}
                   value={field.label}
-                  className="text-lg font-medium w-1/5"
+                  className="text-xs font-bold text-slate-500 uppercase tracking-widest w-1/5"
                 />
                 <TextInput
                   id={field.id}
@@ -93,17 +96,13 @@ const ContactForm = () => {
             );
           })}
 
-          <input
-            type="hidden"
-            name="subject"
-            value="New Client Inquiry Form"
-          />
+          <input type="hidden" name="subject" value="New Client Inquiry Form" />
 
           <div className="relative">
             <Label
               htmlFor={form.message.id}
               value={form.message.label}
-              className="text-lg font-medium"
+              className="text-xs font-bold text-slate-500 uppercase tracking-widest w-1/5"
             />
             <Textarea
               id={form.message.id}

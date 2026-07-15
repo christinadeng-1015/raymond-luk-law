@@ -1,4 +1,4 @@
-import { Footer } from 'flowbite-react';
+import React from 'react';
 import { BsWhatsapp, BsInstagram, BsLinkedin, BsTiktok } from 'react-icons/bs';
 import { useTranslation } from 'react-i18next';
 import OptimizedImage from '../../components/OptimizedImage';
@@ -13,105 +13,106 @@ const FooterHome = () => {
     whatsapp: BsWhatsapp,
   };
 
-  return (
-    <Footer container className="pt-12 bg-[#10284e] text-white rounded-none">
-      <div className="w-full max-w-screen-2xl mx-auto lg:px-10">
-        <div className="flex items-center justify-center gap-2 md:gap-8">
-          <OptimizedImage
-            src="/assets/home/logo.png"
-            alt={footer.logoAlt || 'Company Logo'}
-            originalFormat="png"
-            className="w-32"
-          />
-        </div>
+  const SectionTitle = ({ title }) => (
+    <h4 className="font-bold text-[14px] uppercase tracking-[0.25em] mb-6 text-white relative inline-block">
+      {title}
+      <span className="absolute -bottom-2 left-0 w-8 h-[2px] bg-amber-500"></span>
+    </h4>
+  );
 
-        <div className="flex flex-col-reverse md:flex-row pt-10 md:py-12 justify-around">
-          <div className="w-full md:w-2/5 flex md:flex-row py-4 md:py-0 text-center md:text-left items-center md:items-start">
-            <div className="w-2/5 md:w-1/3">
-              <Footer.Title
-                title={footer.quickLinksTitle}
-                className="underline text-lg text-white mb-4 font-semibold"
-              />
-              <Footer.LinkGroup col>
-                {footer.quickLinks.map((item, index) => (
-                  <a
-                    href={item.link}
-                    key={index}
-                    className="text-white text-base hover:underline block"
-                  >
-                    {item.title}
-                  </a>
+  return (
+    <footer className="bg-gradient-to-b from-slate-900 to-[#10284e] text-white pt-16 pb-8 border-t border-slate-800">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start mb-8">
+          <div className="md:col-span-3 flex flex-col items-center md:items-start gap-4">
+            <OptimizedImage
+              src="/assets/home/logo.png"
+              alt={footer.logoAlt}
+              className="w-32"
+            />
+
+            <p className="text-[14px] leading-normal max-w-[240px] opacity-90 text-center md:text-left">
+              {footer.description}
+            </p>
+          </div>
+
+          <div className="md:col-span-5 grid grid-cols-2 gap-12">
+            <div>
+              <SectionTitle title={footer.quickLinksTitle} />
+              <ul className="space-y-4 text-[16px]">
+                {footer.quickLinks.map((item, i) => (
+                  <li key={i}>
+                    <a
+                      href={item.link}
+                      className="hover:text-amber-500 transition-colors"
+                    >
+                      {item.title}
+                    </a>
+                  </li>
                 ))}
-              </Footer.LinkGroup>
+              </ul>
             </div>
-            <div className="w-3/5 md:w-1/3">
-              <Footer.Title
-                title={footer.contactsTitle}
-                className="underline text-lg text-white mb-4 font-semibold"
-              />
-              <Footer.LinkGroup col>
-                {footer.contacts.map((item, index) => (
-                  <a
-                    href={item.link}
-                    key={index}
-                    className="text-white text-base hover:underline block"
-                  >
-                    {item.title}
-                  </a>
+            <div>
+              <SectionTitle title={footer.contactsTitle} />
+              <ul className="space-y-4 text-[16px]">
+                {footer.contacts.map((item, i) => (
+                  <li key={i}>
+                    <a
+                      href={item.link}
+                      className="hover:text-amber-500 transition-colors"
+                    >
+                      {item.title}
+                    </a>
+                  </li>
                 ))}
-              </Footer.LinkGroup>
+              </ul>
             </div>
           </div>
 
-          <div className="w-full md:w-2/5 flex justify-start opacity-80 py-6 md:py-0">
+          <div className="md:col-span-4 flex flex-col gap-6">
             <iframe
               title="raymond-luk"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.0923667192606!2d-79.34076942381263!3d43.85391417109322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d5fbcc8d262d%3A0xafb130d5c8fcdacb!2sRaymond%20Luk%20Law%20Professional%20Corporation!5e0!3m2!1sen!2sca!4v1734198035841!5m2!1sen!2sca"
-              className="w-full h-48 md:h-64 rounded-md shadow-lg"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.0923667192606!2d-79.34076942381263!4d43.85391417109322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d5fbcc8d262d%3A0xafb130d5c8fcdacb!2sRaymond%20Luk%20Law%20Professional%20Corporation!5e0!3m2!1sen!2sca!4v1734198035841!5m2!1sen!2sca"
+              className="w-full h-56 transition-all"
               allowFullScreen
-              referrerPolicy="no-referrer-when-downgrade"
               loading="lazy"
             ></iframe>
           </div>
+        </div>
 
-          <div className="w-full md:w-1/6 flex flex-col items-center md:py-0">
-            <Footer.Title
-              title={footer.followUs}
-              className="text-base text-white font-semibold"
-            />
-            <div className="flex flex-row md:flex-col items-center space-x-8 md:space-x-0 md:space-y-6">
-              {footer.socialLinks.map((social, index) => {
-                const IconComponent = socialIcons[social.icon];
-                return (
-                  <a
-                    href={social.link}
-                    key={index}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white text-3xl hover:text-gray-500 hover:scale-110 transition-transform"
-                  >
-                    {IconComponent && <IconComponent />}
-                  </a>
-                );
-              })}
+        <div className="flex flex-col items-center justify-center gap-6 text-[11px] uppercase tracking-normal italic font-light">
+          <div className="flex gap-10 justify-center mt-4 opacity-90">
+            {footer.socialLinks.map((s, i) => {
+              const Icon = socialIcons[s.icon];
+              return (
+                <a
+                  key={i}
+                  href={s.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-amber-500 transition-all transform hover:scale-110"
+                >
+                  {Icon && <Icon className="text-2xl" />}
+                </a>
+              );
+            })}
+          </div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+            <p>{footer.corporation}</p>
+
+            <div className="group relative">
+              <button className="hover:text-amber-500 underline underline-offset-4 decoration-amber-500/50">
+                {footer.disclaimerBtn}
+              </button>
+
+              <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 w-[320px] hidden group-hover:block bg-white text-slate-900 p-4 shadow-2xl transition-all duration-300 pointer-events-none text-[12px] leading-relaxed normal-case tracking-normal not-italic z-50 text-left border border-slate-200">
+                {footer.disclaimer}
+              </div>
             </div>
           </div>
         </div>
-
-        <hr className="my-4 h-px bg-gray-500 opacity-50" />
-        <div className="text-center text-sm font-light">
-          <p>{footer.corporation}</p>
-          <div className="relative group cursor-pointer">
-            <button className="underline hover:no-underline">
-              {footer.disclaimerBtn}
-            </button>
-            <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 w-72 text-xs text-white bg-gray-700 p-2 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-              {footer.disclaimer}
-            </span>
-          </div>
-        </div>
       </div>
-    </Footer>
+    </footer>
   );
 };
 

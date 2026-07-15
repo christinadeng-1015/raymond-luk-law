@@ -7,25 +7,31 @@ const FAQs = () => {
   const faqs = faqSection?.faqs || [];
 
   return (
-    <div
-      className="flex flex-col items-center bg-white  max-w-screen-2xl mx-auto px-4"
-      id="faqs"
-    >
-      <h2 className="text-2xl text-center text-gray-900 mb-2 font-semibold pb-16">
-        {faqSection?.title || 'Frequently Asked Questions'}
-      </h2>
+    <section className="w-full py-8" id="faqs">
+      <div className="space-y-3 mb-10">
+        <h2 className="text-3xl font-serif font-bold text-slate-900">
+          {faqSection?.title || 'Frequently Asked Questions'}
+        </h2>
+        <div className="w-10 h-[2px] bg-amber-600/80" />
+      </div>
 
       <div
-        className="w-full grid grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-y-6 md:gap-x-8 sm:gap-4 pb-20"
-        data-aos="zoom-in"
-        data-aos-duration="2000"
-        data-aos-easing="ease-in-out"
+        className="grid grid-cols-1 lg:grid-cols-2 gap-4"
+        data-aos="fade-up"
+        data-aos-duration="1000"
       >
         {faqs.map((item, index) => (
-          <FAQ key={index} faq={item} isOpen={false} />
+          <div
+            key={index}
+            className="group relative bg-white border border-slate-100 rounded-lg p-5 transition-all duration-300 hover:border-amber-500/30 hover:bg-amber-50/10"
+          >
+            <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#10284e]/5 to-transparent group-hover:via-[#10284e]/20 transition-all duration-500" />
+
+            <FAQ faq={item} isOpen={false} />
+          </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

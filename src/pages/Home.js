@@ -30,9 +30,9 @@ export default function Home() {
       <main ref={mainRef}>
         <Header />
         <TeamContainer />
-        <Process />
-        <Services />
         <Testimonials />
+        <Services />
+        <Process />
         <ParallaxSection />
         <FAQs />
         <ScrollToTop />

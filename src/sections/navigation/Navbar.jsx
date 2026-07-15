@@ -1,21 +1,8 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Navbar, Dropdown } from 'flowbite-react';
 import OptimizedImage from '../../components/OptimizedImage';
-import {
-  AiOutlineClose,
-  AiOutlineHome,
-  AiOutlineTool,
-  AiOutlineRead,
-  AiOutlineComment,
-  AiOutlineAudit,
-  AiOutlineTranslation,
-  AiOutlineTeam,
-  AiOutlineMenu,
-  AiOutlineMail,
-  AiOutlineSolution,
-  AiOutlinePlayCircle,
-} from 'react-icons/ai';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 const Nav = () => {
   const { t, i18n } = useTranslation('navbar');
@@ -29,27 +16,6 @@ const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
   const [visible, setVisible] = useState(true);
-
-  const iconMap = useMemo(
-    () => ({
-      AiOutlineClose: <AiOutlineClose size={20} className="text-white" />,
-      AiOutlineHome: <AiOutlineHome size={20} className="text-white" />,
-      AiOutlineTeam: <AiOutlineTeam size={20} className="text-white" />,
-      AiOutlineTool: <AiOutlineTool size={20} className="text-white" />,
-      AiOutlineComment: <AiOutlineComment size={20} className="text-white" />,
-      AiOutlineTranslation: (
-        <AiOutlineTranslation size={20} className="text-gray-900" />
-      ),
-      AiOutlineRead: <AiOutlineRead size={20} className="text-white" />,
-      AiOutlineAudit: <AiOutlineAudit size={20} className="text-white" />,
-      AiOutlineMail: <AiOutlineMail size={20} className="text-white" />,
-      AiOutlineSolution: <AiOutlineSolution size={20} className="text-white" />,
-      AiOutlinePlayCircle: (
-        <AiOutlinePlayCircle size={20} className="text-white" />
-      ),
-    }),
-    []
-  );
 
   const toggleNavbar = () => setIsOpen(!isOpen);
 
@@ -72,7 +38,9 @@ const Nav = () => {
     <>
       <Navbar
         className={`relative fixed w-full h-32 z-30 px-4 md:px-16 transition-all duration-700 flex items-center ${
-          scrolled ? 'bg-[#10284e] shadow-lg' : 'bg-transparent'
+          scrolled
+            ? 'bg-gradient-to-b from-slate-900 to-[#10284e] shadow-lg'
+            : 'bg-transparent'
         } ${visible ? 'translate-y-0' : '-translate-y-full'} ease-in-out overflow-visible`}
       >
         <Navbar.Brand href="/" className="flex-shrink-0 flex flex-start">
@@ -96,7 +64,7 @@ const Nav = () => {
         <div
           className={`${
             isOpen
-              ? 'fixed top-0 left-0 right-0 bottom-0 bg-[#10284e] z-100 flex justify-center items-center w-screen h-screen'
+              ? 'fixed top-0 left-0 right-0 bottom-0 bg-gradient-to-b from-slate-900 to-[#10284e]  z-100 flex justify-center items-center w-screen h-screen'
               : 'hidden'
           } lg:absolute lg:left-0 lg:top-1/2 lg:-translate-y-1/2 lg:w-full lg:px-16 lg:flex lg:flex-row lg:items-center lg:justify-center`}
           style={{ zIndex: 100 }}
@@ -116,27 +84,19 @@ const Nav = () => {
                 return (
                   <div
                     key={item.key}
-                    className="flex items-center bg-white rounded-full px-2 py-1 lg:absolute lg:right-2"
+                    className="flex items-center bg-black/20 rounded-full px-2 py-1 lg:absolute lg:right-8"
                   >
                     <button
-                      className={`px-2 py-2 rounded-full transition-all ${
-                        i18n.language === 'zh'
-                          ? 'bg-gray-200 text-gray-800'
-                          : 'text-gray-500'
-                      }`}
                       onClick={() => changeLanguage('zh')}
+                      className={`px-4 py-1.5 text-[11px] font-bold rounded-full transition-all ${i18n.language === 'zh' ? 'bg-amber-500 text-white' : 'text-white'}`}
                     >
-                      中文
+                      中
                     </button>
                     <button
-                      className={`px-2 py-2 rounded-full transition-all ${
-                        i18n.language === 'en'
-                          ? 'bg-gray-200 text-gray-800'
-                          : 'text-gray-500'
-                      }`}
                       onClick={() => changeLanguage('en')}
+                      className={`px-4 py-1.5 text-[11px] font-bold rounded-full transition-all ${i18n.language === 'en' ? 'bg-amber-500 text-white' : 'text-white'}`}
                     >
-                      English
+                      EN
                     </button>
                   </div>
                 );
@@ -146,31 +106,32 @@ const Nav = () => {
                 <Navbar.Link
                   href={item.url}
                   key={item.key}
-                  className={`text-base cursor-pointer transition-colors duration-500 py-2 ${
-                    item.key === 'language'
-                      ? 'bg-white text-gray-900'
-                      : 'text-white'
-                  } hover:bg-transparent`}
-                  style={{ fontFamily: "'Raleway', sans-serif" }}
+                  className={`
+                    cursor-pointer transition-all duration-300
+                    text-[20px] px-8 py-4 text-left w-full
+                    lg:text-[16px] lg:px-5 lg:py-2 lg:text-center lg:w-auto
+                    font-serif tracking-wide text-white hover:text-amber-500 hover:bg-transparent
+                    border-b-2 border-transparent transition-all duration-300
+                  `}
                 >
                   {item.dropdown ? (
                     <Dropdown
                       inline
                       label={
-                        <div className="flex items-center">
-                          {iconMap[item.icon]}
-                          <span className="ml-1">{item.label}</span>
+                        <div className="flex items-center gap-2">
+                          <span>{item.label}</span>
                         </div>
                       }
                       dismissOnClick={true}
-                      className="w-1/2 md:w-1/4 lg:w-1/6 lg:opacity-90"
+                      className="z-[150] fixed left-1/2 -translate-x-1/2 w-[90%] max-h-[60vh] overflow-y-auto rounded-none shadow-2xl border border-white/20 text-white lg:static lg:left-0 lg:translate-x-0 md:w-[40%] lg:w-52 bg-slate-100/90 backdrop-blur-md"
                     >
-                      <div className="max-h-72 overflow-y-auto lg:max-h-none lg:overflow-visible text-center">
+                      <div className="max-h-72 overflow-y-auto lg:max-h-none lg:overflow-visible">
                         {item.dropdown.map((subItem) => (
                           <Dropdown.Item
                             href={subItem.url}
                             key={subItem.key}
-                            className="text-base tracking-tighter font-medium"
+                            className="text-[18px] lg:text-[14px] normal-case font-medium hover:text-amber-500 hover:bg-white/5 border-b border-white/5 last:border-0 py-4 px-8 lg:py-3 lg:px-6"
+                            style={{ fontFamily: "'Inter', sans-serif" }}
                             onClick={() => {
                               if (
                                 subItem.key === 'en' ||
@@ -180,15 +141,14 @@ const Nav = () => {
                               }
                             }}
                           >
-                            <span className="ml-4">{subItem.label}</span>
+                            {subItem.label}
                           </Dropdown.Item>
                         ))}
                       </div>
                     </Dropdown>
                   ) : (
-                    <div className="flex items-center">
-                      {iconMap[item.icon]}
-                      <span className="ml-1">{item.label}</span>
+                    <div className="flex items-center gap-2">
+                      <span>{item.label}</span>
                     </div>
                   )}
                 </Navbar.Link>

@@ -27,7 +27,7 @@ import { GiPathDistance } from 'react-icons/gi';
 
 import { HiOutlineOfficeBuilding } from 'react-icons/hi';
 import { AiOutlineTeam } from 'react-icons/ai';
-import { FiUsers } from 'react-icons/fi';
+import { FiUsers, FiAward, FiShield, FiHeart } from 'react-icons/fi';
 
 import { FaRegBuilding } from 'react-icons/fa';
 import { GoLaw } from 'react-icons/go';
@@ -84,4 +84,10 @@ export const iconMap = {
 
   FaRegBuilding: <FaRegBuilding size={40} className="text-[#10284e]" />,
   GoLaw: <GoLaw size={40} className="text-[#10284e]" />,
+
+  // Added for the "Why Choose Us" section (using exact lowercase keys from your JSON)
+  award: <FiAward size={40} className="text-[#10284e]" />,
+  users: <FiUsers size={40} className="text-[#10284e]" />,
+  shield: <FiShield size={40} className="text-[#10284e]" />,
+  heart: <FiHeart size={40} className="text-[#10284e]" />,
 };

@@ -22,8 +22,7 @@ const Header = () => {
 
   const { t } = useTranslation('navbar');
   const navbar = t('navbar', { returnObjects: true });
-
-  const slides = navbar.slides;
+  const slides = navbar.slides || [];
 
   const handleNext = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -37,69 +36,99 @@ const Header = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
 
-  return (
-    <header id="header" className="relative w-full h-screen overflow-hidden">
-      <div
-        className="absolute top-1/2 left-1/2 w-full h-full bg-cover bg-no-repeat bg-center"
-        style={{
-          backgroundImage: `url(/assets/home/home.jpg)`,
-          transform: `translate(-50%, -50%) translateY(${offsetY * 0.5}px)`,
-        }}
-      ></div>
+  if (!slides.length) return null;
 
-      <div className="absolute top-0 left-0 w-full lg:w-2/3 h-full flex justify-between items-center px-4 md:px-20 mt-10">
-        <button
-          onClick={handlePrev}
-          className="text-white hover:text-gray-300 transition duration-300 text-3xl md:text-4xl"
-          aria-label="Previous slide"
-        >
-          <IoIosArrowBack />
-        </button>
-        <div className="relative w-full lg:w-1/2 text-center">
-          <h1
-            data-aos="zoom-out"
-            className="text-white tracking-wide font-medium uppercase text-2xl md:text-3xl"
-          >
-            {slides[currentSlide].title}
-          </h1>
-          <hr className="h-px my-6 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-200 to-transparent opacity-100" />
-          <h2
-            data-aos="zoom-out"
-            className="text-white tracking-wide text-base w-full px-6"
-          >
-            {slides[currentSlide].subtitle}
-          </h2>
-          <div className="pt-4">
-            <button
-              onClick={() => window.open(slides[currentSlide].url, '_blank')}
-              className="text-md border-2 bg-white rounded-lg p-4 font-medium shadow-md transition-transform transform hover:scale-105 hover:shadow-lg mt-6"
-              style={{ color: '#10284e' }}
-            >
-              {slides[currentSlide].linkTitle}
-            </button>
-          </div>
-        </div>
-        <button
-          onClick={handleNext}
-          className="text-white hover:text-gray-300 transition duration-300 text-3xl md:text-4xl"
-          aria-label="Next slide"
-        >
-          <IoIosArrowForward />
-        </button>
-      </div>
+  return (
+    <header
+      id="header"
+      className="relative w-full h-screen overflow-hidden bg-[#10284e] antialiased"
+    >
       <div
-        className={`z-40 fixed top-0 md:top-auto left-0 md:left-auto w-full md:w-1/4 h-full md:h-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out overflow-y-auto ${isDrawerOpen ? 'translate-y-0 md:translate-x-0' : 'translate-y-full md:translate-x-full'}
-        md:right-0`}
+        className="absolute top-1/2 left-1/2 w-full h-full bg-cover bg-no-repeat bg-[85%_center] md:bg-center -translate-x-1/2 -translate-y-1/2"
+        style={{
+          backgroundImage: `url(/assets/home/background.png)`,
+          transform: `translate(-50%, -50%) translateY(${offsetY * 0.4}px)`,
+        }}
+      />
+
+      <div className="absolute inset-0 bg-gradient-to-r from-[#10284e]/75 via-[#10284e]/40 to-transparent pointer-events-none z-10" />
+
+      <div className="absolute inset-0 z-20 flex items-center px-2 md:px-16 lg:px-24">
+        <div className="w-full max-w-4xl flex items-center justify-between gap-8">
+          <button
+            onClick={handlePrev}
+            className="text-white/60 hover:text-white bg-white/5 hover:bg-white/10 p-3 rounded-full transition-all duration-300 transform active:scale-95 flex-shrink-0 backdrop-blur-sm"
+            aria-label="Previous slide"
+          >
+            <IoIosArrowBack size={22} />
+          </button>
+
+          <div className="flex-1 text-left max-w-lg py-8">
+            <div key={currentSlide} className="space-y-5">
+              <div className="space-y-3">
+                <h1
+                  data-aos="fade-up"
+                  className="text-white font-serif font-bold text-xl md:text-3xl lg:text-4xl tracking-tight leading-snug"
+                  style={{
+                    fontFamily:
+                      'Georgia, Cambria, "Times New Roman", Times, serif',
+                  }}
+                >
+                  {slides[currentSlide].title}
+                </h1>
+
+                <div className="w-8 h-[2px] bg-amber-500 rounded-full" />
+              </div>
+
+              <p
+                data-aos="fade-up"
+                data-aos-delay="100"
+                className="text-slate-200/90 tracking-normal text-sm md:text-base font-normal leading-relaxed max-w-md"
+              >
+                {slides[currentSlide].subtitle}
+              </p>
+
+              <div data-aos="fade-up" data-aos-delay="200" className="pt-2">
+                <button
+                  onClick={() =>
+                    window.open(slides[currentSlide].url, '_blank')
+                  }
+                  className="inline-flex items-center text-xs md:text-sm font-semibold bg-white rounded-lg px-6 py-3 shadow-lg shadow-black/5 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
+                  style={{ color: '#10284e' }}
+                >
+                  {slides[currentSlide].linkTitle}
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <button
+            onClick={handleNext}
+            className="text-white/60 hover:text-white bg-white/5 hover:bg-white/10 p-3 rounded-full transition-all duration-300 transform active:scale-95 flex-shrink-0 backdrop-blur-sm"
+            aria-label="Next slide"
+          >
+            <IoIosArrowForward size={22} />
+          </button>
+        </div>
+      </div>
+
+      <div
+        className={`z-50 fixed inset-y-0 right-0 w-full sm:w-[450px] bg-white shadow-2xl transform transition-transform duration-500 ease-in-out ${
+          isDrawerOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
       >
         {isDrawerOpen && (
-          <div className="relative p-6 flex flex-col justify-center items-center h-full">
+          <div className="relative p-8 h-full flex flex-col justify-center overflow-y-auto">
             <button
               onClick={handleDrawerToggle}
-              className="z-50 absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-3xl"
+              className="absolute top-6 right-6 text-slate-400 hover:text-slate-600 transition-colors p-2 hover:bg-slate-50 rounded-lg"
+              aria-label="Close form"
             >
-              <IoMdClose />
+              <IoMdClose size={28} />
             </button>
-            <ContactForm />
+            <div className="w-full mt-8">
+              <ContactForm />
+            </div>
           </div>
         )}
       </div>

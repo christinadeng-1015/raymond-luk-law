@@ -224,17 +224,9 @@ a:focus {
   }
 }
 
-.service__subtitle ul li {
-  list-style: inside square;
-  padding-left: 4px;
-}
-
-.service__details ul li {
-  list-style: inside square;
-  padding-left: 4px;
-}
-
+.service__subtitle ul li,
+.service__details ul li,
 .service__content ul li {
-  list-style: inside square;
-  padding-left: 4px;
+  list-style-type: disc;
+  list-style-position: outside;
 }

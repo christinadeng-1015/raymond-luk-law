@@ -1,7 +1,8 @@
 {
   "title": "职业机会",
   "subtitle": "Luk & Associates 招聘信息",
-  "tagline": "<strong>在一个高效、严谨、愿意真正培养你的团队中，开启你的法律职业生涯。</strong><br/>Luk & Associates 是一家位于 <strong>安省 Markham</strong> 的成长型综合性律师事务所，业务涵盖 <strong>家庭法、房地产、遗嘱与遗产、小额索赔 / LTB 事务及移民相关服务。</strong><br/>如果你做事认真、可靠，并希望承担有意义的责任，这里会非常适合你。",
+  "description": "在一个高效、严谨、愿意真正培养你的团队中，开启你的法律职业生涯",
+  "tagline": "Luk & Associates 是一家位于 <strong>安省 Markham</strong> 的成长型综合性律师事务所，业务涵盖 <strong>家庭法、房地产、遗嘱与遗产、小额索赔 / LTB 事务及移民相关服务。</strong><br/>如果你做事认真、可靠，并希望承担有意义的责任，这里会非常适合你。",
   "howToApplyTitle": "如何申请",
   "howToApplyDescription": "请将申请材料发送至 <a href=\"mailto:info@luklaw.ca\" class=\"underline\">info@luklaw.ca</a>，邮件标题请注明：<strong>“职位 – 姓名”</strong>，或通过下方表格提交申请。",
   "whatToExpectTitle": "你可以期待什么",
@@ -88,7 +89,7 @@
       },
       {
         "id": "law-clerk",
-        "title": "Law Clerk",
+        "title": "法律文员",
         "employmentType": ["全职"],
         "bestFor": "喜欢流程、文件及高准确度工作的候选人。",
         "responsibilities": [
