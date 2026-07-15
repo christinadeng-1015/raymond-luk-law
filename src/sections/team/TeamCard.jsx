@@ -21,7 +21,7 @@ const TeamCard = ({ member }) => {
         aria-label={`View details for ${member.name}`}
         className="w-full text-left flex flex-col h-full focus:outline-none"
       >
-        <div className="p-4 pb-0 w-full max-w-6xl">
+        <div className="p-4 pb-0 w-full">
           <div className="relative w-full aspect-square overflow-hidden bg-slate-50 rounded-lg  border-slate-100/60">
             <OptimizedImage
               src={member.image}
@@ -66,7 +66,7 @@ const TeamCard = ({ member }) => {
       <Modal
         show={openModal}
         onClose={() => setOpenModal(!openModal)}
-        size="5xl"
+        size="4xl"
         className="flex items-center pt-0 md:pt-6"
       >
         <Modal.Header className="border-b border-slate-100 bg-white text-[#10284e]">
