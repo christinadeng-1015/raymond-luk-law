@@ -3,11 +3,8 @@ import React, { useEffect, useRef, useState } from 'react';
 const ParallaxSection = () => {
   const ref = useRef(null);
   const [loaded, setLoaded] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    setIsMobile(window.innerWidth < 768);
-
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -26,19 +23,21 @@ const ParallaxSection = () => {
   return (
     <section
       ref={ref}
-      className="relative overflow-hidden h-[40vh] sm:h-[60vh]"
+      className="relative overflow-hidden h-[40vh] sm:h-[60vh] w-full"
+      style={{
+        clipPath: 'inset(0px 0px 0px 0px)',
+      }}
     >
       <div
-        className={`absolute inset-0 bg-cover bg-center transition-opacity duration-500 ${
-          isMobile ? 'bg-no-repeat' : 'bg-fixed'
-        }`}
+        className="fixed inset-0 w-full h-full bg-cover bg-center transition-opacity duration-500"
         style={{
           backgroundImage: loaded ? 'url(/assets/office/office.jpg)' : 'none',
           filter: 'brightness(0.7)',
           opacity: loaded ? 1 : 0,
+          transform: 'translateZ(0)',
         }}
       />
-      <div className="relative z-10 flex items-center justify-center h-full" />
+      <div className="relative z-10 flex items-center justify-center h-full"></div>
     </section>
   );
 };
