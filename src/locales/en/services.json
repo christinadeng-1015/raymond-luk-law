@@ -557,7 +557,6 @@
           "key": "wills",
           "label": "Wills",
           "icon": "HiOutlineClipboardList",
-          "desc": "At Luk & Associates, we understand the importance of securing your assets and ensuring your loved ones are taken care of in the future. Whether it be a simple will or a complex one, our estate planning team will provide comprehensive will drafting services tailored to your unique needs and circumstances.",
           "whyChooseUs": {
             "title": "Why Choose Us",
             "items": [
@@ -653,7 +652,6 @@
           "key": "probate-estate-administration",
           "label": "Probate and Estate Administration",
           "icon": "GiArchiveRegister",
-          "desc": "At Luk & Associates, we understand that the loss of a loved one is a difficult time, and dealing with the legalities of estate administration can add additional stress. Our team is here to provide compassionate guidance and comprehensive support throughout the estate settlement process in Ontario.",
           "whyChooseUs": {
             "title": "Why Choose Us",
             "items": [
@@ -917,39 +915,6 @@
               "desc": "<i>We’ll confirm eligibility, map timelines, and give you a precise document plan.<br/>General information only; not legal advice. Programs and processing change frequently—get advice for your specific case.</i>"
             }
           ]
-        }
-      ]
-    },
-    {
-      "path": "/corporate-law",
-      "title": "Corporate Law",
-      "imageSrc": "/assets/services/corporate-law.png",
-      "icon": "corporate-law.png",
-      "desc": "At Luk & Associates, we understand the intricacies of business law and the challenges that corporations face in the legal landscape. Our dedicated team of experienced lawyers specializes in providing comprehensive Corporate Law services to businesses of all sizes, from start-ups to established corporations.",
-      "tabs": [
-        {
-          "key": "incorporating",
-          "label": "Incorporating",
-          "icon": "HiOutlineOfficeBuilding",
-          "content": [{ "desc": "More information to come" }]
-        },
-        {
-          "key": "shareholder-agreement",
-          "label": "Shareholder Agreement",
-          "icon": "HiOutlineClipboardList",
-          "content": [{ "desc": "More information to come" }]
-        },
-        {
-          "key": "partnership-agreement",
-          "label": "Partnership/Partnership Agreement",
-          "icon": "AiOutlineTeam",
-          "content": [{ "desc": "More information to come" }]
-        },
-        {
-          "key": "joint-venture",
-          "label": "Joint Venture Agreements",
-          "icon": "FiUsers",
-          "content": [{ "desc": "More information to come" }]
         }
       ]
     },

@@ -62,12 +62,12 @@ const ContactForm = () => {
   return (
     <>
       <div
-        className="w-full max-w-2xl mx-auto p-6 rounded-xl shadow-sm bg-white/50 backdrop-blur-lg"
+        className="w-full max-w-4xl mx-auto rounded-xl shadow-sm bg-white/50 backdrop-blur-lg"
         data-aos="slide-left"
         data-aos-duration="1200"
         data-aos-easing="ease-in-out"
       >
-        <h3 className="text-center pb-8 text-2xl font-serif font-bold text-[#10284e]">
+        <h3 className="pb-8 text-2xl font-serif font-bold text-[#10284e]">
           {form.title}
         </h3>
         <form onSubmit={onSubmit} className="flex flex-col gap-6 w-full">
@@ -115,7 +115,7 @@ const ContactForm = () => {
           </div>
           <Button
             type="submit"
-            className="mt-4 w-full bg-gradient-to-r from-[#10284e] to-[#0c1d3b] text-white font-semibold py-3 rounded-lg shadow-md hover:opacity-90 transition duration-300"
+            className="mt-4 w-full bg-[#10284e]/75 hover:bg-[#10284e]/90 text-white font-semibold py-3 rounded-lg shadow-sm backdrop-blur-sm border border-[#10284e]/20 transition duration-300"
           >
             {form.button}
           </Button>

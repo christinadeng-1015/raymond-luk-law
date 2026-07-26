@@ -31,7 +31,7 @@ export function Service() {
 
   return (
     <div className="min-h-screen bg-slate-50/30 pb-16 antialiased font-sans text-slate-800">
-      <div className="relative w-full h-[280px] md:h-[360px] overflow-hidden">
+      <div className="relative w-full h-[360px] md:h-[440px] overflow-hidden">
         <OptimizedImage
           src="assets/banner/law.jpg"
           alt={service.title || 'Service Banner'}

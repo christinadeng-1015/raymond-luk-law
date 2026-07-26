@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import ContactFloatIcon from '../sections/home/ContactFloatIcon';
 import ScrollToTop from '../sections/home/ScrollToTop';
 import TeamContainer from '../sections/team/TeamContainer';
@@ -9,28 +9,60 @@ import OptimizedImage from '../components/OptimizedImage';
 export default function TeamPage() {
   const mainRef = useRef();
   const { t } = useTranslation('team');
-  const canonicalUrl =
-    typeof window !== 'undefined'
-      ? `https://www.luklaw.ca${window.location.pathname}`
-      : 'https://www.luklaw.ca/team';
+
+  const domain = 'https://www.luklaw.ca';
+
+  const pageTitle = t(
+    'seo.title',
+    'Our Team | Luk & Associates - Experienced Lawyers in Markham, ON'
+  );
+  const pageDescription = t(
+    'seo.description',
+    'Meet the experienced legal team at Luk & Associates in Markham, ON. Dedicated lawyers specializing in family law, immigration, and real estate.'
+  );
+
+  const teamSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: pageTitle,
+    url: `${domain}/team`,
+    description: pageDescription,
+    mainEntity: {
+      '@type': 'LegalService',
+      name: 'Luk & Associates',
+      url: domain,
+      image: `${domain}/assets/banner/team.jpg`,
+      telephone: '+19053331740',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Liberty Square, 3601 Hwy 7 Unit 803',
+        addressLocality: 'Markham',
+        addressRegion: 'ON',
+        postalCode: 'L3R 0M3',
+        addressCountry: 'CA',
+      },
+    },
+  };
 
   return (
     <>
-      <Helmet>
-        <title>
-          Our Team | Luk & Associates - Experienced Lawyers in Markham, ON
-        </title>
-        <meta
-          name="description"
-          content="Meet the experienced legal team at Luk & Associates in Markham, ON. Dedicated lawyers specializing in family law, immigration, and more. Get to know our experts."
-        />
-        <link rel="canonical" href={canonicalUrl} />
-      </Helmet>
+      <SEO
+        title={t('seo.pageTitle', 'Our Experienced Legal Team')}
+        description={pageDescription}
+        keywords={t(
+          'seo.keywords',
+          'Markham lawyers, law firm Markham, legal team Markham'
+        )}
+        path="/team"
+        image="/assets/banner/team.jpg"
+        schema={teamSchema}
+      />
+
       <main ref={mainRef} style={{ overflow: 'hidden' }}>
-        <div className="relative w-full h-[280px] md:h-[360px] overflow-hidden">
+        <div className="relative w-full h-[360px] md:h-[440px] overflow-hidden">
           <OptimizedImage
             src="assets/banner/team.jpg"
-            alt="Our legal team at Luk & Associates"
+            alt={t('bannerAlt', 'Our legal team at Luk & Associates')}
             originalFormat="jpg"
             className="absolute inset-0 w-full h-full object-cover transform scale-105"
           />
@@ -41,6 +73,10 @@ export default function TeamPage() {
               {t('bannerText')}
             </h1>
             <div className="w-12 h-[3px] bg-amber-500 rounded-full mt-3" />
+            <div
+              className="text-[15px] sm:text-base leading-relaxed text-white/90 font-sans md:w-1/3 pt-6"
+              dangerouslySetInnerHTML={{ __html: t('description') }}
+            />
           </div>
         </div>
 

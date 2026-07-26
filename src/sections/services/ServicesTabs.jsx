@@ -170,7 +170,7 @@ export function ServicesTabs({ tabs }) {
 
                           {content.desc && (
                             <div
-                              className="text-[14.5px] text-slate-700 font-normal leading-relaxed service__details mb-6"
+                              className="text-[14.5px] text-slate-700 font-normal leading-relaxed service__details mb-6 [&_li::marker]:text-amber-500"
                               dangerouslySetInnerHTML={{ __html: content.desc }}
                             />
                           )}
@@ -189,7 +189,7 @@ export function ServicesTabs({ tabs }) {
                                     key={subIdx}
                                     className="relative pl-4 border-l-[3px] border-amber-200 transition-colors duration-300 hover:border-amber-500 break-inside-avoid"
                                   >
-                                    <h4 className="font-sans font-bold text-[12px] uppercase tracking-wider text-amber-500 mb-2">
+                                    <h4 className="font-sans font-bold text-[12px] uppercase tracking-wider text-[#10284e] mb-2">
                                       {sub.title}
                                     </h4>
                                     <div

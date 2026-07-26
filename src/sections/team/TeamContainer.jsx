@@ -50,10 +50,10 @@ const TeamContainer = () => {
                 </div>
 
                 <div
-                  className={`flex flex-wrap gap-x-8 gap-y-16 ${
-                    group.members.length < 4
-                      ? 'justify-center'
-                      : 'justify-start'
+                  className={`flex flex-wrap gap-x-8 gap-y-16 justify-center ${
+                    group.members.length < 3
+                      ? 'sm:justify-center'
+                      : 'sm:justify-start'
                   }`}
                 >
                   {group.members.map((member) => (

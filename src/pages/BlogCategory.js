@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
+import SEO from '../components/SEO';
 import { fetchBlogPosts } from '../contentful/blogClient';
-import BlogPostCard from '../components/BlogPostCard';
+import BlogPostCard from '../sections/blog/BlogPostCard';
 import ContactFloatIcon from '../sections/home/ContactFloatIcon';
 import ScrollToTop from '../sections/home/ScrollToTop';
 import {
@@ -22,17 +22,16 @@ import {
   Briefcase,
   AlertTriangle,
   Gavel,
-  Grid,
+  Search,
+  X,
 } from 'lucide-react';
 
-// Maps the route URL slug to your precise translation JSON keys and main icons
 const CATEGORY_CONFIG = {
   'family-law': { jsonKey: 'familyLaw', icon: Users },
   'real-estate': { jsonKey: 'realEstate', icon: Home },
   'wills-estates': { jsonKey: 'willsEstates', icon: Home },
 };
 
-// Map sub-category slugs to their designated visual layout icons
 const ICON_MAP = {
   'common-law-cohabitation': Heart,
   'marriage-contracts-prenups': FileText,
@@ -54,7 +53,7 @@ const ICON_MAP = {
 
 export default function BlogCategoryPage() {
   const mainRef = useRef();
-  const { category } = useParams(); // expectation: 'family-law', 'real-estate', or 'wills-estates'
+  const { category } = useParams();
   const { i18n } = useTranslation();
   const { t } = useTranslation('main');
 
@@ -64,11 +63,10 @@ export default function BlogCategoryPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Safely translate url-slug down into target JSON configuration block
+  const domain = 'https://www.luklaw.ca';
   const currentConfig = CATEGORY_CONFIG[category];
   const translationKey = currentConfig?.jsonKey;
 
-  // Check if translation assets actually exist inside i18next runtime
   const categoryExists =
     translationKey &&
     i18n.hasResourceBundle(i18n.language, 'main') &&
@@ -88,7 +86,6 @@ export default function BlogCategoryPage() {
       }
     : null;
 
-  // Parse dictionary array structure safely for UI execution grids
   const subCategories = currentCategory
     ? Object.entries(currentCategory.subCategoriesObj).map(([slug, data]) => ({
         slug,
@@ -100,6 +97,7 @@ export default function BlogCategoryPage() {
 
   useEffect(() => {
     setSelectedSubCategory(null);
+    setSearchTerm('');
   }, [category]);
 
   useEffect(() => {
@@ -126,11 +124,6 @@ export default function BlogCategoryPage() {
     };
   }, [i18n.language, t]);
 
-  const canonicalUrl =
-    typeof window !== 'undefined'
-      ? `https://www.luklaw.ca${window.location.pathname}`
-      : `https://www.luklaw.ca/resources/${category}`;
-
   const filteredPosts = posts.filter((post) => {
     const matchesCategory = post.category === category;
     const matchesSubCategory =
@@ -149,240 +142,223 @@ export default function BlogCategoryPage() {
   if (!currentCategory) {
     return (
       <>
-        <Helmet>
-          <title>Category Not Found | Luk & Associates</title>
-        </Helmet>
-        <main style={{ overflow: 'hidden' }}>
-          <section className="mx-auto max-w-7xl px-6 py-16">
-            <div className="rounded-3xl border border-slate-200 bg-white p-10 text-center text-slate-700">
-              <p className="font-semibold">Category not found</p>
-              <Link
-                to="/resources"
-                className="mt-4 inline-block text-[#0C2D57] hover:underline"
-              >
-                Back to Resources
-              </Link>
-            </div>
-          </section>
+        <SEO
+          title="Category Not Found"
+          description="The requested legal category or resource could not be found."
+          path={`/resources/${category}`}
+        />
+        <main className="min-h-screen bg-slate-50 flex items-center justify-center">
+          <div className="text-center max-w-md px-6">
+            <h2 className="text-2xl font-bold text-slate-900 mb-3">
+              Category Not Found
+            </h2>
+            <p className="text-slate-500 mb-8">
+              The legal resources you are looking for may have been moved or
+              updated.
+            </p>
+            <Link
+              to="/resources"
+              className="inline-flex items-center justify-center px-6 py-2.5 rounded-lg border border-slate-200 text-slate-700 font-medium transition-colors hover:bg-slate-100"
+            >
+              Return to Resources
+            </Link>
+          </div>
         </main>
       </>
     );
   }
 
+  // CollectionPage Schema for Blog Category listing
+  const categorySchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: currentCategory.title,
+    description: currentCategory.description,
+    url: `${domain}/resources/${category}`,
+  };
+
   return (
     <>
-      <Helmet>
-        <title>{currentCategory.title} | Luk & Associates</title>
-        <meta
-          name="description"
-          content={`Explore ${currentCategory.title} articles and legal insights.`}
-        />
-        <link rel="canonical" href={canonicalUrl} />
-      </Helmet>
+      <SEO
+        title={currentCategory.title}
+        description={`Explore ${currentCategory.title} articles and legal insights from Luk & Associates.`}
+        keywords={`${currentCategory.title}, law firm Markham, legal insights Markham`}
+        path={`/resources/${category}`}
+        image="/assets/banner/blog.png"
+        schema={categorySchema}
+      />
 
-      <main ref={mainRef} style={{ overflow: 'hidden' }}>
-        {/* Banner Section */}
-        <div className="relative w-full h-72 md:h-[38rem]">
+      <main ref={mainRef} className="bg-slate-50/50 min-h-screen pb-24">
+        {/* Professional Blue-Themed Hero Section */}
+        <div className="relative w-full h-[22rem] md:h-[26rem] bg-[#092240] flex items-center overflow-hidden">
           <img
             src="/assets/banner/blog.png"
             alt={`${currentCategory.title} banner`}
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-overlay grayscale"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/60" />
-          <div className="relative z-10 h-full flex items-center px-6 md:px-24 lg:px-48">
-            <div className="w-full max-w-3xl">
-              <div className="flex items-center gap-4 mb-6">
-                <Link
-                  to="/resources"
-                  className="flex items-center gap-2 text-white hover:text-slate-200 transition-colors"
-                >
-                  <ChevronLeft size={20} />
-                  {t('blog.viewResources', {
-                    defaultValue: 'Back to Resources',
-                  })}
-                </Link>
-              </div>
-              <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
+          <div className="absolute inset-0 bg-gradient-to-t from-[#051324] via-[#0C2D57]/70 to-transparent" />
+
+          <div className="relative z-10 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto w-full pt-12">
+            <Link
+              to="/resources"
+              className="inline-flex items-center gap-2 text-blue-100 hover:text-white transition-colors mb-6 w-fit text-sm font-medium"
+            >
+              <ChevronLeft size={16} />
+              {t('blog.viewResources', { defaultValue: 'All Resources' })}
+            </Link>
+
+            <div className="max-w-3xl">
+              <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
                 {currentCategory.title}
               </h1>
-              <p className="text-lg md:text-xl text-slate-200 max-w-2xl mt-5">
+              <p className="text-lg text-blue-100/80 mt-4 leading-relaxed max-w-2xl font-light">
                 {currentCategory.description}
               </p>
-
-              <div className="mt-12 max-w-2xl">
-                <div className="rounded-3xl border border-white/10 bg-white/95 p-4 shadow-2xl shadow-slate-950/20 backdrop-blur-xl">
-                  <input
-                    type="text"
-                    placeholder={t('blog.searchPlaceholder', {
-                      defaultValue: 'Search articles...',
-                    })}
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full rounded-3xl border border-slate-200 bg-white px-5 py-4 text-slate-900 shadow-sm focus:border-[#0C2D57] focus:outline-none focus:ring-2 focus:ring-[#0C2D57]/20"
-                  />
-                </div>
-              </div>
             </div>
           </div>
         </div>
 
-        {/* Categories / Grid Filtering Section */}
-        <section className="mx-auto max-w-7xl px-6 py-16 md:px-12 lg:px-20">
-          {loading ? (
-            <div className="rounded-3xl border border-slate-200 bg-white p-10 text-center text-slate-700 shadow-sm">
-              {t('blog.loadingPosts', {
-                defaultValue: 'Loading blog posts...',
-              })}
-            </div>
-          ) : error ? (
-            <div className="rounded-3xl border border-rose-200 bg-rose-50 p-10 text-center text-rose-900 shadow-sm">
-              <p className="font-semibold">
-                {t('blog.unableToLoadPosts', {
-                  defaultValue: 'Unable to load blog posts',
-                })}
-              </p>
-              <p className="mt-2">{error}</p>
-            </div>
-          ) : (
-            <>
-              {subCategories.length > 0 && (
-                <section className="mb-16">
-                  <div className="mb-8 text-center">
-                    <h2 className="text-3xl font-bold text-[#0C2D57]">
+        <section className="mx-auto max-w-7xl px-6 md:px-12 lg:px-24 -mt-8 relative z-20">
+          <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 md:p-10">
+            {loading ? (
+              <div className="flex flex-col items-center justify-center py-16">
+                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#0C2D57] mb-4" />
+                <p className="text-slate-500 font-medium">
+                  {t('blog.loadingPosts', 'Loading articles...')}
+                </p>
+              </div>
+            ) : error ? (
+              <div className="py-12 text-center max-w-lg mx-auto">
+                <p className="font-semibold text-rose-800">
+                  {t('blog.unableToLoadPosts', 'Unable to load articles')}
+                </p>
+                <p className="mt-2 text-sm text-slate-500">{error}</p>
+              </div>
+            ) : (
+              <>
+                {/* Elegant Category Filters */}
+                {subCategories.length > 0 && (
+                  <div className="mb-14">
+                    <h2 className="text-sm font-bold uppercase tracking-wider text-slate-400 mb-6">
                       {t('blog.browsePracticeArea', {
-                        defaultValue: 'Browse by Topic',
+                        defaultValue: 'Filter by Specific Topic',
                       })}
                     </h2>
-                  </div>
 
-                  <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-                    {/* --- "All Topics" Premium Card --- */}
-                    <button
-                      onClick={() => setSelectedSubCategory(null)}
-                      className={`group rounded-2xl border p-6 text-left transition-all duration-300 shadow-sm ${
-                        selectedSubCategory === null
-                          ? 'bg-[#0C2D57] border-[#0C2D57] shadow-xl scale-[1.02] ring-4 ring-[#0C2D57]/10'
-                          : 'bg-white border-slate-200 hover:border-[#0C2D57]/30 hover:shadow-lg hover:scale-[1.01]'
-                      }`}
-                    >
-                      <div className="flex items-start gap-4">
-                        <div
-                          className={`flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl transition-colors duration-300 ${
-                            selectedSubCategory === null
-                              ? 'bg-white/10 text-white'
-                              : 'bg-[#0C2D57]/5 text-[#0C2D57]'
-                          }`}
-                        >
-                          <Grid size={26} />
-                        </div>
+                    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                      {subCategories.map((subCategory) => {
+                        const Icon = subCategory.icon;
+                        const active = selectedSubCategory === subCategory.slug;
 
-                        <div className="flex flex-1 flex-col">
-                          <h3
-                            className={`text-lg font-bold transition-colors duration-300 ${selectedSubCategory === null ? 'text-white' : 'text-[#0C2D57]'}`}
+                        return (
+                          <button
+                            key={subCategory.slug}
+                            onClick={() =>
+                              setSelectedSubCategory(
+                                active ? null : subCategory.slug
+                              )
+                            }
+                            className={`group flex items-start gap-4 p-4 rounded-xl border text-left transition-all duration-200 ${
+                              active
+                                ? 'border-[#0C2D57] bg-[#0C2D57]/5 ring-1 ring-[#0C2D57]'
+                                : 'border-slate-100 hover:border-slate-300 hover:bg-slate-50'
+                            }`}
                           >
-                            {t('blog.viewMoreArticles', {
-                              defaultValue: 'All Topics',
-                            })}
-                          </h3>
-                          <p
-                            className={`mt-2 text-sm leading-6 transition-colors duration-300 ${selectedSubCategory === null ? 'text-slate-200' : 'text-slate-600'}`}
-                          >
-                            {t('blog.latestArticlesSubtitle', {
-                              defaultValue:
-                                'Explore all insights under this area.',
-                            })}
-                          </p>
-                          <div
-                            className={`mt-4 flex items-center text-sm font-semibold transition-colors duration-300 ${selectedSubCategory === null ? 'text-white' : 'text-[#0C2D57]'}`}
-                          >
-                            {t('blog.viewResources', {
-                              defaultValue: 'View All',
-                            })}
-                            <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
-                              →
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </button>
-
-                    {/* --- Dynamic Localized Subcategories --- */}
-                    {subCategories.map((subCategory) => {
-                      const Icon = subCategory.icon;
-                      const active = selectedSubCategory === subCategory.slug;
-
-                      return (
-                        <button
-                          key={subCategory.slug}
-                          onClick={() =>
-                            setSelectedSubCategory(
-                              active ? null : subCategory.slug
-                            )
-                          }
-                          className={`group rounded-2xl border p-6 text-left transition-all duration-300 shadow-sm ${
-                            active
-                              ? 'bg-[#0C2D57] border-[#0C2D57] shadow-xl scale-[1.02] ring-4 ring-[#0C2D57]/10'
-                              : 'bg-white border-slate-200 hover:border-[#0C2D57]/30 hover:shadow-lg hover:scale-[1.01]'
-                          }`}
-                        >
-                          <div className="flex items-start gap-4">
                             <div
-                              className={`flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl transition-colors duration-300 ${
+                              className={`mt-0.5 p-2 rounded-lg transition-colors ${
                                 active
-                                  ? 'bg-white/10 text-white'
-                                  : 'bg-[#0C2D57]/5 text-[#0C2D57]'
+                                  ? 'bg-[#0C2D57] text-white'
+                                  : 'bg-slate-100 text-slate-500 group-hover:text-[#0C2D57]'
                               }`}
                             >
-                              <Icon size={26} />
+                              <Icon size={18} strokeWidth={2} />
                             </div>
-
-                            <div className="flex flex-1 flex-col">
+                            <div>
                               <h3
-                                className={`text-lg font-bold transition-colors duration-300 ${active ? 'text-white' : 'text-[#0C2D57]'}`}
+                                className={`font-semibold text-sm mb-1 transition-colors ${
+                                  active ? 'text-[#0C2D57]' : 'text-slate-900'
+                                }`}
                               >
                                 {subCategory.title}
                               </h3>
-                              <p
-                                className={`mt-2 text-sm leading-6 transition-colors duration-300 ${active ? 'text-slate-200' : 'text-slate-600'}`}
-                              >
+                              <p className="text-xs text-slate-500 leading-relaxed line-clamp-2">
                                 {subCategory.description}
                               </p>
-                              <div
-                                className={`mt-4 flex items-center text-sm font-semibold transition-colors duration-300 ${active ? 'text-white' : 'text-[#0C2D57]'}`}
-                              >
-                                {t('blog.viewMoreArticles', {
-                                  defaultValue: 'Learn More',
-                                })}
-                                <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
-                                  →
-                                </span>
-                              </div>
                             </div>
-                          </div>
-                        </button>
-                      );
-                    })}
+                          </button>
+                        );
+                      })}
+                    </div>
                   </div>
-                </section>
-              )}
+                )}
 
-              {/* Articles Grid rendering */}
-              {filteredPosts.length === 0 ? (
-                <div className="rounded-3xl border border-slate-200 bg-white p-10 text-center text-slate-700 shadow-sm">
-                  {t('blog.noPostsFound', {
-                    defaultValue:
-                      'Check back soon for new legal insights and updates.',
-                  })}
+                {/* Utility & Search Row */}
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-t border-slate-100 pt-10 mb-8">
+                  <h3 className="text-xl font-bold text-slate-900">
+                    {selectedSubCategory
+                      ? subCategories.find(
+                          (s) => s.slug === selectedSubCategory
+                        )?.title
+                      : 'All Articles'}
+                    <span className="text-slate-400 font-normal ml-2 text-sm">
+                      ({filteredPosts.length})
+                    </span>
+                  </h3>
+
+                  <div className="relative group w-full md:w-72">
+                    <Search
+                      className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-[#0C2D57] transition-colors"
+                      size={18}
+                    />
+                    <input
+                      type="text"
+                      placeholder="Search articles..."
+                      value={searchTerm}
+                      onChange={(e) => setSearchTerm(e.target.value)}
+                      className="w-full rounded-lg border border-slate-200 bg-slate-50/50 pl-10 pr-10 py-2.5 text-sm text-slate-900 transition-all focus:bg-white focus:outline-none focus:border-[#0C2D57] focus:ring-1 focus:ring-[#0C2D57]"
+                    />
+                    {searchTerm && (
+                      <button
+                        onClick={() => setSearchTerm('')}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
+                      >
+                        <X size={16} />
+                      </button>
+                    )}
+                  </div>
                 </div>
-              ) : (
-                <div className="grid gap-8 lg:grid-cols-2 xl:grid-cols-3">
-                  {filteredPosts.map((post) => (
-                    <BlogPostCard key={post.id} post={post} />
-                  ))}
-                </div>
-              )}
-            </>
-          )}
+
+                {/* Articles Grid */}
+                {filteredPosts.length === 0 ? (
+                  <div className="py-16 text-center">
+                    <p className="text-slate-600 font-medium mb-2">
+                      No articles found.
+                    </p>
+                    <p className="text-slate-400 text-sm">
+                      Try selecting a different topic or clearing your search.
+                    </p>
+                    {(selectedSubCategory || searchTerm) && (
+                      <button
+                        onClick={() => {
+                          setSelectedSubCategory(null);
+                          setSearchTerm('');
+                        }}
+                        className="mt-6 inline-flex items-center justify-center px-5 py-2 rounded-lg bg-slate-100 text-slate-700 text-sm font-medium hover:bg-slate-200 transition-colors"
+                      >
+                        Clear Filters
+                      </button>
+                    )}
+                  </div>
+                ) : (
+                  <div className="grid gap-x-8 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
+                    {filteredPosts.map((post) => (
+                      <BlogPostCard key={post.id || post.slug} post={post} />
+                    ))}
+                  </div>
+                )}
+              </>
+            )}
+          </div>
         </section>
 
         <ScrollToTop />

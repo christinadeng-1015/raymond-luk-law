@@ -6,47 +6,56 @@ const OfficeImageCarousel = () => {
   const { t } = useTranslation('contact');
   const officeImages = t('officeImages', { returnObjects: true });
   const carouselRef = useRef(null);
+  const isHoveredRef = useRef(false);
 
   useEffect(() => {
     const carousel = carouselRef.current;
-    let scrollAmount = 0;
+    if (!carousel) return;
 
-    const startAutoScroll = () => {
-      if (carousel) {
-        const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+    let animationFrameId;
 
-        const autoScroll = () => {
-          scrollAmount += 0.8;
-          if (scrollAmount >= maxScrollLeft) {
-            carousel.scrollLeft = 0;
-            scrollAmount = 0;
-          } else {
-            carousel.scrollLeft = scrollAmount;
-          }
-        };
-
-        const interval = setInterval(autoScroll, 20);
-        return () => clearInterval(interval);
+    const scroll = () => {
+      if (!isHoveredRef.current && carousel) {
+        carousel.scrollLeft += 0.8;
+        // Seamless loop reset when scrolling past the first set of duplicated items
+        if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
+          carousel.scrollLeft = 0;
+        }
       }
+      animationFrameId = requestAnimationFrame(scroll);
     };
 
-    const stopAutoScroll = startAutoScroll();
-    return stopAutoScroll;
+    animationFrameId = requestAnimationFrame(scroll);
+
+    return () => cancelAnimationFrame(animationFrameId);
   }, []);
 
+  if (!Array.isArray(officeImages) || officeImages.length === 0) {
+    return null;
+  }
+
+  // Duplicate items for continuous seamless loop
+  const displayImages = [...officeImages, ...officeImages];
+
   return (
-    <div className="relative w-full md:w-3/5 lg:w-2/3 flex items-center justify-center overflow-hidden">
+    <div className="w-full overflow-hidden py-4">
       <div
         ref={carouselRef}
-        className="flex overflow-x-hidden space-x-4 w-full max-w-screen-2xl scrollbar-hide"
+        onMouseEnter={() => (isHoveredRef.current = true)}
+        onMouseLeave={() => (isHoveredRef.current = false)}
+        className="flex overflow-x-auto space-x-4 w-full no-scrollbar scroll-smooth"
+        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
-        {officeImages.concat(officeImages).map((image, index) => (
-          <div key={index} className="flex-shrink-0 w-96 h-96 cursor-pointer">
+        {displayImages.map((image, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0 w-72 sm:w-80 md:w-96 h-64 sm:h-72 md:h-80 cursor-pointer overflow-hidden rounded-xl shadow-md group"
+          >
             <OptimizedImage
               src={image}
-              alt={`Office ${index + 1}`}
+              alt={`Office view ${(index % officeImages.length) + 1}`}
               originalFormat="jpg"
-              className="w-full h-full object-cover rounded-lg shadow-lg"
+              className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 ease-out"
             />
           </div>
         ))}

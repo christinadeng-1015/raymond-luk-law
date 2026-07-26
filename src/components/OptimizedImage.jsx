@@ -15,7 +15,7 @@ import React from 'react';
  */
 const OptimizedImage = ({
   src,
-  alt,
+  alt = '',
   className = '',
   lazy = true,
   originalFormat = 'jpg',
@@ -44,7 +44,7 @@ const OptimizedImage = ({
       {/* Fallback to original format */}
       <img
         src={`${basePath}.${originalFormat}`}
-        alt={alt}
+        alt={alt || ''}
         className={className}
         loading={lazy ? 'lazy' : 'eager'}
         {...props}

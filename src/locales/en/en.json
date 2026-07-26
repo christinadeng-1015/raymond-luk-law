@@ -124,6 +124,7 @@
   ],
   "blog": {
     "title": "Legal Insights",
+    "featuredTitle": "Featured Articles",
     "subtitle": "Stay informed with expert legal insights, practical guides, and news from our team.",
     "searchPlaceholder": "Search articles...",
     "browsePracticeArea": "Browse by Topic",

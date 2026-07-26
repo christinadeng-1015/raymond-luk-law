@@ -29,6 +29,21 @@ const normalizeLocale = (locale) => {
   return locale;
 };
 
+const hydrateImage = (imageField) => {
+  if (!imageField) return null;
+  if (typeof imageField === 'string') return imageField;
+
+  if (imageField.url) {
+    return imageField.url.startsWith('http')
+      ? imageField.url
+      : `https:${imageField.url}`;
+  }
+
+  const fileUrl = imageField.fields?.file?.url;
+  if (!fileUrl) return null;
+  return fileUrl.startsWith('http') ? fileUrl : `https:${fileUrl}`;
+};
+
 const mapPost = (entry) => {
   const { fields, sys } = entry;
 
@@ -46,6 +61,11 @@ const mapPost = (entry) => {
     finalThoughts: fields?.finalThoughts || null,
     category: fields?.category || 'Uncategorized',
     subCategory: fields?.subCategory || 'General',
+    isFeatureArticle:
+      fields?.isFeatureArticle ?? fields?.isFeaturedArticle ?? false,
+    isFeaturedArticle:
+      fields?.isFeaturedArticle ?? fields?.isFeatureArticle ?? false,
+    image: hydrateImage(fields?.image),
   };
 
   return post;

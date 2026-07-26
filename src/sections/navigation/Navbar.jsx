@@ -102,19 +102,18 @@ const Nav = () => {
                 );
               }
 
-              return (
-                <Navbar.Link
-                  href={item.url}
-                  key={item.key}
-                  className={`
-                    cursor-pointer transition-all duration-300
-                    text-[20px] px-8 py-4 text-left w-full
-                    lg:text-[16px] lg:px-5 lg:py-2 lg:text-center lg:w-auto
-                    font-serif tracking-wide text-white hover:text-amber-500 hover:bg-transparent
-                    border-b-2 border-transparent transition-all duration-300
-                  `}
-                >
-                  {item.dropdown ? (
+              if (item.dropdown) {
+                return (
+                  <div
+                    key={item.key}
+                    className={`
+                      cursor-pointer transition-all duration-300
+                      text-[20px] px-8 py-4 text-left w-full
+                      lg:text-[16px] lg:px-5 lg:py-2 lg:text-center lg:w-auto
+                      font-serif tracking-wide text-white hover:text-amber-500 hover:bg-transparent
+                      border-b-2 border-transparent transition-all duration-300
+                    `}
+                  >
                     <Dropdown
                       inline
                       label={
@@ -146,11 +145,25 @@ const Nav = () => {
                         ))}
                       </div>
                     </Dropdown>
-                  ) : (
-                    <div className="flex items-center gap-2">
-                      <span>{item.label}</span>
-                    </div>
-                  )}
+                  </div>
+                );
+              }
+
+              return (
+                <Navbar.Link
+                  href={item.url}
+                  key={item.key}
+                  className={`
+                    cursor-pointer transition-all duration-300
+                    text-[20px] px-8 py-4 text-left w-full
+                    lg:text-[16px] lg:px-5 lg:py-2 lg:text-center lg:w-auto
+                    font-serif tracking-wide text-white hover:text-amber-500 hover:bg-transparent
+                    border-b-2 border-transparent transition-all duration-300
+                  `}
+                >
+                  <div className="flex items-center gap-2">
+                    <span>{item.label}</span>
+                  </div>
                 </Navbar.Link>
               );
             })}

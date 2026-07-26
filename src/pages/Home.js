@@ -1,5 +1,6 @@
 import { useRef } from 'react';
-import { Helmet } from 'react-helmet-async';
+import { useTranslation } from 'react-i18next';
+import SEO from '../components/SEO';
 import Header from '../sections/home/Header';
 import TeamContainer from '../sections/team/TeamContainer';
 import Process from '../sections/home/Process';
@@ -12,21 +13,59 @@ import ScrollToTop from '../sections/home/ScrollToTop';
 
 export default function Home() {
   const mainRef = useRef();
-  const canonicalUrl =
-    typeof window !== 'undefined'
-      ? `https://www.luklaw.ca${window.location.pathname}`
-      : 'https://www.luklaw.ca';
+  const { t } = useTranslation('home');
+
+  const domain = 'https://www.luklaw.ca';
+
+  // Dynamic meta text using i18next with fallbacks
+  const pageDescription = t(
+    'seo.description',
+    'Expert legal services in Markham, ON. Luk & Associates specializes in family law, immigration, personal injury, real estate, and wills. Contact us for reliable legal advice.'
+  );
+
+  // Full LegalService schema for the main homepage
+  const homeSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LegalService',
+    name: 'Luk & Associates',
+    url: domain,
+    image: `${domain}/assets/banner/home.png`,
+    telephone: '+19053331740',
+    description: pageDescription,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Liberty Square, 3601 Hwy 7 Unit 803',
+      addressLocality: 'Markham',
+      addressRegion: 'ON',
+      postalCode: 'L3R 0M3',
+      addressCountry: 'CA',
+    },
+    areaServed: [
+      {
+        '@type': 'City',
+        name: 'Markham',
+      },
+      {
+        '@type': 'AdministrativeArea',
+        name: 'Ontario',
+      },
+    ],
+  };
 
   return (
     <>
-      <Helmet>
-        <title>Luk & Associates ｜ Law firm in Markham, ON</title>
-        <meta
-          name="description"
-          content="Expert legal services in Markham, ON. Luk & Associates specializes in family law, immigration, personal injury, real estate, and wills. Contact us for reliable legal advice."
-        />
-        <link rel="canonical" href={canonicalUrl} />
-      </Helmet>
+      <SEO
+        title={t('seo.title', 'Law Firm in Markham, ON')}
+        description={pageDescription}
+        keywords={t(
+          'seo.keywords',
+          'law firm Markham, Markham law firm, legal services Markham, family lawyer Markham, real estate lawyer Markham, wills and estates Markham'
+        )}
+        path="/"
+        image="/assets/banner/home.png"
+        schema={homeSchema}
+      />
+
       <main ref={mainRef}>
         <Header />
         <TeamContainer />

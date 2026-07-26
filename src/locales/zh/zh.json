@@ -49,6 +49,7 @@
   "blog": {
     "title": "法律博客",
     "subtitle": "获取由我们团队为您带来的专业法律洞察、实用指南以及最新动态，助您随时掌握重要资讯。",
+    "featuredTitle": "精选文章",
     "searchPlaceholder": "搜索文章...",
     "browsePracticeArea": "按主题浏览",
     "latestArticlesTitle": "所有领域的最新文章",

@@ -1,5 +1,6 @@
 {
   "title": "Contact Us",
+  "description": "If you have questions or are searching for expert legal assistance, please do not hesitate to contact us.",
   "table": {
     "title": "Business Hours",
     "header": { "day": "Day", "hours": "Hours" },

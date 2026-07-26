@@ -54,7 +54,7 @@ const Header = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-[#10284e]/75 via-[#10284e]/40 to-transparent pointer-events-none z-10" />
 
       <div className="absolute inset-0 z-20 flex items-center px-2 md:px-16 lg:px-24">
-        <div className="w-full max-w-4xl flex items-center justify-between gap-8">
+        <div className="w-full max-w-5xl flex items-center justify-between gap-8">
           <button
             onClick={handlePrev}
             className="text-white/60 hover:text-white bg-white/5 hover:bg-white/10 p-3 rounded-full transition-all duration-300 transform active:scale-95 flex-shrink-0 backdrop-blur-sm"

@@ -16,8 +16,10 @@ const LawPage = React.lazy(() => import('./pages/Law'));
 const ContactPage = React.lazy(() => import('./pages/Contact'));
 const CareerPage = React.lazy(() => import('./pages/Career'));
 const BlogPage = React.lazy(() => import('./pages/Blog'));
-const BlogCategoryPage = React.lazy(() => import('./pages/BlogCategory'));
-const BlogPostPage = React.lazy(() => import('./pages/BlogPost'));
+const BlogCategoryPage = React.lazy(
+  () => import('./sections/blog/BlogCategory')
+);
+const BlogPostPage = React.lazy(() => import('./sections/blog/BlogPost'));
 const NotFound = React.lazy(() => import('./pages/NotFound'));
 
 function BlogRouter() {

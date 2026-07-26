@@ -558,7 +558,6 @@
           "key": "wills",
           "label": "遗嘱（平安纸）",
           "icon": "HiOutlineClipboardList",
-          "desc": "我们明白您想确保您的亲人未来的生活得到保障，无论是简单或是复杂的遗嘱，我们的遗产规划团队都可以根据您独特的需求和情况提供全方位的遗嘱起草服务。",
           "whyChooseUs": {
             "title": "为什么选择我们",
             "items": [
@@ -654,7 +653,6 @@
           "key": "probate-estate-administration",
           "label": "遗嘱认证和遗产管理",
           "icon": "GiArchiveRegister",
-          "desc": "我们明白失去至亲是一件极度伤心的事情，若同时需要处理遗产承继事宜，更会添加极大的 压力。 我们的团队会在整个遗产结算过程中提供全面支援，協助您渡过这一段艰难的时期。",
           "whyChooseUs": {
             "title": "为什么选择我们",
             "items": [
@@ -918,39 +916,6 @@
               "desc": "<i>我们将确认您的资格、规划时间表，并为您提供精确的文件清单。<br/>以上仅为一般信息，不构成法律建议。移民项目和审批流程经常发生变化，请针对您的具体情况获取专业建议。</i>"
             }
           ]
-        }
-      ]
-    },
-    {
-      "path": "/corporate-law",
-      "title": "公司法",
-      "imageSrc": "/assets/services/corporate-law.png",
-      "icon": "corporate-law.png",
-      "desc": "在 Luk & Associates，我们了解商业法的复杂性以及公司在法律领域面临的挑战。我们经验丰富的律师团队专门为各种规模的企业（从初创公司到成熟公司）提供全面的公司法律服务。",
-      "tabs": [
-        {
-          "key": "incorporating",
-          "label": "公司注册",
-          "icon": "HiOutlineOfficeBuilding",
-          "content": [{ "desc": "更多信息即将发布" }]
-        },
-        {
-          "key": "shareholder-agreement",
-          "label": "股东协议",
-          "icon": "HiOutlineClipboardList",
-          "content": [{ "desc": "更多信息即将发布" }]
-        },
-        {
-          "key": "partnership-agreement",
-          "label": "合作伙伴/合作协议",
-          "icon": "AiOutlineTeam",
-          "content": [{ "desc": "更多信息即将发布" }]
-        },
-        {
-          "key": "joint-venture",
-          "label": "合资协议",
-          "icon": "FiUsers",
-          "content": [{ "desc": "更多信息即将发布" }]
         }
       ]
     },

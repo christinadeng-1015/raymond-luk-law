@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import CareerContainer from '../sections/career/CareerContainer';
 import ContactFloatIcon from '../sections/home/ContactFloatIcon';
 import OptimizedImage from '../components/OptimizedImage';
@@ -8,27 +8,62 @@ import OptimizedImage from '../components/OptimizedImage';
 export default function CareerPage() {
   const mainRef = useRef();
   const { t } = useTranslation('career');
-  const canonicalUrl =
-    typeof window !== 'undefined'
-      ? `https://www.luklaw.ca${window.location.pathname}`
-      : 'https://www.luklaw.ca/careers';
+
+  const domain = 'https://www.luklaw.ca';
+
+  // Dynamic meta text using i18next with fallbacks
+  const pageTitle = t(
+    'seo.title',
+    'Careers | Join Our Legal Team in Markham, ON'
+  );
+  const pageDescription = t(
+    'seo.description',
+    'Explore career opportunities at Luk & Associates. Join our experienced legal team in Markham, ON, specializing in family law, immigration, and more.'
+  );
+
+  // Schema structured specifically for a Career Page
+  const careerSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: pageTitle,
+    url: `${domain}/careers`,
+    description: pageDescription,
+    mainEntity: {
+      '@type': 'LegalService',
+      name: 'Luk & Associates',
+      url: domain,
+      image: `${domain}/assets/banner/career.jpg`,
+      telephone: '+19053331740',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Liberty Square, 3601 Hwy 7 Unit 803',
+        addressLocality: 'Markham',
+        addressRegion: 'ON',
+        postalCode: 'L3R 0M3',
+        addressCountry: 'CA',
+      },
+    },
+  };
+
   return (
     <>
-      <Helmet>
-        <title>
-          Careers | Luk & Associates - Join Our Legal Team in Markham, ON
-        </title>
-        <meta
-          name="description"
-          content="Explore career opportunities at Luk & Associates. Join our experienced legal team in Markham, ON, specializing in family law, immigration, and more."
-        />
-        <link rel="canonical" href={canonicalUrl} />
-      </Helmet>
+      <SEO
+        title={pageTitle}
+        description={pageDescription}
+        keywords={t(
+          'seo.keywords',
+          'careers law firm Markham, law jobs Markham, legal careers Ontario, legal assistant jobs Markham'
+        )}
+        path="/careers"
+        image="/assets/banner/career.jpg"
+        schema={careerSchema}
+      />
+
       <main ref={mainRef} style={{ overflow: 'hidden' }}>
-        <div className="relative w-full h-[280px] md:h-[360px] overflow-hidden">
+        <div className="relative w-full h-[360px] md:h-[440px] overflow-hidden">
           <OptimizedImage
             src="assets/banner/career.jpg"
-            alt="Career opportunities at Luk & Associates"
+            alt={t('bannerAlt', 'Career opportunities at Luk & Associates')}
             originalFormat="jpg"
             className="absolute inset-0 w-full h-full object-cover transform scale-105"
           />
