@@ -53,7 +53,7 @@ const ICON_MAP = {
   probate: Gavel,
 };
 
-const INITIAL_POST_LIMIT = 6; // Shows 2 rows on lg grid (3 columns x 2)
+const INITIAL_POST_LIMIT = 6;
 
 export default function BlogCategoryPage() {
   const mainRef = useRef();
@@ -238,8 +238,7 @@ export default function BlogCategoryPage() {
       </Helmet>
 
       <main ref={mainRef} className="bg-slate-50/50 min-h-screen pb-24">
-        {/* Professional Blue-Themed Hero Section */}
-        <div className="relative w-full h-[22rem] md:h-[26rem] bg-[#092240] flex items-center overflow-hidden">
+        <div className="relative w-full h-[18rem] md:h-[26rem] bg-[#092240] flex items-end pb-8 md:pb-16 overflow-hidden">
           <img
             src="/assets/banner/blog.png"
             alt={`${currentCategory.title} banner`}
@@ -247,37 +246,37 @@ export default function BlogCategoryPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#051324] via-[#0C2D57]/70 to-transparent" />
 
-          <div className="relative z-10 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto w-full pt-12">
+          <div className="relative z-10 px-4 sm:px-6 md:px-12 lg:px-24 max-w-7xl mx-auto w-full">
             <Link
               to="/resources"
-              className="inline-flex items-center gap-2 text-blue-100 hover:text-white transition-colors mb-6 w-fit text-sm font-medium"
+              className="inline-flex items-center gap-2 text-blue-100 hover:text-white transition-colors mb-4 md:mb-6 w-fit text-sm font-medium"
             >
               <ChevronLeft size={16} />
               {t('blog.viewResources', { defaultValue: 'All Resources' })}
             </Link>
 
             <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
+              <h1 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
                 {currentCategory.title}
               </h1>
-              <p className="text-lg text-blue-100/80 mt-4 leading-relaxed max-w-2xl font-light">
+              <p className="text-sm md:text-lg text-blue-100/80 mt-3 md:mt-4 leading-relaxed max-w-2xl font-light">
                 {currentCategory.description}
               </p>
             </div>
           </div>
         </div>
 
-        <section className="mx-auto max-w-7xl px-6 md:px-12 lg:px-24 -mt-8 relative z-20">
-          <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 md:p-10">
+        <section className="mx-auto max-w-7xl px-4 sm:px-6 md:px-12 lg:px-24 mt-4 md:-mt-8 relative z-20">
+          <div className="md:bg-white md:rounded-2xl md:shadow-sm md:border md:border-slate-200 md:p-10">
             {loading ? (
-              <div className="flex flex-col items-center justify-center py-16">
+              <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 md:p-0 md:bg-transparent md:border-none md:shadow-none md:rounded-none flex flex-col items-center justify-center py-16">
                 <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#0C2D57] mb-4" />
                 <p className="text-slate-500 font-medium">
                   {t('blog.loadingPosts', 'Loading articles...')}
                 </p>
               </div>
             ) : error ? (
-              <div className="py-12 text-center max-w-lg mx-auto">
+              <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 md:p-0 md:bg-transparent md:border-none md:shadow-none md:rounded-none py-12 text-center max-w-lg mx-auto">
                 <p className="font-semibold text-rose-800">
                   {t('blog.unableToLoadPosts', 'Unable to load articles')}
                 </p>
@@ -285,16 +284,15 @@ export default function BlogCategoryPage() {
               </div>
             ) : (
               <>
-                {/* Elegant Category Filters */}
                 {subCategories.length > 0 && (
-                  <div className="mb-14">
-                    <h2 className="text-sm font-bold uppercase tracking-wider text-slate-400 mb-6">
+                  <div className="mb-8 md:mb-14">
+                    <h2 className="text-xs md:text-sm font-bold uppercase tracking-wider text-slate-500 md:text-slate-400 mb-4 md:mb-6 ml-1 md:ml-0">
                       {t('blog.browsePracticeArea', {
                         defaultValue: 'Filter by Specific Topic',
                       })}
                     </h2>
 
-                    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    <div className="grid gap-3 md:gap-4 sm:grid-cols-2 lg:grid-cols-3">
                       {subCategories.map((subCategory) => {
                         const Icon = subCategory.icon;
                         const active = selectedSubCategory === subCategory.slug;
@@ -305,14 +303,14 @@ export default function BlogCategoryPage() {
                             onClick={() =>
                               handleSubCategorySelect(subCategory.slug)
                             }
-                            className={`group flex items-start gap-4 p-4 rounded-xl border text-left transition-all duration-200 ${
+                            className={`group flex items-start gap-3 md:gap-4 p-3.5 md:p-4 rounded-xl border text-left transition-all duration-200 ${
                               active
-                                ? 'border-[#0C2D57] bg-[#0C2D57]/5 ring-1 ring-[#0C2D57]'
-                                : 'border-slate-100 hover:border-slate-300 hover:bg-slate-50'
+                                ? 'border-[#0C2D57] bg-white md:bg-[#0C2D57]/5 ring-1 ring-[#0C2D57] shadow-sm md:shadow-none'
+                                : 'border-slate-200 md:border-slate-100 bg-white md:bg-transparent hover:border-slate-300 hover:bg-slate-50 shadow-sm md:shadow-none'
                             }`}
                           >
                             <div
-                              className={`mt-0.5 p-2 rounded-lg transition-colors ${
+                              className={`mt-0.5 p-1.5 md:p-2 rounded-lg transition-colors ${
                                 active
                                   ? 'bg-[#0C2D57] text-white'
                                   : 'bg-slate-100 text-slate-500 group-hover:text-[#0C2D57]'
@@ -322,7 +320,7 @@ export default function BlogCategoryPage() {
                             </div>
                             <div>
                               <h3
-                                className={`font-semibold text-sm mb-1 transition-colors ${
+                                className={`font-semibold text-sm mb-0.5 md:mb-1 transition-colors ${
                                   active ? 'text-[#0C2D57]' : 'text-slate-900'
                                 }`}
                               >
@@ -339,94 +337,99 @@ export default function BlogCategoryPage() {
                   </div>
                 )}
 
-                <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-t border-slate-100 pt-10 mb-8">
-                  <h3 className="text-xl font-bold text-slate-900">
-                    {selectedSubCategory
-                      ? subCategories.find(
-                          (s) => s.slug === selectedSubCategory
-                        )?.title
-                      : 'All Articles'}
-                    <span className="text-slate-400 font-normal ml-2 text-sm">
-                      ({filteredPosts.length})
-                    </span>
-                  </h3>
+                <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 sm:p-8 md:p-0 md:bg-transparent md:border-none md:shadow-none md:rounded-none">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-6 md:border-t md:border-slate-100 md:pt-10 mb-6 md:mb-8">
+                    <h3 className="text-lg md:text-xl font-bold text-slate-900">
+                      {selectedSubCategory
+                        ? subCategories.find(
+                            (s) => s.slug === selectedSubCategory
+                          )?.title
+                        : 'All Articles'}
+                      <span className="text-slate-400 font-normal ml-2 text-sm">
+                        ({filteredPosts.length})
+                      </span>
+                    </h3>
 
-                  <div className="relative group w-full md:w-72">
-                    <Search
-                      className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-[#0C2D57] transition-colors"
-                      size={18}
-                    />
-                    <input
-                      type="text"
-                      placeholder="Search articles..."
-                      value={searchTerm}
-                      onChange={handleSearchChange}
-                      className="w-full rounded-lg border border-slate-200 bg-slate-50/50 pl-10 pr-10 py-2.5 text-sm text-slate-900 transition-all focus:bg-white focus:outline-none focus:border-[#0C2D57] focus:ring-1 focus:ring-[#0C2D57]"
-                    />
-                    {searchTerm && (
-                      <button
-                        onClick={() => {
-                          setSearchTerm('');
-                          setShowAllArticles(false);
-                        }}
-                        className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
-                      >
-                        <X size={16} />
-                      </button>
-                    )}
-                  </div>
-                </div>
-
-                {filteredPosts.length === 0 ? (
-                  <div className="py-16 text-center">
-                    <p className="text-slate-600 font-medium mb-2">
-                      No articles found.
-                    </p>
-                    <p className="text-slate-400 text-sm">
-                      Try selecting a different topic or clearing your search.
-                    </p>
-                    {(selectedSubCategory || searchTerm) && (
-                      <button
-                        onClick={() => {
-                          setSelectedSubCategory(null);
-                          setSearchTerm('');
-                          setShowAllArticles(false);
-                        }}
-                        className="mt-6 inline-flex items-center justify-center px-5 py-2 rounded-lg bg-slate-100 text-slate-700 text-sm font-medium hover:bg-slate-200 transition-colors"
-                      >
-                        Clear Filters
-                      </button>
-                    )}
-                  </div>
-                ) : (
-                  <>
-                    <div className="grid gap-x-8 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
-                      {displayedPosts.map((post) => (
-                        <BlogPostCard key={post.id || post.slug} post={post} />
-                      ))}
-                    </div>
-
-                    {filteredPosts.length > INITIAL_POST_LIMIT && (
-                      <div className="mt-12 text-center pt-8 border-t border-slate-100">
+                    <div className="relative group w-full md:w-72">
+                      <Search
+                        className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-[#0C2D57] transition-colors"
+                        size={18}
+                      />
+                      <input
+                        type="text"
+                        placeholder="Search articles..."
+                        value={searchTerm}
+                        onChange={handleSearchChange}
+                        className="w-full rounded-lg border border-slate-200 bg-slate-50/50 pl-10 pr-10 py-2.5 text-sm text-slate-900 transition-all focus:bg-white focus:outline-none focus:border-[#0C2D57] focus:ring-1 focus:ring-[#0C2D57]"
+                      />
+                      {searchTerm && (
                         <button
-                          onClick={() => setShowAllArticles((prev) => !prev)}
-                          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#0C2D57] text-white font-semibold text-sm shadow-sm hover:bg-slate-800 transition-all duration-200"
+                          onClick={() => {
+                            setSearchTerm('');
+                            setShowAllArticles(false);
+                          }}
+                          className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
                         >
-                          <span>
-                            {showAllArticles
-                              ? 'Show Less'
-                              : 'View All Articles'}
-                          </span>
-                          {showAllArticles ? (
-                            <ChevronUp size={16} />
-                          ) : (
-                            <ChevronDown size={16} />
-                          )}
+                          <X size={16} />
                         </button>
+                      )}
+                    </div>
+                  </div>
+
+                  {filteredPosts.length === 0 ? (
+                    <div className="py-8 md:py-16 text-center">
+                      <p className="text-slate-600 font-medium mb-2">
+                        No articles found.
+                      </p>
+                      <p className="text-slate-400 text-sm">
+                        Try selecting a different topic or clearing your search.
+                      </p>
+                      {(selectedSubCategory || searchTerm) && (
+                        <button
+                          onClick={() => {
+                            setSelectedSubCategory(null);
+                            setSearchTerm('');
+                            setShowAllArticles(false);
+                          }}
+                          className="mt-6 inline-flex items-center justify-center px-5 py-2 rounded-lg bg-slate-100 text-slate-700 text-sm font-medium hover:bg-slate-200 transition-colors"
+                        >
+                          Clear Filters
+                        </button>
+                      )}
+                    </div>
+                  ) : (
+                    <>
+                      <div className="grid gap-x-6 gap-y-10 md:gap-x-8 md:gap-y-12 md:grid-cols-2 lg:grid-cols-3">
+                        {displayedPosts.map((post) => (
+                          <BlogPostCard
+                            key={post.id || post.slug}
+                            post={post}
+                          />
+                        ))}
                       </div>
-                    )}
-                  </>
-                )}
+
+                      {filteredPosts.length > INITIAL_POST_LIMIT && (
+                        <div className="mt-10 md:mt-12 text-center pt-6 md:pt-8 border-t border-slate-100">
+                          <button
+                            onClick={() => setShowAllArticles((prev) => !prev)}
+                            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#0C2D57] text-white font-semibold text-sm shadow-sm hover:bg-slate-800 transition-all duration-200"
+                          >
+                            <span>
+                              {showAllArticles
+                                ? 'Show Less'
+                                : 'View All Articles'}
+                            </span>
+                            {showAllArticles ? (
+                              <ChevronUp size={16} />
+                            ) : (
+                              <ChevronDown size={16} />
+                            )}
+                          </button>
+                        </div>
+                      )}
+                    </>
+                  )}
+                </div>
               </>
             )}
           </div>

@@ -135,6 +135,25 @@
     "loadingPosts": "Loading blog posts...",
     "unableToLoadPosts": "Unable to load blog posts",
     "noPostsFound": "No posts found.",
+    "viewDetails": "View Details",
+    "updated": "Updated",
+    "resources": "RESOURCES",
+    "insights": "INSIGHTS",
+    "moreArticles": "Related Insights",
+    "viewAll": "View All",
+    "toc": {
+      "inThisArticle": "In this article",
+      "quickAnswer": "Quick Answer",
+      "overview": "Overview",
+      "keyInsights": "Key Questions",
+      "commonQuestions": "Common Questions",
+      "closingPerspectives": "Final Thoughts"
+    },
+    "cta": {
+      "needAdvice": "Need Legal Advice?",
+      "protectMatters": "We're here to help you protect what matters most.",
+      "bookConsultation": "Book a Consultation"
+    },
     "categories": {
       "familyLaw": {
         "title": "Family Law",

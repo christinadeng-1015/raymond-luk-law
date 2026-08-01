@@ -59,6 +59,25 @@
     "loadingPosts": "正在加载博客文章...",
     "unableToLoadPosts": "无法加载博客文章",
     "noPostsFound": "未找到相关文章。",
+    "viewDetails": "查看详情",
+    "updated": "最后更新",
+    "resources": "法律资源",
+    "insights": "专业见解",
+    "moreArticles": "相关阅读",
+    "viewAll": "查看全部",
+    "toc": {
+      "inThisArticle": "本文目录",
+      "quickAnswer": "快速解答",
+      "overview": "文章概述",
+      "keyInsights": "核心问题",
+      "commonQuestions": "常见问题",
+      "closingPerspectives": "总结与建议"
+    },
+    "cta": {
+      "needAdvice": "需要法律咨询？",
+      "protectMatters": "我们致力于保护对您最重要的权益。",
+      "bookConsultation": "预约咨询"
+    },
     "categories": {
       "familyLaw": {
         "title": "家庭法",

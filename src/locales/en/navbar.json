@@ -52,19 +52,9 @@
             "url": "/wills-and-estates"
           },
           {
-            "key": "personal-injury-law",
-            "label": "Personal Injury Law",
-            "url": "/personal-injury-law"
-          },
-          {
             "key": "immigration-law",
             "label": "Immigration Law",
             "url": "/immigration-law"
-          },
-          {
-            "key": "corporate-law",
-            "label": "Corporate Law",
-            "url": "/corporate-law"
           },
           {
             "key": "landlord-tenant-board",

@@ -599,8 +599,47 @@
           ]
         },
         {
-          "key": "power-of-attorney",
-          "label": "Power of Attorney",
+          "key": "power-of-attorney-property",
+          "label": "Power of Attorney Property",
+          "icon": "RiGovernmentLine",
+          "whyChooseUs": {
+            "title": "Why Choose Us",
+            "items": [
+              {
+                "icon": "award",
+                "title": "Experience & Expertise",
+                "desc": "Our lawyers have extensive experience in estate planning, healthcare law, and drafting effective Powers of Attorney in Ontario. We stay up-to-date with the latest legal developments to provide you with expert guidance and the highest quality service."
+              },
+              {
+                "icon": "users",
+                "title": "Personalized Approach",
+                "desc": "We recognize that healthcare decisions are deeply personal and financial situations are unique. Our team takes a compassionate, individualized approach, working closely with you to understand your values, preferences, and goals to tailor our services to your specific needs."
+              },
+              {
+                "icon": "shield",
+                "title": "Comprehensive Guidance",
+                "desc": "From the initial consultation to the drafting and execution of your documents, we provide thorough explanations and support every step of the way. We are committed to ensuring your wishes are accurately reflected, legally binding, and that you understand the implications of your decisions."
+              }
+            ],
+            "disclaimer": "Protect your financial future today. Don't wait until it's too late to plan for the unexpected. Contact us to schedule a consultation with one of our experienced estate planning lawyers. We'll help you create a robust Continuing Power of Attorney for Property that safeguards your financial interests and provides peace of mind for you and your loved ones."
+          },
+          "content": [
+            {
+              "title": "Power of Attorney for Property",
+              "imageSrc": "/assets/services/wills/power-of-attorney.jpg",
+              "desc": "At Luk & Associates, we recognize the importance of planning for the unexpected when it comes to managing your financial affairs. Our team of experienced lawyers specializes in drafting Continuing Powers of Attorney for Property to ensure your interests are protected and your wishes are honoured in the event of incapacity.",
+              "subtitle": [
+                {
+                  "title": "Our Continuing Power of Attorney for Property services include:",
+                  "desc": "<ul><li><strong>Initial Consultation:</strong> We'll meet with you to discuss your financial circumstances, concerns, and objectives. Our goal is to gain a comprehensive understanding of your needs to tailor our services accordingly.</li><li><strong>Document Drafting:</strong> Our experienced lawyers will draft a Continuing Power of Attorney for Property document that appoints a trusted individual or individuals to manage your financial affairs on your behalf in the event of incapacity.</li><li><strong>Customized Provisions:</strong> We'll work with you to include provisions that reflect your preferences regarding the management of your assets, investments, real estate, and other financial matters.</li><li><strong>Legal Compliance:</strong> Our team ensures that your Continuing Power of Attorney for Property complies with all relevant laws and regulations in Ontario, providing you with peace of mind knowing that your interests are protected.</li></ul>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "power-of-attorney-personal-care",
+          "label": "Power of Attorney Personal Care",
           "icon": "RiGovernmentLine",
           "whyChooseUs": {
             "title": "Why Choose Us",
@@ -632,17 +671,6 @@
                 {
                   "title": "Our Power of Attorney for Personal Care services include:",
                   "desc": "<ul><li><strong>Initial Consultation:</strong> We'll meet with you to discuss your healthcare preferences, values, and any specific instructions you have regarding your medical treatment and personal care. Our goal is to ensure that your Power of Attorney for Personal Care reflects your wishes accurately.</li><li><strong>Document Drafting:</strong> Our experienced lawyers will draft a Power of Attorney for Personal Care document appointing a trusted individual (your 'attorney') to make healthcare decisions on your behalf if you become incapable of making them yourself. We will ensure that the document complies with all legal requirements in Ontario.</li><li><strong>Customized Instructions:</strong> We'll work with you to include detailed instructions and preferences regarding your medical treatment, end-of-life care, and other personal care matters. Your attorney will be legally bound to follow these instructions when making healthcare decisions on your behalf.</li><li><strong>Legal Compliance:</strong> Our team ensures that your Power of Attorney for Personal Care complies with all relevant laws and regulations in Ontario, providing you with peace of mind knowing that your healthcare wishes will be respected.</li></ul>"
-                }
-              ]
-            },
-            {
-              "title": "Continuing Power of Attorney for Property",
-              "imageSrc": "/assets/services/wills/power-of-attorney.jpg",
-              "desc": "At Luk & Associates, we recognize the importance of planning for the unexpected when it comes to managing your financial affairs. Our team of experienced lawyers specializes in drafting Continuing Powers of Attorney for Property to ensure your interests are protected and your wishes are honoured in the event of incapacity.",
-              "subtitle": [
-                {
-                  "title": "Our Continuing Power of Attorney for Property services include:",
-                  "desc": "<ul><li><strong>Initial Consultation:</strong> We'll meet with you to discuss your financial circumstances, concerns, and objectives. Our goal is to gain a comprehensive understanding of your needs to tailor our services accordingly.</li><li><strong>Document Drafting:</strong> Our experienced lawyers will draft a Continuing Power of Attorney for Property document that appoints a trusted individual or individuals to manage your financial affairs on your behalf in the event of incapacity.</li><li><strong>Customized Provisions:</strong> We'll work with you to include provisions that reflect your preferences regarding the management of your assets, investments, real estate, and other financial matters.</li><li><strong>Legal Compliance:</strong> Our team ensures that your Continuing Power of Attorney for Property complies with all relevant laws and regulations in Ontario, providing you with peace of mind knowing that your interests are protected.</li></ul>"
                 }
               ]
             }
@@ -712,39 +740,6 @@
             {
               "title": "7. What is probate?",
               "desc": "Probate is a legal process where the courts formally accept the Will or appoint someone to act on the deceased’s behalf if they don’t have a Will. Once the executor receives the certificate of appointment of estate trustee, they then have the legal authority to manage the deceased’s assets, such as bank accounts, property, investments."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "path": "/personal-injury-law",
-      "title": "Personal Injury Law",
-      "imageSrc": "/assets/services/personal-injury.png",
-      "icon": "personal-injury.png",
-      "desc": "At Luk & Associates, our mission is to provide the best possible legal representation for our clients in personal injury cases. We understand the physical, emotional and financial toll that a personal injury can take on a person, and we are committed to helping our clients through their difficult times.",
-      "tabs": [
-        {
-          "key": "Motor-vehicle",
-          "label": "Motor Vehicle Accidents",
-          "icon": "TbCarCrash",
-          "content": [
-            {
-              "title": "Motor Vehicle Accidents",
-              "imageSrc": "/assets/services/personal-injury/motor-vehicle.jpeg",
-              "desc": "Tailored to assist individuals who have been injured in car accidents, providing comprehensive legal support to navigate the complexities of insurance claims and personal injury lawsuits. Our team handles all aspects of motor vehicle accident cases, from investigating the cause of the accident to negotiating with insurance companies and representing clients in court when necessary. We strive to maximize compensation for medical expenses, property damage, lost wages, and pain and suffering, ensuring our clients receive the justice and support they deserve."
-            }
-          ]
-        },
-        {
-          "key": "slip-and-falls",
-          "label": "Slip and Falls",
-          "icon": "TbFall",
-          "content": [
-            {
-              "title": "Slip and Falls",
-              "imageSrc": "/assets/services/personal-injury/slip.jpg",
-              "desc": "Designed to provide comprehensive support to individuals who have been injured in such incidents. From conducting thorough investigations to gathering evidence and negotiating with responsible parties, our experienced team works tirelessly to secure the compensation our clients deserve for medical expenses, lost wages, pain and suffering, and other damages."
             }
           ]
         }
@@ -1015,6 +1010,24 @@
       "title": "Other Services",
       "imageSrc": "/assets/services/other-services.png",
       "tabs": [
+        {
+          "key": "personal-injury-law",
+          "label": "Personal Injury",
+          "icon": "TbFall",
+          "desc": "At Luk & Associates, our mission is to provide the best possible legal representation for our clients in personal injury cases. We understand the physical, emotional and financial toll that a personal injury can take on a person, and we are committed to helping our clients through their difficult times.",
+          "content": [
+            {
+              "title": "Motor Vehicle Accidents",
+              "imageSrc": "/assets/services/personal-injury/motor-vehicle.jpeg",
+              "desc": "Tailored to assist individuals who have been injured in car accidents, providing comprehensive legal support to navigate the complexities of insurance claims and personal injury lawsuits. Our team handles all aspects of motor vehicle accident cases, from investigating the cause of the accident to negotiating with insurance companies and representing clients in court when necessary. We strive to maximize compensation for medical expenses, property damage, lost wages, and pain and suffering, ensuring our clients receive the justice and support they deserve."
+            },
+            {
+              "title": "Slip and Falls",
+              "imageSrc": "/assets/services/personal-injury/slip.jpg",
+              "desc": "Designed to provide comprehensive support to individuals who have been injured in such incidents. From conducting thorough investigations to gathering evidence and negotiating with responsible parties, our experienced team works tirelessly to secure the compensation our clients deserve for medical expenses, lost wages, pain and suffering, and other damages."
+            }
+          ]
+        },
         {
           "key": "traffic-ticket",
           "label": "Traffic Ticket",

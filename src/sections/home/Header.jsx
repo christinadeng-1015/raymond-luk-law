@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { IoIosArrowBack, IoIosArrowForward, IoMdClose } from 'react-icons/io';
 import ContactForm from '../contact/ContactForm';
+import OptimizedImage from '../../components/OptimizedImage';
 
 const Header = () => {
   const [offsetY, setOffsetY] = useState(0);
@@ -44,12 +45,19 @@ const Header = () => {
       className="relative w-full h-screen overflow-hidden bg-[#10284e] antialiased"
     >
       <div
-        className="absolute top-1/2 left-1/2 w-full h-full bg-cover bg-no-repeat bg-[85%_center] md:bg-center -translate-x-1/2 -translate-y-1/2"
+        className="absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2 pointer-events-none"
         style={{
-          backgroundImage: `url(/assets/home/background.png)`,
           transform: `translate(-50%, -50%) translateY(${offsetY * 0.4}px)`,
         }}
-      />
+      >
+        <OptimizedImage
+          src="/assets/home/background.png"
+          alt="Luk & Associates Header Background"
+          originalFormat="png"
+          className="w-full h-full object-cover object-[85%_center] md:object-center block"
+          lazy={false}
+        />
+      </div>
 
       <div className="absolute inset-0 bg-gradient-to-r from-[#10284e]/75 via-[#10284e]/40 to-transparent pointer-events-none z-10" />
 

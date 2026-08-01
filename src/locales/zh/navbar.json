@@ -52,19 +52,9 @@
             "url": "/wills-and-estates"
           },
           {
-            "key": "personal-injury-law",
-            "label": "人身伤害法",
-            "url": "/personal-injury-law"
-          },
-          {
             "key": "immigration-law",
             "label": "移民法",
             "url": "/immigration-law"
-          },
-          {
-            "key": "corporate-law",
-            "label": "公司法",
-            "url": "/corporate-law"
           },
           {
             "key": "landlord-tenant-board",
