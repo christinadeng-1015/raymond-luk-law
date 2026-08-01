@@ -149,16 +149,10 @@
         }
 
         window.addEventListener('load', function () {
-          var runDeferredScripts = function () {
+          setTimeout(function () {
             loadGtag();
             if (hasInstagramEmbed()) loadInstagram();
-          };
-
-          if ('requestIdleCallback' in window) {
-            window.requestIdleCallback(runDeferredScripts, { timeout: 3000 });
-          } else {
-            setTimeout(runDeferredScripts, 1500);
-          }
+          }, 1500);
         });
       })();
     </script>

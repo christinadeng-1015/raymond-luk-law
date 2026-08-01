@@ -45,57 +45,12 @@ function BlogRedirect() {
 
 const App = () => {
   useEffect(() => {
-    let idleCallbackId;
-    let timeoutId;
-    let loaded = false;
-
-    const loadAOS = () => {
-      if (loaded) return;
-      loaded = true;
-      import('aos').then((AOS) => {
-        AOS.init({ duration: 1000 });
-      });
-      import('aos/dist/aos.css');
-    };
-
-    const scheduleAOS = () => {
-      if ('requestIdleCallback' in window) {
-        idleCallbackId = window.requestIdleCallback(loadAOS, { timeout: 2000 });
-      } else {
-        timeoutId = window.setTimeout(loadAOS, 2000);
-      }
-    };
-
-    const onFirstInteraction = () => {
-      loadAOS();
-    };
-
-    window.addEventListener('scroll', onFirstInteraction, {
-      once: true,
-      passive: true,
+    // Load AOS dynamically for animations
+    import('aos').then((AOS) => {
+      AOS.init({ duration: 1000 });
     });
-    window.addEventListener('pointerdown', onFirstInteraction, {
-      once: true,
-      passive: true,
-    });
-    window.addEventListener('touchstart', onFirstInteraction, {
-      once: true,
-      passive: true,
-    });
-
-    scheduleAOS();
-
-    return () => {
-      window.removeEventListener('scroll', onFirstInteraction);
-      window.removeEventListener('pointerdown', onFirstInteraction);
-      window.removeEventListener('touchstart', onFirstInteraction);
-      if ('cancelIdleCallback' in window && idleCallbackId) {
-        window.cancelIdleCallback(idleCallbackId);
-      }
-      if (timeoutId) {
-        window.clearTimeout(timeoutId);
-      }
-    };
+    // Also import the CSS
+    import('aos/dist/aos.css');
   }, []);
 
   const { i18n } = useTranslation();
