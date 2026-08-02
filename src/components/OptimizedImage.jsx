@@ -47,8 +47,6 @@ const OptimizedImage = ({
         alt={alt || ''}
         className={className}
         loading={lazy ? 'lazy' : 'eager'}
-        decoding="async"
-        fetchPriority={lazy ? 'auto' : 'high'}
         {...props}
       />
     </picture>

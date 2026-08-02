@@ -138,9 +138,6 @@ export default function BlogPage() {
             src="/assets/banner/blog.png"
             alt="Blog banner"
             className="absolute inset-0 w-full h-full object-cover transform scale-105"
-            loading="eager"
-            decoding="async"
-            fetchpriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/70 to-slate-900/40" />
 

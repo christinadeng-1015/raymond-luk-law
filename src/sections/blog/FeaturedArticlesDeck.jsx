@@ -96,7 +96,6 @@ export default function FeaturedArticlesDeck({ displayFeatured }) {
                     alt={featuredPost.title}
                     className="w-full h-full object-cover"
                     loading="lazy"
-                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-[#0C2D57]/20" />
 

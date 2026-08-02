@@ -243,9 +243,6 @@ export default function BlogCategoryPage() {
             src="/assets/banner/blog.png"
             alt={`${currentCategory.title} banner`}
             className="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-overlay grayscale"
-            loading="eager"
-            decoding="async"
-            fetchpriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#051324] via-[#0C2D57]/70 to-transparent" />
 
