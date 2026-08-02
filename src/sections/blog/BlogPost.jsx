@@ -345,6 +345,9 @@ export default function BlogPostPage() {
           src="/assets/banner/blog.png"
           alt="Blog banner"
           className="absolute inset-0 w-full h-full object-cover opacity-25 mix-blend-luminosity"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0F294A] via-[#0F294A]/60 to-transparent" />
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -413,6 +416,8 @@ export default function BlogPostPage() {
                   src={postImageUrl}
                   alt={post.title}
                   className="w-full h-full object-cover transition-transform duration-1000 ease-in-out group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 border-2 border-black/5 rounded-2xl pointer-events-none" />
               </div>
@@ -558,6 +563,8 @@ export default function BlogPostPage() {
                           src={thumbUrl}
                           alt={article.title}
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                          loading="lazy"
+                          decoding="async"
                         />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center text-slate-200">

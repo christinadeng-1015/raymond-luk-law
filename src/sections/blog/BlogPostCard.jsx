@@ -53,6 +53,7 @@ export default function BlogPostCard({ post }) {
               alt={post.title}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
+              decoding="async"
             />
             <div className="absolute inset-0 bg-[#0C2D57]/40 transition-opacity duration-300 group-hover:bg-[#0C2D57]/30" />
 
