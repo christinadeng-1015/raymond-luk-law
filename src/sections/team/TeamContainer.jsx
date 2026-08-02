@@ -55,6 +55,8 @@ const TeamContainer = () => {
                       ? 'sm:justify-center'
                       : 'sm:justify-start'
                   }`}
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
                 >
                   {group.members.map((member) => (
                     <div

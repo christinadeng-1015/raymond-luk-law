@@ -20,7 +20,11 @@ const Services = () => {
           <div className="w-20 h-[1px] bg-amber-500/50 mx-auto" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"
+          data-aos="zoom-in-right"
+          data-aos-duration="1000"
+        >
           {services.map((service, index) => (
             <a
               href={service.path}

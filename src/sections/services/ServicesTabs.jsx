@@ -111,10 +111,7 @@ export function ServicesTabs({ tabs }) {
           if (activeTab !== item.key) return null;
 
           return (
-            <div
-              key={item.key}
-              className="animate-in fade-in-50 duration-700 slide-in-from-bottom-4"
-            >
+            <div key={item.key} data-aos="fade-up" data-aos-duration="1000">
               <div className="bg-white border border-slate-200/80 rounded-[2rem] p-6 shadow-sm">
                 {item.desc && (
                   <div className="mb-12 pb-10 border-b border-slate-100">

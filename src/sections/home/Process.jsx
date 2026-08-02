@@ -34,7 +34,11 @@ const Process = () => {
           <div className="w-20 h-[1px] bg-amber-500/50 mx-auto" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           {steps.map((step, index) => {
             const IconComponent = iconMap[step.icon];
 

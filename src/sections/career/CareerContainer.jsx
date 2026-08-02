@@ -24,7 +24,11 @@ const CareerContainer = () => {
       <div className="w-full h-px bg-gray-200" />
 
       <section className="space-y-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           <div className="bg-white border border-slate-100 rounded-2xl p-7 shadow-[0_4px_20px_-4px_rgba(16,40,78,0.05)] flex flex-col justify-between transition-all duration-300 hover:shadow-[0_4px_25px_-2px_rgba(16,40,78,0.08)] hover:-translate-y-0.5">
             <div className="space-y-4">
               <div className="flex items-center space-x-3.5">
@@ -138,7 +142,7 @@ const CareerContainer = () => {
 
       <div className="w-full h-px bg-gray-200" />
 
-      <div>
+      <div data-aos="fade-right" data-aos-duration="1000">
         <OpenRoles />
       </div>
 

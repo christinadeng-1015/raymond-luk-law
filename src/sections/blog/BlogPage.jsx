@@ -187,14 +187,11 @@ export default function BlogPage() {
           </div>
         </div>
 
-        {/* Content Section */}
         <section className="mx-auto max-w-7xl px-6 py-16 md:px-12 lg:px-24 overflow-hidden">
-          {/* Extracted Featured Deck Component */}
           {!loading && !error && displayFeatured.length > 0 && !isSearching && (
             <FeaturedArticlesDeck displayFeatured={displayFeatured} />
           )}
 
-          {/* Compact Practice Areas Section */}
           {!loading && !error && posts.length > 0 && !isSearching && (
             <div className="mb-16">
               <div className="mb-6">
@@ -236,7 +233,6 @@ export default function BlogPage() {
             </div>
           )}
 
-          {/* All Articles Heading Area */}
           <div className="border-t border-slate-200 pt-12 mb-8 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
             <div>
               <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900">
@@ -255,7 +251,6 @@ export default function BlogPage() {
             </div>
           </div>
 
-          {/* Dynamic States Layout */}
           {loading ? (
             <div className="flex flex-col items-center justify-center py-20 rounded-3xl border border-dashed border-slate-200 bg-white shadow-sm">
               <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#0C2D57] mb-4" />
@@ -281,7 +276,6 @@ export default function BlogPage() {
             </div>
           ) : (
             <>
-              {/* 3 Columns Grid for Articles */}
               <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {filteredPosts.slice(0, displayCount).map((post) => (
                   <BlogPostCard key={post.id} post={post} />
