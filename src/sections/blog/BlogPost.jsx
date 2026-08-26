@@ -203,17 +203,10 @@ export default function BlogPostPage() {
       });
     }
 
-    if (post.keyQuestions) {
+    if (post.keyQuestions || post.commonQuestions) {
       tocItems.push({
         label: t('blog.toc.keyInsights'),
         targetId: 'key-insights-section',
-      });
-    }
-
-    if (post.commonQuestions) {
-      tocItems.push({
-        label: t('blog.toc.commonQuestions'),
-        targetId: 'qa-section',
       });
     }
 
@@ -434,40 +427,34 @@ export default function BlogPostPage() {
         </div>
 
         {(post.keyQuestions || post.commonQuestions) && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 pt-8 border-t border-slate-100 w-full">
-            {post.keyQuestions && (
-              <div
-                id="key-insights-section"
-                className="scroll-mt-24 min-w-0 w-full"
-              >
-                <div className="flex items-center gap-3 mb-4 md:mb-5">
-                  <div className="w-1.5 h-6 bg-[#C59B27] rounded-full" />
-                  <h3 className="text-lg font-bold text-[#0F294A]">
-                    {t('blog.toc.keyInsights')}
-                  </h3>
-                </div>
+          <div
+            id="key-insights-section"
+            className="flex flex-col pt-10 md:pt-12 border-t border-slate-100 w-full scroll-mt-24"
+          >
+            <div className="flex items-center gap-4 mb-6 md:mb-8">
+              <div className="w-1.5 h-8 bg-[#C59B27] rounded-full shadow-sm" />
+              <h3 className="text-xl md:text-2xl font-bold text-[#0F294A] tracking-tight">
+                {t('blog.toc.keyInsights')}
+              </h3>
+            </div>
+
+            <div className="md:ml-5 space-y-3">
+              {post.keyQuestions && (
                 <ContentfulAccordion
                   richTextDocument={post.keyQuestions}
                   sectionId="key-insights"
                   t={t}
                 />
-              </div>
-            )}
-            {post.commonQuestions && (
-              <div id="qa-section" className="scroll-mt-24 min-w-0 w-full">
-                <div className="flex items-center gap-3 mb-4 md:mb-5">
-                  <div className="w-1.5 h-6 bg-[#0F294A] rounded-full" />
-                  <h3 className="text-lg font-bold text-[#0F294A]">
-                    {t('blog.toc.commonQuestions')}
-                  </h3>
-                </div>
+              )}
+
+              {post.commonQuestions && (
                 <ContentfulAccordion
                   richTextDocument={post.commonQuestions}
                   sectionId="common-qa"
                   t={t}
                 />
-              </div>
-            )}
+              )}
+            </div>
           </div>
         )}
 
