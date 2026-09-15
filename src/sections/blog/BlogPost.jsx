@@ -44,18 +44,18 @@ const richTextOptions = {
         href={node.data.uri}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-[#C59B27] font-medium hover:text-[#A1793E] hover:underline underline-offset-4 break-all transition-colors"
+        className="text-[#0F294A] font-semibold hover:text-[#C59B27] underline underline-offset-4 break-all transition-colors"
       >
         {children}
       </a>
     ),
     'unordered-list': (node, children) => (
-      <ul className="list-disc pl-5 my-3 space-y-2 text-slate-700 text-[15px] md:text-[16px] break-words marker:text-[#C59B27]">
+      <ul className="list-disc pl-5 my-2 space-y-1.5 text-slate-700 text-[14px] md:text-[14.5px] break-words marker:text-[#C59B27]">
         {children}
       </ul>
     ),
     'ordered-list': (node, children) => (
-      <ol className="list-decimal pl-5 my-3 space-y-2 text-slate-700 text-[15px] md:text-[16px] break-words marker:text-[#0F294A] marker:font-semibold">
+      <ol className="list-decimal pl-5 my-2 space-y-1.5 text-slate-700 text-[14px] md:text-[14.5px] break-words marker:text-[#0F294A] marker:font-semibold">
         {children}
       </ol>
     ),
@@ -63,9 +63,31 @@ const richTextOptions = {
       <li className="leading-relaxed break-words pl-1">{children}</li>
     ),
     paragraph: (node, children) => (
-      <p className="mb-4 leading-[1.8] text-slate-700 text-[15px] md:text-[16px] break-words">
+      <p className="mb-4 leading-[1.75] text-slate-700 text-[14px] md:text-[14.5px] break-words">
         {children}
       </p>
+    ),
+  },
+};
+
+const quickAnswerRichTextOptions = {
+  ...richTextOptions,
+  renderNode: {
+    ...richTextOptions.renderNode,
+    paragraph: (node, children) => (
+      <p className="mb-2.5 last:mb-0 leading-[1.65] text-slate-600 text-[13px] font-normal break-words">
+        {children}
+      </p>
+    ),
+    'unordered-list': (node, children) => (
+      <ul className="list-disc pl-4 my-2 space-y-1 text-slate-600 text-[13px] font-normal break-words marker:text-[#C59B27]">
+        {children}
+      </ul>
+    ),
+    'ordered-list': (node, children) => (
+      <ol className="list-decimal pl-4 my-2 space-y-1 text-slate-600 text-[13px] font-normal break-words marker:text-[#0F294A] marker:font-semibold">
+        {children}
+      </ol>
     ),
   },
 };
@@ -116,10 +138,10 @@ function ContentfulAccordion({ richTextDocument, sectionId, t }) {
           <div
             key={uniqueKey}
             id={slugify(headingText)}
-            className={`border border-slate-200 rounded-xl transition-all duration-200 scroll-mt-24 w-full overflow-hidden ${
+            className={`border rounded-lg transition-all duration-200 scroll-mt-24 w-full overflow-hidden ${
               isOpen
-                ? 'bg-white shadow-md border-blue-100'
-                : 'bg-slate-50 hover:bg-slate-100/80 hover:border-slate-300'
+                ? 'bg-white shadow-sm border-[#0F294A]/20'
+                : 'bg-white border-slate-200 hover:border-slate-300'
             }`}
           >
             <button
@@ -129,21 +151,14 @@ function ContentfulAccordion({ richTextDocument, sectionId, t }) {
                   [uniqueKey]: !prev[uniqueKey],
                 }))
               }
-              className="w-full flex items-center justify-between gap-4 p-4 md:px-5 text-left font-semibold text-[#0F294A] select-none transition-colors"
+              className="w-full flex items-center justify-between gap-3 p-4 text-left font-serif font-medium text-[15px] md:text-[16px] text-[#0F294A] select-none transition-colors"
             >
-              <div className="flex gap-3 items-start max-w-[92%]">
-                <span
-                  className={`w-1.5 h-1.5 rounded-full mt-2 shrink-0 transition-colors ${
-                    isOpen ? 'bg-[#C59B27]' : 'bg-slate-300'
-                  }`}
-                />
-                <span className="text-[15px] md:text-[16px] tracking-tight break-words leading-snug">
+              <div className="flex gap-3 items-center max-w-[92%]">
+                <span className="tracking-tight break-words leading-snug">
                   {headingText}
                 </span>
               </div>
-              <div
-                className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors ${isOpen ? 'bg-blue-50 text-blue-600' : 'bg-white text-slate-400'}`}
-              >
+              <div className="w-5 h-5 flex items-center justify-center shrink-0 text-[#0F294A]">
                 <svg
                   className={`w-4 h-4 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
                   fill="none"
@@ -166,7 +181,7 @@ function ContentfulAccordion({ richTextDocument, sectionId, t }) {
                   : 'max-h-0 opacity-0'
               }`}
             >
-              <div className="p-4 md:p-5 prose max-w-none text-slate-700 text-[15px] leading-relaxed break-words bg-white">
+              <div className="p-4 prose max-w-none text-slate-700 text-[14px] leading-relaxed break-words bg-white">
                 {documentToReactComponents(subDocument, richTextOptions)}
               </div>
             </div>
@@ -191,28 +206,25 @@ export default function BlogPostPage() {
   if (post) {
     if (post.mainQuestionAnswer) {
       tocItems.push({
-        label: t('blog.toc.quickAnswer'),
+        label: t('blog.toc.quickAnswer', 'Quick Answer'),
         targetId: 'quick-answer',
       });
     }
-
     if (post.body) {
       tocItems.push({
-        label: t('blog.toc.overview'),
+        label: t('blog.toc.overview', 'Overview'),
         targetId: 'article-overview',
       });
     }
-
     if (post.keyQuestions || post.commonQuestions) {
       tocItems.push({
-        label: t('blog.toc.keyInsights'),
+        label: t('blog.toc.keyInsights', 'Common Questions'),
         targetId: 'key-insights-section',
       });
     }
-
     if (post.finalThoughts) {
       tocItems.push({
-        label: t('blog.toc.closingPerspectives'),
+        label: t('blog.toc.closingPerspectives', 'Final Thoughts'),
         targetId: 'closing-thoughts',
       });
     }
@@ -264,7 +276,7 @@ export default function BlogPostPage() {
     }
   };
 
-  const relatedArticles = allPosts.filter((p) => p.slug !== slug).slice(0, 3);
+  const relatedArticles = allPosts.filter((p) => p.slug !== slug).slice(0, 4);
 
   if (loading || !post) return <div className="min-h-screen bg-white" />;
 
@@ -285,307 +297,423 @@ export default function BlogPostPage() {
           : null;
 
   const BreadcrumbsNav = () => (
-    <nav className="text-xs text-slate-300 space-x-2 font-medium tracking-wide">
-      <Link to="/resources" className="hover:text-white transition-colors">
-        {t('blog.resources')}
+    <nav className="relative z-50 flex flex-wrap items-center text-[10px] md:text-[11px] uppercase tracking-[0.1em] text-slate-400 font-semibold mb-6 pointer-events-auto">
+      <Link
+        to="/"
+        className="hover:text-white transition-colors py-1 cursor-pointer"
+      >
+        Home
       </Link>
-      <span className="text-slate-500">/</span>
-      <span className="text-amber-400">{t('blog.insights')}</span>
+      <span className="text-slate-600 mx-2 text-[9px] select-none">&gt;</span>
+      <Link
+        to="/resources"
+        className="hover:text-white transition-colors py-1 cursor-pointer"
+      >
+        Resources
+      </Link>
+      <span className="text-slate-600 mx-2 text-[9px] select-none">&gt;</span>
+      <span className="text-slate-200 py-1 truncate max-w-[150px] sm:max-w-none select-none">
+        {post?.category || 'Article'}
+      </span>
     </nav>
   );
 
-  const TableOfContentsCard = () => (
-    <div className="bg-[#0F294A] rounded-2xl p-5 md:p-8 border-t-4 border-t-[#C59B27] shadow-xl relative overflow-hidden flex flex-col min-h-[280px]">
-      <div className="absolute top-0 right-0 w-40 h-40 bg-blue-500/10 rounded-bl-full -z-0 pointer-events-none" />
-
-      <div className="relative z-10 flex flex-col h-full">
-        <div className="flex items-center gap-3 mb-6 pb-4 border-b border-blue-800/50">
-          <h4 className="font-bold text-white text-[13px] uppercase tracking-[0.15em]">
-            {t('blog.toc.inThisArticle')}
-          </h4>
-        </div>
-
-        <ul className="space-y-4 md:space-y-5 text-[14.5px] font-medium text-slate-300 flex-1">
+  const renderTableOfContents = (isMobile = false) => {
+    if (tocItems.length === 0) return null;
+    return (
+      <div
+        className={`bg-[#F8FAFC] rounded-xl p-6 md:p-8 border border-slate-200 shadow-sm ${isMobile ? 'block lg:hidden mb-10' : 'hidden lg:block'}`}
+      >
+        <h4 className="font-bold text-[#0F294A] text-[12px] md:text-[13px] uppercase tracking-[0.15em] mb-5">
+          {t('blog.toc.inThisArticle', 'In This Article')}
+        </h4>
+        <ul className="space-y-4 text-[14px] md:text-[15px] font-medium text-slate-600">
           {tocItems.map((item, index) => (
             <li key={item.targetId}>
               <button
                 onClick={() => scrollToSection(item.targetId)}
-                className={`flex items-start text-left transition-all duration-200 hover:text-[#C59B27] group w-full leading-relaxed ${
-                  index === 0 ? 'text-white font-bold' : ''
+                className={`flex items-start text-left transition-all duration-200 hover:text-[#C59B27] w-full leading-relaxed ${
+                  index === 0 ? 'text-[#0F294A] font-bold' : ''
                 }`}
               >
-                <span className="w-4 flex shrink-0 mt-1 text-[#C59B27] opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300">
-                  →
-                </span>
-                <span className="truncate group-hover:translate-x-1 transition-transform duration-300">
-                  {item.label}
-                </span>
+                <span
+                  className={`w-1.5 h-1.5 rounded-full mt-2 mr-3 shrink-0 ${index === 0 ? 'bg-[#C59B27]' : 'bg-slate-300'}`}
+                />
+                <span>{item.label}</span>
               </button>
             </li>
           ))}
         </ul>
       </div>
-    </div>
-  );
+    );
+  };
 
   return (
     <main
       ref={mainRef}
-      className="min-h-screen bg-white pb-20 md:pb-24 text-slate-800 antialiased w-full overflow-x-hidden font-sans"
+      className="min-h-screen bg-white pb-12 md:pb-16 text-slate-800 antialiased w-full overflow-x-hidden font-sans "
     >
-      <section className="relative w-full min-h-[280px] md:min-h-[320px] bg-[#0F294A] overflow-hidden flex flex-col justify-end pt-24 pb-8 md:pb-12">
-        <img
-          src="/assets/banner/blog.png"
-          alt="Blog banner"
-          className="absolute inset-0 w-full h-full object-cover opacity-25 mix-blend-luminosity"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0F294A] via-[#0F294A]/60 to-transparent" />
+      <section className="relative w-full bg-[#0B1E36] overflow-hidden pt-32 pb-12 md:pb-16 min-h-[360px] md:min-h-[440px] flex flex-col justify-end md:justify-center">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0F294A] to-[#0B1E36] pointer-events-none" />
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl w-full flex flex-col gap-3 md:gap-4">
+          <div className="max-w-4xl w-full flex flex-col">
             <BreadcrumbsNav />
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.25] break-words">
+
+            <h1 className="font-serif text-3xl sm:text-4xl lg:text-[40px] font-medium text-white leading-tight mb-4">
               {post.title}
             </h1>
-            <div className="text-sm font-medium text-[#C59B27] bg-[#C59B27]/10 w-fit px-3 py-1 rounded-full border border-[#C59B27]/20 mt-2 hidden md:block">
-              {t('blog.updated')}: {localizedDate}
+
+            {post.subtitle && (
+              <p className="text-[12px] md:text-[15px] text-slate-300 leading-relaxed max-w-2xl">
+                {post.subtitle}
+              </p>
+            )}
+
+            <div className="flex flex-wrap items-center gap-4 text-[11px] font-medium text-slate-400 border-t border-slate-700/50 pt-4">
+              <div className="flex items-center gap-1.5">
+                <svg
+                  className="w-3.5 h-3.5 text-[#C59B27]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+                Updated {localizedDate}
+              </div>
+              <span className="text-slate-600">|</span>
+              <div className="flex items-center gap-1.5">
+                <svg
+                  className="w-3.5 h-3.5 text-[#C59B27]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                  />
+                </svg>
+                By Raymond Luk
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {post.mainQuestionAnswer && (
-        <section
-          id="quick-answer"
-          className="w-full bg-[#F4F8FC] border-b border-blue-100 scroll-mt-24"
-        >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-10">
-            <div className="flex flex-col md:flex-row gap-5 md:gap-8 items-start">
-              <div className="shrink-0 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-xl bg-[#0F294A] text-white shadow-lg">
-                <svg
-                  className="w-5 h-5 md:w-6 md:h-6 text-[#C59B27]"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                  />
-                </svg>
-              </div>
-              <div className="flex-1 min-w-0">
-                <h2 className="text-[13px] font-bold uppercase tracking-[0.2em] text-[#0F294A] mb-2 md:mb-3">
-                  {t('blog.toc.quickAnswer')}
-                </h2>
-                <div className="prose max-w-none text-[#0F294A] font-medium text-[15px] md:text-[17px] leading-[1.8] break-words">
-                  {documentToReactComponents(
-                    post.mainQuestionAnswer,
-                    richTextOptions
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 w-full">
+        {renderTableOfContents(true)}
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-14 space-y-10 md:space-y-12 w-full">
-        {tocItems.length > 0 && (
-          <div className="block lg:hidden w-full mb-2">
-            <TableOfContentsCard />
+        {(post.mainQuestionAnswer || postImageUrl) && (
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-stretch w-full mb-8">
+            <div className="lg:col-span-8 flex flex-col min-w-0">
+              {post.mainQuestionAnswer && (
+                <section
+                  id="quick-answer"
+                  className="w-full bg-[#F2F6FA] border border-blue-100/50 rounded-xl p-5 md:p-6 h-full flex flex-col scroll-mt-24 shadow-sm"
+                >
+                  <div className="flex gap-4 items-start flex-1">
+                    <div className="shrink-0 text-[#0F294A] mt-0.5">
+                      <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                      </svg>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h2 className="text-[11.5px] font-bold uppercase tracking-[0.15em] text-[#0F294A] mb-2.5">
+                        {t('blog.toc.quickAnswer', 'Quick Answer')}
+                      </h2>
+                      <div className="prose max-w-none break-words">
+                        {documentToReactComponents(
+                          post.mainQuestionAnswer,
+                          quickAnswerRichTextOptions
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              )}
+
+              {/* Post Image for Mobile Only (Stays in Main Flow directly under Quick Answer) */}
+              {postImageUrl && (
+                <div className="block lg:hidden w-full overflow-hidden rounded-xl shadow-sm border border-slate-100 h-[200px] sm:h-[280px] relative group mt-8">
+                  <img
+                    src={postImageUrl}
+                    alt={post.title}
+                    className="w-full h-full object-cover transition-transform duration-1000 ease-in-out group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 border-2 border-black/5 rounded-xl pointer-events-none" />
+                </div>
+              )}
+            </div>
+
+            {/* Right Column: Desktop Image (Automatically stretches to identical height of Quick Answer) */}
+            <div className="hidden lg:flex lg:col-span-4 min-w-0">
+              {postImageUrl && (
+                <div className="w-full overflow-hidden rounded-xl shadow-sm border border-slate-100 relative group flex-1">
+                  <img
+                    src={postImageUrl}
+                    alt={post.title}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-in-out group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 border-2 border-black/5 rounded-xl pointer-events-none" />
+                </div>
+              )}
+            </div>
           </div>
         )}
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start w-full">
           <div className="lg:col-span-8 min-w-0">
-            {postImageUrl && (
-              <div className="w-full overflow-hidden rounded-2xl shadow-sm border border-slate-100 h-[220px] md:h-[320px] relative group mb-8 md:mb-10">
-                <img
-                  src={postImageUrl}
-                  alt={post.title}
-                  className="w-full h-full object-cover transition-transform duration-1000 ease-in-out group-hover:scale-105"
-                />
-                <div className="absolute inset-0 border-2 border-black/5 rounded-2xl pointer-events-none" />
-              </div>
-            )}
-
             {post.body && (
               <section
                 id="article-overview"
-                className="prose prose-slate prose-headings:text-[#0F294A] prose-headings:font-bold prose-strong:text-[#0F294A] max-w-none text-slate-700 leading-relaxed scroll-mt-24 break-words overflow-x-auto"
+                className="prose prose-slate prose-headings:font-serif prose-headings:font-medium prose-headings:text-[#0F294A] prose-h2:text-[22px] prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-[18px] prose-h3:mt-6 prose-h3:mb-3 prose-strong:text-[#0F294A] max-w-none text-slate-700 leading-relaxed scroll-mt-24 break-words overflow-x-auto mb-6"
               >
                 {documentToReactComponents(post.body, richTextOptions)}
               </section>
             )}
-          </div>
 
-          <aside className="lg:col-span-4 lg:sticky lg:top-24 min-w-0 hidden lg:block">
-            {tocItems.length > 0 && <TableOfContentsCard />}
-          </aside>
-        </div>
-
-        {(post.keyQuestions || post.commonQuestions) && (
-          <div
-            id="key-insights-section"
-            className="flex flex-col pt-10 md:pt-12 border-t border-slate-100 w-full scroll-mt-24"
-          >
-            <div className="flex items-center gap-4 mb-6 md:mb-8">
-              <div className="w-1.5 h-8 bg-[#C59B27] rounded-full shadow-sm" />
-              <h3 className="text-xl md:text-2xl font-bold text-[#0F294A] tracking-tight">
-                {t('blog.toc.keyInsights')}
-              </h3>
-            </div>
-
-            <div className="md:ml-5 space-y-3">
-              {post.keyQuestions && (
-                <ContentfulAccordion
-                  richTextDocument={post.keyQuestions}
-                  sectionId="key-insights"
-                  t={t}
-                />
-              )}
-
-              {post.commonQuestions && (
-                <ContentfulAccordion
-                  richTextDocument={post.commonQuestions}
-                  sectionId="common-qa"
-                  t={t}
-                />
-              )}
-            </div>
-          </div>
-        )}
-
-        <div
-          className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 pt-8 md:pt-10 border-t border-slate-100 w-full scroll-mt-24"
-          id="closing-thoughts"
-        >
-          <div className="lg:col-span-8 min-w-0 flex flex-col justify-center">
-            {post.finalThoughts && (
-              <section className="bg-[#FCF9F2] border-l-4 border-[#C59B27] rounded-r-2xl p-5 md:p-8">
-                <h3 className="text-sm font-bold uppercase tracking-widest text-[#0F294A] mb-3 md:mb-4 flex items-center gap-2">
-                  ✨ {t('blog.toc.closingPerspectives')}
-                </h3>
-                <div className="prose max-w-none text-[#0F294A] font-medium text-[15px] md:text-[16px] leading-[1.8] break-words">
-                  {documentToReactComponents(
-                    post.finalThoughts,
-                    richTextOptions
+            {(post.keyQuestions || post.commonQuestions) && (
+              <div
+                id="key-insights-section"
+                className="flex flex-col pt-8 mt-8 border-t border-slate-200 scroll-mt-24 mb-6"
+              >
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-1 h-6 bg-[#C59B27] rounded-full"></div>
+                  <h2 className="text-[22px] font-serif font-medium text-[#0F294A] m-0">
+                    {t('blog.toc.keyInsights', 'Common Questions')}
+                  </h2>
+                </div>
+                <div className="space-y-3">
+                  {post.keyQuestions && (
+                    <ContentfulAccordion
+                      richTextDocument={post.keyQuestions}
+                      sectionId="key-insights"
+                      t={t}
+                    />
+                  )}
+                  {post.commonQuestions && (
+                    <ContentfulAccordion
+                      richTextDocument={post.commonQuestions}
+                      sectionId="common-qa"
+                      t={t}
+                    />
                   )}
                 </div>
-              </section>
+              </div>
             )}
+
+            {post.finalThoughts && (
+              <div
+                id="closing-thoughts"
+                className="pt-8 mt-8 border-t border-slate-200 scroll-mt-24"
+              >
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-1 h-6 bg-[#0F294A] rounded-full"></div>
+                  <h2 className="text-[22px] font-serif font-medium text-[#0F294A] m-0">
+                    {t('blog.toc.closingPerspectives', 'Final Thoughts')}
+                  </h2>
+                </div>
+                <div className="bg-[#F8FAFC] border border-slate-100 rounded-xl p-6 shadow-sm">
+                  <div className="prose max-w-none text-slate-700 text-[12px] md:text-[14.5px] leading-[1.75] break-words">
+                    {documentToReactComponents(
+                      post.finalThoughts,
+                      richTextOptions
+                    )}
+                  </div>
+                </div>
+              </div>
+            )}
+
+            <div className="flex justify-start w-full mt-10 relative z-20">
+              <Link
+                to="/resources"
+                className="inline-flex items-center gap-2 text-[12px] uppercase tracking-wider font-semibold text-[#C59B27] hover:text-[#A1793E] transition-colors group"
+              >
+                <span className="group-hover:-translate-x-1 transition-transform duration-300">
+                  &larr;
+                </span>
+                Back to Resources
+              </Link>
+            </div>
           </div>
 
-          <aside className="lg:col-span-4 flex items-stretch min-w-0">
-            <div className="bg-[#0F294A] text-white rounded-2xl p-6 md:p-8 shadow-xl shadow-blue-900/10 flex flex-col justify-between w-full relative overflow-hidden">
-              <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-[#C59B27] rounded-full opacity-20 blur-2xl pointer-events-none" />
-              <div className="space-y-2 md:space-y-3 z-10">
-                <h4 className="font-serif text-xl md:text-2xl font-medium tracking-wide text-white leading-tight">
-                  {t('blog.cta.needAdvice')}
+          <aside className="lg:col-span-4 lg:sticky lg:top-24 min-w-0 space-y-8 h-fit">
+            {renderTableOfContents(false)}
+
+            <div className="bg-[#0F294A] text-white rounded-xl p-6 shadow-lg relative overflow-hidden">
+              <div className="relative z-10">
+                <h4 className="font-serif text-[18px] md:text-[20px] font-medium tracking-wide text-white leading-tight mb-3">
+                  {t(
+                    'blog.cta.needAdvice',
+                    'Need advice about a separation agreement?'
+                  )}
                 </h4>
-                <p className="text-slate-300 text-[14px] leading-relaxed">
-                  {t('blog.cta.protectMatters')}
+                <p className="text-slate-300 text-[12.5px] md:text-[13px] leading-relaxed mb-5">
+                  Speak with our family law team to understand your options and
+                  get practical, solution-focused advice.
                 </p>
-              </div>
-              <div className="mt-6 md:mt-8 space-y-4 z-10">
+
                 <Link
                   to="/contact"
-                  className="block w-full py-3.5 bg-[#B58A4C] hover:bg-[#A1793E] text-white font-sans text-xs font-bold uppercase tracking-widest rounded-xl transition-all duration-300 text-center shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                  className="block w-full py-3 bg-[#E6BA5C] hover:bg-[#D4A94A] text-[#0F294A] font-semibold text-[13px] rounded transition-all duration-300 text-center mb-5"
                 >
-                  {t('blog.cta.bookConsultation')}
+                  Book a Consultation &rarr;
                 </Link>
-                <div className="flex items-center justify-center text-center">
-                  <a
-                    href="tel:905-667-6496"
-                    className="text-[15px] font-sans font-semibold tracking-wide text-slate-300 hover:text-white transition-colors"
-                  >
-                    (905) 667-6496
-                  </a>
+
+                <div className="space-y-3 text-[12.5px] md:text-[13px] text-slate-300 font-medium">
+                  <div className="flex items-center gap-3">
+                    <svg
+                      className="w-4 h-4 text-[#C59B27]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
+                    </svg>
+                    <a href="tel:905-604-1808" className="hover:text-white">
+                      (905) 604-1808
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <svg
+                      className="w-4 h-4 text-[#C59B27]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                    <a
+                      href="mailto:info@luklaw.ca"
+                      className="hover:text-white"
+                    >
+                      info@luklaw.ca
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <svg
+                      className="w-4 h-4 text-[#C59B27]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                    <span>Markham, Ontario</span>
+                  </div>
+                </div>
+
+                <div className="mt-5 pt-4 border-t border-slate-600/50">
+                  <p className="text-[9px] uppercase tracking-widest text-slate-400 leading-relaxed">
+                    Serving Markham, Scarborough
+                    <br />
+                    and surrounding areas
+                  </p>
                 </div>
               </div>
             </div>
-          </aside>
-        </div>
 
-        {relatedArticles.length > 0 && (
-          <section className="pt-10 md:pt-12 border-t border-slate-100 w-full">
-            <div className="flex items-center justify-between mb-6 md:mb-8">
-              <h3 className="text-lg md:text-xl font-bold text-[#0F294A]">
-                {t('blog.moreArticles')}
-              </h3>
-              <Link
-                to="/resources"
-                className="text-sm font-semibold text-[#C59B27] hover:text-[#A1793E] transition-colors"
-              >
-                {t('blog.viewAll')} &rarr;
-              </Link>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-              {relatedArticles.map((article) => {
-                const thumbUrl =
-                  typeof article.image === 'string'
-                    ? article.image
-                    : article.image?.fields?.file?.url
-                      ? `https:${article.image.fields.file.url}`
-                      : article.image?.url
-                        ? `https:${article.image.url}`
-                        : null;
-
-                return (
+            {/* Polished Related Articles Widget */}
+            {relatedArticles.length > 0 && (
+              <div className="bg-white rounded-xl p-5 md:p-6 border border-slate-100 shadow-sm w-full">
+                <div className="flex items-center justify-between mb-5">
+                  <h4 className="font-bold text-[#0F294A] text-[11px] uppercase tracking-[0.15em]">
+                    Related Articles
+                  </h4>
                   <Link
-                    key={article.id || article.slug}
-                    to={`/resources/${article.slug}`}
-                    className="group flex flex-col bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 hover:-translate-y-1"
+                    to="/resources"
+                    className="text-[10px] font-semibold text-[#C59B27] hover:text-[#A1793E] transition-colors uppercase tracking-wider"
                   >
-                    <div className="w-full h-40 md:h-48 bg-slate-50 overflow-hidden relative shrink-0">
-                      {thumbUrl ? (
-                        <img
-                          src={thumbUrl}
-                          alt={article.title}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                        />
-                      ) : (
-                        <div className="w-full h-full flex items-center justify-center text-slate-200">
-                          <svg
-                            className="w-8 h-8"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="1.5"
-                              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                            />
-                          </svg>
-                        </div>
-                      )}
-                    </div>
-                    <div className="p-4 md:p-6 flex flex-col flex-1">
-                      <p className="text-[15px] md:text-[16px] font-bold text-[#0F294A] group-hover:text-[#C59B27] transition-colors line-clamp-3 leading-snug">
-                        {article.title}
-                      </p>
-                    </div>
+                    View All &rarr;
                   </Link>
-                );
-              })}
-            </div>
-          </section>
-        )}
+                </div>
 
-        <div className="flex justify-start w-full">
-          <Link
-            to="/resources"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-[#C59B27] hover:text-[#A1793E] hover:underline underline-offset-4 transition-colors group"
-          >
-            <span className="group-hover:-translate-x-1 transition-transform duration-300">
-              &larr;
-            </span>
-            Back to Resources
-          </Link>
+                <div className="flex flex-col gap-4">
+                  {relatedArticles.map((article) => {
+                    const thumbUrl =
+                      typeof article.image === 'string'
+                        ? article.image
+                        : article.image?.fields?.file?.url
+                          ? `https:${article.image.fields.file.url}`
+                          : article.image?.url
+                            ? `https:${article.image.url}`
+                            : null;
+
+                    return (
+                      <Link
+                        key={article.id || article.slug}
+                        to={`/resources/${article.slug}`}
+                        className="group flex items-center gap-4 hover:bg-slate-50 p-2 -mx-2 rounded-lg transition-colors"
+                      >
+                        <div className="w-16 h-16 bg-slate-100 rounded-lg overflow-hidden relative shrink-0 shadow-sm border border-slate-200/50">
+                          {thumbUrl ? (
+                            <img
+                              src={thumbUrl}
+                              alt={article.title}
+                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
+                            />
+                          ) : (
+                            <div className="w-full h-full flex items-center justify-center text-slate-300">
+                              <svg
+                                className="w-6 h-6"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth="1.5"
+                                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                />
+                              </svg>
+                            </div>
+                          )}
+                        </div>
+                        <div className="flex flex-col flex-1 min-w-0">
+                          <p className="text-[12.5px] md:text-[13px] font-semibold text-[#0F294A] group-hover:text-[#C59B27] transition-colors line-clamp-2 leading-snug mb-1">
+                            {article.title}
+                          </p>
+                          <span className="text-[9.5px] text-slate-400 font-medium uppercase tracking-widest group-hover:text-[#A1793E] transition-colors">
+                            Read Now &rarr;
+                          </span>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+          </aside>
         </div>
       </div>
 
