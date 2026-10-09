@@ -112,7 +112,7 @@ function ContentfulAccordion({ richTextDocument, sectionId, t }) {
 
   if (accordions.length === 0 && richTextDocument.content.length > 0) {
     return (
-      <div className="prose max-w-none break-words">
+      <div className="prose max-w-none break-words overflow-x-auto">
         {documentToReactComponents(richTextDocument, richTextOptions)}
       </div>
     );
@@ -177,11 +177,11 @@ function ContentfulAccordion({ richTextDocument, sectionId, t }) {
             <div
               className={`transition-all duration-300 ease-in-out ${
                 isOpen
-                  ? 'max-h-[2000px] opacity-100 border-t border-slate-100'
-                  : 'max-h-0 opacity-0'
+                  ? 'max-h-[2000px] opacity-100 border-t border-slate-100 overflow-y-auto'
+                  : 'max-h-0 opacity-0 overflow-hidden'
               }`}
             >
-              <div className="p-4 prose max-w-none text-slate-700 text-[14px] leading-relaxed break-words bg-white">
+              <div className="p-4 prose max-w-none text-slate-700 text-[14px] leading-relaxed break-words bg-white overflow-x-auto">
                 {documentToReactComponents(subDocument, richTextOptions)}
               </div>
             </div>
