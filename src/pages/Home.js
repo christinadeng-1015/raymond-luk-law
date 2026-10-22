@@ -34,10 +34,10 @@ export default function Home() {
     description: pageDescription,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Liberty Square, 3601 Hwy 7 Unit 803',
+      streetAddress: '90 Allstate Parkway, Suite 603',
       addressLocality: 'Markham',
       addressRegion: 'ON',
-      postalCode: 'L3R 0M3',
+      postalCode: 'L3R 6H3',
       addressCountry: 'CA',
     },
     areaServed: [
