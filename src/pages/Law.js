@@ -12,7 +12,10 @@ export default function LawPage() {
   const { t } = useTranslation('services');
 
   const domain = 'https://www.luklaw.ca';
-  const currentPath = location?.pathname || '';
+  const currentPath = (location?.pathname || '').replace(
+    /^\/(en|zh)(?=\/|$)/,
+    ''
+  );
 
   // Find practice area details matching the current URL route
   const servicesList = t('services', { returnObjects: true }) || [];

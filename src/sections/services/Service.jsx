@@ -4,16 +4,18 @@ import { useLocation, Link } from 'react-router-dom';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import ServicesTabs from './ServicesTabs';
 import OptimizedImage from '../../components/OptimizedImage';
+import { localizedPath } from '../../utils/localizedPath';
 
 export function Service() {
   const { pathname } = useLocation();
-  const { t } = useTranslation('services');
+  const { t, i18n } = useTranslation('services');
   const services = t('services', { returnObjects: true });
   const scrollContainerRef = useRef(null);
+  const servicePath = pathname.replace(/^\/(en|zh)(?=\/|$)/, '');
 
   if (!Array.isArray(services)) return null;
 
-  const service = services.find((s) => s.path === pathname);
+  const service = services.find((s) => s.path === servicePath);
 
   if (!service) {
     return null;
@@ -33,7 +35,7 @@ export function Service() {
     <div className="min-h-screen bg-slate-50/30 pb-16 antialiased font-sans text-slate-800">
       <div className="relative w-full h-[360px] md:h-[440px] overflow-hidden">
         <OptimizedImage
-          src="assets/banner/law.jpg"
+          src="/assets/banner/law.jpg"
           alt={service.title || 'Service Banner'}
           originalFormat="jpg"
           className="absolute inset-0 w-full h-full object-cover transform scale-105"
@@ -66,14 +68,14 @@ export function Service() {
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {services.map((item) => {
-              const isActive = pathname === item.path;
+              const isActive = servicePath === item.path;
               return (
                 <div
                   key={item.path}
                   className="relative flex-shrink-0 snap-center"
                 >
                   <Link
-                    to={item.path}
+                    to={localizedPath(item.path, i18n.language)}
                     className={`relative px-4 md:px-5 py-2.5 rounded-xl text-sm md:text-[15px] font-semibold text-center transition-all duration-200 block ${
                       isActive
                         ? 'text-[#10284e] bg-slate-100/80'
@@ -122,7 +124,7 @@ export function Service() {
             {service.icon && (
               <div className="w-20 h-20 md:w-24 md:h-24 bg-slate-50 rounded-2xl flex-shrink-0 flex items-center justify-center p-4 border border-slate-100 shadow-sm">
                 <OptimizedImage
-                  src={`assets/icons/${service.icon}`}
+                  src={`/assets/icons/${service.icon}`}
                   alt={`${service.title} icon`}
                   originalFormat="png"
                   className="w-full h-full object-contain"

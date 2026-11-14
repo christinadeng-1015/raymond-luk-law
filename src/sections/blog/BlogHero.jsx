@@ -7,7 +7,7 @@ export default function BlogHero({ searchTerm, onSearchChange, blog }) {
   return (
     <div className="relative w-full h-[360px] md:h-[440px] overflow-hidden">
       <OptimizedImage
-        src="assets/banner/blog.png"
+        src="/assets/banner/blog.png"
         alt={t('blog.bannerAlt', 'Legal Resources & Blog Banner')}
         originalFormat="png"
         className="absolute inset-0 w-full h-full object-cover transform scale-105"

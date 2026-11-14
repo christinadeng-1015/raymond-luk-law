@@ -1,25 +1,20 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FiPhone } from 'react-icons/fi';
 import { FaGlobeAmericas } from 'react-icons/fa';
-import i18n from 'i18next';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { localizedPath } from '../../utils/localizedPath';
 
 function ContactFloatIcon() {
   const [isOpen, setIsOpen] = useState(false);
-  const [, setLanguage] = useState(null);
   const [showLangMenu, setShowLangMenu] = useState(false);
   const containerRef = useRef(null);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-    localStorage.setItem('i18nextLng', lng);
-    setLanguage(lng);
+    navigate(localizedPath(location.pathname, lng));
     setShowLangMenu(false);
   };
-
-  useEffect(() => {
-    const storedLang = localStorage.getItem('i18nextLng') || 'en';
-    changeLanguage(storedLang);
-  }, []);
 
   const togglePhoneNumbers = () => {
     setIsOpen((prev) => !prev);

@@ -62,7 +62,7 @@ export default function CareerPage() {
       <main ref={mainRef} style={{ overflow: 'hidden' }}>
         <div className="relative w-full h-[360px] md:h-[440px] overflow-hidden">
           <OptimizedImage
-            src="assets/banner/career.jpg"
+            src="/assets/banner/career.jpg"
             alt={t('bannerAlt', 'Career opportunities at Luk & Associates')}
             originalFormat="jpg"
             className="absolute inset-0 w-full h-full object-cover transform scale-105"

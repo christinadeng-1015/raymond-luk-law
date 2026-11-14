@@ -22,10 +22,15 @@ const routes = [
   { url: '/small-claims-court', changefreq: 'monthly', priority: 0.6 },
 ];
 
+const chineseRoutes = routes.map((route) => ({
+  ...route,
+  url: `/zh${route.url === '/' ? '' : route.url}`,
+}));
+
 async function generateSitemap() {
   const sitemap = new SitemapStream({ hostname: 'https://www.luklaw.ca' });
 
-  routes.forEach((route) => {
+  [...routes, ...chineseRoutes].forEach((route) => {
     sitemap.write(route);
   });
 

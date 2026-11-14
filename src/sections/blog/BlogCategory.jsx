@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
 import { fetchBlogPosts } from '../../contentful/blogClient';
+import { localizedPath } from '../../utils/localizedPath';
 import BlogPostCard from './BlogPostCard';
 import ContactFloatIcon from '../home/ContactFloatIcon';
 import ScrollToTop from '../home/ScrollToTop';
@@ -179,7 +180,7 @@ export default function BlogCategoryPage() {
               updated.
             </p>
             <Link
-              to="/resources"
+              to={localizedPath('/resources', i18n.language)}
               className="inline-flex items-center justify-center px-6 py-2.5 rounded-lg border border-slate-200 text-slate-700 font-medium transition-colors hover:bg-slate-100"
             >
               Return to Resources
@@ -248,7 +249,7 @@ export default function BlogCategoryPage() {
 
           <div className="relative z-10 px-4 sm:px-6 md:px-12 lg:px-24 max-w-7xl mx-auto w-full">
             <Link
-              to="/resources"
+              to={localizedPath('/resources', i18n.language)}
               className="inline-flex items-center gap-2 text-blue-100 hover:text-white transition-colors mb-4 md:mb-6 w-fit text-sm font-medium"
             >
               <ChevronLeft size={16} />

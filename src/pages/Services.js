@@ -103,7 +103,7 @@ export default function ServicesPage() {
       <main ref={mainRef} style={{ overflow: 'hidden' }}>
         <div className="relative w-full h-[360px] md:h-[440px] overflow-hidden">
           <OptimizedImage
-            src="assets/banner/law.jpg"
+            src="/assets/banner/law.jpg"
             alt={t('bannerAlt', 'Legal services offered by Luk & Associates')}
             originalFormat="jpg"
             className="absolute inset-0 w-full h-full object-cover transform scale-105"

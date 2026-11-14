@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { localizedPath } from '../../utils/localizedPath';
 
 const formatDate = (value) => {
   if (!value) return '';
@@ -30,6 +32,7 @@ const getImageUrl = (imageField) => {
 };
 
 export default function BlogPostCard({ post }) {
+  const { i18n } = useTranslation();
   const imageUrl = getImageUrl(post.image);
   const isFeatured =
     post.isFeatureArticle ||
@@ -41,7 +44,10 @@ export default function BlogPostCard({ post }) {
 
   return (
     <Link
-      to={`/resources/${encodeURIComponent(post.slug)}`}
+      to={localizedPath(
+        `/resources/${encodeURIComponent(post.slug)}`,
+        i18n.language
+      )}
       className="block group h-full"
       aria-label={`Read full blog post: ${post.title}`}
     >

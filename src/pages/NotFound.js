@@ -1,8 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import { localizedPath } from '../utils/localizedPath';
 
 const NotFound = () => {
+  const { i18n } = useTranslation();
+
   return (
     <>
       <Helmet>
@@ -23,7 +27,7 @@ const NotFound = () => {
             Sorry, the page you are looking for doesn't exist or has been moved.
           </p>
           <Link
-            to="/"
+            to={localizedPath('/', i18n.language)}
             className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
           >
             Go Back Home

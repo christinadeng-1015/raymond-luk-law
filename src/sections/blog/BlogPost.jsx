@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useParams, Link } from 'react-router-dom';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { fetchBlogPosts } from '../../contentful/blogClient';
+import { localizedPath } from '../../utils/localizedPath';
 import ContactFloatIcon from '../home/ContactFloatIcon';
 import ScrollToTop from '../home/ScrollToTop';
 
@@ -299,14 +300,14 @@ export default function BlogPostPage() {
   const BreadcrumbsNav = () => (
     <nav className="relative z-50 flex flex-wrap items-center text-[10px] md:text-[11px] uppercase tracking-[0.1em] text-slate-400 font-semibold mb-6 pointer-events-auto">
       <Link
-        to="/"
+        to={localizedPath('/', i18n.language)}
         className="hover:text-white transition-colors py-1 cursor-pointer"
       >
         Home
       </Link>
       <span className="text-slate-600 mx-2 text-[9px] select-none">&gt;</span>
       <Link
-        to="/resources"
+        to={localizedPath('/resources', i18n.language)}
         className="hover:text-white transition-colors py-1 cursor-pointer"
       >
         Resources
@@ -534,7 +535,7 @@ export default function BlogPostPage() {
 
             <div className="flex justify-start w-full mt-10 relative z-20">
               <Link
-                to="/resources"
+                to={localizedPath('/resources', i18n.language)}
                 className="inline-flex items-center gap-2 text-[12px] uppercase tracking-wider font-semibold text-[#C59B27] hover:text-[#A1793E] transition-colors group"
               >
                 <span className="group-hover:-translate-x-1 transition-transform duration-300">
@@ -562,7 +563,7 @@ export default function BlogPostPage() {
                 </p>
 
                 <Link
-                  to="/contact"
+                  to={localizedPath('/contact', i18n.language)}
                   className="block w-full py-3 bg-[#E6BA5C] hover:bg-[#D4A94A] text-[#0F294A] font-semibold text-[13px] rounded transition-all duration-300 text-center mb-5"
                 >
                   Book a Consultation &rarr;
@@ -650,7 +651,7 @@ export default function BlogPostPage() {
                     Related Articles
                   </h4>
                   <Link
-                    to="/resources"
+                    to={localizedPath('/resources', i18n.language)}
                     className="text-[10px] font-semibold text-[#C59B27] hover:text-[#A1793E] transition-colors uppercase tracking-wider"
                   >
                     View All &rarr;
@@ -671,7 +672,10 @@ export default function BlogPostPage() {
                     return (
                       <Link
                         key={article.id || article.slug}
-                        to={`/resources/${article.slug}`}
+                        to={localizedPath(
+                          `/resources/${article.slug}`,
+                          i18n.language
+                        )}
                         className="group flex items-center gap-4 hover:bg-slate-50 p-2 -mx-2 rounded-lg transition-colors"
                       >
                         <div className="w-16 h-16 bg-slate-100 rounded-lg overflow-hidden relative shrink-0 shadow-sm border border-slate-200/50">

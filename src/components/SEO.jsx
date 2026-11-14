@@ -1,15 +1,16 @@
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 
 export default function SEO({
   title,
   description,
   keywords,
-  path = '',
   image = '/assets/banner/default-og.jpg',
   schema,
 }) {
   const { i18n } = useTranslation();
+  const { pathname } = useLocation();
   const domain = 'https://www.luklaw.ca';
 
   const defaultTitle = 'Luk & Associates | Law Firm in Markham, ON';
@@ -22,7 +23,7 @@ export default function SEO({
   const metaDescription = description || defaultDescription;
   const metaKeywords = keywords || defaultKeywords;
 
-  const canonicalUrl = `${domain}${path}`;
+  const canonicalUrl = `${domain}${pathname}`;
   const ogImageUrl = image.startsWith('http')
     ? image
     : `${domain}${image.startsWith('/') ? '' : '/'}${image}`;

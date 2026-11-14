@@ -2,9 +2,10 @@ import React from 'react';
 import { BsWhatsapp, BsInstagram, BsLinkedin, BsTiktok } from 'react-icons/bs';
 import { useTranslation } from 'react-i18next';
 import OptimizedImage from '../../components/OptimizedImage';
+import { localizedPath } from '../../utils/localizedPath';
 
 const FooterHome = () => {
-  const { t } = useTranslation('main');
+  const { t, i18n } = useTranslation('main');
   const footer = t('footer', { returnObjects: true });
   const socialIcons = {
     linkedin: BsLinkedin,
@@ -43,7 +44,7 @@ const FooterHome = () => {
                 {footer.quickLinks.map((item, i) => (
                   <li key={i}>
                     <a
-                      href={item.link}
+                      href={localizedPath(item.link, i18n.language)}
                       className="hover:text-amber-500 transition-colors"
                     >
                       {item.title}

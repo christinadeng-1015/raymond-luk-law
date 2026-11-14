@@ -2,6 +2,7 @@ import { useState, useCallback, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Calendar, Clock, Tag, ChevronRight } from 'lucide-react';
+import { localizedPath } from '../../utils/localizedPath';
 
 export default function BlogFeaturedDeck({ featuredPosts }) {
   const { i18n, t } = useTranslation('main');
@@ -113,7 +114,10 @@ export default function BlogFeaturedDeck({ featuredPosts }) {
 
                     <h3 className="text-xl sm:text-2xl font-bold text-slate-900 leading-snug tracking-tight mb-2.5 line-clamp-2 hover:text-[#0C2D57] transition-colors">
                       <Link
-                        to={`/resources/${featuredPost.slug || featuredPost.id}`}
+                        to={localizedPath(
+                          `/resources/${featuredPost.slug || featuredPost.id}`,
+                          i18n.language
+                        )}
                       >
                         {featuredPost.title}
                       </Link>
@@ -134,7 +138,10 @@ export default function BlogFeaturedDeck({ featuredPosts }) {
                     </span>
 
                     <Link
-                      to={`/resources/${featuredPost.slug || featuredPost.id}`}
+                      to={localizedPath(
+                        `/resources/${featuredPost.slug || featuredPost.id}`,
+                        i18n.language
+                      )}
                       className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#0C2D57] text-white font-semibold text-xs shadow-sm hover:bg-slate-800 transition-all duration-200"
                     >
                       <span>{t('blog.readArticle', 'Read Article')}</span>

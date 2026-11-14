@@ -7,6 +7,7 @@ import BlogPostCard from '../sections/blog/BlogPostCard';
 import FeaturedArticlesDeck from '../sections/blog/FeaturedArticlesDeck';
 import ContactFloatIcon from '../sections/home/ContactFloatIcon';
 import ScrollToTop from '../sections/home/ScrollToTop';
+import { localizedPath } from '../../utils/localizedPath';
 import { Home, Users, BookOpen, ArrowRight } from 'lucide-react';
 
 export default function BlogPage() {
@@ -206,7 +207,10 @@ export default function BlogPage() {
                   return (
                     <Link
                       key={category.slug}
-                      to={`/resources/${category.slug}`}
+                      to={localizedPath(
+                        `/resources/${category.slug}`,
+                        i18n.language
+                      )}
                       className="group flex items-start justify-between rounded-xl border border-slate-200/80 bg-white p-5 transition-all duration-300 shadow-sm hover:shadow-md hover:border-[#0C2D57]/30 hover:-translate-y-0.5"
                     >
                       <div className="flex gap-4 items-start">

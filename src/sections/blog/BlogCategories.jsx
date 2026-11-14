@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ArrowRight } from 'lucide-react';
+import { localizedPath } from '../../utils/localizedPath';
 
 export default function BlogCategories({ categories }) {
-  const { t } = useTranslation('main');
+  const { t, i18n } = useTranslation('main');
 
   return (
     <div className="mb-16">
@@ -20,7 +21,10 @@ export default function BlogCategories({ categories }) {
           return (
             <Link
               key={category.slug}
-              to={`/resources/${category.slug}`}
+              to={localizedPath(
+                `/resources/${category.slug}`,
+                i18n.language
+              )}
               className="group flex items-start justify-between rounded-xl border border-slate-200/80 bg-white p-5 transition-all duration-300 shadow-sm hover:shadow-md hover:border-[#0C2D57]/30 hover:-translate-y-0.5"
             >
               <div className="flex gap-4 items-start">

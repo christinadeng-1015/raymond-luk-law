@@ -14,7 +14,7 @@ const ContactContainer = () => {
     <section id="contact" className="mx-auto w-full">
       <div className="relative w-full h-[360px] md:h-[440px] overflow-hidden">
         <OptimizedImage
-          src="assets/banner/contact.jpg"
+          src="/assets/banner/contact.jpg"
           alt="Contact Luk & Associates for legal services"
           originalFormat="jpg"
           className="absolute inset-0 w-full h-full object-cover transform scale-105"

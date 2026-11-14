@@ -1,12 +1,12 @@
 import React, { Suspense } from 'react';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams, Navigate, Outlet } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'flowbite/dist/flowbite.css';
 import Navbar from './sections/navigation/Navbar';
 import FooterHome from './sections/navigation/Footer';
-import LanguageRedirect from './components/LanguageRedirect';
+import { localizedPath } from './utils/localizedPath';
 
 // Lazy load pages
 const Home = React.lazy(() => import('./pages/Home'));
@@ -34,13 +34,41 @@ function BlogRouter() {
 }
 
 function BlogRedirect() {
-  const { category } = useParams();
+  const { category, lang } = useParams();
 
   return category ? (
-    <Navigate to={`/resources/${category}`} replace />
+    <Navigate
+      to={
+        lang
+          ? localizedPath(`/resources/${category}`, lang)
+          : `/resources/${category}`
+      }
+      replace
+    />
   ) : (
-    <Navigate to="/resources" replace />
+    <Navigate
+      to={lang ? localizedPath('/resources', lang) : '/resources'}
+      replace
+    />
   );
+}
+
+function LanguageRoute() {
+  const { i18n } = useTranslation();
+  const { lang } = useParams();
+  const isSupportedLanguage = !lang || ['en', 'zh'].includes(lang);
+
+  useEffect(() => {
+    if (lang && isSupportedLanguage && i18n.language !== lang) {
+      i18n.changeLanguage(lang);
+      localStorage.setItem('i18nextLng', lang);
+    }
+  }, [lang, isSupportedLanguage, i18n]);
+
+  if (!isSupportedLanguage) return <NotFound />;
+  if (lang && i18n.language !== lang) return <div>Loading...</div>;
+
+  return <Outlet />;
 }
 
 const App = () => {
@@ -53,15 +81,6 @@ const App = () => {
     import('aos/dist/aos.css');
   }, []);
 
-  const { i18n } = useTranslation();
-  const { lang } = useParams();
-
-  useEffect(() => {
-    if (lang && i18n.language !== lang) {
-      i18n.changeLanguage(lang);
-    }
-  }, [lang, i18n]);
-
   return (
     <Router>
       <header>
@@ -69,28 +88,27 @@ const App = () => {
       </header>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          <Route path="/en" element={<LanguageRedirect lang="en" />} />
-          <Route path="/zh" element={<LanguageRedirect lang="zh" />} />
-
-          <Route path="" element={<Home />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/team" element={<TeamPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/careers" element={<CareerPage />} />
-          <Route path="/resources/:category" element={<BlogRouter />} />
-          <Route path="/resources" element={<BlogPage />} />
-          <Route path="/blog/:category" element={<BlogRedirect />} />
-          <Route path="/blog" element={<BlogRedirect />} />
-          <Route path="/real-estate-law" element={<LawPage />} />
-          <Route path="/family-law" element={<LawPage />} />
-          <Route path="/personal-injury-law" element={<LawPage />} />
-          <Route path="/wills-and-estates" element={<LawPage />} />
-          <Route path="/corporate-law" element={<LawPage />} />
-          <Route path="/immigration-law" element={<LawPage />} />
-          <Route path="/other-services" element={<LawPage />} />
-          <Route path="/landlord-tenant-board" element={<LawPage />} />
-          <Route path="/small-claims-court" element={<LawPage />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/:lang?" element={<LanguageRoute />}>
+            <Route index element={<Home />} />
+            <Route path="services" element={<ServicesPage />} />
+            <Route path="team" element={<TeamPage />} />
+            <Route path="contact" element={<ContactPage />} />
+            <Route path="careers" element={<CareerPage />} />
+            <Route path="resources/:category" element={<BlogRouter />} />
+            <Route path="resources" element={<BlogPage />} />
+            <Route path="blog/:category" element={<BlogRedirect />} />
+            <Route path="blog" element={<BlogRedirect />} />
+            <Route path="real-estate-law" element={<LawPage />} />
+            <Route path="family-law" element={<LawPage />} />
+            <Route path="personal-injury-law" element={<LawPage />} />
+            <Route path="wills-and-estates" element={<LawPage />} />
+            <Route path="corporate-law" element={<LawPage />} />
+            <Route path="immigration-law" element={<LawPage />} />
+            <Route path="other-services" element={<LawPage />} />
+            <Route path="landlord-tenant-board" element={<LawPage />} />
+            <Route path="small-claims-court" element={<LawPage />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
         </Routes>
       </Suspense>
       <footer>

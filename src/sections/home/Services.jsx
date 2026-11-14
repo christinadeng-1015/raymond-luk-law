@@ -2,9 +2,10 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { FiArrowRight } from 'react-icons/fi';
 import OptimizedImage from '../../components/OptimizedImage';
+import { localizedPath } from '../../utils/localizedPath';
 
 const Services = () => {
-  const { t } = useTranslation('services');
+  const { t, i18n } = useTranslation('services');
   const services = t('services', { returnObjects: true });
 
   return (
@@ -27,7 +28,7 @@ const Services = () => {
         >
           {services.map((service, index) => (
             <a
-              href={service.path}
+              href={localizedPath(service.path, i18n.language)}
               key={index}
               className="group flex flex-col bg-white border border-slate-100 hover:border-slate-200 transition-all duration-300"
             >

@@ -1,15 +1,18 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Navbar, Dropdown } from 'flowbite-react';
 import OptimizedImage from '../../components/OptimizedImage';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { localizedPath } from '../../utils/localizedPath';
 
 const Nav = () => {
   const { t, i18n } = useTranslation('navbar');
+  const location = useLocation();
+  const navigate = useNavigate();
   const navbar = t('navbar', { returnObjects: true });
   const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-    localStorage.setItem('i18nextLng', lng);
+    navigate(localizedPath(location.pathname, lng));
   };
 
   const [isOpen, setIsOpen] = useState(false);
@@ -43,13 +46,17 @@ const Nav = () => {
             : 'bg-transparent'
         } ${visible ? 'translate-y-0' : '-translate-y-full'} ease-in-out overflow-visible`}
       >
-        <Navbar.Brand href="/" className="flex-shrink-0 flex flex-start">
+        <Navbar.Brand
+          href={localizedPath('/', i18n.language)}
+          className="flex-shrink-0 flex flex-start"
+        >
           <div className="w-24 aspect-[4/1]">
             <OptimizedImage
               src="/assets/home/logo.png"
               alt="Luk & Associates logo"
               originalFormat="png"
-              className="object-contain"
+              className=" object-contain"
+              lazy={false}
             />
           </div>
         </Navbar.Brand>
@@ -127,7 +134,7 @@ const Nav = () => {
                       <div className="max-h-72 overflow-y-auto lg:max-h-none lg:overflow-visible">
                         {item.dropdown.map((subItem) => (
                           <Dropdown.Item
-                            href={subItem.url}
+                            href={localizedPath(subItem.url, i18n.language)}
                             key={subItem.key}
                             className="text-[18px] lg:text-[14px] normal-case font-medium hover:text-amber-500 hover:bg-white/5 border-b border-white/5 last:border-0 py-4 px-8 lg:py-3 lg:px-6"
                             style={{ fontFamily: "'Inter', sans-serif" }}
@@ -151,7 +158,7 @@ const Nav = () => {
 
               return (
                 <Navbar.Link
-                  href={item.url}
+                  href={localizedPath(item.url, i18n.language)}
                   key={item.key}
                   className={`
                     cursor-pointer transition-all duration-300
