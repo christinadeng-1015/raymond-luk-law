@@ -62,7 +62,13 @@ function ContactFloatIcon() {
             onClick={() => changeLanguage('zh')}
             className="block w-full text-left px-2 py-1 hover:bg-gray-100"
           >
-            中文
+            简体中文
+          </button>
+          <button
+            onClick={() => changeLanguage('zh-HK')}
+            className="block w-full text-left px-2 py-1 hover:bg-gray-100"
+          >
+            香港繁體中文
           </button>
         </div>
       )}

@@ -22,10 +22,10 @@ const generateSlug = (title) => {
   return normalized || 'untitled';
 };
 
-const normalizeLocale = (locale) => {
+export const normalizeLocale = (locale) => {
   if (!locale) return undefined;
   if (locale === 'en') return 'en-US';
-  if (locale === 'zh') return 'zh';
+  if (locale === 'zh' || locale === 'zh-HK') return 'zh';
   return locale;
 };
 

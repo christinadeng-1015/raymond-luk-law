@@ -5,6 +5,7 @@ import SEO from '../components/SEO';
 import Service from '../sections/services/Service';
 import ContactFloatIcon from '../sections/home/ContactFloatIcon';
 import ScrollToTop from '../sections/home/ScrollToTop';
+import { unlocalizedPath } from '../utils/localizedPath';
 
 export default function LawPage() {
   const mainRef = useRef();
@@ -12,10 +13,7 @@ export default function LawPage() {
   const { t } = useTranslation('services');
 
   const domain = 'https://www.luklaw.ca';
-  const currentPath = (location?.pathname || '').replace(
-    /^\/(en|zh)(?=\/|$)/,
-    ''
-  );
+  const currentPath = unlocalizedPath(location?.pathname || '');
 
   // Find practice area details matching the current URL route
   const servicesList = t('services', { returnObjects: true }) || [];

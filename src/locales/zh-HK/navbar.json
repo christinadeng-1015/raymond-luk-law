@@ -1,0 +1,105 @@
+{
+  "navbar": {
+    "slides": [
+      {
+        "title": "新法律思維，守誠信承諾",
+        "subtitle": "當人生變得複雜時，你需要清晰判斷與堅定方案。我們以高效、精准與誠信，處理人生重大轉折與棘手糾紛背後的法律事務。歡迎預約免費咨詢——我們會直截了當地告訴你：什麼重要、什麼不重要，以及下一步該怎麼做。",
+        "linkTitle": "預約法律咨詢",
+        "url": "/contact"
+      },
+      {
+        "title": "周密準備.高效回應.值得信賴",
+        "subtitle": "優秀的結果從不是運氣，而是來自周密規劃、精准執行，以及始終緊盯案件進展的專業團隊——這正是我們的工作方式。",
+        "linkTitle": "認識我們的團隊",
+        "url": "/team"
+      },
+      {
+        "title": "Google 五星好評",
+        "subtitle": "客戶的評價最有說服力。人們選擇我們，是因為我們提供直接明晰的建議、扎實可靠的工作，以及始終如一的執行力。歡迎閱讀他們分享的真實合作體驗。",
+        "linkTitle": "查看 Google 評論",
+        "url": "https://maps.app.goo.gl/7VNSd8i3zfBL1hWz9"
+      }
+    ],
+    "desc": "卓越法律服務，貼心個性化體驗",
+    "aboutTitle": "為什麼選擇我們",
+    "googleDoc": {
+      "title": "免費咨詢",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSc3wQK4mW8BakKnu6rbzLc1uc2u0j5bAn60iAi8M2_x4R6bQA/viewform?usp=sf_link"
+    },
+    "links": [
+      { "key": "home", "label": "主頁", "url": "/", "icon": "AiOutlineHome" },
+      {
+        "key": "team",
+        "label": "律師團隊",
+        "url": "/team",
+        "icon": "AiOutlineTeam"
+      },
+      {
+        "key": "services",
+        "label": "法律服務",
+        "icon": "AiOutlineAudit",
+        "dropdown": [
+          { "key": "overview", "label": "概覽", "url": "/services" },
+          {
+            "key": "real-estate-law",
+            "label": "房地產法",
+            "url": "/real-estate-law"
+          },
+          { "key": "family-law", "label": "家庭法", "url": "/family-law" },
+          {
+            "key": "will-estates",
+            "label": "遺囑和遺產",
+            "url": "/wills-and-estates"
+          },
+          {
+            "key": "immigration-law",
+            "label": "移民法",
+            "url": "/immigration-law"
+          },
+          {
+            "key": "landlord-tenant-board",
+            "label": "房東及租客委員會",
+            "url": "/landlord-tenant-board"
+          },
+          {
+            "key": "small-claims-court",
+            "label": "小額錢債法庭",
+            "url": "/small-claims-court"
+          },
+          {
+            "key": "other-services",
+            "label": "其他服務",
+            "url": "/other-services"
+          }
+        ]
+      },
+      {
+        "key": "resources",
+        "label": "法律資源",
+        "url": "/resources",
+        "icon": "AiOutlineRead"
+      },
+      {
+        "key": "contact",
+        "label": "聯繫我們",
+        "url": "/contact",
+        "icon": "AiOutlineMail"
+      },
+      {
+        "key": "career",
+        "label": "招聘信息",
+        "url": "/careers",
+        "icon": "AiOutlineSolution"
+      },
+      {
+        "key": "language",
+        "label": "語言",
+        "icon": "AiOutlineTranslation",
+        "dropdown": [
+          { "key": "en", "label": "English" },
+          { "key": "zh", "label": "中文" }
+        ]
+      }
+    ]
+  }
+}

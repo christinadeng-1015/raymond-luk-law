@@ -1,0 +1,176 @@
+{
+  "seo": {
+    "title": "法律職位招聘 | Luk & Associates 萬錦",
+    "description": "了解 Luk & Associates 位於安大略省萬錦市的法律實習、助理、文員及持牌法律助理職位。",
+    "keywords": "萬錦法律工作, 律師樓招聘, 法律實習, 法律助理職位"
+  },
+  "title": "職業機會",
+  "subtitle": "Luk & Associates 招聘信息",
+  "description": "在一個高效、嚴謹、願意真正培養你的團隊中，開啓你的法律職業生涯",
+  "tagline": "Luk & Associates 是一家位於 <strong>安省 Markham</strong> 的成長型綜合性律師樓，業務涵蓋 <strong>家庭法、房地產、遺囑與遺產、小額索賠 / LTB 事務及移民相關服務。</strong><br/>如果你做事認真、可靠，並希望承擔有意義的責任，這裡會非常適合你。",
+  "howToApplyTitle": "如何申請",
+  "howToApplyDescription": "請將申請材料發送至 <a href=\"mailto:info@luklaw.ca\" class=\"underline\">info@luklaw.ca</a>，郵件標題請注明：<strong>“職位 – 姓名”</strong>，或通過下方表格提交申請。",
+  "whatToExpectTitle": "你可以期待什麼",
+  "whatToExpectSteps": "<ul><li><strong>高標準，強支持。</strong> 我們會提供培訓，但也期望你對工作質量和準確性負責。</li><li><strong>真實的客戶接觸。</strong> 你將學習實際法律工作流程和專業判斷能力。</li><li><strong>清晰的發展路徑。</strong> 實習生 → 助理 / Clerk → 高級支持崗位 → Paralegal 發展方向（如適用）。</li><li><strong>現代化團隊。</strong> 系統化流程、模板、清單，以及持續優化工作的文化。</li><li><strong>雙語環境。</strong> 許多客戶使用中文溝通。</li></ul>",
+  "languagesRequiredTitle": "語言要求（所有職位）",
+  "languagesRequiredDescription": "由於相當一部分客戶使用中文溝通，<strong>所有職位均要求具備英語能力，並能流利使用普通話或粵語。</strong>",
+  "faq": {
+    "title": "常見問題",
+    "faqs": [
+      {
+        "question": "所有職位都要求雙語能力嗎？",
+        "answer": "是的。由於客戶需求，<strong>所有職位均要求英語流利，並能使用普通話或粵語進行口頭及書面溝通。</strong>"
+      },
+      {
+        "question": "是否支持遠程或混合辦公？",
+        "answer": "大多數崗位需要 <strong>在 Markham 辦公室工作</strong>，以便培訓、協作及文件處理。"
+      },
+      {
+        "question": "是否提供培訓？",
+        "answer": "是的，尤其針對實習生及初級崗位。我們提供指導和系統支持，但希望你具備學習能力和執行力。"
+      },
+      {
+        "question": "什麼樣的人更容易在這裡成功？",
+        "answer": "可靠、注重細節、溝通清晰，並且能夠在較少監督下完成工作的候選人。"
+      }
+    ]
+  },
+  "accessibilityStatementTitle": "無障礙與平等機會",
+  "accessibilityStatement": "我們致力於營造一個尊重、多元和包容的工作環境。<strong>在招聘過程中，如有需要，可根據安省相關法律提供合理便利。</strong>",
+  "privacyNoticeTitle": "隱私聲明",
+  "privacyNotice": "通過申請提交的信息僅用於招聘及錄用目的。",
+  "openRoles": {
+    "title": "當前開放職位",
+    "roles": [
+      {
+        "id": "legal-intern",
+        "title": "法律實習生",
+        "employmentType": ["暑期", "兼職", "Co-op"],
+        "bestFor": "本科在讀或計劃從事法律職業的候選人。",
+        "responsibilities": [
+          "文件整理及客戶信息錄入支持",
+          "起草簡單函件及整理輔助文件",
+          "在指導下完成法律研究任務",
+          "協助行政流程及內部清單",
+          "完成分配的其他工作"
+        ],
+        "fitIf": [
+          "注重細節，能按時完成任務",
+          "能快速學習新系統",
+          "具備良好的書面表達和職業素養",
+          "可在 Markham 辦公室工作"
+        ],
+        "requirements": "<strong>必需：</strong> 英語流利，並能流利使用 <strong>普通話或粵語</strong>",
+        "success90Days": [
+          "能獨立遵循事務所流程",
+          "工作成果基本無需修改",
+          "能提出有價值的問題並迅速執行"
+        ]
+      },
+      {
+        "id": "legal-assistant",
+        "title": "法律助理",
+        "employmentType": ["全職"],
+        "bestFor": "善於組織、擅長客戶溝通、能夠在高工作量下保持準確性的人。",
+        "responsibilities": [
+          "客戶溝通、信息收集及日程安排",
+          "文件維護及檔案管理",
+          "使用模板起草日常函件及表格",
+          "協助律師及 Paralegal 跟進截止日期",
+          "確保案件流程高效、準確推進"
+        ],
+        "fitIf": [
+          "在壓力下保持冷靜、細緻",
+          "熟練使用 Word、PDF 及文件管理工具",
+          "電話及郵件溝通專業得體",
+          "可同時處理多個案件"
+        ],
+        "requirements": "<strong>必需：</strong> 英語流利，並能流利使用 <strong>普通話或粵語</strong>",
+        "success90Days": [
+          "客戶接待及跟進流程順暢",
+          "能提前發現潛在問題",
+          "每日穩定推進案件進展"
+        ]
+      },
+      {
+        "id": "law-clerk",
+        "title": "法律文員",
+        "employmentType": ["全職"],
+        "bestFor": "喜歡流程、文件及高準確度工作的候選人。",
+        "responsibilities": [
+          "使用事務所模板起草及準備法律文件",
+          "管理往來函件、檔案材料及客戶更新",
+          "根據需要支持不同業務領域",
+          "維護準確的文件記錄和時間線",
+          "與客戶及第三方協調溝通"
+        ],
+        "fitIf": [
+          "做事嚴謹、一致性強",
+          "擅長校對和發現細節問題",
+          "能快速學習新的業務領域",
+          "與客戶及第三方溝通自信"
+        ],
+        "requirements": "<strong>必需：</strong> 英語流利，並能流利使用 <strong>普通話或粵語</strong>",
+        "success90Days": [
+          "文件起草準確、格式規範",
+          "案件文件清晰、有序、無遺漏",
+          "團隊能夠信任你的工作成果"
+        ]
+      },
+      {
+        "id": "licensed-paralegal",
+        "title": "持牌 Paralegal",
+        "employmentType": ["全職"],
+        "bestFor": "能夠獨立管理案件、客戶及時間線的專業人士。",
+        "responsibilities": [
+          "管理小額索賠及 LTB 案件（及其他相關領域）",
+          "客戶接待、策略支持及案件推進",
+          "文件起草、提交及必要時出庭",
+          "協助談判及以和解為導向的案件管理",
+          "維護清晰的記錄、截止日期及案件計劃"
+        ],
+        "fitIf": [
+          "持有有效執照並保持良好狀態",
+          "客戶溝通專業、自信",
+          "對細節和截止日期極度重視",
+          "能主動推進案件，而非被動等待指示"
+        ],
+        "requirements": "<strong>必需：</strong> 英語流利，並能流利使用 <strong>普通話或粵語</strong>",
+        "success90Days": [
+          "案件計劃清晰、客戶溝通穩定",
+          "案件有序推進、無期限風險",
+          "能優化系統，而不僅是遵循系統"
+        ]
+      }
+    ]
+  },
+  "howToApply": {
+    "title": "申請步驟",
+    "intro": "提交申請時，請包含以下內容。",
+    "steps": [
+      {
+        "title": "簡歷（PDF）",
+        "description": "請附上一份清晰、最新的 PDF 格式簡歷。"
+      },
+      {
+        "title": "簡短求職說明（5–10 句話）",
+        "description": "請清晰回答以下問題，以便我們瞭解你的匹配度和職業目標。",
+        "prompts": [
+          "為什麼申請這個職位？",
+          "為什麼選擇 Luk & Associates？",
+          "你未來 1–2 年的職業目標是什麼？"
+        ]
+      },
+      {
+        "title": "語言能力確認",
+        "description": "請說明你是否流利使用普通話或粵語，以及你的口語和書寫熟練程度。"
+      },
+      {
+        "title": "非必需但有幫助的材料",
+        "description": "以下材料非強制要求，但有助於我們更全面地瞭解你。",
+        "items": ["寫作樣本", "LinkedIn 主頁", "最早可入職時間及每周可工作時數"]
+      }
+    ]
+  },
+  "joinUsButton": "加入我們的⼈才庫"
+}

@@ -1,0 +1,299 @@
+{
+  "seo": {
+    "title": "認識我們的律師團隊 | Luk & Associates",
+    "pageTitle": "經驗豐富的法律團隊",
+    "description": "認識 Luk & Associates 位於安大略省萬錦市的法律團隊，為客戶提供清晰、實際的法律方案。",
+    "keywords": "萬錦律師團隊, 安大略省律師, 粵語律師, 普通話律師"
+  },
+  "title": "認識我們的團隊",
+  "bannerText": "律師團隊",
+  "description": "認識我們經驗豐富的法律團隊，致力於提供高效明確的法律方案。",
+  "heading": {
+    "meet": "認識",
+    "contact": "聯絡方式",
+    "education": "教育和執照",
+    "language": "我們提供多種語言法律服務"
+  },
+  "categoriesOrder": ["lawyers", "licensedProfessionals", "legalSupport"],
+  "categories": {
+    "lawyers": "律師",
+    "licensedProfessionals": "持牌與監管專業人士",
+    "legalSupport": "法律支持與客戶運營"
+  },
+  "team": [
+    {
+      "name": "Raymond Luk",
+      "position": "創辦人 | 大律師及事務律師｜公證人",
+      "category": "lawyers",
+      "description": "Raymond Luk 是本所的創始律師，以其高度的責任感、深厚的法律功底以及以客戶為中心的執業理念而廣受認可。Raymond 畢業於多倫多大學（University of Toronto），以優異成績（High Distinction）取得文學榮譽學士學位，隨後於女王大學（Queen’s University）完成法學博士（Juris Doctor）學位。<br/><br/>Raymond 曾代理客戶出庭於安大略省高等法院（Superior Court of Ontario）、持牌上訴仲裁庭（Licensed Appeal Tribunal）以及安大略省人權仲裁庭（Human Rights Tribunal of Ontario）。他是一位注重實務策略、以實現客戶最佳結果為目標的資深訴訟律師。其執業領域涵蓋家庭法、遺囑與遺產規劃、人身傷害、房地產法以及公司法，能夠根據每位客戶的具體情況，提供全面而周到的法律解決方案。<br/><br/>除日常執業外，Raymond 亦積極參與法律公共傳播，長期為《明報》撰寫法律專欄，並曾為《星島日報》（加拿大）供稿。他亦多次受邀出現在 OMNI News——OMNI 電視台旗下的多語言本地及全國新聞節目中，就與社區息息相關的法律議題分享專業見解。通過這些平台，他致力於讓法律更易理解，幫助公眾更好地認識並維護自身權益。<br/><br/>Raymond 始終堅持以誠信、專業精神以及對法律的深刻理解來建立和發展自己的執業實踐。他重視與每一位客戶的溝通，提供清晰、務實且具有針對性的法律建議，協助客戶自信應對複雜的法律事務。<br/><br/>Raymond 精通英語和粵語，並具備普通話溝通能力，能夠以細緻、周到的方式為多元背景的客戶群體提供法律服務。",
+      "image": "/assets/team/raymond-luk.jpg",
+      "education": [
+        "文學學士學位（榮譽）多倫多大學",
+        "女王大學法學博士",
+        "安大略省律師協會 大律師及事務律師",
+        "安大略省 公證人"
+      ],
+      "phone": [
+        { "number": "905-333-1740", "description": "分機。103 (辦公室)" },
+        { "number": "905-849-3583", "description": "(傳真)" }
+      ],
+      "email": "rluk@luklaw.ca"
+    },
+    {
+      "name": "Eiman Sharifpour",
+      "position": "大律師及事務律師｜公證人",
+      "category": "lawyers",
+      "description": "Eiman Sharifpour 是一位專注且富有同情心的家庭法律師，始終以客戶為中心處理每一個案件。他深刻理解家庭法事務中的情感和法律複雜性，致力於為客戶提供個性化和有效的解決方案。<br/><br/>Eiman 的業務範圍涵蓋廣泛的家庭法問題，包括離婚、子女監護、配偶贍養、財產分割和家庭暴力案件。他以同理心、戰略思維和堅定的承諾著稱，始終努力為客戶爭取最佳結果。<br/><br/>作為一名熟練的談判者和訴訟律師，Eiman 擅長通過調解和協作解決案件，同時也能在法庭上為客戶積極辯護。他對細節的關注、出色的溝通技巧以及不懈的奉獻精神，贏得了客戶和同行的高度信任與尊重。<br/><br/>工作之余，Eiman 是一位狂熱的體育愛好者。他是多倫多猛龍隊（Toronto Raptors）和巴塞羅那足球俱樂部（FC Barcelona）的忠實粉絲，閒暇時也喜歡踢足球。他對團隊合作和競技的熱愛也體現在他的法律工作中，他努力與客戶有效合作，並為他們提供強有力的支持。<br/><br/>Eiman 畢業於溫莎大學，是安大略省律師協會的成員。他與Raymond及團隊緊密合作，確保每位客戶在人生最艱難的時刻都能獲得最高水平的法律代表和支持。",
+      "image": "/assets/team/eiman-sharifpour.jpg",
+      "education": [
+        "約克大學理學學士",
+        "溫莎大學法學博士",
+        "安大略省律師協會 大律師及事務律師",
+        "安大略省 公證人"
+      ],
+      "phone": [
+        { "number": "905-667-6496", "description": "(辦公室)" },
+        { "number": "905-849-3583", "description": "(傳真)" }
+      ],
+      "email": "esharifpour@luklaw.ca",
+      "desc": "* 目前通過 Iman Law Professional Corporation 執業"
+    },
+    {
+      "name": "Rebecca Tsui",
+      "position": "辦公室經理",
+      "category": "legalSupport",
+      "description": "Rebecca Tsui 是律師樓的核心支柱，憑借卓越的組織能力和對卓越的追求，確保事務所的順利運作。她在維持效率、營造積極的工作環境以及支持團隊和客戶方面發揮著關鍵作用。<br/><br/>Rebecca 負責監督日常運營、協助客戶接待、管理行政人員、協調日程安排，並確保辦公室的高效運轉，使團隊能夠專注於提供出色的法律服務。她以注重細節、解決問題的能力和對客戶滿意度的承諾而聞名，是事務所成功不可或缺的一部分。<br/><br/>Rebecca 擁有香港樹仁大學（Hong Kong Shue Yan University）頒發的社會科學學士學位（心理學專業），這為她奠定了扎實的心理學基礎，使她深刻理解人類行為、人際互動和有效溝通。這一背景在她的工作中發揮了重要作用，使她能夠與客戶和同事建立更深層次的聯繫，並以同理心和專業精神處理複雜情況。<br/><br/>在加入律師樓之前，Rebecca 在香港積累了豐富的專業經驗。她曾擔任匯豐銀行（HSBC）的全能銀行專員（Universal Banker），在金融服務領域培養了出色的客戶服務和財務管理技能。此外，她還曾在**香港入境事務處（Hong Kong Immigration Department）工作，這段經歷使她深入瞭解了移民流程和政府部門的高效運作方式。這些多元化的背景為她在管理律師樓的複雜事務中帶來了獨特的視角和寶貴的經驗。<br/><br/>Rebecca 精通普通話、粵語和英語，能夠與來自不同文化背景的客戶和同事順暢溝通。她的多語言能力和跨文化理解力進一步提升了事務所的服務水平。<br/><br/>Rebecca 致力於為團隊和客戶提供無縫的支持，她的專業精神和奉獻精神使她成為事務所不可或缺的一員。",
+      "image": "/assets/team/rebecca-tsui.jpg",
+      "education": ["社會科學學士香港樹仁大學"],
+      "phone": [
+        { "number": "905-291-1802", "description": "(辦公室)" },
+        { "number": "905-849-3583", "description": "(傳真)" }
+      ],
+      "email": "rtsui@luklaw.ca"
+    },
+    {
+      "name": "Raymond Lee",
+      "position": "高級持牌法律助理",
+      "category": "licensedProfessionals",
+      "description": "Raymond Lee 是一位經驗豐富且敬業的法律助理，以精准和專業的態度從事法律工作。作為安大略省法律協會的持牌法律助理，Raymond 主要處理房東及租客委員會糾紛、小額索賠法庭事務以及省級違規/罰單案件，為客戶提供清晰的指導與有力的代表。<br/><br/>Raymond 擁有多倫多大學的商業學士學位、香港大學的普通法法律研究高級文憑，同時是英國法律助理協會的資深會員。他多元的學術背景使他具備法律與商業的雙重視角，提升瞭解決複雜法律事務的分析能力與實際判斷力。<br/><br/>憑借對程序法的深入理解以及以客戶為中心的服務理念，Raymond 協助租客、房東及其他當事人應對各種法律挑戰——從租賃糾紛、驅逐程序到債務追討及交通違規。他善於簡化複雜流程，幫助客戶做出明智決策。<br/><br/>Raymond 精通英語、粵語及普通話，確保與不同背景的客戶進行有效溝通，在法律程序中建立信任與清晰。他具備跨文化的溝通能力和對細節的高度關注，能夠為每位客戶量身打造合適的法律方案。<br/><br/>Raymond 致力於提升法律服務的可及性與效率，結合嚴謹的法律分析與實用策略達成案件解決目標。無論是談判和解，還是在法庭及仲裁機構中為客戶辯護，他始終以正直與專業的態度將客戶利益放在首位。<br/><br/>在工作之外，Raymond 喜歡游泳、騎行，並支持利物浦足球俱樂部。他也熱愛與家人一起旅行，盡可能探索新的目的地。",
+      "image": "/assets/team/raymond-lee.jpg",
+      "education": [
+        "多倫多大學 商業學士",
+        "香港大學 普通法法律研究高級文憑",
+        "安大略省法律協會 持牌法律助理",
+        "英國法律助理協會 資深會員"
+      ],
+      "phone": [
+        { "number": "905-667-6496", "description": "（辦公室）" },
+        { "number": "905-849-3583", "description": "（傳真）" }
+      ],
+      "email": "rlee@luklaw.ca"
+    },
+    {
+      "name": "Kathy Liang",
+      "position": "持牌法律助理",
+      "category": "licensedProfessionals",
+      "description": "Kathy Liang 是 Luk & Associates 的持牌律政司理。她最初以法律實習生的身份加入本所，隨後逐漸成長為團隊中備受信賴的一員，以勤奮的工作態度、務實的判斷力以及以客戶為中心的服務方式而受到認可。<br/><br/>Kathy 畢業於 Queen’s University，獲得文學學士（榮譽）學位，並於 Seneca Polytechnic 完成加速律政司理課程。她扎實的學術背景，加上在本所積累的實踐經驗，使她能夠以專業、細緻和周到的態度協助客戶處理各類法律事務。<br/><br/>Kathy 主要協助客戶處理房東及租客委員會（Landlord and Tenant Board）事務、小額索償法庭案件、事故賠償福利申請、交通罰單事務以及其他律政司理相關案件。她以做事有條理、溝通穩定清晰，以及能夠在客戶面對壓力和陌生法律程序時給予支持而著稱。<br/><br/>除了律政司理工作外，Kathy 亦協助本所律師處理遺囑及遺產事務。她的工作包括整理客戶資料、準備及協調文件、與客戶溝通，以及從案件接收至完成過程中提供全面支持。她細緻謹慎的工作方式，在需要高度準確性、清晰度以及客戶安心感的事務中尤為重要。<br/><br/>由於長期與本所律師、文員及法律團隊密切合作，Kathy 深知高效案件管理與清晰客戶溝通的重要性。她協助準備法律文件、與客戶溝通、整理案件資料，並幫助案件順利推進。<br/><br/>Kathy 精通英語和粵語，並具備扎實的普通話能力，因此能夠協助來自不同語言及文化背景的客戶。她的語言能力使她能夠與客戶清晰溝通，並幫助客戶更好地理解其案件流程及相關步驟。<br/><br/>工作之余，Kathy 是一位冬季運動愛好者，喜歡滑雪和單板滑雪。她也很擅長搶演唱會門票，經常能夠坐到自己喜歡演出的前排位置。她積極開朗的個性和熱愛冒險的精神，使她無論在工作內外，都是團隊中備受歡迎的一員。<br/><br/>Kathy 的專業精神、可靠性以及親切隨和的性格，使她成為 Luk & Associates 團隊中不可或缺的一部分。作為一名持牌律政司理，她將繼續以關懷、認真和真誠的態度支持客戶，幫助他們順利應對各類法律事務。",
+      "image": "/assets/team/kathy-liang.jpeg",
+      "education": [
+        "女王大學 文學榮譽學士",
+        "安大略省學院文憑，法律助理，Seneca Polytechnic",
+        "安大略省律師協會 持牌法律助理"
+      ],
+      "phone": [
+        { "number": "905-291-1802", "description": "(辦公室)" },
+        { "number": "905-849-3583", "description": "(傳真)" }
+      ],
+      "email": "kliang@luklaw.ca"
+    },
+    {
+      "name": "Noora Lai",
+      "position": "持牌法律助理",
+      "category": "licensedProfessionals",
+      "description": "Noora Lai 是 Luk & Associates 的持牌法律助理。她最初以法律實習生的身份加入本所，隨後逐漸成長為團隊中備受信賴的一員，以勤奮的工作態度、務實的判斷力以及以客戶為中心的服務方式而受到認可。<br/><br/>Noora 畢業於香港樹仁大學（Hong Kong Shue Yan University），獲得文學學士學位，並於 Seneca Polytechnic 完成加速律政司理課程。她扎實的學術背景，加上在本所積累的實踐經驗，使她能夠以專業、細緻和周到的態度協助客戶處理各類法律事務。<br/><br/>Noora 主要協助客戶處理房東及租客委員會（Landlord and Tenant Board）事務、小額索償法庭案件、事故賠償福利申請、交通罰單事務以及其他律政司理相關案件。她以做事有條理、溝通穩定清晰，以及能夠在客戶面對壓力和陌生法律程序時給予支持而著稱。<br/><br/>除了律政司理工作外，Noora 亦協助本所律師處理遺囑及遺產事務。她的工作包括整理客戶資料、準備及協調文件、與客戶溝通，以及從案件接收至完成過程中提供全面支持。她細緻謹慎的工作方式，在需要高度準確性、清晰度以及客戶安心感的事務中尤為重要。<br/><br/>Noora 精通英語和粵語，並具備扎實的普通話能力，因此能夠協助來自不同語言及文化背景的客戶。她的語言能力使她能夠與客戶清晰溝通，並幫助客戶更好地理解其案件流程及相關步驟。<br/><br/>工作之余，Noora 喜歡閱讀、旅行和烹飪，她也熱衷於探索新的美食體驗。她積極開朗的個性和熱愛學習新事物的精神，使她無論在工作內外，都是團隊中備受歡迎的一員。<br/><br/>Noora 的專業精神、可靠性以及親切隨和的性格，使她成為 Luk & Associates 團隊中不可或缺的一部分。作為一名持牌律政司理，她將繼續以關懷、認真和真誠的態度支持客戶，幫助他們順利應對各類法律事務。",
+      "image": "/assets/team/noora-lai.jpg",
+      "education": [
+        "香港樹仁大學 文學學士",
+        "安大略省學院 文憑，法律助理，Seneca Polytechnic",
+        "安大略省律師協會 持牌法律助理"
+      ],
+      "phone": [
+        { "number": "905-333-1740", "description": "（辦公室）" },
+        { "number": "905-849-3583", "description": "（傳真）" }
+      ],
+      "email": "nlai@luklaw.ca"
+    },
+    {
+      "name": "Vivian Chau",
+      "position": "加拿大持牌移民顧問",
+      "category": "licensedProfessionals",
+      "description": "Vivian Chau 是一名加拿大持牌移民顧問（RCIC-IRB），擁有超過 15 年的移民服務經驗，長期協助新移民、國際學生以及英語非母語的客戶。她以穩重且富有同理心的工作方式著稱，在每一個移民階段中，兼顧周全的策略規劃與清晰、務實的指導。<br/><br/>Vivian 畢業於多倫多大學，持有心理健康研究理學學士學位，這使她能夠深刻理解移民過程中常見的情緒壓力與現實挑戰。她以嚴謹細緻的工作態度、對移民流程的深入理解，以及妥善處理複雜案件的能力而廣受客戶信賴。<br/><br/>她的業務範圍涵蓋學簽、工簽、永久居民申請，以及在適當情況下處理上訴與復議事務。作為持有 RCIC-IRB 類別執照的移民顧問，Vivian 在需要時可代表客戶出席加拿大移民與難民委員會（IRB）。<br/><br/>Vivian 精通英語、粵語和普通話，能夠為不同文化與語言背景的客戶提供專業支持，並始終致力於在整個移民過程中保持溝通清晰、態度尊重且富有支持性。<br/><br/>工作之余，Vivian 喜歡旅行，並熱衷於氣球與花藝創作，展現了她的創造力、耐心以及對細節的高度關注。",
+      "image": "/assets/team/vivian-chau.jpg",
+      "education": [
+        "多倫多大學 理學學士（心理健康研究）",
+        "加拿大移民與公民顧問學院 持牌移民顧問"
+      ],
+      "phone": [
+        { "number": "905-667-6499", "description": "（辦公室）" },
+        { "number": "905-849-3583", "description": "（傳真）" }
+      ],
+      "email": "vchau@luklaw.ca"
+    },
+    {
+      "name": "Christine Guan",
+      "position": "高級法律文員",
+      "category": "legalSupport",
+      "description": "Christine Guan 是一位經驗豐富、注重細節的房地產法律文員和持牌律師助理，擁有超過 10 年的法律領域經驗。她最初專注於侵權和事故賠償法領域的律師助理工作，現已成功轉型為房地產法律文員，為每一次交易帶來卓越的組織能力、法律知識和以客戶為中心的服務態度。<br/><br/>Christine 的專業知識涵蓋廣泛的房地產服務，包括住宅和商業交易、產權調查、起草法律文件以及協調交割。她對細節的一絲不苟、積極主動的態度以及處理複雜流程的能力，使她成為客戶和法律團隊中不可或缺的一員。<br/><br/>Christine 精通 英語、粵語和普通話，能夠與來自不同文化背景的客戶順暢溝通，確保他們獲得清晰的信息和順暢的服務體驗。她致力於提供高質量的法律支持，並以客戶滿意度為首要目標，贏得了可靠和專業的美譽。<br/><br/>在工作之外，Christine 是一位充滿愛心的母親，她的大部分空閒時間都用於管理並平衡她青少年的學業和蓬勃發展的排球事業。她能夠在繁忙的工作與家庭生活之間游刃有餘，這充分體現了她出色的時間管理能力和對家人的無私奉獻。",
+      "image": "assets/team/christine-guan.jpg",
+      "education": [
+        "Seneca Polytechnic 工商管理學士",
+        "Algonquin Career Academy 法律助理課程",
+        "安大略省律師協會 持牌法律助理（非執業）"
+      ],
+      "phone": [
+        { "number": "905-667-6496", "description": "(辦公室)" },
+        { "number": "905-849-3583", "description": "(傳真)" }
+      ],
+      "email": "cguan@luklaw.ca"
+    },
+    {
+      "name": "Yan Wong",
+      "position": "法律助理",
+      "category": "legalSupport",
+      "description": "Yan Wong 是 Luk & Associates 的法律助理，支持我們的律師處理文件準備、文檔管理和客戶溝通。她畢業於香港都會大學（現為香港公開大學），獲得酒店與景點管理文學士學位，在那裡她建立了堅實的客戶服務、組織管理和跨文化溝通基礎。<br/><br/>憑借其國際酒店管理背景，她在客戶互動中帶來了獨特的視角，將親切與細緻相結合，並能夠在快節奏的環境中同時處理多項事務。她在協調客戶溝通、維持辦公室高效運作以及支持法律團隊方面發揮著至關重要的作用，確保客戶從始至終都能獲得最高水準的服務。<br/><br/>在工作之外，Yan 一直熱愛積極的活動。作為前校籃球隊員，她將同樣的團隊精神和自律投入到工作和生活中。如今，她在探索城市美食的同時，也培養了對羽毛球日益濃厚的興趣。她的活力、熱情與溝通能力不僅讓她成為深受同事重視的夥伴，也讓客戶在第一時間便能感到安心。",
+      "image": "/assets/team/yan-wong.png",
+      "education": ["香港都會大學 文學士（酒店與景點管理）"],
+      "phone": [
+        { "number": "905-667-6496", "description": "（辦公室）" },
+        { "number": "905-849-3583", "description": "（傳真）" }
+      ]
+    },
+    {
+      "name": "Christina Zhu",
+      "position": "法律助理",
+      "category": "legalSupport",
+      "description": "Christina Zhu 是 Luk & Associates 的法律助理，支持我們的律師進行法律研究、文件準備、檔案管理和客戶溝通。她畢業於多倫多大學，獲得文學榮譽學士學位，並通過 Seneca Polytechnic 的加速律政司理課程完成了她的律政司理學習。<br/><br/>通過學術訓練，Christina 建立了扎實的法律研究、法律程序和法律文件準備基礎。她的教育背景，加上對細節的關注和學習意願，使她能夠為事務所的法律工作做出貢獻，同時繼續發展其實踐知識和專業技能。<br/><br/>在工作中，Christina 協助整理客戶檔案、準備文件，並在案件的各個階段支持法律團隊。她理解準確性、清晰溝通和及時跟進的重要性，以確保客戶獲得可靠和高效的服務。她以勤奮和持續改進的承諾來處理自己的職責。<br/><br/>工作之外，Christina 喜歡與朋友和家人共度時光，探索新的咖啡館，並打高爾夫球。她最近也對烹飪和烘焙產生了興趣，喜歡嘗試新的食譜。她對學習的好奇心和熱情不僅延伸到工作場所，也融入到日常生活中。",
+      "image": "/assets/team/christina-zhu.png",
+      "education": [
+        "文學榮譽學士 多倫多大學",
+        "安大略省學院文憑，律政司理，Seneca Polytechnic"
+      ],
+      "phone": [
+        { "number": "905-667-6496", "description": "(辦公室)" },
+        { "number": "905-849-3583", "description": "(傳真)" }
+      ]
+    },
+
+    {
+      "name": "Rachel Chan",
+      "position": "法律助理",
+      "category": "legalSupport",
+      "description": "Rachel Chan 是 Luk & Associates 的法律助理。她最初以法律實習生的身份加入本所，隨後逐漸成長為團隊中勤奮可靠的一員，通過其出色的研究能力、細緻的工作態度以及對法律工作的認真思考，支持本所律師、律政司理及客戶的工作。<br/><br/>Rachel 畢業於 University of Waterloo，獲得文學學士（榮譽）學位，並將入讀 Queen’s University 法學院。她扎實的學術背景以及對法律行業的投入體現在她在工作中所展現的嚴謹、精准與高度責任感。<br/><br/>Rachel 的主要工作重點包括法律研究、案例法分析，以及撰寫詳細報告，協助團隊評估法律問題並制定案件策略。她具備出色的信息整理能力，能夠從複雜資料中提煉關鍵要點，並以清晰、有條理的方式呈現研究結果。<br/><br/>除了研究工作外，Rachel 亦協助案件管理、文件準備及客戶溝通，確保各項任務高效且準確地完成。她也與本所社交媒體經理 Jessica 密切合作，負責法律內容的研究與開發，為本所線上平台提供有價值且具吸引力的內容。<br/><br/>工作之余，Rachel 是一位非常出色的羽毛球運動員，她在球場上所展現的專注、紀律性與競爭精神，與她在學術及專業領域中的表現如出一轍。<br/><br/>Rachel 的專業精神、可靠性以及對法律事業的投入，使她成為 Luk & Associates 團隊中備受重視的一員。我們很自豪能夠見證她在本所的成長，並期待她在法學院及未來法律職業道路上的持續發展。",
+      "image": "/assets/team/rachel-chan.jpg",
+      "education": [
+        "學士學位 滑鐵盧大學",
+        "Queen’s University Faculty of Law 法學博士（Juris Doctor）候選人（將於2026年9月入學）"
+      ],
+      "phone": [
+        { "number": "905-291-1802", "description": "(辦公室)" },
+        { "number": "905-849-3583", "description": "(傳真)" }
+      ],
+      "email": "rchan@luklaw.ca"
+    },
+    {
+      "name": "Kary Ching",
+      "position": "接待員",
+      "category": "legalSupport",
+      "description": "Kary Ching 是 Luk & Associates 律師樓的接待員，負責接待到訪事務所的客戶及處理客戶的初步咨詢。她畢業於香港樹仁大學，持有輔導及心理學社會科學（榮譽）學士學位，在人際溝通、人類行為及理解他人需求方面具備扎實的專業基礎。<br/><br/>在日常工作中，Kary 負責協助處理客戶咨詢、安排預約及事務所的日常行政工作。憑借其學術背景，她能夠以耐心、細心和同理心與客戶溝通，尤其是在協助面對陌生或具有壓力的法律事務的客戶時，充分理解他們的需求。<br/><br/>Kary 相信，有效的溝通始於傾聽與理解。她致力於為客戶營造友善、舒適的環境，同時確保每項咨詢均得到專業而高效的處理。她親切隨和的性格及細心體貼的態度，使她成為行政團隊中備受重視的一員。<br/><br/>工作之余，Kary 喜歡親近大自然、旅行，以及探索不同的地方與文化。她認為旅行不僅能夠拓寬視野、帶來新的啓發，也有助於保持生活平衡。閒暇時，她還喜歡在家烘焙及觀看真人秀節目，享受生活中簡單而美好的時刻。",
+      "image": "/assets/team/kary-ching.png",
+      "education": ["香港樹仁大學輔導及心理學社會科學（榮譽）學士"],
+      "phone": [
+        { "number": "905-667-6499", "description": "(辦公室)" },
+        { "number": "905-849-3583", "description": "(傳真)" }
+      ]
+    },
+    {
+      "name": "Stephanie Lam",
+      "position": "行政助理",
+      "category": "legalSupport",
+      "description": "Stephanie Lam 是 Luk & Associates 律師樓的行政助理，主要負責支持事務所的日常運營、客戶溝通及行政協調工作。她畢業於香港浸會大學，持有整合傳播管理社會科學學士學位，具備扎實的溝通、組織管理及行政協調能力。<br/><br/>憑借其傳播管理的學術背景，Stephanie 深知清晰溝通及有條理的工作流程對專業工作環境的重要性。她樂於與人交流，並以積極主動的態度處理各項行政事務，確保工作高效完成，信息準確傳達。<br/><br/>在日常工作中，Stephanie 協助處理客戶咨詢、辦公室協調及法律團隊的各項行政事務。她重視團隊合作和工作細節，致力於為客戶及同事提供良好的體驗。她充滿活力的性格及與人合作的熱情，為事務所營造了友善、融洽且富有協作精神的工作環境。<br/><br/>工作之余，Stephanie 熱愛運動，尤其喜歡打排球。她也樂於探索城市中的各種新活動及體驗。Stephanie 十分重視心理健康、積極的生活態度，以及在個人生活與工作之間保持健康的平衡。",
+      "image": "/assets/team/stephanie-lam.png",
+      "education": ["香港浸會大學整合傳播管理社會科學學士"],
+      "phone": [
+        { "number": "905-667-6499", "description": "(辦公室)" },
+        { "number": "905-849-3583", "description": "(傳真)" }
+      ]
+    },
+    {
+      "name": "Ella Zhang",
+      "position": "行政助理",
+      "category": "legalSupport",
+      "description": "Ella Zhang 是 Luk & Associates 的行政助理。她最初以法律實習生的身份加入本所，隨後逐漸成長為行政及法律支持團隊中備受重視的一員。她目前正在 McMaster University 攻讀商學學士學位，並對未來從事法律行業有著濃厚興趣。<br/><br/>Ella 勤奮努力、注重細節、專業且目標明確。在工作中，她協助團隊整理文件、準備材料、管理檔案、協調行政事務，並支持客戶案件的日常推進。她亦在本所律師、律政司理及文員的指導下，參與案件管理、客戶溝通及法律研究支持工作。<br/><br/>Ella 精通英語和普通話，能夠以雙語與客戶順暢溝通。她的語言能力結合其親和力強、樂於學習的性格，使她能夠為來自不同背景的客戶及同事提供有效支持。<br/><br/>工作之余，Ella 喜歡與朋友相處、跳舞、閱讀以及玩電子遊戲。她在辦公室中展現出積極友善的氣質，其溫暖與活力使她成為團隊中受歡迎的一員。<br/><br/>Ella 的職業素養、適應能力以及對法律領域的熱情，使她成為 Luk & Associates 團隊中重要的一部分。我們期待看到她在未來法律職業道路上的持續成長。",
+      "image": "/assets/team/ella-zhang.jpg",
+      "education": ["麥克馬斯特大學 商科學士（在讀）"],
+      "phone": [
+        { "number": "905-667-6499", "description": "（辦公室）" },
+        { "number": "905-849-3583", "description": "（傳真）" }
+      ],
+      "email": "ezhang@luklaw.ca"
+    },
+    {
+      "name": "Evelyn Mak",
+      "position": "法律實習生",
+      "category": "legalSupport",
+      "description": "Evelyn Mak 是 Luk & Associates 的法律實習生。她目前正在 University of Waterloo 攻讀法律研究與商業（Legal Studies and Business），並對未來從事法律行業有著濃厚興趣。<br/><br/>Evelyn 專業、好學且充滿好奇心。在工作中，她協助團隊進行法律研究、案例法查閱、文件整理、文書準備以及日常行政支持。她的工作為本所律師、律政司理、文員及其他員工推進客戶案件提供了重要支持。<br/><br/>憑借對普通法體系實際運作方式的濃厚興趣，Evelyn 正通過在本所的實踐經驗不斷提升其法律研究與分析能力。她在工作中展現出積極性、細緻的觀察力以及認真思考的態度。<br/><br/>工作之余，Evelyn 對藝術充滿熱情，喜歡抱石（bouldering）、聽音樂以及繪畫。她的創造力、好奇心以及樂於學習的精神，使她成為團隊中受歡迎的一員。<br/><br/>Evelyn 的專業精神、積極態度以及對法律領域的興趣，使她成為 Luk & Associates 團隊中備受重視的一員。我們期待在她持續成長的過程中支持她發展技能，並探索未來的法律職業道路。",
+      "image": "/assets/team/evelyn-mak.jpg",
+      "education": [
+        "法律研究與商業（Legal Studies and Business），University of Waterloo（在讀）"
+      ],
+      "phone": [
+        { "number": "905-667-6499", "description": "（辦公室）" },
+        { "number": "905-849-3583", "description": "（傳真）" }
+      ],
+      "email": "student@luklaw.ca"
+    },
+    {
+      "name": "Jessica Chen",
+      "position": "社交媒體經理",
+      "category": "legalSupport",
+      "description": "Jessica 是我們在線形象背後的創意力量，她以豐富的經驗和戰略思維擔任社交媒體經理一職。Jessica 畢業於加拿大頂尖大學多倫多大學（University of Toronto），並獲得榮譽理學士學位，這使她具備了分析思維和細緻入微的注意力——這些技能被她應用於創作引人入勝的內容和塑造我們的品牌形象。<br/><br/>憑借多年為不同行業管理和創作內容的經驗，Jessica 致力於提升 Luk & Associates 的社交媒體影響力。她深刻理解數字趨勢，並擅長與受眾互動，確保我們的在線平台反映出事務所的專業精神和對卓越的追求。<br/><br/>在業餘時間，Jessica 是一位才華橫溢的藝術家，她創作手繪寵物肖像，這些作品在 Instagram 上廣受歡迎。她還為她心愛的寵物兔子 Timbit 運營了一個非常受歡迎的 Instagram 頁面，展示了她的創造力和對動物的熱愛。她的藝術天賦和講故事的激情在她的個人項目和事務所的工作中都得到了充分體現。<br/><br/>Jessica 的創新方法，加上她在建立有意義的在線聯繫方面的專注，使她成為我們團隊中不可或缺的一員。",
+      "image": "/assets/team/jessica-chen.jpg",
+      "education": ["多倫多大學（榮譽）理學士"],
+      "phone": [
+        { "number": "905-291-1802", "description": "(辦公室)" },
+        { "number": "905-849-3583", "description": "(傳真)" }
+      ],
+      "email": "jchen@luklaw.ca"
+    }
+  ],
+  "languages": [
+    {
+      "name": "英語",
+      "flag": "/assets/language/canada.png"
+    },
+    {
+      "name": "普通話 & 粵語",
+      "flag": "/assets/language/china.png"
+    },
+    {
+      "name": "越南語",
+      "flag": "/assets/language/vietnam.png"
+    },
+    {
+      "name": "韓語",
+      "flag": "/assets/language/south-korea.png"
+    },
+    {
+      "name": "波斯語",
+      "flag": "/assets/language/iran.png"
+    },
+    {
+      "name": "烏克蘭語",
+      "flag": "/assets/language/ukraine.png"
+    },
+    {
+      "name": "俄語",
+      "flag": "/assets/language/russia.png"
+    }
+  ]
+}

@@ -19,6 +19,15 @@ import contactZH from './locales/zh/contact.json';
 import resourcesZH from './locales/zh/resources.json';
 import  careerZH from './locales/zh/career.json';
 
+import mainZHHK from './locales/zh-HK/zh.json';
+import navbarZHHK from './locales/zh-HK/navbar.json';
+import servicesZHHK from './locales/zh-HK/services.json';
+import teamZHHK from './locales/zh-HK/team.json';
+import faqZHHK from './locales/zh-HK/faqs.json';
+import contactZHHK from './locales/zh-HK/contact.json';
+import resourcesZHHK from './locales/zh-HK/resources.json';
+import careerZHHK from './locales/zh-HK/career.json';
+
 const savedLanguage = localStorage.getItem('i18nextLng') || 'en';
 
 const resources = {
@@ -41,6 +50,16 @@ const resources = {
     contact: contactZH,
     resources: resourcesZH,
     career: careerZH,
+  },
+  'zh-HK': {
+    main: mainZHHK,
+    navbar: navbarZHHK,
+    services: servicesZHHK,
+    team: teamZHHK,
+    faqs: faqZHHK,
+    contact: contactZHHK,
+    resources: resourcesZHHK,
+    career: careerZHHK,
   },
 };
 

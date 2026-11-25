@@ -86,37 +86,38 @@
       "email": "rlee@luklaw.ca"
     },
     {
-      "name": "Camila Su",
-      "position": "Licensed Paralegal & Notary Public",
-      "category": "licensedProfessionals",
-      "description": "Camila Su is a Licensed Paralegal who represents clients in Provincial Offences matters, Landlord and Tenant Board proceedings, and Small Claims Court disputes. She is known for strong preparation, practical problem solving, and clear communication that helps clients understand their options and move forward with confidence.<br/><br/>Camila’s career with the firm reflects our commitment to long term growth and mentorship. She began with us as a legal intern, stayed on as a legal assistant, and has since advanced into her current role as a Licensed Paralegal. A graduate of the University of Waterloo and Centennial College’s Accelerated Paralegal Program, she combines a strong academic foundation with hands on experience supporting clients through tribunal and court processes.<br/><br/>Camila assists clients through each stage of their matter, from early strategy and document preparation to negotiation and attendance at hearings where appropriate. Clients appreciate her professionalism, responsiveness, and steady approach, especially when deadlines and high stakes decisions are involved.<br/><br/>Natively fluent in English and Cantonese, and professionally fluent in Mandarin, Camila’s multilingual communication and cultural awareness help ensure instructions, documents, and expectations are clearly understood.<br/><br/>In addition to her work as a paralegal, Camila also supports the team as a Lead Case Manager, helping keep files organized and moving through proactive follow up, deadline management, and consistent client updates.<br/><br/>Outside of work, Camila enjoys traveling and exploring new cultures and destinations. She is also learning Muay Thai, which reflects her energy, discipline, and commitment to continuous improvement. Those same qualities show up in her practice through strong preparation, steady follow through, and clear communication.",
-      "image": "/assets/team/camila-su.jpg",
-      "education": [
-        "Bachelor of Science (Honours), University of Waterloo",
-        "Ontario College Graduate Certificate, Paralegal Program, Centennial College",
-        "Licensed Paralegal, Law Society of Ontario"
-      ],
-      "phone": [
-        { "number": "905-667-6499", "description": "(Office)" },
-        { "number": "905-849-3583", "description": "(Fax)" }
-      ],
-      "email": "csu@luklaw.ca"
-    },
-    {
       "name": "Kathy Liang",
       "position": "Licensed Paralegal",
       "category": "licensedProfessionals",
       "description": "Kathy Liang is a Licensed Paralegal at Luk & Associates. She first joined the firm as a Legal Intern and has since grown into a trusted member of our legal team, bringing a strong work ethic, practical judgment, and a client-focused approach to her work.<br/><br/>Kathy is a graduate of Queen’s University, where she obtained her Bachelor of Arts (Honours), and completed her paralegal studies through Seneca Polytechnic’s Accelerated Paralegal Program. Her academic background, combined with her hands-on experience at the firm, allows her to assist clients with professionalism, care, and attention to detail.<br/><br/>Kathy assists clients with Landlord and Tenant Board matters, Small Claims Court files, accident benefits claims, ticketing matters, and other paralegal-related files. She is known for her organized approach, steady communication, and ability to help clients feel supported through what can often be a stressful and unfamiliar legal process.<br/><br/>In addition to her paralegal work, Kathy also assists the firm’s lawyers with wills and estates matters. Her work includes helping organize client information, preparing and coordinating documents, communicating with clients, and supporting the file from intake through completion. Her careful and detail-oriented approach is especially valuable in matters where accuracy, clarity, and client comfort are important.<br/><br/>Having worked closely with the firm’s lawyers, clerks, and legal staff, Kathy understands the importance of both strong file management and clear client communication. She assists with preparing legal documents, communicating with clients, organizing case materials, and helping move matters forward efficiently.<br/><br/>Natively fluent in English and Cantonese, and with a solid understanding of Mandarin, Kathy is able to assist clients from a variety of linguistic and cultural backgrounds. Her language skills allow her to communicate clearly with clients and help ensure that they understand the process and the steps involved in their matter.<br/><br/>Outside of work, Kathy is a big fan of winter sports and enjoys skiing and snowboarding whenever she can. She also has a talent for scoring concert tickets, often finding herself close to the front row at her favourite events. Her positive energy and adventurous spirit make her a valued part of the team both inside and outside the office.<br/><br/>Kathy’s professionalism, reliability, and approachable nature make her an important part of Luk & Associates. As a Licensed Paralegal, she continues to support clients with care, diligence, and a genuine commitment to helping them navigate their legal matters.",
-      "image": "/assets/team/kathy-liang.jpg",
+      "image": "/assets/team/kathy-liang.jpeg",
       "education": [
-        "Bachelor of Science (Honours), Queen’s University",
-        "Ontario College Diploma, Paralegal, Seneca Polytechnic"
+        "Bachelor of Arts (Honours), Queen’s University",
+        "Ontario College Diploma, Paralegal, Seneca Polytechnic",
+        "Licensed Paralegal, Law Society of Ontario"
       ],
       "phone": [
         { "number": "905-667-6496", "description": "(Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
       ],
       "email": "kliang@luklaw.ca"
+    },
+    {
+      "name": "Noora Lai",
+      "position": "Licensed Paralegal",
+      "category": "licensedProfessionals",
+      "description": "Noora Lai is a Licensed Paralegal at Luk & Associates, bringing strong organizational skills, attention to detail, and a client-focused approach to her work. She holds a Bachelor of Arts from Hong Kong Shue Yan University and completed her paralegal studies through Seneca Polytechnic's Accelerated Paralegal Program. Having advanced from her previous role as a Legal Assistant, Noora continues to build on her practical legal experience and professional training in her current role as a Licensed Paralegal.<br/><br/>Noora plays an important role in supporting the firm's real estate practice, working closely with our lawyers on residential purchases, sales, and refinancing transactions. Her responsibilities include coordinating documentation, communicating with clients and other professionals, and assisting with the preparation and organization of files throughout the closing process. Her ability to manage multiple matters while maintaining careful attention to detail contributes to the efficient handling of transactions.<br/><br/>Fluent in Cantonese, Mandarin, and English, Noora is able to serve a diverse clientele and help bridge cultural and language barriers with ease. Her multilingual skills, combined with her calm and approachable manner, allow her to communicate effectively with clients and provide reassurance throughout the legal process. She understands the importance of responsiveness, accuracy, and clear communication, particularly when clients are navigating significant transactions and important deadlines.<br/><br/>Outside of her professional responsibilities, Noora values mindfulness and activities that promote balance and well-being. She enjoys exploring new cuisines, spending time with friends and family, and finding creative outlets that keep her energized. Her calm and approachable nature not only makes her a supportive teammate, but also helps clients feel comfortable and cared for throughout their legal journey.",
+      "image": "/assets/team/noora-lai.jpg",
+      "education": [
+        "Bachelor of Arts, Hong Kong Shue Yan University",
+        "Ontario College Diploma, Paralegal, Seneca Polytechnic",
+        "Licensed Paralegal, Law Society of Ontario"
+      ],
+      "phone": [
+        { "number": "905-333-1740", "description": "(Office)" },
+        { "number": "905-849-3583", "description": "(Fax)" }
+      ],
+      "email": "nlai@luklaw.ca"
     },
     {
       "name": "Vivian Chau",
@@ -152,32 +153,33 @@
       "email": "cguan@luklaw.ca"
     },
     {
-      "name": "Venus Ng",
-      "position": "Law Clerk",
+      "name": "Yan Wong",
+      "position": "Legal Assistant",
       "category": "legalSupport",
-      "description": "Venus Ng is a Law Clerk who brings a strong client service background and a steady, organized approach to supporting both lawyers and clients. She holds a Bachelor of Education (Honours) from The Education University of Hong Kong and previously worked in the banking industry, where she developed a high standard of professionalism, attention to detail, and process driven execution. Venus is known for being responsive, thorough, and proactive about keeping clients informed on next steps.<br/><br/>Venus primarily supports files in real estate, immigration, and wills and estates. She assists with document preparation, intake and information gathering, coordinating key milestones, and ensuring files move forward smoothly and on time. Clients appreciate her patience and clear communication, especially in matters with multiple steps and strict timelines.<br/><br/>Fluent in Mandarin, Cantonese, and English, Venus works comfortably with clients from diverse cultural and linguistic backgrounds. Her multilingual communication and cultural sensitivity strengthen the firm’s ability to provide clear guidance and a personalized client experience.<br/><br/>Outside of work, Venus enjoys winter sports, including skiing and snowboarding. Whether she’s on the slopes or in the office, she is steady, prepared, and committed to doing things properly.",
-      "image": "/assets/team/venus-ng.jpg",
+      "description": "Yan Wong is a Legal Assistant at Luk & Associates, supporting our lawyers with file preparation, document management, and client communications. She holds a Bachelor of Arts in Hospitality and Attractions Management from the Open University of Hong Kong (now Hong Kong Metropolitan University), where she developed a strong foundation in client service, organizational management, and cross-cultural communication.<br/><br/>Having originally joined the firm as a Receptionist, Yan has developed a thorough understanding of our office operations and the importance of providing attentive and reliable client service. Her transition into the role of Legal Assistant reflects her continued professional growth and expanding responsibilities within the firm.<br/><br/>Her background in international hospitality allows her to bring a unique perspective to client interactions, combining warmth and attentiveness with the ability to manage multiple priorities in a fast-paced legal environment. In her current role, Yan assists with coordinating legal documentation, maintaining client communications, and supporting the legal team in ensuring that matters progress efficiently. Her familiarity with the firm's operations allows her to provide valuable support to both clients and colleagues.<br/><br/>Outside of the office, Yan has always been drawn to active pursuits. A former school basketball player, she continues to channel that same team spirit and discipline into her work and personal life. These days, she balances her love for sports with exploring new restaurants around the city and nurturing a growing interest in badminton. Her energy, passion, and ability to connect with others make her a valued member of our team.<br/><br/>",
+      "image": "/assets/team/yan-wong.png",
       "education": [
-        "Bachelor of Education (Honours), The Education University of Hong Kong"
+        "Bachelor of Arts in Hospitality and Attractions Management, Hong Kong Metropolitan University"
       ],
       "phone": [
         { "number": "905-667-6496", "description": "(Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
-      ],
-      "email": "vng@luklaw.ca"
+      ]
     },
     {
-      "name": "Noora Lai",
-      "position": "Legal Assistant & Paralegal Licensing Candidate",
+      "name": "Christina Zhu",
+      "position": "Legal Assistant",
       "category": "legalSupport",
-      "description": "Noora Lai is a dedicated and detail-oriented Legal Assistant at our firm. Currently completing the Paralegal Program at Seneca Polytechnic, she brings strong academic training, organizational skills, and a client-focused mindset to her role.<br/><br/>In her position, Noora supports our lawyers across a wide range of matters, assisting with legal research, document drafting, case preparation, and day-to-day client communication. Her ability to quickly absorb complex information and apply it in practice ensures that she provides reliable and efficient support in fast-paced legal environments.<br/><br/>Fluent in Cantonese, Mandarin, and English, Noora is able to serve a diverse clientele and help bridge cultural and language barriers with ease. Her multilingual skills enhance client service and foster trust and understanding in every interaction.<br/><br/>Outside of her professional responsibilities, Noora values mindfulness and activities that promote balance and well-being. She enjoys exploring new cuisines, spending time with friends and family, and finding creative outlets that keep her energized. Her calm and approachable nature not only makes her a supportive teammate, but also helps clients feel comfortable and cared for throughout their legal journey.",
-      "image": "/assets/team/noora-lai.jpg",
-      "education": ["Bachelor of Arts, Hong Kong Shue Yan University"],
-      "phone": [
-        { "number": "905-333-1740", "description": "(Office)" },
-        { "number": "905-849-3583", "description": "(Fax)" }
+      "description": "Christina Zhu is a Legal Assistant at Luk & Associates, supporting our lawyers with legal research, document preparation, file management, and client communications. She is a graduate of the University of Toronto, where she obtained her Bachelor of Arts (Honours), and completed her paralegal studies through Seneca Polytechnic's Accelerated Paralegal Program.<br/><br/>Through her academic training, Christina has developed a strong foundation in legal research, legal procedures, and the preparation of legal documents. Her educational background, combined with her attention to detail and willingness to learn, allows her to contribute to the firm's legal work while continuing to develop her practical knowledge and professional skills. <br/><br/>In her role, Christina assists with organizing client files, preparing documentation, and supporting the legal team throughout various stages of a matter. She understands the importance of accuracy, clear communication, and timely follow-up in ensuring that clients receive reliable and efficient service. She approaches her responsibilities with diligence and a commitment to continuous improvement.<br/><br/>Outside of work, Christina enjoys spending time with friends and family, exploring new cafés, and golfing. She has also recently developed an interest in cooking and baking, and enjoys experimenting with new recipes. Her curiosity and enthusiasm for learning extend beyond the workplace and into her everyday life.",
+      "image": "/assets/team/christina-zhu.png",
+      "education": [
+        "Bachelor of Arts (Honours), University of Toronto",
+        "Ontario College Diploma, Paralegal, Seneca Polytechnic"
       ],
-      "email": "nlai@luklaw.ca"
+      "phone": [
+        { "number": "905-667-6496", "description": "(Office)" },
+        { "number": "905-849-3583", "description": "(Fax)" }
+      ]
     },
     {
       "name": "Rachel Chan",
@@ -196,14 +198,30 @@
       "email": "rchan@luklaw.ca"
     },
     {
-      "name": "Yan Wong",
+      "name": "Kary Ching",
       "position": "Receptionist",
       "category": "legalSupport",
-      "description": "Yan is the first point of contact at the law firm, ensuring that every client who calls or visits our office is welcomed with professionalism and care. She holds a Bachelor of Arts in Hospitality and Attractions Management from the Open University of Hong Kong (now Hong Kong Metropolitan University), where she developed a strong foundation in client service, organizational management, and cultural communication.<br/><br/>Her background in international hospitality allows her to bring a unique perspective to client interactions, combining warmth and attentiveness with the ability to manage multiple priorities in a fast-paced environment. She plays a vital role in coordinating client communications, maintaining office efficiency, and supporting the legal team so that clients receive the highest level of service from start to finish.<br/><br/>Outside of the office, Yan has always been drawn to active pursuits. A former school basketball player, she continues to channel that same team spirit and discipline into her work and personal life. These days, she balances her love for sports with exploring new restaurants around the city and nurturing a growing interest in badminton. Her energy, passion, and ability to connect with others make her not only a valued colleague but also someone clients feel immediately at ease with.",
-      "image": "/assets/team/yan-wong.jpg",
-      "education": ["Bachelor of Arts, Hong Kong Metropolitan University"],
+      "description": "Kary Ching is a Receptionist at Luk & Associates, serving as one of the first points of contact for clients visiting or contacting our office. She holds a Bachelor of Social Science (Honours) in Counselling and Psychology from Hong Kong Shue Yan University, where she developed a strong foundation in interpersonal communication, human behaviour, and understanding the needs of others.<br/><br/>In her role, Kary assists with client inquiries, appointment coordination, and the day-to-day administrative operations of the firm. Her academic background allows her to approach client interactions with patience, attentiveness, and empathy, particularly when assisting individuals who may be navigating unfamiliar or stressful legal matters.<br/><br/>Kary believes that effective communication begins with listening and understanding. She strives to create a welcoming and comfortable environment for clients while ensuring that their inquiries are handled professionally and efficiently. Her approachable personality and thoughtful nature make her a valued member of our administrative team.<br/><br/>Outside of work, Kary enjoys spending time in nature, travelling, and exploring new places and cultures. She finds that travelling broadens her horizons, introduces fresh perspectives, and helps her maintain a sense of balance. In her spare time, she also enjoys baking at home and watching reality shows, finding joy in life's simpler moments.",
+      "image": "/assets/team/kary-ching.png",
+      "education": [
+        "Bachelor of Social Science (Honours) in Counselling and Psychology, Hong Kong Shue Yan University"
+      ],
       "phone": [
-        { "number": "905-667-6496", "description": "(Office)" },
+        { "number": "905-667-6499", "description": "(Office)" },
+        { "number": "905-849-3583", "description": "(Fax)" }
+      ]
+    },
+    {
+      "name": "Stephanie Lam",
+      "position": "Administrative Assistant",
+      "category": "legalSupport",
+      "description": "Stephanie Lam is an Administrative Assistant at Luk & Associates, where she supports the firm's daily operations, client communications, and administrative coordination. She holds a Bachelor of Social Sciences in Integrated Communication Management from Hong Kong Baptist University, where she developed a strong foundation in effective communication, organizational management, and structured coordination.<br/><br/>With her academic background in communication management, Stephanie understands the importance of maintaining clear communication and organized workflows in a professional environment. She enjoys connecting with people and takes a proactive approach to ensuring that administrative responsibilities are handled efficiently and that information is communicated accurately.<br/><br/>In her role, Stephanie assists with client inquiries, office coordination, and the administrative needs of our legal team. She values teamwork, attention to detail, and creating a positive experience for clients and colleagues alike. Her energetic personality and enthusiasm for working with others contribute to a welcoming and collaborative office environment.<br/><br/>Outside of work, Stephanie leads an active lifestyle and particularly enjoys playing volleyball. She also loves discovering new activities and experiences around the city. Stephanie places great importance on mental wellness, positive living, and maintaining a healthy balance between her personal and professional life.",
+      "image": "/assets/team/stephanie-lam.png",
+      "education": [
+        "Bachelor of Social Sciences in Integrated Communication Management, Hong Kong Baptist University"
+      ],
+      "phone": [
+        { "number": "905-667-6499", "description": "(Office)" },
         { "number": "905-849-3583", "description": "(Fax)" }
       ]
     },

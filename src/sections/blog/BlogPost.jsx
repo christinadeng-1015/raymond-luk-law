@@ -236,10 +236,13 @@ export default function BlogPostPage() {
     const loadPost = async () => {
       try {
         setLoading(true);
-        const currentLang = i18n.resolvedLanguage?.startsWith('zh')
-          ? 'zh'
-          : 'en-US';
-        const fallbackLang = currentLang === 'zh' ? 'en-US' : 'zh';
+        const currentLang =
+          i18n.resolvedLanguage === 'zh-HK'
+            ? 'zh-HK'
+            : i18n.resolvedLanguage?.startsWith('zh')
+              ? 'zh'
+              : 'en-US';
+        const fallbackLang = currentLang === 'en-US' ? 'zh' : 'en-US';
 
         const currentLangPosts = await fetchBlogPosts(currentLang);
         const fallbackLangPosts = await fetchBlogPosts(fallbackLang);
@@ -283,7 +286,11 @@ export default function BlogPostPage() {
 
   const localizedDate = post.publishDate
     ? new Date(post.publishDate).toLocaleDateString(
-        i18n.resolvedLanguage?.startsWith('zh') ? 'zh-CN' : 'en-US',
+      i18n.resolvedLanguage === 'zh-HK'
+        ? 'zh-HK'
+        : i18n.resolvedLanguage?.startsWith('zh')
+          ? 'zh-CN'
+          : 'en-US',
         { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }
       )
     : '';

@@ -22,15 +22,29 @@ const routes = [
   { url: '/small-claims-court', changefreq: 'monthly', priority: 0.6 },
 ];
 
-const chineseRoutes = routes.map((route) => ({
-  ...route,
-  url: `/zh${route.url === '/' ? '' : route.url}`,
-}));
+const localizedRoutes = routes.flatMap((route) => {
+  const localizedPath = (language) =>
+    language === 'en'
+      ? route.url
+      : `/${language}${route.url === '/' ? '' : route.url}`;
+  const links = [
+    { lang: 'en-CA', url: localizedPath('en') },
+    { lang: 'zh-CN', url: localizedPath('zh') },
+    { lang: 'zh-HK', url: localizedPath('zh-HK') },
+    { lang: 'x-default', url: localizedPath('en') },
+  ];
+
+  return ['en', 'zh', 'zh-HK'].map((language) => ({
+    ...route,
+    url: localizedPath(language),
+    links,
+  }));
+});
 
 async function generateSitemap() {
   const sitemap = new SitemapStream({ hostname: 'https://www.luklaw.ca' });
 
-  [...routes, ...chineseRoutes].forEach((route) => {
+  localizedRoutes.forEach((route) => {
     sitemap.write(route);
   });
 

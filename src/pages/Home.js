@@ -13,7 +13,7 @@ import ScrollToTop from '../sections/home/ScrollToTop';
 
 export default function Home() {
   const mainRef = useRef();
-  const { t } = useTranslation('home');
+  const { t } = useTranslation('main');
 
   const domain = 'https://www.luklaw.ca';
 

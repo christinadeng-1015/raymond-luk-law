@@ -1,0 +1,126 @@
+{
+  "seo": {
+    "title": "聯絡萬錦 Luk & Associates 律師樓",
+    "description": "聯絡 Luk & Associates，預約安大略省萬錦市的法律諮詢。",
+    "keywords": "聯絡萬錦律師, 萬錦法律諮詢, Luk & Associates"
+  },
+  "title": "聯繫我們",
+  "description": "如果您有任何問題或需要專業的法律幫助，請隨時與我們聯繫。",
+  "table": {
+    "title": "辦公時間",
+    "header": {
+      "day": "星期",
+      "hours": "時間"
+    },
+    "daysAndHours": [
+      { "day": "星期一", "hours": "上午10:00 - 下午6:00" },
+      { "day": "星期二", "hours": "上午10:00 - 下午6:00" },
+      { "day": "星期三", "hours": "上午10:00 - 下午6:00" },
+      { "day": "星期四", "hours": "上午10:00 - 下午6:00" },
+      { "day": "星期五", "hours": "上午10:00 - 下午6:00" },
+      { "day": "星期六", "hours": "僅限預約" },
+      { "day": "星期日", "hours": "僅限預約" }
+    ],
+    "note": "如果您希望親自到訪進行法律咨詢，請致電與我們預約。",
+    "holidayNote": "公眾假期時間可能會有所不同。",
+    "holidayUpdate": "新年當天、家庭日、耶穌受難日、維多利亞日、加拿大日、勞動節、感恩節、聖誕節及節禮日（12月26日）放假。"
+  },
+  "form": {
+    "title": "請向我們提供您的信息",
+    "fields": [
+      {
+        "id": "name",
+        "label": "姓名",
+        "placeholder": "請輸入你的名字",
+        "icon": "HiUser",
+        "type": "text"
+      },
+      {
+        "id": "email",
+        "label": "電郵",
+        "placeholder": "請輸入你的郵箱",
+        "icon": "HiMail",
+        "type": "email"
+      },
+      {
+        "id": "phone",
+        "label": "電話號碼",
+        "placeholder": "請輸入你的電話",
+        "icon": "HiPhone",
+        "type": "text"
+      },
+      {
+        "id": "language",
+        "label": "首選語言",
+        "placeholder": "告訴我們您的首選語言",
+        "type": "text"
+      },
+      {
+        "id": "contact-method",
+        "label": "聯絡方式",
+        "placeholder": "您希望我們如何聯繫您？",
+        "type": "text"
+      }
+    ],
+    "message": {
+      "id": "message",
+      "label": "信息",
+      "placeholder": "在此處輸入您的信息..."
+    },
+    "button": "提交信息",
+    "successTitle": "成功",
+    "successMessage": "您的信息已成功送出！"
+  },
+  "contact": {
+    "title": "聯繫我們",
+    "description": "如果您有任何問題或需要專業的法律幫助，請隨時與我們聯繫。",
+    "contacts": [
+      "English: 905 - 667 - 6496",
+      "中文: 905 - 667 - 6499",
+      "電郵: info@luklaw.ca",
+      "傳真: 905 - 849 - 3583",
+      "微信: Luklawpc"
+    ],
+    "note": "您可以通過 WhatsApp、微信或短信與我們聯繫。",
+    "socialLinks": [
+      { "icon": "BsInstagram", "link": "https://www.instagram.com/luklaw_to/" },
+      {
+        "icon": "BsWhatsapp",
+        "link": "https://api.whatsapp.com/send?phone=19053331740"
+      },
+      {
+        "icon": "BsTiktok",
+        "link": "https://www.tiktok.com/@luklaw_to?_t=ZM-8uE9bZioMH0&_r=1"
+      },
+      {
+        "icon": "BsLinkedin",
+        "link": "https://www.linkedin.com/company/raymond-luk-professional-corporation/?viewAsMember=true"
+      }
+    ]
+  },
+  "officeImages": [
+    "/assets/office/office-hour.jpg",
+    "/assets/office/office.jpg",
+    "/assets/office/office-3.jpeg"
+  ],
+  "subtitle": "Experienced, reliable, and professional legal experts in a wide variety of practice areas",
+  "processTitle": "Our Process",
+  "process": [
+    {
+      "title": "Free Initial Consultation",
+      "subtitle": "Schedule a call with staffs"
+    },
+    {
+      "title": "Appointments",
+      "subtitle": "In person or virtual appointment with lawyer * First 15 min for free"
+    },
+    {
+      "title": "Work & Ongoing Communication",
+      "subtitle": "Start on the paper work and provide timeline"
+    },
+    {
+      "title": "Result",
+      "subtitle": "Delivery the best result for our customers"
+    }
+  ]
+}

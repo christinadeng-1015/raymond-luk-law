@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useParams, Navigate, Outlet } from 'react-router-dom';
+import { useParams, useLocation, Navigate, Outlet } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'flowbite/dist/flowbite.css';
 import Navbar from './sections/navigation/Navbar';
@@ -56,17 +56,23 @@ function BlogRedirect() {
 function LanguageRoute() {
   const { i18n } = useTranslation();
   const { lang } = useParams();
-  const isSupportedLanguage = !lang || ['en', 'zh'].includes(lang);
+  const { pathname, search, hash } = useLocation();
+  const language = lang || 'en';
+  const isSupportedLanguage = ['en', 'zh', 'zh-HK'].includes(language);
 
   useEffect(() => {
-    if (lang && isSupportedLanguage && i18n.language !== lang) {
-      i18n.changeLanguage(lang);
-      localStorage.setItem('i18nextLng', lang);
+    if (isSupportedLanguage && i18n.language !== language) {
+      i18n.changeLanguage(language);
+      localStorage.setItem('i18nextLng', language);
     }
-  }, [lang, isSupportedLanguage, i18n]);
+  }, [language, isSupportedLanguage, i18n]);
 
   if (!isSupportedLanguage) return <NotFound />;
-  if (lang && i18n.language !== lang) return <div>Loading...</div>;
+  if (lang === 'en') {
+    const englishPath = pathname.replace(/^\/en(?=\/|$)/, '') || '/';
+    return <Navigate to={`${englishPath}${search}${hash}`} replace />;
+  }
+  if (i18n.language !== language) return <div>Loading...</div>;
 
   return <Outlet />;
 }

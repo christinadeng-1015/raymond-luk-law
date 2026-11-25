@@ -1,0 +1,211 @@
+{
+  "seo": {
+    "title": "萬錦律師樓 | Luk & Associates",
+    "description": "Luk & Associates 位於安大略省萬錦市，提供物業、家庭法、遺囑及遺產、移民及人身傷害法律服務。",
+    "keywords": "萬錦律師, 安大略省律師樓, 粵語律師, 普通話律師, 房地產律師, 家庭法律師"
+  },
+  "process": {
+    "title": "我們的流程",
+    "steps": [
+      {
+        "title": "免費初步咨詢",
+        "description": "與我們的工作人員預約電話，瞭解您的需求。",
+        "icon": "HiOutlineCalendar"
+      },
+      {
+        "title": "預約會面",
+        "description": "與律師進行面對面或線上會議。*前15分鐘免費。",
+        "icon": "HiOutlineLightBulb"
+      },
+      {
+        "title": "工作與溝通",
+        "description": "開始準備文件，並提供詳細的時間表。",
+        "icon": "HiOutlineClipboardList"
+      },
+      {
+        "title": "結果",
+        "description": "為客戶提供最佳的解決方案。",
+        "icon": "HiOutlineCheckCircle"
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "review": "Raymond Luk 是一位出色的律師，以其專業素養、誠實和深厚的法律知識脫穎而出。他讓複雜的法律概念變得簡單易懂，並且總是不厭其煩地耐心講解細節。我們非常欣賞他的透明和直接，在整個過程中都保持了高度的誠信。Raymond 的敬業精神和努力給我們留下了深刻的印象，我們對最終的結果非常滿意。如果你正在尋找一位知識淵博、值得信賴的律師，Raymond 絕對是最佳選擇。",
+      "author": "Anthony Cheng"
+    },
+    {
+      "review": "我在幫父母尋找一位能講粵語的律師時，朋友推薦了 Raymond。我個人對法律術語和流程不太熟悉，尤其是粵語方面，但幸運的是，Raymond 和他的團隊在整個過程中都提供了極大的幫助。Raymond 耐心地用英語和粵語解釋所有內容，這大大減輕了我和父母的壓力。另外，辦公室的所有工作人員都能講粵語、普通話和英語，所以每當我父母需要幫助時，他們都能直接聯繫辦公室，非常方便。",
+      "author": "Jenny Wong"
+    },
+    {
+      "review": "Raymond 在我們遭遇車禍時提供了非常專業的法律建議。他對細節的關注極為細緻，確保每一個方面都不會被忽略。他總是隨時待命，這給客戶帶來了極大的安心感。我毫不猶豫地推薦他的服務。",
+      "author": "Warren Sun"
+    },
+    {
+      "review": "Raymond 幫助我們完成了房屋購買交易以及預售房的交接手續。作為一個準備搬到郊區的年輕家庭，我們對整個流程並不熟悉，但 Raymond 讓一切變得簡單。他詳細解釋了與開發商的交易流程、協議中的財務影響，以及與銀行和律師之間的時間安排，幫助我們順利完成購房交易。強烈推薦他的房地產法律服務！",
+      "author": "Gladys Cheung"
+    },
+    {
+      "review": "Raymond 幫助我處理了一項婚姻事務，他的工作效率非常高，並且非常專業。他的收費合理，並且總是盡力幫我節省費用。他的團隊也非常專業和耐心。我強烈推薦 Raymond 和他的團隊來處理您的婚姻相關事務！",
+      "author": "Raymond Mok"
+    }
+  ],
+  "blog": {
+    "title": "法律博客",
+    "subtitle": "獲取由我們團隊為您帶來的專業法律洞察、實用指南以及最新動態，助您隨時掌握重要資訊。",
+    "featuredTitle": "精選文章",
+    "searchPlaceholder": "搜索文章...",
+    "browsePracticeArea": "按主題瀏覽",
+    "latestArticlesTitle": "所有領域的最新文章",
+    "latestArticlesSubtitle": "探索更多法律見解與資源",
+    "viewResources": "查看資源",
+    "viewMoreArticles": "查看全部文章",
+    "loadingPosts": "正在加載博客文章...",
+    "unableToLoadPosts": "無法加載博客文章",
+    "noPostsFound": "未找到相關文章。",
+    "viewDetails": "查看詳情",
+    "updated": "最後更新",
+    "resources": "法律資源",
+    "insights": "專業見解",
+    "moreArticles": "相關閱讀",
+    "viewAll": "查看全部",
+    "toc": {
+      "inThisArticle": "本文目錄",
+      "quickAnswer": "快速解答",
+      "overview": "文章概述",
+      "keyInsights": "精選問答",
+      "commonQuestions": "常見問題",
+      "closingPerspectives": "總結與建議"
+    },
+    "cta": {
+      "needAdvice": "需要法律咨詢？",
+      "protectMatters": "我們致力於保護對您最重要的權益。",
+      "bookConsultation": "預約咨詢"
+    },
+    "categories": {
+      "familyLaw": {
+        "title": "家庭法",
+        "description": "提供關於離婚、分居、子女撫養權、撫養費以及其他家庭法事務的相關信息",
+        "subCategories": {
+          "common-law-cohabitation": {
+            "title": "同居關係",
+            "description": "瞭解在未婚同居狀態下的權益、法律地位及相關選擇。"
+          },
+          "marriage-contracts-prenups": {
+            "title": "婚姻協議與婚前協議",
+            "description": "瞭解婚姻協議或婚前協議如何有效保護您的個人權益與財產。"
+          },
+          "separation-divorce": {
+            "title": "分居與離婚",
+            "description": "明白分居或辦理離婚的具體流程、您應有的權利以及後續的法律步驟。"
+          },
+          "property-division-matrimonial-home": {
+            "title": "財產分割與婚房權益",
+            "description": "瞭解婚後財產與債務如何劃分，以及您對婚姻居所（婚房）所擁有的法律權利。"
+          },
+          "parenting-custody": {
+            "title": "子女撫養與監護權",
+            "description": "為您提供有關子女決策權（監護權）、撫養時間安排以及兒童撫養費的詳細資訊。"
+          }
+        }
+      },
+      "realEstate": {
+        "title": "房地產法",
+        "description": "為您提供買房、賣房、房屋貸款、產權保險及各類房地產交易的指南與信息",
+        "subCategories": {
+          "buying-a-home": {
+            "title": "購買房產",
+            "description": "瞭解購置房產涉及的法定步驟，切實保障您的房產投資安全。"
+          },
+          "title-insurance": {
+            "title": "產權保險",
+            "description": "深入瞭解產權保險如何保護業主免受突發產權爭議或潛在未知問題的影響。"
+          },
+          "closing-day": {
+            "title": "交房日 (Closing Day)",
+            "description": "做好充分準備迎接交房日，清晰瞭解當天的具體流程和注意事項。"
+          },
+          "selling-a-home": {
+            "title": "出售房產",
+            "description": "協助您順暢、高效地應對出售物業過程中的各項法律程序。"
+          },
+          "closing-costs": {
+            "title": "交房成本與額外費用",
+            "description": "清楚掌握在完成房地產交易時，所需支付的各項稅費與行政支出。"
+          },
+          "mortgages-and-financing": {
+            "title": "房屋貸款與融資",
+            "description": "探索不同的貸款選擇、金融機構的審批要求以及借款人的基本義務。"
+          }
+        }
+      },
+      "willsEstates": {
+        "title": "遺囑與遺產繼承",
+        "description": "全面瞭解遺囑撰寫、財產委託書、遺產托管、法庭認證（遺囑認證）以及面向未來的長遠規劃",
+        "subCategories": {
+          "wills": {
+            "title": "遺囑定義與撰寫",
+            "description": "瞭解為何一份合法有效的遺囑至關重要，以及它如何保護您摯愛的家人。"
+          },
+          "dying-without-a-will": {
+            "title": "未留遺囑的情況",
+            "description": "明白當事人在沒有留下有效遺囑的情況下離世，法律將如何處置和分配其遺產。"
+          },
+          "executors": {
+            "title": "遺囑執行人",
+            "description": "詳細瞭解作為遺產執行人所需承擔的法定法律職責、義務與工作內容。"
+          },
+          "powers-of-attorney": {
+            "title": "財產與健康委託書 (POA)",
+            "description": "瞭解法律委託書如何確保您的財務管理、個人生活以及醫療事務在必要時獲得妥善照顧。"
+          },
+          "probate": {
+            "title": "遺囑認證 (Probate)",
+            "description": "瞭解法庭認證遺囑的整套標準程序，以及遺產如何依法進行最終的管理與清算。"
+          }
+        }
+      }
+    }
+  },
+  "footer": {
+    "contactsTitle": "聯繫我們",
+    "quickLinksTitle": "快速鏈接",
+    "disclaimerBtn": "免責聲明",
+    "awardTooltip": "萬錦最佳家庭律師",
+    "corporation": "© 2026 Luk & Associates Professional Corporation 版權所有",
+    "disclaimer": "本網站上獲得的信息並非法律建議。請咨詢法律專業人士，獲取有關您個人情況的建議。請注意，聯繫該公司並不構成律師與客戶之間的關係，也不會建立任何類型的法律關係。在建立這種關係並簽署聘用書之前，請勿發送任何機密信息。Luk & Associates 為 Raymond Luk Professional Corporation 使用的商業名稱，並不代表或構成任何合伙關係",
+    "contacts": [
+      { "link": "tel:9056676496", "title": "English: 905-667-6496" },
+      { "link": "tel:9056676499", "title": "中文: 905-667-6499" },
+      {
+        "link": "mailto:info@luklaw.ca",
+        "title": "郵箱: info@luklaw.ca"
+      },
+      { "link": "tel:9058493583", "title": "傳真: 905-849-3583" }
+    ],
+    "quickLinks": [
+      { "link": "/team", "title": "我們的團隊" },
+      { "link": "/services", "title": "法律服務" },
+      { "link": "/resources", "title": "法律資源" },
+      { "link": "/contact", "title": "聯繫我們" },
+      { "link": "/careers", "title": "招聘信息" }
+    ],
+    "socialLinks": [
+      { "icon": "instagram", "link": "https://www.instagram.com/luklaw_to/" },
+      {
+        "icon": "whatsapp",
+        "link": "https://api.whatsapp.com/send?phone=19053331740"
+      },
+      {
+        "icon": "tiktok",
+        "link": "https://www.tiktok.com/@luklaw_to?_t=ZM-8uE9bZioMH0&_r=1"
+      },
+      {
+        "icon": "linkedin",
+        "link": "https://www.linkedin.com/company/raymond-luk-professional-corporation/?viewAsMember=true"
+      }
+    ],
+    "followUs": "關注我們"
+  }
+}

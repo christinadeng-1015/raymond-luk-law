@@ -93,18 +93,21 @@ const Nav = () => {
                     key={item.key}
                     className="flex items-center bg-black/20 rounded-full px-2 py-1 lg:absolute lg:right-8"
                   >
-                    <button
-                      onClick={() => changeLanguage('zh')}
-                      className={`px-4 py-1.5 text-[11px] font-bold rounded-full transition-all ${i18n.language === 'zh' ? 'bg-amber-500 text-white' : 'text-white'}`}
-                    >
-                      中
-                    </button>
-                    <button
-                      onClick={() => changeLanguage('en')}
-                      className={`px-4 py-1.5 text-[11px] font-bold rounded-full transition-all ${i18n.language === 'en' ? 'bg-amber-500 text-white' : 'text-white'}`}
-                    >
-                      EN
-                    </button>
+                    {[
+                      { code: 'en', label: 'EN', name: 'English' },
+                      { code: 'zh', label: '简', name: '简体中文' },
+                      { code: 'zh-HK', label: '繁', name: '香港繁體中文' },
+                    ].map((language) => (
+                      <button
+                        key={language.code}
+                        onClick={() => changeLanguage(language.code)}
+                        aria-label={language.name}
+                        title={language.name}
+                        className={`px-4 py-1.5 text-[11px] font-bold rounded-full transition-all ${i18n.language === language.code ? 'bg-amber-500 text-white' : 'text-white'}`}
+                      >
+                        {language.label}
+                      </button>
+                    ))}
                   </div>
                 );
               }
@@ -139,10 +142,7 @@ const Nav = () => {
                             className="text-[18px] lg:text-[14px] normal-case font-medium hover:text-amber-500 hover:bg-white/5 border-b border-white/5 last:border-0 py-4 px-8 lg:py-3 lg:px-6"
                             style={{ fontFamily: "'Inter', sans-serif" }}
                             onClick={() => {
-                              if (
-                                subItem.key === 'en' ||
-                                subItem.key === 'zh'
-                              ) {
+                              if (['en', 'zh', 'zh-HK'].includes(subItem.key)) {
                                 changeLanguage(subItem.key);
                               }
                             }}

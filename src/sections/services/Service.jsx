@@ -4,14 +4,17 @@ import { useLocation, Link } from 'react-router-dom';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import ServicesTabs from './ServicesTabs';
 import OptimizedImage from '../../components/OptimizedImage';
-import { localizedPath } from '../../utils/localizedPath';
+import {
+  localizedPath,
+  unlocalizedPath,
+} from '../../utils/localizedPath';
 
 export function Service() {
   const { pathname } = useLocation();
   const { t, i18n } = useTranslation('services');
   const services = t('services', { returnObjects: true });
   const scrollContainerRef = useRef(null);
-  const servicePath = pathname.replace(/^\/(en|zh)(?=\/|$)/, '');
+  const servicePath = unlocalizedPath(pathname);
 
   if (!Array.isArray(services)) return null;
 
